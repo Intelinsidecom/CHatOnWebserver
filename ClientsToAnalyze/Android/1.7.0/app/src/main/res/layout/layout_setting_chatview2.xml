@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sec.widget.GeneralHeaderView
+        android:textColor="@color/chat_content"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_chat_view_font_size"
+        android:shadowColor="@color/shadow_2"
+        android:shadowDx="0"
+        android:shadowDy="-2"
+        android:shadowRadius="1"/>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:layout_alignParentTop="true"/>
+</LinearLayout>

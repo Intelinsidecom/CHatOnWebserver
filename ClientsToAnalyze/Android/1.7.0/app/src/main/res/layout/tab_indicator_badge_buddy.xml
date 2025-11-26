@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/TabIndicatorContainer">
+    <TextView
+        android:id="@+id/tab_title"
+        android:text="@string/tab_buddies"
+        android:drawableTop="@drawable/tab_icon_buddy"
+        style="@style/TabIndicatorContent"/>
+    <TextView
+        android:id="@+id/tab_badge"
+        style="@style/TabIndicatorBadge"/>
+</FrameLayout>

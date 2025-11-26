@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:layout="@layout/preference_header"
+        android:title="@string/setting_category_general"/>
+    <com.sec.chaton.settings.AboutNewNotice
+        android:layout="@layout/preference_with_arrow"
+        android:title="@string/setting_category_notice"
+        android:key="pref_item_noti"/>
+    <Preference
+        android:layout="@layout/preference_with_arrow"
+        android:title="@string/settings_help"
+        android:key="pref_item_help"/>
+    <Preference
+        android:layout="@layout/preference_with_arrow"
+        android:title="@string/settings_delete"
+        android:key="pref_item_delete"/>
+    <Preference
+        android:layout="@layout/preference_with_arrow"
+        android:title="@string/contact_us"
+        android:key="pref_item_VOC"/>
+</PreferenceScreen>

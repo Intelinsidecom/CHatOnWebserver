@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/actionbar_ic_download"
+        android:id="@+id/menu_download"
+        android:orderInCategory="1"
+        android:title="@string/download_title"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_done"
+        android:orderInCategory="1"
+        android:title="@string/done"
+        android:showAsAction="always"/>
+</menu>

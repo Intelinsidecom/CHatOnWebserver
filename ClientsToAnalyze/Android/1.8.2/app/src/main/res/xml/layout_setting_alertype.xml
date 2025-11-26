@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="pref_screen2">
+    <PreferenceCategory
+        android:layout="@layout/preference_header"
+        android:title="@string/settings_type"/>
+    <CheckBoxPreference
+        android:layout="@layout/preference"
+        android:title="@string/settings_sound"
+        android:key="pref_item_sound"
+        android:widgetLayout="@layout/preference_widget_checkbox"
+        android:defaultValue="true"/>
+    <CheckBoxPreference
+        android:layout="@layout/preference"
+        android:title="@string/settings_vibration"
+        android:key="pref_item_vibration"
+        android:widgetLayout="@layout/preference_widget_checkbox"
+        android:defaultValue="true"/>
+    <com.sec.chaton.settings.RingtonePreference
+        android:layout="@layout/preference"
+        android:title="@string/settings_alert_tone"
+        android:key="pref_item_sound_type"
+        android:widgetLayout="@layout/preference_widget_dialog"
+        android:dependency="pref_item_sound"
+        android:showDefault="false"
+        android:showSilent="true"/>
+</PreferenceScreen>

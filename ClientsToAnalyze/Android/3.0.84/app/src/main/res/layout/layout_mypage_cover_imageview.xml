@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/coverstory_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:textAppearance="@style/TextAppearance.Etc06"
+            android:id="@+id/coverstory_image_description"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="7dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <include
+        android:id="@+id/coverstory_set_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_common_button_1"/>
+</LinearLayout>

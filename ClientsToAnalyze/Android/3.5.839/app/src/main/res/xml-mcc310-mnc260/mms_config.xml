@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mms_config version="5">
+    <bool name="enabledMMS">true
+    </bool>
+    <int name="maxMessageSize">1024000
+    </int>
+    <int name="maxImageHeight">480
+    </int>
+    <int name="maxImageWidth">640
+    </int>
+    <int name="defaultSMSMessagesPerThread">500
+    </int>
+    <int name="defaultMMSMessagesPerThread">200
+    </int>
+    <int name="minMessageCountPerThread">10
+    </int>
+    <int name="maxMessageCountPerThread">5000
+    </int>
+    <string name="uaProfUrl">http://www.google.com/oha/rdf/ua-profile-kila.xml
+    </string>
+    <int name="recipientLimit">10
+    </int>
+    <int name="smsToMmsTextThreshold">4
+    </int>
+    <bool name="enableMultipartSMS">false
+    </bool>
+    <bool name="enableSlideDuration">true
+    </bool>
+    <int name="maxMessageTextSize">-1
+    </int>
+    <int name="mmsModeCaptureVideoMaxSize">1018880
+    </int>
+    <string name="commonRegion">USA
+    </string>
+    <string name="commonOperator">TMO
+    </string>
+    <string name="enableMmsUaUapAutoCreate">us-tmo
+    </string>
+</mms_config>

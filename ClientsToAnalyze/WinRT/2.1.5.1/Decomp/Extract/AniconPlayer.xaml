@@ -1,0 +1,17 @@
+﻿<UserControl x:ConnectionId='1' x:Class="ChatOn.Controls.AniconPlayer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                                    
+                                
+    mc:Ignorable="d">
+
+    <Grid x:ConnectionId='2' x:Name="LayoutRoot" Background="Transparent"                             >
+    	<Image x:Name="CurrentFrameImage" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0.99" Stretch="Fill"/>
+        <ProgressRing x:Name="ProgressControl" HorizontalAlignment="Center" VerticalAlignment="Center" Width="30" Height="30" Foreground="#FFFA8719"/>
+        <Image x:ConnectionId='3' Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="ImgRefresh"                        Width="100" Height="100" Source="/Images/chatting_anicon_btn_failed.png"></Image>
+    </Grid>
+</UserControl>
+

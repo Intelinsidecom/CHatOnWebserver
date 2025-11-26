@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <nine-patch
+            android:src="@drawable/co_btn_bg_color_normal"
+            android:dither="true"/>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="@dimen/one_dip"
+                android:color="#cb4c03"/>
+            <solid android:color="@android:color/transparent"/>
+            <corners android:radius="1.5dp"/>
+        </shape>
+    </item>
+</layer-list>

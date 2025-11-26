@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+    <TextView
+        android:textSize="18dp"
+        android:textColor="@color/brown_color_029"
+        android:ellipsize="marquee"
+        android:id="@+id/vcalendar_event_title"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="23.7dp"
+        android:layout_marginLeft="10.6dp"
+        android:layout_marginTop="6.1dp"
+        android:singleLine="true"/>
+    <TextView
+        android:textSize="12.2dp"
+        android:textColor="#efad51"
+        android:ellipsize="marquee"
+        android:id="@+id/vcalendar_event_child_date"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.6dp"
+        android:layout_marginTop="4.5dp"
+        android:singleLine="true"/>
+</LinearLayout>

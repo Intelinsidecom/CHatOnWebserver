@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:id="@+id/footer_progress"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="30dp">
+    <ProgressBar
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="10dp"/>
+    <TextView
+        android:textAppearance="@style/TextAppearance.List09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_provision_ing"/>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>Өздігінен көрініс көрсету</item>
+        <item>Суреттер</item>
+        <item>Суретке түсіру</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Суреттер</item>
+        <item>Суретке түсіру</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Өзгерту</item>
+        <item>Жою</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>Сурет</item>
+        <item>Шынайы бейне</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Бейнені ауыстыру</item>
+        <item>Бейнені жасыру</item>
+    </array>
+</resources>

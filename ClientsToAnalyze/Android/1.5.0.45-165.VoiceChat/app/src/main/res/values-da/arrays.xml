@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>Standardside</item>
+        <item>Billeder</item>
+        <item>Tag billede</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Billeder</item>
+        <item>Tag billede</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Redigér</item>
+        <item>Slet</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>Billede</item>
+        <item>Live-video</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Skift video</item>
+        <item>Skjul video</item>
+    </array>
+</resources>

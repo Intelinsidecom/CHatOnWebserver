@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:background="@drawable/buddy_group_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="@color/brown_color_001"
+        android:id="@+id/buddy_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6.66dp"
+        android:layout_marginRight="6.66dp"
+        android:maxWidth="260dp"
+        android:singleLine="true"
+        android:shadowColor="@color/brown_color_002"
+        android:shadowDx="0"
+        android:shadowDy="-1"
+        android:shadowRadius="1"/>
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/group_bar_group_count"
+        android:id="@+id/buddy_group_participants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1"/>
+    <ImageView
+        android:id="@+id/buddy_group_fold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="10dp"/>
+</LinearLayout>

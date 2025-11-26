@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ChatOnVProgress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:alertDialogStyle">@style/ChatOnVDialogTheme</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/tw_light_color045</item>
+        <item name="android:maxWidth">320dp</item>
+        <item name="android:minWidth">320dp</item>
+        <item name="android:singleLine">false</item>
+    </style>
+</resources>

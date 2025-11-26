@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>ਡਿਫਾੱਲਟ ਚਿੱਤਰ</item>
+        <item>ਚਿੱਤਰ</item>
+        <item>ਤਸਵੀਰ ਲਓ</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>ਚਿੱਤਰ</item>
+        <item>ਤਸਵੀਰ ਲਓ</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>ਸੰਪਾਦਨ</item>
+        <item>ਮਿਟਾਓ</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>ਤਸਵੀਰ</item>
+        <item>ਲਾਈਵ ਵੀਡਿਓ</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>ਵੀਡਿਓ ਸਵਿੱਚ ਕਰੋ</item>
+        <item>ਵੀਡਿਓ ਲੁਕਾਓ</item>
+    </array>
+</resources>

@@ -1,0 +1,99 @@
+﻿<Page x:ConnectionId='1' x:Name="pageRoot"
+      x:Class="ChatON_WoA.Views.AboutPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:ChatON_WoA.Views"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+                               >
+    <Border BorderThickness="1"
+            BorderBrush="DarkGray"
+            Background="White">
+        <StackPanel  Margin="40,0,0,0">
+            <StackPanel Orientation="Horizontal"
+                        VerticalAlignment="Top"
+                        Margin="0,59,0,0">
+                <Button x:ConnectionId='3' x:Name="backButton"
+                        HorizontalAlignment="Left"
+                        IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}"
+                        Style="{StaticResource BackButtonStyle}"
+                        Margin="0"
+                                                   />
+                <TextBlock HorizontalAlignment="Left"
+                           TextWrapping="Wrap"
+                           Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_ABOUT_CHATON'}"
+                           VerticalAlignment="Top"
+                           FontSize="40"
+                           Foreground="Black"
+                           FontFamily="Segoe UI Light"
+                           x:Name="txtAbout" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        VerticalAlignment="Top"
+                        Margin="0,59,0,0">
+                <TextBlock HorizontalAlignment="Left"
+                           TextWrapping="Wrap"
+                           Text="Chat on your way"
+                           FontSize="15.467"
+                           Foreground="#FFFF9600"
+                           FontFamily="Segoe UI Light"
+                           x:Name="txtChatOn"
+                           VerticalAlignment="Center" />
+                <Image Source="Images/chaton_icon.png"
+                       VerticalAlignment="Top"
+                       HorizontalAlignment="Left"
+                       Stretch="None"
+                       Margin="13,0,0,0" />
+            </StackPanel>
+            <TextBlock x:Name="CurrentVersion"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text=""
+                       Foreground="Black"
+                       FontSize="15.467"
+                       Margin="0,35,0,0" />
+            <TextBlock x:Name="LatestVersion"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text=""
+                       Foreground="Black"
+                       FontSize="15.467"
+                       Margin="0, 10, 0, 0" />
+            <!--<Button x:Name="TermsButton" Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_SK1_TERMS_AND_CONDITIONS'}" HorizontalAlignment="Left" Height="37" MinWidth="130" Margin="0,27,0,0" Click="TermsButton_Click_1" />
+        <Button x:Name="ConsentButton" Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_SK1_PRIVACY_POLICY'}" HorizontalAlignment="Left" Height="37" MinWidth="130" Margin="0,27,0,0" Click="ConsentButton_Click_1" />-->
+            <Button x:ConnectionId='2' x:Name="OpenSourceButton"
+                    Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_OPEN_SOURCE_LICENCES_ABB'}"
+                    HorizontalAlignment="Left"
+                    Height="37"
+                    MinWidth="130"
+                    Margin="0,27,0,0"
+                                                     />
+            <Button x:Name="UpgradeButton"
+                    Visibility="Collapsed"
+                    IsEnabled="False"
+                    Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_SK_UPGRADE'}"
+                    HorizontalAlignment="Left"
+                    Height="37"
+                    MinWidth="130"
+                    Margin="0,27,0,0" />
+            <TextBlock Visibility="Collapsed"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_OPEN_SOURCE_LICENCES_ABB'}"
+                       Foreground="#FFFF9600"
+                       FontSize="15.467"
+                       Margin="0,53,0,0" />
+            <TextBlock x:Name="SinaDisplay"
+                       Visibility="Collapsed"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       FontSize="14.667"
+                       Foreground="Black"
+                       FontFamily="Segoe UI Light"
+                       Text="Powered by SINA"
+                       Margin="0,30,0,0" />
+        </StackPanel>
+    </Border>
+</Page>
+

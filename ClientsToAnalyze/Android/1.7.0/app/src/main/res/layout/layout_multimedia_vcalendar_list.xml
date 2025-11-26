@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    <com.sec.widget.GeneralHeaderView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:text="@string/layout_vcalendar_calendar_list"/>
+    <LinearLayout style="@style/BuddySearchContainer">
+        <com.sec.widget.EditTextWithClearButton
+            android:id="@+id/vcal_events_search"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:hint="@string/vcalendar_list_search_hint"
+            style="@style/BuddySearchEditText"/>
+    </LinearLayout>
+    <ExpandableListView
+        android:id="@+id/vcal_events_list"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:groupIndicator="@null"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/vcal_events_noresult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0">
+        <TextView
+            android:textSize="22dp"
+            android:textColor="@color/calendar_no_events_text"
+            android:ellipsize="marquee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calendar_no_events"
+            android:singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

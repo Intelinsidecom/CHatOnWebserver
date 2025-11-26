@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <GridView
+        android:scrollbarStyle="outsideInset"
+        android:id="@+id/emoticonGridView"
+        android:paddingLeft="@dimen/emoticon_gridview_padding"
+        android:paddingRight="@dimen/emoticon_gridview_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/selector_emoticon_selected"
+        android:drawSelectorOnTop="true"
+        android:horizontalSpacing="@dimen/emoticon_gridview_item_horizontal_spacing"
+        android:verticalSpacing="@dimen/emoticon_gridview_item_vertical_spacing"
+        android:stretchMode="spacingWidth"
+        android:columnWidth="@dimen/emoticon_gridview_item_width"
+        android:numColumns="auto_fit"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/emoticonEmptyView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/emoticon_recently_used_empty_title"
+        style="@style/EmoticonTextViewStyle"/>&quot;\10
+</FrameLayout>

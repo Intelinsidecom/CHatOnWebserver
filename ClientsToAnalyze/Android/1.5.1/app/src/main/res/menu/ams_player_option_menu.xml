@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/creat_new"
+        android:id="@+id/menu_create_new"
+        android:title="@string/ams_optmenu_create_new"/>
+    <group android:id="@+id/menu_group_edit">
+        <item
+            android:icon="@drawable/edit"
+            android:id="@+id/menu_edit"
+            android:title="@string/ams_optmenu_edit"/>
+    </group>
+    <group android:id="@+id/menu_group_delete">
+        <item
+            android:icon="@drawable/delete"
+            android:id="@+id/menu_delete"
+            android:title="@string/ams_optmenu_delete"/>
+    </group>
+</menu>

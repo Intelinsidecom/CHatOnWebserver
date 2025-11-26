@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>ডিফল্ট ছবি</item>
+        <item>ছবিগুলি</item>
+        <item>ছবি তুলুন</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>ছবিগুলি</item>
+        <item>ছবি তুলুন</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>সম্পাদনা</item>
+        <item>মুছুন</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>ছবি</item>
+        <item>লাইভ ভিডিও</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>ভিডিও স্যুইচ করুন</item>
+        <item>ভিডিও লুকান</item>
+    </array>
+</resources>

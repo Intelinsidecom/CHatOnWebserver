@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="me_popup_dialog_width_percent">72</integer>
+    <integer name="buddy_popup_dialog_width_percent">72</integer>
+    <integer name="buddy_var_popup_dialog_width_percent">72</integer>
+    <integer name="group_popup_dialog_width_percent">72</integer>
+    <integer name="gridview_col_attachfile">4</integer>
+    <integer name="custom_match_parent">-1</integer>
+    <integer name="custom_fill_parent">-1</integer>
+</resources>

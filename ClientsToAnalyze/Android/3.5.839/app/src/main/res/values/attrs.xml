@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="actionBarStyle" format="reference">
+    </attr>
+    <attr name="actionBarTabStyle" format="reference">
+    </attr>
+    <attr name="actionBarTabBarStyle" format="reference">
+    </attr>
+    <attr name="actionBarTabTextStyle" format="reference">
+    </attr>
+    <attr name="actionBarSize" format="dimension">
+    </attr>
+    <attr name="actionButtonStyle" format="reference">
+    </attr>
+    <attr name="actionBarDivider" format="reference">
+    </attr>
+    <attr name="homeAsUpIndicator" format="reference">
+    </attr>
+    <attr name="selectableItemBackground" format="reference">
+    </attr>
+    <attr name="actionMenuTextAppearance" format="reference">
+    </attr>
+    <attr name="actionMenuTextColor" format="reference">
+    </attr>
+    <attr name="actionDropDownStyle" format="reference">
+    </attr>
+    <attr name="spinnerDropDownItemStyle" format="reference">
+    </attr>
+    <attr name="listPopupWindowStyle" format="reference">
+    </attr>
+    <attr name="dropDownListViewStyle" format="reference">
+    </attr>
+    <attr name="alertDialogTheme" format="reference">
+    </attr>
+    <attr name="alertDialogStyle" format="reference">
+    </attr>
+    <attr name="listDividerAlertDialog" format="reference">
+    </attr>
+    <attr name="textColorAlertDialogListItem" format="reference">
+    </attr>
+    <attr name="buttonBarStyle" format="reference">
+    </attr>
+    <attr name="buttonBarButtonStyle" format="reference">
+    </attr>
+    <attr name="toolTipStyle" format="reference">
+    </attr>
+    <attr name="indicator" format="reference">
+    </attr>
+    <attr name="leftIndicator" format="reference">
+    </attr>
+    <attr name="rightIndicator" format="reference">
+    </attr>
+    <attr name="firstIndicator" format="reference">
+    </attr>
+    <attr name="lastIndicator" format="reference">
+    </attr>
+    <attr name="indicatorMargin" format="dimension">
+    </attr>
+    <attr name="maxIndicatorCount" format="integer">
+    </attr>
+    <attr name="windowNoTitle" format="boolean">
+    </attr>
+    <attr name="height" format="dimension">
+    </attr>
+    <attr name="logo" format="reference">
+    </attr>
+    <attr name="displayOptions">
+        <flag name="useLogo" value="0x1" />
+        <flag name="showHome" value="0x2" />
+        <flag name="homeAsUp" value="0x4" />
+        <flag name="showTitle" value="0x8" />
+        <flag name="showCustom" value="0x10" />
+        <flag name="disableHome" value="0x20" />
+    </attr>
+    <attr name="titleTextStyle" format="reference">
+    </attr>
+    <attr name="subtitleTextStyle" format="reference">
+    </attr>
+    <attr name="backgroundStacked" format="reference">
+    </attr>
+    <attr name="fullDark" format="reference|color">
+    </attr>
+    <attr name="topDark" format="reference|color">
+    </attr>
+    <attr name="centerDark" format="reference|color">
+    </attr>
+    <attr name="bottomDark" format="reference|color">
+    </attr>
+    <attr name="fullBright" format="reference|color">
+    </attr>
+    <attr name="topBright" format="reference|color">
+    </attr>
+    <attr name="centerBright" format="reference|color">
+    </attr>
+    <attr name="bottomBright" format="reference|color">
+    </attr>
+    <attr name="bottomMedium" format="reference|color">
+    </attr>
+    <attr name="centerMedium" format="reference|color">
+    </attr>
+    <attr name="toolTipLayout" format="reference">
+    </attr>
+    <attr name="windowBackgroundColor" format="color">
+    </attr>
+    <attr name="actionbarBackground" format="reference">
+    </attr>
+    <attr name="actionbarTitleStyle" format="reference">
+    </attr>
+    <attr name="actionbarItemStyle" format="reference">
+    </attr>
+    <attr name="actionbarItemBackground" format="reference">
+    </attr>
+    <attr name="actionbarNavigationTabWidgetStyle" format="reference">
+    </attr>
+    <attr name="buttonLayoutBackground" format="reference">
+    </attr>
+    <attr name="selectAllLayoutBackground" format="reference">
+    </attr>
+    <attr name="stateTextViewStyle" format="reference">
+    </attr>
+    <attr name="stateButtonStyle" format="reference">
+    </attr>
+    <attr name="imageTextViewGroupStyle" format="reference">
+    </attr>
+    <attr name="clearableEditTextStyle" format="reference">
+    </attr>
+    <attr name="itemBackground" format="reference">
+    </attr>
+    <attr name="ftBar01Color" format="color">
+    </attr>
+    <attr name="ftBar03Color" format="color">
+    </attr>
+    <attr name="ftBar04Color" format="color">
+    </attr>
+    <attr name="ftBar04DisabledColor" format="color">
+    </attr>
+    <attr name="ftBar05Color" format="color">
+    </attr>
+    <attr name="ftBar05DisabledColor" format="color">
+    </attr>
+    <attr name="ftBar06Color" format="color">
+    </attr>
+    <attr name="ftBar07Color" format="color">
+    </attr>
+    <attr name="ftList01Color" format="color">
+    </attr>
+    <attr name="ftList02Color" format="color">
+    </attr>
+    <attr name="ftList03Color" format="color">
+    </attr>
+    <attr name="ftList04Color" format="color">
+    </attr>
+    <attr name="ftList05Color" format="color">
+    </attr>
+    <attr name="ftList07Color" format="color">
+    </attr>
+    <attr name="ftList08Color" format="color">
+    </attr>
+    <attr name="ftList09Color" format="color">
+    </attr>
+    <attr name="ftList10Color" format="color">
+    </attr>
+    <attr name="ftList11Color" format="color">
+    </attr>
+    <attr name="ftList12Color" format="color">
+    </attr>
+    <attr name="ftList14Color" format="color">
+    </attr>
+    <attr name="ftList15Color" format="color">
+    </attr>
+    <attr name="ftList17Color" format="color">
+    </attr>
+    <attr name="ftList19Color" format="color">
+    </attr>
+    <attr name="ftList20Color" format="color">
+    </attr>
+    <attr name="ftList21Color" format="color">
+    </attr>
+    <attr name="ftList23Color" format="color">
+    </attr>
+    <attr name="ftList24Color" format="color">
+    </attr>
+    <attr name="ftList25Color" format="color">
+    </attr>
+    <attr name="ftList27Color" format="color">
+    </attr>
+    <attr name="ftList28Color" format="color">
+    </attr>
+    <attr name="ftList29Color" format="color">
+    </attr>
+    <attr name="ftList30Color" format="color">
+    </attr>
+    <attr name="ftList31Color" format="color">
+    </attr>
+    <attr name="ftList32Color" format="color">
+    </attr>
+    <attr name="ftList33Color" format="color">
+    </attr>
+    <attr name="ftList34Color" format="color">
+    </attr>
+    <attr name="ftList35Color" format="color">
+    </attr>
+    <attr name="ftList36Color" format="color">
+    </attr>
+    <attr name="ftList37Color" format="color">
+    </attr>
+    <attr name="ftList37DisabledColor" format="color">
+    </attr>
+    <attr name="ftList38Color" format="color">
+    </attr>
+    <attr name="ftList39Color" format="color">
+    </attr>
+    <attr name="ftList42Color" format="color">
+    </attr>
+    <attr name="ftList44Color" format="color">
+    </attr>
+    <attr name="ftList47Color" format="color">
+    </attr>
+    <attr name="ftList48Color" format="color">
+    </attr>
+    <attr name="ftList50Color" format="color">
+    </attr>
+    <attr name="ftList51Color" format="color">
+    </attr>
+    <attr name="ftList52Color" format="color">
+    </attr>
+    <attr name="ftList53Color" format="color">
+    </attr>
+    <attr name="ftList54Color" format="color">
+    </attr>
+    <attr name="ftList55Color" format="color">
+    </attr>
+    <attr name="ftList56Color" format="color">
+    </attr>
+    <attr name="ftList57Color" format="color">
+    </attr>
+    <attr name="ftList58Color" format="color">
+    </attr>
+    <attr name="ftList59Color" format="color">
+    </attr>
+    <attr name="ftList60Color" format="color">
+    </attr>
+    <attr name="ftList61Color" format="color">
+    </attr>
+    <attr name="ftList62Color" format="color">
+    </attr>
+    <attr name="ftList63Color" format="color">
+    </attr>
+    <attr name="ftList64Color" format="color">
+    </attr>
+    <attr name="ftList65Color" format="color">
+    </attr>
+    <attr name="ftList66Color" format="color">
+    </attr>
+    <attr name="ftList67Color" format="color">
+    </attr>
+    <attr name="ftList68Color" format="color">
+    </attr>
+    <attr name="ftList69Color" format="color">
+    </attr>
+    <attr name="ftBtn01Color" format="color">
+    </attr>
+    <attr name="ftBtn02Color" format="color">
+    </attr>
+    <attr name="ftBtn03Color" format="color">
+    </attr>
+    <attr name="ftBtn04Color" format="color">
+    </attr>
+    <attr name="ftBtn05Color" format="color">
+    </attr>
+    <attr name="ftBtn09Color" format="color">
+    </attr>
+    <attr name="ftEtc01Color" format="color">
+    </attr>
+    <attr name="ftEtc02Color" format="color">
+    </attr>
+    <attr name="ftEtc05Color" format="color">
+    </attr>
+    <attr name="ftEtc06Color" format="color">
+    </attr>
+    <attr name="ftEtc07Color" format="color">
+    </attr>
+    <attr name="ftEtc08Color" format="color">
+    </attr>
+    <attr name="ftEtc09Color" format="color">
+    </attr>
+    <attr name="ftEtc10Color" format="color">
+    </attr>
+    <attr name="ftEtc17Color" format="color">
+    </attr>
+    <attr name="ftEtc19Color" format="color">
+    </attr>
+    <attr name="ftChat01Color" format="color">
+    </attr>
+    <attr name="ftChat02Color" format="color">
+    </attr>
+    <attr name="ftChat03Color" format="color">
+    </attr>
+    <attr name="ftChat04Color" format="color">
+    </attr>
+    <attr name="ftChat05Color" format="color">
+    </attr>
+    <attr name="ftChat06Color" format="color">
+    </attr>
+    <attr name="ftChat08Color" format="color">
+    </attr>
+    <attr name="ftChat09Color" format="color">
+    </attr>
+    <attr name="ftChat10Color" format="color">
+    </attr>
+    <attr name="ftChat11Color" format="color">
+    </attr>
+    <attr name="ftChat12Color" format="color">
+    </attr>
+    <attr name="ftChat13Color" format="color">
+    </attr>
+    <attr name="ftChat14Color" format="color">
+    </attr>
+    <attr name="ftChat15Color" format="color">
+    </attr>
+    <attr name="ftChat16Color" format="color">
+    </attr>
+    <attr name="ftChat17Color" format="color">
+    </attr>
+    <attr name="ftChat18Color" format="color">
+    </attr>
+    <attr name="ftChat29Color" format="color">
+    </attr>
+    <attr name="ftChat30Color" format="color">
+    </attr>
+    <attr name="ftChat21Color" format="color">
+    </attr>
+    <attr name="ftChat31Color" format="color">
+    </attr>
+    <attr name="ftChat37Color" format="color">
+    </attr>
+    <attr name="ftPop01Color" format="color">
+    </attr>
+    <attr name="ftPop02Color" format="color">
+    </attr>
+    <attr name="ftPop03Color" format="color">
+    </attr>
+    <attr name="ftPop04Color" format="color">
+    </attr>
+    <attr name="ftPop05Color" format="color">
+    </attr>
+    <attr name="ftPop06Color" format="color">
+    </attr>
+    <attr name="ftPop07Color" format="color">
+    </attr>
+    <attr name="ftPop08Color" format="color">
+    </attr>
+    <attr name="ftPop09Color" format="color">
+    </attr>
+    <attr name="ftPop10Color" format="color">
+    </attr>
+    <attr name="ftPop11Color" format="color">
+    </attr>
+    <attr name="ftPop12Color" format="color">
+    </attr>
+    <attr name="ftPop13Color" format="color">
+    </attr>
+    <attr name="ftPop14Color" format="color">
+    </attr>
+    <attr name="ftExt01Color" format="color">
+    </attr>
+    <attr name="normalTextAppearance" format="reference">
+    </attr>
+    <attr name="selectedTextAppearance" format="reference">
+    </attr>
+    <attr name="pressedTextAppearance" format="reference">
+    </attr>
+    <attr name="focusedTextAppearance" format="reference">
+    </attr>
+    <attr name="disabledTextAppearance" format="reference">
+    </attr>
+    <attr name="checkable_widget" format="integer">
+    </attr>
+    <attr name="src" format="reference">
+    </attr>
+    <attr name="srcPadding" format="reference|dimension">
+    </attr>
+    <attr name="layout" format="reference">
+    </attr>
+    <attr name="searchIcon" format="reference">
+    </attr>
+    <attr name="imageViewSelector" format="reference">
+    </attr>
+    <attr name="checkable" format="integer">
+    </attr>
+    <attr name="UseReflection" format="boolean">
+    </attr>
+    <attr name="Items" format="integer">
+    </attr>
+    <attr name="SelectedItem" format="integer">
+    </attr>
+    <attr name="maxTheta" format="float">
+    </attr>
+    <attr name="minQuantity" format="integer">
+    </attr>
+    <attr name="maxQuantity" format="integer">
+    </attr>
+    <attr name="amsAlertDialogStyle" format="reference">
+    </attr>
+    <attr name="majorWeight" format="float">
+    </attr>
+    <attr name="minorWeight" format="float">
+    </attr>
+    <attr name="twIndexViewHandlePosition">
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+    </attr>
+    <attr name="twIndexViewIndexInterval" format="integer">
+    </attr>
+    <attr name="checkable_single" format="integer">
+    </attr>
+    <attr name="checkable_multiple" format="integer">
+    </attr>
+    <attr name="breadcrumb1" format="reference">
+    </attr>
+    <attr name="breadcrumb2" format="reference">
+    </attr>
+    <attr name="breadcrumb3" format="reference">
+    </attr>
+</resources>

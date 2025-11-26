@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_image_text_button"/>
+    <Button
+        android:textAppearance="@style/TextAppearance.Btn01.Variable"
+        android:id="@+id/conncted_button"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginLeft="22.5dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="22.5dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/account_connected_device"/>
+</LinearLayout>

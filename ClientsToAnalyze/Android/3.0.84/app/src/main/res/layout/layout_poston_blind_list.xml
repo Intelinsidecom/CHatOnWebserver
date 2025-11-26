@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/poston_blind_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="@style/ListViewStyle.Common1"/>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:id="@+id/llayout_poston_no_buddies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/poston_no_buddies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/layout_common_no_contents"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:id="@+id/llayout_poston_network_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/poston_network_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/layout_common_no_contents"/>
+    </LinearLayout>
+</LinearLayout>

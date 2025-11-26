@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:id="@+id/gridViewMenu"
+    android:background="@color/white"
+    android:padding="16dp"
+    android:layout_width="447dp"
+    android:layout_height="447dp"
+    android:listSelector="#0000"
+    android:horizontalSpacing="12dp"
+    android:verticalSpacing="14dp"
+    android:columnWidth="128dp"
+    android:numColumns="3"/>

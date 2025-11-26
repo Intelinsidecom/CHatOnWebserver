@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <nine-patch
+            android:src="@drawable/chat_forward_btn_disable_right"
+            android:dither="true"/>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+            <stroke
+                android:width="@dimen/one_dip"
+                android:color="@color/actionbar_line_color"/>
+        </shape>
+    </item>
+</layer-list>

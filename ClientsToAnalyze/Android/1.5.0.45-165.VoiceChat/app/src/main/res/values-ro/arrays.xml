@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>Imagine implicită</item>
+        <item>Imagini</item>
+        <item>Fotografiere</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Imagini</item>
+        <item>Fotografiere</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Editare</item>
+        <item>Ştergere</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>Imagine</item>
+        <item>Video live</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Comutare video</item>
+        <item>Ascundere video</item>
+    </array>
+</resources>

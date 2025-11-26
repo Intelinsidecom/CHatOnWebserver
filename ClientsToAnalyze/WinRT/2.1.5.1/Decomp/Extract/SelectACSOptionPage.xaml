@@ -1,0 +1,39 @@
+﻿<Page
+    x:Name="pageRoot"
+    x:Class="ChatON_WoA.Views.SelectACSOptionPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="LayoutRoot" Background="#FFF4F4F4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Back button and page title -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:ConnectionId='2' x:Name="backButton" IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"                           />
+            <TextBlock x:Name="pageTitle" Grid.Column="1" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_HEADER_REGISTRATION'}" Style="{StaticResource PageHeaderTextStyle}"/>
+        </Grid>
+        <Grid Grid.Row="1">
+        	<Grid.RowDefinitions>
+        		<RowDefinition Height="Auto"/>
+        		<RowDefinition Height="Auto"/>
+        		<RowDefinition Height="Auto"/>
+        		<RowDefinition/>
+        	</Grid.RowDefinitions>
+        	<TextBlock x:Name="Text1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="120,0,0,0" FontFamily="Segoe UI" FontSize="14.667" Width="450"/>
+        	<ComboBox x:Name="ComboBoxControl" ItemsSource="{Binding Languages}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Margin="120,20,0,0" Grid.Row="1"/>
+        	<Button x:ConnectionId='1' Content="Next" x:Name="NextButton"                            HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.Row="3" Margin="0,0,108,120" MinWidth="100"/>
+        </Grid>
+    </Grid>
+</Page>
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_menu_close_clear_cancel"
+        android:id="@+id/actionbar_title_remove"
+        android:title="@string/buddy_group_edit_menubar_remove"
+        android:showAsAction="withText|ifRoom"/>
+</menu>

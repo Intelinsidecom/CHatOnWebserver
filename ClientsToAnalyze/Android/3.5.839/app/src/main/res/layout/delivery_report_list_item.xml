@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.chaton.smsplugin.p112ui.DeliveryReportListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="#ffffffff"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight">
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ff000000"
+            android:id="@+id/recipient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ff000000"
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_gravity="right"
+        android:id="@+id/icon"
+        android:background="#ffffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_weight="0"/>
+</com.sec.chaton.smsplugin.p112ui.DeliveryReportListItem>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.common.widget.HoneycombLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/buttonLayoutBackground"
+    android:paddingLeft="15dp"
+    android:paddingTop="10dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="9dp"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:divider="@drawable/blank_divider_8"
+    android:showDividers="middle">
+    <com.sec.chaton.widget.ImageTextViewGroup
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        style="@style/ImageTextViewGroupStyle.MultipleButton"/>
+    <com.sec.chaton.widget.ImageTextViewGroup
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        style="@style/ImageTextViewGroupStyle.MultipleButton"/>
+</com.sec.common.widget.HoneycombLinearLayout>

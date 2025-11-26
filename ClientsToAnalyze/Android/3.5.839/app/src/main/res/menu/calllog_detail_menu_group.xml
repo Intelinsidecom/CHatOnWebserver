@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/actionbar_ic_delete"
+        android:id="@+id/menu_calllog_delete"
+        android:title="@string/menu_buddy_delete"/>
+    <item
+        android:id="@+id/menu_calllog_show_member"
+        android:title="@string/call_btn_member_list"/>
+</menu>

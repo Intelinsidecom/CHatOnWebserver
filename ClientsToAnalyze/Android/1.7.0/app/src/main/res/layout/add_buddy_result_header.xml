@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/SubTitleStyle">
+    <TextView
+        android:id="@+id/subTitleResult"
+        android:text="@string/results"
+        style="@style/SubTitleTextStyle"/>
+</LinearLayout>

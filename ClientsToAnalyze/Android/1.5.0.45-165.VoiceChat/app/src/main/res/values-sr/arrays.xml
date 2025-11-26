@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>Podrazumevana slika</item>
+        <item>Slike</item>
+        <item>Slikaj</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Slike</item>
+        <item>Slikaj</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Izmeni</item>
+        <item>Obriši</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>Slika</item>
+        <item>Video uživo</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Pređi na video</item>
+        <item>Sakrij video</item>
+    </array>
+</resources>

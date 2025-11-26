@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:title="@string/block_spam"
+        android:key="pref_key_spam_option_enable"
+        android:summary="@string/block_reported_numbers"
+        android:defaultValue="true"/>
+    <Preference
+        android:title="@string/pref_title_manage_spam_numbers"
+        android:key="pref_key_spam_num_add"
+        android:summary="@string/spam_blocknumber_summary"/>
+</PreferenceScreen>

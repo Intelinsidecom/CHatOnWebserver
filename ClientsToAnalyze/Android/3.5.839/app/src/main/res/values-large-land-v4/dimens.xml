@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="intro_chaton_image_height">378dp</dimen>
+    <dimen name="intro_chaton_image_width">348dp</dimen>
+    <dimen name="intro_chaton_logo_height">52dp</dimen>
+    <dimen name="intro_chaton_logo_width">204dp</dimen>
+</resources>

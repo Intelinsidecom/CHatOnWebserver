@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="pref_setting_legacy_pref_screen">
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/manage_buddies"
+        android:key="pref_setting_legacy_manage_buddies"/>
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/setting_category_privacy"
+        android:key="pref_setting_legacy_privacy"/>
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/setting_alerts"
+        android:key="pref_setting_legacy_alerts"/>
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/chat_display_settings"
+        android:key="pref_setting_legacy_chat_display"/>
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/call_settings"
+        android:key="pref_setting_legacy_call_settings"/>
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/account_connected_device"
+        android:key="pref_setting_legacy_connected_devices"/>
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/backup"
+        android:key="pref_setting_backup"/>
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/buddy_contact_sync"
+        android:key="pref_setting_legacy_contact_sync"/>
+    <com.sec.chaton.settings.AboutNewNotice
+        android:layout="@layout/preference_item_common"
+        android:title="@string/settings_about_service"
+        android:key="pref_setting_legacy_about"/>
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/deregister_device"
+        android:key="pref_setting_legacy_delete_account"/>
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/settings_send_log"
+        android:key="pref_setting_legacy_send_log"/>
+</PreferenceScreen>

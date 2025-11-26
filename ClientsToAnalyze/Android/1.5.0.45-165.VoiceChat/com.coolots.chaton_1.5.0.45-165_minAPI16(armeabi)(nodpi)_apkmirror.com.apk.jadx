@@ -1,0 +1,51 @@
+{
+  "projectVersion": 2,
+  "files": [
+    "..\\com.coolots.chaton_1.5.0.45-165_minAPI16(armeabi)(nodpi)_apkmirror.com.apk"
+  ],
+  "treeExpansionsV2": [
+    "p:com.samsung.voiceservice"
+  ],
+  "codeData": {
+    "comments": [],
+    "renames": []
+  },
+  "openTabs": [
+    {
+      "type": "class",
+      "tabPath": "com.sds.coolots.d",
+      "subPath": "java",
+      "caret": 112,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.samsung.voiceservice.BufferStream",
+      "subPath": "java",
+      "caret": 250,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": true,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    }
+  ],
+  "cacheDir": "C:\\Users\\JD-16\\AppData\\Local\\skylot\\jadx\\cache\\projects\\com.coolots.chaton_1.5.0.45-165_minAPI16(armeabi)(nodpi)_apkmirror.com-12dd9fc085684c31506af345908da413",
+  "enableLiveReload": false,
+  "searchHistory": [],
+  "searchResourcesFilter": "$TEXT",
+  "searchResourcesSizeLimit": 0,
+  "pluginOptions": {}
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@drawable/buddy_item_highlight_xml"
+        style="@style/BuddyListItemLayout">
+        <ImageView
+            android:id="@+id/buddy_child_profile"
+            style="@style/BuddyListItemImage"/>
+        <LinearLayout style="@style/BuddyListItemTextContainer">
+            <TextView
+                android:id="@+id/buddy_child_name"
+                android:layout_marginTop="4dp"
+                style="@style/BuddyListItemTextName"/>
+            <TextView
+                android:id="@+id/buddy_child_status_msg"
+                android:layout_marginBottom="8dp"
+                style="@style/BuddyListItemTextStatus"/>
+        </LinearLayout>
+        <CheckBox
+            android:id="@+id/buddy_child_check"
+            style="@style/BuddyListItemCheck"/>
+    </LinearLayout>
+</FrameLayout>

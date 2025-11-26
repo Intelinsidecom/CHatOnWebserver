@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:src="@drawable/btn_radio_off_pressed_holo_light"
+            android:dither="true"/>
+    </item>
+    <item>
+        <bitmap
+            android:src="@drawable/radio_on_holo_light"
+            android:dither="true"/>
+    </item>
+</layer-list>

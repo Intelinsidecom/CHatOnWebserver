@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>SDatabase</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcore45</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.ObjectModel" />
+    <Reference Include="Windows" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Linq.Expressions" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Reflection" />
+    <Reference Include="System.Runtime.WindowsRuntime" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Text.Encoding.Extensions" />
+    <Reference Include="System.Text.Encoding" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="15dp"
+    android:paddingTop="14dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="9dp"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/skin_bg"
+        android:background="@drawable/btn_change_skin_bg_xml"
+        android:paddingLeft="2dp"
+        android:paddingTop="1dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="4dp"
+        android:layout_width="@dimen/change_skin_item_height"
+        android:layout_height="@dimen/change_skin_item_height"
+        android:src="@drawable/thumb_skin_bg_01"
+        android:scaleType="fitXY"/>
+</LinearLayout>

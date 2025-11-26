@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ICSAlertDialogStyle" parent="">
+        <item name="android:fullDark">@drawable/account_popup_bg</item>
+        <item name="android:topDark">@drawable/popup_top</item>
+        <item name="android:centerDark">@drawable/popup_center</item>
+        <item name="android:bottomDark">@drawable/popup_bottom</item>
+        <item name="android:fullBright">@drawable/account_popup_bg</item>
+        <item name="android:topBright">@drawable/popup_top</item>
+        <item name="android:centerBright">@drawable/popup_center</item>
+        <item name="android:bottomBright">@drawable/popup_bottom</item>
+        <item name="android:bottomMedium">@drawable/popup_bottom</item>
+        <item name="android:centerMedium">@drawable/popup_center</item>
+    </style>
+    <style name="ICSAlertDialogButton" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/bottom_button_text</item>
+        <item name="android:background">@drawable/btn_alert_dialog_xml</item>
+    </style>
+    <style name="ICSAlertDialogListView" parent="@android:style/Widget.ListView">
+        <item name="android:listSelector">@drawable/context_menu_selector</item>
+    </style>
+    <style name="MyAlertDialogTheme" parent="@style/AlertDialog">
+        <item name="android:buttonStyle">@style/ICSAlertDialogButton</item>
+        <item name="android:alertDialogStyle">@style/ICSAlertDialogStyle</item>
+        <item name="android:listViewStyle">@style/ICSAlertDialogListView</item>
+        <item name="android:progressBarStyle">@style/ProgressBar</item>
+        <item name="android:gravity">0x10</item>
+        <item name="android:textColorAlertDialogListItem">@color/alert_dialog_list_item_text</item>
+        <item name="android:buttonBarStyle">@style/MyButtonBarStyle</item>
+        <item name="android:buttonBarButtonStyle">@style/MyButtonBarButtonStyle</item>
+        <item name="android:textAppearanceListItemSmall">@style/TextAppearanceListItemSmall</item>
+    </style>
+    <style name="TextAppearanceListItemSmall" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/alert_dialog_list_item_text</item>
+    </style>
+    <style name="MyButtonBarStyle" parent="@android:style/ButtonBar">
+        <item name="android:background">@null</item>
+        <item name="android:minWidth">278dp</item>
+    </style>
+    <style name="MyButtonBarButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/btn_alert_dialog_xml</item>
+    </style>
+</resources>

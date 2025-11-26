@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/icon"
+        android:drawable="@android:color/transparent"/>
+    <item android:id="@+id/badge">
+        <bitmap
+            android:gravity="top|right"
+            android:src="@drawable/common_new"/>
+    </item>
+</layer-list>

@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Samsung Media Configuration"
+    android:key="media_configuration">
+    <PreferenceCategory
+        android:title="Audio Configuration"
+        android:key="audio_config"
+        android:shouldDisableView="true"/>
+    <PreferenceScreen
+        android:title="Voice Call Setting"
+        android:key="voice_call_setting">
+        <ListPreference
+            android:entries="@array/audio_codec_list"
+            android:title="Choose Audio Codec"
+            android:key="set_audio_codec"
+            android:defaultValue="AMR-WB"
+            android:dialogTitle="Choose Audio Codec"
+            android:entryValues="@array/audio_codec_list_value"/>
+        <ListPreference
+            android:entries="@array/audio_freq_list"
+            android:title="Choose SamplingRate"
+            android:key="set_audio_freq"
+            android:defaultValue="16000"
+            android:dialogTitle="Choose SamplingRate"
+            android:entryValues="@array/audio_freq_list_value"/>
+        <CheckBoxPreference
+            android:title="Use Secure RTP"
+            android:key="set_audio_srtp"
+            android:defaultValue="true"/>
+        <EditTextPreference
+            android:singleLine="true"
+            android:title="Choose SRTP Domain"
+            android:key="set_srtp_domain"
+            android:defaultValue="samsung070.com"/>
+        <EditTextPreference
+            android:singleLine="true"
+            android:title="Choose SRTP PROXY"
+            android:key="set_srtp_proxy"
+            android:defaultValue="dankook.samsung070.com"/>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="Conference Call Setting"
+        android:key="conf_call_setting">
+        <ListPreference
+            android:entries="@array/audio_codec_list"
+            android:title="Choose Audio Codec"
+            android:key="set_audio_codec_mcu"
+            android:defaultValue="AMR-WB"
+            android:dialogTitle="Choose Audio Codec"
+            android:entryValues="@array/audio_codec_list_value"/>
+        <ListPreference
+            android:entries="@array/audio_freq_list"
+            android:title="Choose SamplingRate"
+            android:key="set_audio_freq_mcu"
+            android:defaultValue="16000"
+            android:dialogTitle="Choose SamplingRate"
+            android:entryValues="@array/audio_freq_list_value"/>
+        <CheckBoxPreference
+            android:title="Use Secure RTP"
+            android:key="set_audio_srtp_mcu"
+            android:defaultValue="true"/>
+        <EditTextPreference
+            android:singleLine="true"
+            android:title="Choose SRTP Domain"
+            android:key="set_srtp_domain_mcu"
+            android:defaultValue="stgproxy.coolots.com"/>
+        <EditTextPreference
+            android:singleLine="true"
+            android:title="Choose SRTP PROXY"
+            android:key="set_srtp_proxy_mcu"
+            android:defaultValue="stgproxy.coolots.com"/>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="Common Parameter Setting"
+        android:key="audio_parameter_setting">
+        <PreferenceScreen
+            android:title="Receiver Mode"
+            android:key="internal_spk_mode">
+            <CheckBoxPreference
+                android:title="Use RX LIVEVOLUME"
+                android:key="use_rx_livevolume"
+                android:defaultValue="false"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Rx Volume"
+                android:key="rx_livevolume"
+                android:defaultValue="7"/>
+            <CheckBoxPreference
+                android:title="Use TX LIVEVOLUME"
+                android:key="use_tx_livevolume"
+                android:defaultValue="false"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Tx Volume"
+                android:key="tx_livevolume"
+                android:defaultValue="5"/>
+            <CheckBoxPreference
+                android:title="Use RX AGC"
+                android:key="use_rx_agc"
+                android:defaultValue="false"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Rx AGC"
+                android:key="rx_agc"
+                android:defaultValue="0 0 -7424 -8192"/>
+            <CheckBoxPreference
+                android:title="Use TX AGC"
+                android:key="use_tx_agc"
+                android:defaultValue="false"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Tx AGC"
+                android:key="tx_agc"
+                android:defaultValue="0 0 0 0"/>
+            <CheckBoxPreference
+                android:title="Use RX FILTER"
+                android:key="use_rx_filter"
+                android:defaultValue="false"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Rx Filter"
+                android:key="rx_filter"
+                android:defaultValue="0 0 0 0 0 0 0"/>
+            <CheckBoxPreference
+                android:title="Use TX FILTER"
+                android:key="use_tx_filter"
+                android:defaultValue="false"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Tx Filter"
+                android:key="tx_filter"
+                android:defaultValue="84 290 165 457 -720 1737 14208"/>
+            <CheckBoxPreference
+                android:title="Use RX CNG"
+                android:key="use_rx_cng"
+                android:defaultValue="false"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Rx CNG"
+                android:key="rx_cng"
+                android:defaultValue="1"/>
+            <CheckBoxPreference
+                android:title="Use TX AEC"
+                android:key="use_tx_aec"
+                android:defaultValue="false"/>
+            <PreferenceScreen
+                android:title="Receiver AEC Setting"
+                android:key="aec_setting">
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="Rx Gain"
+                    android:key="aec_rx_gain"
+                    android:defaultValue="256"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="Post Min"
+                    android:key="aec_post_min"
+                    android:defaultValue="11"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="Post Gain"
+                    android:key="aec_post_gain"
+                    android:defaultValue="5"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="Rx Det. ThresHold1"
+                    android:key="aec_rx_detth1st"
+                    android:defaultValue="-35"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="Rx Det. Hangmax1"
+                    android:key="aec_rx_dethangmax1st"
+                    android:defaultValue="20"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="DT GCGain1"
+                    android:key="aec_dt_gcgain1st"
+                    android:defaultValue="16384"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="Rx Det. ThresHold2"
+                    android:key="aec_rx_detth2st"
+                    android:defaultValue="-35"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="Rx Det. Hangmax2"
+                    android:key="aec_rx_dethangmax2st"
+                    android:defaultValue="20"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="DT GCGain2"
+                    android:key="aec_dt_gcgain2st"
+                    android:defaultValue="16384"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="NS ONOFF"
+                    android:key="aec_ns_onoff"
+                    android:defaultValue="1"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="NS Weight"
+                    android:key="aec_weight_ssns"
+                    android:defaultValue="20"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="SSGain"
+                    android:key="aec_ssgain_ns"
+                    android:defaultValue="11"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="NSGain"
+                    android:key="aec_nsgain_ns"
+                    android:defaultValue="21"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="IN Tx Gain"
+                    android:key="aec_in_tx_gain"
+                    android:defaultValue="1024"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="OUT Tx Gain"
+                    android:key="aec_out_tx_gain"
+                    android:defaultValue="1024"/>
+            </PreferenceScreen>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="Speaker Mode"
+            android:key="external_spk_mode">
+            <CheckBoxPreference
+                android:title="Use RX LIVEVOLUME"
+                android:key="use_spk_rx_livevolume"
+                android:defaultValue="false"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Rx Volume"
+                android:key="spk_rx_livevolume"
+                android:defaultValue="9"/>
+            <CheckBoxPreference
+                android:title="Use TX LIVEVOLUME"
+                android:key="use_spk_tx_livevolume"
+                android:defaultValue="false"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Tx Volume"
+                android:key="spk_tx_livevolume"
+                android:defaultValue="3"/>
+            <CheckBoxPreference
+                android:title="Use RX AGC"
+                android:key="use_spk_rx_agc"
+                android:defaultValue="false"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Rx AGC"
+                android:key="spk_rx_agc"
+                android:defaultValue="-2304 1638 -8320 -6144"/>
+            <CheckBoxPreference
+                android:title="Use TX AGC"
+                android:key="use_spk_tx_agc"
+                android:defaultValue="false"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Tx AGC"
+                android:key="spk_tx_agc"
+                android:defaultValue="-1152 0 -8320 -6144"/>
+            <CheckBoxPreference
+                android:title="Use RX FILTER"
+                android:key="use_spk_rx_filter"
+                android:defaultValue="false"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Rx Filter"
+                android:key="spk_rx_filter"
+                android:defaultValue="243 191 120 45 -21 -65 16302"/>
+            <CheckBoxPreference
+                android:title="Use TX FILTER"
+                android:key="use_spk_tx_filter"
+                android:defaultValue="false"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Tx Filter"
+                android:key="spk_tx_filter"
+                android:defaultValue="0 0 0 0 0 0 0"/>
+            <CheckBoxPreference
+                android:title="Use RX VB"
+                android:key="use_spk_rx_vb"
+                android:defaultValue="false"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Rx VB"
+                android:key="spk_rx_vb"
+                android:defaultValue="2 0 8 12"/>
+            <CheckBoxPreference
+                android:title="Use TX AEC"
+                android:key="use_spk_tx_aec"
+                android:defaultValue="false"/>
+            <PreferenceScreen
+                android:title="Speaker AEC Setting"
+                android:key="aec_spk_setting">
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="Rx Gain"
+                    android:key="aec_spk_rx_gain"
+                    android:defaultValue="608"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="Post Min"
+                    android:key="aec_spk_post_min"
+                    android:defaultValue="12"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="Post Gain"
+                    android:key="aec_spk_post_gain"
+                    android:defaultValue="8"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="Rx Det. ThresHold1"
+                    android:key="aec_spk_rx_detth1st"
+                    android:defaultValue="-29"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="Rx Det. Hangmax1"
+                    android:key="aec_spk_rx_dethangmax1st"
+                    android:defaultValue="30"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="DT GCGain1"
+                    android:key="aec_spk_dt_gcgain1st"
+                    android:defaultValue="13107"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="Rx Det. ThresHold2"
+                    android:key="aec_spk_rx_detth2st"
+                    android:defaultValue="-35"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="Rx Det. Hangmax2"
+                    android:key="aec_spk_rx_dethangmax2st"
+                    android:defaultValue="25"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="DT GCGain2"
+                    android:key="aec_spk_dt_gcgain2st"
+                    android:defaultValue="16384"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="NS ONOFF"
+                    android:key="aec_spk_ns_onoff"
+                    android:defaultValue="1"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="NS Weight"
+                    android:key="aec_spk_weight_ssns"
+                    android:defaultValue="20"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="SSGain"
+                    android:key="aec_spk_ssgain_ns"
+                    android:defaultValue="11"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="NSGain"
+                    android:key="aec_spk_nsgain_ns"
+                    android:defaultValue="21"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="IN Tx Gain"
+                    android:key="aec_spk_in_tx_gain"
+                    android:defaultValue="1024"/>
+                <EditTextPreference
+                    android:singleLine="true"
+                    android:title="OUT Tx Gain"
+                    android:key="aec_spk_out_tx_gain"
+                    android:defaultValue="1024"/>
+            </PreferenceScreen>
+        </PreferenceScreen>
+    </PreferenceScreen>
+    <PreferenceCategory
+        android:title="Video Configuration"
+        android:key="video_config"
+        android:shouldDisableView="true"/>
+    <PreferenceScreen
+        android:title="Video Call Setting"
+        android:key="video_call_setting">
+        <PreferenceCategory
+            android:title="Camera Configuration"
+            android:key="camera_config"
+            android:shouldDisableView="true">
+            <ListPreference
+                android:entries="@array/camera_list"
+                android:title="Choose Camera"
+                android:key="select_camera"
+                android:defaultValue="cam_front"
+                android:dialogTitle="Choose Camera"
+                android:entryValues="@array/camera_list_value"/>
+            <ListPreference
+                android:entries="@array/orient_list"
+                android:title="Front Camera Orient"
+                android:key="select_orientation"
+                android:defaultValue="2"
+                android:dialogTitle="Front Camera Orient"
+                android:entryValues="@array/orient_list_value"/>
+            <ListPreference
+                android:entries="@array/orient_list"
+                android:title="Back Camera Orient"
+                android:key="select_orientation_bcamera"
+                android:defaultValue="0"
+                android:dialogTitle="Back Camera Orient"
+                android:entryValues="@array/orient_list_value"/>
+            <ListPreference
+                android:entries="@array/orient_list"
+                android:title="Choose Preview Orient"
+                android:key="select_orientation_preview"
+                android:defaultValue="1"
+                android:dialogTitle="Choose Preview Orient"
+                android:entryValues="@array/orient_list_value"/>
+            <ListPreference
+                android:entries="@array/flipoption_list"
+                android:title="Front Camera Flip"
+                android:key="select_cameraflip"
+                android:defaultValue="1"
+                android:dialogTitle="Front Camera Flip"
+                android:entryValues="@array/flipoption_list_value"/>
+            <ListPreference
+                android:entries="@array/flipoption_list"
+                android:title="Back Camera Flip"
+                android:key="select_cameraflip2"
+                android:defaultValue="0"
+                android:dialogTitle="Back Camera Flip"
+                android:entryValues="@array/flipoption_list_value"/>
+            <ListPreference
+                android:entries="@array/resolution_list"
+                android:title="Choose Resolution"
+                android:key="select_camera_resolution"
+                android:defaultValue="1"
+                android:dialogTitle="Choose Resolution"
+                android:entryValues="@array/resolution_list_value"/>
+            <ListPreference
+                android:entries="@array/fps_list"
+                android:title="Choose FPS"
+                android:key="select_camera_fps"
+                android:defaultValue="24"
+                android:dialogTitle="Choose FPS"
+                android:entryValues="@array/fps_list_value"/>
+            <ListPreference
+                android:entries="@array/wb_list"
+                android:title="Choose WhiteBalance"
+                android:key="select_camera_whitebalance"
+                android:defaultValue="auto"
+                android:dialogTitle="Choose WhiteBalance"
+                android:entryValues="@array/wb_list_value"/>
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:title="Codec Configuration"
+            android:key="codec_config"
+            android:shouldDisableView="true">
+            <ListPreference
+                android:entries="@array/video_codec_list"
+                android:title="Choose Video Codec"
+                android:key="set_video_codec"
+                android:defaultValue="H264"
+                android:dialogTitle="Choose Video Codec"
+                android:entryValues="@array/video_codec_list_value"/>
+            <ListPreference
+                android:entries="@array/fps_list"
+                android:title="Choose FPS"
+                android:key="select_fps"
+                android:defaultValue="24"
+                android:dialogTitle="Choose FPS"
+                android:entryValues="@array/fps_list_value"/>
+            <ListPreference
+                android:entries="@array/bitrate_list"
+                android:title="Choose InitBitRate"
+                android:key="select_initbitrate"
+                android:defaultValue="192000"
+                android:dialogTitle="Choose InitBitRate"
+                android:entryValues="@array/bitrate_list_value"/>
+            <ListPreference
+                android:entries="@array/resolution_list"
+                android:title="Choose Resolution"
+                android:key="select_resolution"
+                android:defaultValue="1"
+                android:dialogTitle="Choose Resolution"
+                android:entryValues="@array/resolution_list_value"/>
+            <ListPreference
+                android:entries="@array/gop_list"
+                android:title="Choose GOP Length"
+                android:key="select_gop"
+                android:defaultValue="1440"
+                android:dialogTitle="Choose GOP Length"
+                android:entryValues="@array/gop_list_value"/>
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:title="QoS Configuration"
+            android:key="qos_config"
+            android:shouldDisableView="true">
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Enter RTCP Interval"
+                android:key="select_rtcp_interval"
+                android:defaultValue="100"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Enter RTCP Bandwidth"
+                android:key="select_rtcp_bandwidth"
+                android:defaultValue="10000"/>
+            <ListPreference
+                android:entries="@array/vfu_list"
+                android:title="Choose VFU"
+                android:key="select_vfu"
+                android:defaultValue="0"
+                android:dialogTitle="Choose VFU"
+                android:entryValues="@array/vfu_list_value"/>
+            <CheckBoxPreference
+                android:title="Use QoS"
+                android:key="set_video_qos"
+                android:defaultValue="true"/>
+            <ListPreference
+                android:entries="@array/bitrate_list"
+                android:title="Choose MinBitRate"
+                android:key="select_bitrate"
+                android:defaultValue="16000"
+                android:dialogTitle="Choose MinBitRate"
+                android:entryValues="@array/bitrate_list_value"/>
+            <ListPreference
+                android:entries="@array/bitrate_list"
+                android:title="Choose MaxBitRate"
+                android:key="select_maxbitrate"
+                android:defaultValue="650000"
+                android:dialogTitle="Choose MaxBitRate"
+                android:entryValues="@array/bitrate_list_value"/>
+            <ListPreference
+                android:entries="@array/resolution_qos_list"
+                android:title="Choose MinResolution"
+                android:key="select_minresol"
+                android:defaultValue="1"
+                android:dialogTitle="Choose MinResolution"
+                android:entryValues="@array/resolution_qos_list_value"/>
+            <ListPreference
+                android:entries="@array/resolution_qos_list"
+                android:title="Choose MaxResolution"
+                android:key="select_maxresol"
+                android:defaultValue="2"
+                android:dialogTitle="Choose MaxResolutions"
+                android:entryValues="@array/resolution_qos_list_value"/>
+            <ListPreference
+                android:entries="@array/bitrate_list"
+                android:title="Choose 3G MinBitRate"
+                android:key="select_bitrate_3g"
+                android:defaultValue="16000"
+                android:dialogTitle="Choose 3G MinBitRate"
+                android:entryValues="@array/bitrate_list_value"/>
+            <ListPreference
+                android:entries="@array/bitrate_list"
+                android:title="Choose 3G MaxBitRate"
+                android:key="select_maxbitrate_3g"
+                android:defaultValue="384000"
+                android:dialogTitle="Choose 3G MaxBitRate"
+                android:entryValues="@array/bitrate_list_value"/>
+            <ListPreference
+                android:entries="@array/resolution_qos_list"
+                android:title="Choose 3G MinResolution"
+                android:key="select_minresol_3g"
+                android:defaultValue="1"
+                android:dialogTitle="Choose 3G MinResolution"
+                android:entryValues="@array/resolution_qos_list_value"/>
+            <ListPreference
+                android:entries="@array/resolution_qos_list"
+                android:title="Choose 3G MaxResolution"
+                android:key="select_maxresol_3g"
+                android:defaultValue="1"
+                android:dialogTitle="Choose 3G MaxResolutions"
+                android:entryValues="@array/resolution_qos_list_value"/>
+            <ListPreference
+                android:entries="@array/fps_list"
+                android:title="Choose MinFPS"
+                android:key="select_minfps"
+                android:defaultValue="5"
+                android:dialogTitle="Choose MinFPS"
+                android:entryValues="@array/fps_list_value"/>
+            <ListPreference
+                android:entries="@array/fps_list"
+                android:title="Choose MaxFPS"
+                android:key="select_maxfps"
+                android:defaultValue="24"
+                android:dialogTitle="Choose MaxFPS"
+                android:entryValues="@array/fps_list_value"/>
+            <CheckBoxPreference
+                android:title="Use FEC"
+                android:key="set_video_fec"
+                android:defaultValue="true"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Choose FEC PTType"
+                android:key="select_fec_payloadtype"
+                android:defaultValue="120"/>
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:title="Transport Configuration"
+            android:key="transport_config"
+            android:shouldDisableView="true">
+            <CheckBoxPreference
+                android:title="Use Secure RTP"
+                android:key="set_video_srtp"
+                android:defaultValue="true"/>
+            <ListPreference
+                android:entries="@array/pktmode_list"
+                android:title="Choose Packetization"
+                android:key="select_pktmode"
+                android:defaultValue="0"
+                android:dialogTitle="Choose Packetization"
+                android:entryValues="@array/pktmode_list_value"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Enter Header Spacing"
+                android:key="select_headerspacing"
+                android:defaultValue="0"/>
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:title="Renderer Configuration"
+            android:key="render_config"
+            android:shouldDisableView="true">
+            <ListPreference
+                android:entries="@array/rotation_list"
+                android:title="Choose Rotation"
+                android:key="select_render_rotate"
+                android:defaultValue="90"
+                android:dialogTitle="Choose Rotation"
+                android:entryValues="@array/rotation_list_value"/>
+            <ListPreference
+                android:entries="@array/rotatedir_list"
+                android:title="Choose Front Rotation Dir"
+                android:key="select_front_rotatedir"
+                android:defaultValue="1"
+                android:dialogTitle="Choose Rotation Dir"
+                android:entryValues="@array/rotatedir_list_value"/>
+            <ListPreference
+                android:entries="@array/rotatedir_list"
+                android:title="Choose Back Rotation Dir"
+                android:key="select_back_rotatedir"
+                android:defaultValue="-1"
+                android:dialogTitle="Choose Back Rotation Dir"
+                android:entryValues="@array/rotatedir_list_value"/>
+            <ListPreference
+                android:entries="@array/rotation_list"
+                android:title="Application Orient"
+                android:key="select_app_orient"
+                android:defaultValue="0"
+                android:dialogTitle="Application Orient"
+                android:entryValues="@array/rotation_list_value"/>
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="Conference Call Setting"
+        android:key="conference_call_setting">
+        <PreferenceCategory
+            android:title="Camera Configuration"
+            android:key="camera_config_mcu"
+            android:shouldDisableView="true">
+            <ListPreference
+                android:entries="@array/camera_list"
+                android:title="Choose Camera"
+                android:key="select_camera_mcu"
+                android:defaultValue="cam_front"
+                android:dialogTitle="Choose Camera"
+                android:entryValues="@array/camera_list_value"/>
+            <ListPreference
+                android:entries="@array/orient_list"
+                android:title="Front Camera Orient"
+                android:key="select_orientation_mcu"
+                android:defaultValue="2"
+                android:dialogTitle="Front Camera Orient"
+                android:entryValues="@array/orient_list_value"/>
+            <ListPreference
+                android:entries="@array/orient_list"
+                android:title="Back Camera Orient"
+                android:key="select_orientation_bcamera_mcu"
+                android:defaultValue="0"
+                android:dialogTitle="Back Camera Orient"
+                android:entryValues="@array/orient_list_value"/>
+            <ListPreference
+                android:entries="@array/orient_list"
+                android:title="Choose Preview Orient"
+                android:key="select_orientation_preview_mcu"
+                android:defaultValue="1"
+                android:dialogTitle="Choose Preview Orient"
+                android:entryValues="@array/orient_list_value"/>
+            <ListPreference
+                android:entries="@array/flipoption_list"
+                android:title="Front Camera Flip"
+                android:key="select_cameraflip_mcu"
+                android:defaultValue="1"
+                android:dialogTitle="Front Camera Flip"
+                android:entryValues="@array/flipoption_list_value"/>
+            <ListPreference
+                android:entries="@array/flipoption_list"
+                android:title="Back Camera Flip"
+                android:key="select_cameraflip2_mcu"
+                android:defaultValue="0"
+                android:dialogTitle="Back Camera Flip"
+                android:entryValues="@array/flipoption_list_value"/>
+            <ListPreference
+                android:entries="@array/resolution_list"
+                android:title="Choose Resolution"
+                android:key="select_camera_resolution_mcu"
+                android:defaultValue="1"
+                android:dialogTitle="Choose Resolution"
+                android:entryValues="@array/resolution_list_value"/>
+            <ListPreference
+                android:entries="@array/fps_list"
+                android:title="Choose FPS"
+                android:key="select_camera_fps_mcu"
+                android:defaultValue="24"
+                android:dialogTitle="Choose FPS"
+                android:entryValues="@array/fps_list_value"/>
+            <ListPreference
+                android:entries="@array/wb_list"
+                android:title="Choose WhiteBalance"
+                android:key="select_camera_whitebalance_mcu"
+                android:defaultValue="auto"
+                android:dialogTitle="Choose WhiteBalance"
+                android:entryValues="@array/wb_list_value"/>
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:title="Codec Configuration"
+            android:key="codec_config_mcu"
+            android:shouldDisableView="true">
+            <ListPreference
+                android:entries="@array/video_codec_list"
+                android:title="Choose Video Codec"
+                android:key="set_video_codec_mcu"
+                android:defaultValue="H264"
+                android:dialogTitle="Choose Video Codec"
+                android:entryValues="@array/video_codec_list_value"/>
+            <ListPreference
+                android:entries="@array/fps_list"
+                android:title="Choose FPS"
+                android:key="select_fps_mcu"
+                android:defaultValue="24"
+                android:dialogTitle="Choose FPS"
+                android:entryValues="@array/fps_list_value"/>
+            <ListPreference
+                android:entries="@array/bitrate_list"
+                android:title="Choose InitBitRate"
+                android:key="select_initbitrate_mcu"
+                android:defaultValue="192000"
+                android:dialogTitle="Choose InitBitRate"
+                android:entryValues="@array/bitrate_list_value"/>
+            <ListPreference
+                android:entries="@array/resolution_list"
+                android:title="Choose Resolution"
+                android:key="select_resolution_mcu"
+                android:defaultValue="1"
+                android:dialogTitle="Choose Resolution"
+                android:entryValues="@array/resolution_list_value"/>
+            <ListPreference
+                android:entries="@array/gop_list"
+                android:title="Choose GOP Length"
+                android:key="select_gop_mcu"
+                android:defaultValue="24"
+                android:dialogTitle="Choose GOP Length"
+                android:entryValues="@array/gop_list_value"/>
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:title="QoS Configuration"
+            android:key="qos_config_mcu"
+            android:shouldDisableView="true">
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Enter RTCP Interval"
+                android:key="select_rtcp_interval_mcu"
+                android:defaultValue="2000"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Enter RTCP Bandwidth"
+                android:key="select_rtcp_bandwidth_mcu"
+                android:defaultValue="500"/>
+            <ListPreference
+                android:entries="@array/vfu_list"
+                android:title="Choose VFU"
+                android:key="select_vfu_mcu"
+                android:defaultValue="0"
+                android:dialogTitle="Choose VFU"
+                android:entryValues="@array/vfu_list_value"/>
+            <CheckBoxPreference
+                android:title="Use QoS"
+                android:key="set_video_qos_mcu"
+                android:defaultValue="true"/>
+            <ListPreference
+                android:entries="@array/bitrate_list"
+                android:title="Choose MinBitRate"
+                android:key="select_bitrate_mcu"
+                android:defaultValue="16000"
+                android:dialogTitle="Choose MinBitRate"
+                android:entryValues="@array/bitrate_list_value"/>
+            <ListPreference
+                android:entries="@array/bitrate_list"
+                android:title="Choose MaxBitRate"
+                android:key="select_maxbitrate_mcu"
+                android:defaultValue="650000"
+                android:dialogTitle="Choose MaxBitRate"
+                android:entryValues="@array/bitrate_list_value"/>
+            <ListPreference
+                android:entries="@array/bitrate_list"
+                android:title="Choose 3G MinBitRate"
+                android:key="select_bitrate_mcu_3g"
+                android:defaultValue="16000"
+                android:dialogTitle="Choose 3G MinBitRate"
+                android:entryValues="@array/bitrate_list_value"/>
+            <ListPreference
+                android:entries="@array/bitrate_list"
+                android:title="Choose 3G MaxBitRate"
+                android:key="select_maxbitrate_mcu_3g"
+                android:defaultValue="384000"
+                android:dialogTitle="Choose 3G MaxBitRate"
+                android:entryValues="@array/bitrate_list_value"/>
+            <ListPreference
+                android:entries="@array/resolution_qos_list"
+                android:title="Choose MinResolution"
+                android:key="select_minresol_mcu"
+                android:defaultValue="1"
+                android:dialogTitle="Choose MinResolution"
+                android:entryValues="@array/resolution_qos_list_value"/>
+            <ListPreference
+                android:entries="@array/resolution_qos_list"
+                android:title="Choose MaxResolution"
+                android:key="select_maxresol_mcu"
+                android:defaultValue="1"
+                android:dialogTitle="Choose MaxResolutions"
+                android:entryValues="@array/resolution_qos_list_value"/>
+            <ListPreference
+                android:entries="@array/resolution_qos_list"
+                android:title="Choose 3G MinResolution"
+                android:key="select_minresol_mcu_3g"
+                android:defaultValue="1"
+                android:dialogTitle="Choose 3G MinResolution"
+                android:entryValues="@array/resolution_qos_list_value"/>
+            <ListPreference
+                android:entries="@array/resolution_qos_list"
+                android:title="Choose 3G MaxResolution"
+                android:key="select_maxresol_mcu_3g"
+                android:defaultValue="1"
+                android:dialogTitle="Choose 3G MaxResolutions"
+                android:entryValues="@array/resolution_qos_list_value"/>
+            <ListPreference
+                android:entries="@array/fps_list"
+                android:title="Choose MinFPS"
+                android:key="select_minfps_mcu"
+                android:defaultValue="1"
+                android:dialogTitle="Choose MinFPS"
+                android:entryValues="@array/fps_list_value"/>
+            <ListPreference
+                android:entries="@array/fps_list"
+                android:title="Choose MaxFPS"
+                android:key="select_maxfps_mcu"
+                android:defaultValue="24"
+                android:dialogTitle="Choose MaxFPS"
+                android:entryValues="@array/fps_list_value"/>
+            <CheckBoxPreference
+                android:title="Use FEC"
+                android:key="set_video_fec_mcu"
+                android:defaultValue="false"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Choose FEC PTType"
+                android:key="select_fec_payloadtype_mcu"
+                android:defaultValue="120"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Choose Level ID"
+                android:key="select_level_id_mcu"
+                android:defaultValue="42801E"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Choose 3G Level ID"
+                android:key="select_level_id_mcu_3g"
+                android:defaultValue="42800D"/>
+            <ListPreference
+                android:entries="@array/bitrate_list"
+                android:title="Choose MCU InitBitRate"
+                android:key="select_remote_initbitrate_mcu"
+                android:defaultValue="700000"
+                android:dialogTitle="Choose MCU InitBitRate"
+                android:entryValues="@array/bitrate_list_value"/>
+            <ListPreference
+                android:entries="@array/bitrate_list"
+                android:title="Choose MCU 3G InitBitRate"
+                android:key="select_remote_initbitrate_mcu_3g"
+                android:defaultValue="384000"
+                android:dialogTitle="Choose MCU 3G InitBitRate"
+                android:entryValues="@array/bitrate_list_value"/>
+            <ListPreference
+                android:entries="@array/fps_list"
+                android:title="Choose MCU FPS"
+                android:key="select_remote_fps_mcu"
+                android:defaultValue="24"
+                android:dialogTitle="Choose MCU FPS"
+                android:entryValues="@array/fps_list_value"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Choose MCU FrameSize"
+                android:key="select_remote_resolution_mcu"
+                android:defaultValue="1200"/>
+            <ListPreference
+                android:entries="@array/quality_list"
+                android:title="Choose MCU Quality"
+                android:key="select_remote_quality_mcu"
+                android:defaultValue="10"
+                android:dialogTitle="Choose MCU Quality"
+                android:entryValues="@array/quality_list_value"/>
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:title="Transport Configuration"
+            android:key="transport_config_mcu"
+            android:shouldDisableView="true">
+            <CheckBoxPreference
+                android:title="Use Secure RTP"
+                android:key="set_video_srtp_mcu"
+                android:defaultValue="true"/>
+            <ListPreference
+                android:entries="@array/pktmode_list"
+                android:title="Choose Packetization"
+                android:key="select_pktmode_mcu"
+                android:defaultValue="1"
+                android:dialogTitle="Choose Packetization"
+                android:entryValues="@array/pktmode_list_value"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Enter Header Spacing"
+                android:key="select_headerspacing_mcu"
+                android:defaultValue="4000"/>
+            <EditTextPreference
+                android:singleLine="true"
+                android:title="Enter Sip Dest Port"
+                android:key="select_sip_dest_port"
+                android:defaultValue="5060"/>
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:title="Renderer Configuration"
+            android:key="render_config_mcu"
+            android:shouldDisableView="true">
+            <ListPreference
+                android:entries="@array/rotation_list"
+                android:title="Choose Rotation"
+                android:key="select_render_rotate_mcu"
+                android:defaultValue="90"
+                android:dialogTitle="Choose Rotation"
+                android:entryValues="@array/rotation_list_value"/>
+            <ListPreference
+                android:entries="@array/rotatedir_list"
+                android:title="Choose Front Rotation Dir"
+                android:key="select_front_rotatedir_mcu"
+                android:defaultValue="1"
+                android:dialogTitle="Choose Front Rotation Dir"
+                android:entryValues="@array/rotatedir_list_value"/>
+            <ListPreference
+                android:entries="@array/rotatedir_list"
+                android:title="Choose Back Rotation Dir"
+                android:key="select_back_rotatedir_mcu"
+                android:defaultValue="-1"
+                android:dialogTitle="Choose Back Rotation Dir"
+                android:entryValues="@array/rotatedir_list_value"/>
+            <ListPreference
+                android:entries="@array/rotation_list"
+                android:title="Application Orient"
+                android:key="select_app_orient_mcu"
+                android:defaultValue="0"
+                android:dialogTitle="Application Orient"
+                android:entryValues="@array/rotation_list_value"/>
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="Common Parameter Setting"
+        android:key="video_parameter_setting">
+        <ListPreference
+            android:entries="@array/debuglevel_list"
+            android:title="Choose Debug Level"
+            android:key="select_debuglevel"
+            android:defaultValue="0"
+            android:dialogTitle="Choose Debug Level"
+            android:entryValues="@array/debuglevel_list_value"/>
+        <CheckBoxPreference
+            android:title="Save VideoStream"
+            android:key="save_videostream"/>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="Sharescreen Param Setting"
+        android:key="sharescreen_parameter_setting">
+        <EditTextPreference
+            android:singleLine="true"
+            android:title="Choose Sharescreen Width"
+            android:key="select_sharescreen_width"
+            android:defaultValue="576"/>
+        <EditTextPreference
+            android:singleLine="true"
+            android:title="Choose Sharescreen Height"
+            android:key="select_sharescreen_height"
+            android:defaultValue="1024"/>
+        <EditTextPreference
+            android:singleLine="true"
+            android:title="Choose Sharescreen Init Bitrate"
+            android:key="select_sharescreen_init_bitrate"
+            android:defaultValue="384000"/>
+        <EditTextPreference
+            android:singleLine="true"
+            android:title="Choose Sharescreen Min Bitrate"
+            android:key="select_sharescreen_min_bitrate"
+            android:defaultValue="16000"/>
+        <EditTextPreference
+            android:singleLine="true"
+            android:title="Choose Sharescreen Max Bitrate"
+            android:key="select_sharescreen_max_bitrate"
+            android:defaultValue="700000"/>
+        <EditTextPreference
+            android:singleLine="true"
+            android:title="Choose Sharescreen Min FPS"
+            android:key="select_sharescreen_min_fps"
+            android:defaultValue="5"/>
+        <EditTextPreference
+            android:singleLine="true"
+            android:title="Choose Sharescreen Max FPS"
+            android:key="select_sharescreen_max_fps"
+            android:defaultValue="10"/>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="Sharescreen(MCU) Param Setting"
+        android:key="sharescreen_parameter_setting_mcu">
+        <EditTextPreference
+            android:singleLine="true"
+            android:title="Choose Sharescreen Width"
+            android:key="select_sharescreen_width_mcu"
+            android:defaultValue="576"/>
+        <EditTextPreference
+            android:singleLine="true"
+            android:title="Choose Sharescreen Height"
+            android:key="select_sharescreen_height_mcu"
+            android:defaultValue="1024"/>
+        <EditTextPreference
+            android:singleLine="true"
+            android:title="Choose Sharescreen Init Bitrate"
+            android:key="select_sharescreen_init_bitrate_mcu"
+            android:defaultValue="384000"/>
+        <EditTextPreference
+            android:singleLine="true"
+            android:title="Choose Sharescreen Min Bitrate"
+            android:key="select_sharescreen_min_bitrate_mcu"
+            android:defaultValue="16000"/>
+        <EditTextPreference
+            android:singleLine="true"
+            android:title="Choose Sharescreen Max Bitrate"
+            android:key="select_sharescreen_max_bitrate_mcu"
+            android:defaultValue="700000"/>
+        <EditTextPreference
+            android:singleLine="true"
+            android:title="Choose Sharescreen Min FPS"
+            android:key="select_sharescreen_min_fps_mcu"
+            android:defaultValue="5"/>
+        <EditTextPreference
+            android:singleLine="true"
+            android:title="Choose Sharescreen Max FPS"
+            android:key="select_sharescreen_max_fps_mcu"
+            android:defaultValue="10"/>
+        <EditTextPreference
+            android:singleLine="true"
+            android:title="Choose Level ID"
+            android:key="select_sharescreen_level_id_mcu"
+            android:defaultValue="42801E"/>
+    </PreferenceScreen>
+</PreferenceScreen>

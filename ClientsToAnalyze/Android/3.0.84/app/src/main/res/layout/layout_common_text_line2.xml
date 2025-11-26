@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/rootLayout"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="38dp">
+    <com.sec.chaton.widget.AdaptableTextView
+        android:textAppearance="@style/TextAppearance.List04"
+        android:gravity="center_vertical"
+        android:id="@+id/text1"
+        android:background="?attr/itemBackground"
+        android:paddingLeft="25dp"
+        android:paddingRight="17dp"
+        android:duplicateParentState="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:drawablePadding="10dp"
+        android:layout_weight="1"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_dip"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:src="#dedede"/>
+</LinearLayout>

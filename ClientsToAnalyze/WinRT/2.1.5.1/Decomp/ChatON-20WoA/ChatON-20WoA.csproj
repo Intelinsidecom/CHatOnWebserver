@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>ChatON WoA</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcore45</TargetFramework>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Windows" />
+    <Reference Include="System.ObjectModel" />
+    <Reference Include="SDatabase">
+      <HintPath>..\Extract\SDatabase.dll</HintPath>
+    </Reference>
+    <Reference Include="ProtoBuffer">
+      <HintPath>..\Extract\ProtoBuffer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Runtime.WindowsRuntime" />
+    <Reference Include="System.Runtime.WindowsRuntime.UI.Xaml" />
+    <Reference Include="System.Linq.Expressions" />
+    <Reference Include="System.Text.RegularExpressions" />
+    <Reference Include="System.Xml.XDocument" />
+    <Reference Include="System.Net.Primitives" />
+    <Reference Include="SharpCompress.WindowsStore">
+      <HintPath>..\Extract\SharpCompress.WindowsStore.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO" />
+    <Reference Include="System.Globalization" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Requests" />
+    <Reference Include="System.Resources.ResourceManager" />
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Linq" />
+    <Reference Include="Samsung.Windows.PDI">
+      <HintPath>..\Extract\Samsung.Windows.PDI.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection" />
+    <Reference Include="System.Xml.XmlSerializer" />
+    <Reference Include="System.Text.Encoding" />
+    <Reference Include="System.Runtime.Serialization.Json" />
+    <Reference Include="System.Xml.ReaderWriter" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization.Primitives" />
+    <Reference Include="System.Text.Encoding.Extensions" />
+  </ItemGroup>
+</Project>

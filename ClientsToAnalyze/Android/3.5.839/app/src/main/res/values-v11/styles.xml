@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActionBarBaseStyle" parent="@android:style/Widget.Holo.ActionBar">
+    </style>
+    <style name="ActionButtonBaseStyle" parent="@android:style/Widget.Holo.ActionButton">
+    </style>
+    <style name="SpinnerBaseStyle" parent="@android:style/Widget.Holo.Light.Spinner">
+    </style>
+    <style name="SpinnerItemBaseStyle" parent="@android:style/Widget.Holo.Light.TextView.SpinnerItem">
+    </style>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_handle_vertical</item>
+        <item name="android:windowActionBar">true</item>
+    </style>
+</resources>

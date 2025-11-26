@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/actionbar_ic_filter"
+        android:id="@+id/font_filter"
+        android:orderInCategory="1"
+        android:title="@string/font_download_list_title"
+        android:showAsAction="always"/>
+    <item
+        android:icon="@drawable/actionbar_ic_download"
+        android:id="@+id/font_downloadAll"
+        android:orderInCategory="1"
+        android:title="@string/setting_download_all_title"
+        android:showAsAction="always"/>
+</menu>

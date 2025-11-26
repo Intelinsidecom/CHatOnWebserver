@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>Predvolený obrázok</item>
+        <item>Obrázky</item>
+        <item>Fotografovať</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Obrázky</item>
+        <item>Fotografovať</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Upraviť</item>
+        <item>Odstrániť</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>Obrázok</item>
+        <item>Živé video</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Prepnúť video</item>
+        <item>Skryť video</item>
+    </array>
+</resources>

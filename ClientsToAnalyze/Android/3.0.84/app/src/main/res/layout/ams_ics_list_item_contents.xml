@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="@dimen/ams_content_image_size"
+    android:layout_height="@dimen/ams_content_image_size">
+    <RelativeLayout
+        android:background="@color/actionbar_tab_background_color"
+        android:visibility="visible"
+        android:layout_width="@dimen/ams_content_image_size"
+        android:layout_height="@dimen/ams_content_image_size"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/image_ams_image"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_checkbox"
+        android:visibility="visible"
+        android:layout_width="@dimen/ams_content_image_size"
+        android:layout_height="@dimen/ams_content_image_size"
+        android:layout_centerInParent="true">
+        <CheckBox
+            android:id="@+id/checkbox_delete"
+            android:focusable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

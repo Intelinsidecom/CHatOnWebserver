@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/layout_basic_stamp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/image_basic_stamp"
+            android:padding="2.5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="top|right"
+        android:id="@+id/layout_remove_stamp"
+        android:visibility="invisible"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:layout_gravity="top|right"
+            android:id="@+id/image_remove_stamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/popup_emoticon_remove"
+            android:adjustViewBounds="true"/>
+    </LinearLayout>
+</RelativeLayout>

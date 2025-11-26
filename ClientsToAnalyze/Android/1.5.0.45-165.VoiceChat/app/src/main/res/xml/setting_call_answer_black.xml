@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:layout="@layout/user_preference_screen_checkbox_two_line_black"
+        android:title="@string/preference_answer_key"
+        android:key="pref_call_answer_home_key"
+        android:summary="@string/preference_answer_key_summary"
+        android:defaultValue="false"/>
+    <CheckBoxPreference
+        android:layout="@layout/user_preference_screen_checkbox_two_line_black"
+        android:title="@string/preference_answer_call_using_voice"
+        android:key="voice_input_control"
+        android:summary="@string/preference_answer_call_using_voice_summary"
+        android:defaultValue="false"/>
+    <CheckBoxPreference
+        android:layout="@layout/user_preference_screen_checkbox_two_line_black"
+        android:title="@string/preference_power_key"
+        android:key="pref_call_end_power_key"
+        android:summary="@string/preference_power_key_summary"
+        android:defaultValue="false"/>
+</PreferenceScreen>

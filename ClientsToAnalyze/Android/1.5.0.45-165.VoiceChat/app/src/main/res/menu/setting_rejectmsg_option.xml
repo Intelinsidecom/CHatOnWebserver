@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_action_search"
+        android:id="@+id/setting_rejectmsg_option_add_id"
+        android:orderInCategory="0"
+        android:title=""
+        android:showAsAction="always"/>
+</menu>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:background="@drawable/spinner_dropdown_selector"
+    android:layout_width="match_parent"
+    android:layout_height="41dp">
+    <TextView
+        android:textSize="16dp"
+        android:textColor="#ff576d6f"
+        android:id="@+id/textTranslateLang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:shadowDx="0"
+        android:shadowDy="-1"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

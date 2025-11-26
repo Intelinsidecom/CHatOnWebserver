@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="165"
+    android:versionName="1.5.0.45"
+    package="com.coolots.chaton">
+    <uses-sdk android:minSdkVersion="16"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.INJECT_EVENTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.email.permission.READ_ATTACHMENT"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE">
+        <group gid="media_rw"/>
+    </uses-permission>
+    <uses-permission android:name="com.samsung.android.permission.SSRM_NOTIFICATION_PERMISSION"/>
+    <application
+        android:theme="@android:style/Theme.DeviceDefault.Light"
+        android:label="@string/app_name"
+        android:icon="@drawable/chat_on_v"
+        android:name="CoolotsChatOn"
+        android:debuggable="false"
+        android:largeHeap="true"
+        description="Added on application of ChatON. ChatON V supplies VoIP and VT features between ChatON users">
+        <meta-data
+            android:name="com.samsung.android.sdk.multiwindow.enable"
+            android:value="true"/>
+        <meta-data
+            android:name="com.samsung.android.sdk.multiwindow.multiinstance.enable"
+            android:value="true"/>
+        <meta-data
+            android:name="com.samsung.android.sdk.multiwindow.penwindow.enable"
+            android:value="true"/>
+        <meta-data
+            android:name="com.sec.android.sdk.cover.MODE"
+            android:value="1"/>
+        <provider
+            android:name="com.coolots.chaton.common.util.ChatONContentProvider"
+            android:readPermission="com.coolots.chatonv.permission.provider.LIVE_SHARE"
+            android:writePermission="com.coolots.chatonv.permission.provider.LIVE_SHARE"
+            android:authorities="com.coolots.chaton"/>
+        <activity
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
+            android:name="com.coolots.chaton.call.view.RetryCallBGActivity"/>
+        <activity
+            android:theme="@style/transparent_style"
+            android:name="com.coolots.chaton.common.view.InformationActivity"
+            android:launchMode="singleInstance"
+            android:configChanges="screenSize|orientation|locale"/>
+        <activity
+            android:theme="@style/Theme.CustomTranslucent"
+            android:name="com.coolots.chaton.common.view.ChatONNativeCallActivity"
+            android:taskAffinity=""
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:configChanges="locale">
+            <intent-filter>
+                <action android:name="com.coolots.chaton.CALL_SHORTCUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="tel"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.coolots.chaton.CALL_BUDDY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sds.vapp.voipcall"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sds.vapp.voipcall.saccount"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
+            android:name="com.coolots.chaton.call.view.LiveShareViewActivity"
+            android:exported="false"
+            android:taskAffinity=""
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:configChanges="screenSize|orientation|keyboard|locale"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.coolots.chaton.test.StressTestActivity"/>
+        <activity
+            android:label="@string/notification_rejectMsgTitle"
+            android:name="com.coolots.chaton.setting.view.rejectmsg.ChatONRejectMsgActivity"
+            android:exported="false"
+            android:configChanges="screenSize|orientation|locale">
+            <intent-filter>
+                <action android:name="com.coolots.chaton.USER_SETTING_SUBPAGE_REJECT_MESSAGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/edit"
+            android:name="com.coolots.chaton.setting.view.rejectmsg.ChatONRejectMsgEditActivity"
+            android:configChanges="screenSize|orientation|keyboard|locale"/>
+        <activity
+            android:label="@string/menu_buddy_delete"
+            android:name="com.coolots.chaton.setting.view.rejectmsg.ChatONRejectMsgDeleteActivity"
+            android:configChanges="screenSize|orientation|keyboard|locale"/>
+        <activity
+            android:label="@string/preference_3_2_title"
+            android:name="com.coolots.chaton.setting.view.callalert.ChatONCallAlertActivity"
+            android:exported="false"
+            android:configChanges="fontScale|screenSize|orientation|keyboard">
+            <intent-filter>
+                <action android:name="com.coolots.chaton.USER_SETTING_SUBPAGE_CALL_ALERT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/preference_6_2_title"
+            android:name="com.coolots.chaton.setting.view.aboutchatoncall.ChatONAboutChatONCallActivity"
+            android:configChanges="screenSize|orientation|keyboard|locale">
+            <intent-filter>
+                <action android:name="com.coolots.chaton.USER_SETTING_SUBPAGE_ABOUNT_CHATON_CALL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.coolots.chaton.setting.view.aboutchatoncall.ChatONOpenSourceLicenceActivity"
+            android:configChanges="screenSize|orientation|keyboard|locale">
+            <intent-filter>
+                <action android:name="com.coolots.chaton.USER_SETTING_SUBPAGE_OPEN_SOURCE_LICENCE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/preference_3_title"
+            android:name="com.coolots.chaton.setting.view.callsettings.SettingCallSettingsActivity"
+            android:configChanges="screenSize|orientation|keyboard">
+            <intent-filter>
+                <action android:name="com.coolots.chaton.USER_SETTING_SUBPAGE_CALL_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/preference_data_network_usage"
+            android:name="com.coolots.chaton.setting.view.datausage.SettingDataUsageActivity"
+            android:exported="true"
+            android:configChanges="screenSize|orientation|keyboard">
+            <intent-filter>
+                <action android:name="com.coolots.chaton.USER_SETTING_SUBPAGE_DATA_USGAE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/preference_call_answering_ending_title"
+            android:name="com.coolots.chaton.setting.view.callanswer.SettingCallAnswerActivity"
+            android:exported="false"
+            android:configChanges="screenSize|orientation|keyboard">
+            <intent-filter>
+                <action android:name="com.coolots.chaton.USER_SETTING_SUBPAGE_CALL_ANSWER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.CustomTranslucentBlack"
+            android:label=""
+            android:name="com.coolots.chaton.call.view.SIPCallActivity"
+            android:exported="false"
+            android:taskAffinity=""
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:configChanges="screenSize|orientation|keyboard|locale"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.coolots.chaton.action.SIPCALL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.CustomTranslucentBlack"
+            android:label=""
+            android:name="com.coolots.chaton.call.view.VoiceCallActivity"
+            android:exported="false"
+            android:taskAffinity=""
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:configChanges="screenSize|orientation|keyboard|locale"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.coolots.chaton.action.VOICECALL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.CustomTranslucentBlack"
+            android:name="com.coolots.chaton.call.view.LiveScreenShareActivity"
+            android:exported="false"
+            android:taskAffinity=""
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:configChanges="screenSize|orientation|keyboard|locale"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.coolots.chaton.action.VOICECALL"/>
+                <action android:name="com.coolots.chaton.action.VIDEOCALL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.CustomTranslucentBlack"
+            android:name="com.coolots.chaton.call.view.VideoCallActivity"
+            android:exported="false"
+            android:taskAffinity=""
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:configChanges="screenSize|orientation|keyboard|locale"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.coolots.chaton.action.VIDEOCALL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/FullscreenDialog"
+            android:name="com.coolots.chaton.call.view.layout.video.VideoCallDefaultImageDialog"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"
+            android:screenOrientation="nosensor"/>
+        <receiver
+            android:name="com.coolots.chaton.VoIPBroadcastReceiver"
+            android:permission="com.coolots.chatonv.permission.VoIPBroadcastReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.sds.coolots.broadcast.VOIPACTION"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.coolots.chaton.service.CoolotsService"/>
+        <service
+            android:name="com.coolots.watch.service.WatchManagerService"
+            android:permission="com.coolots.chatonv.permission.WatchmanagerService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.coolots.watch.service.watchmanagerservice"/>
+            </intent-filter>
+        </service>
+        <receiver
+            android:name="com.coolots.chaton.service.StartupReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.coolots.chaton.SPPBroadcastReceiver">
+            <intent-filter>
+                <action android:name="20885e963697374d"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.coolots.chaton.SPPRegistrationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.sec.spp.RegistrationChangedAction"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:label="SEC Configuration"
+            android:name="SECConfig"
+            android:exported="false"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="com.coolots.chaton.action.SECCONFIG"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="LogSenderActivityy"
+            android:name="com.coolots.chaton.common.view.LogSenderActivity"
+            android:exported="false"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.android.intentsender.sendintent"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.coolots.chaton.common.view.DeleteAccountActivity"
+            android:configChanges="screenSize|orientation|keyboard|locale"/>
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.coolots.chaton"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.coolots.chaton.GCMIntentService"/>
+        <activity
+            android:theme="@style/Theme.CustomTranslucentBlack"
+            android:name="com.coolots.chaton.call.screenshare.activity.ScreenShareActivity"
+            android:exported="false"
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:configChanges="screenSize|orientation|keyboard|locale"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:hardwareAccelerated="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.CustomTranslucentBlack"
+            android:name="com.coolots.chaton.call.screenshare.DocsViewActivity"
+            android:exported="false"
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:configChanges="screenSize|orientation|keyboard|locale"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:hardwareAccelerated="false"/>
+        <activity
+            android:theme="@style/Theme.CustomTranslucentBlack"
+            android:name="com.coolots.chaton.call.screenshare.filepicker.FilePickerActivity"
+            android:exported="false"
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:configChanges="screenSize|orientation|keyboard|locale"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:hardwareAccelerated="false"/>
+        <uses-permission android:name="android.permission.WRITE_OWNER_DATA"/>
+        <uses-permission android:name="android.permission.READ_OWNER_DATA"/>
+        <service android:name="com.coolots.chaton.call.screenshare.ScreenShareService">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.coolots.chaton.call.screenshare.util.ScreenShareMessageReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.WAP_PUSH_RECEIVED"/>
+                <data android:mimeType="application/vnd.wap.mms-message"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.chaton.chat.PUSH_RECEIVED"/>
+                <data android:scheme="com.coolots.chaton"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.STATUS_BAR"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REMOVED"/>
+    <uses-permission android:name="com.coolots.permission.COOLOTS"/>
+    <permission
+        android:name="com.coolots.permission.COOLOTS"
+        android:protectionLevel="normal"/>
+    <permission
+        android:name="com.coolots.chatonv.permission.provider.LIVE_SHARE"
+        android:protectionLevel="normal"
+        description="Allows the ChatON application to access the Content Provider and to use it to linkage with ChatON V"/>
+    <uses-permission android:name="com.coolots.chatonv.permission.provider.LIVE_SHARE"/>
+    <permission
+        android:name="com.coolots.chatonv.permission.VoIPBroadcastReceiver"
+        android:protectionLevel="signatureOrSystem"
+        description="Signed application and android system can access VoIPBroadcastReceiver"/>
+    <uses-permission android:name="com.coolots.chatonv.permission.VoIPBroadcastReceiver"/>
+    <permission
+        android:name="com.coolots.chatonv.permission.WatchmanagerService"
+        android:protectionLevel="normal"
+        description="Allows the ChatONW Provider to access the WatchManagerService"/>
+    <uses-permission android:name="com.coolots.chatonv.permission.WatchmanagerService"/>
+    <uses-permission android:name="com.samsung.appcessory.chatonw.provider.permission.VOIP_MANAGER"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.coolots.chaton.permission.C2D_MESSAGE"/>
+    <permission
+        android:name="com.coolots.chaton.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"
+        description="ChatON V defines this permission to be provided with Google Push Service"/>
+    <uses-permission android:name="com.sec.chaton.TOKEN_b50bc9754e18739b944c801f4dc0c9d7534ec653b0adf68e87cc615ee03182a2dab50c4cdbb94d6e58e49621eae4b1a2bf7a6dc8ce60ed91d63083fd80810d94d16329fb9530a0dec5909d849227a7b3797133b532d3f60e6d53290fa1156a1fc8493ff65901bd9953502543618ae61c4e4224a9cda49128d0232cd76acb81e2"/>
+    <meta-data
+        android:name="android.nfc.disable_beam_default"
+        android:value="true"/>
+    <uses-permission android:name="android.permission.RECEIVE_MMS"/>
+</manifest>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>Noklusējuma attēls</item>
+        <item>Attēli</item>
+        <item>Fotografēt</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Attēli</item>
+        <item>Fotografēt</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Rediģēt</item>
+        <item>Dzēst</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>Attēls</item>
+        <item>Tiešr. video</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Rādīt video</item>
+        <item>Paslēpt video</item>
+    </array>
+</resources>

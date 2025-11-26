@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:background="@drawable/co_title_bar"
+        android:paddingLeft="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="@string/settings_chat_view_font_size"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_weight="1">
+        <include layout="@layout/layout_skin_chatroom"/>
+    </ScrollView>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"/>
+    <LinearLayout
+        android:id="@+id/vcalendar_receive_menu_bar"
+        style="@style/MenuBarContainer">
+        <Button
+            android:id="@+id/save_viewsize"
+            android:text="@string/save"
+            style="@style/MenuBarButton"/>
+        <Button
+            android:id="@+id/btnCancel"
+            android:text="@string/cancel"
+            style="@style/MenuBarButton"/>
+    </LinearLayout>
+</LinearLayout>

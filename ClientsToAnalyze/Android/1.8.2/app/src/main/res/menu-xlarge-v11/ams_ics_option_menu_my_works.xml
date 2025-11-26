@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_group_buttons">
+        <item
+            android:icon="@drawable/ams_ics_selector_title_ic_delete"
+            android:id="@+id/menu_btn_delete"
+            android:title="@string/ams_btn_delete"
+            android:showAsAction="withText|ifRoom"/>
+        <item
+            android:icon="@drawable/ams_ics_selector_title_ic_cancel"
+            android:id="@+id/menu_btn_cancel"
+            android:title="@string/ams_btn_cancel"
+            android:showAsAction="withText|ifRoom"/>
+    </group>
+</menu>

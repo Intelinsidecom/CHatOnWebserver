@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sec.chaton.widget.AdaptableEditText
+        android:id="@+id/search_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:singleLine="true"
+        android:layout_weight="1"
+        android:imeOptions="flagNoExtractUi|actionSearch"/>
+    <ImageButton
+        android:id="@+id/search_icon"
+        android:background="?attr/itemBackground"
+        android:layout_width="46dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/search_icon"/>
+</merge>

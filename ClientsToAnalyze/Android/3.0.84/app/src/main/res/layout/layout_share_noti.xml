@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:gravity="left"
+        android:id="@+id/notice_contents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="12dp"
+        android:text="@string/animessage_popup"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp">
+        <CheckBox
+            android:id="@+id/checkbox_never_show_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="8dp"/>
+        <TextView
+            android:textSize="16dp"
+            android:textColor="#80000000"
+            android:id="@+id/text_never_show_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ams_never_show_again"/>
+    </LinearLayout>
+</LinearLayout>

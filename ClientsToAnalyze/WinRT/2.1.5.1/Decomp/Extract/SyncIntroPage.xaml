@@ -1,0 +1,89 @@
+﻿<Page
+    x:Class="ChatON_WoA.Views.SyncIntroPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:ConnectionId='1' Background="{StaticResource ApplicationPageBackgroundThemeBrush}" x:Name="LayoutRoot"                                           >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="650"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <!-- Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_LOAD_MORE'}"-->
+        <StackPanel Grid.Row="1">
+            <Image Source="/Images/chaton_logo.png" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,94,0,0" Width="184" Height="69"/>
+            <TextBlock TextWrapping="Wrap" Text="{Binding Converter={StaticResource ResourceStringConverter},ConverterParameter=IDS_CHATON_BODY_SYNC_YOUR_SAMSUNG_ACCOUNT}" HorizontalAlignment="Center" Margin="0,26,0,0" FontSize="22.667">
+                <!--<TextBlock.Foreground>
+                    <SolidColorBrush Color="{StaticResource PhoneAccentColor}"/>
+                </TextBlock.Foreground>-->
+            </TextBlock>
+
+            <StackPanel Visibility="{Binding CurrentIndex, Converter={StaticResource IntEqualToVisibility}, ConverterParameter='0'}" Margin="0,20,0,0">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="/Images/Img_samsung_account_1.png" Height="200" VerticalAlignment="Top" Margin="0,30,0,0"/>
+                    <TextBlock TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
+                               Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_THIS_WILL_SYNC_ALL_YOUR_RECEIVED_AND_SENT_MESSAGES_ON_ALL_CONNECTED_DEVICES'}"  
+                               HorizontalAlignment="Left" 
+                               VerticalAlignment="Center" 
+                               TextAlignment="Center"
+                               Style="{StaticResource ResourceKey=TabletTextLargeStyle}"
+                               Width="400"
+                               >
+                        <TextBlock.Foreground>
+                            <SolidColorBrush Color="Gray"/>
+                        </TextBlock.Foreground>
+                    </TextBlock>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Visibility="{Binding CurrentIndex, Converter={StaticResource IntEqualToVisibility}, ConverterParameter='1'}" Margin="0,20,0,0">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Image Source="/Images/Img_samsung_account_2.png" Height="200" VerticalAlignment="Top" Margin="0,30,0,0"/>
+                <TextBlock TextWrapping="Wrap" 
+                           TextTrimming="WordEllipsis"
+                           Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_YOUR_PROFILE_BUDDY_LIST_AND_CHAT_LIST_WILL_BE_UPDATED_ON_ALL_CONNECTED_DEVICES'}" 
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center" 
+                           TextAlignment="Center"
+                           Style="{StaticResource ResourceKey=TabletTextLargeStyle}"
+                           Width="400">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="Gray"/>
+                    </TextBlock.Foreground>
+                </TextBlock>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <Grid Grid.Row="2" Margin="0,0,0,12" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="40">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image Source="/Images/page_dot.png" HorizontalAlignment="Left" Width="12" Margin="0"></Image>
+            <Image Source="/Images/page_dot.png" HorizontalAlignment="Right" Width="12" Margin="0" Grid.Column="1" d:IsHidden="True"></Image>
+            <Image Source="/Images/page_dot_select.png" HorizontalAlignment="Left" Width="12" Margin="0" Visibility="{Binding CurrentIndex, Converter={StaticResource IntEqualToVisibility}, ConverterParameter='0'}"/>
+            <Image Source="/Images/page_dot_select.png" HorizontalAlignment="Right" Width="12" Margin="0" Visibility="{Binding CurrentIndex, Converter={StaticResource IntEqualToVisibility}, ConverterParameter='1'}" Grid.Column="1"></Image>
+        </Grid>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid Grid.Row="3" VerticalAlignment="Top" Margin="0,25,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:ConnectionId='2' x:Name="NextButton"  Visibility="{Binding btnNextVisibility}" Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_SK_NEXT'}" Grid.Column="1" VerticalAlignment="Top" BorderBrush="Gray" Foreground="White"                           HorizontalAlignment="Right" MinWidth="100" Margin="0,0,100,35" Style="{StaticResource WinsetButton}"/>
+            <Button x:ConnectionId='3' x:Name="SignInButton"  Visibility="{Binding btnSigninVisibility}" Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_SIGN_IN'}" Grid.Column="1" VerticalAlignment="Top" BorderBrush="Gray" Foreground="White"                             HorizontalAlignment="Right" MinWidth="100" Margin="0,0,100,35" Style="{StaticResource WinsetButton}"/>
+            <Button x:ConnectionId='4' x:Name="SkipButton"  Visibility="Collapsed" Height="0" Width="0" Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BUTTON_SKIP'}" VerticalAlignment="Top" BorderBrush="Gray" Foreground="Gray" Grid.Column="1"                          HorizontalAlignment="Right" MinWidth="100" Margin="0,0,100,35"/>
+        </Grid>
+    </Grid>
+</Page>
+

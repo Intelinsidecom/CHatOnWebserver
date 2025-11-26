@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1802003"
+    android:versionName="1.8.2"
+    package="com.sec.chaton">
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="13"/>
+    <supports-screens
+        android:smallScreens="false"
+        android:normalScreens="false"
+        android:largeScreens="false"
+        android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_SYNC_STATS"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.sec.chaton.push.BROADCAST_PUSH_MESSAGE"/>
+    <permission
+        android:name="com.sec.chaton.push.BROADCAST_PUSH_MESSAGE"
+        android:protectionLevel="signature"/>
+    <permission
+        android:name="com.sec.chaton.provider.READ_PERMISSION"
+        android:protectionLevel="signature"/>
+    <permission
+        android:name="com.sec.chaton.provider.WRITE_PERMISSION"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.sec.chaton.provider.READ_PERMISSION"/>
+    <uses-permission android:name="com.sec.chaton.provider.WRITE_PERMISSION"/>
+    <permission
+        android:name="com.coolots.permission.COOLOTS"
+        android:protectionLevel="normal"/>
+    <uses-permission android:name="com.coolots.permission.COOLOTS"/>
+    <application
+        android:theme="@style/MainCustomTheme"
+        android:label="@string/app_name"
+        android:icon="@drawable/mainmenu_icon_chat_on"
+        android:name="com.sec.chaton.global.GlobalApplication"
+        android:debuggable="false"
+        android:logo="@drawable/popup_icon_chaton">
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="false"/>
+        <activity
+            android:theme="@style/MainCustomThemeNormalWindowFeature"
+            android:name="com.sec.chaton.HomeActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.chaton.item/vnd.com.chaton.profile"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="text/x-vcard"/>
+                <data android:mimeType="text/x-vCalendar"/>
+                <data android:mimeType="text/x-vnote"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:mimeType="*/*"
+                    android:scheme="chaton"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="chaton"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.chaton.action.ADD_ACCOUNT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sec.chaton.ShortcutActivity"
+            android:configChanges="orientation|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme.Dialog"
+            android:name="com.sec.chaton.UpgradeDialog"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="orientation"/>
+        <activity
+            android:theme="@style/MainCustomTheme.Dialog"
+            android:name="com.sec.chaton.DataPacketDialog"
+            android:excludeFromRecents="true"
+            android:configChanges="orientation"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.buddy.BuddyActivity2"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/chat_profile"
+            android:name="com.sec.chaton.buddy.BuddyChatInfoActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/buddy_select_no_list_select_buddies"
+            android:name="com.sec.chaton.buddy.BuddySelectActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/buddy_select_no_list_select_buddies"
+            android:name="com.sec.chaton.settings.BuddiesSaySettings"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.buddy.BuddyGroupActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.buddy.BuddyGroupEditActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/buddy_profile"
+            android:name="com.sec.chaton.buddy.BuddyProfileActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.settings.ChatSettingsActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.buddy.ViewProfileImage"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/recommendation"
+            android:name="com.sec.chaton.buddy.BuddyRecommendActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.buddy.GroupProfileActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/buddy_list_dialog_addbuddy_title"
+            android:name="com.sec.chaton.buddy.AddBuddyActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.buddy.BuddyProfileEditNameActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.msgbox.MsgboxActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme.NoTitle"
+            android:name="com.sec.chaton.chat.ChatActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/chatview_menu_forward"
+            android:name="com.sec.chaton.forward.ChatForwardActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.chat.invite.Invitebuddy"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/TrunkCustomTheme"
+            android:name="com.sec.chaton.trunk.TrunkActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/TrunkCustomTheme"
+            android:name="com.sec.chaton.trunk.tablet.TrunkTabletActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/trunk_detail_view"
+            android:name="com.sec.chaton.trunk.tablet.TrunkItemTabletActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.sec.chaton.trunk.ContentActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/TrunkCustomTheme"
+            android:name="com.sec.chaton.trunk.CommentActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.sec.chaton.trunk.MediaActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.multimedia.vcard.VCardReadContactActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.multimedia.vcard.ReadVCardActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.multimedia.drawing.ScribbleActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.multimedia.geotag.GeotagActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.multimedia.video.VideoRecordActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomThemeNormalWindowFeature"
+            android:name="com.sec.chaton.multimedia.audio.RecordAudio"
+            android:configChanges="screenSize|orientation|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.multimedia.audio.InsertSound"
+            android:configChanges="orientation|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.multimedia.audio.PlayAudio"
+            android:configChanges="orientation|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.multimedia.vcalendar.VcalendarDetailActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.multimedia.video.VideoPreviewActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.multimedia.image.ViewOriginalImage"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.multimedia.vcalendar.VCalendarListActivity2"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.multimedia.vcalendar.VCalendarDetailActivity2"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.multimedia.doc.FileExplorerActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.multimedia.emoticon.anicon.AniconPackageDetailActivityTest"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.multimedia.emoticon.anicon.AniconActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.multimedia.emoticon.CategoryActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.settings.ActivitySkinDownloads"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomThemeNormalWindowFeatureTranslucent"
+            android:label="@string/provisioning_registration"
+            android:name="com.sec.chaton.registration.AuthenticatorActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomThemeNormalWindowFeature"
+            android:label="@string/provisioning_registration"
+            android:name="com.sec.chaton.registration.ActivityRegist"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize|stateAlwaysVisible"/>
+        <activity
+            android:theme="@style/MainCustomThemeNormalWindowFeature"
+            android:label="@string/provisioning_registration"
+            android:name="com.sec.chaton.registration.ActivityRegistPushName"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/MainCustomThemeNormalWindowFeature.NoTitle"
+            android:label="@string/provisioning_registration"
+            android:name="com.sec.chaton.registration.ActivityProvisioning"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme.HCDialog"
+            android:label="@string/provisioning_registration"
+            android:name="com.sec.chaton.registration.CountryActivity"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/provisioning_registration"
+            android:name="com.sec.chaton.registration.CountryWrite"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomThemeNormalWindowFeature"
+            android:label="@string/provisioning_registration"
+            android:name="com.sec.chaton.registration.ActivityNonSelfSMS"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomThemeNormalWindowFeature"
+            android:name="com.sec.chaton.registration.NewDisclaimerView"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.userprofile.UserProfileActivity"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.userprofile.RelationshipRank2"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.userprofile.RelationUpdate"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/setting_interaction_rank"
+            android:name="com.sec.chaton.userprofile.MyPageRelationshipRank2"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/SettingsCustomTheme"
+            android:label="@string/setting_settings_title"
+            android:name="com.sec.chaton.settings.ActivitySettings"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.settings.ActivityAbout"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.settings.ActivityTellFriends"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.settings.ActivityDisclaimer"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.settings.ActivityWebView"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.settings.RelationHideActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/FontSizePopupStyle"
+            android:name="com.sec.chaton.settings.ActivityChatView"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.settings.ActivityDeleteAccount"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/SettingsCustomTheme"
+            android:label="@string/tab_buddies"
+            android:name="com.sec.chaton.settings.ActivityBuddyView"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/SettingsCustomTheme"
+            android:label="@string/tab_chat"
+            android:name="com.sec.chaton.settings.ActivityChat"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/SettingsCustomTheme"
+            android:label="@string/setting_category_privacy"
+            android:name="com.sec.chaton.settings.ActivityPrivacy"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/SettingsCustomTheme"
+            android:label="@string/setting_header_notifications"
+            android:name="com.sec.chaton.settings.ActivityNoti"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/SettingsCustomTheme"
+            android:label="@string/setting_category_general"
+            android:name="com.sec.chaton.settings.ActivityGeneral"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/SettingsCustomTheme"
+            android:label="@string/setting_header_notifications"
+            android:name="com.sec.chaton.settings.ActivityAlertType2"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.block.BlockActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.memo.WriteMemoActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <provider
+            android:name="com.sec.chaton.provider.ChatONProvider"
+            android:readPermission="com.sec.chaton.provider.READ_PERMISSION"
+            android:writePermission="com.sec.chaton.provider.WRITE_PERMISSION"
+            android:authorities="com.sec.chaton.provider"/>
+        <provider
+            android:name="com.sec.chaton.provider.ChatONProvider2"
+            android:writePermission="com.sec.chaton.provider.WRITE_PERMISSION"
+            android:authorities="com.sec.chaton.provider2"/>
+        <provider
+            android:name="com.sec.chaton.trunk.database.TrunkContentProvider"
+            android:readPermission="com.sec.chaton.provider.READ_PERMISSION"
+            android:writePermission="com.sec.chaton.provider.WRITE_PERMISSION"
+            android:authorities="com.develop.sec.chaton.provider"/>
+        <service
+            android:name="com.sec.chaton.account.ChatONSyncServiceAdapter"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter"/>
+            <meta-data
+                android:name="android.provider.CONTACTS_STRUCTURE"
+                android:resource="@xml/contacts"/>
+        </service>
+        <service
+            android:name="com.sec.chaton.account.ChatONAccountService"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.accounts.AccountAuthenticator"
+                    android:configChanges="orientation|keyboardHidden|keyboard"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator"/>
+        </service>
+        <service
+            android:name="com.sec.chaton.service.FileUtilService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.sec.chaton.service.DELETE_DIR_ACTION"/>
+            </intent-filter>
+        </service>
+        <receiver
+            android:name="com.sec.chaton.receiver.PushReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.sec.chaton.push.NOTIFICATION_ACTION"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="db9fac80131928e1"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.sec.chaton.receiver.NetStateReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.sec.chaton.receiver.PublicPushClientChangedReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.sec.chaton.receiver.PushRegistrationReceiver"
+            android:enabled="true"/>
+        <service
+            android:name="com.sec.chaton.service.PushRegistrationService"
+            android:enabled="true"/>
+        <receiver
+            android:name="com.sec.chaton.receiver.StorageStateReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.sec.chaton.push.PushClientService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.sec.chaton.push.PUSH_CLIENT_SERVICE_ACTION"/>
+            </intent-filter>
+        </service>
+        <receiver
+            android:name="com.sec.chaton.push.receiver.SystemStateMoniter"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.sec.chaton.push.heartbeat.HeartBeat"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.sec.chaton.push.HEARTBEAT_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.sec.chaton.push.receiver.AutoRestartReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.GTALK_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.settings.ActivitySkinChange"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/mypage_edit_profile"
+            android:name="com.sec.chaton.userprofile.UserProfileDetail"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.userprofile.UserProfileImageView"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.userprofile.ProfileRegistPushName"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize|stateAlwaysVisible"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.userprofile.ProfileRegistStatusMessage"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize|stateAlwaysVisible"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/setting_birthday"
+            android:name="com.sec.chaton.userprofile.BirthdayActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme.HCDialog"
+            android:name="com.sec.chaton.userprofile.PhoneNumberPrivacyActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.facebook.FacebookMenuActivity"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/facebook_invitation_card"
+            android:name="com.sec.chaton.facebook.FacebookInvitationCardSelectActivity"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/facebook_invitation_card"
+            android:name="com.sec.chaton.facebook.FacebookInvitationCardWriteActivity"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/AMSTheme.Transparent"
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.AMSFileListActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AMSTheme.Transparent"
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.AMSPlayerActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/AMSTheme.Transparent"
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.AMSImageEditorActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AMSIcsCustomTheme"
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.ics.AMSComposerActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:theme="@style/AMSIcsCustomTheme"
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.ics.AMSPlayerActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AMSIcsCustomTheme"
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.ics.AMSMyWorksActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AMSIcsCustomTheme"
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.ics.AMSSamplesActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AMSIcsCustomTheme"
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.ics.AMSBgFrameSelectionActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AMSIcsCustomTheme"
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.ics.AMSStampSelectionActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AMSIcsCustomTheme"
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.cropimage.ics.CropImage"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AMSCustomTheme"
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.honeycomb.AMSComposerActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:theme="@style/AMSCustomTheme"
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.honeycomb.AMSPlayerActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AMSCustomTheme"
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.honeycomb.AMSMyWorksActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AMSCustomTheme"
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.honeycomb.AMSSamplesActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AMSCustomTheme"
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.honeycomb.AMSBgFrameSelectionActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AMSCustomTheme"
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.honeycomb.AMSStampSelectionActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AMSCustomTheme"
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.cropimage.honeycomb.CropImage"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/media_photo"
+            android:name="com.sec.vip.cropimage.ImageModify"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.util.BlackScreenNotification"
+            android:taskAffinity="com.sec.chaton.noti_activity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:theme="@style/ScreenOnNotificationTheme"
+            android:name="com.sec.chaton.util.ScreenOnNotification"
+            android:taskAffinity="com.sec.chaton.noti_activity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:theme="@style/Theme.Translucent"
+            android:name="com.sec.chaton.util.EnhancedNotification"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.sec.chaton.settings.SettingActivity"
+            android:configChanges="orientation"/>
+        <activity android:name="com.sec.chaton.settings.ActivitySyncNow"/>
+        <activity
+            android:theme="@style/AMSCustomDialogTheme"
+            android:name="com.sec.chaton.ExitAppDialogActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.multimedia.vcard.ContactPicker"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomThemeNormalWindowFeature"
+            android:name="com.sec.chaton.SelectCountry"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <provider
+            android:name="com.sec.chaton.access_token.AccessTokenProvider"
+            android:authorities="com.sec.chaton.access_token.provider"/>
+        <receiver android:name="com.sec.chaton.for3rd.PackageInstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.sec.chaton.for3rd.AddonStatusService"/>
+        <service android:name="com.sec.chaton.for3rd.DataAccessService">
+            <intent-filter>
+                <action android:name="com.sec.chaton.for3rd.DATA_ACCESS_SERVICE"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.sec.chaton.coolots.StatusChangeReceiver">
+            <intent-filter>
+                <action android:name="com.coolots.chaton.account.ACCOUNT_RESULTINFO"/>
+                <action android:name="com.coolots.chaton.SERVICE_POLICY_INFO"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.sec.chaton.coolots.CreateAccountStartService"/>
+        <service android:name="com.sec.chaton.coolots.GetPolicyInfoStartService"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/provisioning_registration"
+            android:name="com.sec.chaton.registration.ActivitySelectLanguage"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme.HCDialog"
+            android:name="com.sec.chaton.registration.SelectLanguage"
+            android:configChanges="orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/label_for_passlock_hint"
+            android:name="com.sec.chaton.settings.ActivityPasswordLockHint"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/settings_password_lock"
+            android:name="com.sec.chaton.settings.ActivityPasswordLockSet"
+            android:launchMode="singleTop"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/user_facebook_account"
+            android:name="com.sec.chaton.settings.tellfriends.FacebookSubMenuActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/facebook_header_post"
+            android:name="com.sec.chaton.settings.tellfriends.FacebookMessageActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/user_facebook_account"
+            android:name="com.sec.chaton.settings.tellfriends.InviteFacebookActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.settings.tellfriends.OauthSignin"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/tellfriends_via_twitter"
+            android:name="com.sec.chaton.settings.tellfriends.TWFollowingsListActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.settings.tellfriends.TwitterSignIn"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/settings_invite_friend"
+            android:name="com.sec.chaton.settings.tellfriends.TellFriendsPreferenceAct"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.settings.tellfriends.TwitterSubMenuActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/twitter_post_message"
+            android:name="com.sec.chaton.settings.tellfriends.TwitterMessageActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/> --&gt;\10
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/twitter_post_message"
+            android:name="com.sec.chaton.settings.tellfriends.WeiboMessageActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.settings.tellfriends.WeiboSignIn"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/tellfriends_via_weibo"
+            android:name="com.sec.chaton.settings.tellfriends.TellFriendsWeiboActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.settings.tellfriends.WeiboSubMenuActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/user_facebook_account"
+            android:name="com.sec.chaton.settings.tellfriends.FacebookFriendsUsingChatONActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:label="@string/user_facebook_account"
+            android:name="com.sec.chaton.settings.tellfriends.SnsFriendsUsingChatOnActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.specialbuddy.SpecialBuddyInfo"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.buddy.SpecialBuddyActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/MainCustomTheme"
+            android:name="com.sec.chaton.buddy.BuddyRecommendListActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+    </application>
+</manifest>

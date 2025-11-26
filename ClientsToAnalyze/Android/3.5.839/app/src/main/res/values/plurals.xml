@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="slide_duration">
+        <item quantity="other">%s secs</item>
+        <item quantity="one">%s sec</item>
+        <item quantity="few">%s secs</item>
+    </plurals>
+    <plurals name="search_results_title">
+        <item quantity="other">%1$s results for &quot;%2$s&quot;</item>
+        <item quantity="one">%1$s result for &quot;%2$s&quot;</item>
+    </plurals>
+</resources>

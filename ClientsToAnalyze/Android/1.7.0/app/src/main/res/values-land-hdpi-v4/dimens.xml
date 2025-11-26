@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ams_ics2_tool_pen_popup_width">314dp</dimen>
+    <dimen name="ams_ics2_tool_pen_popup_height">232dp</dimen>
+    <dimen name="ams_ics2_tool_text_popup_width">314dp</dimen>
+    <dimen name="ams_ics2_tool_text_popup_height">185dp</dimen>
+    <dimen name="ams_ics2_tool_pen_popup_title_height">34dp</dimen>
+    <dimen name="ams_ics2_tool_pen_popup_body_height">198dp</dimen>
+    <dimen name="ams_ics2_tool_pen_popup_pen_style">61dp</dimen>
+    <dimen name="ams_ics2_tool_pen_popup_pen_size">43dp</dimen>
+    <dimen name="ams_ics2_tool_pen_popup_pen_color">90dp</dimen>
+    <dimen name="ams_ics2_tool_text_popup_title_height">34dp</dimen>
+    <dimen name="ams_ics2_tool_text_popup_body_height">151dp</dimen>
+    <dimen name="ams_ics2_tool_text_popup_text_size">61dp</dimen>
+    <dimen name="ams_ics2_tool_text_popup_text_color">90dp</dimen>
+</resources>

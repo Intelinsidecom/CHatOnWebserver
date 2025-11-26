@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="me_popup_dialog_width_percent">60</integer>
+    <integer name="buddy_popup_dialog_width_percent">60</integer>
+    <integer name="buddy_var_popup_dialog_width_percent">90</integer>
+    <integer name="group_popup_dialog_width_percent">60</integer>
+</resources>

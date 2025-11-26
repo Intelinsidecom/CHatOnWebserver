@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:id="@android:id/list"
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:drawSelectorOnTop="false"
+    android:divider="@drawable/list_divider_h"
+    android:footerDividersEnabled="true"/>

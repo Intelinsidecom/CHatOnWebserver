@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/list"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:drawSelectorOnTop="false"
+        android:scrollingCache="false"
+        android:layout_weight="1"
+        android:fastScrollEnabled="true"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/no_item_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@drawable/chaton_list_ic_none2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="24dp"
+            android:textColor="#aaaaaa"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_title_noblock_item"/>
+    </LinearLayout>
+</LinearLayout>

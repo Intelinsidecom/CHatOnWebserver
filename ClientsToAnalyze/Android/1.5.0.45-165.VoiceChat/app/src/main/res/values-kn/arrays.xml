@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>ಡಿಫಾಲ್ಟ್ ಚಿತ್ರ</item>
+        <item>ಚಿತ್ರಗಳು</item>
+        <item>ಚಿತ್ರ ತೆಗೆದುಕೊಳ್ಳಿ</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>ಚಿತ್ರಗಳು</item>
+        <item>ಚಿತ್ರ ತೆಗೆದುಕೊಳ್ಳಿ</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>ತಿದ್ದು</item>
+        <item>ಅಳಿಸು</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>ಚಿತ್ರ</item>
+        <item>ನೇರ ವೀಡಿಯೊ</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>ವೀಡಿಯೋ ಬದಲಾಯಿಸಿ</item>
+        <item>ವೀಡಿಯೋ ಅಡಗಿಸಿ</item>
+    </array>
+</resources>

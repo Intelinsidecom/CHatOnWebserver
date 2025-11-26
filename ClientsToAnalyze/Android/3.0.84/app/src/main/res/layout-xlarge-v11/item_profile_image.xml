@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profile_image_item_layout"
+    android:background="@drawable/profile_image_thumbnail_background"
+    android:layout_width="@dimen/mypage_photo_history_size"
+    android:layout_height="@dimen/mypage_photo_history_size"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp">
+    <ImageView
+        android:id="@+id/profile_image_bg"
+        android:padding="1dp"
+        android:duplicateParentState="true"
+        android:layout_width="@dimen/mypage_photo_history_size"
+        android:layout_height="@dimen/mypage_photo_history_size"
+        android:src="@drawable/profile_image_noimage"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:layout_gravity="top|right"
+        android:id="@+id/profile_image_selctor"
+        android:visibility="gone"
+        android:layout_width="@dimen/mypage_photo_history_selector"
+        android:layout_height="@dimen/mypage_photo_history_selector"
+        android:src="@drawable/mypage_img_select"/>
+    <ImageView
+        android:id="@+id/profile_image_select_layout"
+        android:visibility="gone"
+        android:layout_width="@dimen/mypage_photo_history_size"
+        android:layout_height="@dimen/mypage_photo_history_size"
+        android:src="@drawable/profile_image_press"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/profile_image_loading"
+        android:visibility="gone"
+        android:layout_width="@dimen/profile_image_loader_size"
+        android:layout_height="@dimen/profile_image_loader_size"/>
+</FrameLayout>

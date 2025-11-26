@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/chat_insert_menu_background"
+    android:paddingTop="@dimen/insert_menu_grid_top_padding"
+    android:layout_width="@dimen/insert_menu_item_width"
+    android:layout_height="@dimen/insert_menu_item_height">
+    <ImageView
+        android:id="@+id/insertMenuIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:textSize="@dimen/insert_menu_text_size"
+        android:textColor="@color/buddy_group_profile_button_normal"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:id="@+id/insertMenuText"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/insert_menu_text_height"
+        android:layout_marginTop="@dimen/insert_menu_text_top_margin"
+        android:maxLines="2"
+        android:shadowColor="@color/insert_menu_shadow_text_normal"
+        android:shadowDx="1"
+        android:shadowDy="2"
+        android:shadowRadius="2"/>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="default_smiley_texts">
+        <item>:-)</item>
+        <item>:-(</item>
+        <item>;-)</item>
+        <item>:-P</item>
+        <item>=-O</item>
+        <item>:-*</item>
+        <item>:O</item>
+        <item>B-)</item>
+        <item>:-$</item>
+        <item>:-!</item>
+        <item>:-[</item>
+        <item>O:-)</item>
+        <item>:-\\</item>
+        <item>:\'(</item>
+        <item>:-X</item>
+        <item>:-D</item>
+        <item>o_O</item>
+        <item>&lt;3</item>
+        <item>x-(</item>
+        <item>:-/</item>
+        <item>:-I</item>
+    </array>
+    <array name="default_smiley_names">
+        <item>Vui vẻ</item>
+        <item>Buồn</item>
+        <item>Nháy mắt</item>
+        <item>Thè lưỡi</item>
+        <item>Ngạc nhiên</item>
+        <item>Hôn</item>
+        <item>La hét</item>
+        <item>Hấp dẫn</item>
+        <item>Mặt hám tiền</item>
+        <item>Há miệng mắc quai</item>
+        <item>Bối rối</item>
+        <item>Thiên thần</item>
+        <item>Chưa quyết định</item>
+        <item>Khóc</item>
+        <item>Môi bị bịt kín</item>
+        <item>Cười lớn</item>
+        <item>Bối rối</item>
+        <item>Trái tim</item>
+        <item>Giận dữ</item>
+        <item>Cười điệu</item>
+        <item>Mặt phớt tỉnh</item>
+    </array>
+</resources>

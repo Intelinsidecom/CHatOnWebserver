@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.chaton.widget.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    local:checkable_widget="@android:id/checkbox">
+    <CheckBox
+        android:id="@android:id/checkbox"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@android:id/checkbox">
+        <TextView
+            android:textAppearance="@style/TextAppearance.List01"
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="111"/>
+        <TextView
+            android:textAppearance="@style/TextAppearance.List07"
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="222"/>
+    </LinearLayout>
+</com.sec.chaton.widget.CheckableRelativeLayout>

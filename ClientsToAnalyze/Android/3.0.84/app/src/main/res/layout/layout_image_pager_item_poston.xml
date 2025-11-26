@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="@+id/layout_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/pager_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"/>
+        <ImageButton
+            android:layout_gravity="center"
+            android:id="@+id/play_button"
+            android:background="@drawable/chat_btn_play"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="@+id/download_progress"
+            android:visibility="gone"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+    </FrameLayout>
+</LinearLayout>

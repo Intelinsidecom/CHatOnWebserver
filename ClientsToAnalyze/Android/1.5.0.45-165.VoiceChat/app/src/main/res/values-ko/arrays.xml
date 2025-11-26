@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>기본 이미지</item>
+        <item>이미지</item>
+        <item>사진 촬영</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>이미지</item>
+        <item>사진 촬영</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>편집</item>
+        <item>삭제</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>사진</item>
+        <item>라이브 영상</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>영상 위치 바꾸기</item>
+        <item>동영상 숨기기</item>
+    </array>
+</resources>

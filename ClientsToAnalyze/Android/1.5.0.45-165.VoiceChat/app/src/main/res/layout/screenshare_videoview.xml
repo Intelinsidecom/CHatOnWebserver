@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/videoView"
+    android:background="@color/tw_color002"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/remote_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <SurfaceView
+            android:id="@+id/remote_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/preview_layout"
+        android:background="#40ff0000"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+        <SurfaceView
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/transparent_layout"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

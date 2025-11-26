@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/setting_samsung_account"
+        android:key="pref_item_samsung_account"
+        android:widgetLayout="@layout/preference_widget_arrow"
+        android:contentDescription=""/>
+    <com.sec.chaton.settings.SnsSignInOutPreference
+        android:title="@string/tellfriends_via_facebook"
+        android:key="pref_item_facebook"
+        android:widgetLayout="@layout/preference_widget_logout_button"
+        android:contentDescription=""/>
+    <com.sec.chaton.settings.SnsSignInOutPreference
+        android:title="@string/tellfriends_via_twitter"
+        android:key="pref_item_twitter"
+        android:widgetLayout="@layout/preference_widget_logout_button"
+        android:contentDescription=""/>
+    <com.sec.chaton.settings.SnsSignInOutPreference
+        android:title="@string/tellfriends_via_weibo"
+        android:key="pref_item_weibo"
+        android:widgetLayout="@layout/preference_widget_logout_button"
+        android:contentDescription=""/>
+    <com.sec.chaton.settings.SnsSignInOutPreference
+        android:title="@string/tellfriends_via_renren"
+        android:key="pref_item_renren"
+        android:widgetLayout="@layout/preference_widget_logout_button"
+        android:contentDescription=""/>
+</PreferenceScreen>

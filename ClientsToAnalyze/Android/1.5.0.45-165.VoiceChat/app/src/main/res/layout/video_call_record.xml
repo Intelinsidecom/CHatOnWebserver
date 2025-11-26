@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/record_status_time_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="48dp">
+    <RelativeLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp">
+        <ImageView
+            android:id="@+id/record_img"
+            android:layout_width="50dp"
+            android:layout_height="18dp"
+            android:src="@drawable/vt_recording_icon_n"
+            android:layout_centerVertical="true"/>
+        <Chronometer
+            android:textSize="16dp"
+            android:textColor="#f51515"
+            android:id="@+id/record_status_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:singleLine="true"
+            android:shadowColor="#000000"
+            android:shadowDy="-2"
+            android:layout_toRightOf="@+id/record_img"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

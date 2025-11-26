@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="default_smiley_texts">
+        <item>:-)</item>
+        <item>:-(</item>
+        <item>;-)</item>
+        <item>:-P</item>
+        <item>=-O</item>
+        <item>:-*</item>
+        <item>:O</item>
+        <item>B-)</item>
+        <item>:-$</item>
+        <item>:-!</item>
+        <item>:-[</item>
+        <item>O:-)</item>
+        <item>:-\\</item>
+        <item>:\'(</item>
+        <item>:-X</item>
+        <item>:-D</item>
+        <item>o_O</item>
+        <item>&lt;3</item>
+        <item>x-(</item>
+        <item>:-/</item>
+        <item>:-I</item>
+    </array>
+    <array name="default_smiley_names">
+        <item>Щасливий</item>
+        <item>Сумний</item>
+        <item>Підморгнути</item>
+        <item>Показує язик</item>
+        <item>Здивований</item>
+        <item>Поцілунок</item>
+        <item>Репетує</item>
+        <item>Круто</item>
+        <item>Грошолюб</item>
+        <item>Тіпун на язик</item>
+        <item>Збентежений</item>
+        <item>Ангел</item>
+        <item>Невпевнений</item>
+        <item>Плач</item>
+        <item>Рот на замку</item>
+        <item>Сміх</item>
+        <item>Збентежений</item>
+        <item>Серце</item>
+        <item>Злість</item>
+        <item>Самовдоволена посмішка</item>
+        <item>Байдужий вираз</item>
+    </array>
+</resources>

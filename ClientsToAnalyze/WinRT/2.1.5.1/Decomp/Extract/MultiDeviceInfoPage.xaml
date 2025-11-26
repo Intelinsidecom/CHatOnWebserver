@@ -1,0 +1,108 @@
+﻿<Page x:Class="ChatON_WoA.MultiDeviceInfoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:ChatON_WoA"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d">
+    <Page.Resources>
+        <DataTemplate x:Key="MappingTemplate">
+            <Grid Margin="8,8,0,8"  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions> 
+
+                <StackPanel Grid.Column="0"
+                            VerticalAlignment="Center" > 
+
+                    <TextBlock Text="{Binding ModelName}"
+                               Margin="-5,0,0,0"
+                               FontFamily="Segoe UI Light" 
+                               FontSize="20" />
+
+                    <TextBlock Text="{Binding SubInfo}" 
+                               Margin="-5,0,0,0"
+                               FontFamily="Segoe UI Semibold"
+                               FontSize="16"
+                               Foreground="Gray" 
+                               Visibility="{Binding SubInfoVisibility}"
+                               />
+
+                    <TextBlock Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_CURRENT_DEVICE'}"  
+                               Margin="-5,0,0,0"
+                               FontFamily="Segoe UI Semibold"
+                               FontSize="16"
+                               Foreground="Gray"
+                               TextWrapping="Wrap" 
+                               Visibility="{Binding IsAsker, Converter={StaticResource BoolToVisibility}}"/>   
+                </StackPanel>
+                <Button x:ConnectionId='1' Grid.Column="1" 
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        MinWidth="150"
+                        Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_HEADER_DEREGISTER_DEVICE'}" 
+                        Margin="0,0,0,0"
+                                              
+                        Height="40"
+                        Visibility="{Binding ViewButton, Converter={StaticResource BoolToVisibility}, ConverterParameter='!'}" />
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid Background="White"
+          x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackPanel Background="White"
+                    Grid.Row="0">
+            <TextBlock TextWrapping="Wrap"
+                       Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_MY_ACCOUNT'}"
+                       FontSize="26.667"
+                       Foreground="#FFFF9600"
+                       FontFamily="Segoe UI Light"
+                       Margin="0,59,0,0" />
+            <TextBlock  Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_SAMSUNG_ACCOUNT'}"
+                        Foreground="Gray"
+                        Margin="0,20,0,0"
+                        FontSize="20" />
+            <TextBlock x:Name="EmailText"
+                       Text="aaaa@aaaaaaaaaaaaaaaaaaaa.com"
+                       Margin="0,0,0,0"
+                       FontSize="16" />
+            <TextBlock Margin="0,59,0,0"
+                       TextWrapping="Wrap"
+                       Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_CONNECTED_DEVICES'}"
+                       FontSize="26.667"
+                       Foreground="#FFFF9600"
+                       FontFamily="Segoe UI Light" />
+        </StackPanel>
+
+        <ListView x:Name="DeviceList"
+                  SelectionMode="None"
+                  Grid.Row="1"
+                  ItemTemplate="{StaticResource MappingTemplate}"
+                  ItemsSource="{Binding MappingList}"
+                  Background="White"
+                  BorderBrush="Black"
+                  BorderThickness="0"
+                  HorizontalContentAlignment="Stretch">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="ListViewItem">
+                                <ContentPresenter x:Name="contentPresenter"
+                                                  HorizontalAlignment="Stretch"
+                                                  ContentTransitions="{TemplateBinding ContentTransitions}" />
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
+    </Grid>
+</Page>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/actionbar_tab_unselected"/>
+    <item android:bottom="@dimen/one_dip">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/actionbar_tab_pressed_color"/>
+        </shape>
+    </item>
+</layer-list>

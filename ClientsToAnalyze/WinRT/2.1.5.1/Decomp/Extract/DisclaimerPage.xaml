@@ -1,0 +1,43 @@
+﻿<Page
+    x:Name="pageRoot"
+    x:Class="ChatON_WoA.Views.DisclaimerPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+    </Page.Resources>
+
+    <Grid Background="#FFF4F4F4" x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Back button and page title -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:ConnectionId='3' x:Name="backButton" IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"                         />
+            <TextBlock x:Name="pageTitle" Grid.Column="1" Style="{StaticResource PageHeaderTextStyle}" Foreground="Black"/>
+            <Button x:ConnectionId='4' x:Name="AcceptButton"                              HorizontalAlignment="Right" VerticalAlignment="Bottom" MinWidth="100" Margin="0,0,100,35" Grid.Column="1"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="TermsText" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="120,0,0,0" FontFamily="Segoe UI Light" FontSize="14.667" Foreground="Black"/>
+            <HyperlinkButton x:ConnectionId='1' x:Name="TermsLink"                           HorizontalAlignment="Left" Margin="110,50,0,0" VerticalAlignment="Top" FontSize="21.333" Grid.Row="1" Foreground="#FF26A0DA" FontFamily="Segoe UI Light" FontWeight="Light"/>
+            <HyperlinkButton x:ConnectionId='2' x:Name="PrivacyLink"                             HorizontalAlignment="Left" Margin="110,0,0,0" VerticalAlignment="Top" FontSize="21.333" Grid.Row="2" Foreground="#FF26A0DA" FontFamily="Segoe UI Light" FontWeight="Light"/>
+        </Grid>
+    </Grid>
+</Page>
+

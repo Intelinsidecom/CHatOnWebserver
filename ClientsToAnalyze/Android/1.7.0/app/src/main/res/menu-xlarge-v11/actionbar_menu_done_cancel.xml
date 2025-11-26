@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/chaton_title_ic_del"
+        android:id="@+id/actionbar_menu_delete_group"
+        android:title="Delete group"
+        android:showAsAction="withText|ifRoom"/>
+    <item
+        android:icon="@drawable/chaton_title_ic_done"
+        android:id="@+id/actionbar_menu_done"
+        android:title="@string/done"
+        android:showAsAction="withText|ifRoom"/>
+    <item
+        android:icon="@drawable/chaton_title_ic_x"
+        android:id="@+id/actionbar_menu_cancel"
+        android:title="@string/dialog_cancel"
+        android:showAsAction="withText|ifRoom"/>
+</menu>

@@ -1,0 +1,34 @@
+﻿<UserControl x:ConnectionId='1' x:Class="ChatOn.Controls.PhotoFrame"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                                   
+    mc:Ignorable="d">
+
+    <Grid x:Name="LayoutRoot">
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+    	</Grid.RowDefinitions>
+    	<Grid.ColumnDefinitions>
+    		<ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+    	</Grid.ColumnDefinitions>
+        
+        <Image x:Name="PhotoImage" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-7" Grid.Row="1" Grid.Column="1" Stretch="UniformToFill" MaxHeight="150" MaxWidth="160"/>
+    	<Image x:Name="tl" HorizontalAlignment="Left" Stretch="Fill" VerticalAlignment="Top" Source="/Images/PhotoFrame/chat_photo_frame_top_l.png"/>
+        <Image x:Name="tc" Grid.Column="1" Stretch="Fill" Source="/Images/PhotoFrame/chat_photo_frame_top_center.png"/>
+        <Image x:Name="tr" Grid.Column="2" HorizontalAlignment="Left" Stretch="Fill" VerticalAlignment="Top" Source="/Images/PhotoFrame/chat_photo_frame_top_r.png"/>
+        <Image x:Name="ml" Grid.Row="1" Stretch="Fill" HorizontalAlignment="Left" Source="/Images/PhotoFrame/chat_photo_frame_middle_l.png"/>
+        <Image x:Name="mr" Grid.Column="2" Grid.Row="1" Stretch="Fill" HorizontalAlignment="Left" Source="/Images/PhotoFrame/chat_photo_frame_middle_r.png"/>
+        <Image x:Name="bl" Grid.Row="2" Stretch="Fill" VerticalAlignment="Top" HorizontalAlignment="Left" Source="/Images/PhotoFrame/chat_photo_frame_bottom_l_.png"/>
+        <Image x:Name="bc" Grid.Column="1" Grid.Row="2" Stretch="Fill" Source="/Images/PhotoFrame/chat_photo_frame_bottom_center.png"/>
+        <Image x:Name="br" Grid.Column="2" Grid.Row="2" Stretch="Fill" HorizontalAlignment="Left" VerticalAlignment="Top" Source="/Images/PhotoFrame/chat_photo_frame_bottom_r.png"/>
+        <Image x:Name="VideoIcon" Stretch="Fill" Width="45" Height="45" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Images/video_play.png" Grid.Column="1" Grid.Row="1"/>
+    </Grid>
+</UserControl>
+

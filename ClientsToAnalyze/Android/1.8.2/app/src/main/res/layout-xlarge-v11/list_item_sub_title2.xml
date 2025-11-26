@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/recommedlist"
+    android:background="@drawable/buddy_sub_title_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/RecommendListBuddyTitle"
+        style="@style/SuggestionSubTitleTextStyle"/>
+    <TextView
+        android:id="@+id/RecommendListSubTitleMore"
+        android:text="@string/header_more"
+        style="@style/SuggestionSubTitleMore"/>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/RecommendListMoreBtn"
+        android:src="@drawable/title_arrow_right"
+        style="@style/SuggestionSubTitleMoreImage"/>
+</LinearLayout>

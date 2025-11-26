@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/creat_new"
+        android:id="@+id/menu_create_new"
+        android:title="@string/ams_optmenu_create_new"/>
+    <group android:id="@+id/menu_group_save">
+        <item
+            android:icon="@drawable/save"
+            android:id="@+id/menu_save"
+            android:title="@string/ams_optmenu_save"/>
+    </group>
+    <group android:id="@+id/menu_group_page">
+        <item
+            android:icon="@drawable/delete_page"
+            android:id="@+id/menu_delete_page"
+            android:title="@string/ams_optmenu_delete_page"/>
+    </group>
+    <group android:id="@+id/menu_group_audio">
+        <item
+            android:icon="@drawable/delete_audio"
+            android:id="@+id/menu_delete_audio"
+            android:title="@string/ams_optmenu_delete_audio"/>
+    </group>
+</menu>

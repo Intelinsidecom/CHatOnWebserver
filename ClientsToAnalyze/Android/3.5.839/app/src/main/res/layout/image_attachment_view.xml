@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.chaton.smsplugin.p112ui.ImageAttachmentView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/image_attachment_view"
+    android:background="#fff"
+    android:paddingTop="9dp"
+    android:paddingRight="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/image_content"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="105dp"/>
+    <ImageButton
+        android:id="@+id/image_del_btn"
+        android:background="@drawable/anicon_package_item_downloading_event_xml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"/>
+</com.sec.chaton.smsplugin.p112ui.ImageAttachmentView>

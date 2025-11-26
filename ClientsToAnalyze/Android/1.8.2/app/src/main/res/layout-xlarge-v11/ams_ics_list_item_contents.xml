@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:padding="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/layout_ams_image"
+        android:background="@drawable/ams_ics_selector_basic_tool_frame"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerInParent="true">
+        <RelativeLayout
+            android:layout_width="176dp"
+            android:layout_height="176dp"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:id="@+id/image_ams_image"
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:layout_centerInParent="true"/>
+            <CheckBox
+                android:id="@+id/check_box_delete"
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="2dp"
+                android:button="@drawable/ams_ics_selector_checkbox"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

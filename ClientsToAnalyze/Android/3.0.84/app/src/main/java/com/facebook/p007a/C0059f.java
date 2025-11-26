@@ -1,0 +1,45 @@
+package com.facebook.p007a;
+
+import android.os.Bundle;
+import java.io.UnsupportedEncodingException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLDecoder;
+
+/* compiled from: Util.java */
+/* renamed from: com.facebook.a.f */
+/* loaded from: classes.dex */
+public final class C0059f {
+    @Deprecated
+    /* renamed from: a */
+    public static Bundle m109a(String str) {
+        Bundle bundle = new Bundle();
+        if (str != null) {
+            for (String str2 : str.split("&")) {
+                String[] strArrSplit = str2.split("=");
+                try {
+                    if (strArrSplit.length == 2) {
+                        bundle.putString(URLDecoder.decode(strArrSplit[0], "UTF-8"), URLDecoder.decode(strArrSplit[1], "UTF-8"));
+                    } else if (strArrSplit.length == 1) {
+                        bundle.putString(URLDecoder.decode(strArrSplit[0], "UTF-8"), "");
+                    }
+                } catch (UnsupportedEncodingException e) {
+                }
+            }
+        }
+        return bundle;
+    }
+
+    @Deprecated
+    /* renamed from: b */
+    public static Bundle m110b(String str) {
+        try {
+            URL url = new URL(str.replace("fbconnect", "http"));
+            Bundle bundleM109a = m109a(url.getQuery());
+            bundleM109a.putAll(m109a(url.getRef()));
+            return bundleM109a;
+        } catch (MalformedURLException e) {
+            return new Bundle();
+        }
+    }
+}

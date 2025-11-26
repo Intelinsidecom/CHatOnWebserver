@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/setting_disclaimer_terms"
+        android:key="pref_item_terms"
+        android:widgetLayout="@layout/preference_widget_arrow"
+        android:contentDescription="@string/setting_disclaimer_terms"/>
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/setting_disclaimer_policy"
+        android:key="pref_item_policy"
+        android:widgetLayout="@layout/preference_widget_arrow"
+        android:contentDescription="@string/setting_disclaimer_policy"/>
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/settings_license"
+        android:key="pref_item_license"
+        android:widgetLayout="@layout/preference_widget_arrow"
+        android:contentDescription="@string/settings_license"/>
+</PreferenceScreen>

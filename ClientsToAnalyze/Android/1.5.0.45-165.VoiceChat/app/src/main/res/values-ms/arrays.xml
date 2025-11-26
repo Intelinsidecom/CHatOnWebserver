@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>Imej lalai</item>
+        <item>Imej</item>
+        <item>Tangkap gambar</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Imej</item>
+        <item>Tangkap gambar</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Sunting</item>
+        <item>Padam</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>Gambar</item>
+        <item>Video lngsng</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Tukar video</item>
+        <item>Sembunyikan video</item>
+    </array>
+</resources>

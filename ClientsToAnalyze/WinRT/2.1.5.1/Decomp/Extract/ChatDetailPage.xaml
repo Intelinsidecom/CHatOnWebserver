@@ -1,0 +1,1073 @@
+﻿<Page x:ConnectionId='1' x:Class="ChatON_WoA.Views.ChatDetailPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:ChatON_WoA="using:ChatON_WoA"
+      xmlns:CustomControls="using:ChatOn.Controls"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:infra="using:ChatOn.Infrastructure"
+      xmlns:local="using:ChatON_WoA.Views"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                                    
+      NavigationCacheMode="Disabled"
+                                              
+      mc:Ignorable="d">
+
+    <Page.Resources>
+        <BitmapImage x:Key="imageFrame" UriSource="/Images/chat_frame.png" />
+        <BitmapImage x:Key="imageCancel" UriSource="/Images/chat_cancel.png" />
+        <BitmapImage x:Key="imageResend" UriSource="/Images/chat_resend.png" />
+        <BitmapImage x:Key="imageError" UriSource="/Images/chat_error.png" />
+        <BitmapImage x:Key="imageNewNumber" UriSource="/Images/headers_new_number.png" />
+        <BitmapImage x:Key="imageNewNumberBlue" UriSource="/Images/headers_new_number_blue.png" />
+        <BitmapImage x:Key="imageMute" UriSource="/Images/icons/icon_mute.png" />
+        <Style x:Key="local_newNumberImage" TargetType="Image">
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Stretch" Value="None" />
+            <Setter Property="Source" Value="{StaticResource imageNewNumber}" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+        </Style>
+        <Style x:Key="local_newTrunkNumberImage" TargetType="Image">
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Stretch" Value="None" />
+            <Setter Property="Source" Value="{StaticResource imageNewNumberBlue}" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+        </Style>
+        <Style x:Key="local_newNumberText" TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontFamily" Value="Segoe UI Light" />
+            <Setter Property="FontSize" Value="14.667" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+
+
+        <Style x:Key="DefaultMessageGrid" TargetType="Grid">
+            <Setter Property="Margin" Value="5 15 10 15" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+        </Style>
+        <Style x:Key="DefaultSnapMessageGrid" TargetType="Grid">
+            <Setter Property="Margin" Value="0 10 5 10" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+        </Style>
+        <DataTemplate x:Key="DateTemplate">
+            <Grid x:Name="TagGrid"
+                  Style="{Binding Converter={StaticResource DefaultMessageMarginConverter}}"
+                  Tag="{Binding}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <CustomControls:DateDisplayUserControl Height="32" HorizontalAlignment="Stretch">
+                    <CustomControls:DateDisplayUserControl.ItemContent>
+                        <TextBlock HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   FontFamily="Segoe WP Semibold"
+                                   FontSize="18"
+                                   Foreground="#B2FFFFFF"
+                                   Text="{Binding Path=Tag.Time,
+                                                  ElementName=TagGrid,
+                                                  Converter={StaticResource MiliToChatDetailDateConverter}}"
+                                   TextWrapping="Wrap" />
+                    </CustomControls:DateDisplayUserControl.ItemContent>
+                </CustomControls:DateDisplayUserControl>
+                <CheckBox x:ConnectionId='19' Grid.Column="1"
+                          HorizontalAlignment="Right"
+                          VerticalAlignment="Center"
+                                                            
+                          IsChecked="{Binding IsChecked2,
+                                              Mode=TwoWay}"
+                          Visibility="{Binding ShowCheckbox,
+                                               Converter={StaticResource BoolToVisibility}}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="BuddyMessageTemplate">
+            <Grid Style="{Binding Converter={StaticResource DefaultMessageMarginConverter}}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid x:ConnectionId='15' Grid.RowSpan="2"
+                      Margin="{Binding Converter={StaticResource BuddyMessageMarginConverter}}"
+                      VerticalAlignment="Top"
+                                                         
+                      Tag="tilt"
+                                                         >
+                    <Image Width="{Binding Converter={StaticResource ImageProfileSizeConverter}}"
+                           Height="{Binding Converter={StaticResource ImageProfileSizeConverter}}"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"
+                           Source="{Binding ProfileImage}"
+                           Stretch="UniformToFill"
+                           Visibility="{Binding SingleChatBuddy,
+                                                Converter={StaticResource ObjectNullToShow}}" />
+                    <Image x:Name="ProfileImage"
+                           Width="{Binding Converter={StaticResource ImageProfileSizeConverter}}"
+                           Height="{Binding Converter={StaticResource ImageProfileSizeConverter}}"
+                           Margin="1,0,0,3"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Bottom"
+                           Source="{Binding ProfileImage}" />
+                    <Image Width="{Binding Converter={StaticResource ImageFrameSizeConverter}}"
+                           Height="{Binding Converter={StaticResource ImageFrameSizeConverter}}"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Bottom"
+                           Source="{StaticResource imageFrame}"
+                           Stretch="Fill" />
+                </Grid>
+                <TextBlock Grid.Column="1"
+                           Grid.ColumnSpan="2"
+                           MaxHeight="30"
+                           Margin="{Binding Converter={StaticResource ChatNameMarginConverter}}"
+                           FontFamily="Segoe UI Light"
+                           FontSize="14.667"
+                           Foreground="#FF141414"
+                           Text="{Binding Sender,
+                                          Converter={StaticResource PhoneNumberToNameConverter}}"
+                           TextTrimming="WordEllipsis"
+                           TextWrapping="Wrap" />
+                <StackPanel Grid.Row="1"
+                            Grid.Column="1"
+                            HorizontalAlignment="Left"
+                            Orientation="Horizontal">
+                    <CustomControls:ChatBubble x:ConnectionId='18' Grid.Row="1"
+                                               Grid.Column="1"
+                                               Margin="{Binding Converter={StaticResource ChatBubbleMarginConverter}}"
+                                               HorizontalAlignment="Left"
+                                               VerticalAlignment="Top"
+                                               HorizontalContentAlignment="Left"
+                                               VerticalContentAlignment="Top"
+                                                                              
+                                               MaxBubbleWidth="{Binding Tag,
+                                                                        ElementName=DummyGrid2}"
+                                               MediaText="{Binding MediaText}"
+                                               Message="{Binding}"
+                                                                                       
+                                                                                           
+                                                                                             
+                                               SubText="{Binding Time,
+                                                                 Converter={StaticResource MillisecondsToDate},
+                                                                 ConverterParameter='t'}"
+                                                                               
+                                               Text="{Binding Text}"
+                                               Type="0" />
+                    <ContentControl Grid.Row="{Binding Tag,
+                                                       ElementName=DummyGrid2,
+                                                       Converter={StaticResource WidthToGridRowConverter}}"
+                                    Grid.Column="1"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Bottom"
+                                    Content="{Binding}"
+                                    ContentTemplate="{Binding IsDownloading,
+                                                              Converter={StaticResource BoolToTemplate},
+                                                              ConverterParameter='DownloadingTemplate'}"
+                                    Visibility="{Binding IsDownloading,
+                                                         Converter={StaticResource BoolToVisibility}}" />
+                </StackPanel>
+                <Grid x:ConnectionId='16' x:Name="DummyGrid2"
+                      Grid.Row="1"
+                      Grid.Column="1"
+                      Margin="{Binding Converter={StaticResource DummyGridMarginConverter}}"
+                                                            />
+
+                <CheckBox x:ConnectionId='17' Grid.Row="1"
+                          Grid.Column="3"
+                          HorizontalAlignment="Right"
+                          VerticalAlignment="Center"
+                                                  
+                          IsChecked="{Binding IsChecked,
+                                              Mode=TwoWay}"
+                          Visibility="{Binding ShowCheckbox,
+                                               Converter={StaticResource BoolToVisibility}}" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="DownloadingTemplate">
+            <StackPanel Margin="10,0,15,0"
+                        HorizontalAlignment="Right"
+                        Orientation="Horizontal">
+                <ProgressBar Width="{Binding Converter={StaticResource ProgressDownloadUploadWidthConverter}}"
+                             HorizontalAlignment="Right"
+                             VerticalAlignment="Center"
+                             IsHitTestVisible="False"
+                             SmallChange="1"
+                             Value="{Binding ProgressValue}" />
+                <Image x:ConnectionId='14' Margin="6,0,0,0"
+                       HorizontalAlignment="Right"
+                       VerticalAlignment="Center"
+                       Source="{StaticResource imageCancel}"
+                       Stretch="None"
+                                               />
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="SentTemplate">
+            <Grid />
+        </DataTemplate>
+        <DataTemplate x:Key="SendingTemplate">
+            <Grid VerticalAlignment="Center" />
+        </DataTemplate>
+        <DataTemplate x:Key="UploadingTemplate">
+            <StackPanel Orientation="Horizontal">
+                <Image x:ConnectionId='13' Margin="0,0,6,0"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Source="{StaticResource imageCancel}"
+                       Stretch="None"
+                                               />
+                <ProgressBar Width="{Binding Converter={StaticResource ProgressDownloadUploadWidthConverter}}"
+                             HorizontalAlignment="Center"
+                             VerticalAlignment="Center"
+                             Background="Black"
+                             IsHitTestVisible="False"
+                             SmallChange="1"
+                             Value="{Binding ProgressValue}" />
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="FailedTemplate">
+            <StackPanel Margin="0,0,15,0" Orientation="Horizontal">
+                <Image x:ConnectionId='11' HorizontalAlignment="Left"
+                       Source="{StaticResource imageResend}"
+                       Stretch="None"
+                                                />
+                <Image x:ConnectionId='12' Margin="8,0,0,0"
+                       HorizontalAlignment="Left"
+                       Source="{StaticResource imageCancel}"
+                       Stretch="None"
+                                                />
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="ErrorTemplate">
+            <StackPanel Margin="10,0,15,0"
+                        HorizontalAlignment="Right"
+                        Orientation="Horizontal">
+                <Image x:ConnectionId='8' x:Name="btnFailed"
+                       HorizontalAlignment="Right"
+                       Source="{StaticResource imageError}"
+                       Stretch="None"
+                                             />
+                <Image x:ConnectionId='9' x:Name="btnResend"
+                       HorizontalAlignment="Right"
+                       Source="{StaticResource imageResend}"
+                       Stretch="None"
+                                               
+                       Visibility="Collapsed" />
+                <Image x:ConnectionId='10' x:Name="btnCancel"
+                       Margin="8,0,0,0"
+                       HorizontalAlignment="Right"
+                       Source="{StaticResource imageCancel}"
+                       Stretch="None"
+                                               
+                       Visibility="Collapsed" />
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="CannotResendTemplate">
+            <StackPanel Margin="0,0,15,0" Orientation="Horizontal">
+                <Image x:ConnectionId='7' Margin="8,0,0,0"
+                       HorizontalAlignment="Left"
+                       Source="{StaticResource imageCancel}"
+                       Stretch="None"
+                                                />
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="MyMessageTemplate">
+            <Grid Style="{Binding Converter={StaticResource DefaultMessageMarginConverter}}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="1"
+                            HorizontalAlignment="Right"
+                            Orientation="Horizontal">
+                    <ContentControl HorizontalContentAlignment="Right"
+                                    VerticalContentAlignment="Bottom"
+                                    Content="{Binding}"
+                                    ContentTemplate="{Binding ActivityState,
+                                                              Converter={StaticResource IndexToTemplate},
+                                                              ConverterParameter='SendingTemplate,UploadingTemplate,ErrorTemplate,ErrorTemplate,SentTemplate,CannotResendTemplate,ChatDetailPage'}" />
+                    <CustomControls:ChatBubble x:ConnectionId='6' Grid.Column="1"
+                                               HorizontalAlignment="Right"
+                                                                              
+                                               MaxBubbleWidth="{Binding Tag,
+                                                                        ElementName=DummyGrid}"
+                                               MediaText="{Binding MediaText}"
+                                               Message="{Binding}"
+                                               Opacity="{Binding ActivityState,
+                                                                 Converter={StaticResource MessageStateToOpacity}}"
+                                                                                       
+                                                                                           
+                                                                                             
+                                               SubParam="{Binding AnswerBackCount}"
+                                               SubText="{Binding Time,
+                                                                 Converter={StaticResource MillisecondsToDate},
+                                                                 ConverterParameter='t'}"
+                                                                               
+                                               Text="{Binding Text}"
+                                               Type="1" />
+                </StackPanel>
+                <Grid x:ConnectionId='4' x:Name="DummyGrid"
+                      Grid.Column="1"
+                      Margin="60, 0, 0, 0"
+                                                            />
+                <CheckBox x:ConnectionId='5' Grid.Column="2"
+                          HorizontalAlignment="Right"
+                          VerticalAlignment="Center"
+                                                  
+                          IsChecked="{Binding IsChecked,
+                                              Mode=TwoWay}"
+                          Visibility="{Binding ShowCheckbox,
+                                               Converter={StaticResource BoolToVisibility}}" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="NotiTemplate">
+            <Grid HorizontalAlignment="Center" Style="{Binding Converter={StaticResource DefaultMessageMarginConverter}}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid HorizontalAlignment="Left"
+                      VerticalAlignment="Top"
+                      Background="#5E000000">
+                    <TextBlock Margin="20,1"
+                               VerticalAlignment="Top"
+                               FontFamily="Segoe UI Light"
+                               FontSize="16"
+                               Foreground="#B2FFFFFF"
+                               Text="{Binding Converter={StaticResource NotiToMessageConverter}}"
+                               TextWrapping="Wrap" />
+                </Grid>
+                <CheckBox x:ConnectionId='3' Grid.Column="1"
+                          Margin="0"
+                          HorizontalAlignment="Right"
+                          VerticalAlignment="Top"
+                                                  
+                          IsChecked="{Binding IsChecked,
+                                              Mode=TwoWay}"
+                          Visibility="{Binding ShowCheckbox,
+                                               Converter={StaticResource BoolToVisibility}}" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="ChatItemTemplate">
+            <Grid Margin="0 0 0 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Button x:ConnectionId='2' Grid.Row="0"
+                        Margin="10,10,10,0"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Top"
+                                              
+                        Content="{Binding Converter={StaticResource ResourceStringConverter},
+                                          ConverterParameter='IDS_CHATON_BODY_LOAD_MORE'}"
+                        Visibility="{Binding ShowMoreButton,
+                                             Converter={StaticResource BoolToVisibility}}" />
+                <ContentControl Grid.Row="1"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Top"
+                                Content="{Binding}"
+                                ContentTemplate="{Binding ShowDate,
+                                                          Converter={StaticResource BoolToTemplate},
+                                                          ConverterParameter='DateTemplate'}"
+                                Visibility="{Binding ShowDate,
+                                                     Converter={StaticResource BoolToVisibility}}" />
+                <ContentControl Grid.Row="2"
+                                VerticalAlignment="Top"
+                                HorizontalContentAlignment="Stretch"
+                                Content="{Binding}"
+                                ContentTemplate="{Binding ItemTypeValue,
+                                                          Converter={StaticResource IndexToTemplate},
+                                                          ConverterParameter='DateTemplate,BuddyMessageTemplate,MyMessageTemplate,NotiTemplate,ChatDetailPage'}" />
+            </Grid>
+        </DataTemplate>
+        <ControlTemplate x:Key="PhoneDisabledTextBoxTemplate" TargetType="TextBox">
+            <ContentControl x:Name="ContentElement"
+                            HorizontalContentAlignment="Stretch"
+                            VerticalContentAlignment="Stretch"
+                            BorderThickness="0"
+                            Padding="{TemplateBinding Padding}" />
+        </ControlTemplate>
+        <Style x:Key="TextBoxStyle" TargetType="TextBox">
+            <Setter Property="MinWidth" Value="{StaticResource TextControlThemeMinWidth}" />
+            <Setter Property="MinHeight" Value="{StaticResource TextControlThemeMinHeight}" />
+            <Setter Property="Foreground" Value="{StaticResource TextBoxForegroundThemeBrush}" />
+            <Setter Property="Background" Value="{StaticResource TextBoxBackgroundThemeBrush}" />
+            <Setter Property="BorderBrush" Value="{StaticResource TextBoxBorderThemeBrush}" />
+            <Setter Property="BorderThickness" Value="{StaticResource TextControlBorderThemeThickness}" />
+            <Setter Property="FontFamily" Value="{StaticResource ContentControlThemeFontFamily}" />
+            <Setter Property="FontSize" Value="{StaticResource ControlContentThemeFontSize}" />
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden" />
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Hidden" />
+            <Setter Property="ScrollViewer.IsDeferredScrollingEnabled" Value="False" />
+            <Setter Property="Padding" Value="{StaticResource TextControlThemePadding}" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Grid>
+                            <Grid.Resources>
+                                <Style x:Name="DeleteButtonStyle" TargetType="Button">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="Button">
+                                                <Grid>
+                                                    <VisualStateManager.VisualStateGroups>
+                                                        <VisualStateGroup x:Name="CommonStates">
+                                                            <VisualState x:Name="Normal" />
+                                                            <VisualState x:Name="PointerOver">
+                                                                <Storyboard>
+                                                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="BackgroundElement" Storyboard.TargetProperty="Background">
+                                                                        <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextBoxButtonPointerOverBackgroundThemeBrush}" />
+                                                                    </ObjectAnimationUsingKeyFrames>
+                                                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="BorderElement" Storyboard.TargetProperty="BorderBrush">
+                                                                        <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextBoxButtonPointerOverBorderThemeBrush}" />
+                                                                    </ObjectAnimationUsingKeyFrames>
+                                                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="GlyphElement" Storyboard.TargetProperty="Foreground">
+                                                                        <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextBoxButtonPointerOverForegroundThemeBrush}" />
+                                                                    </ObjectAnimationUsingKeyFrames>
+                                                                </Storyboard>
+                                                            </VisualState>
+                                                            <VisualState x:Name="Pressed">
+                                                                <Storyboard>
+                                                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="BackgroundElement" Storyboard.TargetProperty="Background">
+                                                                        <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextBoxButtonPressedBackgroundThemeBrush}" />
+                                                                    </ObjectAnimationUsingKeyFrames>
+                                                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="BorderElement" Storyboard.TargetProperty="BorderBrush">
+                                                                        <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextBoxButtonPressedBorderThemeBrush}" />
+                                                                    </ObjectAnimationUsingKeyFrames>
+                                                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="GlyphElement" Storyboard.TargetProperty="Foreground">
+                                                                        <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextBoxButtonPressedForegroundThemeBrush}" />
+                                                                    </ObjectAnimationUsingKeyFrames>
+                                                                </Storyboard>
+                                                            </VisualState>
+                                                            <VisualState x:Name="Disabled">
+                                                                <Storyboard>
+                                                                    <DoubleAnimation Duration="0"
+                                                                                     Storyboard.TargetName="BackgroundElement"
+                                                                                     Storyboard.TargetProperty="Opacity"
+                                                                                     To="0" />
+                                                                    <DoubleAnimation Duration="0"
+                                                                                     Storyboard.TargetName="BorderElement"
+                                                                                     Storyboard.TargetProperty="Opacity"
+                                                                                     To="0" />
+                                                                </Storyboard>
+                                                            </VisualState>
+                                                        </VisualStateGroup>
+                                                    </VisualStateManager.VisualStateGroups>
+                                                    <Border x:Name="BorderElement"
+                                                            BorderBrush="{StaticResource TextBoxButtonBorderThemeBrush}"
+                                                            BorderThickness="{TemplateBinding BorderThickness}" />
+                                                    <Border x:Name="BackgroundElement"
+                                                            Margin="{TemplateBinding BorderThickness}"
+                                                            Background="{StaticResource TextBoxButtonBackgroundThemeBrush}">
+                                                        <TextBlock x:Name="GlyphElement"
+                                                                   HorizontalAlignment="Center"
+                                                                   VerticalAlignment="Center"
+                                                                   FontFamily="{StaticResource SymbolThemeFontFamily}"
+                                                                   Foreground="{StaticResource TextBoxButtonForegroundThemeBrush}"
+                                                                   Text="" />
+                                                    </Border>
+                                                </Grid>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Grid.Resources>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="BackgroundElement" Storyboard.TargetProperty="Background">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextBoxDisabledBackgroundThemeBrush}" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="BorderElement" Storyboard.TargetProperty="BorderBrush">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextBoxDisabledBorderThemeBrush}" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentElement" Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextBoxDisabledForegroundThemeBrush}" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Normal">
+                                        <Storyboard>
+                                            <DoubleAnimation Duration="0"
+                                                             Storyboard.TargetName="BackgroundElement"
+                                                             Storyboard.TargetProperty="Opacity"
+                                                             To="{StaticResource TextControlBackgroundThemeOpacity}" />
+                                            <DoubleAnimation Duration="0"
+                                                             Storyboard.TargetName="BorderElement"
+                                                             Storyboard.TargetProperty="Opacity"
+                                                             To="{StaticResource TextControlBorderThemeOpacity}" />
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="PointerOver">
+                                        <Storyboard>
+                                            <DoubleAnimation Duration="0"
+                                                             Storyboard.TargetName="BackgroundElement"
+                                                             Storyboard.TargetProperty="Opacity"
+                                                             To="{StaticResource TextControlPointerOverBackgroundThemeOpacity}" />
+                                            <DoubleAnimation Duration="0"
+                                                             Storyboard.TargetName="BorderElement"
+                                                             Storyboard.TargetProperty="Opacity"
+                                                             To="{StaticResource TextControlPointerOverBorderThemeOpacity}" />
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Focused" />
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="ButtonStates">
+                                    <VisualState x:Name="ButtonVisible">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="DeleteButton" Storyboard.TargetProperty="Visibility">
+                                                <DiscreteObjectKeyFrame KeyTime="0">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <Visibility>Visible</Visibility>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="ButtonCollapsed" />
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Border x:Name="BackgroundElement"
+                                    Grid.ColumnSpan="2"
+                                    Margin="{TemplateBinding BorderThickness}"
+                                    Background="{TemplateBinding Background}" />
+                            <Border x:Name="BorderElement"
+                                    Grid.ColumnSpan="2"
+                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}" />
+                            <ScrollViewer x:Name="ContentElement"
+                                          Margin="0,10,0,0"
+                                          HorizontalScrollBarVisibility="{TemplateBinding ScrollViewer.HorizontalScrollBarVisibility}"
+                                          HorizontalScrollMode="{TemplateBinding ScrollViewer.HorizontalScrollMode}"
+                                          IsDeferredScrollingEnabled="{TemplateBinding ScrollViewer.IsDeferredScrollingEnabled}"
+                                          IsHorizontalRailEnabled="{TemplateBinding ScrollViewer.IsHorizontalRailEnabled}"
+                                          IsTabStop="False"
+                                          IsVerticalRailEnabled="{TemplateBinding ScrollViewer.IsVerticalRailEnabled}"
+                                          Padding="{TemplateBinding Padding}"
+                                          VerticalScrollBarVisibility="{TemplateBinding ScrollViewer.VerticalScrollBarVisibility}"
+                                          VerticalScrollMode="{TemplateBinding ScrollViewer.VerticalScrollMode}"
+                                          ZoomMode="Disabled" />
+                            <Button x:Name="DeleteButton"
+                                    Grid.Column="1"
+                                    VerticalAlignment="Stretch"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    FontSize="{TemplateBinding FontSize}"
+                                    IsTabStop="False"
+                                    Style="{StaticResource DeleteButtonStyle}"
+                                    Visibility="Collapsed" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
+    <Page.BottomAppBar>
+        <AppBar x:Name="appBar"
+                Background="#FFFA8719"
+                Visibility="{Binding AppBarVisibility}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackPanel x:Name="LeftCommands"
+                            Grid.Column="0"
+                            Margin="0,14,0,13"
+                            HorizontalAlignment="Left"
+                            Orientation="Horizontal"
+                            Visibility="{Binding Chat.IsDeletionMode,
+                                                 Converter={StaticResource BoolToVisibility}}">
+                    <CustomControls:ImageButton x:ConnectionId='28' x:Name="Button1"
+                                                Margin="0,0,55,0"
+                                                HorizontalAlignment="Left"
+                                                VerticalAlignment="Top"
+                                                                       
+                                                Foreground="White"
+                                                NormalImage="/Images/Icons/appbtn_select all_2.png"
+                                                PressedImage="/Images/Icons/appbtn_select all_press_2.png" />
+                    <CustomControls:ImageButton x:ConnectionId='29' x:Name="Button2"
+                                                Margin="0,0,55,0"
+                                                HorizontalAlignment="Left"
+                                                VerticalAlignment="Top"
+                                                                            
+                                                Foreground="White"
+                                                NormalImage="Images/Icons/appbtn_received.png"
+                                                PressedImage="Images/Icons/appbtn_received_press.png" />
+                    <CustomControls:ImageButton x:ConnectionId='30' x:Name="Button3"
+                                                Margin="0,0,55,0"
+                                                HorizontalAlignment="Left"
+                                                VerticalAlignment="Top"
+                                                                        
+                                                Foreground="White"
+                                                NormalImage="Images/Icons/appbtn_sent.png"
+                                                PressedImage="Images/Icons/appbtn_sent_press.png" />
+                </StackPanel>
+                <StackPanel x:Name="RightCommands"
+                            Grid.Column="1"
+                            Margin="0,14,0,13"
+                            HorizontalAlignment="Right"
+                            Orientation="Horizontal"
+                            Visibility="{Binding Chat.IsDeletionMode,
+                                                 Converter={StaticResource BoolToVisibility},
+                                                 ConverterParameter='!'}">
+                    <CustomControls:ImageButton x:ConnectionId='23' x:Name="CloseChatButton"
+                                                Margin="0,0,55,0"
+                                                HorizontalAlignment="Left"
+                                                VerticalAlignment="Top"
+                                                                       
+                                                Foreground="White"
+                                                NormalImage="Images/Icons/appbtn_close_chat.png"
+                                                PressedImage="Images/Icons/appbtn_close_chat_press.png"
+                                                Text="{Binding Converter={StaticResource ResourceStringConverter},
+                                                               ConverterParameter='IDS_CHATON_SK2_CLOSE_CHAT'}" />
+
+                    <CustomControls:ImageButton x:ConnectionId='24' x:Name="DeleteAllRecordButton"
+                                                Margin="0,0,55,0"
+                                                HorizontalAlignment="Left"
+                                                VerticalAlignment="Top"
+                                                                              
+                                                Foreground="White"
+                                                NormalImage="/Images/Icons/appbtn_delete.png"
+                                                PressedImage="/Images/Icons/appbtn_delete_press.png"
+                                                Text="{Binding Converter={StaticResource ResourceStringConverter},
+                                                               ConverterParameter='IDS_CHATON_OPT2_DELETE_MESSAGE'}" />
+
+                    <CustomControls:ImageButton x:ConnectionId='25' x:Name="DeleteButton"
+                                                Margin="0,0,55,0"
+                                                HorizontalAlignment="Left"
+                                                VerticalAlignment="Top"
+                                                                                 
+                                                Foreground="White"
+                                                NormalImage="/Images/Icons/appbtn_delete.png"
+                                                PressedImage="/Images/Icons/appbtn_delete_press.png"
+                                                Text="{Binding Converter={StaticResource ResourceStringConverter},
+                                                               ConverterParameter='IDS_CHATON_OPT2_DELETE_MESSAGE'}" />
+
+                    <CustomControls:ImageButton x:ConnectionId='26' x:Name="InviteButton"
+                                                Margin="0,0,55,0"
+                                                HorizontalAlignment="Left"
+                                                VerticalAlignment="Top"
+                                                                           
+                                                Foreground="White"
+                                                NormalImage="Images/Icons/appbtn_addbuddy.png"
+                                                PressedImage="Images/Icons/appbtn_addbuddy_press.png"
+                                                Text="{Binding Converter={StaticResource ResourceStringConverter},
+                                                               ConverterParameter='IDS_CHATON_BODY_INVITE_BUDDIES'}" />
+                    <CustomControls:ImageButton x:ConnectionId='27' x:Name="InfoButton"
+                                                Margin="0,0,35,0"
+                                                HorizontalAlignment="Left"
+                                                VerticalAlignment="Top"
+                                                                         
+                                                Foreground="White"
+                                                NormalImage="Images/Icons/appbtn_info.png"
+                                                PressedImage="Images/Icons/appbtn_info_press.png"
+                                                Text="{Binding Converter={StaticResource ResourceStringConverter},
+                                                               ConverterParameter='IDS_CHATON_MBODY_CHAT_INFO'}"
+                                                Visibility="{Binding Chat.IsInfoAvailableMode,
+                                                                     Converter={StaticResource BoolToVisibility}}" />
+                </StackPanel>
+                <StackPanel x:Name="RightCommands2"
+                            Grid.Column="1"
+                            Margin="0,14,0,13"
+                            HorizontalAlignment="Right"
+                            Orientation="Horizontal"
+                            Visibility="{Binding Chat.IsDeletionMode,
+                                                 Converter={StaticResource BoolToVisibility}}">
+                    <CustomControls:ImageButton x:ConnectionId='21' x:Name="DeleteMessageButton"
+                                                Margin="0,0,55,0"
+                                                HorizontalAlignment="Left"
+                                                VerticalAlignment="Top"
+                                                                           
+                                                Foreground="White"
+                                                NormalImage="/Images/Icons/appbtn_delete.png"
+                                                PressedImage="/Images/Icons/appbtn_delete_press.png"
+                                                Text="Delete" />
+
+                    <CustomControls:ImageButton x:ConnectionId='22' x:Name="Button5"
+                                                Margin="0,0,55,0"
+                                                HorizontalAlignment="Left"
+                                                VerticalAlignment="Top"
+                                                                                 
+                                                Foreground="White"
+                                                NormalImage="Images/Icons/appbtn_deletegroup.png"
+                                                PressedImage="Images/Icons/appbtn_deletegroup_press.png"
+                                                Text="Cancel" />
+                </StackPanel>
+
+                <StackPanel x:Name="RightCommands3"
+                            Grid.Column="1"
+                            Margin="0,14,0,13"
+                            HorizontalAlignment="Right"
+                            Orientation="Horizontal"
+                            Visibility="Collapsed">
+                    <CustomControls:ImageButton x:ConnectionId='20' x:Name="InviteButtonSnapped"
+                                                Grid.ColumnSpan="2"
+                                                Margin="0, 35, 25, 0"
+                                                HorizontalAlignment="Right"
+                                                                                  
+                                                Foreground="White"
+                                                NormalImage="Images/Icons/appbtn_addbuddy.png"
+                                                PressedImage="Images/Icons/appbtn_addbuddy_press.png"
+                                                Text="{Binding Converter={StaticResource ResourceStringConverter},
+                                                               ConverterParameter='IDS_CHATON_BODY_INVITE_BUDDIES'}" />
+                </StackPanel>
+            </Grid>
+        </AppBar>
+    </Page.BottomAppBar>
+
+    <Grid x:ConnectionId='31' x:Name="LayoutRoot"
+          Background="#FFF4F4F4"
+                                      >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Image Grid.Row="1"
+                   Grid.RowSpan="2"
+                   Source="{Binding BackgroundImage}"
+                   Stretch="UniformToFill" />
+
+            <Grid x:Name="HeaderGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid x:Name="ChatItemImageGrid"
+                          Margin="10"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center">
+                        <Image Width="50"
+                               Height="50"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Source="{Binding ProfileImage}"
+                               Stretch="UniformToFill"
+                               Visibility="{Binding SingleChatBuddy,
+                                                    Converter={StaticResource ObjectNullToShow}}" />
+                        <Image x:Name="ProfileImageControl"
+                               Width="50"
+                               Height="50"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Source="{Binding Chat.ProfileImage}"
+                               Stretch="Fill" />
+                        <Image Width="29"
+                               Height="20"
+                               Margin="0, 0, 2, 2"
+                               HorizontalAlignment="Right"
+                               VerticalAlignment="Bottom"
+                               Source="{StaticResource imageMute}"
+                               Visibility="{Binding Chat.IsAlert,
+                                                    Converter={StaticResource ReverseBoolToVisibility}}" />
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <TextBlock x:Name="textTitle"
+                                   MaxHeight="25"
+                                   Margin="0,0,5,0"
+                                   VerticalAlignment="Bottom"
+                                   FontFamily="Segoe UI Light"
+                                   FontSize="22"
+                                   FontWeight="Light"
+                                   Text="{Binding Chat.Title}"
+                                   TextTrimming="WordEllipsis"
+                                   TextWrapping="NoWrap" />
+                        <TextBlock Grid.Row="1"
+                                   VerticalAlignment="Top"
+                                   FontSize="16"
+                                   Foreground="Red"
+                                   Text="{Binding Chat.ChatTypeText}" />
+                    </Grid>
+                </Grid>
+                <StackPanel x:ConnectionId='41' Grid.Column="2"
+                            Margin="0,0,20,0"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            Orientation="Vertical"
+                                                 >
+                    <CustomControls:ImageButton x:Name="TrunkButton"
+                                                Width="40"
+                                                Height="40"
+                                                Margin="0,0,0,0"
+                                                VerticalAlignment="Top"
+                                                NormalImage="/Images/Icons/appbtn_share_2.png"
+                                                PressedImage="/Images/Icons/appbtn_share_2_press.png"
+                                                Visibility="{Binding TrunkButtonVisibility}" />
+                    <Grid Margin="0,-45,0,0"
+                          HorizontalAlignment="Right"
+                          VerticalAlignment="Top"
+                          Visibility="{Binding TrunkButtonVisibility}">
+                        <Grid HorizontalAlignment="Center"
+                              VerticalAlignment="Center"
+                              Visibility="{Binding Chat.UnreadTrunkMessageCount,
+                                                   ConverterParameter=0,
+                                                   Converter={StaticResource BiggerThanParamToVisibility}}">
+                            <Image Width="{Binding Chat.UnreadTrunkMessageCount,
+                                                   ConverterParameter='23',
+                                                   Converter={StaticResource AutoWidthConverter}}"
+                                   Height="{Binding Chat.UnreadTrunkMessageCount,
+                                                    ConverterParameter='23',
+                                                    Converter={StaticResource AutoWidthConverter}}"
+                                   RenderTransformOrigin="2.156,0.562"
+                                   Stretch="{Binding Chat.UnreadTrunkMessageCount,
+                                                     Converter={StaticResource StretchConverter}}"
+                                   Style="{StaticResource local_newTrunkNumberImage}" />
+                            <TextBlock Style="{StaticResource local_newNumberText}" Text="{Binding Chat.UnreadTrunkMessageCount}" />
+                        </Grid>
+                    </Grid>
+                    <!--  <TextBlock Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_POP_ALBUM'}" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="20" Foreground="#FF219297" FontFamily="Segoe UI" Margin="5" Visibility="{Binding TrunkButtonVisibility}"  />  -->
+                </StackPanel>
+            </Grid>
+            <Border Grid.Row="0"
+                    VerticalAlignment="Bottom"
+                    BorderBrush="DarkGray"
+                    BorderThickness="0.5" />
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0">
+                    <Grid x:Name="UnknownBuddyGrid"
+                          MaxHeight="80"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Top"
+                          Visibility="{Binding UnknownMessageVisibility}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Top"
+                                    Orientation="Horizontal">
+                            <Button x:ConnectionId='39' Width="120"
+                                    BorderBrush="Black"
+                                                             
+                                    Content="{Binding ConverterParameter=IDS_CHATON_BUTTON_ADD_BUDDY,
+                                                      Converter={StaticResource ResourceStringConverter}}" />
+                            <Button x:ConnectionId='40' Width="120"
+                                    BorderBrush="Black"
+                                                               
+                                    Content="{Binding ConverterParameter=IDS_CHATON_OPT_BLOCK,
+                                                      Converter={StaticResource ResourceStringConverter}}" />
+                        </StackPanel>
+                        <Grid Grid.Row="1"
+                              Width="Auto"
+                              Height="36"
+                              Background="#59000000">
+                            <TextBlock x:Name="UnknownBuddyNoticeBlock"
+                                       Width="270"
+                                       Margin="24,2,24,2"
+                                       VerticalAlignment="Top"
+                                       FontSize="10"
+                                       FontWeight="SemiBold"
+                                       Foreground="White"
+                                       Text="{Binding UnknownMessage}"
+                                       TextAlignment="Center"
+                                       TextTrimming="WordEllipsis"
+                                       TextWrapping="Wrap" />
+                        </Grid>
+
+                    </Grid>
+                    <Grid Width="Auto"
+                          Height="30"
+                          Margin="12"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Top"
+                          Visibility="{Binding LoadingControlVisibility}">
+                        <StackPanel HorizontalAlignment="Center"
+                                    VerticalAlignment="Top"
+                                    Orientation="Horizontal">
+                            <ChatON_WoA:ProgressRing2 />
+                            <TextBlock x:Name="LoadingTextBlock"
+                                       Margin="5, 0"
+                                       VerticalAlignment="Center"
+                                       FontSize="16"
+                                       FontWeight="SemiBold"
+                                       Foreground="{StaticResource BlackFillColor}"
+                                       Opacity="0.8"
+                                       TextTrimming="WordEllipsis"
+                                       TextWrapping="Wrap" />
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+                <ListView x:ConnectionId='38' x:Name="MessageList"
+                          Grid.Row="1"
+                          Margin="0,0,0,10"
+                          BorderThickness="0"
+                          ItemContainerStyle="{StaticResource FullWidthClearListItemStyle}"
+                          ItemTemplate="{StaticResource ChatItemTemplate}"
+                          ItemsSource="{Binding Path=MessageItems}"
+                                                     
+                          ScrollViewer.IsDeferredScrollingEnabled="True"
+                          SelectionMode="None"
+                                                       >
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel />
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                </ListView>
+            </Grid>
+
+            <Grid x:Name="MessagePreviewGrid"
+                  Grid.Row="1"
+                  Margin="0,5"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Bottom"
+                  Visibility="{Binding MessagePreviewVisibility}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Rectangle x:ConnectionId='36' Grid.ColumnSpan="2"
+                           Height="50"
+                           Fill="#FF4F4F4F"
+                           Opacity="0.9"
+                           Stretch="UniformToFill"
+                                                         />
+                <Image Grid.Column="0"
+                       Width="40"
+                       Height="40"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Source="{Binding LastMessage.ProfileImage}" />
+                <CustomControls:ChatTextBlock x:ConnectionId='37' Grid.Column="1"
+                                              MinWidth="10"
+                                              MaxWidth="600"
+                                              MaxHeight="40"
+                                              Margin="10,10"
+                                              HorizontalAlignment="Left"
+                                              VerticalAlignment="Center"
+                                              HorizontalContentAlignment="Left"
+                                              EmoticonSize="20"
+                                              FontFamily="Segoe UI Light"
+                                              FontSize="20"
+                                              Foreground="White"
+                                              ForegroundText="White"
+                                              IsParsingLinkEnabled="False"
+                                              MaxLength="350"
+                                                                           
+                                              Text="{Binding LastMessage.Text,
+                                                             Converter={StaticResource MessagePreviewConverter}}" />
+            </Grid>
+
+            <Grid x:Name="gridErrorMessage"
+                  Grid.Row="2"
+                  MaxHeight="300"
+                  Margin="0,0,0,15"
+                  Visibility="{Binding ShowErrorMessageVisibility}">
+                <TextBlock x:Name="txtErrorMessage"
+                           FontSize="24"
+                           Foreground="Red"
+                           Text="{Binding ErrorChatDetailMessage}" />
+            </Grid>
+            <Grid x:Name="gridMessage"
+                  Grid.Row="2"
+                  MaxHeight="150"
+                  Margin="0,0,0,15"
+                  VerticalAlignment="Bottom"
+                  Visibility="{Binding Path=TextBoxMessage}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <CustomControls:ImageButton x:ConnectionId='32' x:Name="AttachButton"
+                                            Margin="20,0,10,-23"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Bottom"
+                                                                        
+                                            NormalImage="Images/btn_attachments.png"
+                                            PressedImage="Images/btn_attachments_press.png" />
+                <CustomControls:ImageButton x:ConnectionId='33' x:Name="EmoticonButton"
+                                            Grid.Column="1"
+                                            Margin="0,0,0,-23"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Bottom"
+                                                                          
+                                            NormalImage="Images/btn_emotiocons.png"
+                                            PressedImage="Images/btn_emotiocons_press.png" />
+                <Border x:Name="InputBoxBorder"
+                        Grid.Column="2"
+                        Width="{Binding Converter={StaticResource InputTextWidthConverter}}"
+                        MinHeight="44"
+                        Margin="{Binding Converter={StaticResource SnapInputBoxMarginConverter}}"
+                        VerticalAlignment="Top"
+                        Background="White"
+                        BorderBrush="Black"
+                        BorderThickness="1">
+                    <TextBox x:ConnectionId='35' x:Name="InputBox"
+                             Width="{Binding Converter={StaticResource InputTextWidthConverter}}"
+                             MaxHeight="150"
+                             AcceptsReturn="True"
+                             BorderBrush="Black"
+                             BorderThickness="0"
+                                                                             
+                             FontSize="15"
+                                                           
+                             IsEnabled="{Binding IsEnableToChat}"
+                             IsSpellCheckEnabled="False"
+                             IsTextPredictionEnabled="True"
+                                                         
+                                                             
+                             MaxLength="2001"
+                             Style="{StaticResource TextBoxStyle}"
+                             TextAlignment="Left"
+                                                               
+                             TextWrapping="Wrap" />
+                </Border>
+
+                <Button x:ConnectionId='34' x:Name="SendButton"
+                        Grid.Column="3"
+                        Height="{Binding Converter={StaticResource ButtonSendHeightConverter}}"
+                        MinWidth="{Binding Converter={StaticResource ButtonSendWidthConverter}}"
+                        Margin="{Binding Converter={StaticResource SnapButtonSendMarginConverter}}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Background="White"
+                        BorderBrush="Black"
+                        BorderThickness="1"
+                                              
+                        Content="{Binding Converter={StaticResource ResourceStringConverter},
+                                          ConverterParameter='IDS_CHATON_SK_LITE_SEND'}"
+                        FontSize="13.333"
+                        Foreground="Black"
+                        IsEnabled="False" />
+            </Grid>
+        </Grid>
+        <Border BorderBrush="#FFAFAFAF" BorderThickness="1" />
+    </Grid>
+</Page>
+

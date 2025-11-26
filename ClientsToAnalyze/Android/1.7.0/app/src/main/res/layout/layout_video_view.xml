@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sec.widget.GeneralHeaderView
+        android:id="@+id/video_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@drawable/general_btn_icon_save_xml"
+        android:text="@string/media_video"/>
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/video_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_centerInParent="true"/>
+        <ImageButton
+            android:id="@+id/video_play_button"
+            android:background="@drawable/ams_ics_selector_btn_play_bg"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:scaleType="center"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

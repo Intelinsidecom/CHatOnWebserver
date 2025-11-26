@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="@dimen/add_group_popup_width"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="6dp">
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.sec.chaton.widget.ClearableEditText
+            android:textSize="20dp"
+            android:id="@+id/buddy_group_groupname_field"
+            android:layout_width="@dimen/add_group_popup_edit_field_width"
+            android:layout_height="@dimen/add_group_popup_edit_field_height"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="2dp"
+            android:hint="@string/buddy_enter_group_name"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:inputType="textCapSentences"
+            android:imeOptions="flagNoExtractUi|actionDone"
+            local:searchIcon="@null"/>
+    </LinearLayout>
+</LinearLayout>

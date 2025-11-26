@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="right"
+    android:paddingLeft="@dimen/li6_padding_right"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/chatRoomMessageAlert"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="1dp"
+        android:src="@drawable/chat_list_ic_alert"/>
+    <TextView
+        android:textAppearance="@style/TextAppearance.List08.Variable"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/chatRoomLastMessageTime"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"/>
+</LinearLayout>

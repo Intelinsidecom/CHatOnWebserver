@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>تصوير پيش فرض</item>
+        <item>تصاوير</item>
+        <item>عکس گرفتن</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>تصاوير</item>
+        <item>عکس گرفتن</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>ویرایش</item>
+        <item>حذف</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>عکس</item>
+        <item>ویدیوی زنده</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>تعویض ویدیو</item>
+        <item>پنهان کردن ویدیو</item>
+    </array>
+</resources>

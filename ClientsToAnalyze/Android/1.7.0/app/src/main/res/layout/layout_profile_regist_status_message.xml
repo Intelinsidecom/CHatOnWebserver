@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <com.sec.widget.GeneralHeaderView
+            android:id="@+id/mypage_profile_headerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/general_btn_icon_complete_xml"
+            android:text="@string/mypage_profile_status"/>
+        <EditText
+            android:textSize="18.66dp"
+            android:gravity="top"
+            android:layout_gravity="center"
+            android:id="@+id/mStatusMessageTextView"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:hint="@string/mypage_profile_status"
+            android:maxLength="40"
+            android:capitalize="sentences"
+            android:imeOptions="actionUnspecified"/>
+    </LinearLayout>
+</ScrollView>

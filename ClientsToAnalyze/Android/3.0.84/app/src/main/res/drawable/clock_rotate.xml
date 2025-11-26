@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:visible="true"
+    android:drawable="@drawable/clock_nor_min"
+    android:fromDegrees="50"
+    android:toDegrees="409"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:repeatCount="infinite"/>

@@ -1,0 +1,34 @@
+package com.coolots.p2pmsg.model;
+
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+
+/* loaded from: classes.dex */
+public class MemberSimpleInfo {
+
+    @Min(1)
+    private Short DeviceID;
+
+    @NotNull
+    private String UserID;
+
+    public String getUserID() {
+        return this.UserID;
+    }
+
+    public void setUserID(String userID) {
+        this.UserID = userID;
+    }
+
+    public Short getDeviceID() {
+        return this.DeviceID;
+    }
+
+    public void setDeviceID(Short deviceID) {
+        this.DeviceID = deviceID;
+    }
+
+    public void setDeviceID(int deviceID) {
+        this.DeviceID = Short.valueOf((short) deviceID);
+    }
+}

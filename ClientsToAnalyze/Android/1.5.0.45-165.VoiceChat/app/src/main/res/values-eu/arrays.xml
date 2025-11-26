@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>Irudi lehenetsia</item>
+        <item>Irudiak</item>
+        <item>Argazkia atera</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Irudiak</item>
+        <item>Argazkia atera</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Editatu</item>
+        <item>Ezabatu</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Aldatu bideoa</item>
+        <item>Ezkutatu bideoa</item>
+    </array>
+    <array name="pref_3_2_1_array_entry">
+        <item>Erantzun bibrazioa</item>
+        <item>Dei amaierako bibrazioa</item>
+    </array>
+    <array name="pref_3_2_2_array_entry">
+        <item>Dei konexio doinua</item>
+        <item>Minutu-orratza</item>
+        <item>Dei amaiera tonua</item>
+    </array>
+</resources>

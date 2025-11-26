@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mms_config version="5">
+    <bool name="enabledMMS">true
+    </bool>
+    <int name="maxMessageSize">1048576
+    </int>
+    <int name="maxImageHeight">480
+    </int>
+    <int name="maxImageWidth">640
+    </int>
+    <int name="defaultSMSMessagesPerThread">500
+    </int>
+    <int name="defaultMMSMessagesPerThread">200
+    </int>
+    <int name="minMessageCountPerThread">10
+    </int>
+    <int name="maxMessageCountPerThread">5000
+    </int>
+    <string name="uaProfUrl">http://www.google.com/oha/rdf/ua-profile-kila.xml
+    </string>
+    <uaprofurl name="SM-N900L">http://wap.samsungmobile.com/uaprof/SM-N900L.xml
+    </uaprofurl>
+    <uaprofurl name="SHV-E300L">http://wap.samsungmobile.com/uaprof/SHV-E300L.xml
+    </uaprofurl>
+    <uaprofurl name="SHV-E330L">http://wap.samsungmobile.com/uaprof/SHV-E330L.xml
+    </uaprofurl>
+    <uaprofurl name="SHV-E210L">http://wap.samsungmobile.com/uaprof/SHV-E210L.xml
+    </uaprofurl>
+    <uaprofurl name="SHV-E250L">http://wap.samsungmobile.com/uaprof/SHV-E250L.xml
+    </uaprofurl>
+    <int name="recipientLimit">25
+    </int>
+    <int name="smsToMmsTextThreshold">1
+    </int>
+    <bool name="enableMultipartSMS">false
+    </bool>
+    <bool name="enableSlideDuration">true
+    </bool>
+    <int name="maxMessageTextSize">-1
+    </int>
+    <string name="userAgent">Android-Mms/0.1
+    </string>
+    <useragent name="SM-N900L">OMAClient/1.2 Android/4.0 SM-N900L
+    </useragent>
+    <useragent name="SHV-E300L">OMAClient/1.2 Android/4.0 SHV-E300L
+    </useragent>
+    <useragent name="SHV-E330L">OMAClient/1.2 Android/4.0 SHV-E330L
+    </useragent>
+    <useragent name="SHV-E210L">OMAClient/1.2 Android/4.0 SHV-E210L
+    </useragent>
+    <useragent name="SHV-E250L">OMAClient/1.2 Android/4.0 SHV-E250L
+    </useragent>
+</mms_config>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="@dimen/change_skin_item_padding"
+    android:paddingTop="3dp"
+    android:paddingRight="@dimen/change_skin_item_padding"
+    android:paddingBottom="3dp"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/skin_bubble"
+        android:background="@drawable/btn_change_bubble_bg_xml"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        android:layout_width="@dimen/change_skin_item_width"
+        android:layout_height="@dimen/change_skin_item_height"
+        android:src="@drawable/thumb_bubble_01"
+        android:scaleType="fitXY"/>
+</LinearLayout>

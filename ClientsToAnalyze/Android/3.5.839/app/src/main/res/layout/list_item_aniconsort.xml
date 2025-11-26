@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/li5_padding_left"
+    android:paddingTop="@dimen/li5_padding_top"
+    android:paddingRight="@dimen/li5_padding_right"
+    android:paddingBottom="@dimen/li5_padding_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/li5_min_height">
+    <TableLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="3"
+        android:shrinkColumns="2"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_alignWithParentIfMissing="true">
+        <TableRow android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="@dimen/li5_image1_layout_width"
+                android:layout_height="@dimen/li5_image1_layout_height"
+                android:layout_marginRight="@dimen/li5_image1_layout_margin_right"/>
+            <com.sec.chaton.widget.AdaptableTextView
+                android:textAppearance="@style/TextAppearance.List04.Variable"
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/li5_text1_layout_margin_right"/>
+        </TableRow>
+    </TableLayout>
+    <ImageView
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/li5_content_margin_right"
+        android:src="@drawable/change_order"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

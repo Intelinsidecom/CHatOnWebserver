@@ -1,0 +1,38 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Controls="using:ChatOn.Controls"
+    x:Name="pageRoot"
+    x:Class="ChatON_WoA.Views.ManageBuddiesPage"
+    mc:Ignorable="d">
+    <Page.Resources>
+    </Page.Resources>
+
+    <StackPanel Background="White">
+        <!--<TextBlock TextWrapping="Wrap" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_HEADER_HIDE_LIST'}" FontSize="26.667" Foreground="#FFFF9600" FontFamily="Segoe UI Light" Margin="0,59,0,0"/>
+        <Button x:Name="HideListButton" Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_HEADER_HIDE_LIST'}" HorizontalAlignment="Left" Height="37" Width="130" Margin="0,8,0,0" Style="{StaticResource WinsetButton}" Click="HideListButton_Click_1"/>-->
+        <TextBlock TextWrapping="Wrap" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_HEADER_BLOCK_LIST'}" FontSize="26.667" Foreground="#FFFF9600" FontFamily="Segoe UI Light" Margin="0,35,0,0"/>
+        <Button x:ConnectionId='1' x:Name="BlockListButton" Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_HEADER_BLOCK_LIST'}" HorizontalAlignment="Left" Height="37" Width="130" Margin="0,8,0,0" Style="{StaticResource WinsetButton}"                                />
+        <TextBlock Margin="0,59,0,0" TextWrapping="Wrap" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_ITAB_SUGGESTIONS'}" FontSize="26.667" Foreground="#FFFF9600" FontFamily="Segoe UI Light"/>
+        <TextBlock Visibility="Visible" TextWrapping="Wrap" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_BUDDY_ABB'}" Foreground="Black" FontSize="16" Margin="0,8,0,0" FontFamily="Segoe UI Light" FontWeight="SemiBold"/>
+        <TextBlock TextWrapping="Wrap" Foreground="Black" FontSize="14.667" Margin="0,3,0,0" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_I_WOULD_LIKE_TO_RECEIVE_BUDDY_SUGGESTIONS_FROM_CHATON'}" FontFamily="Segoe UI Light"/>
+        <!--<TextBlock TextWrapping="Wrap" Foreground="Black" FontSize="14.667" Margin="0,14,0,0" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='WP7_CHATON_MAY_BE_SUGGESTED_TO_OTHERS'}" FontFamily="Segoe UI Light"/>-->
+        <ToggleSwitch x:ConnectionId='2' Margin="-5,0,0,0" x:Name="ToggleSuggestions" HorizontalAlignment="Left" Foreground="Black" VerticalAlignment="Top"                                       Style="{StaticResource LightThemeToggleSwitchStyle}">
+            <ToggleSwitch.OffContentTemplate>
+                <DataTemplate>
+                    <TextBlock Margin="0,0,280,0" Text="Off"></TextBlock>
+                </DataTemplate>
+            </ToggleSwitch.OffContentTemplate>
+
+            <ToggleSwitch.OnContentTemplate>
+                <DataTemplate>
+                    <TextBlock Margin="0,0,280,0" Text="On"></TextBlock>
+                </DataTemplate>
+            </ToggleSwitch.OnContentTemplate>
+        </ToggleSwitch>
+    </StackPanel>
+</Page>
+

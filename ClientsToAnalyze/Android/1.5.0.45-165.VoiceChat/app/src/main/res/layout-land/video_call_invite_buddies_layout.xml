@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_invite_buddies_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        android:id="@+id/video_invite_buddies_layout"
+        android:visibility="gone"
+        layout="@layout/video_call_invite_buddies"/>
+    <include
+        android:id="@+id/call_invite_buddy_wait_bar_layout"
+        android:visibility="gone"
+        layout="@layout/call_invite_buddy_wait_bar"/>
+</LinearLayout>

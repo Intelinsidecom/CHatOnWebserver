@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/edit_emailaddress"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Input email address"
+                android:inputType="textEmailAddress"/>
+            <Button
+                android:id="@+id/btn_createaccount"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="V CREATE ACCOUNT"/>
+            <Button
+                android:id="@+id/btn_sms_auth"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="V SMS Test"/>
+            <Button
+                android:id="@+id/btn_samsung_account"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="V Samsung Account"/>
+            <Button
+                android:id="@+id/btn_start_coolots_service"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Service"/>
+            <Button
+                android:id="@+id/btn_stop_coolots_service"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stop Service"/>
+            <Button
+                android:id="@+id/btn_logout"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"/>
+            <Button
+                android:id="@+id/btn_linkagechaton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Linkage with ChatON"/>
+            <Button
+                android:id="@+id/btn_demoversion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ChatONV Demo Version"/>
+            <Button
+                android:id="@+id/btn_config"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ChatON V configuration"/>
+            <Button
+                android:id="@+id/btn_sec_config"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Call option configuration"/>
+            <Button
+                android:id="@+id/btn_stress_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="STRESS TEST"/>
+            <Button
+                android:id="@+id/btn_8_voip_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8 VoIP Test"/>
+            <Button
+                android:id="@+id/btn_8_vt_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8 VT Test"/>
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/call_hide_me_selector"
+                android:contentDescription="@string/app_name"/>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ringtone1"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ringtone2"/>
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ringtone3"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ringtone4"/>
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ringtone Index - ex)15"
+                    android:ems="10"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ringtone5"/>
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="/data/test.mp3"
+                    android:ems="10">
+                    <requestFocus/>
+                </EditText>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_test_db"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show DB Test"/>
+            <Button
+                android:id="@+id/btn_tab_test_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tab Test Main "/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

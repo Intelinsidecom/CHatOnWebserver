@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/actionbar_ic_add"
+        android:id="@+id/blocklist_menu_add"
+        android:orderInCategory="1"
+        android:title="@string/edit_group_add_member"
+        android:showAsAction="always"/>
+    <item
+        android:icon="@drawable/actionbar_ic_edit"
+        android:id="@+id/blocklist_menu_edit"
+        android:orderInCategory="1"
+        android:title="@string/ams_optmenu_edit"
+        android:showAsAction="always"/>
+</menu>

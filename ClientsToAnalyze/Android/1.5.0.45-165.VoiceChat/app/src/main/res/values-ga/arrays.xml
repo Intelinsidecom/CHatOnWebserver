@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>Íomha réamhshocraithe</item>
+        <item>Íomhánna</item>
+        <item>Glac pictiúr</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Íomhánna</item>
+        <item>Glac pictiúr</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Eagrú</item>
+        <item>Scrios</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Aistrigh físeán</item>
+        <item>Folaigh físeán</item>
+    </array>
+    <array name="pref_3_2_1_array_entry">
+        <item>Crith freagartha</item>
+        <item>Crith ag deireadh glao</item>
+    </array>
+    <array name="pref_3_2_2_array_entry">
+        <item>Ton nasctha glao</item>
+        <item>Feighlí nóiméad</item>
+        <item>Ton glao críochnaithe</item>
+    </array>
+</resources>

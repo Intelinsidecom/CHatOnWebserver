@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/ics_main_background_color_2"
+    android:padding="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="18dp"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:background="@drawable/sub_title_bg_02"
+        android:paddingLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/settings_title_ani_con"/>
+    <ListView
+        android:id="@+id/anicon_package_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:drawSelectorOnTop="false"
+        android:layout_weight="1"
+        android:fastScrollEnabled="true"/>
+</LinearLayout>

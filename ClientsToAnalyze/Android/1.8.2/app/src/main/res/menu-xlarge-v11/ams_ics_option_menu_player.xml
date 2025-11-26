@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_group_buttons">
+        <item
+            android:icon="@drawable/ams_ics_selector_title_ic_check"
+            android:id="@+id/menu_btn_send"
+            android:title="@string/ams_btn_send"
+            android:showAsAction="withText|ifRoom"/>
+    </group>
+</menu>

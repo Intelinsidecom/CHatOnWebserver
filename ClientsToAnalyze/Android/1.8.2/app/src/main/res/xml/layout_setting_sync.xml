@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="pref_screen">
+    <PreferenceCategory
+        android:layout="@layout/preference_header"
+        android:title="@string/settings_sync_contacts"/>
+    <com.sec.chaton.settings.SyncStatePreference
+        android:layout="@layout/preference"
+        android:title="@string/settings_sync_contacts"
+        android:key="pref_item_sync_now_text"
+        android:summary="@string/setting_sync_now_text"/>
+</PreferenceScreen>

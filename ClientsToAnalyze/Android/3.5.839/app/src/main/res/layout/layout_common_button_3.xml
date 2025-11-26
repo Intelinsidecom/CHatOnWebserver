@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/buttonLayoutBackground"
+    android:paddingLeft="15dp"
+    android:paddingTop="10dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="9dp"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+    <com.sec.chaton.widget.ImageTextViewGroup
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        style="?attr/imageTextViewGroupStyle"/>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#e3eaee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="239dp"
+        android:src="@drawable/secure_mode_icon"/>
+    <TextView
+        android:textSize="17sp"
+        android:textColor="#787e82"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginBottom="271dp"
+        android:text="@string/screenshare_secure_mode"/>
+</LinearLayout>

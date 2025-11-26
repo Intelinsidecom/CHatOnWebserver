@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/tw_action_bar_buddy_list_selector"
+        android:id="@+id/voice_call_buddy_list"
+        android:title="@string/voice_call_menu_buddy_list"/>
+    <item
+        android:icon="@drawable/tw_action_bar_show_member_selector"
+        android:id="@+id/voice_call_show_member"
+        android:title="@string/call_btn_member_list"/>
+    <item
+        android:icon="@drawable/share_screen"
+        android:id="@+id/voice_call_share_screen"
+        android:title="@string/call_btn_share_screen"/>
+    <item
+        android:icon="@drawable/share_screen"
+        android:id="@+id/voice_call_share_screen_end"
+        android:title="@string/call_btn_share_screen_end"/>
+</menu>

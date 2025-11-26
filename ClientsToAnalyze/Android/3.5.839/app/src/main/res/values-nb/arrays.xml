@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="default_smiley_texts">
+        <item>:-)</item>
+        <item>:-(</item>
+        <item>;-)</item>
+        <item>:-P</item>
+        <item>=-O</item>
+        <item>:-*</item>
+        <item>:O</item>
+        <item>B-)</item>
+        <item>:-$</item>
+        <item>:-!</item>
+        <item>:-[</item>
+        <item>O:-)</item>
+        <item>:-\\</item>
+        <item>:\'(</item>
+        <item>:-X</item>
+        <item>:-D</item>
+        <item>o_O</item>
+        <item>&lt;3</item>
+        <item>x-(</item>
+        <item>:-/</item>
+        <item>:-I</item>
+    </array>
+    <array name="default_smiley_names">
+        <item>Glad</item>
+        <item>Trist</item>
+        <item>Blunker</item>
+        <item>Rekker tunge</item>
+        <item>Overrasket</item>
+        <item>Kyss</item>
+        <item>Roper</item>
+        <item>Kul</item>
+        <item>Pengemunn</item>
+        <item>Fot i munnen</item>
+        <item>Flau</item>
+        <item>Engel</item>
+        <item>Usikker</item>
+        <item>Gråter</item>
+        <item>Stille som graven</item>
+        <item>Ler</item>
+        <item>Forvirret</item>
+        <item>Hjerte</item>
+        <item>Sint</item>
+        <item>Glis</item>
+        <item>Pokerfjes</item>
+    </array>
+</resources>

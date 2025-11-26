@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true">
+        <EditText
+            android:textSize="18.66dp"
+            android:gravity="top"
+            android:id="@+id/mWriteMemoTextView"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4.66dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="4.66dp"
+            android:layout_marginBottom="6dp"
+            android:hint="@string/memo_btn_write"
+            android:maxLength="140"
+            android:capitalize="sentences"/>
+    </LinearLayout>
+</LinearLayout>

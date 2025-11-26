@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ams_strarr_add_stamp">
+        <item>@string/ams_add_frame_from_camera</item>
+        <item>@string/mypage_opt_album</item>
+    </array>
+</resources>

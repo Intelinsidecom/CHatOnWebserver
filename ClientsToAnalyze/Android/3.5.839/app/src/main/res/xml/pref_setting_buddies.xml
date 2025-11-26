@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:title="@string/settings_birthday_notifications"
+        android:key="pref_item_birthday"
+        android:summary="@string/setting_birthday_description_of_contact"
+        android:defaultValue="true"
+        android:contentDescription="@string/settings_birthday_notifications"/>
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/settings_hided_contacts"
+        android:key="pref_item_hided"
+        android:contentDescription="@string/settings_hided_contacts"/>
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/settings_blocked_contacts"
+        android:key="pref_item_blocked"
+        android:contentDescription="@string/settings_blocked_contacts"/>
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/recommendation"
+        android:key="pref_item_suggestions"
+        android:contentDescription="@string/recommendation"/>
+</PreferenceScreen>

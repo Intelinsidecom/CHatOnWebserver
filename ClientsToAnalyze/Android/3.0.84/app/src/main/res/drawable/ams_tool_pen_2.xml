@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/ams_tool_pen_press_02_layer"/>
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/ams_tool_pen_press_02_layer"/>
+    <item android:drawable="@drawable/ams_tool_pen_normal_02_layer"/>
+</selector>

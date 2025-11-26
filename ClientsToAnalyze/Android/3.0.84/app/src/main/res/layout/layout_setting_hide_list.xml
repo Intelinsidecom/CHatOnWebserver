@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/select_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_common_select_all"/>
+    </LinearLayout>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:choiceMode="multipleChoice"
+        android:layout_weight="1"
+        style="@style/ListViewStyle.Common1"/>
+    <include
+        android:layout_gravity="center"
+        android:id="@+id/llayout_no_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_common_no_contents"/>
+</LinearLayout>

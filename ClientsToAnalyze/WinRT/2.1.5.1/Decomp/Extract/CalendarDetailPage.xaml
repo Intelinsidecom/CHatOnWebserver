@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="ChatON_WoA.Views.CalendarDetailPage"
+    IsTabStop="false"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    
+    <Grid Name="LayoutRoot" Background="#FFF4F4F4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Height="140">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:ConnectionId='1' x:Name="backButton" IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"                         />
+            <TextBlock Text="{Binding CalInfo.Summary}" Grid.Column="1" Style="{StaticResource PageHeaderTextStyle}" Foreground="Black"/>
+        </Grid>
+        <Grid VerticalAlignment="Top" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid Margin="0,0,0,0" Height="80" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <TextBlock Margin="10,12,0,41"  Text="{Binding CalInfo.Duration}" HorizontalAlignment="Left" VerticalAlignment="Top"  FontFamily="Segoe UI" FontSize="20" Foreground="Black"/>
+                <TextBlock Margin="10,39,0,14" Text="{Binding CalInfo.Location}" HorizontalAlignment="Left" VerticalAlignment="Bottom"  FontFamily="Segoe UI" FontSize="20" Foreground="Black"/>
+            </Grid>
+            <TextBlock Grid.Column="1" Grid.Row="1" Margin="0" Text="{Binding CalInfo.Description}" HorizontalAlignment="Left" VerticalAlignment="Top"  FontFamily="Segoe UI" FontSize="20" Foreground="Black"/>
+        </Grid>
+    </Grid>
+</Page>
+

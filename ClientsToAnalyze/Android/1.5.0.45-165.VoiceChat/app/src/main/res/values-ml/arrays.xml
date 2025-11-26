@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>സ്ഥിരസ്ഥിതി ഇമേജ്</item>
+        <item>ഇമേജുകള്‍</item>
+        <item>ചിത്രമെടുക്കുക</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>ഇമേജുകള്‍</item>
+        <item>ചിത്രമെടുക്കുക</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>എഡിറ്റ് ചെയ്യുക</item>
+        <item>ഇല്ലാതാ.</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>ചിത്രം</item>
+        <item>തല്‍സമയ വീഡിയോ</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>വീഡിയോ സ്വിച്ചുചെയ്യുക</item>
+        <item>വീഡിയോ മറയ്ക്കുക</item>
+    </array>
+</resources>

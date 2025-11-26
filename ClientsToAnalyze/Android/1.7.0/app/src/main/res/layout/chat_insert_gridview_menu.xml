@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:id="@+id/gridViewMenu"
+    android:paddingLeft="@dimen/insert_menu_padding_left"
+    android:paddingTop="@dimen/insert_menu_padding_top"
+    android:paddingRight="@dimen/insert_menu_padding_left"
+    android:paddingBottom="@dimen/insert_menu_padding_top"
+    android:layout_width="@dimen/insert_menu_grid_size"
+    android:layout_height="wrap_content"
+    android:listSelector="#0000"
+    android:horizontalSpacing="@dimen/insert_menu_grid_horizontal_spacing"
+    android:verticalSpacing="@dimen/insert_menu_grid_vertical_spacing"
+    android:columnWidth="@dimen/insert_menu_item_width"
+    android:numColumns="3"/>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+    <TextView
+        android:textAppearance="@style/TextAppearance.Pop01"
+        android:textSize="22dp"
+        android:id="@+id/title"
+        android:paddingTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"/>
+    <Switch
+        android:ellipsize="end"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/translate_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:thumb="@drawable/translator_switch_selector"
+        android:maxLines="1"
+        android:track="@drawable/translator_btn_switch"/>
+</LinearLayout>

@@ -1,0 +1,13 @@
+package com.sec.chaton.trunk.database;
+
+import android.net.Uri;
+import android.provider.BaseColumns;
+
+/* compiled from: DatabaseConstant.java */
+/* renamed from: com.sec.chaton.trunk.database.b */
+/* loaded from: classes.dex */
+public class C1586b implements BaseColumns {
+
+    /* renamed from: a */
+    public static final Uri f5697a = C1587c.f5698a.buildUpon().appendPath("trunk_comment").build();
+}

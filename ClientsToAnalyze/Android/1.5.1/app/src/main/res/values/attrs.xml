@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="UseReflection" format="boolean">
+    </attr>
+    <attr name="Items" format="integer">
+    </attr>
+    <attr name="SelectedItem" format="integer">
+    </attr>
+    <attr name="maxTheta" format="float">
+    </attr>
+    <attr name="minQuantity" format="integer">
+    </attr>
+    <attr name="maxQuantity" format="integer">
+    </attr>
+    <attr name="tabStripEnabled" format="boolean">
+    </attr>
+    <attr name="tabStripLeft" format="reference">
+    </attr>
+    <attr name="tabStripRight" format="reference">
+    </attr>
+    <attr name="tabLayout" format="reference">
+    </attr>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="right"
+    android:orientation="horizontal"
+    android:id="@+id/layout_event_banner"
+    android:background="@null"
+    android:visibility="visible"
+    android:layout_width="wrap_content"
+    android:layout_height="74dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="6dp">
+    <com.sec.chaton.widget.AdaptableTextView
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_gravity="right"
+        android:id="@+id/event_banner_textview"
+        android:background="@drawable/event_bubble"
+        android:paddingLeft="10dp"
+        android:paddingTop="9dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="57dp"
+        android:text="@string/setting_events"
+        android:layout_weight="1"/>
+    <ImageView
+        android:layout_gravity="right"
+        android:id="@+id/event_banner_character"
+        android:layout_width="57dp"
+        android:layout_height="74dp"
+        android:src="@drawable/event_banner_character"/>
+</FrameLayout>

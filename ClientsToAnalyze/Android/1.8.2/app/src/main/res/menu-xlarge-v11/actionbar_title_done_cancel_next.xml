@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/popup_tab_icon_cancel"
+        android:id="@+id/actionbar_title_cancel"
+        android:title="@string/dialog_cancel"
+        android:showAsAction="withText|ifRoom"/>
+    <item
+        android:icon="@drawable/popup_tab_icon_check"
+        android:id="@+id/actionbar_title_done"
+        android:title="@string/done"
+        android:showAsAction="withText|ifRoom"/>
+    <item
+        android:icon="@drawable/popup_tab_icon_check_disable"
+        android:id="@+id/actionbar_title_done_dim"
+        android:title="@string/done"
+        android:showAsAction="withText|ifRoom"/>
+    <item
+        android:icon="@drawable/chaton_title_ic_next"
+        android:id="@+id/actionbar_title_next"
+        android:title="@string/dialog_next"
+        android:showAsAction="withText|ifRoom"/>
+</menu>

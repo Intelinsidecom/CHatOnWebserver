@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="ChatON_WoA.SplashScreenPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Storyboard x:Key="MyStory">
+            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.2" Storyboard.TargetName="imgLogoChatON" Storyboard.TargetProperty="Opacity" To="1"/>
+        </Storyboard>
+    </Page.Resources>
+    <Grid Background="White">
+        <Grid>            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="250" />
+                <RowDefinition />
+                <RowDefinition Height="250" />
+            </Grid.RowDefinitions>
+            <Image 
+                x:Name="imgLogoChatON" 
+                Grid.Row="1" Stretch="Uniform"
+                Margin="-40,0"
+                MaxWidth="630" MaxHeight="300"  
+                Source="/Assets/provisioning_ChatON_splash_on.png" >
+            </Image>
+           
+            <StackPanel Grid.Row="2" VerticalAlignment="Top">
+                <TextBlock Foreground="Black" FontSize="16" TextAlignment="Center" Text="{Binding TextProgressBar}"></TextBlock>
+                <ProgressBar Value="{Binding ValueProgressBar}" Maximum="100" Foreground="Orange" MinWidth="136"  MaxWidth="336" Height="6" Margin="20,5,20,0"></ProgressBar>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
+

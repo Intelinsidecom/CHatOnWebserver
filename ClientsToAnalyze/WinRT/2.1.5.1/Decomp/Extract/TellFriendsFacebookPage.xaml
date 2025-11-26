@@ -1,0 +1,71 @@
+﻿<Page
+    x:Class="ChatON_WoA.Views.TellFriendsFacebookPage"
+    IsTabStop="false"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <DataTemplate x:Key="FriendsItemTemplate">
+            <Grid Width="330" Height="68">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="{Binding ProfileImgSrc}" Width="60" Height="60" Stretch="Fill" Margin="4"/>
+                <Grid Grid.Column="1" Margin="11,8,0,0" Background="Transparent">
+                    <TextBlock Text="{Binding Name}"
+                		TextWrapping="NoWrap" FontSize="25.333" FontFamily="Segoe UI Light" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center" FontWeight="Light" Foreground="Black"/>
+                </Grid>
+                <Button x:ConnectionId='1'                            Tag="{Binding Id}" Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BUTTON_INVITE'}" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+    
+    <Grid x:Name="RootFrame"  Background="#FFF4F4F4">
+		<Grid.RowDefinitions>
+    		<RowDefinition Height="140"/>
+    		<RowDefinition/>
+    	</Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:ConnectionId='5' x:Name="backButton" IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"                         />
+            <TextBlock x:Name="pageTitle" Grid.Column="1" Text="{Binding ConverterParameter=IDS_CHATON_BUTTON_FACEBOOK, Converter={StaticResource ResourceStringConverter}}" Style="{StaticResource PageHeaderTextStyle}" Foreground="Black"/>
+        </Grid>
+        <Grid Name="DefaultGrid" Grid.Row="1" Margin="119,23,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid x:ConnectionId='2' Name="AccountGrid" Width="Auto" Height="80"                             Margin="0">
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding UserAccount}" FontFamily="Segoe UI Light" FontSize="18.667" VerticalAlignment="Top" Margin="4,0,0,0" Foreground="Black"/>
+                <TextBlock Text="{Binding ConverterParameter=IDS_CHATON_POP_LOGOUT, Converter={StaticResource ResourceStringConverter}}" HorizontalAlignment="Left" TextWrapping="Wrap" FontFamily="Segoe UI Light" FontSize="18.667" VerticalAlignment="Top" Margin="4,40,0,0" Foreground="#FFFA8719"/>
+            </Grid>            
+            <Button x:ConnectionId='3' Grid.Row="1"                            Content="{Binding ConverterParameter=IDS_CHATON_BODY_POST_INVITATION_CARD_ON_MY_WALL, Converter={StaticResource ResourceStringConverter}}" Margin="0,3,0,0"  VerticalAlignment="Top"/>
+            <Button x:ConnectionId='4' Grid.Row="2"                                Content="{Binding ConverterParameter=IDS_CHATON_BODY_POST_INVITATION_MESSAGE_ON_FRIENDS_WALL, Converter={StaticResource ResourceStringConverter}}" Margin="0,20,0,0"  VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Name="FriendsGrid" Grid.Row="1" Margin="119,0,0,0" Visibility="Collapsed">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="{Binding ConverterParameter=IDS_CHATON_BODY_POST_CHATON_DOWNLOAD_LINK_ON_YOUR_FRIENDS_FACEBOOK_WALLS, Converter={StaticResource ResourceStringConverter}}" HorizontalAlignment="Left" TextWrapping="Wrap" FontFamily="Segoe UI Light" FontSize="18.667" VerticalAlignment="Top" Margin="4,0,0,10"/>
+            <GridView Grid.Row="1" Name="FriendsGridView" SelectionMode="None" ItemsSource="{Binding FriendsItems}" ItemTemplate="{StaticResource FriendsItemTemplate}" Margin="0,0,0,150">
+                <GridView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapGrid Orientation="Vertical"/>
+                    </ItemsPanelTemplate>
+                </GridView.ItemsPanel>
+            </GridView>
+        </Grid>
+    </Grid>
+</Page>
+

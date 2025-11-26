@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="2.5dp"
+    android:paddingRight="2.5dp"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="87dp"
+    android:layout_weight="1">
+    <ImageView
+        android:id="@+id/image1"
+        android:background="@drawable/mypage_profile_image_selector"
+        android:paddingLeft="2.5dp"
+        android:paddingRight="2.5dp"
+        android:focusable="true"
+        android:duplicateParentState="true"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="6dp"/>
+    <TextView
+        android:textAppearance="@style/TextAppearance.List15"
+        android:gravity="center"
+        android:id="@+id/name1"
+        android:layout_width="62dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:singleLine="true"
+        android:lineSpacingMultiplier="0.9"/>
+</LinearLayout>

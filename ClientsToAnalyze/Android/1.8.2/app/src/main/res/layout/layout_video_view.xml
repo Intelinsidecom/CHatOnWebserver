@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentlayout"
+    android:background="@color/ics_main_background_color_2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/video_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="101dp"
+        android:adjustViewBounds="true"/>
+    <ListView
+        android:id="@+id/dropdownview"
+        android:background="@drawable/more_option_bg"
+        android:visibility="gone"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/list_2line"
+        android:layout_below="@+id/topPanel"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

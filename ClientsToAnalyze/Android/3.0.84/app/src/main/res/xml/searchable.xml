@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+    android:label="@string/app_name"
+    android:hint="@string/app_name"
+    android:searchMode="queryRewriteFromText"
+    android:searchSuggestAuthority="com.sec.chaton.provider.SuggestionsProvider"
+    android:searchSuggestPath="search"
+    android:searchSuggestIntentAction="android.intent.action.VIEW"
+    android:searchSuggestThreshold="1"
+    android:includeInGlobalSearch="false"
+    android:queryAfterZeroResults="false"
+    android:searchSettingsDescription="@string/app_name">
+    <extra-attr
+        android:name="includeInInsightSearch"
+        android:value="true"/>
+    <extra-attr
+        android:name="searchLayoutStyle"
+        android:value="suggest_template_chat"/>
+</searchable>

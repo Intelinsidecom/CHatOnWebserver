@@ -1,0 +1,3 @@
+rootProject.name = 'ChatON Voice & Video Chat'
+
+include 'app'

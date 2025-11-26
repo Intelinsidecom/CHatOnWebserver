@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.chaton.widget.FontSizeListViewItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@drawable/buddy_item_xml"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="72dp">
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            layout="@layout/layout_setting_chatview_bubble"/>
+    </LinearLayout>
+    <CheckedTextView
+        android:layout_gravity="center_vertical"
+        android:id="@android:id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        style="@style/GeneralCheckedTextViewStyle"/>
+</com.sec.chaton.widget.FontSizeListViewItemLayout>

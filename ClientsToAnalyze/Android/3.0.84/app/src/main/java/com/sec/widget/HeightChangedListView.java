@@ -1,0 +1,33 @@
+package com.sec.widget;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.widget.ListView;
+import com.sec.chaton.util.C3250y;
+
+/* loaded from: classes.dex */
+public class HeightChangedListView extends ListView {
+
+    /* renamed from: a */
+    private InterfaceC3643ak f13403a;
+
+    public HeightChangedListView(Context context, AttributeSet attributeSet) {
+        super(context, attributeSet);
+    }
+
+    public void setOnHeightChangedListener(InterfaceC3643ak interfaceC3643ak) {
+        this.f13403a = interfaceC3643ak;
+    }
+
+    @Override // android.widget.ListView, android.widget.AbsListView, android.view.View
+    protected void onSizeChanged(int i, int i2, int i3, int i4) {
+        C3250y.m11453c("onSizeChanged " + i3 + " x " + i4 + " -> " + i + " x " + i2, getClass().getSimpleName());
+        super.onSizeChanged(i, i2, i3, i4);
+        if (getTranscriptMode() == 2) {
+            setSelectionFromTop(getCount(), 0);
+        }
+        if (i == i3 && i2 != 0 && i4 != 0 && this.f13403a != null && i2 != i4) {
+            this.f13403a.mo4970a(this, ((double) i2) > ((double) i4) * 1.4d);
+        }
+    }
+}

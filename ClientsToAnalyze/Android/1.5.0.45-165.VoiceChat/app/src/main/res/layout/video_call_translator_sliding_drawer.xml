@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.coolots.chaton.call.view.layout.TranslatorSlidingDrawer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_call_translator_container"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:bottomOffset="-68dp"
+    android:allowSingleTap="false"
+    android:handle="@+id/video_call_translator_tab"
+    android:content="@+id/voice_call_translator_content">
+    <FrameLayout
+        android:gravity="bottom"
+        android:id="@+id/video_call_translator_tab"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:gravity="bottom|center_horizontal"
+            android:id="@+id/video_call_translator_handle"
+            android:background="@drawable/chat_translator_handler"
+            android:duplicateParentState="true"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:contentDescription="@string/reject_call_with_msg"/>
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/voice_call_translator_content"
+        android:background="@drawable/chat_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.coolots.chaton.call.view.layout.CallTranslatorScrollViewLayout
+            android:id="@+id/voice_call_translator_content_id"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</com.coolots.chaton.call.view.layout.TranslatorSlidingDrawer>

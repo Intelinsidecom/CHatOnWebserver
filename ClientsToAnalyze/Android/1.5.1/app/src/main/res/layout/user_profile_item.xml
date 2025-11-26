@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flayout_relationship"
+    android:layout_width="match_parent"
+    android:layout_height="62dp">
+    <RelativeLayout
+        android:gravity="left"
+        android:id="@+id/rParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.sec.chaton.widget.ProfileImageView
+            android:id="@+id/imgfriend1"
+            android:background="@drawable/image_border"
+            android:layout_width="48.66dp"
+            android:layout_height="48.66dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="6.7dp"
+            android:src="@drawable/msg_list_id_1"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:textSize="11.3dp"
+            android:typeface="sans"
+            android:textColor="@color/white"
+            android:ellipsize="marquee"
+            android:gravity="center_horizontal"
+            android:id="@+id/textfriend1"
+            android:background="@drawable/img_name_tag"
+            android:layout_width="48.66dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="2dp"
+            android:text=""
+            android:singleLine="true"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</FrameLayout>

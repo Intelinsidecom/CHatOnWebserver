@@ -1,0 +1,136 @@
+﻿<Page x:ConnectionId='1'
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Controls="using:ChatOn.Controls"
+    x:Name="pageRoot"
+    x:Class="ChatON_WoA.Views.DownloadSettingPage"
+                                       
+                                           
+    mc:Ignorable="d">
+    <Page.Resources>
+        <DataTemplate x:Key="PackageItemTemplate">
+            <Grid Margin="0,0,0,20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.RowSpan="3" BorderBrush="#FF212121" Height="70" Width="70" BorderThickness="2">
+                    <Grid Height="70" Width="70">
+                        <Image Source="{Binding ThumbImageUri}" HorizontalAlignment="Center" Height="70" Width="70"/>
+                    </Grid>
+                </Border>
+
+                <TextBlock Grid.Column="2" Foreground="Black" 
+                           HorizontalAlignment="Left" Margin="0,15,5,2" TextWrapping="Wrap" 
+                           Text="{Binding Name}" FontFamily="Segoe UI" FontSize="18"/>
+
+                <TextBlock Grid.Row="1" Grid.Column="2" Foreground="Black"
+                           Visibility="{Binding IsDownloading, Converter={StaticResource BoolToVisibility}, ConverterParameter='!'}"
+                           HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding GetSubInfoString}" 
+                           FontFamily="Segoe UI" FontSize="16" FontWeight="Light"/>
+
+                <TextBlock Grid.Row="1" Grid.Column="2" Foreground="Black" 
+                           HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding GetSubInfoString}"
+                           Visibility="{Binding IsDownloading, Converter={StaticResource BoolToVisibility}}" 
+                           FontFamily="Segoe UI" FontSize="12" Margin="0,10,0,0" FontWeight="Light"/>
+
+                <ProgressBar VerticalAlignment="Top" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" 
+                             Visibility="{Binding IsDownloading, Converter={StaticResource BoolToVisibility}}" 
+                             Height="10" Margin="0,0,160,0" Value="{Binding DownloadPercent}"/>
+
+                <Button x:ConnectionId='2' VerticalAlignment="Center" IsEnabled="{Binding IsEnableButtonCancel}" Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BUTTON_CANCEL'}" 
+                        MinWidth="150"                              HorizontalAlignment="Right" Visibility="{Binding IsDownloading, Converter={StaticResource BoolToVisibility}}" 
+                        Grid.RowSpan="2" Grid.Column="3" Margin="0,0,0,0" Height="40" Grid.ColumnSpan="2" ></Button>
+
+                <Button x:ConnectionId='3' Grid.Column="3" Grid.RowSpan="2" IsEnabled="{Binding IsEnableButtonUninstall}" HorizontalAlignment="Right" MinWidth="150"
+                        Visibility="{Binding IsDownloading, Converter={StaticResource BoolToVisibility}, ConverterParameter='!'}" 
+                        Content="{Binding IsNeedDownload, Converter={StaticResource AniconButtonTextConverter}}" 
+                        VerticalAlignment="Center" Margin="0,0,0,0"
+                                                       Height="40"/>
+
+            </Grid>
+        </DataTemplate>
+
+
+        <!--<DataTemplate x:Key="PackageItemTemplate">
+            <Grid Width="190" VerticalAlignment="Top" Height="280">
+                <Border BorderBrush="#FF212121" BorderThickness="2"/>
+                <StackPanel Height="268">
+                    <Image Source="{Binding ThumbImageUri}" HorizontalAlignment="Center" Height="70" Margin="0,20,0,0" Width="70"/>
+                    <Button Visibility="{Binding IsDownloading, Converter={StaticResource BoolToVisibility}, ConverterParameter='!'}" Content="{Binding IsNeedDownload, Converter={StaticResource AniconButtonTextConverter}}" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" Click="DownloadButton_Click_1" Height="40"/>
+                    <ProgressBar Visibility="{Binding IsDownloading, Converter={StaticResource BoolToVisibility}}" Height="10" Margin="5,25,5,15" Value="{Binding DownloadPercent}"/>
+                    <TextBlock Foreground="Black" HorizontalAlignment="Center" Margin="5,10,5,0" TextWrapping="Wrap" Text="{Binding Name}" FontFamily="Segoe UI" FontSize="18"/>
+                    <TextBlock Foreground="Black" HorizontalAlignment="Center" TextWrapping="Wrap" Text="{Binding GetSubInfoString}" FontFamily="Segoe UI" FontSize="16" FontWeight="Light"/>
+                    <TextBlock Foreground="Black" HorizontalAlignment="Center" TextWrapping="Wrap" Text="{Binding EndDate, Converter={StaticResource MillisecondsToDate}, ConverterParameter='d'}" FontFamily="Segoe UI" FontSize="16" FontWeight="Light"/>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>-->
+
+
+    </Page.Resources>
+
+    <Grid Background="White" x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Margin="0,59,20,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock VerticalAlignment="Bottom"  TextWrapping="Wrap" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_TAB4_ANICON'}" FontSize="26.667" Foreground="#FFFF9600" FontFamily="Segoe UI Light" Margin="0,0,0,0"/>
+
+            <StackPanel  Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0, 0, 20 ,0">
+                <ComboBox x:Name="cmbSelectSort" Height="40" MinWidth="150" Margin="0,0,30,0" VerticalAlignment="Bottom" IsEnabled="{Binding isEnable}" SelectedIndex="{Binding SelectedIndexComboBox, Mode=TwoWay}">
+                </ComboBox>
+
+                <Controls:ImageButton x:ConnectionId='4' Margin="0,22,0,-22" x:Name="DownloadAllButton" VerticalContentAlignment="Bottom" VerticalAlignment="Bottom" NormalImage="Images/Icons/appbtn_select all.png"                                 PressedImage="Images/Icons/appbtn_select all_press.png"/>
+            </StackPanel>
+
+        </Grid>
+        <ListView 
+            x:Name="List" 
+            Grid.Row="1"
+            Visibility="{Binding PackageVisibility}"
+            Margin="0,40,0,30" SelectionMode="None" 
+            ItemTemplate="{StaticResource PackageItemTemplate}" ItemsSource="{Binding PackageItems}" 
+            ScrollViewer.VerticalScrollMode="Enabled" ScrollViewer.HorizontalScrollMode="Disabled" 
+            ScrollViewer.VerticalScrollBarVisibility="Auto"
+            HorizontalContentAlignment="Stretch">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="ListViewItem">
+                                <ContentPresenter x:Name="contentPresenter"
+                                                  HorizontalAlignment="Stretch"
+                                                  ContentTransitions="{TemplateBinding ContentTransitions}"/>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
+
+        <!--<GridView Margin="0,40,0,30" SelectionMode="None" Grid.Row="1" ItemTemplate="{StaticResource PackageItemTemplate}" ItemsSource="{Binding PackageItems}" ScrollViewer.VerticalScrollMode="Enabled" ScrollViewer.HorizontalScrollMode="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapGrid Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </GridView>-->
+    </Grid>
+</Page>
+

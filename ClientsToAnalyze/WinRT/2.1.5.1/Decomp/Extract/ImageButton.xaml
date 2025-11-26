@@ -1,0 +1,109 @@
+﻿<UserControl x:Class="ChatOn.Controls.ImageButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="using:ChatOn.Controls"
+             xmlns:infra="using:ChatOn.Infrastructure"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d">
+    <UserControl.Resources>
+        <ControlTemplate x:Key="ImageButtonTemplate"
+                         TargetType="local:ImageButtonBase">
+            <Grid Background="Transparent">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="PointerOver" />
+                        <VisualState x:Name="Pressed">
+                            <Storyboard>
+                                <Storyboard>
+                                    <DoubleAnimation Duration="0"
+                                                     To="1"
+                                                     Storyboard.TargetProperty="Opacity"
+                                                     Storyboard.TargetName="PressedImg" />
+                                    <DoubleAnimation Duration="0"
+                                                     To="0"
+                                                     Storyboard.TargetProperty="Opacity"
+                                                     Storyboard.TargetName="NormalImg" />
+                                    <DoubleAnimation Duration="0"
+                                                     To="0"
+                                                     Storyboard.TargetProperty="Opacity"
+                                                     Storyboard.TargetName="DisabledImg" />
+                                </Storyboard>
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="Disabled">
+                            <Storyboard>
+                                <Storyboard>
+                                    <DoubleAnimation Duration="0"
+                                                     To="1"
+                                                     Storyboard.TargetProperty="Opacity"
+                                                     Storyboard.TargetName="DisabledImg" />
+                                    <DoubleAnimation Duration="0"
+                                                     To="0"
+                                                     Storyboard.TargetProperty="Opacity"
+                                                     Storyboard.TargetName="PressedImg" />
+                                    <DoubleAnimation Duration="0"
+                                                     To="0"
+                                                     Storyboard.TargetProperty="Opacity"
+                                                     Storyboard.TargetName="NormalImg" />
+                                </Storyboard>
+                            </Storyboard>
+                        </VisualState>
+                    </VisualStateGroup>
+                    <VisualStateGroup x:Name="FocusStates">
+                        <VisualState x:Name="Focused" />
+                        <VisualState x:Name="Unfocused" />
+                        <VisualState x:Name="PointerFocused" />
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+                <Image x:Name="PressedImg"
+                       Margin="0"
+                       Source="{TemplateBinding PressedImage}"
+                       Stretch="None"
+                       Opacity="0"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Top" />
+                <Image x:Name="DisabledImg"
+                       Margin="0"
+                       Source="{TemplateBinding DisabledImage}"
+                       Stretch="None"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Top" />
+                <Image x:Name="NormalImg"
+                       Margin="0"
+                       Source="{TemplateBinding NormalImage}"
+                       Stretch="None"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Top" />
+                <TextBlock x:Name="TitleTextBlock"
+                           Text="{TemplateBinding Text}"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Top"
+                           FontSize="12"
+                           Foreground="{TemplateBinding Foreground}"
+                           Grid.Row="1"
+                           Margin="0,5,0,0"
+                           FontWeight="Normal" />
+            </Grid>
+        </ControlTemplate>
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <local:ImageButtonBase x:ConnectionId='1' x:Name="imgBtn"
+                                                   
+                               Template="{StaticResource ImageButtonTemplate}"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Top" />
+
+    </Grid>
+</UserControl>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title=""
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/downloads_downloadAll"
+        android:title="@string/setting_download_all_title"
+        android:showAsAction="always"/>
+</menu>

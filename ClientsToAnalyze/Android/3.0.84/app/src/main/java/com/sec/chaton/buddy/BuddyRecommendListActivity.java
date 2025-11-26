@@ -1,0 +1,44 @@
+package com.sec.chaton.buddy;
+
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.support.v4.app.Fragment;
+import android.view.Menu;
+import android.view.MenuItem;
+import com.sec.chaton.base.BaseActivity;
+import com.sec.chaton.base.BaseSinglePaneActivity;
+
+/* loaded from: classes.dex */
+public class BuddyRecommendListActivity extends BaseSinglePaneActivity {
+    @Override // com.sec.chaton.base.BaseSinglePaneActivity
+    /* renamed from: a */
+    protected Fragment mo1193a() {
+        return new BuddyRecommendListFragment();
+    }
+
+    @Override // android.support.v4.app.FragmentActivity, android.app.Activity, android.content.ComponentCallbacks
+    public void onConfigurationChanged(Configuration configuration) throws Resources.NotFoundException {
+        super.onConfigurationChanged(configuration);
+        BaseActivity.m3080a(this);
+    }
+
+    @Override // com.sec.chaton.base.BaseSinglePaneActivity, com.sec.chaton.base.BaseActivity, android.support.v4.app.FragmentActivity, android.app.Activity
+    protected void onResume() throws Resources.NotFoundException {
+        super.onResume();
+        BaseActivity.m3080a(this);
+    }
+
+    @Override // com.sec.chaton.base.BaseActivity, com.sec.common.actionbar.ActionBarFragmentActivity, com.sec.common.actionbar.InterfaceC3302s
+    public boolean onSupportCreateOptionsMenu(Menu menu) {
+        return super.onSupportCreateOptionsMenu(menu);
+    }
+
+    @Override // com.sec.chaton.base.BaseActivity, com.sec.common.actionbar.ActionBarFragmentActivity, com.sec.common.actionbar.InterfaceC3302s
+    public boolean onSupportOptionsItemSelected(MenuItem menuItem) {
+        if (menuItem.getItemId() != 16908332) {
+            return super.onSupportOptionsItemSelected(menuItem);
+        }
+        finish();
+        return true;
+    }
+}

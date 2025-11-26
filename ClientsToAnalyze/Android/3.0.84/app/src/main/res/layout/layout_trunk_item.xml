@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@android:id/widget_frame">
+        <ListView
+            android:scrollbarStyle="outsideOverlay"
+            android:id="@+id/trunkContentList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/ListViewStyle.Common1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/moreCommentLoadbar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <ProgressBar
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            style="?android:attr/progressBarStyle"/>
+        <TextView
+            android:textSize="17dp"
+            android:gravity="center"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="@string/dialog_provision_ing"/>
+    </LinearLayout>
+</RelativeLayout>

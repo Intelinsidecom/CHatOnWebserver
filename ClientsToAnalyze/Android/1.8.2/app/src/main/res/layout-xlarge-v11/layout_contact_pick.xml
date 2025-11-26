@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/ics_main_background_color_2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@drawable/chaton_attach_header"
+        android:paddingLeft="13dp"
+        android:paddingTop="8dp"
+        android:paddingRight="13dp"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.sec.widget.EditTextWithClearButton
+            android:textColor="@color/buddylist_search_edittext_text_color"
+            android:gravity="center_vertical"
+            android:id="@+id/searchText"
+            android:background="@drawable/btn_search_dialog_xml"
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/search_contacts"
+            android:singleLine="true"
+            android:maxLength="512"
+            android:editable="true"
+            android:layout_weight="1"
+            android:imeOptions="actionDone"
+            android:textCursorDrawable="@null"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/contactList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

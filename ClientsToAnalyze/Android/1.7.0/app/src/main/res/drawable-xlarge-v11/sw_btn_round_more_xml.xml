@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_window_focused="false"
+        android:state_enabled="true"
+        android:drawable="@drawable/sw_btn_round_more"/>
+    <item
+        android:state_window_focused="false"
+        android:state_enabled="false"
+        android:drawable="@drawable/sw_btn_round_more_disable"/>
+    <item
+        android:state_enabled="false"
+        android:state_pressed="true"
+        android:drawable="@drawable/sw_btn_round_more_disable"/>
+    <item
+        android:state_enabled="false"
+        android:state_pressed="true"
+        android:drawable="@drawable/sw_btn_round_more_disable_pressed"/>
+    <item
+        android:state_enabled="true"
+        android:state_pressed="true"
+        android:drawable="@drawable/sw_btn_round_more_pressed"/>
+    <item
+        android:state_enabled="true"
+        android:drawable="@drawable/sw_btn_round_more"/>
+    <item
+        android:state_focused="true"
+        android:drawable="@drawable/sw_btn_round_more_disable_focused"/>
+    <item android:drawable="@drawable/sw_btn_round_more_disable"/>
+</selector>

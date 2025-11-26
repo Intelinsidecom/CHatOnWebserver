@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>డిఫాల్ట్ చిత్రం</item>
+        <item>చిత్రాలు</item>
+        <item>చిత్రాన్ని తీయి</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>చిత్రాలు</item>
+        <item>చిత్రాన్ని తీయి</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>సవరించు</item>
+        <item>తొలగించు</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>చిత్రం</item>
+        <item>ప్రత్యక్ష వీడియో</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>వీడియోను మార్చు</item>
+        <item>వీడియోను దాచు</item>
+    </array>
+</resources>

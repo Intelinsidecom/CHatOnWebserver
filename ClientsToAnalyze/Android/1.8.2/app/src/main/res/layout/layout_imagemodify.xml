@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/ics_main_background_color_2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <view
+            android:id="@+id/image"
+            android:background="@color/ics_main_background_color_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="101dp"
+            android:layout_marginRight="39dp"
+            android:layout_marginBottom="101dp"
+            android:layout_x="0dp"
+            android:layout_y="0dp"
+            class="com.sec.vip.cropimage.ImageModifyView"/>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/popup_tab_icon_cancel"
+        android:id="@+id/actionbar_title_cancel"
+        android:title="@string/dialog_cancel"
+        android:showAsAction="withText|ifRoom"/>
+    <item
+        android:icon="@drawable/popup_tab_icon_check"
+        android:id="@+id/actionbar_title_change"
+        android:title="@string/setting_button_change"
+        android:showAsAction="withText|ifRoom"/>
+</menu>

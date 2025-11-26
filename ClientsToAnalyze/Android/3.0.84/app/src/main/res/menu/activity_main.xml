@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/actionbar_ic_reply"
+        android:id="@+id/menu_chat"
+        android:orderInCategory="1"
+        android:title="@string/select_chat_type"
+        android:showAsAction="always"/>
+    <item
+        android:icon="@drawable/more_option_setting_white"
+        android:id="@+id/menu_settings"
+        android:orderInCategory="9998"
+        android:title="@string/setting_settings_title"
+        android:showAsAction="never"/>
+    <item
+        android:icon="@drawable/more_option_support_white"
+        android:id="@+id/menu_support"
+        android:orderInCategory="9999"
+        android:title="@string/more_menu_support"
+        android:showAsAction="never"/>
+</menu>

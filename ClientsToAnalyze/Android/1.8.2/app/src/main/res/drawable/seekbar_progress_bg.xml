@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <clip>
+            <shape>
+                <gradient
+                    android:startColor="#ff5e8ea3"
+                    android:endColor="#ff13729e"
+                    android:angle="270"
+                    android:centerY="0.1"
+                    android:centerColor="#ff32a0d2"/>
+            </shape>
+        </clip>
+    </item>
+    <item>
+        <clip>
+            <nine-patch
+                android:src="@drawable/music_player_progressive"
+                android:dither="true"/>
+        </clip>
+    </item>
+</layer-list>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="default_smiley_texts">
+        <item>:-)</item>
+        <item>:-(</item>
+        <item>;-)</item>
+        <item>:-P</item>
+        <item>=-O</item>
+        <item>:-*</item>
+        <item>:O</item>
+        <item>B-)</item>
+        <item>:-$</item>
+        <item>:-!</item>
+        <item>:-[</item>
+        <item>O:-)</item>
+        <item>:-\\</item>
+        <item>:\'(</item>
+        <item>:-x</item>
+        <item>:-D</item>
+        <item>o_O</item>
+        <item>&lt;3</item>
+        <item>x-(</item>
+        <item>:-/</item>
+        <item>:-I</item>
+    </array>
+    <array name="default_smiley_names">
+        <item>Laimīgs</item>
+        <item>Bēdīgs</item>
+        <item>Mirkšķina</item>
+        <item>Izbāzta mēle</item>
+        <item>Pārsteigts</item>
+        <item>Skūpsts</item>
+        <item>Kliedzošs</item>
+        <item>Kolosāli</item>
+        <item>Nauda mutē</item>
+        <item>Turēt mēli aiz zobiem</item>
+        <item>Nokaunējies</item>
+        <item>Eņģelis</item>
+        <item>Neizlēmīgs</item>
+        <item>Raudošs</item>
+        <item>Slēgtas lūpas</item>
+        <item>Smejas</item>
+        <item>Apmulsis</item>
+        <item>Sirds</item>
+        <item>Nikns</item>
+        <item>Smīns</item>
+        <item>Poker face</item>
+    </array>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textAppearance="@style/TextAppearance.List27"
+            android:gravity="center"
+            android:id="@+id/count"
+            android:background="#dcdcdc"
+            android:paddingRight="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"/>
+        <GridView
+            android:id="@+id/gridCategory"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:verticalSpacing="@dimen/trunk_gridview_vertical_spacing"
+            android:stretchMode="spacingWidthUniform"
+            android:columnWidth="@dimen/trunk_list_item_width"
+            android:numColumns="auto_fit"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</FrameLayout>

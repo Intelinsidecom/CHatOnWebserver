@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="default_smiley_texts">
+        <item>:-)</item>
+        <item>:-(</item>
+        <item>;-)</item>
+        <item>:-P</item>
+        <item>=-O</item>
+        <item>:-*</item>
+        <item>:O</item>
+        <item>B-)</item>
+        <item>:-$</item>
+        <item>:-!</item>
+        <item>:-[</item>
+        <item>O:-)</item>
+        <item>:-\\</item>
+        <item>:\'(</item>
+        <item>:-X</item>
+        <item>:-D</item>
+        <item>o_O</item>
+        <item>&lt;3</item>
+        <item>x-(</item>
+        <item>:-/</item>
+        <item>:-I</item>
+    </array>
+    <array name="default_smiley_names">
+        <item>Glad</item>
+        <item>Trist</item>
+        <item>Blinker</item>
+        <item>Rækker tunge</item>
+        <item>Overrasket</item>
+        <item>Kysser</item>
+        <item>Råber</item>
+        <item>Sej</item>
+        <item>Pengeglad</item>
+        <item>Forlegen</item>
+        <item>Flov</item>
+        <item>Engel</item>
+        <item>Uafklaret</item>
+        <item>Græder</item>
+        <item>Lukket med syv segl</item>
+        <item>Griner</item>
+        <item>Forvirret</item>
+        <item>Hjerte</item>
+        <item>Vred</item>
+        <item>Smørret grin</item>
+        <item>Pokerfjæs</item>
+    </array>
+</resources>

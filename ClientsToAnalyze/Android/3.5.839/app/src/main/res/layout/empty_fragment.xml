@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="@dimen/empty_content_image_size"
+            android:layout_height="@dimen/empty_content_image_size"
+            android:layout_marginBottom="5dp"
+            android:src="@null"/>
+        <TextView
+            android:textAppearance="@style/TextAppearance.List29"
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/empty_content_caption_height"
+            android:text="@string/no_item_selected"/>
+    </LinearLayout>
+</RelativeLayout>

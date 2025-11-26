@@ -1,0 +1,138 @@
+﻿<Page
+    x:Class="ChatON_WoA.Views.SearchBuddyPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:infra="using:ChatOn.Infrastructure"
+    xmlns:customControl="using:ChatOn.Controls"
+    NavigationCacheMode="Disabled"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <DataTemplate x:Key="BuddyListItemTemplate">
+            <Grid HorizontalAlignment="Left" Width="344" Height="68" Margin="0,0,45,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Image Source="{Binding ProfileImage}" Margin="4,4,0,4" Width="60" Height="60" Stretch="Fill" />
+                <Grid Grid.Column="1" Margin="11,8,0,0" Background="Transparent" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid>
+                        <TextBlock infra:BindingService.FullText="{Binding Name}" infra:BindingService.HighlightedText="{Binding DataContext.QueryText, ElementName=LayoutRoot}" infra:BindingService.HighlightBrush="{StaticResource L_TextBoxForegroundThemeSearchResult}"
+                		    TextWrapping="NoWrap" FontSize="25.333" FontFamily="Segoe UI Light" FontWeight="Light" Visibility="{Binding IsEmptySearch, Converter={StaticResource ReverseBoolToVisibility}}"/>
+                        <TextBlock Text="{Binding Buddy.Name}" Visibility="{Binding IsEmptySearch, Converter={StaticResource ReverseBoolToVisibility}}"
+                		    TextWrapping="NoWrap" FontSize="25.333" FontFamily="Segoe UI Light" FontWeight="Light"/>
+                    </Grid>
+                    
+                    <TextBlock Text="{Binding Name}" FontSize="25.333" FontFamily="Segoe UI Light" FontWeight="Light" Visibility="{Binding IsEmptySearch, Converter={StaticResource BoolToVisibility}}"></TextBlock>
+                    
+                    <TextBlock Text="{Binding Status}"
+                		TextWrapping="NoWrap"  FontSize="20" FontFamily="Segoe UI Light" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Grid.Row="1"/>
+                </Grid>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="SelectedBuddyItemTemplate">
+            <Grid x:ConnectionId='1' Width="200" Height="48"                              >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="{Binding Buddy.ProfileImage}" Margin="4,4,0,4" Width="40" Height="40" Stretch="Fill"/>
+                    <Grid Grid.Column="1" Margin="11,8,0,0" Background="Transparent">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="{Binding Buddy.Name}" 
+                		    TextWrapping="NoWrap" FontSize="20.333" FontFamily="Segoe UI Light" HorizontalAlignment="Left" 
+							Margin="0" VerticalAlignment="Top" FontWeight="Light" TextTrimming="WordEllipsis"/>
+                        <TextBlock Text="{Binding Buddy.OrgNumber}"
+                		TextTrimming="WordEllipsis" TextWrapping="NoWrap" FontSize="14" FontFamily="Segoe UI Light" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Grid.Row="1" Foreground="{Binding Buddy.StatusForeground}" Visibility="{Binding Buddy.OrgPhoneNumberVisible}"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid x:Name="LayoutRoot" Background="#FFF4F4F4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid Height="140">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:ConnectionId='6' x:Name="backButton" IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"                         />
+            <TextBlock x:Name="pageTitle1" Grid.Column="1" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BUTTON_SEARCH'}" Style="{StaticResource PageHeaderTextStyle}"/>
+            <TextBlock x:Name="txtSearchQuery" Grid.Column="2" Text="{Binding SearchResultInfo}" Style="{StaticResource PageSubheaderTextStyle}" Foreground="{StaticResource L_TextBoxForegroundThemeSearchResult}" />
+        </Grid>
+
+        <Grid x:Name="Current" Grid.Row="2" Margin="120,0,0,15">
+            <GridView x:ConnectionId='5' x:Name="gridView" 
+                      Grid.Row="0" 
+                      SelectionMode="Multiple" 
+                      ItemsSource="{Binding SearchResult}" 
+                      ItemTemplate="{StaticResource BuddyListItemTemplate}" 
+                      ItemContainerStyle="{StaticResource GridViewBuddyListStyle}" 
+                                                                  >
+                <GridView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <!--<infra:WrapPanel Orientation="Vertical"/>-->
+                        <WrapGrid/>
+                    </ItemsPanelTemplate>
+                </GridView.ItemsPanel>
+            </GridView>
+            <Grid Grid.Row="1"
+             
+                Width="Auto" Background="Transparent" HorizontalAlignment="Center" x:Name="BuddyProfileContainer" Visibility="Collapsed" VerticalAlignment="Center">
+
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="3" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <ListView 
+                Grid.Column="0"
+                Margin="120,0,70,10" 
+                VerticalAlignment="Top" 
+                ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                ScrollViewer.HorizontalScrollBarVisibility="Visible"
+                ScrollViewer.HorizontalScrollMode="Enabled" SelectionMode="None"                          
+                ItemsSource="{Binding SelectedBuddyItems,Mode=TwoWay}" 
+                ItemTemplate="{StaticResource SelectedBuddyItemTemplate}"
+                Visibility="Collapsed">
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <VirtualizingStackPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+            </ListView>
+            <StackPanel Grid.Column="1" VerticalAlignment="Top"  Orientation="Horizontal" Margin="0,0,70,40">
+                <Button x:ConnectionId='2' x:Name="ChatButton" Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_SK3_START_CHAT'}" MinWidth="100" IsEnabled="False"                              ></Button>
+                <Button x:ConnectionId='3' x:Name="BroadcastButton" Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_HEADER_BROADCAST'}" MinWidth="100" IsEnabled="False"                                  ></Button>
+                <Button x:ConnectionId='4' Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BUTTON_CANCEL'}"  MinWidth="100"                       />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
+

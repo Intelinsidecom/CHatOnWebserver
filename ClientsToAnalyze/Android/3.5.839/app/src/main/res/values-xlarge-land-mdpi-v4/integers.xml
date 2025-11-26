@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="me_popup_dialog_width_percent">45</integer>
+    <integer name="buddy_popup_dialog_width_percent">45</integer>
+    <integer name="buddy_var_popup_dialog_width_percent">45</integer>
+    <integer name="group_popup_dialog_width_percent">45</integer>
+    <integer name="special_buddy_popup_dialog_width_percent">90</integer>
+    <integer name="gridview_col_change_skin">3</integer>
+    <integer name="popup_dialog_share_via_num_column">2</integer>
+</resources>

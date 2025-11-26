@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="pref_screen">
+    <com.sec.chaton.settings.AboutNewNotice
+        android:layout="@layout/preference_setting_menu"
+        android:title="@string/settings_about"
+        android:key="pref_item_about"/>
+    <Preference
+        android:layout="@layout/preference_setting_menu"
+        android:title="@string/manage_buddies"
+        android:key="pref_item_Buddies"/>
+    <Preference
+        android:layout="@layout/preference_setting_menu"
+        android:title="@string/chat_display_settings"
+        android:key="pref_item_Chats"/>
+    <Preference
+        android:layout="@layout/preference_setting_menu"
+        android:title="@string/setting_category_privacy"
+        android:key="pref_item_Privacy"/>
+    <Preference
+        android:layout="@layout/preference_setting_menu"
+        android:title="@string/setting_header_notifications"
+        android:key="pref_item_Noti"/>
+    <com.sec.chaton.settings.AboutNewNotice
+        android:layout="@layout/preference_setting_menu"
+        android:title="@string/setting_category_general"
+        android:key="pref_item_General"/>
+    <com.sec.chaton.settings.AboutNewNotice
+        android:layout="@layout/preference_setting_menu"
+        android:title="@string/settings_title_downloads"
+        android:key="pref_item_Downloads"/>
+    <Preference
+        android:layout="@layout/preference_setting_menu"
+        android:title="@string/menu_call"
+        android:key="pref_item_Call"/>
+    <Preference
+        android:layout="@layout/preference_setting_menu"
+        android:title="@string/settings_sync_contacts"
+        android:key="pref_item_sync"/>
+    <PreferenceScreen
+        android:layout="@layout/preference_setting_menu"
+        android:title="@string/settings_send_log"
+        android:key="pref_item_send_log"/>
+</PreferenceScreen>

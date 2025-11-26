@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="gridview_col_attachfile">4</integer>
+    <integer name="gridview_col_change_skin">4</integer>
+    <integer name="popup_dialog_share_via_num_column">3</integer>
+    <integer name="unblock_buddy_button_width_multiplier">150</integer>
+</resources>

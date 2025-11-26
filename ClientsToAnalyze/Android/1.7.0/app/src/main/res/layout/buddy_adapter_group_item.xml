@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/BuddyListSubTitleLayout">
+    <TextView
+        android:id="@+id/buddy_group_name"
+        style="@style/BuddyListSubTitleTextName"/>
+    <TextView
+        android:id="@+id/buddy_group_participants"
+        style="@style/BuddyListSubTitleTextCount"/>
+    <ImageView
+        android:id="@+id/buddy_group_fold"
+        style="@style/BuddyListSubTitleImageFold"/>
+</LinearLayout>

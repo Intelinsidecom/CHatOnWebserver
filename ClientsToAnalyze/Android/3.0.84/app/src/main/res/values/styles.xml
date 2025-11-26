@@ -1,0 +1,1648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActionBarBaseStyle" parent="">
+    </style>
+    <style name="ActionButtonBaseStyle" parent="">
+        <item name="android:gravity">0x11</item>
+        <item name="android:scaleType">5</item>
+    </style>
+    <style name="ActionBarCompatTitleBaseStyle" parent="">
+        <item name="android:ellipsize">4</item>
+        <item name="android:gravity">0x10</item>
+        <item name="android:id">@id/actionbar_compat_title</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="ActionBarStyle" parent="@style/ActionBarBaseStyle">
+        <item name="android:background">?attr/actionbarBackground</item>
+        <item name="android:height">?attr/actionBarSize</item>
+        <item name="android:logo">@drawable/actionbar_ic_chaton</item>
+        <item name="android:displayOptions">showTitle|homeAsUp|showHome|useLogo</item>
+        <item name="android:titleTextStyle">@style/TextAppearance.Ext99</item>
+        <item name="android:subtitleTextStyle">@style/TextAppearance.Ext98</item>
+        <item name="android:itemPadding">8dp</item>
+        <item name="android:backgroundStacked">@drawable/actionbar_stacked_background</item>
+        <item name="height">?attr/actionBarSize</item>
+        <item name="logo">@drawable/actionbar_ic_chaton</item>
+        <item name="displayOptions">showTitle|homeAsUp|showHome|useLogo</item>
+        <item name="titleTextStyle">@style/TextAppearance.Ext99</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Ext98</item>
+        <item name="backgroundStacked">@drawable/actionbar_stacked_background</item>
+    </style>
+    <style name="ActionBarStyle.WithoutArrow" parent="@style/ActionBarStyle">
+        <item name="android:displayOptions">showTitle|showHome|useLogo</item>
+        <item name="displayOptions">showTitle|showHome|useLogo</item>
+    </style>
+    <style name="ActionBarStyle.Home" parent="@style/ActionBarStyle">
+        <item name="android:logo">@drawable/chaton_logo</item>
+        <item name="android:displayOptions">showHome|useLogo</item>
+        <item name="logo">@drawable/chaton_logo</item>
+        <item name="displayOptions">showHome|useLogo</item>
+    </style>
+    <style name="ActionBarTabBarStyle" parent="">
+        <item name="android:divider">@drawable/divider4_vertical</item>
+        <item name="android:showDividers">0x2</item>
+        <item name="android:dividerPadding">12dp</item>
+    </style>
+    <style name="ActionBarTabStyle" parent="">
+        <item name="android:gravity">0x11</item>
+        <item name="android:background">@drawable/actionbar_tab</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+    <style name="ActionButtonStyle" parent="@style/ActionButtonBaseStyle">
+        <item name="android:textAppearance">@style/TextAppearance.Bar02</item>
+        <item name="android:background">?attr/actionbarItemBackground</item>
+        <item name="android:minWidth">56dp</item>
+    </style>
+    <style name="ActionButtonCloseStyle" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
+        <item name="android:textAppearance">@style/TextAppearance.Bar02</item>
+        <item name="android:background">?attr/actionbarItemBackground</item>
+        <item name="android:minWidth">56dp</item>
+    </style>
+    <style name="ActionButtonOverflowStyle" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:background">?attr/actionbarItemBackground</item>
+        <item name="android:src">@drawable/actionbar_ic_down</item>
+        <item name="android:minWidth">56dp</item>
+    </style>
+    <style name="ActionBarCompatTitleStyle" parent="@style/ActionBarCompatTitleBaseStyle">
+        <item name="android:textAppearance">@style/TextAppearance.Bar01</item>
+    </style>
+    <style name="ActionBarNavigationTabWidgetStyle" parent="">
+        <item name="android:ellipsize">4</item>
+        <item name="android:gravity">0x11</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="normalTextAppearance">@style/TextAppearance.Bar04</item>
+        <item name="selectedTextAppearance">@style/TextAppearance.Bar03</item>
+    </style>
+    <style name="ActionBarDropDownStyle" parent="@android:style/Widget.Spinner.DropDown">
+        <item name="android:gravity">0x13</item>
+        <item name="android:background">@drawable/actionbar_dropdown_bg</item>
+        <item name="android:clickable">true</item>
+        <item name="android:minWidth">96dp</item>
+        <item name="android:popupBackground">@drawable/chaton_dropdown</item>
+        <item name="android:dropDownWidth">-2</item>
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+        <item name="android:dropDownVerticalOffset">-3dp</item>
+        <item name="android:spinnerMode">1</item>
+    </style>
+    <style name="PopupMenuStyle" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@drawable/chaton_dropdown</item>
+    </style>
+    <style name="DropDownListViewStyle" parent="@style/ListViewStyle.Common1">
+        <item name="android:divider">@drawable/dropdown_listview_divider</item>
+        <item name="android:dividerHeight">@dimen/half_dip</item>
+    </style>
+    <style name="ListViewStyle" parent="@android:style/Widget.ListView">
+        <item name="android:listSelector">@drawable/listview_selector</item>
+        <item name="android:cacheColorHint">?attr/windowBackgroundColor</item>
+        <item name="android:divider">@drawable/listview_divider</item>
+        <item name="android:dividerHeight">@dimen/one_dip</item>
+    </style>
+    <style name="ListViewStyle.Common1" parent="@style/ListViewStyle">
+    </style>
+    <style name="ListViewStyle.Common2" parent="@style/ListViewStyle">
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">7dp</item>
+    </style>
+    <style name="ExpandableListViewStyle" parent="@android:style/Widget.ExpandableListView">
+        <item name="android:listSelector">@drawable/listview_selector</item>
+        <item name="android:cacheColorHint">?attr/windowBackgroundColor</item>
+        <item name="android:childDivider">@drawable/listview_divider</item>
+        <item name="android:divider">@drawable/listview_divider</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+    <style name="GridViewStyle" parent="@android:style/Widget.GridView">
+        <item name="android:listSelector">@drawable/gridview_selector</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+    <style name="ButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:textAppearance">@style/TextAppearance.Btn02</item>
+        <item name="android:textColor">?attr/ftBtn02Color</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+    </style>
+    <style name="ButtonStyle2" parent="@android:style/Widget.Button">
+        <item name="android:textAppearance">@style/TextAppearance.Btn04</item>
+        <item name="android:textColor">?attr/ftBtn04Color</item>
+        <item name="android:background">@drawable/button2</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+    </style>
+    <style name="ButtonStyle3" parent="@android:style/Widget.Button">
+        <item name="android:textAppearance">@style/TextAppearance.Ext01</item>
+        <item name="android:textColor">?attr/ftExt01Color</item>
+        <item name="android:background">@drawable/button3</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+    </style>
+    <style name="ButtonStyle4" parent="@android:style/Widget.Button">
+        <item name="android:textAppearance">@style/TextAppearance.List09</item>
+        <item name="android:textColor">?attr/ftList09Color</item>
+        <item name="android:ellipsize">3</item>
+        <item name="android:background">@drawable/button4</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawableRight">@drawable/check_ic_close</item>
+        <item name="android:drawablePadding">11dp</item>
+    </style>
+    <style name="ButtonStyle5" parent="@android:style/Widget.Button">
+        <item name="android:textAppearance">@style/TextAppearance.Btn04</item>
+        <item name="android:textColor">?attr/ftBtn04Color</item>
+        <item name="android:background">@drawable/button5</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+    </style>
+    <style name="ButtonStyle.AlertDialog" parent="@style/ButtonStyle">
+        <item name="android:textAppearance">@style/TextAppearance.Pop04</item>
+        <item name="android:textColor">?attr/ftPop04Color</item>
+        <item name="android:background">@drawable/button_alertdialog</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">44dp</item>
+    </style>
+    <style name="ImageTextViewGroupStyle" parent="@style/ButtonStyle">
+        <item name="android:textAppearance">@style/TextAppearance.Btn02</item>
+        <item name="android:paddingLeft">9dp</item>
+        <item name="android:paddingRight">9dp</item>
+        <item name="srcPadding">4dp</item>
+    </style>
+    <style name="ImageTextViewGroupStyle.MultipleButton" parent="@style/ImageTextViewGroupStyle">
+        <item name="android:textAppearance">@style/TextAppearance.Ext02</item>
+    </style>
+    <style name="ImageTextViewGroupStyle2" parent="@style/ButtonStyle3">
+        <item name="android:textAppearance">@style/TextAppearance.Ext01</item>
+        <item name="android:paddingLeft">9dp</item>
+        <item name="android:paddingRight">9dp</item>
+        <item name="srcPadding">4dp</item>
+    </style>
+    <style name="ImageButtonStyle" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@drawable/button</item>
+    </style>
+    <style name="ImageButtonStyle2" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@drawable/button2</item>
+    </style>
+    <style name="ImageButtonStyle3" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@drawable/button3</item>
+    </style>
+    <style name="ImageButtonStyle4" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@drawable/select_member_check_bg</item>
+    </style>
+    <style name="ImageButtonStyle5" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@drawable/button5</item>
+    </style>
+    <style name="ImageButtonStyle6" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@drawable/button6</item>
+    </style>
+    <style name="ImageButtonStyle7" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">?attr/itemBackground</item>
+    </style>
+    <style name="ImageButtonStyle.Clearable" parent="@style/ImageButtonStyle">
+        <item name="android:background">?attr/itemBackground</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:src">@drawable/chat_btn_icon_cancel</item>
+    </style>
+    <style name="TabButtonBarStyle" parent="">
+        <item name="android:orientation">0</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:divider">@drawable/divider6_vertical</item>
+        <item name="android:showDividers">0x2</item>
+    </style>
+    <style name="TabButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:gravity">0x11</item>
+        <item name="normalTextAppearance">@style/TextAppearance.List37</item>
+        <item name="selectedTextAppearance">@style/TextAppearance.List36</item>
+        <item name="pressedTextAppearance">@style/TextAppearance.List36</item>
+        <item name="disabledTextAppearance">@style/TextAppearance.List37.Disabled</item>
+    </style>
+    <style name="TabButtonStyle.Left" parent="@style/TabButtonStyle">
+        <item name="android:background">@drawable/tab_left_button_background</item>
+    </style>
+    <style name="TabButtonStyle.Center" parent="@style/TabButtonStyle">
+        <item name="android:background">@drawable/tab_center_button_background</item>
+    </style>
+    <style name="TabButtonStyle.Right" parent="@style/TabButtonStyle">
+        <item name="android:background">@drawable/tab_right_button_background</item>
+    </style>
+    <style name="TabButtonBarStyle2" parent="">
+        <item name="android:orientation">0</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:divider">@drawable/divider6_vertical</item>
+        <item name="android:minHeight">64dp</item>
+        <item name="android:showDividers">0x2</item>
+    </style>
+    <style name="TabButtonStyle2" parent="@android:style/Widget.Button">
+        <item name="android:ellipsize">3</item>
+        <item name="android:gravity">0x11</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="normalTextAppearance">@style/TextAppearance.Bar05</item>
+        <item name="disabledTextAppearance">@style/TextAppearance.Bar05.Disabled</item>
+    </style>
+    <style name="TabButtonStyle2.Left" parent="@style/TabButtonStyle2">
+        <item name="android:background">@drawable/tab_left_button_background</item>
+    </style>
+    <style name="TabButtonStyle2.Center" parent="@style/TabButtonStyle2">
+        <item name="android:background">@drawable/tab_center_button_background</item>
+    </style>
+    <style name="TabButtonStyle2.Right" parent="@style/TabButtonStyle2">
+        <item name="android:background">@drawable/tab_right_button_background</item>
+    </style>
+    <style name="Tab2ButtonBarStyle" parent="@android:style/Widget">
+        <item name="android:orientation">0</item>
+        <item name="android:background">@drawable/tab_2_background</item>
+        <item name="android:divider">@drawable/divider2_vertical</item>
+        <item name="android:showDividers">0x2</item>
+        <item name="android:dividerPadding">12dp</item>
+    </style>
+    <style name="Tab2ButtonStyle" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@drawable/tab_2_button</item>
+        <item name="android:layout_width">-2</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:scaleType">7</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="ChoiceButtonBarStyle" parent="@android:style/Widget">
+        <item name="android:gravity">0x10</item>
+        <item name="android:orientation">0</item>
+        <item name="android:background">@drawable/namefield_bg</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:divider">@drawable/blank_divider_8</item>
+        <item name="android:minHeight">41dp</item>
+        <item name="android:showDividers">0x2</item>
+    </style>
+    <style name="TextViewStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textColorHint">?attr/ftList02Color</item>
+    </style>
+    <style name="TextViewStyle.Highlight" parent="@style/TextViewStyle">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">#fafafa</item>
+        <item name="android:gravity">0x11</item>
+        <item name="android:background">@drawable/common_noti</item>
+        <item name="android:minWidth">22dp</item>
+        <item name="android:minHeight">22dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="ProgressBarStyle" parent="@android:style/Widget.ProgressBar">
+        <item name="android:maxWidth">38dp</item>
+        <item name="android:maxHeight">38dp</item>
+        <item name="android:indeterminateDrawable">@drawable/progress</item>
+        <item name="android:minWidth">38dp</item>
+        <item name="android:minHeight">38dp</item>
+    </style>
+    <style name="ProgressBarStyle.Large" parent="@style/ProgressBarStyle">
+        <item name="android:maxWidth">76dp</item>
+        <item name="android:maxHeight">76dp</item>
+        <item name="android:minWidth">76dp</item>
+        <item name="android:minHeight">76dp</item>
+    </style>
+    <style name="ProgressBarStyle.Small" parent="@style/ProgressBarStyle">
+        <item name="android:maxWidth">16dp</item>
+        <item name="android:maxHeight">16dp</item>
+        <item name="android:minWidth">16dp</item>
+        <item name="android:minHeight">16dp</item>
+    </style>
+    <style name="ProgressBarHorizontalStyle" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">6dp</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_indetermintate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+        <item name="android:minHeight">6dp</item>
+    </style>
+    <style name="EditTextStyle" parent="@android:style/Widget.EditText">
+        <item name="android:textAppearance">@style/TextAppearance.List01</item>
+        <item name="android:textColor">@drawable/edit_text_font_color</item>
+        <item name="android:textColorHint">?attr/ftList02Color</item>
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:minHeight">41dp</item>
+        <item name="android:imeOptions">0x10000000</item>
+        <item name="android:textCursorDrawable">@drawable/text_cursor_holo_light</item>
+    </style>
+    <style name="EditTextStyle.Icon" parent="@style/EditTextStyle">
+        <item name="android:drawableLeft">@drawable/input_ic_search</item>
+        <item name="android:drawablePadding">7dp</item>
+    </style>
+    <style name="EditTextStyle.Clearable" parent="@style/EditTextStyle">
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:minHeight">0dp</item>
+    </style>
+    <style name="EditTextStyle.Clearable.Icon" parent="@style/EditTextStyle.Clearable">
+        <item name="android:drawableLeft">@drawable/input_ic_search</item>
+        <item name="android:drawablePadding">7dp</item>
+    </style>
+    <style name="ClearableEditTextStyle" parent="">
+        <item name="android:background">@null</item>
+        <item name="android:addStatesFromChildren">true</item>
+        <item name="android:minHeight">41dp</item>
+        <item name="layout">@layout/layout_common_clearable_edit_text</item>
+    </style>
+    <style name="ClearableEditTextStyle.Icon" parent="@style/ClearableEditTextStyle">
+        <item name="layout">@layout/layout_common_clearable_edit_text_icon</item>
+    </style>
+    <style name="SpinnerBaseStyle" parent="@android:style/Widget.Spinner">
+    </style>
+    <style name="SpinnerStyle" parent="@style/SpinnerBaseStyle">
+        <item name="android:textAppearance">@style/TextAppearance.List01</item>
+        <item name="android:background">@drawable/spinner</item>
+        <item name="android:minHeight">41dp</item>
+    </style>
+    <style name="SpinnerItemBaseStyle" parent="@android:style/Widget.TextView.SpinnerItem">
+    </style>
+    <style name="SpinnerItemStyle" parent="@style/SpinnerItemBaseStyle">
+        <item name="android:textAppearance">@style/TextAppearance.List01</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+    <style name="CheckBoxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textAppearance">@style/TextAppearance.List01</item>
+        <item name="android:textColor">?attr/ftList01Color</item>
+        <item name="android:background">@drawable/check_on_holo_light_bg</item>
+        <item name="android:paddingLeft">@dimen/checkbox_padding</item>
+        <item name="android:button">?android:attr/listChoiceIndicatorMultiple</item>
+    </style>
+    <style name="CheckBoxStyle.WithoutText" parent="@style/CheckBoxStyle">
+        <item name="android:paddingLeft">0dp</item>
+    </style>
+    <style name="RadioButtonStyle" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:textAppearance">@style/TextAppearance.List01</item>
+        <item name="android:textColor">?attr/ftList01Color</item>
+        <item name="android:background">@drawable/radio_off_holo_light_bg</item>
+        <item name="android:paddingLeft">@dimen/checkbox_padding</item>
+        <item name="android:button">?android:attr/listChoiceIndicatorSingle</item>
+    </style>
+    <style name="RadioButtonStyle.WithoutText" parent="@style/RadioButtonStyle">
+        <item name="android:paddingLeft">0dp</item>
+    </style>
+    <style name="CheckedTextViewStyle" parent="@android:style/Widget.TextView">
+        <item name="android:gravity">0x10</item>
+        <item name="android:background">?attr/selectAllLayoutBackground</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingRight">14dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:checkMark">?android:attr/textCheckMark</item>
+        <item name="android:minHeight">37dp</item>
+    </style>
+    <style name="CheckedTextViewStyle.SelectAll" parent="@style/CheckedTextViewStyle">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#555555</item>
+        <item name="android:text">@string/ams_select_all</item>
+    </style>
+    <style name="AlertDialogButtonBarStyle" parent="@android:style/ButtonBar">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="AlertDialogStyle" parent="">
+        <item name="android:fullDark">@drawable/popup_winset_bg</item>
+        <item name="android:topDark">@drawable/popup_winset_top_dark_wrapper</item>
+        <item name="android:centerDark">@drawable/popup_winset_center_dark_wrapper</item>
+        <item name="android:bottomDark">@drawable/popup_winset_bottom_dark_wrapper</item>
+        <item name="android:fullBright">@drawable/popup_winset_bg</item>
+        <item name="android:topBright">@drawable/popup_winset_top_bright</item>
+        <item name="android:centerBright">@drawable/popup_winset_center_bright</item>
+        <item name="android:bottomBright">@drawable/popup_winset_bottom_bright_wrapper</item>
+        <item name="android:bottomMedium">@drawable/popup_winset_bottom_medium_wrapper</item>
+        <item name="fullDark">@drawable/popup_winset_bg</item>
+        <item name="topDark">@drawable/popup_winset_top_dark_wrapper</item>
+        <item name="centerDark">@drawable/popup_winset_center_dark_wrapper</item>
+        <item name="bottomDark">@drawable/popup_winset_bottom_dark_wrapper</item>
+        <item name="fullBright">@drawable/popup_winset_bg</item>
+        <item name="topBright">@drawable/popup_winset_top_bright</item>
+        <item name="centerBright">@drawable/popup_winset_center_bright</item>
+        <item name="bottomBright">@drawable/popup_winset_bottom_bright_wrapper</item>
+        <item name="bottomMedium">@drawable/popup_winset_bottom_medium_wrapper</item>
+    </style>
+    <style name="Preference" parent="">
+        <item name="android:layout">@layout/preference_item_common</item>
+    </style>
+    <style name="Preference.CheckBoxPreference" parent="@style/Preference">
+        <item name="android:layout">@layout/preference_item_common</item>
+        <item name="android:widgetLayout">@layout/preference_widget_checkbox</item>
+    </style>
+    <style name="TextAppearance" parent="@android:style/TextAppearance">
+    </style>
+    <style name="TextAppearance.Bar01" parent="@style/TextAppearance">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">?attr/ftBar01Color</item>
+    </style>
+    <style name="TextAppearance.Bar02" parent="@style/TextAppearance">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">?attr/ftBar02Color</item>
+    </style>
+    <style name="TextAppearance.Bar03" parent="@style/TextAppearance">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">?attr/ftBar03Color</item>
+    </style>
+    <style name="TextAppearance.Bar04" parent="@style/TextAppearance">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">?attr/ftBar04Color</item>
+    </style>
+    <style name="TextAppearance.Bar04.Disabled" parent="@style/TextAppearance.Bar04">
+        <item name="android:textColor">?attr/ftBar04DisabledColor</item>
+    </style>
+    <style name="TextAppearance.Bar05" parent="@style/TextAppearance">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">?attr/ftBar05Color</item>
+    </style>
+    <style name="TextAppearance.Bar05.Disabled" parent="@style/TextAppearance.Bar05">
+        <item name="android:textColor">?attr/ftBar05DisabledColor</item>
+    </style>
+    <style name="TextAppearance.List01" parent="@style/TextAppearance">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">?attr/ftList01Color</item>
+    </style>
+    <style name="TextAppearance.List01.Variable" parent="@style/TextAppearance.List01">
+        <item name="android:textSize">17sp</item>
+    </style>
+    <style name="TextAppearance.List02" parent="@style/TextAppearance">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">?attr/ftList02Color</item>
+    </style>
+    <style name="TextAppearance.List02.Variable" parent="@style/TextAppearance.List02">
+        <item name="android:textSize">17sp</item>
+    </style>
+    <style name="TextAppearance.List03" parent="@style/TextAppearance">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">?attr/ftList03Color</item>
+    </style>
+    <style name="TextAppearance.List03.Variable" parent="@style/TextAppearance.List03">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextAppearance.List04" parent="@style/TextAppearance">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">?attr/ftList04Color</item>
+    </style>
+    <style name="TextAppearance.List04.Variable" parent="@style/TextAppearance.List04">
+        <item name="android:textSize">19sp</item>
+    </style>
+    <style name="TextAppearance.List05" parent="@style/TextAppearance">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">?attr/ftList05Color</item>
+    </style>
+    <style name="TextAppearance.List05.Variable" parent="@style/TextAppearance.List05">
+        <item name="android:textSize">19sp</item>
+    </style>
+    <style name="TextAppearance.List07" parent="@style/TextAppearance">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">?attr/ftList07Color</item>
+    </style>
+    <style name="TextAppearance.List07.Variable" parent="@style/TextAppearance.List07">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextAppearance.List08" parent="@style/TextAppearance">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">?attr/ftList08Color</item>
+    </style>
+    <style name="TextAppearance.List08.Variable" parent="@style/TextAppearance.List08">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="TextAppearance.List09" parent="@style/TextAppearance">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">?attr/ftList09Color</item>
+    </style>
+    <style name="TextAppearance.List09.Variable" parent="@style/TextAppearance.List09">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="TextAppearance.List10" parent="@style/TextAppearance">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">?attr/ftList10Color</item>
+    </style>
+    <style name="TextAppearance.List10.Variable" parent="@style/TextAppearance.List10">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="TextAppearance.List11" parent="@style/TextAppearance">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">?attr/ftList11Color</item>
+    </style>
+    <style name="TextAppearance.List11.Variable" parent="@style/TextAppearance.List11">
+        <item name="android:textSize">17sp</item>
+    </style>
+    <style name="TextAppearance.List12" parent="@style/TextAppearance">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">?attr/ftList12Color</item>
+    </style>
+    <style name="TextAppearance.List12.Variable" parent="@style/TextAppearance.List12">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="TextAppearance.List14" parent="@style/TextAppearance">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">?attr/ftList14Color</item>
+    </style>
+    <style name="TextAppearance.List14.Variable" parent="@style/TextAppearance.List14">
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="TextAppearance.List15" parent="@style/TextAppearance">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">?attr/ftList15Color</item>
+    </style>
+    <style name="TextAppearance.List15.Variable" parent="@style/TextAppearance.List15">
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="TextAppearance.List17" parent="@style/TextAppearance">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">?attr/ftList17Color</item>
+    </style>
+    <style name="TextAppearance.List17.Variable" parent="@style/TextAppearance.List17">
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="TextAppearance.List18" parent="@style/TextAppearance">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">?attr/ftList18Color</item>
+    </style>
+    <style name="TextAppearance.List18.Variable" parent="@style/TextAppearance.List18">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextAppearance.List19" parent="@style/TextAppearance">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">?attr/ftList19Color</item>
+    </style>
+    <style name="TextAppearance.List19.Variable" parent="@style/TextAppearance.List19">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="TextAppearance.List20" parent="@style/TextAppearance">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">?attr/ftList20Color</item>
+    </style>
+    <style name="TextAppearance.List20.Variable" parent="@style/TextAppearance.List20">
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="TextAppearance.List21" parent="@style/TextAppearance">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">?attr/ftList21Color</item>
+    </style>
+    <style name="TextAppearance.List21.Variable" parent="@style/TextAppearance.List21">
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="TextAppearance.List23" parent="@style/TextAppearance">
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColor">?attr/ftList23Color</item>
+    </style>
+    <style name="TextAppearance.List23.Variable" parent="@style/TextAppearance.List23">
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="TextAppearance.List24" parent="@style/TextAppearance">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">?attr/ftList24Color</item>
+    </style>
+    <style name="TextAppearance.List24.Variable" parent="@style/TextAppearance.List24">
+        <item name="android:textSize">17sp</item>
+    </style>
+    <style name="TextAppearance.List25" parent="@style/TextAppearance">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">?attr/ftList25Color</item>
+    </style>
+    <style name="TextAppearance.List25.Variable" parent="@style/TextAppearance.List25">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextAppearance.List27" parent="@style/TextAppearance">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">?attr/ftList27Color</item>
+    </style>
+    <style name="TextAppearance.List27.Variable" parent="@style/TextAppearance.List27">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextAppearance.List28" parent="@style/TextAppearance">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">?attr/ftList28Color</item>
+    </style>
+    <style name="TextAppearance.List28.Variable" parent="@style/TextAppearance.List28">
+        <item name="android:textSize">17sp</item>
+    </style>
+    <style name="TextAppearance.List29" parent="@style/TextAppearance">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">?attr/ftList29Color</item>
+    </style>
+    <style name="TextAppearance.List29.Variable" parent="@style/TextAppearance.List29">
+        <item name="android:textSize">19sp</item>
+    </style>
+    <style name="TextAppearance.List30" parent="@style/TextAppearance">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">?attr/ftList30Color</item>
+    </style>
+    <style name="TextAppearance.List30.Variable" parent="@style/TextAppearance.List30">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="TextAppearance.List31" parent="@style/TextAppearance">
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColor">?attr/ftList31Color</item>
+    </style>
+    <style name="TextAppearance.List31.Variable" parent="@style/TextAppearance.List31">
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="TextAppearance.List32" parent="@style/TextAppearance">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">?attr/ftList32Color</item>
+    </style>
+    <style name="TextAppearance.List32.Variable" parent="@style/TextAppearance.List32">
+        <item name="android:textSize">19sp</item>
+    </style>
+    <style name="TextAppearance.List33" parent="@style/TextAppearance">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">?attr/ftList33Color</item>
+    </style>
+    <style name="TextAppearance.List33.Variable" parent="@style/TextAppearance.List33">
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="TextAppearance.List34" parent="@style/TextAppearance">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">?attr/ftList34Color</item>
+    </style>
+    <style name="TextAppearance.List34.Variable" parent="@style/TextAppearance.List34">
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="TextAppearance.List35" parent="@style/TextAppearance">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">?attr/ftList35Color</item>
+    </style>
+    <style name="TextAppearance.List35.Variable" parent="@style/TextAppearance.List35">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="TextAppearance.List36" parent="@style/TextAppearance">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">?attr/ftList36Color</item>
+    </style>
+    <style name="TextAppearance.List36.Variable" parent="@style/TextAppearance.List36">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="TextAppearance.List37" parent="@style/TextAppearance">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">?attr/ftList37Color</item>
+    </style>
+    <style name="TextAppearance.List37.Variable" parent="@style/TextAppearance.List37">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="TextAppearance.List37.Disabled" parent="@style/TextAppearance.List37">
+        <item name="android:textColor">?attr/ftList37DisabledColor</item>
+    </style>
+    <style name="TextAppearance.List38" parent="@style/TextAppearance">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">?attr/ftList38Color</item>
+    </style>
+    <style name="TextAppearance.List38.Variable" parent="@style/TextAppearance.List38">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextAppearance.List39" parent="@style/TextAppearance">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">?attr/ftList39Color</item>
+    </style>
+    <style name="TextAppearance.List39.Variable" parent="@style/TextAppearance.List39">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="TextAppearance.List40" parent="@style/TextAppearance">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">?attr/ftList40Color</item>
+    </style>
+    <style name="TextAppearance.List40.Variable" parent="@style/TextAppearance.List40">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextAppearance.List41" parent="@style/TextAppearance">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">?attr/ftList41Color</item>
+    </style>
+    <style name="TextAppearance.List41.Variable" parent="@style/TextAppearance.List41">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextAppearance.List42" parent="@style/TextAppearance">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">?attr/ftList42Color</item>
+    </style>
+    <style name="TextAppearance.List42.Variable" parent="@style/TextAppearance.List42">
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="TextAppearance.List43" parent="@style/TextAppearance">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">?attr/ftList43Color</item>
+    </style>
+    <style name="TextAppearance.List43.Variable" parent="@style/TextAppearance.List43">
+        <item name="android:textSize">19sp</item>
+    </style>
+    <style name="TextAppearance.List44" parent="@style/TextAppearance">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">?attr/ftList44Color</item>
+    </style>
+    <style name="TextAppearance.List44.Variable" parent="@style/TextAppearance.List44">
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="TextAppearance.List49" parent="@style/TextAppearance">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">?attr/ftList49Color</item>
+    </style>
+    <style name="TextAppearance.List49.Variable" parent="@style/TextAppearance.List49">
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="TextAppearance.List50" parent="@style/TextAppearance">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">?attr/ftList50Color</item>
+    </style>
+    <style name="TextAppearance.List50.Variable" parent="@style/TextAppearance.List50">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="TextAppearance.List51" parent="@style/TextAppearance">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">?attr/ftList51Color</item>
+    </style>
+    <style name="TextAppearance.List51.Variable" parent="@style/TextAppearance.List51">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="TextAppearance.List52" parent="@style/TextAppearance">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">?attr/ftList52Color</item>
+    </style>
+    <style name="TextAppearance.List52.Variable" parent="@style/TextAppearance.List52">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="TextAppearance.List53" parent="@style/TextAppearance">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">?attr/ftList53Color</item>
+    </style>
+    <style name="TextAppearance.List53.Variable" parent="@style/TextAppearance.List53">
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="TextAppearance.List54" parent="@style/TextAppearance">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">?attr/ftList54Color</item>
+    </style>
+    <style name="TextAppearance.List54.Variable" parent="@style/TextAppearance.List54">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextAppearance.List55" parent="@style/TextAppearance">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">?attr/ftList55Color</item>
+    </style>
+    <style name="TextAppearance.List55.Variable" parent="@style/TextAppearance.List55">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="TextAppearance.List57" parent="@style/TextAppearance">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">?attr/ftList57Color</item>
+    </style>
+    <style name="TextAppearance.List57.Variable" parent="@style/TextAppearance.List57">
+        <item name="android:textSize">19sp</item>
+    </style>
+    <style name="TextAppearance.List58" parent="@style/TextAppearance">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">?attr/ftList58Color</item>
+    </style>
+    <style name="TextAppearance.List58.Variable" parent="@style/TextAppearance.List58">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextAppearance.Btn01" parent="@style/TextAppearance">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">?attr/ftBtn01Color</item>
+    </style>
+    <style name="TextAppearance.Btn01.Variable" parent="@style/TextAppearance.Btn01">
+        <item name="android:textSize">17sp</item>
+    </style>
+    <style name="TextAppearance.Btn02" parent="@style/TextAppearance">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">?attr/ftBtn02Color</item>
+    </style>
+    <style name="TextAppearance.Btn03" parent="@style/TextAppearance">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">?attr/ftBtn03Color</item>
+    </style>
+    <style name="TextAppearance.Btn04" parent="@style/TextAppearance">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">?attr/ftBtn04Color</item>
+    </style>
+    <style name="TextAppearance.Btn05" parent="@style/TextAppearance">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">?attr/ftBtn05Color</item>
+    </style>
+    <style name="TextAppearance.Btn09" parent="@style/TextAppearance">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">?attr/ftBtn09Color</item>
+    </style>
+    <style name="TextAppearance.Etc01" parent="@style/TextAppearance">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">?attr/ftEtc01Color</item>
+    </style>
+    <style name="TextAppearance.Etc01.Variable" parent="@style/TextAppearance.Etc01">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?attr/ftEtc01Color</item>
+    </style>
+    <style name="TextAppearance.Etc02" parent="@style/TextAppearance">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">?attr/ftEtc02Color</item>
+    </style>
+    <style name="TextAppearance.Etc02.Variable" parent="@style/TextAppearance.Etc02">
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="TextAppearance.Etc03" parent="@style/TextAppearance">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">?attr/ftEtc03Color</item>
+    </style>
+    <style name="TextAppearance.Etc05" parent="@style/TextAppearance">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">?attr/ftEtc05Color</item>
+    </style>
+    <style name="TextAppearance.Etc06" parent="@style/TextAppearance">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">?attr/ftEtc06Color</item>
+    </style>
+    <style name="TextAppearance.Etc07" parent="@style/TextAppearance">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">?attr/ftEtc07Color</item>
+    </style>
+    <style name="TextAppearance.Etc08" parent="@style/TextAppearance">
+        <item name="android:textSize">34dp</item>
+        <item name="android:textColor">?attr/ftEtc08Color</item>
+    </style>
+    <style name="TextAppearance.Etc09" parent="@style/TextAppearance">
+        <item name="android:textSize">34dp</item>
+        <item name="android:textColor">?attr/ftEtc09Color</item>
+    </style>
+    <style name="TextAppearance.Etc10" parent="@style/TextAppearance">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">?attr/ftEtc10Color</item>
+    </style>
+    <style name="TextAppearance.Etc12" parent="@style/TextAppearance">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">?attr/ftEtc12Color</item>
+    </style>
+    <style name="TextAppearance.Etc15" parent="@style/TextAppearance">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">?attr/ftEtc15Color</item>
+    </style>
+    <style name="TextAppearance.Etc16" parent="@style/TextAppearance">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">?attr/ftEtc16Color</item>
+    </style>
+    <style name="TextAppearance.Etc17" parent="@style/TextAppearance">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">?attr/ftEtc17Color</item>
+    </style>
+    <style name="TextAppearance.Etc20" parent="@style/TextAppearance">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">?attr/ftEtc20Color</item>
+    </style>
+    <style name="TextAppearance.Chat01" parent="@style/TextAppearance">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">?attr/ftChat01Color</item>
+    </style>
+    <style name="TextAppearance.Chat02" parent="@style/TextAppearance">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">?attr/ftChat02Color</item>
+    </style>
+    <style name="TextAppearance.Chat03" parent="@style/TextAppearance">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">?attr/ftChat03Color</item>
+    </style>
+    <style name="TextAppearance.Chat04" parent="@style/TextAppearance">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">?attr/ftChat04Color</item>
+    </style>
+    <style name="TextAppearance.Chat05" parent="@style/TextAppearance">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">?attr/ftChat05Color</item>
+    </style>
+    <style name="TextAppearance.Chat06" parent="@style/TextAppearance">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">?attr/ftChat06Color</item>
+    </style>
+    <style name="TextAppearance.Chat08" parent="@style/TextAppearance">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">?attr/ftChat08Color</item>
+    </style>
+    <style name="TextAppearance.Chat09" parent="@style/TextAppearance">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">?attr/ftChat09Color</item>
+    </style>
+    <style name="TextAppearance.Chat10" parent="@style/TextAppearance">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">?attr/ftChat10Color</item>
+    </style>
+    <style name="TextAppearance.Chat11" parent="@style/TextAppearance">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">?attr/ftChat11Color</item>
+    </style>
+    <style name="TextAppearance.Chat12" parent="@style/TextAppearance">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">?attr/ftChat12Color</item>
+    </style>
+    <style name="TextAppearance.Chat13" parent="@style/TextAppearance">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">?attr/ftChat13Color</item>
+    </style>
+    <style name="TextAppearance.Chat14" parent="@style/TextAppearance">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">?attr/ftChat14Color</item>
+    </style>
+    <style name="TextAppearance.Chat15" parent="@style/TextAppearance">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">?attr/ftChat15Color</item>
+    </style>
+    <style name="TextAppearance.Chat16" parent="@style/TextAppearance">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">?attr/ftChat16Color</item>
+    </style>
+    <style name="TextAppearance.Chat17" parent="@style/TextAppearance">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">?attr/ftChat17Color</item>
+    </style>
+    <style name="TextAppearance.Chat18" parent="@style/TextAppearance">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">?attr/ftChat18Color</item>
+    </style>
+    <style name="TextAppearance.Chat21" parent="@style/TextAppearance">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">?attr/ftChat21Color</item>
+    </style>
+    <style name="TextAppearance.Chat29" parent="@style/TextAppearance">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">?attr/ftChat29Color</item>
+    </style>
+    <style name="TextAppearance.Chat30" parent="@style/TextAppearance">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">?attr/ftChat30Color</item>
+    </style>
+    <style name="TextAppearance.Chat31" parent="@style/TextAppearance">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">?attr/ftChat31Color</item>
+    </style>
+    <style name="TextAppearance.Pop01" parent="@style/TextAppearance">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">?attr/ftPop01Color</item>
+    </style>
+    <style name="TextAppearance.Pop02" parent="@style/TextAppearance">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">?attr/ftPop02Color</item>
+    </style>
+    <style name="TextAppearance.Pop03" parent="@style/TextAppearance">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">?attr/ftPop03Color</item>
+    </style>
+    <style name="TextAppearance.Pop04" parent="@style/TextAppearance">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">?attr/ftPop04Color</item>
+    </style>
+    <style name="TextAppearance.Pop05" parent="@style/TextAppearance">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">?attr/ftPop05Color</item>
+    </style>
+    <style name="TextAppearance.Pop06" parent="@style/TextAppearance">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">?attr/ftPop06Color</item>
+    </style>
+    <style name="TextAppearance.Pop07" parent="@style/TextAppearance">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">?attr/ftPop07Color</item>
+    </style>
+    <style name="TextAppearance.Pop08" parent="@style/TextAppearance">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">?attr/ftPop08Color</item>
+    </style>
+    <style name="TextAppearance.Pop09" parent="@style/TextAppearance">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">?attr/ftPop09Color</item>
+    </style>
+    <style name="TextAppearance.Pop10" parent="@style/TextAppearance">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">?attr/ftPop10Color</item>
+    </style>
+    <style name="TextAppearance.Pop11" parent="@style/TextAppearance">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">?attr/ftPop11Color</item>
+    </style>
+    <style name="TextAppearance.Pop12" parent="@style/TextAppearance">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">?attr/ftPop12Color</item>
+    </style>
+    <style name="TextAppearance.Pop13" parent="@style/TextAppearance">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">?attr/ftPop13Color</item>
+    </style>
+    <style name="TextAppearance.Pop14" parent="@style/TextAppearance">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">?attr/ftPop14Color</item>
+    </style>
+    <style name="TextAppearance.Ext01" parent="@style/TextAppearance">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@drawable/ft_ext_01_text_color</item>
+    </style>
+    <style name="TextAppearance.Ext02" parent="@style/TextAppearance">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#2d2d2d</item>
+    </style>
+    <style name="TextAppearance.Ext99" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/ft_ext99_size</item>
+        <item name="android:textColor">?attr/ftBar01Color</item>
+    </style>
+    <style name="TextAppearance.Ext98" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/ft_ext98_size</item>
+        <item name="android:textColor">?attr/ftList58Color</item>
+    </style>
+    <style name="TextAppearance.PopupMenuItem" parent="@style/TextAppearance">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">@drawable/popup_menu_font_color</item>
+        <item name="android:shadowColor">#aaaaaa</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:textCheckMark">@drawable/checkbox</item>
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+        <item name="android:windowBackground">?attr/windowBackgroundColor</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:checkboxStyle">@style/CheckBoxStyle</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListViewStyle</item>
+        <item name="android:editTextStyle">@style/EditTextStyle</item>
+        <item name="android:expandableListViewStyle">@style/ExpandableListViewStyle</item>
+        <item name="android:gridViewStyle">@style/GridViewStyle</item>
+        <item name="android:imageButtonStyle">@style/ImageButtonStyle</item>
+        <item name="android:progressBarStyle">@style/ProgressBarStyle</item>
+        <item name="android:progressBarStyleHorizontal">@style/ProgressBarHorizontalStyle</item>
+        <item name="android:progressBarStyleSmall">@style/ProgressBarStyle.Small</item>
+        <item name="android:progressBarStyleLarge">@style/ProgressBarStyle.Large</item>
+        <item name="android:radioButtonStyle">@style/RadioButtonStyle</item>
+        <item name="android:spinnerStyle">@style/SpinnerStyle</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItemStyle</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/radiobutton</item>
+        <item name="android:listChoiceIndicatorMultiple">?android:attr/textCheckMark</item>
+        <item name="android:progressBarStyleSmallInverse">@style/ProgressBarStyle.Small</item>
+        <item name="android:progressBarStyleLargeInverse">@style/ProgressBarStyle.Large</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+        <item name="android:actionDropDownStyle">@style/ActionBarDropDownStyle</item>
+        <item name="android:actionButtonStyle">@style/ActionButtonStyle</item>
+        <item name="android:actionModeBackground">?attr/actionbarBackground</item>
+        <item name="android:actionBarSize">@dimen/actionbar_size</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionButtonOverflowStyle</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButtonCloseStyle</item>
+        <item name="android:popupMenuStyle">@style/PopupMenuStyle</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/TextAppearance.PopupMenuItem</item>
+        <item name="android:alertDialogTheme">@style/AppTheme.Dialog.Alert</item>
+        <item name="android:dividerVertical">@drawable/divider7_vertical</item>
+        <item name="android:homeAsUpIndicator">@drawable/actionbar_ic_arrow</item>
+        <item name="android:actionMenuTextAppearance">@style/TextAppearance.Bar02</item>
+        <item name="android:actionMenuTextColor">?attr/ftBar02Color</item>
+        <item name="android:actionBarDivider">?android:attr/dividerVertical</item>
+        <item name="android:actionBarItemBackground">?attr/actionbarItemBackground</item>
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle</item>
+        <item name="actionBarSize">@dimen/actionbar_size</item>
+        <item name="actionButtonStyle">@style/ActionButtonStyle</item>
+        <item name="actionBarDivider">@drawable/divider7_vertical</item>
+        <item name="homeAsUpIndicator">@drawable/actionbar_ic_arrow</item>
+        <item name="actionMenuTextAppearance">@style/TextAppearance.Bar02</item>
+        <item name="actionMenuTextColor">?attr/ftBar02Color</item>
+        <item name="actionDropDownStyle">@style/ActionBarDropDownStyle</item>
+        <item name="dropDownListViewStyle">@style/DropDownListViewStyle</item>
+        <item name="alertDialogTheme">@style/AppTheme.Dialog.Alert</item>
+        <item name="windowBackgroundColor">@color/window_background_color</item>
+        <item name="actionbarBackground">@drawable/actionbar_background</item>
+        <item name="actionbarTitleStyle">@style/ActionBarCompatTitleStyle</item>
+        <item name="actionbarItemStyle">@style/ActionButtonStyle</item>
+        <item name="actionbarItemBackground">@drawable/actionbar_item_background</item>
+        <item name="actionbarNavigationTabWidgetStyle">@style/ActionBarNavigationTabWidgetStyle</item>
+        <item name="buttonLayoutBackground">@drawable/button_layout_background</item>
+        <item name="selectAllLayoutBackground">@drawable/select_all_layout_background</item>
+        <item name="imageTextViewGroupStyle">@style/ImageTextViewGroupStyle</item>
+        <item name="clearableEditTextStyle">@style/ClearableEditTextStyle</item>
+        <item name="itemBackground">@drawable/item_background</item>
+        <item name="ftBar01Color">#ffffff</item>
+        <item name="ftBar02Color">@drawable/ft_bar_02_text_color</item>
+        <item name="ftBar03Color">#0f0f0f</item>
+        <item name="ftBar04Color">#696969</item>
+        <item name="ftBar04DisabledColor">#66696969</item>
+        <item name="ftBar05Color">#696969</item>
+        <item name="ftBar05DisabledColor">#66696969</item>
+        <item name="ftBar06Color">#ffffff</item>
+        <item name="ftBar07Color">#ffffff</item>
+        <item name="ftList01Color">#0f0f0f</item>
+        <item name="ftList02Color">#a5a5a5</item>
+        <item name="ftList03Color">#717784</item>
+        <item name="ftList04Color">#0f0f0f</item>
+        <item name="ftList05Color">#9aa0a6</item>
+        <item name="ftList07Color">#6d747a</item>
+        <item name="ftList08Color">#9ba0a5</item>
+        <item name="ftList09Color">#0f0f0f</item>
+        <item name="ftList10Color">#5f5f5f</item>
+        <item name="ftList11Color">#f47e1f</item>
+        <item name="ftList12Color">#227acd</item>
+        <item name="ftList14Color">#fafafa</item>
+        <item name="ftList15Color">#0f0f0f</item>
+        <item name="ftList17Color">#9196a0</item>
+        <item name="ftList18Color">#6d747a</item>
+        <item name="ftList19Color">#fafafa</item>
+        <item name="ftList20Color">#818487</item>
+        <item name="ftList21Color">#2d2d2d</item>
+        <item name="ftList23Color">#0f0f0f</item>
+        <item name="ftList24Color">#f47e1f</item>
+        <item name="ftList25Color">#f47e1f</item>
+        <item name="ftList27Color">#555555</item>
+        <item name="ftList28Color">#555555</item>
+        <item name="ftList29Color">#2d2d2d</item>
+        <item name="ftList30Color">#9aa0a6</item>
+        <item name="ftList31Color">#000000</item>
+        <item name="ftList32Color">#f47e1f</item>
+        <item name="ftList33Color">#f47e1f</item>
+        <item name="ftList34Color">#666d71</item>
+        <item name="ftList35Color">#8f8a80</item>
+        <item name="ftList36Color">#0f0f0f</item>
+        <item name="ftList37Color">#696969</item>
+        <item name="ftList37DisabledColor">#66696969</item>
+        <item name="ftList38Color">#555555</item>
+        <item name="ftList39Color">#a5a5a5</item>
+        <item name="ftList40Color">#9ba0a5</item>
+        <item name="ftList41Color">#ef6a20</item>
+        <item name="ftList42Color">#7d7d7d</item>
+        <item name="ftList43Color">#f47e1f</item>
+        <item name="ftList44Color">#227acd</item>
+        <item name="ftList49Color">#227acd</item>
+        <item name="ftList50Color">#2d2d2d</item>
+        <item name="ftList51Color">#7d7d7d</item>
+        <item name="ftList52Color">#227acd</item>
+        <item name="ftList53Color">#9ba0a5</item>
+        <item name="ftList54Color">#8a9298</item>
+        <item name="ftList55Color">#fafafa</item>
+        <item name="ftList57Color">#ffffff</item>
+        <item name="ftList58Color">#ffffff</item>
+        <item name="ftBtn01Color">#2d2d2d</item>
+        <item name="ftBtn02Color">@drawable/ft_btn_02_text_color</item>
+        <item name="ftBtn03Color">#2d2d2d</item>
+        <item name="ftBtn04Color">@drawable/ft_btn_04_text_color</item>
+        <item name="ftBtn05Color">#ffffff</item>
+        <item name="ftBtn09Color">#444444</item>
+        <item name="ftEtc01Color">#ffffff</item>
+        <item name="ftEtc02Color">#64696e</item>
+        <item name="ftEtc03Color">#ffffff</item>
+        <item name="ftEtc05Color">#000000</item>
+        <item name="ftEtc06Color">#000000</item>
+        <item name="ftEtc07Color">#000000</item>
+        <item name="ftEtc08Color">#414141</item>
+        <item name="ftEtc09Color">#ffffff</item>
+        <item name="ftEtc10Color">#414141</item>
+        <item name="ftEtc12Color">#f46e00</item>
+        <item name="ftEtc15Color">#000000</item>
+        <item name="ftEtc16Color">#9196a0</item>
+        <item name="ftEtc17Color">#ffffff</item>
+        <item name="ftEtc20Color">#000000</item>
+        <item name="ftChat01Color">#0f0f0f</item>
+        <item name="ftChat02Color">#2d2d2d</item>
+        <item name="ftChat03Color">#141414</item>
+        <item name="ftChat04Color">#f47e1f</item>
+        <item name="ftChat05Color">#f47e1f</item>
+        <item name="ftChat06Color">#f47e1f</item>
+        <item name="ftChat08Color">#0f0f0f</item>
+        <item name="ftChat09Color">#e90b0b</item>
+        <item name="ftChat10Color">#7c7c7c</item>
+        <item name="ftChat11Color">#9ba0a5</item>
+        <item name="ftChat12Color">#f47e1f</item>
+        <item name="ftChat13Color">#2d2d2d</item>
+        <item name="ftChat14Color">#0f0f0f</item>
+        <item name="ftChat15Color">#0f0f0f</item>
+        <item name="ftChat16Color">#000000</item>
+        <item name="ftChat17Color">#2d2d2d</item>
+        <item name="ftChat18Color">#a5a5a5</item>
+        <item name="ftChat29Color">#4f4f4f</item>
+        <item name="ftChat30Color">#8e8e8e</item>
+        <item name="ftChat21Color">#0f0f0f</item>
+        <item name="ftChat31Color">#878787</item>
+        <item name="ftPop01Color">#ffffff</item>
+        <item name="ftPop02Color">#0f0f0f</item>
+        <item name="ftPop03Color">#9ba0a5</item>
+        <item name="ftPop04Color">#2d2d2d</item>
+        <item name="ftPop05Color">#0f0f0f</item>
+        <item name="ftPop06Color">#ffffff</item>
+        <item name="ftPop07Color">#5f5f5f</item>
+        <item name="ftPop08Color">#ef6a20</item>
+        <item name="ftPop09Color">#9196a0</item>
+        <item name="ftPop10Color">#0f0f0f</item>
+        <item name="ftPop11Color">#227acd</item>
+        <item name="ftPop12Color">#0f0f0f</item>
+        <item name="ftPop13Color">#ffffff</item>
+        <item name="ftPop14Color">#ffffff</item>
+        <item name="ftExt01Color">@drawable/ft_ext_01_text_color</item>
+    </style>
+    <style name="AppTheme.WithoutArrow" parent="@style/AppTheme">
+        <item name="android:actionBarStyle">@style/ActionBarStyle.WithoutArrow</item>
+        <item name="android:homeAsUpIndicator">@drawable/blank_divider_11</item>
+        <item name="actionBarStyle">@style/ActionBarStyle.WithoutArrow</item>
+        <item name="homeAsUpIndicator">@drawable/blank_divider_11</item>
+    </style>
+    <style name="AppTheme.Black" parent="@style/AppTheme">
+        <item name="windowBackgroundColor">@android:color/black</item>
+        <item name="buttonLayoutBackground">@drawable/button_layout_background_black</item>
+        <item name="selectAllLayoutBackground">@drawable/select_all_layout_background_black</item>
+        <item name="ftBar01Color">#dcdcdc</item>
+        <item name="ftBar02Color">@drawable/ft_bar_02_text_color_black</item>
+        <item name="ftList07Color">#fafafa</item>
+        <item name="ftList19Color">#9196a0</item>
+        <item name="ftList27Color">#dcdcdc</item>
+        <item name="ftList28Color">#7d7d7d</item>
+        <item name="ftList29Color">#7d7d7d</item>
+        <item name="ftBtn02Color">@drawable/ft_btn_02_text_color_black</item>
+        <item name="ftEtc05Color">#555555</item>
+        <item name="ftEtc06Color">#0f0f0f</item>
+        <item name="ftEtc07Color">#64696e</item>
+        <item name="ftEtc15Color">#ffffff</item>
+        <item name="ftChat11Color">#dcdcdc</item>
+        <item name="ftChat12Color">#f47e1f</item>
+    </style>
+    <style name="AppTheme.Black.WithoutArrow" parent="@style/AppTheme.Black">
+        <item name="android:actionBarStyle">@style/ActionBarStyle.WithoutArrow</item>
+        <item name="android:homeAsUpIndicator">@drawable/blank_divider_11</item>
+        <item name="actionBarStyle">@style/ActionBarStyle.WithoutArrow</item>
+        <item name="homeAsUpIndicator">@drawable/blank_divider_11</item>
+    </style>
+    <style name="AppTheme.Home" parent="@style/AppTheme">
+        <item name="android:actionBarStyle">@style/ActionBarStyle.Home</item>
+        <item name="android:actionBarTabBarStyle">@style/ActionBarTabBarStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/blank_divider_11</item>
+        <item name="actionBarStyle">@style/ActionBarStyle.Home</item>
+        <item name="actionBarTabBarStyle">@style/ActionBarTabBarStyle</item>
+        <item name="homeAsUpIndicator">@drawable/blank_divider_11</item>
+    </style>
+    <style name="AppTheme.Black.Home" parent="@style/AppTheme.Black">
+        <item name="android:actionBarStyle">@style/ActionBarStyle.Home</item>
+        <item name="android:homeAsUpIndicator">@drawable/blank_divider_11</item>
+        <item name="actionBarStyle">@style/ActionBarStyle.Home</item>
+        <item name="homeAsUpIndicator">@drawable/blank_divider_11</item>
+        <item name="actionbarBackground">@drawable/actionbar_home_background</item>
+        <item name="actionbarItemBackground">@drawable/actionbar_home_item</item>
+    </style>
+    <style name="AppTheme.Setting" parent="@style/AppTheme">
+        <item name="android:listViewStyle">@style/ListViewStyle.Common1</item>
+        <item name="android:preferenceStyle">@style/Preference</item>
+        <item name="android:checkBoxPreferenceStyle">@style/Preference.CheckBoxPreference</item>
+    </style>
+    <style name="AppTheme.Black.Setting" parent="@style/AppTheme.Black">
+        <item name="android:listViewStyle">@style/ListViewStyle.Common1</item>
+        <item name="android:preferenceStyle">@style/Preference</item>
+        <item name="android:checkBoxPreferenceStyle">@style/Preference.CheckBoxPreference</item>
+    </style>
+    <style name="AppTheme.NoTitleBar" parent="@style/AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.Black.NoTitleBar" parent="@style/AppTheme.Black">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.NoTitleBar.Fullscreen" parent="@style/AppTheme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="AppTheme.Black.NoTitleBar.Fullscreen" parent="@style/AppTheme.Black.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="AppTheme.Dialog" parent="@style/AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">0x20</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.Dialog.Alert" parent="@style/AppTheme.Dialog">
+        <item name="android:textAppearanceLarge">@style/TextAppearance.Pop01</item>
+        <item name="android:textAppearanceMedium">@style/TextAppearance.Pop05</item>
+        <item name="android:textAppearanceSmall">@style/TextAppearance.Pop05</item>
+        <item name="android:listPreferredItemHeight">48dp</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle</item>
+        <item name="android:listViewStyle">@style/ListViewStyle.Common1</item>
+        <item name="android:progressBarStyle">@style/ProgressBarStyle</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/radiobutton</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/checkbox</item>
+        <item name="android:listDividerAlertDialog">@drawable/listview_divider_alertdialog</item>
+        <item name="android:textColorAlertDialogListItem">?attr/ftPop02Color</item>
+        <item name="android:buttonBarStyle">@style/AlertDialogButtonBarStyle</item>
+        <item name="android:buttonBarButtonStyle">@style/ButtonStyle.AlertDialog</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="alertDialogStyle">@style/AlertDialogStyle</item>
+        <item name="listDividerAlertDialog">@drawable/listview_divider_alertdialog</item>
+        <item name="textColorAlertDialogListItem">?attr/ftPop02Color</item>
+        <item name="buttonBarStyle">@style/AlertDialogButtonBarStyle</item>
+        <item name="buttonBarButtonStyle">@style/ButtonStyle.AlertDialog</item>
+    </style>
+    <style name="AppTheme.Black.Dialog" parent="@style/AppTheme.Black">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">0x20</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.Translucent" parent="@style/AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="AppTheme.Translucent.NoTitleBar" parent="@style/AppTheme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.Translucent.NoTitleBar.Fullscreen" parent="@style/AppTheme.Translucent.NoTitleBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="AppTheme.Black.Translucent" parent="@style/AppTheme.Black">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="AppTheme.Black.Translucent.NoTitleBar" parent="@style/AppTheme.Black.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.Black.Translucent.NoTitleBar.Fullscreen" parent="@style/AppTheme.Black.Translucent.NoTitleBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="AppTheme.Panel" parent="@style/AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.Black.Panel" parent="@style/AppTheme.Black">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="seekbar_style" parent="">
+        <item name="android:maxHeight">10dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:minHeight">10dp</item>
+    </style>
+    <style name="AppTheme.Home.IsTranslucent" parent="@style/AppTheme.Home">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="AMSIcsTitleBarText" parent="">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="AMSIcsTitleBarButton" parent="">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/ams_ics_titlebar_button_text</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="AMSIcsMoreOptionContainer" parent="">
+        <item name="android:gravity">0x11</item>
+        <item name="android:orientation">1</item>
+        <item name="android:layout_width">-1</item>
+        <item name="android:layout_height">-1</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="AMSIcsMoreOptionIcon" parent="">
+        <item name="android:layout_width">-2</item>
+        <item name="android:layout_height">-2</item>
+        <item name="android:scaleType">5</item>
+    </style>
+    <style name="AMSIcsMoreOptionText" parent="">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/ams_ics_more_option_button_text</item>
+        <item name="android:layout_width">-2</item>
+        <item name="android:layout_height">-2</item>
+    </style>
+    <style name="AMSIcsMainButtonStyle" parent="">
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">-1</item>
+        <item name="android:layout_height">-1</item>
+        <item name="android:scaleType">5</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="AMSIcs2MainButtonTopStyle" parent="@style/AMSIcsMainButtonStyle">
+    </style>
+    <style name="AMSIcs2BgColorButtonContainerStyle" parent="">
+        <item name="android:layout_width">@dimen/ams_ics2_color_container_width</item>
+        <item name="android:layout_height">@dimen/ams_ics2_color_container_height</item>
+    </style>
+    <style name="AMSIcs2BgColorButtonBackgroundStyle" parent="">
+        <item name="android:layout_width">@dimen/ams_ics2_color_item_width</item>
+        <item name="android:layout_height">@dimen/ams_ics2_color_item_height</item>
+        <item name="android:scaleType">3</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="AMSIcs2ToolPopupWindowAnimation" parent="">
+        <item name="android:windowEnterAnimation">@anim/anim_ics2_tool_popup_appear</item>
+        <item name="android:windowExitAnimation">@anim/anim_ics2_tool_popup_disappear</item>
+    </style>
+    <style name="AMSButtonStyle" parent="@style/Tab2ButtonStyle">
+        <item name="android:background">@drawable/button_ams_selector</item>
+        <item name="android:layout_width">-2</item>
+        <item name="android:layout_height">49dp</item>
+        <item name="android:scaleType">7</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="MenuBarButton" parent="">
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_width">-1</item>
+        <item name="android:layout_height">-2</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="BuddyListItemLayout" parent="">
+        <item name="android:gravity">0x10</item>
+        <item name="android:layout_width">-1</item>
+        <item name="android:layout_height">-2</item>
+    </style>
+    <style name="BuddyListItemImage" parent="">
+        <item name="android:layout_width">@dimen/buddy_image_size</item>
+        <item name="android:layout_height">@dimen/buddy_image_size</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+    <style name="BuddyListItemTextName" parent="">
+        <item name="android:textSize">@dimen/buddy_name_font_size</item>
+        <item name="android:ellipsize">4</item>
+        <item name="android:layout_width">-1</item>
+        <item name="android:layout_height">-2</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="BuddyListItemImageButton" parent="">
+        <item name="android:layout_gravity">0x10</item>
+        <item name="android:layout_width">-2</item>
+        <item name="android:layout_height">-2</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+    <style name="BuddySearchContainer" parent="">
+        <item name="android:gravity">0x10</item>
+        <item name="android:layout_width">-1</item>
+        <item name="android:layout_height">@dimen/search_field_layout_height</item>
+    </style>
+    <style name="BuddySearchEditText" parent="">
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">-2</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:hint">@string/buddy_list_search_hint</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">30</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:imeOptions">0x10000006</item>
+        <item name="android:contentDescription">@string/buddy_list_search_hint</item>
+    </style>
+    <style name="GeneralInformationRootLayoutStyle" parent="">
+        <item name="android:gravity">0x10</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:layout_width">-1</item>
+        <item name="android:layout_height">72dp</item>
+    </style>
+    <style name="GeneralInformationPictureStyle" parent="">
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginRight">7dp</item>
+        <item name="android:scaleType">3</item>
+    </style>
+    <style name="GeneralInformationSummaryStyle" parent="">
+        <item name="android:textSize">16dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">-2</item>
+        <item name="android:layout_height">-2</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="AddBuddyButtonStyle" parent="">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/bottom_button_text</item>
+        <item name="android:gravity">0x11</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">-2</item>
+        <item name="android:shadowColor">@color/white</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="Widget.Keypad_b" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@drawable/keypad_btn_textcolor</item>
+        <item name="android:background">@drawable/keypad_btn_normal_src</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/keypad_height</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginRight">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="ShadowTextStyle" parent="">
+        <item name="android:textColor">@drawable/btn_registration_textcolor_xml</item>
+        <item name="android:shadowColor">@color/white</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="MsgBoxProfileImage" parent="">
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:scaleType">3</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="MsgBoxListItemProfileImage" parent="">
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:scaleType">3</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="BuddyPageCommunicationButton" parent="">
+        <item name="android:gravity">0x11</item>
+        <item name="android:layout_gravity">0x11</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">-1</item>
+        <item name="android:scaleType">5</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="RegistrationProgressBarHorizontal" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">11dp</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_indetermintate_horizontal</item>
+        <item name="android:minHeight">11dp</item>
+    </style>
+    <style name="TabletDialogTheme.Transparent" parent="@android:style/Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="PopupWinsetTopButton" parent="">
+        <item name="android:background">@drawable/popup_winset_top_btn</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:scaleType">5</item>
+    </style>
+    <style name="ButtonRedStyle.AlertDialog" parent="@style/ButtonStyle.AlertDialog">
+        <item name="android:textColor">?attr/ftPop06Color</item>
+        <item name="android:background">@drawable/button_red_alertdialog</item>
+    </style>
+    <style name="ScreenNotificationTheme" parent="@style/AppTheme.Translucent.NoTitleBar">
+        <item name="actionbarBackground">?attr/windowBackgroundColor</item>
+    </style>
+    <style name="NewFeatureTheme" parent="@style/AppTheme.NoTitleBar">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+</resources>

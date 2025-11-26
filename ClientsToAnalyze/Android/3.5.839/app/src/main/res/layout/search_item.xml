@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight">
+    <TextView
+        android:textAppearance="@style/TextAppearance.List04.Variable"
+        android:ellipsize="end"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:singleLine="true"
+        android:layout_alignParentTop="true"/>
+    <view
+        android:textAppearance="@style/TextAppearance.List07.Variable"
+        android:ellipsize="end"
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:singleLine="true"
+        android:layout_below="@+id/title"
+        class="com.sec.chaton.smsplugin.ui.SearchActivity$TextViewSnippet"/>
+</RelativeLayout>

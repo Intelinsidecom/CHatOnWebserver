@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/BlockListItemLayout">
+    <ImageView
+        android:id="@+id/listItemImage"
+        style="@style/BuddyListItemImage"/>
+    <TextView
+        android:id="@+id/listItemText1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        style="@style/BuddyListItemTextName"/>
+    <Button
+        android:id="@+id/listItemButton"
+        android:text="@string/setting_block_unblock"
+        style="@style/BuddyListItemTextButton"/>
+</LinearLayout>

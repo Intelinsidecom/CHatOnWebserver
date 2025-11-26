@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>รูป​ภาพ​พื้น​ฐาน</item>
+        <item>รูป​ภาพ</item>
+        <item>ใส่​รูป​ภาพ</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>รูป​ภาพ</item>
+        <item>ใส่​รูป​ภาพ</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>แก้ไข</item>
+        <item>ลบ</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>รูป​ภาพ</item>
+        <item>วิดีโอสด</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>สลับวิดีโอ</item>
+        <item>ซ่อนวิดีโอ</item>
+    </array>
+</resources>

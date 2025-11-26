@@ -1,0 +1,199 @@
+﻿<UserControl x:ConnectionId='1'
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA.Views"
+    xmlns:infra="using:ChatOn.Infrastructure"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:customControl="using:ChatOn.Controls" x:Class="ChatOn.Controls.BuddyProfileDialog"
+    mc:Ignorable="d" BorderBrush="Black" BorderThickness="1"
+    xmlns:local1="using:ChatOn.Controls"
+                                      >
+
+    <UserControl.Resources>
+        <DataTemplate x:Key="BuddiesSayItemTemplate">
+            <Grid Tag="tilt" Margin="5,10,20,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Image x:ConnectionId='2'                         HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Fill" Width="60" Height="60" Source="/Images/buddies_profile_image.png"/>
+                <Image x:ConnectionId='3'                         HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Fill" Width="60" Height="60" Source="/Images/buddies_profile_image.png"                        />
+                <Grid x:ConnectionId='4' Grid.Column="1"                       >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="{Binding Name}" VerticalAlignment="Top" Margin="10,0,0,0" FontSize="25.333" Foreground="Black" FontFamily="Segoe UI Light" FontWeight="Light" MaxHeight="30" TextTrimming="WordEllipsis"/>
+                    <TextBlock Grid.Column="0" Text="{Binding Message}" VerticalAlignment="Top" Margin="10,38,0,0" FontSize="20" TextWrapping="Wrap" Foreground="#FF7F7F7F" FontFamily="Segoe UI Light"/>
+                    <TextBlock Grid.Column="1" TextWrapping="Wrap" Text="{Binding Date, Converter={StaticResource DateToTimePolicyValue}}" VerticalAlignment="Top" FontSize="20" HorizontalAlignment="Right" Foreground="#FF5AAAAA" FontFamily="Segoe UI Light"/>
+                </Grid>
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="PhoneNumberList">
+            <TextBlock Text="{Binding}" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF328195" FontSize="22" FontFamily="Segoe UI" Margin="0,0,0,0"/>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot"  Background="White" Width="800" Height="525" MaxHeight="525">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="2"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <StackPanel HorizontalAlignment="Left" Width="220" Margin="0,0,20,0" Background="#FFFFFF">
+                <Image x:ConnectionId='11'                         HorizontalAlignment="Left" VerticalAlignment="Top" Source="{Binding Buddy.ProfileImage}" Stretch="Fill" Height="184" Width="184" Margin="11,11,0,0"/>
+                <Grid x:ConnectionId='12' VerticalAlignment="Top" Margin="11,36,0,0"                         >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Image HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="None" Source="Images/Icons/appbtn_startchat_o.png"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding ConverterParameter=IDS_CHATON_SK3_START_CHAT, Converter={StaticResource ResourceStringConverter}}" VerticalAlignment="Center" Foreground="Black" FontFamily="Segoe UI Light" FontSize="21.333" Grid.Column="1" Margin="10,0,0,0"/>
+                </Grid>
+                <!-- Commented for Collapsing the Phone Number List -->
+                <!--<Grid x:Name="ViewContactGrid" Visibility="{Binding Buddy.PhoneNumberList,Converter={StaticResource ObjectCountToShow}}" VerticalAlignment="Top" Margin="11,20,0,0" Tapped="ViewContactGrid_Tapped">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="169"/>
+                    </Grid.ColumnDefinitions>
+                    <Image HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="None" Source="Images/Icons/appbtn_phonenumber_o.png"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding ConverterParameter=IDS_CHATON_BUTTON_CONTACTS, Converter={StaticResource ResourceStringConverter}}" VerticalAlignment="Center" Foreground="Black" FontFamily="Segoe UI Light" FontSize="21.333" Grid.Column="1" Margin="10,0,0,0"/>
+                </Grid>-->
+                <Grid x:ConnectionId='13' x:Name="PinToStartGrid" VerticalAlignment="Top" Margin="11,20,0,0"                                 >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="169"/>
+                    </Grid.ColumnDefinitions>
+                    <Image HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="None" Source="Images/Icons/appbtn_pintostart_o.png"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding ConverterParameter=WP7_CHATON_PIN_TO_START, Converter={StaticResource ResourceStringConverter}}" VerticalAlignment="Center" Foreground="Black" FontFamily="Segoe UI Light" FontSize="21.333" Grid.Column="1" Margin="10,0,0,0"/>
+                </Grid>
+                <Grid x:ConnectionId='14' x:Name="BlockGrid" VerticalAlignment="Top" Margin="11,20,0,0"                           >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Image HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="None" Source="Images/Icons/appbtn_block_o.png"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding ConverterParameter=IDS_CHATON_OPT_BLOCK, Converter={StaticResource ResourceStringConverter}}" VerticalAlignment="Center" Foreground="Black" FontFamily="Segoe UI Light" FontSize="21.333" Grid.Column="1" Margin="10,0,0,0"/>
+                </Grid>
+
+            </StackPanel>
+            <Grid Grid.Column="2" Margin="0,0,20,0" x:Name="GridProfile">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <StackPanel x:Name="DetailGrid" VerticalAlignment="Top">
+                    <Grid Margin="0, 10, 0, 0" Height="50">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Column="0" x:Name="tbEditName" Text="{Binding Buddy.Name}" VerticalAlignment="Center" Foreground="Black"  FontSize="45.333" FontFamily="Segoe UI Light" FontWeight="Light" TextTrimming="WordEllipsis" Visibility="{Binding ShowNameVisibility}"/>
+                        <TextBox x:ConnectionId='7' Grid.Column="0" MaxLength="30" VerticalAlignment="Center" x:Name="txtEditName" Foreground="Black" Text="{Binding Buddy.Name}" FontSize="28.333" FontFamily="Segoe UI Light" FontWeight="Light" Visibility="{Binding EditNameVisibility}" ManipulationMode="None" IsRightTapEnabled="False" IsHoldingEnabled="False" IsDoubleTapEnabled="False"                                    />
+                        <customControl:ImageButton x:ConnectionId='8' 
+                            x:Name="EditName_Button" 
+                            NormalImage="Images/Icons/appbtn_edit_dark.png" PressedImage="Images/Icons/appbtn_edit_press_dark.png"
+                                                   
+                            HorizontalAlignment="Left" VerticalAlignment="Center" 
+                            Text=""  Margin="5,5,5,5" Grid.Column="1"/>
+
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Grid.Column="2" Margin="5,5,5,5">
+                            <Image x:ConnectionId='9' Visibility="{Binding isShowFavorite}"
+                                Width="40" Height="40" Margin="10 0 15 0"
+                                                              Source="{Binding Buddy.IsFavorite, Converter={StaticResource IsFavoriteToIconUri}}" />
+                            <customControl:ImageButton x:ConnectionId='10' 
+                                x:Name="CloseButton" Grid.Column="2"
+                                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                                NormalImage="Images/Icons/appbtn_cancel.png" 
+                                PressedImage="Images/Icons/appbtn_cancel_press.png"
+                                DisabledImage="Images/Icons/appbtn_cancel_disabled.png" 
+                                                    
+                                IsEnabled="{Binding IsCloseEnabled}"
+                                Text=""/>
+
+                        </StackPanel>
+                    </Grid>
+                    <StackPanel Visibility="{Binding Buddy.OrgPhoneNumberVisible}" Margin="0" VerticalAlignment="Top" >
+                        <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF328195" Text="{Binding Buddy.OrgNumber}" Margin="0" Padding="0" FontSize="22" FontFamily="Segoe UI" Visibility="{Binding Buddy.IsShowPhoneNumber, Converter={StaticResource BoolToVisibility}}" />
+                    </StackPanel>
+                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF328195" Text="{Binding Buddy.SamsungEmail}" Padding="0"  FontSize="22" FontFamily="Segoe UI" Visibility="{Binding Buddy.SamsungEmail, Converter={StaticResource StringNullOrEmptyToHide}}" Margin="0,-5,0,0" />
+                    <ItemsControl Visibility="{Binding Buddy.IsShowPhoneNumber, Converter={StaticResource BoolToVisibility}}" ItemTemplate="{StaticResource PhoneNumberList}" ItemsSource="{Binding Buddy.PhoneNumberList}" x:Name="PhoneNumberListControl" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,-5,0,0" />
+                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF328195" Text="{Binding BirthDay}" Visibility="{Binding BirthDay, Converter={StaticResource StringNullOrEmptyToHide}}"  FontSize="22" FontFamily="Segoe UI" Margin="0,-5,0,0"/>
+                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFFA8719" Text="{Binding Buddy.Status}" Visibility="{Binding Buddy.Status, Converter={StaticResource StringNullOrEmptyToHide}}" FontSize="22" FontFamily="Segoe UI" Margin="0,0,0,0" MaxHeight="90" TextTrimming="WordEllipsis"/>
+                    <!--<StackPanel Margin="0, 0, 0, 0" Visibility="{Binding Buddy.IsHideInteraction, ConverterParameter=!, Converter={StaticResource BoolToVisibility}}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" Text="{Binding ConverterParameter=IDS_CHATON_BODY_INTERACTION, Converter={StaticResource ResourceStringConverter}}" FontSize="24" FontFamily="Segoe UI"/>
+                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF272727" Text="{Binding InteractionRank, Converter={StaticResource RankStatusConverter}}" FontSize="24" FontFamily="Segoe UI" Grid.Column="1" Margin="41,0,0,0" FontWeight="Light"/>
+                        </Grid>
+
+                        <customControl:RatioChart LeftImage="Images/rank_progress_orange.png" RightImage="Images/rank_progress_yellow.png" 
+                                              HorizontalAlignment="Left" Height="22" VerticalAlignment="Bottom" 
+                                              LeftText="{Binding InteractionRank.ReceivedCount}" RightText="{Binding InteractionRank.SentCount}" 
+                                              LeftValue="{Binding InteractionRank.ReceivedCount}" RightValue="{Binding InteractionRank.SentCount}" 
+                                              StandardValue="{Binding InteractionRank.BestInteractionPoint}"
+                                              LeftFontColor="Black" RightFontColor="Black" Width="500"/>
+
+                        <Grid Visibility="{Binding InteractionRank.DisplayRank, ConverterParameter=0, Converter={StaticResource IntEqualToVisibility}}" Height="30" Width="460" HorizontalAlignment="Left">
+                            <Grid.Background>
+                                <ImageBrush ImageSource="Images/rank_progress_orange.png" Stretch="Fill"/>
+                            </Grid.Background>
+
+                            <TextBlock Text="{Binding ConverterParameter=IDS_CHATON_MBODY_NO_INTERACTIONS, Converter={StaticResource ResourceStringConverter}}" VerticalAlignment="Center" FontSize="10" TextAlignment="Center"/>
+                        </Grid>
+                    </StackPanel>-->
+                    <Rectangle x:Name="RectInteractionLine" Visibility="{Binding Buddy.IsBlind, ConverterParameter=!, Converter={StaticResource ReverseBoolToVisibility}}" Height="1" StrokeEndLineCap="Square" VerticalAlignment="Top" Margin="0,10,0,0" StrokeThickness="0" Fill="Black"/>
+                    <Grid VerticalAlignment="Top" Margin="0,5,0,0"  x:Name="gridAdd">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" Text="{Binding ConverterParameter=IDS_CHATON_HEADER_BUDDIES_SAY, Converter={StaticResource ResourceStringConverter}}" FontSize="24" FontFamily="Segoe UI" HorizontalAlignment="Left"/>
+                        <Button x:ConnectionId='6'                          Content="{Binding ConverterParameter=IDS_CHATON_SK_ADD, Converter={StaticResource ResourceStringConverter}}" Style="{StaticResource WinsetWhiteButton}" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="1"/>
+                       
+                    </Grid>
+                </StackPanel>                
+                <TextBlock x:Name="tbLeaveYourMessage"  TextWrapping="Wrap" Grid.Row="1" VerticalAlignment="Center" Foreground="Black" Text="{Binding ConverterParameter=IDS_CHATON_BODY_LEAVE_A_MESSAGE_FOR_YOUR_BUDDY, Converter={StaticResource ResourceStringConverter}}" FontSize="15" FontFamily="Segoe UI" HorizontalAlignment="Center" Visibility="{Binding Buddy.IsBlindText, ConverterParameter=!, Converter={StaticResource ReverseBoolToVisibility}}"/>
+                <TextBlock x:Name="tbUseBuddySay"  TextWrapping="Wrap" Grid.Row="1" VerticalAlignment="Center" Foreground="Black" Text="{Binding ConverterParameter=IDS_CHATON_BODY_PS_DOES_NOT_USE_BUDDIES_SAY, Converter={StaticResource ResourceStringConverter}}" FontSize="15" FontFamily="Segoe UI" HorizontalAlignment="Center"/>                               
+                <ListView x:ConnectionId='5' x:Name="lvAdd"  
+                          SelectionMode="None" 
+                          ManipulationMode="None" 
+                                               
+                          ScrollViewer.VerticalScrollBarVisibility="Auto"
+                          Visibility="{Binding Buddy.IsBlind, ConverterParameter=!, Converter={StaticResource BoolToVisibility}}" 
+                          ItemsSource="{Binding MemoList}" ItemTemplate="{StaticResource BuddiesSayItemTemplate}" 
+                          HorizontalContentAlignment="Stretch" ItemContainerStyle="{StaticResource FullWidthListItemStyle}" 
+                          Grid.Row="1" Margin="0,10,0,0" 
+                          >
+
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel/>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                </ListView>
+            </Grid>
+            <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="3">
+                <!--<Border HorizontalAlignment="Left" Height="13" Margin="-10.5,465,0,0" VerticalAlignment="Top" Width="10.5">
+            		<Path Data="M0.333333,466.5 L-8.99967,472.167 L0.500333,478.5" Fill="#FFF4F4F5" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Margin="-6.162,0,0.161,-6.167" Width="17"/>
+            	</Border>-->
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>
+

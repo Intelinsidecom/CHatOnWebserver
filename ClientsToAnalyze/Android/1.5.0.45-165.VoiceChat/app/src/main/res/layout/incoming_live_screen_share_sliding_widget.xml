@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/incomingButtonsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btn_receive"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    <com.coolots.chaton.call.view.layout.IncomingLiveScreenShareCallWidget
+        android:id="@+id/incomingCallWidget"
+        android:paddingBottom="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+    <RelativeLayout
+        android:layout_width="545dp"
+        android:layout_height="434dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <include layout="@layout/reject_call_with_msg_sliding_drawer"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+{
+  "projectVersion": 2,
+  "files": [
+    "..\\..\\com.sec.chaton_3.5.839-305839000_minAPI8(armeabi)(120,160,240,320,480,640dpi)_apkmirror.com.apk"
+  ],
+  "treeExpansionsV2": [
+    "t:JSources"
+  ],
+  "codeData": {
+    "comments": [],
+    "renames": []
+  },
+  "openTabs": [
+    {
+      "type": "class",
+      "tabPath": "com.sec.chaton.AdminMenu",
+      "subPath": "java",
+      "caret": 22150,
+      "view": {
+        "x": 0,
+        "y": 8231
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    }
+  ],
+  "cacheDir": "C:\\Users\\JD-16\\AppData\\Local\\skylot\\jadx\\cache\\projects\\com.sec.chaton_3.5.839-305839000_minAPI8(armeabi)(120,160,240,320,480,640dpi)_apkmirror.com-2a525faa22bb4970e8c7e7a0aa1675d8",
+  "enableLiveReload": false,
+  "searchHistory": [
+    "chat"
+  ],
+  "searchResourcesFilter": "$TEXT",
+  "searchResourcesSizeLimit": 0,
+  "pluginOptions": {}
+}

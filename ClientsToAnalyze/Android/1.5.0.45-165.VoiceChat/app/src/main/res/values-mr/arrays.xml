@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>डिफॉल्ट प्रतिमा</item>
+        <item>प्रतिमा</item>
+        <item>चित्र घ्या</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>प्रतिमा</item>
+        <item>चित्र घ्या</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>संपा. क.</item>
+        <item>काढून टाका</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>चित्र</item>
+        <item>लाईव्ह व्हिडियो</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>व्हिडियो स्वीच करा</item>
+        <item>व्हिडियो लपवा</item>
+    </array>
+</resources>

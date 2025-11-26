@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>תמונת ברירת מחדל</item>
+        <item>תמונות</item>
+        <item>צלם תמונה</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>תמונות</item>
+        <item>צלם תמונה</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>ערוך</item>
+        <item>מחק</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>תמונה</item>
+        <item>וידאו חי</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>החלף וידאו</item>
+        <item>הסתר וידאו</item>
+    </array>
+</resources>

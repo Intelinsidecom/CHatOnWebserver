@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="default_smiley_texts">
+        <item>:-)</item>
+        <item>:-(</item>
+        <item>;-)</item>
+        <item>:-Ç</item>
+        <item>=-D</item>
+        <item>:-*</item>
+        <item>:D</item>
+        <item>B-)</item>
+        <item>:-$</item>
+        <item>:-!</item>
+        <item>:-[</item>
+        <item>D:-)</item>
+        <item>:-\\</item>
+        <item>:\'(</item>
+        <item>:-X</item>
+        <item>:-D</item>
+        <item>o_O</item>
+        <item>&lt;3</item>
+        <item>x-(</item>
+        <item>:-/</item>
+        <item>:-I</item>
+    </array>
+    <array name="default_smiley_names">
+        <item>Mutlu</item>
+        <item>Üzgün</item>
+        <item>Göz Kırpma</item>
+        <item>Dil çıkarmış</item>
+        <item>Şaşırmış</item>
+        <item>Öpücük</item>
+        <item>Bağırma</item>
+        <item>Sakin</item>
+        <item>Para ağızlı</item>
+        <item>Ayak ağızda</item>
+        <item>Mahçup</item>
+        <item>Melek</item>
+        <item>Kararsız</item>
+        <item>Ağlama</item>
+        <item>Dudakları mühürlü</item>
+        <item>Gülme</item>
+        <item>Sersemlemiş</item>
+        <item>Kalp</item>
+        <item>Kızgın</item>
+        <item>Sırıtma</item>
+        <item>Poker surat</item>
+    </array>
+</resources>

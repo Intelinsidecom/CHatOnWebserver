@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/GeneralHeaderStyle">
+    <ImageButton
+        android:id="@+id/header_button_back"
+        android:focusable="true"
+        android:nextFocusRight="@+id/header_button1"
+        style="@style/GeneralButtonLeftStyle"/>
+    <ImageView
+        android:id="@+id/header_separator_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/general_header_line"/>
+    <TextView
+        android:id="@+id/header_title"
+        style="@style/GeneralHeaderTextStyle"/>
+    <ImageView
+        android:id="@+id/header_separator_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/general_header_line"/>
+    <ImageButton
+        android:id="@+id/header_button1"
+        android:focusable="true"
+        android:nextFocusLeft="@+id/header_button_back"
+        style="@style/GeneralButtonDownStyle"/>
+</LinearLayout>

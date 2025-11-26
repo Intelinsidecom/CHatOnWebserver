@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#262626"
+    style="@style/GeneralInformationRootLayoutStyle">
+    <ImageView
+        android:id="@+id/generalInformationPicture"
+        android:background="@drawable/pic_default"
+        style="@style/GeneralInformationPictureStyle"/>
+    <RelativeLayout
+        android:layout_toRightOf="@+id/generalInformationPicture"
+        style="@style/GeneralInformationSubRootLayoutStyle">
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/trunkContentTitle"
+            android:alpha="0.95"
+            style="@style/GeneralInformationTitleStyle"/>
+        <TextView
+            android:id="@android:id/text2"
+            android:layout_below="@+id/trunkContentTitle"
+            style="@style/GeneralInformationSummaryStyle"/>
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/trunkContentTitleTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@android:id/text2"
+            android:layout_alignParentRight="true"
+            android:alpha="0.4"/>
+    </RelativeLayout>
+</RelativeLayout>

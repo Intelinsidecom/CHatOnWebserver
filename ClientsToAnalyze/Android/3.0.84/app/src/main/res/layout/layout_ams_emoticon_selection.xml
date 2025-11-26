@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/ams_ics2_stamp_grid_layout_padding_left"
+    android:paddingTop="@dimen/ams_ics2_stamp_grid_layout_padding_top"
+    android:paddingRight="@dimen/ams_ics2_stamp_grid_layout_padding_right"
+    android:paddingBottom="@dimen/ams_ics2_stamp_grid_layout_padding_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <GridView
+        android:gravity="center"
+        android:id="@+id/gridview_emoticon"
+        android:descendantFocusability="afterDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="@dimen/ams_ics2_stamp_grid_layout_horizontal_space"
+        android:verticalSpacing="@dimen/ams_ics2_stamp_grid_layout_vertical_space"
+        android:columnWidth="@dimen/ams_ics2_stamp_grid_layout_column_width"
+        android:numColumns="auto_fit"/>
+</LinearLayout>

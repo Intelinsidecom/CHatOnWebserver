@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>標準画像</item>
+        <item>画像</item>
+        <item>カメラを起動</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>画像</item>
+        <item>カメラを起動</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>編集</item>
+        <item>削除</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>画像</item>
+        <item>ライブ動画</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>映像を切り替え</item>
+        <item>映像を非表示</item>
+    </array>
+</resources>

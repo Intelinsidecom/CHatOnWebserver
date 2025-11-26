@@ -1,0 +1,85 @@
+﻿<Page
+    x:Name="pageRoot"
+    x:Class="ChatON_WoA.Views.InputVerificationCodePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:customControl="using:ChatOn.Controls"
+    mc:Ignorable="d">
+    <!--<Page.BottomAppBar>
+        <AppBar x:Name="appBar" Background="#FFFA8719">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="50*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel x:Name="RightCommands" Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Right"  Margin="0,14,0,13">
+                    <customControl:ImageButton x:Name="VoiceButton" NormalImage="/Images/Icons/appbtn_voice.png" PressedImage="/Images/Icons/appbtn_voice_press.png" 
+                                               Foreground="White" Text="Voice" HorizontalAlignment="Left" Margin="0,0,75,0" Click="VoceButton_Click_1"
+                                               Visibility="Visible"/>
+                    <customControl:ImageButton x:Name="SMSButton" NormalImage="/Images/Icons/appbtn_sms.png" PressedImage="/Images/Icons/appbtn_sms_press.png" 
+                                               Foreground="White" Text="SMS" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,55,0" Click="SMSButton_Click_1"
+                                               Visibility="Visible"/>
+                    <customControl:ImageButton x:Name="NextButton" NormalImage="/Images/Icons/appbtn_next.png" PressedImage="/Images/Icons/appbtn_next_press.png" 
+                                               Foreground="White" Text="Next" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,35,0" Click="NextButton_Click_1" Visibility="Collapsed"/>
+
+                </StackPanel>
+            </Grid>
+        </AppBar>
+    </Page.BottomAppBar>-->
+    <Grid x:Name="LayoutRoot" Background="#FFF4F4F4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Back button and page title -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:ConnectionId='5' x:Name="backButton" IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"                           />
+            <TextBlock x:Name="pageTitle" Grid.Column="1" Text="Registration" Style="{StaticResource PageHeaderTextStyle}" Foreground="Black"/>
+            <Button x:ConnectionId='6' Content="Next" x:Name="NextBtn"                            HorizontalAlignment="Right" VerticalAlignment="Bottom" MinWidth="100" Grid.Column="1" Margin="0,0,100,35"/>
+        </Grid>
+        <Grid Grid.Row="1" MinWidth="100">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="SubText1" HorizontalAlignment="Left" Margin="120,0,0,0" TextWrapping="Wrap" Text="Verificationcode sent to" VerticalAlignment="Top" FontSize="14.667" FontFamily="Segoe UI Light" Foreground="Black"/>
+            <TextBlock x:Name="SubText2" HorizontalAlignment="Left" Margin="120,22,0,0" TextWrapping="Wrap" Text="Enter verification code" VerticalAlignment="Top" FontSize="14.667" FontFamily="Segoe UI Light" Grid.Row="1" Foreground="Black"/>
+            <TextBox x:ConnectionId='1' x:Name="InputNum" 
+                                             
+                     HorizontalAlignment="Left" Height="0" Margin="120,7,0,0" VerticalAlignment="Top" Width="266" Grid.Row="2"                       >
+            	<TextBox.InputScope>
+            		<InputScope>
+            			<InputScope.Names>
+            				<InputScopeName NameValue="Number"/>
+            			</InputScope.Names>
+            		</InputScope>
+            	</TextBox.InputScope>
+            </TextBox>
+            <TextBlock x:Name="SubText3" HorizontalAlignment="Left" Margin="120,24,0,0" TextWrapping="Wrap" Text="Enable message previe under settings. ..." VerticalAlignment="Top" FontSize="14.667" FontFamily="Segoe UI Light" Grid.Row="3" Foreground="Black"/>
+            <StackPanel HorizontalAlignment="Left" Margin="120,7,0,0" Grid.Row="4" VerticalAlignment="Top" Orientation="Horizontal">
+                <Button x:ConnectionId='3' Content="SMS" x:Name="SMSBtn"                           HorizontalAlignment="Left" VerticalAlignment="Top" MinWidth="100"/>
+                <Button x:ConnectionId='4' Content="Voice" x:Name="VoiceBtn"                            HorizontalAlignment="Left" VerticalAlignment="Top" MinWidth="100" Margin="20,0,0,0"/>
+            </StackPanel>
+            <TextBlock x:Name="TimeDisplay" Visibility="Collapsed" HorizontalAlignment="Left" Margin="400,0,0,5" Grid.Row="2" TextWrapping="Wrap" Text="3:00" VerticalAlignment="Bottom" FontFamily="Segoe UI Light" FontSize="14.667" Foreground="#FF26A0DA"/>
+            <StackPanel HorizontalAlignment="Left" Grid.Row="5" VerticalAlignment="Top" Orientation="Horizontal" Margin="120,24,0,0">
+                <TextBlock x:Name="SubText3_Copy" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding ConverterParameter=IDS_CHATON_BODY_HAVING_PROBLEMS_Q, Converter={StaticResource ResourceStringConverter}}" VerticalAlignment="Center" FontSize="14.667" FontFamily="Segoe UI Light" Foreground="Black"/>
+            	<Button x:ConnectionId='2' Content="{Binding ConverterParameter=IDS_CHATON_HEADER_CONTACT_US, Converter={StaticResource ResourceStringConverter}}" x:Name="ContactUsButton" HorizontalAlignment="Left" VerticalAlignment="Center" MinWidth="100"                                 Margin="20,0,0,0"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>મૂળભૂત છબી</item>
+        <item>છબીઓ</item>
+        <item>છબી લો</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>છબીઓ</item>
+        <item>છબી લો</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>સંપાદિત કરો</item>
+        <item>કાઢી નાખો</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>ચિત્ર</item>
+        <item>જીવંત વિડિયો</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>વિડિયો સ્વિચ કરો</item>
+        <item>વિડિયો છુપાવો</item>
+    </array>
+</resources>

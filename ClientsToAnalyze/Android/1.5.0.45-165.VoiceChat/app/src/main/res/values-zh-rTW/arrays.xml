@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>預設影像</item>
+        <item>圖像</item>
+        <item>拍照</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>圖像</item>
+        <item>拍照</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>編輯</item>
+        <item>刪除</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>圖片</item>
+        <item>即時視訊</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>切換影片</item>
+        <item>隱藏影片</item>
+    </array>
+</resources>

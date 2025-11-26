@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>Vaikepilt</item>
+        <item>Pildid</item>
+        <item>Pildista</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Pildid</item>
+        <item>Pildista</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Muuda</item>
+        <item>Kustuta</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>Pilt</item>
+        <item>Otsevideo</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Lülitu ümber videole</item>
+        <item>Peida video</item>
+    </array>
+</resources>

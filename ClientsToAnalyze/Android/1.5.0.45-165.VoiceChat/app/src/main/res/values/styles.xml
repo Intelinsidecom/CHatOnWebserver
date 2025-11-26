@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="list_left_column" parent="">
+        <item name="android:layout_width">68dp</item>
+        <item name="android:layout_height">68dp</item>
+    </style>
+    <style name="TextAppearance.SlidingTabNormal" parent="@android:attr/textAppearanceMedium">
+        <item name="android:textSize">28dp</item>
+        <item name="android:textColor">?android:attr/textColorTertiary</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">5</item>
+    </style>
+    <style name="TextAppearance.SlidingTabHeadline_Left" parent="@android:attr/textAppearanceMedium">
+        <item name="android:textSize">28dp</item>
+        <item name="android:textColor">?android:attr/textColorTertiary</item>
+        <item name="android:shadowColor">@color/incall_textConnected</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">5</item>
+    </style>
+    <style name="TextAppearance.SlidingTabHeadline_Right" parent="@android:attr/textAppearanceMedium">
+        <item name="android:textSize">28dp</item>
+        <item name="android:textColor">?android:attr/textColorTertiary</item>
+        <item name="android:shadowColor">@color/incall_endButtonLabel</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">5</item>
+    </style>
+    <style name="TextAppearance.SlidingTabActive" parent="@android:attr/textAppearanceMedium">
+        <item name="android:textSize">28dp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="FullscreenDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="NudeProgress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">0x20</item>
+    </style>
+    <style name="RejectWithMsgItem" parent="">
+        <item name="android:orientation">0</item>
+        <item name="android:background">@color/tw_light_background</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:visibility">2</item>
+        <item name="android:layout_width">-1</item>
+        <item name="android:layout_height">-2</item>
+    </style>
+    <style name="RejectWithMsgItemText" parent="">
+        <item name="android:textSize">21dp</item>
+        <item name="android:textColor">@color/tw_light_color001</item>
+        <item name="android:ellipsize">3</item>
+        <item name="android:layout_gravity">0x10</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">-2</item>
+        <item name="android:text">test</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="RejectWithMsgItemBtn" parent="">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/reject_msg_send_btn_text_color</item>
+        <item name="android:gravity">0x11</item>
+        <item name="android:layout_gravity">0x11</item>
+        <item name="android:background">@drawable/list_button_send_selector</item>
+        <item name="android:layout_width">62dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:text">@string/send_button</item>
+    </style>
+    <style name="RejectWithMsgItemTextForCover" parent="">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">@color/tw_light_color007</item>
+        <item name="android:ellipsize">3</item>
+        <item name="android:layout_gravity">0x10</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">-2</item>
+        <item name="android:text">test</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="RejectWithMsgItemBtnForCover" parent="">
+        <item name="android:layout_gravity">0x11</item>
+        <item name="android:background">@drawable/btn_reject_send_selector</item>
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+    </style>
+    <style name="Theme.CustomTranslucent" parent="@android:style/Theme.Translucent">
+        <item name="android:colorForeground">#fff</item>
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.CustomTranslucentLight" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="Theme.CustomTranslucentBlack" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        <item name="android:colorForeground">#fff</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="ChatONDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:textAppearanceLarge">@style/ft_etc_15_light</item>
+        <item name="android:textAppearanceMedium">@style/ft_list_41_light</item>
+        <item name="android:buttonStyle">@style/ChatONDialogButtonStyle</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:alertDialogStyle">@style/ChatONDialogAlertTheme</item>
+        <item name="android:listViewStyle">@style/ChatOnListView</item>
+        <item name="android:gravity">0x10</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/btn_radio</item>
+        <item name="android:buttonBarStyle">@style/ChatONDialogButtonBarTheme</item>
+    </style>
+    <style name="ChatONRadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/btn_radio</item>
+    </style>
+    <style name="ChatONDialogAlertTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:gravity">0x10</item>
+        <item name="android:fullDark">@drawable/popup_winset_center_bright</item>
+        <item name="android:topDark">@drawable/popup_winset_top_bright</item>
+        <item name="android:centerDark">@drawable/popup_winset_center_bright</item>
+        <item name="android:bottomDark">@null</item>
+        <item name="android:fullBright">@drawable/popup_winset_center_bright</item>
+        <item name="android:topBright">@null</item>
+        <item name="android:centerBright">@drawable/popup_winset_center_bright</item>
+        <item name="android:bottomBright">@null</item>
+        <item name="android:bottomMedium">@drawable/popup_winset_bottom_medium_01</item>
+        <item name="android:centerMedium">@drawable/popup_winset_center_bright</item>
+    </style>
+    <style name="ChatONContextMenuDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:gravity">0x10</item>
+        <item name="android:fullDark">@drawable/popup_winset_center_bright</item>
+        <item name="android:topDark">@drawable/popup_winset_top_bright</item>
+        <item name="android:centerDark">@drawable/popup_winset_center_bright</item>
+        <item name="android:bottomDark">@null</item>
+        <item name="android:fullBright">@drawable/popup_winset_center_bright</item>
+        <item name="android:topBright">@null</item>
+        <item name="android:centerBright">@drawable/popup_winset_center_bright</item>
+        <item name="android:bottomBright">@null</item>
+        <item name="android:bottomMedium">@drawable/popup_winset_bottom_medium_01</item>
+        <item name="android:centerMedium">@drawable/popup_winset_center_bright</item>
+    </style>
+    <style name="ChatONContextMenuTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:textAppearanceLarge">@style/DialogText.Title</item>
+        <item name="android:textAppearanceMedium">@style/DialogText</item>
+        <item name="android:buttonStyle">@style/ChatONDialogButtonStyle</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:alertDialogStyle">@style/ChatONContextMenuDialogTheme</item>
+        <item name="android:listViewStyle">@style/ChatOnListView</item>
+        <item name="android:gravity">0x10</item>
+    </style>
+    <style name="ChatOnListView" parent="@android:style/Widget.ListView">
+        <item name="android:windowTitleStyle">@style/ChatOnTitleStyle</item>
+        <item name="android:listSelector">@drawable/list_bg_selector</item>
+    </style>
+    <style name="ChatOnTitleStyle" parent="">
+        <item name="android:background">@drawable/popup_winset_top_bright</item>
+    </style>
+    <style name="ChatONDialogButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:textSize">17dp</item>
+        <item name="android:gravity">0x11</item>
+        <item name="android:background">@drawable/button_dialog_selector</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:layout_marginRight">1dp</item>
+        <item name="android:minWidth">64dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+    <style name="ChatONDialogButtonBarTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:background">@null</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:minWidth">280dp</item>
+    </style>
+    <style name="DialogText" parent="">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="DialogText.Title" parent="@style/DialogText">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="ChatOnVDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:fullDark">@drawable/progress_popup_bg</item>
+    </style>
+    <style name="ChatOnVProgress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:alertDialogStyle">@style/ChatOnVDialogTheme</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/tw_light_color045</item>
+        <item name="android:maxWidth">220dp</item>
+        <item name="android:minWidth">220dp</item>
+        <item name="android:singleLine">false</item>
+    </style>
+    <style name="regular_10" parent="">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textStyle">0x0</item>
+    </style>
+    <style name="regular_12" parent="">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textStyle">0x0</item>
+    </style>
+    <style name="regular_13" parent="">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textStyle">0x0</item>
+    </style>
+    <style name="regular_14" parent="">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">0x0</item>
+    </style>
+    <style name="regular_15" parent="">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">0x0</item>
+    </style>
+    <style name="regular_16" parent="">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">0x0</item>
+    </style>
+    <style name="regular_17" parent="">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textStyle">0x0</item>
+    </style>
+    <style name="regular_18" parent="">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:shadowColor">@android:color/white</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="regular_19" parent="">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textStyle">0x0</item>
+    </style>
+    <style name="regular_20" parent="">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">0x0</item>
+    </style>
+    <style name="regular_22" parent="">
+        <item name="android:textSize">22dp</item>
+        <item name="android:textStyle">0x0</item>
+    </style>
+    <style name="regular_24" parent="">
+        <item name="android:textSize">24dp</item>
+        <item name="android:textStyle">0x0</item>
+    </style>
+    <style name="regular_34" parent="">
+        <item name="android:textSize">34dp</item>
+        <item name="android:textStyle">0x0</item>
+    </style>
+    <style name="bold_10" parent="">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textStyle">0x1</item>
+    </style>
+    <style name="bold_12" parent="">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textStyle">0x1</item>
+    </style>
+    <style name="bold_13" parent="">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textStyle">0x1</item>
+    </style>
+    <style name="bold_15" parent="">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">0x1</item>
+    </style>
+    <style name="bold_17" parent="">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textStyle">0x1</item>
+    </style>
+    <style name="bold_23" parent="">
+        <item name="android:textSize">23dp</item>
+        <item name="android:textStyle">0x1</item>
+    </style>
+    <style name="regular_101" parent="">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">0x0</item>
+    </style>
+    <style name="regular_102" parent="">
+        <item name="android:textSize">21dp</item>
+        <item name="android:textStyle">0x0</item>
+    </style>
+    <style name="ft_bar_01_light" parent="@style/regular_19">
+        <item name="android:textColor">@drawable/action_bar_text_color_selector</item>
+    </style>
+    <style name="ft_bar_02_light" parent="@style/regular_15">
+        <item name="android:textColor">@drawable/action_bar_text_color_selector</item>
+    </style>
+    <style name="ft_bar_03_light" parent="@style/bold_15">
+        <item name="android:textColor">@color/chaton_color_002_light</item>
+    </style>
+    <style name="ft_bar_04_light" parent="@style/regular_15">
+        <item name="android:textColor">@color/chaton_color_003_light</item>
+    </style>
+    <style name="ft_bar_05_light" parent="@style/regular_10">
+        <item name="android:textColor">@color/chaton_color_003_light</item>
+    </style>
+    <style name="ft_list_01_light" parent="@style/regular_17">
+        <item name="android:textColor">@color/chaton_color_002_light</item>
+    </style>
+    <style name="ft_list_02_light" parent="@style/regular_19">
+        <item name="android:textColor">@color/chaton_color_004_light</item>
+    </style>
+    <style name="ft_list_03_light" parent="@style/bold_17">
+        <item name="android:textColor">@color/chaton_color_005_light</item>
+    </style>
+    <style name="ft_list_04_light" parent="@style/regular_19">
+        <item name="android:textColor">@color/chaton_color_002_light</item>
+    </style>
+    <style name="ft_list_05_light" parent="@style/regular_19">
+        <item name="android:textColor">@color/chaton_color_007_light</item>
+    </style>
+    <style name="ft_list_06_light" parent="@style/regular_17">
+        <item name="android:textColor">@color/chaton_color_008_light</item>
+    </style>
+    <style name="ft_list_07_light" parent="@style/regular_14">
+        <item name="android:textColor">@color/chaton_color_008_light</item>
+    </style>
+    <style name="ft_list_08_light" parent="@style/regular_10">
+        <item name="android:textColor">@color/chaton_color_008_light</item>
+    </style>
+    <style name="ft_list_09_light" parent="@style/regular_15">
+        <item name="android:textColor">@color/chaton_color_002_light</item>
+    </style>
+    <style name="ft_list_10_light" parent="@style/regular_15">
+        <item name="android:textColor">@color/chaton_color_006_light</item>
+    </style>
+    <style name="ft_list_11_light" parent="@style/bold_17">
+        <item name="android:textColor">@color/chaton_color_009_light</item>
+    </style>
+    <style name="ft_list_12_light" parent="@style/regular_15">
+        <item name="android:textColor">@color/chaton_color_010_light</item>
+    </style>
+    <style name="ft_list_13_light" parent="@style/bold_15">
+        <item name="android:textColor">@color/chaton_color_002_light</item>
+    </style>
+    <style name="ft_list_15_light" parent="@style/regular_12">
+        <item name="android:textColor">@drawable/action_bar_text_color_selector</item>
+    </style>
+    <style name="ft_list_16_light" parent="@style/regular_16">
+        <item name="android:textColor">@color/chaton_color_002_light</item>
+    </style>
+    <style name="ft_list_17_light" parent="@style/regular_13">
+        <item name="android:textColor">@color/chaton_color_005_light</item>
+    </style>
+    <style name="ft_list_18_light" parent="@style/regular_14">
+        <item name="android:textColor">@color/chaton_color_002_light</item>
+    </style>
+    <style name="ft_list_19_light" parent="@style/bold_23">
+        <item name="android:textColor">@color/chaton_color_012_light</item>
+    </style>
+    <style name="ft_list_20_light" parent="@style/bold_23">
+        <item name="android:textColor">@color/chaton_color_013_light</item>
+    </style>
+    <style name="ft_list_22_light" parent="@style/regular_14">
+        <item name="android:textColor">@color/chaton_color_015_light</item>
+    </style>
+    <style name="ft_list_23_light" parent="@style/regular_22">
+        <item name="android:textColor">@color/chaton_color_002_light</item>
+    </style>
+    <style name="ft_list_24_light" parent="@style/bold_17">
+        <item name="android:textColor">@color/chaton_color_016_light</item>
+    </style>
+    <style name="ft_list_25_light" parent="@style/regular_10">
+        <item name="android:textColor">@color/chaton_color_009_light</item>
+    </style>
+    <style name="ft_list_26_light" parent="@style/regular_19">
+        <item name="android:textColor">@color/chaton_color_002_light</item>
+    </style>
+    <style name="ft_list_27_light" parent="@style/regular_14">
+        <item name="android:textColor">@color/chaton_color_017_light</item>
+    </style>
+    <style name="ft_list_28_light" parent="@style/regular_17">
+        <item name="android:textColor">@color/chaton_color_002_light</item>
+    </style>
+    <style name="ft_list_29_light" parent="@style/regular_24">
+        <item name="android:textColor">@color/chaton_color_025_light</item>
+    </style>
+    <style name="ft_list_30_light" parent="@style/regular_24">
+        <item name="android:textColor">@color/chaton_color_002_light</item>
+    </style>
+    <style name="ft_list_31_light" parent="@style/regular_17">
+        <item name="android:textColor">@color/chaton_color_025_light</item>
+    </style>
+    <style name="ft_list_33_light" parent="@style/regular_14">
+        <item name="android:textColor">@color/chaton_color_027_light</item>
+    </style>
+    <style name="ft_list_40_light" parent="@style/regular_13">
+        <item name="android:textColor">@color/chaton_color_008_light</item>
+    </style>
+    <style name="ft_list_41_light" parent="@style/regular_18">
+        <item name="android:textColor">@color/chaton_color_012_light</item>
+    </style>
+    <style name="ft_list_42_light" parent="@style/regular_14">
+        <item name="android:textColor">@color/chaton_color_009_light</item>
+    </style>
+    <style name="ft_list_43_light" parent="@style/regular_12">
+        <item name="android:textColor">@color/chaton_color_002_light</item>
+    </style>
+    <style name="ft_btn_01_light" parent="@style/regular_17">
+        <item name="android:textColor">@drawable/button_text_color_selector</item>
+    </style>
+    <style name="ft_btn_02_light" parent="@style/regular_16">
+        <item name="android:textColor">@drawable/button_text_color_selector</item>
+    </style>
+    <style name="ft_btn_03_light" parent="@style/regular_16">
+        <item name="android:textColor">@drawable/button_text_color_selector</item>
+        <item name="android:alpha">0.4</item>
+    </style>
+    <style name="ft_btn_04_light" parent="@style/regular_17">
+        <item name="android:textColor">@color/chaton_color_012_light</item>
+    </style>
+    <style name="ft_btn_05_light" parent="@style/regular_17">
+        <item name="android:textColor">@color/chaton_color_012_light</item>
+        <item name="android:alpha">0.4</item>
+    </style>
+    <style name="ft_etc_01_light" parent="@style/regular_12">
+        <item name="android:textColor">@color/chaton_color_012_light</item>
+    </style>
+    <style name="ft_etc_02_light" parent="@style/bold_15">
+        <item name="android:textColor">@color/chaton_color_018_light</item>
+    </style>
+    <style name="ft_etc_03_light" parent="@style/bold_12">
+        <item name="android:textColor">@color/chaton_color_012_light</item>
+    </style>
+    <style name="ft_etc_04_light" parent="@style/bold_12">
+        <item name="android:textColor">@color/chaton_color_019_light</item>
+    </style>
+    <style name="ft_etc_08_light" parent="@style/regular_34">
+        <item name="android:textColor">@color/chaton_color_020_light</item>
+    </style>
+    <style name="ft_etc_09_light" parent="@style/regular_34">
+        <item name="android:textColor">@color/chaton_color_012_light</item>
+    </style>
+    <style name="ft_etc_10_light" parent="@style/regular_16">
+        <item name="android:textColor">@color/chaton_color_020_light</item>
+    </style>
+    <style name="ft_etc_11_light" parent="@style/bold_10">
+        <item name="android:textColor">@color/chaton_color_012_light</item>
+    </style>
+    <style name="ft_etc_12_light" parent="@style/regular_10">
+        <item name="android:textColor">@color/chaton_color_021_light</item>
+    </style>
+    <style name="ft_etc_13_light" parent="@style/regular_10">
+        <item name="android:textColor">@color/chaton_color_022_light</item>
+    </style>
+    <style name="ft_etc_15_light" parent="@style/regular_20">
+        <item name="android:textColor">@color/chaton_color_012_light</item>
+    </style>
+    <style name="ft_bar_01_dark" parent="@style/regular_19">
+        <item name="android:textColor">@color/chaton_color_001_dark</item>
+    </style>
+    <style name="ft_bar_02_dark" parent="@style/regular_15">
+        <item name="android:textColor">@color/chaton_color_001_dark</item>
+    </style>
+    <style name="ft_list_27_dark" parent="@style/regular_14">
+        <item name="android:textColor">@color/chaton_color_001_dark</item>
+    </style>
+    <style name="ft_btn_02_dark" parent="@style/regular_16">
+        <item name="android:textColor">@color/chaton_color_001_dark</item>
+    </style>
+    <style name="ft_etc_05_dark" parent="@style/bold_15">
+        <item name="android:textColor">@color/chaton_color_002_dark</item>
+    </style>
+    <style name="ft_etc_06_dark" parent="@style/regular_15">
+        <item name="android:textColor">@color/chaton_color_002_dark</item>
+    </style>
+    <style name="ft_etc_07_dark" parent="@style/bold_15">
+        <item name="android:textColor">@color/chaton_color_003_dark</item>
+    </style>
+    <style name="ft_etc_14_dark" parent="@style/regular_17">
+        <item name="android:textColor">@color/chaton_color_001_dark</item>
+    </style>
+    <style name="ft_etc_15_dark" parent="@style/regular_17">
+        <item name="android:textColor">@color/chaton_color_004_dark</item>
+    </style>
+    <style name="ft_pop_01_dark" parent="@style/regular_19">
+        <item name="android:textColor">@color/chaton_color_004_dark</item>
+    </style>
+    <style name="serch_bar_normal_text" parent="@style/regular_22">
+        <item name="android:textColor">@color/chaton_color_002_light</item>
+    </style>
+    <style name="serch_bar_hint_text" parent="@style/regular_22">
+        <item name="android:textColor">@color/chaton_color_004_light</item>
+    </style>
+    <style name="ft_list_01_dark_theme" parent="@style/regular_17">
+        <item name="android:textColor">@color/chaton_color_dark_theme_1</item>
+    </style>
+    <style name="ft_list_02_dark_theme" parent="@style/regular_17">
+        <item name="android:textColor">@color/chaton_color_dark_theme_2</item>
+    </style>
+    <style name="ft_list_03_dark_theme" parent="@style/regular_14">
+        <item name="android:textColor">@color/chaton_color_dark_theme_3</item>
+    </style>
+    <style name="ft_list_04_dark_theme" parent="@style/regular_14">
+        <item name="android:textColor">@color/chaton_color_dark_theme_6</item>
+    </style>
+    <style name="ft_translate_recognize_popup" parent="@style/regular_101">
+        <item name="android:textColor">@color/chaton_color_translate_recognize_popup</item>
+    </style>
+    <style name="ft_translate_translate_popup" parent="@style/regular_102">
+        <item name="android:textColor">@color/chaton_color_translate_translate_popup</item>
+    </style>
+    <style name="transparent_style" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        <item name="android:colorForeground">#fff</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+    </style>
+</resources>

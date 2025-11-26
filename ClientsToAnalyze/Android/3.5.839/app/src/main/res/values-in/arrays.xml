@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="default_smiley_texts">
+        <item>:-)</item>
+        <item>:-(</item>
+        <item>;-)</item>
+        <item>:-p</item>
+        <item>=-O</item>
+        <item>:-*</item>
+        <item>:O</item>
+        <item>B-)</item>
+        <item>:-$</item>
+        <item>:-!</item>
+        <item>:-[</item>
+        <item>O:-)</item>
+        <item>:-\\</item>
+        <item>:\'(</item>
+        <item>:-x</item>
+        <item>:-D</item>
+        <item>o_O</item>
+        <item>&lt;3</item>
+        <item>x-(</item>
+        <item>:-/</item>
+        <item>:-I</item>
+    </array>
+    <array name="default_smiley_names">
+        <item>Bahagia</item>
+        <item>Sedih</item>
+        <item>Mengedipkan mata</item>
+        <item>Lidah menjulur</item>
+        <item>Terkejut</item>
+        <item>Mencium</item>
+        <item>Berteriak</item>
+        <item>Keren</item>
+        <item>Mulut uang</item>
+        <item>Kaki di mulut</item>
+        <item>Tersipu</item>
+        <item>Malaikat</item>
+        <item>Tidak ditentukan</item>
+        <item>Menangis</item>
+        <item>Bibir terkunci</item>
+        <item>Tertawa</item>
+        <item>Bingung</item>
+        <item>Hati</item>
+        <item>Marah</item>
+        <item>Menyeringai</item>
+        <item>Wajah poker</item>
+    </array>
+</resources>

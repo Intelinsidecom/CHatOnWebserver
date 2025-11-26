@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/setting_samsung_account"
+        android:key="pref_item_samsung_account"
+        android:widgetLayout="@layout/preference_widget_arrow"
+        android:contentDescription=""/>
+    <com.sec.chaton.settings.SnsSignInOutPreference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/tellfriends_via_facebook"
+        android:key="pref_item_sns_account"
+        android:widgetLayout="@layout/preference_widget_logout_button"
+        android:contentDescription=""/>
+</PreferenceScreen>

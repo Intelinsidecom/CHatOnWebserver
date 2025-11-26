@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/main_background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="18dp"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:background="@drawable/sub_title_bg_02"
+        android:paddingLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/skin_bubble_download_list_title"/>
+    <GridView
+        android:scrollbarStyle="outsideOverlay"
+        android:id="@+id/theme_package_list"
+        android:background="@color/ics_main_background_color_2"
+        android:paddingLeft="@dimen/theme_gridview_padding_width"
+        android:paddingTop="@dimen/theme_gridview_padding_height"
+        android:paddingRight="@dimen/theme_gridview_padding_width"
+        android:paddingBottom="@dimen/theme_gridview_padding_height"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:drawSelectorOnTop="true"
+        android:horizontalSpacing="@dimen/theme_gridview_item_horizontal_spacing"
+        android:verticalSpacing="@dimen/theme_gridview_item_vertical_spacing"
+        android:stretchMode="spacingWidth"
+        android:columnWidth="@dimen/theme_gridview_item_width"
+        android:numColumns="auto_fit"
+        android:layout_weight="1"/>
+</LinearLayout>

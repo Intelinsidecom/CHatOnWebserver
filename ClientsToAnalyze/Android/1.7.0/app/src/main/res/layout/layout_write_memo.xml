@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sec.widget.GeneralHeaderView
+        android:id="@+id/buddies_say_write_header_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@drawable/general_btn_icon_complete_xml"
+        android:text="@string/memo_title"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <EditText
+            android:textSize="18.66dp"
+            android:gravity="top"
+            android:layout_gravity="center"
+            android:id="@+id/mWriteMemoTextView"
+            android:background="@drawable/edit_chat_selector"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:hint="@string/memo_btn_write"
+            android:maxLength="140"
+            android:capitalize="sentences"/>
+    </LinearLayout>
+</LinearLayout>

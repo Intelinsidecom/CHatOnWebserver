@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:layout="@layout/preference"
+        android:title="@string/setting_phone_number_privacy"
+        android:key="phone_number_privacy"
+        android:widgetLayout="@layout/preference_widget_arrow"
+        android:contentDescription="@string/setting_phone_number_privacy"/>
+    <Preference
+        android:layout="@layout/preference"
+        android:title="@string/interaction_setting_hide_interactions"
+        android:key="pref_item_hide"
+        android:summary="@string/setting_hidden_interaction_text"
+        android:widgetLayout="@layout/preference_widget_arrow"
+        android:contentDescription="@string/interaction_setting_hide_interactions"/>
+    <Preference
+        android:layout="@layout/preference"
+        android:title="@string/mypage_buddies_say"
+        android:key="pref_item_buddies_say"
+        android:summary="@string/buddies_say_suggestion_positive"
+        android:widgetLayout="@layout/preference_widget_arrow"
+        android:contentDescription="@string/mypage_buddies_say"/>
+</PreferenceScreen>

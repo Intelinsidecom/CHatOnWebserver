@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>Alapértelmezett kép</item>
+        <item>Képek</item>
+        <item>Kép készítése</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Képek</item>
+        <item>Kép készítése</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Szerk.</item>
+        <item>Töröl</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>Kép</item>
+        <item>Élő videó</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Videókapcsolás</item>
+        <item>Videó elrejtése</item>
+    </array>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="pref_setting_chats">
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/setting_bubble_background_style"
+        android:key="pref_item_change_bubble_background_style"/>
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/settings_chat_view_font_style"
+        android:key="pref_item_font_style"
+        android:contentDescription="@string/settings_chat_view_font_style"/>
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/settings_chat_view_font_size"
+        android:key="pref_item_font_size"
+        android:contentDescription="@string/settings_chat_view_font_size"/>
+    <CheckBoxPreference
+        android:title="@string/setting_enter_key_title"
+        android:key="pref_item_enter_key"
+        android:summary="@string/settings_send_message_using_enter"
+        android:defaultValue="false"
+        android:contentDescription="@string/setting_enter_key_title"/>
+    <CheckBoxPreference
+        android:title="@string/settings_using_walkie_talkie"
+        android:key="pref_item_push_to_talk_key"
+        android:summary="@string/settings_send_button_walkie_talkie"
+        android:defaultValue="false"
+        android:contentDescription="@string/settings_using_walkie_talkie"/>
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/delete_old_chat_rooms"
+        android:key="pref_item_delete_old_chat_rooms"
+        android:summary="@string/delete_old_chat_rooms_descriptions"
+        android:widgetLayout="@layout/preference_widget_arrow"
+        android:contentDescription="@string/delete_old_chat_rooms"/>
+    <CheckBoxPreference
+        android:title="@string/setting_chat_autoresend_title"
+        android:key="pref_item_auto_resend"
+        android:summary="@string/setting_chat_autoresend_description_off"
+        android:defaultValue="false"
+        android:contentDescription="@string/setting_chat_autoresend_title"/>
+</PreferenceScreen>

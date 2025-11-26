@@ -1,0 +1,90 @@
+﻿<Page
+    x:Class="ChatON_WoA.ManageAccountPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="White" x:Name="LayoutRoot" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="56"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="56"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock TextWrapping="Wrap" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_MANAGE_ACCOUNTS_ABB'}" FontSize="26.667" Foreground="#FFFF9600" FontFamily="Segoe UI Light" Margin="0,59,0,0"/>
+        <StackPanel Background="White" Grid.Row="0" Margin="0,129,0,0" x:Name="StackSamsung">
+            <TextBlock  Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_SAMSUNG_ACCOUNT'}" Foreground="Gray" Margin="0,20,0,0" FontSize="20"/>
+            <TextBlock x:Name="EmailText" Text="{Binding SamsungEmail}" Margin="0,0,0,0" FontSize="20" Visibility="{Binding btnSamsungSignoutVisibility}"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:ConnectionId='5' 
+                    Grid.Column="0"
+                    Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_SIGN_IN'}" 
+                    FontSize="20" Foreground="#FFFF9600" FontFamily="Segoe UI Light" 
+                    Visibility="{Binding btnSamsungSigninVisibility}"                                      />
+                <!--<TextBlock 
+                    Grid.Column="0"
+                    Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BUTTON_SIGN_OUT_ABB'}" 
+                    FontSize="20" Foreground="#FFFF9600" FontFamily="Segoe UI Light" 
+                    Visibility="{Binding btnSamsungSignoutVisibility}" Tapped="OnSingoutSamsungAccountTapped"/>-->
+                <TextBlock 
+                    Grid.Column="1" Text=" > " 
+                    FontSize="20" Foreground="#FFFF9600" FontFamily="Segoe UI Light" Visibility="{Binding btnSamsungSigninVisibility}"/>
+            </Grid>
+        </StackPanel>
+        <StackPanel Background="White" Grid.Row="2" Margin="0,0,0,0" x:Name="StackFB" Visibility="Collapsed">
+            <TextBlock  Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BUTTON_FACEBOOK'}" Foreground="Gray" Margin="0,20,0,0" FontSize="20"/>
+            <TextBlock x:Name="EmailFBText" Text="{Binding FacebookName}" Margin="0,0,0,0" FontSize="20" Visibility="{Binding btnFBSignoutVisibility}"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:ConnectionId='3' 
+                    Grid.Column="0"
+                    Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_SIGN_IN'}" 
+                    FontSize="20" Foreground="#FFFF9600" FontFamily="Segoe UI Light" 
+                    Visibility="{Binding btnFBSigninVisibility}"                                />
+                <TextBlock x:ConnectionId='4' 
+                    Grid.Column="0"
+                    Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BUTTON_SIGN_OUT_ABB'}" 
+                    FontSize="20" Foreground="#FFFF9600" FontFamily="Segoe UI Light" 
+                    Visibility="{Binding btnFBSignoutVisibility}"                                 />
+                <TextBlock 
+                    Grid.Column="1" Text=" > " 
+                    FontSize="20" Foreground="#FFFF9600" FontFamily="Segoe UI Light"/>
+            </Grid>
+        </StackPanel>
+        <StackPanel Background="White" Grid.Row="2" Margin="0,0,0,0" x:Name="StackTwitter" Visibility="Collapsed" Height="0" Width="0">
+            <TextBlock  Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_HEADER_TWITTER'}" Foreground="Gray" Margin="0,20,0,0" FontSize="20"/>
+            <TextBlock x:Name="EmailTwitterText" Text="{Binding TwitterName}" Margin="0,0,0,0" FontSize="20" Visibility="{Binding btnTwitterSignoutVisibility}"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:ConnectionId='1' 
+                    Grid.Column="0"
+                    Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_SIGN_IN'}" 
+                    FontSize="20" Foreground="#FFFF9600" FontFamily="Segoe UI Light" 
+                    Visibility="{Binding btnTwitterSigninVisibility}"                               />
+                <TextBlock x:ConnectionId='2' 
+                    Grid.Column="0"
+                    Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BUTTON_SIGN_OUT_ABB'}" 
+                    FontSize="20" Foreground="#FFFF9600" FontFamily="Segoe UI Light" 
+                    Visibility="{Binding btnTwitterSignoutVisibility}"                                />
+                <TextBlock 
+                    Grid.Column="1" Text=" > " 
+                    FontSize="20" Foreground="#FFFF9600" FontFamily="Segoe UI Light"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Page>
+

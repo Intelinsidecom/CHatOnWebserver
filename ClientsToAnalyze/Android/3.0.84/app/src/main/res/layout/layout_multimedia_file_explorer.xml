@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/file_path"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        layout="@layout/layout_common_header"/>
+    <ListView
+        android:id="@+id/file_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ListViewStyle.Common1"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        layout="@layout/layout_common_divider5"/>
+</LinearLayout>

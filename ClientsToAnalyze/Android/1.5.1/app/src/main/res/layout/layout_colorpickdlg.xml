@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="fill_vertical"
+    android:orientation="vertical"
+    android:background="#ff808080"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/label_hue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/scribble_hue"/>
+    <com.sec.chaton.util.ColorSelector
+        android:id="@+id/hue"
+        android:layout_width="100dp"
+        android:layout_height="200dp"/>
+    <TextView
+        android:id="@+id/label_saturation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/scribble_saturation"/>
+    <com.sec.chaton.util.ColorSlider
+        android:id="@+id/satutation"
+        android:layout_width="100dp"
+        android:layout_height="50dp"/>
+    <TextView
+        android:id="@+id/label_brightness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/scribble_brightness"/>
+    <com.sec.chaton.util.ColorSlider
+        android:id="@+id/brightness"
+        android:layout_width="100dp"
+        android:layout_height="50dp"/>
+</LinearLayout>

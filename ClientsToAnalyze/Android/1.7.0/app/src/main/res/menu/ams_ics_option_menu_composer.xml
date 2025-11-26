@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_group_create_new">
+        <item
+            android:icon="@drawable/creat_new"
+            android:id="@+id/menu_item_create_new"
+            android:title="@string/ams_optmenu_create_new"/>
+    </group>
+    <group android:id="@+id/menu_group_my_works">
+        <item
+            android:icon="@drawable/mywork"
+            android:id="@+id/menu_item_my_works"
+            android:title="@string/ams_title_my_works"/>
+    </group>
+    <group android:id="@+id/menu_group_samples">
+        <item
+            android:icon="@drawable/sample"
+            android:id="@+id/menu_item_samples"
+            android:title="@string/ams_title_samples"/>
+    </group>
+</menu>

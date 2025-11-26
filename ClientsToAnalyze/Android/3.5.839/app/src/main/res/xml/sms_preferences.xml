@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="pref_key_sms_settings_screen">
+    <Preference
+        android:persistent="false"
+        android:title="@string/pref_setting_title_default_sms_app"
+        android:key="pref_key_kikat_default_sms"
+        android:summary="@string/pref_summary_check_your_default_sms_app"
+        android:order="10"
+        android:defaultValue=""/>
+    <CheckBoxPreference
+        android:title="@string/pref_title_send_and_receive_sms_mms"
+        android:key="pref_key_send_and_receive_sms_mms"
+        android:summary="@string/pref_summary_send_and_receive_sms_mms"
+        android:order="20"
+        android:defaultValue="true"/>
+    <CheckBoxPreference
+        android:title="@string/pref_title_auto_transform_to_mms"
+        android:key="pref_key_auto_transform_to_mms"
+        android:summary="@string/pref_summary_auto_transform_to_mms"
+        android:order="30"
+        android:defaultValue="false"/>
+    <CheckBoxPreference
+        android:title="@string/pref_title_vibrate_on_switching_to_mms"
+        android:key="pref_key_vibrate_on_switching_to_mms"
+        android:summary="@string/pref_summary_vibrate_on_switching_to_mms"
+        android:order="40"
+        android:defaultValue="true"/>
+    <PreferenceCategory
+        android:layout="@layout/layout_preference_category"
+        android:title="@string/freesms"
+        android:key="pref_category_free_message"
+        android:order="50"/>
+    <CheckBoxPreference
+        android:title="@string/freesms_use"
+        android:key="pref_key_is_free_sms_enable"
+        android:order="52"
+        android:defaultValue="false"/>
+    <com.sec.chaton.settings.FreeSmsInfoPreference
+        android:key="pref_key_freesms_info"
+        android:order="55"/>
+</PreferenceScreen>

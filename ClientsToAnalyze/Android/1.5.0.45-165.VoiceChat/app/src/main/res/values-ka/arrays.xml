@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>ნაგულისხმევი სურათი</item>
+        <item>გამოსახულებები</item>
+        <item>სურათის გადაღება</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>გამოსახულებები</item>
+        <item>სურათის გადაღება</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>შესწორ.</item>
+        <item>წაშლა</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>სურათი</item>
+        <item>ცოცხლ. ვიდეო</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>ვიდეოს გადართვა</item>
+        <item>ვიდეოს დამალვა</item>
+    </array>
+</resources>

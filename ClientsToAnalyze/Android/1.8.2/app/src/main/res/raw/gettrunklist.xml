@@ -1,0 +1,35 @@
+<return>
+    <item
+        itemid="23a1920d-ba99-4cef-9b92-4422f85ffdb21302637025420"
+        totcmtcnt="3"
+        unreadcmtcnt="0"
+        regdttm="1902575819285"
+        lastcmtdttm="1902575819285">
+        <sender
+            uid="1a884ec1-3c10-4ea0-bded-102401144605">
+            <name><![CDATA[John]]></name>
+        </sender>
+        <file
+            contenttype="image/jpeg">
+            <thumburl><![CDATA[/file/1a884ec1-3c10-4ea0-bded-102401144605/1302755815486.jpg?uid=1a884ec1-3c10-4ea0-bded-102401144605&imei=21-560121-560121-4&size=239]]></thumburl>
+            <downurl><![CDATA[/file/1a884ec1-3c10-4ea0-bded-102401144605/1302755815486.jpg?uid=1a884ec1-3c10-4ea0-bded-102401144605&imei=21-560121-560121-4&size=239]]></downurl>
+        </file>
+    </item>
+    <item
+        itemid="33a1920d-ba99-4cef-9b92-4422f85ffdb21302637025420"
+        totcmtcnt="0"
+        unreadcmtcnt="0"
+        regdttm="1902575819285"
+        lastcmtdttm="1902575819285">
+        <sender
+            uid="1a884ec1-3c10-4ea0-bded-102401144605">
+            <name><![CDATA[John]]></name>
+        </sender>
+        <file
+            contenttype="image/jpeg">
+            <thumburl><![CDATA[/file/1a884ec1-3c10-4ea0-bded-102401144605/1302755815486.jpg?uid=1a884ec1-3c10-4ea0-bded-102401144605&imei=21-560121-560121-4&size=239]]></thumburl>
+            <downurl><![CDATA[/file/1a884ec1-3c10-4ea0-bded-102401144605/1302755815486.jpg?uid=1a884ec1-3c10-4ea0-bded-102401144605&imei=21-560121-560121-4&size=239]]></downurl>
+        </file>
+    </item>
+</return>
+

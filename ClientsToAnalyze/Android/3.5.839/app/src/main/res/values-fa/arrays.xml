@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="default_smiley_texts">
+        <item>:-)</item>
+        <item>:-(</item>
+        <item>;-)</item>
+        <item>:-P</item>
+        <item>=-O</item>
+        <item>:-*</item>
+        <item>:O</item>
+        <item>B-)</item>
+        <item>:-$</item>
+        <item>:-!</item>
+        <item>:-[</item>
+        <item>O:-)</item>
+        <item>:-\\</item>
+        <item>:\'(</item>
+        <item>:-X</item>
+        <item>:-D</item>
+        <item>o_O</item>
+        <item>&lt;3</item>
+        <item>x-(</item>
+        <item>:-/</item>
+        <item>:-I</item>
+    </array>
+    <array name="default_smiley_names">
+        <item>خوشحال</item>
+        <item>ناراحت</item>
+        <item>چشمک زدن</item>
+        <item>زبان درازی</item>
+        <item>شگفت زده</item>
+        <item>بوسیدن</item>
+        <item>فریاد زدن</item>
+        <item>باحال</item>
+        <item>دهان پر از پول</item>
+        <item>پا در دهان</item>
+        <item>شرمنده</item>
+        <item>فرشته</item>
+        <item>تصمیم گیری نشده</item>
+        <item>گریان</item>
+        <item>زیپ دهان کشیده شده</item>
+        <item>خندیدن</item>
+        <item>سردرگم</item>
+        <item>قلب</item>
+        <item>عصبانی</item>
+        <item>پوزخند</item>
+        <item>چهره پوکر</item>
+    </array>
+</resources>

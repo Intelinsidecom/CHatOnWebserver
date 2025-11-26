@@ -1,0 +1,79 @@
+package com.sec.chaton.settings.downloads;
+
+import android.R;
+import android.content.Context;
+import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.MenuItem;
+import com.sec.chaton.base.BaseActivity;
+import com.sec.chaton.base.BaseSinglePaneActivity;
+import com.sec.chaton.global.GlobalApplication;
+import com.sec.chaton.settings.ActivityPasswordLockSet;
+import com.sec.chaton.util.C3241p;
+import com.sec.chaton.util.C3250y;
+
+/* loaded from: classes.dex */
+public class ActivitySkinDetail extends BaseSinglePaneActivity implements InterfaceC2590cc {
+
+    /* renamed from: a */
+    private SkinDetail f9409a;
+
+    @Override // com.sec.chaton.base.BaseSinglePaneActivity, com.sec.chaton.base.BaseActivity, com.sec.common.actionbar.ActionBarFragmentActivity, android.support.v4.app.FragmentActivity, android.app.Activity
+    protected void onCreate(Bundle bundle) {
+        super.onCreate(bundle);
+    }
+
+    @Override // com.sec.chaton.base.BaseSinglePaneActivity
+    /* renamed from: a */
+    protected Fragment mo1193a() {
+        this.f9409a = new SkinDetail();
+        return this.f9409a;
+    }
+
+    @Override // com.sec.chaton.base.BaseActivity, com.sec.common.actionbar.ActionBarFragmentActivity, com.sec.common.actionbar.InterfaceC3302s
+    public boolean onSupportOptionsItemSelected(MenuItem menuItem) {
+        switch (menuItem.getItemId()) {
+            case R.id.home:
+                finish();
+                break;
+        }
+        return super.onSupportOptionsItemSelected(menuItem);
+    }
+
+    @Override // com.sec.chaton.base.BaseSinglePaneActivity, com.sec.chaton.base.BaseActivity, android.support.v4.app.FragmentActivity, android.app.Activity
+    protected void onResume() throws Resources.NotFoundException {
+        super.onResume();
+        if (GlobalApplication.m6456e()) {
+            BaseActivity.m3080a(this);
+        }
+        m9264d();
+    }
+
+    @Override // android.support.v4.app.FragmentActivity, android.app.Activity, android.content.ComponentCallbacks
+    public void onConfigurationChanged(Configuration configuration) throws Resources.NotFoundException {
+        super.onConfigurationChanged(configuration);
+        if (GlobalApplication.m6456e()) {
+            BaseActivity.m3080a(this);
+        }
+    }
+
+    /* renamed from: d */
+    private void m9264d() {
+        C3250y.m11450b("startPasswordLockActivity", getClass().getSimpleName());
+        Context applicationContext = getApplicationContext();
+        if (C3241p.m11407c(applicationContext)) {
+            Intent intent = new Intent(applicationContext, (Class<?>) ActivityPasswordLockSet.class);
+            intent.putExtra("MODE", "HOME");
+            startActivity(intent);
+        }
+    }
+
+    @Override // com.sec.chaton.settings.downloads.InterfaceC2590cc
+    /* renamed from: c */
+    public void mo9265c() {
+        finish();
+    }
+}

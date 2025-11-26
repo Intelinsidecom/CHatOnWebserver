@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:icon="@drawable/actionbar_ic_edit"
+            android:id="@+id/group_image_page_edit_menu"
+            android:orderInCategory="1"
+            android:title="@string/ams_optmenu_edit"
+            android:showAsAction="always"/>
+    </group>
+</menu>

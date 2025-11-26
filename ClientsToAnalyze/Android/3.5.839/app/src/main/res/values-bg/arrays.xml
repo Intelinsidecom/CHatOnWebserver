@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="default_smiley_texts">
+        <item>:-)</item>
+        <item>:-(</item>
+        <item>;-)</item>
+        <item>:-P</item>
+        <item>=-О</item>
+        <item>:-*</item>
+        <item>:О</item>
+        <item>B-)</item>
+        <item>:-$</item>
+        <item>:-!</item>
+        <item>:-[</item>
+        <item>О:-)</item>
+        <item>:-\\</item>
+        <item>:\'(</item>
+        <item>:-X</item>
+        <item>:-О</item>
+        <item>o_O</item>
+        <item>&lt;3</item>
+        <item>x-(</item>
+        <item>:-/</item>
+        <item>:-I</item>
+    </array>
+    <array name="default_smiley_names">
+        <item>Щастие</item>
+        <item>Съжаление</item>
+        <item>Намигане</item>
+        <item>Плезене</item>
+        <item>Изненада</item>
+        <item>Целувка</item>
+        <item>Кряскане</item>
+        <item>Симпатяга</item>
+        <item>Развързване на кесията</item>
+        <item>Конфуз заради реплика</item>
+        <item>Смущение</item>
+        <item>Ангел</item>
+        <item>Нерешителност</item>
+        <item>Плач</item>
+        <item>Гроб съм</item>
+        <item>Смях</item>
+        <item>Притеснение</item>
+        <item>Сърце</item>
+        <item>Гняв</item>
+        <item>Самодоволство</item>
+        <item>Каменно лице</item>
+    </array>
+</resources>

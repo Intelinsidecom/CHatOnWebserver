@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ellipsize="marquee"
+    android:id="@+id/buddy_list_option_menu_item"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:singleLine="true"
+    style="?android:attr/spinnerDropDownItemStyle"/>

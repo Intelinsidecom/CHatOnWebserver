@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:focusable="false"
+    android:clickable="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        layout="@layout/layout_common_divider5"/>
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/footer_progress"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <ProgressBar
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_provision_ing"/>
+    </LinearLayout>
+</LinearLayout>

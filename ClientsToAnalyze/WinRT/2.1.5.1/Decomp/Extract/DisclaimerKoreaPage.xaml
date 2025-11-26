@@ -1,0 +1,83 @@
+﻿<Page x:ConnectionId='1'
+    x:Name="pageRoot"
+    x:Class="ChatON_WoA.Views.DisclaimerKoreaPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                                       
+    mc:Ignorable="d">
+
+    <Page.Resources>
+    </Page.Resources>
+
+    <Grid Background="#FFF4F4F4" x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Back button and page title -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:ConnectionId='7' x:Name="backButton" IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"                         />
+            <TextBlock x:Name="pageTitle" Grid.Column="1" Style="{StaticResource PageHeaderTextStyle}" Text="이용약관 및 개인정보 보호 정책" Foreground="Black"/>
+            <Button x:ConnectionId='8' IsEnabled="False" x:Name="AcceptButton"                              HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,100,35" MinWidth="100" Grid.Column="1"/>
+        </Grid>
+        <StackPanel Grid.Row="1" Margin="0,5,0,-5">
+            <Grid x:ConnectionId='2' HorizontalAlignment="Left" Margin="120,0,0,0" Width="500" VerticalAlignment="Top"                       >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock TextWrapping="Wrap" Text="ChatON 서비스 이용 약관" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="17.333" Foreground="Black"/>
+                <Border BorderBrush="#FFB2B2B2" BorderThickness="2" VerticalAlignment="Top" Margin="0,5,0,0" Grid.Row="1">
+                    <TextBlock TextWrapping="Wrap" FontFamily="Segoe UI" FontSize="14.667" Foreground="#FF212121" Margin="0" VerticalAlignment="Top">
+        				<Run Text="이 약관은 삼성전자주식회사(이하 &quot;Samsung&quot;)가 제공하는 ChatON 서비스(이하 &quot;서비스&quot;)의 이용과 관련하여 Samsung과 고객과의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다. 본 약관은 "/>
+        				<Run Text="..."/>
+                    </TextBlock>
+                </Border>
+            </Grid>
+            <CheckBox x:ConnectionId='3' x:Name="Check1"                        Content="동의" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,10,0,0"/>
+            <Grid x:ConnectionId='4' HorizontalAlignment="Left" Margin="120,20,0,0" Width="500" VerticalAlignment="Top"                       >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock TextWrapping="Wrap" Text="개인정보 수집 및 이용에 대한 동의" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="17.333" Foreground="Black"/>
+                <Border BorderBrush="#FFB2B2B2" BorderThickness="2" VerticalAlignment="Top" Margin="0,5,0,0" Grid.Row="1">
+                    <TextBlock TextWrapping="Wrap" FontFamily="Segoe UI" FontSize="14.667" Foreground="#FF212121" Margin="8,0,-8,0" VerticalAlignment="Top">
+        				<Run Text="1. 개인정보 수집항목"/>
+        				<LineBreak/>
+        				<Run Text="필수사항 : 이름, 휴대폰 번호, 서비스 이용기록, 접속 로그, 쿠키, 접속 IP 정보, 국가, 기기  고유번호, 기기 내에 저장된 제 3자의 전화번호, ..."/>
+                    </TextBlock>
+                </Border>
+            </Grid>
+            <CheckBox x:ConnectionId='5' x:Name="Check2"                        Content="동의" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,10,0,0"/>
+            <Grid x:ConnectionId='6' HorizontalAlignment="Left" Margin="120,20,0,0" Width="500" VerticalAlignment="Top"                       >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock TextWrapping="Wrap" Text="개인정보 취급 방침" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="17.333" Foreground="Black"/>
+                <Border BorderBrush="#FFB2B2B2" BorderThickness="2" VerticalAlignment="Top" Margin="0,5,0,0" Grid.Row="1">
+                    <TextBlock TextWrapping="Wrap" FontFamily="Segoe UI" FontSize="14.667" Foreground="#FF212121" Margin="0" VerticalAlignment="Top">
+        				<Run Text="'삼성전자주식회사' 은 (이하 '회사'는) 고객님의 개인정보를 중요시하며, '정보통신망 이용촉진 및 정보보호'에 관한 법률을 준수하고 있습니다."/>
+        				<LineBreak/>
+        				<Run Text="회사는 개인정보취급방침을 통하여 고객님께서 제공하시는 "/>
+        				<Run Text="개인정보가 "/>
+        				<Run Text="..."/>
+                    </TextBlock>
+                </Border>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Page>
+

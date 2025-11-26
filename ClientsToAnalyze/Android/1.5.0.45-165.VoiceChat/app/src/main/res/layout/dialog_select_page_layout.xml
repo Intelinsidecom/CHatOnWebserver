@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="47dp"
+    android:paddingBottom="47dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/left_page_button"
+        android:background="@drawable/left_page_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/right_page_button"
+        android:background="@drawable/right_page_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"/>
+    <EditText
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/page_edit_text"
+        android:background="@drawable/input_line_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Page"
+        android:singleLine="true"
+        android:layout_toLeftOf="@+id/right_page_button"
+        android:layout_toRightOf="@+id/left_page_button"
+        android:inputType="number"/>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:layout="@layout/preference_header"
+        android:title="@string/settings_invite_friend"/>
+    <Preference
+        android:layout="@layout/layout_preference_twoline"
+        android:title="@string/setting_tell_friends"
+        android:selectable="false"
+        android:key="pref_item_post_download_link_to_your_facebook_friends"/>
+    <Preference
+        android:layout="@layout/preference"
+        android:title="@string/tellfriends_via_message"
+        android:key="pref_item_viamessage"
+        android:widgetLayout="@layout/preference_widget_arrow"
+        android:contentDescription="@string/tellfriends_via_message"/>
+    <Preference
+        android:layout="@layout/preference"
+        android:title="@string/tellfriends_via_facebook"
+        android:key="pref_item_viafacebook"
+        android:widgetLayout="@layout/preference_widget_arrow"
+        android:contentDescription="@string/tellfriends_via_facebook"/>
+    <Preference
+        android:layout="@layout/preference"
+        android:title="@string/tellfriends_via_twitter"
+        android:key="pref_item_viatwitter"
+        android:widgetLayout="@layout/preference_widget_arrow"
+        android:contentDescription="@string/tellfriends_via_twitter"/>
+    <Preference
+        android:layout="@layout/preference"
+        android:title="@string/tellfriends_via_weibo"
+        android:key="pref_item_viaweibo"
+        android:widgetLayout="@layout/preference_widget_arrow"
+        android:contentDescription="@string/tellfriends_via_weibo"/>
+</PreferenceScreen>

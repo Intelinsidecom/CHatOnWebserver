@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>ଡିଫଲ୍ଟ ପ୍ରତିଛବି</item>
+        <item>ପ୍ରତିଛବିଗୁ.</item>
+        <item>ଫଟୋ ଉଠାନ୍ତୁ</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>ପ୍ରତିଛବିଗୁ.</item>
+        <item>ଫଟୋ ଉଠାନ୍ତୁ</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>ସମ୍ପାଦନ</item>
+        <item>ବିଲୋପ</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>ଛବି</item>
+        <item>ଲାଇଭ୍ ଭିଡିଓ</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>ଭିଡିଓ ସୁଇଚ୍</item>
+        <item>ଲୁକ୍କାୟିତ ଭିଡିଓ</item>
+    </array>
+</resources>

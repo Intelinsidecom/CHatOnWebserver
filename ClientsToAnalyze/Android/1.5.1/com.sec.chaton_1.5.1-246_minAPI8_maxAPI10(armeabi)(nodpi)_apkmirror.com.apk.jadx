@@ -1,0 +1,36 @@
+{
+  "projectVersion": 2,
+  "files": [
+    "..\\com.sec.chaton_1.5.1-246_minAPI8_maxAPI10(armeabi)(nodpi)_apkmirror.com.apk"
+  ],
+  "treeExpansionsV2": [
+    "p:com"
+  ],
+  "codeData": {
+    "comments": [],
+    "renames": []
+  },
+  "openTabs": [
+    {
+      "type": "class",
+      "tabPath": "com.sec.vip.cropimage.CropImage",
+      "subPath": "java",
+      "caret": 830,
+      "view": {
+        "x": 0,
+        "y": 2845
+      },
+      "active": true,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    }
+  ],
+  "cacheDir": "C:\\Users\\JD-16\\AppData\\Local\\skylot\\jadx\\cache\\projects\\com.sec.chaton_1.5.1-246_minAPI8_maxAPI10(armeabi)(nodpi)_apkmirror.com-a2ae122335c0f74d45ebd56f81e8033f",
+  "enableLiveReload": false,
+  "searchHistory": [],
+  "searchResourcesFilter": "$TEXT",
+  "searchResourcesSizeLimit": 0,
+  "pluginOptions": {}
+}

@@ -1,0 +1,9 @@
+package com.sec.chaton.p065io.entry.inner;
+
+import com.sec.chaton.p065io.entry.Entry;
+
+/* loaded from: classes.dex */
+public class Comment extends Entry {
+    public String buddyid;
+    public String parentpostonid;
+}

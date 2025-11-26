@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>डिफॉल्ट छवि</item>
+        <item>छवियाँ</item>
+        <item>तस्वीर लें</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>छवियाँ</item>
+        <item>तस्वीर लें</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>संपादन</item>
+        <item>हटाएँ</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>तस्वीर</item>
+        <item>लाइव वीडियो</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>वीडियो स्विच करें</item>
+        <item>वीडियो छिपाएँ</item>
+    </array>
+</resources>

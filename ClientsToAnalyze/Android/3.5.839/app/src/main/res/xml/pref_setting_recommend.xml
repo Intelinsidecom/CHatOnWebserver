@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:title="@string/recommendation"
+        android:key="pref_item_recommend_normal"
+        android:summary="@string/setting_birthday_description_of_contact"
+        android:defaultValue="true"/>
+</PreferenceScreen>

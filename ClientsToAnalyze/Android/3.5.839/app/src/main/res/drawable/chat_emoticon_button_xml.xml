@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_focused="true"
+        android:state_pressed="false"
+        android:drawable="@drawable/chat_emoticon_button_focused"/>
+    <item
+        android:state_focused="false"
+        android:state_pressed="false"
+        android:drawable="@drawable/chat_btn_ic_emoticon"/>
+    <item
+        android:state_focused="true"
+        android:state_pressed="true"
+        android:drawable="@drawable/chat_btn_ic_emoticon_press"/>
+    <item
+        android:state_focused="false"
+        android:state_pressed="true"
+        android:drawable="@drawable/chat_btn_ic_emoticon_press"/>
+    <item android:drawable="@drawable/chat_btn_ic_emoticon"/>
+</selector>

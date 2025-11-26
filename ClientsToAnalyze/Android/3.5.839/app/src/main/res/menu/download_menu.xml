@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/actionbar_ic_shop"
+        android:id="@+id/menu_download"
+        android:orderInCategory="1"
+        android:title="@string/more_chaton_shop_name"
+        android:showAsAction="always"/>
+</menu>

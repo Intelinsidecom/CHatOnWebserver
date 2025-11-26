@@ -1,0 +1,65 @@
+﻿<Page x:ConnectionId='1'
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Controls="using:ChatOn.Controls"
+    x:Name="pageRoot"
+    x:Class="ChatON_WoA.Views.PrivacyPage"
+                               
+    mc:Ignorable="d">
+    <Page.Resources>
+        
+        
+    </Page.Resources>
+
+    <ScrollViewer Background="White" HorizontalScrollMode="Disabled" ZoomMode="Disabled">
+        <StackPanel VerticalAlignment="Top">
+            <TextBlock TextWrapping="Wrap" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_MBODY_SHOW_MY_PHONE_NUMBER'}" FontSize="26.667" Foreground="#FFFF9600" FontFamily="Segoe UI Light" Margin="0,59,0,0" VerticalAlignment="Top"/>
+            <TextBlock x:Name="PhoneNumber" HorizontalAlignment="Left" TextWrapping="Wrap"  Foreground="Black" FontSize="17.333" Margin="0,14,0,0" FontFamily="Segoe UI Light" FontWeight="SemiBold"/>
+            <TextBlock TextWrapping="Wrap" Foreground="Black" FontSize="14.667" Margin="0,14,100,0" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_YOUR_PHONE_NUMBER_IS_HIDDEN_FROM_BUDDIES_WHO_DO_NOT_HAVE_YOUR_NUMBER_IN_THEIR_CONTACTS_HELP_MSG'}" FontFamily="Segoe UI Light" VerticalAlignment="Top"/>
+            <ToggleSwitch x:ConnectionId='2' x:Name="ToggleShowNumberControl" HorizontalAlignment="Left" Foreground="Black" VerticalAlignment="Top"                                      Style="{StaticResource LightThemeToggleSwitchStyle}" IsEnabled="False"/>
+            <TextBlock TextWrapping="Wrap" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_MBODY_SHOW_MY_PROFILE_PICTURE'}" FontSize="26.667" Foreground="#FFFF9600" FontFamily="Segoe UI Light" Margin="0,59,0,0" VerticalAlignment="Top" x:Name="txtShowMyProfile"/>
+            
+            <TextBlock x:Name="ProfileImgDescription" HorizontalAlignment="Left" TextWrapping="Wrap"  Foreground="Black" FontSize="14.667" Margin="0,14,0,0" FontFamily="Segoe UI Light"  Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_ALL_CHATON_USERS_CAN_SEE_YOUR_PROFILE_IMAGE'}"/>
+            <ComboBox x:Name="ShowOptionProfilePicture" Width="250" HorizontalAlignment="Left" SelectedIndex="{Binding SelectedType,Mode=TwoWay}" Margin="0 14 0 0">
+                <ComboBoxItem>
+                    <TextBlock Text="{Binding Converter={StaticResource ResourceStringConverter},ConverterParameter='IDS_CHATON_BODY_BUDDIES_ABB'}" FontFamily="Segoe UI Light"/>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="{Binding Converter={StaticResource ResourceStringConverter},ConverterParameter='IDS_CHATON_BODY_ALL'}" FontFamily="Segoe UI Light"/>
+                </ComboBoxItem>
+            </ComboBox>
+            <TextBlock TextWrapping="Wrap" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_MBODY_SHOW_MY_SAMSUNG_ACCOUNT'}" FontSize="26.667" Foreground="#FFFF9600" FontFamily="Segoe UI Light" Margin="0,59,0,0" VerticalAlignment="Top"/>
+            <TextBlock x:Name="SamsungAccountDescription" TextWrapping="Wrap" Foreground="Black" FontSize="14.667" Margin="0,14,0,0" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_NO_CHATON_USERS_CAN_SEE_OR_SEARCH_FOR_YOUR_SAMSUNG_ACCOUNT'}" FontFamily="Segoe UI Light" VerticalAlignment="Top"/>
+            <ToggleSwitch x:ConnectionId='3' x:Name="SamsungAccountToggle" IsEnabled="False" HorizontalAlignment="Left" Foreground="Black" VerticalAlignment="Top"                                              Style="{StaticResource LightThemeToggleSwitchStyle}"/>
+            
+            <TextBlock TextWrapping="Wrap" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_HEADER_BIRTHDAY'}" FontSize="26.667" Foreground="#FFFF9600" FontFamily="Segoe UI Light" Margin="0,31,0,0" VerticalAlignment="Top"/>
+            <TextBlock TextWrapping="Wrap" Foreground="Black" FontSize="14.667" Margin="0,14,0,0" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_I_WOULD_LIKE_MY_BIRTHDAY_TO_BE_VISIBLE_TO_ALL_CHATON_USERS'}" FontFamily="Segoe UI Light" VerticalAlignment="Top"/>
+            
+            <ToggleSwitch x:ConnectionId='4' x:Name="ToggleShowBirthdayControl" HorizontalAlignment="Left" VerticalAlignment="Top"                                        Style="{StaticResource LightThemeToggleSwitchStyle}" BorderThickness="1"/>
+            <Button x:ConnectionId='5' x:Name="AddBirthdayButton" Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_ADD_BIRTHDAY'}" HorizontalAlignment="Left" VerticalAlignment="Top"                                />
+
+            <!--<TextBlock TextWrapping="Wrap" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_SK1_HIDE_INTERACTIONS'}" FontSize="26.667" Foreground="#FFFF9600" FontFamily="Segoe UI Light" Margin="0,31,0,0" VerticalAlignment="Top"/>
+            <TextBlock TextWrapping="Wrap" Text="{Binding Converter={StaticResource ResourceStringConverter},ConverterParameter='IDS_CHATON_BODY_HIDDEN_INTERACTION_LIST_WILL_NOT_BE_VISIBLE_TO_SELECTED_BUDDIES'}" Foreground="Black" FontSize="14.667" Margin="0,14,0,0" FontFamily="Segoe UI Light" VerticalAlignment="Top"/>
+            <Button x:Name="HiddenListButton" Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_HEADER_HIDDEN_INTERACTION_LIST'}" HorizontalAlignment="Left" Margin="0,27,0,0"  Click="HiddenListButton_Click_1" Visibility="Visible"/>-->
+            
+            <TextBlock TextWrapping="Wrap" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_HEADER_BUDDIES_SAY'}" FontSize="26.667" Foreground="#FFFF9600" FontFamily="Segoe UI Light" Margin="0,41,0,0" VerticalAlignment="Top"/>
+            <TextBlock TextWrapping="Wrap" Foreground="Black" FontSize="14.667" Margin="0,14,0,0" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_POP_ALL_CHATON_USERS_CAN_SEE_YOUR_BUDDIES_SAY_EXCEPT_THOSE_IN_THE_BLOCK_LIST'}" FontFamily="Segoe UI Light" VerticalAlignment="Top"/>
+
+            <ToggleSwitch x:ConnectionId='6' x:Name="ToggleBuddiesSayControl" HorizontalAlignment="Left" Style="{StaticResource LightThemeToggleSwitchStyle}"                                             VerticalAlignment="Top" />
+            
+            <Button x:ConnectionId='7' x:Name="BlindListButton" Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_MBODY_BLOCK_LIST_HBUDDIES_SAY'}" HorizontalAlignment="Left" Margin="0 27 0 0"                                 />
+            
+            <TextBlock TextWrapping="Wrap" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_PASSWORD_LOCK'}" FontSize="26.667" Foreground="#FFFF9600" FontFamily="Segoe UI Light" Margin="0,41,0,0" VerticalAlignment="Top"/>
+            <TextBlock TextWrapping="Wrap" Foreground="Black" FontSize="14.667" Margin="0,14,0,0" Visibility="Collapsed" Text="Use password lock" FontFamily="Segoe UI Light" VerticalAlignment="Top"/>
+            
+            <ToggleSwitch x:ConnectionId='8' x:Name="TogglePasswordControl" Style="{StaticResource LightThemeToggleSwitchStyle}" HorizontalAlignment="Left" Foreground="Black" VerticalAlignment="Top"                                   />
+            <Button x:ConnectionId='9' Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_CHANGE_PASSWORD'}" IsEnabled="{Binding IsOn, ElementName=TogglePasswordControl}" HorizontalAlignment="Left" Margin="0,27,0,0"                             MinWidth="214"/>
+            <Button x:ConnectionId='10' Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_MBODY_PASSWORD_HINT'}" IsEnabled="{Binding IsOn, ElementName=TogglePasswordControl}" HorizontalAlignment="Left" Margin="0,10,0,0"                            MinWidth="214"/>
+            <TextBlock TextWrapping="Wrap" Foreground="Black" FontSize="14.667" Margin="0,14,0,30" Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_IF_YOU_HAVE_FORGOTTEN_YOUR_PASSWORD_YOU_NEED_TO_DELETE_YOUR_CHATON_ACCOUNT_ALL_DATA_WILL_BE_DELETED_ABB'}" FontFamily="Segoe UI Light" VerticalAlignment="Top"/>
+        </StackPanel>
+    </ScrollViewer>
+</Page>
+

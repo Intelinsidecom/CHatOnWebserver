@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_option_group">
+        <item
+            android:icon="@drawable/profile"
+            android:id="@+id/menu_spbd_option_viewprofile"
+            android:orderInCategory="1"
+            android:title="@string/buddy_list_contextual_menu_viewprofile"/>
+        <item
+            android:icon="@drawable/ic_menu_details_notification_program_info"
+            android:id="@+id/menu_spbd_option_chatinfo"
+            android:orderInCategory="2"
+            android:title="@string/chat_view_menu_info2"/>
+        <item
+            android:icon="@drawable/close_chat"
+            android:id="@+id/menu_spbd_option_closechat"
+            android:orderInCategory="3"
+            android:title="@string/chat_view_menu_close"/>
+    </group>
+</menu>

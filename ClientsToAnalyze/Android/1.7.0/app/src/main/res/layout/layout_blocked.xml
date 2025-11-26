@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/l_layout_blocked"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sec.widget.GeneralHeaderView
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"/>
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:drawSelectorOnTop="false"
+        android:layout_weight="1"/>
+    <include
+        android:id="@+id/no_item_layout"
+        layout="@layout/no_lists_layout"/>
+</LinearLayout>

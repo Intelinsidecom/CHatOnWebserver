@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/setting_popup_bg_selector"
+    android:layout_width="@dimen/share_menu_item_width"
+    android:layout_height="@dimen/share_menu_popup_item_height">
+    <ImageView
+        android:id="@+id/insertMenuIcon"
+        android:layout_width="@dimen/share_menu_item_image_size"
+        android:layout_height="@dimen/share_menu_item_image_size"
+        android:layout_marginTop="@dimen/share_menu_item_text_top"
+        android:scaleType="fitXY"/>
+    <FrameLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/share_menu_item_text_height">
+        <TextView
+            android:textSize="@dimen/share_menu_item_textsize"
+            android:textColor="@color/bottom_button_text_normal"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/insertMenuText"
+            android:paddingLeft="@dimen/share_menu_item_text_margin"
+            android:paddingRight="@dimen/share_menu_item_text_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:shadowColor="@color/insert_menu_shadow_text_normal"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowRadius="1"/>
+    </FrameLayout>
+</LinearLayout>

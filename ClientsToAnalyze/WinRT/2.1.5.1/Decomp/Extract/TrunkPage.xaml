@@ -1,0 +1,162 @@
+﻿<Page x:ConnectionId='1' x:Class="ChatON_WoA.Views.TrunkPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:customControl="using:ChatOn.Controls"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:ChatON_WoA.Views"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      x:Name="pageRoot"
+                               
+                                         
+      mc:Ignorable="d">
+
+    <Page.Resources>
+        <local:UnreadCountToBubbleimage x:Key="UnreadCountToBubbleimage" />
+
+        <DataTemplate x:Key="TrunkItemTemplate">
+            <Grid x:ConnectionId='2' Width="190"
+                  Height="130"
+                  Background="White"
+                                        >
+                <Image HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Source="{Binding TrunkThumbImg}"
+                       Stretch="UniformToFill" />
+                <Image x:Name="VideoIcon"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Source="Images/trunk_video.png"
+                       Stretch="None"
+                       Visibility="{Binding Video_Visible}" />
+                <Grid Margin="0,0,10,10"
+                      HorizontalAlignment="Right"
+                      VerticalAlignment="Bottom">
+                    <Image Source="{Binding Unreadcmtcnt,
+                                            Converter={StaticResource UnreadCountToBubbleimage}}"
+                           Stretch="None"
+                           Visibility="{Binding BubbleVisiable}" />
+                    <TextBlock Margin="0 2 0 0"
+                               HorizontalAlignment="Center"
+                               FontFamily="Segoe UI Semibold"
+                               FontSize="15.467"
+                               Foreground="Black"
+                               Text="{Binding Totcmtcnt}"
+                               TextWrapping="Wrap"
+                               Visibility="{Binding BubbleVisiable}" />
+                </Grid>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid x:Name="LayoutRoot" Background="#FFF4F4F4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid Margin="39,58,0,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Button x:ConnectionId='3' x:Name="backButton"
+                    Margin="0,0,30,0"
+                    VerticalAlignment="Center"
+                                              
+                    IsEnabled="{Binding Frame.CanGoBack,
+                                        ElementName=pageRoot}"
+                    Style="{StaticResource BackButtonStyle}" />
+            <TextBlock Grid.Column="1"
+                       Margin="0,0,0,0"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       FontFamily="Segoe UI"
+                       FontSize="54.667"
+                       FontWeight="Light"
+                       Foreground="Black"
+                       Text="{Binding ConverterParameter=IDS_CHATON_POP_ALBUM,
+                                      Converter={StaticResource ResourceStringConverter}}"
+                       TextWrapping="Wrap" />
+            <TextBlock x:Name="TrunkDescription"
+                       Grid.Column="2"
+                       Margin="30,0,0,6"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Bottom"
+                       FontFamily="Segoe UI Light"
+                       FontSize="25.333"
+                       FontWeight="Light"
+                       Foreground="Gray"
+                       TextWrapping="Wrap" />
+        </Grid>
+
+        <GridView x:Name="TrunkGridView"
+                  Grid.Row="1"
+                  Margin="120,0,0,0"
+                  ItemTemplate="{StaticResource TrunkItemTemplate}"
+                  ItemsSource="{Binding TrunkItems}"
+                  SelectionMode="None" />
+
+        <Grid Grid.Row="1"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center"
+              Visibility="{Binding Path=TrunkItemNoContentVisible}">
+            <StackPanel Orientation="Vertical">
+                <Image Width="120"
+                       Height="120"
+                       Margin="0,0,0,39"
+                       Source="/Images/contents_defult.png" />
+                <TextBlock HorizontalAlignment="Center"
+                           VerticalAlignment="Bottom"
+                           FontFamily="Segoe UI Light"
+                           FontSize="25"
+                           FontWeight="Light"
+                           Foreground="Gray"
+                           Text="{Binding ConverterParameter=IDS_CHATON_BODY_NO_CONTENTS,
+                                          Converter={StaticResource ResourceStringConverter}}"
+                           TextWrapping="Wrap" />
+                <TextBlock HorizontalAlignment="Center"
+                           VerticalAlignment="Bottom"
+                           FontFamily="Segoe UI Light"
+                           FontSize="24"
+                           FontWeight="Light"
+                           Foreground="Gray"
+                           Text="{Binding ConverterParameter=IDS_CHATON_BODY_SHARE_YOUR_PHOTOS_AND_VIDEOS_WITH_CHAT_PARTICIPANTS,
+                                          Converter={StaticResource ResourceStringConverter}}"
+                           TextAlignment="Center"
+                           TextWrapping="Wrap" />
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="tempLoadingIndicator"
+              Grid.RowSpan="2"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Border Grid.ColumnSpan="2"
+                    MinWidth="380"
+                    Background="White"
+                    BorderBrush="#FFFA8719"
+                    BorderThickness="2"
+                    Opacity="0.9" />
+            <ProgressRing Grid.Column="1"
+                          Width="60"
+                          Height="60"
+                          Margin="0,15,37,15"
+                          HorizontalAlignment="Right"
+                          VerticalAlignment="Top"
+                          Foreground="#FFFA8719"
+                          IsActive="True" />
+            <TextBlock x:Name="TextControl"
+                       Margin="20,0"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontFamily="Segoe UI Light"
+                       FontSize="16"
+                       Foreground="Black"
+                       TextWrapping="Wrap" />
+        </Grid>
+    </Grid>
+</Page>
+

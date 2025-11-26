@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="intro_chaton_image_height">189dp</dimen>
+    <dimen name="intro_chaton_image_width">174dp</dimen>
+    <dimen name="intro_chaton_logo_height">26dp</dimen>
+    <dimen name="intro_chaton_logo_width">102dp</dimen>
+    <dimen name="buddy_no_suggestion_padding_top">40dp</dimen>
+    <dimen name="buddy_popup_whole_width">329dp</dimen>
+    <dimen name="buddy_popup_boddy_height">204dp</dimen>
+    <dimen name="buddy_popup_body_status_msg_height">93dp</dimen>
+</resources>

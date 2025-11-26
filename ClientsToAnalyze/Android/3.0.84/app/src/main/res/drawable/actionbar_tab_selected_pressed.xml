@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="44.5dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/actionbar_tab_line_color"/>
+        </shape>
+    </item>
+    <item android:bottom="3.5dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/actionbar_tab_pressed_color"/>
+        </shape>
+    </item>
+</layer-list>

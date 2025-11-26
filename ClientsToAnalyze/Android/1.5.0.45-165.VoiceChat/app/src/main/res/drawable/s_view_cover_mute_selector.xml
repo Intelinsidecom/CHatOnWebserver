@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/call_during_btn_mute_off_dim"/>
+    <item
+        android:state_selected="false"
+        android:state_pressed="true"
+        android:drawable="@drawable/call_during_btn_mute_off_press"/>
+    <item
+        android:state_selected="false"
+        android:drawable="@drawable/call_during_btn_mute_off"/>
+    <item
+        android:state_selected="true"
+        android:state_pressed="true"
+        android:drawable="@drawable/call_during_btn_mute_on_press"/>
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/call_during_btn_mute_on"/>
+</selector>

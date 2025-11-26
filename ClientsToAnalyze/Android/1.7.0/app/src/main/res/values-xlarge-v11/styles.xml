@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomWindowTitleBackground" parent="">
+        <item name="android:background">@drawable/chaton_title_bar</item>
+    </style>
+    <style name="MainCustomTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:buttonStyle">@style/ChatONDefaultButton</item>
+        <item name="android:alertDialogStyle">@style/ChatONCustomAlertDialogTheme</item>
+        <item name="android:editTextStyle">@style/ChatONCustomEditTextTheme</item>
+        <item name="android:spinnerStyle">@style/ChatONCustomSpinner</item>
+        <item name="android:tabWidgetStyle">@style/ChatONCustomTabWidgetTheme</item>
+        <item name="android:actionBarStyle">@style/ChatONActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="android:actionBarTabStyle">@style/ChatONActionBarTabStyle</item>
+        <item name="android:actionBarTabTextStyle">@style/ChatOnActionBarTabTextStyle</item>
+    </style>
+    <style name="MainCustomTheme.NoTitle" parent="@style/MainCustomTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="MainCustomTheme.Dialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:buttonStyle">@style/ChatONDefaultButton</item>
+        <item name="android:windowBackground">@drawable/dialog_full_holo_light</item>
+        <item name="android:alertDialogStyle">@style/ChatONCustomAlertDialogTheme</item>
+        <item name="android:editTextStyle">@style/ChatONCustomEditTextTheme</item>
+        <item name="android:tabWidgetStyle">@style/ChatONCustomTabWidgetTheme</item>
+        <item name="android:actionBarStyle">@style/ChatONActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="android:actionBarTabStyle">@style/ChatONActionBarTabStyle</item>
+        <item name="android:actionBarTabTextStyle">@style/ChatOnActionBarTabTextStyle</item>
+    </style>
+    <style name="MainCustomTheme.HCDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:buttonStyle">@style/ChatONDefaultButton</item>
+        <item name="android:windowBackground">@drawable/dialog_full_holo_light</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:alertDialogStyle">@style/ChatONCustomAlertDialogTheme</item>
+        <item name="android:editTextStyle">@style/ChatONCustomEditTextTheme</item>
+        <item name="android:tabWidgetStyle">@style/ChatONCustomTabWidgetTheme</item>
+        <item name="android:actionBarStyle">@style/ChatONActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="android:actionBarTabStyle">@style/ChatONActionBarTabStyle</item>
+        <item name="android:actionBarTabTextStyle">@style/ChatOnActionBarTabTextStyle</item>
+    </style>
+    <style name="AMSCustomTheme" parent="@android:style/Theme.Holo">
+        <item name="android:buttonStyle">@style/ChatONDefaultButton</item>
+        <item name="android:alertDialogStyle">@style/ChatONCustomAlertDialog2theme</item>
+        <item name="android:dropDownListViewStyle">@style/AMSDropDownListViewStyle</item>
+        <item name="android:editTextStyle">@style/ChatONCustomEditTextTheme</item>
+        <item name="android:textViewStyle">@style/AMSTextViewStyle</item>
+        <item name="android:actionBarStyle">@style/AMSActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="android:actionOverflowButtonStyle">@style/AMSActionOverflowButtonStyle</item>
+        <item name="android:popupMenuStyle">@style/AMSPopupMenuStyle</item>
+        <item name="android:actionMenuTextColor">@color/ams_ics_actionbar_menu_text</item>
+    </style>
+    <style name="AMSIcsDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:buttonStyle">@style/AMSIcsPopUpButton</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="AMSIcsPopUpButton" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">0x11</item>
+        <item name="android:background">@drawable/ams_ics_selector_popup_btn_bottom</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="ChatONTextAppearance" parent="">
+    </style>
+    <style name="ChatONTextAppearance.Dialog" parent="@style/ChatONTextAppearance">
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColor">@color/color_palette_5</item>
+    </style>
+    <style name="InsertMenuDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/tw_title_bar_bg</item>
+        <item name="android:windowTitleSize">64dp</item>
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="ChatONActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/chaton_title_bar</item>
+        <item name="android:titleTextStyle">@style/ChatOnActionBarTitleTextStyle</item>
+        <item name="android:actionMenuTextAppearance">@style/ChatOnActionBarMenuTextStyle</item>
+    </style>
+    <style name="ChatONActionBarTabStyle" parent="">
+        <item name="android:background">@drawable/actionbar_tab_bg</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+    </style>
+    <style name="ChatOnActionBarTabTextStyle" parent="">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/actionbar_text_color</item>
+    </style>
+    <style name="ChatOnActionBarTitleTextStyle" parent="">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="ChatOnActionBarMenuTextStyle" parent="">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="ChatONCustomSpinner" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/spinner_selector_background</item>
+    </style>
+    <style name="ChatONCustomTheme" parent="@android:style/Theme">
+        <item name="android:buttonStyle">@style/ChatONDefaultButton</item>
+        <item name="android:windowTitleSize">25dp</item>
+        <item name="android:windowTitleStyle">@style/CustomWindowTitle</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+        <item name="android:alertDialogStyle">@style/ChatONCustomAlertDialogTheme</item>
+        <item name="android:editTextStyle">@style/ChatONCustomEditTextTheme</item>
+        <item name="android:radioButtonStyle">@style/ChatONRadioButton</item>
+        <item name="android:tabWidgetStyle">@style/ChatONCustomTabWidgetTheme</item>
+    </style>
+    <style name="ChatONCustomDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:buttonStyle">@style/ChatONPopUpDefaultButton</item>
+        <item name="android:windowBackground">@drawable/popup_full_dark</item>
+    </style>
+    <style name="ChatONCustomAlertDialogTheme" parent="@style/AlertDialog">
+        <item name="android:buttonStyle">@style/ChatONPopUpDefaultButton</item>
+        <item name="android:fullDark">@drawable/dialog_full_holo_light</item>
+        <item name="android:topDark">@drawable/dialog_top_holo_light</item>
+        <item name="android:centerDark">@drawable/dialog_middle_holo_light</item>
+        <item name="android:bottomDark">@drawable/dialog_bottom_holo_light</item>
+        <item name="android:fullBright">@drawable/dialog_full_holo_light</item>
+        <item name="android:topBright">@drawable/dialog_top_holo_light</item>
+        <item name="android:centerBright">@drawable/dialog_middle_holo_light</item>
+        <item name="android:bottomBright">@drawable/dialog_bottom_holo_light</item>
+        <item name="android:bottomMedium">@drawable/dialog_bottom_holo_light</item>
+        <item name="android:centerMedium">@drawable/dialog_middle_holo_light</item>
+    </style>
+    <style name="ChatONCustomAlertDialog2theme" parent="@style/AlertDialog">
+        <item name="android:textAppearance">@style/ChatONAlertDialog2Text</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@style/ChatONAlertDialog2WindowTitle_Popup</item>
+        <item name="android:alertDialogStyle">@style/ChatONAlertDialog2Custom_Popup</item>
+        <item name="android:alertDialogTheme">@style/ChatONAlertDialog2Custom_Popup</item>
+    </style>
+    <style name="ChatONAlertDialog2Text" parent="">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">0x11</item>
+    </style>
+    <style name="ChatONAlertDialog2WindowTitle_Popup" parent="@android:style/TextAppearance.DialogWindowTitle">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="ChatONAlertDialog2Custom_Popup" parent="">
+        <item name="android:gravity">0x11</item>
+        <item name="android:fullDark">@drawable/popup_bg_center</item>
+        <item name="android:topDark">@drawable/popup_bg_top</item>
+        <item name="android:centerDark">@drawable/popup_bg_center_2</item>
+        <item name="android:bottomDark">@drawable/popup_bg_bottom</item>
+        <item name="android:fullBright">@drawable/popup_bg_center</item>
+        <item name="android:topBright">@drawable/popup_bg_top</item>
+        <item name="android:centerBright">@drawable/popup_bg_center</item>
+        <item name="android:bottomBright">@drawable/popup_bg_bottom</item>
+        <item name="android:bottomMedium">@drawable/popup_bg_bottom</item>
+        <item name="android:centerMedium">@drawable/popup_bg_center</item>
+    </style>
+    <style name="ChatONCustomEditTextTheme" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/edittext_text_color</item>
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+    <style name="ChatONCustomEditTextTheme.NoPadding" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/edittext_text_color</item>
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:paddingLeft">12dp</item>
+    </style>
+    <style name="ChatONCustomTabWidgetTheme" parent="@android:style/Widget.TabWidget">
+        <item name="android:textAppearance">@style/ChatONCustomTabText</item>
+    </style>
+    <style name="ChatONCustomTabText" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/actionbar_text_color</item>
+    </style>
+    <style name="ChatONDefaultButton" parent="@android:style/Widget.Button">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmallInverse</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/default_button_text</item>
+        <item name="android:gravity">0x11</item>
+        <item name="android:background">@drawable/btn_default</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:minWidth">64dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+    <style name="ChatONPopUpDefaultButton" parent="@android:style/Widget.Button">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmallInverse</item>
+        <item name="android:textColor">@color/default_button_text</item>
+        <item name="android:gravity">0x11</item>
+        <item name="android:background">@drawable/popup_btn_default</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="ChatONRadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/btn_radio</item>
+    </style>
+    <style name="ChatONTextAppearance.BuddySelectName" parent="@style/ChatONTextAppearance">
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">@color/color_buddy_selected</item>
+    </style>
+    <style name="ChatONTextAppearance.BuddyUnselectName" parent="@style/ChatONTextAppearance">
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textColor">@color/color_buddy_unselected</item>
+    </style>
+    <style name="ChatONTextAppearance.BuddySelectStatusMessage" parent="@style/ChatONTextAppearance">
+        <item name="android:textColor">@color/color_buddy_selected</item>
+    </style>
+    <style name="ChatONTextAppearance.BuddyUnselectStatusMessage" parent="@style/ChatONTextAppearance">
+        <item name="android:textColor">@color/color_buddy_unselected</item>
+    </style>
+    <style name="AMSActionBarStyle" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/general_header</item>
+        <item name="android:titleTextStyle">@style/AMSActionBarTitleTextStyle</item>
+    </style>
+    <style name="AMSActionBarTitleTextStyle" parent="">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="AMSPopupMenuStyle" parent="@android:style/Widget.Holo.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/more_option_bg</item>
+    </style>
+    <style name="AMSDropDownListViewStyle" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:listSelector">@drawable/ams_list_selector_holo_light</item>
+        <item name="android:divider">@drawable/list_divider_holo_dark</item>
+    </style>
+    <style name="AMSTextViewStyle" parent="@android:style/Widget.Holo.TextView">
+        <item name="android:textSize">21dp</item>
+        <item name="android:textColor">@color/ams_text_action_menu</item>
+    </style>
+    <style name="AMSActionOverflowButtonStyle" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ams_ics_selector_title_ic_menu</item>
+    </style>
+</resources>

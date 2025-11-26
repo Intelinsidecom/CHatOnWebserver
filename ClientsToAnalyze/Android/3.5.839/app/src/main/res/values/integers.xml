@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="optionsmenuitem_icon_enabled_alpha">255</integer>
+    <integer name="optionsmenuitem_icon_disabled_alpha">102</integer>
+    <integer name="me_popup_dialog_width_percent">90</integer>
+    <integer name="buddy_popup_dialog_width_percent">90</integer>
+    <integer name="buddy_var_popup_dialog_width_percent">90</integer>
+    <integer name="group_popup_dialog_width_percent">90</integer>
+    <integer name="gridview_col_attachfile">-1</integer>
+    <integer name="gridview_col_change_skin">-1</integer>
+    <integer name="custom_match_parent">-1</integer>
+    <integer name="custom_wrap_content">-2</integer>
+    <integer name="popup_dialog_share_via_num_column">2</integer>
+    <integer name="unblock_buddy_button_width_multiplier">100</integer>
+</resources>

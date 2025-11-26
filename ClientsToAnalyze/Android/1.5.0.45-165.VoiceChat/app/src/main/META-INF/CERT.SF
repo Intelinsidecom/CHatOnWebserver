@@ -1,0 +1,4785 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+SHA1-Digest-Manifest: DOPsleOKoe4uOSv87aLuYOXwNgs=
+
+Name: assets/spen_sdk_resource_default/snote_add.png
+SHA1-Digest: gW0wDoCqnEFjQlm1rvMog59FkRA=
+
+Name: res/layout/share_screen_vt_attention.xml
+SHA1-Digest: /zxg75Yc87XzsS19wtnkgCy74bU=
+
+Name: res/drawable-xxhdpi/shareview_btn_smallscreen_press.png
+SHA1-Digest: jKfTBvKDuUq4AeDnpuj4eDJcG+0=
+
+Name: res/layout/screenshare_page_setting_alert_view.xml
+SHA1-Digest: VljmqDsqE640bAQxhvh+0j7PFb0=
+
+Name: res/drawable-xxhdpi/call_dial_btn_05_h.png
+SHA1-Digest: F1Ztey2s//szd5tQJD1Y9euwXG8=
+
+Name: res/layout-land/video_call_invite_buddies_layout.xml
+SHA1-Digest: 8gEkdL3xQZTvy2U7pxlrw+w+Lys=
+
+Name: res/drawable-xxhdpi/quickpanel_btn_ledoff_press.9.png
+SHA1-Digest: oLctkX3qbvHExWvp0FMyVA14FDQ=
+
+Name: res/drawable/call_speaker_on_voice_selector.xml
+SHA1-Digest: bWuNDoQbrIrRuq5spvvv4/XU8ro=
+
+Name: res/drawable-xxhdpi/quick_panel_icon_chatonv_videocall.png
+SHA1-Digest: 50uybQ8TObhxg2FC2nLePYOPieQ=
+
+Name: res/drawable-xxhdpi/hat_01.png
+SHA1-Digest: hCJPYtqkpNCe5X4YtbTiyIDtVO0=
+
+Name: assets/spen_sdk_resource_default/snote_text_icon_italic.png
+SHA1-Digest: qZkM+oam2faXiF06MUQZ5inAZtU=
+
+Name: res/drawable-xxhdpi/call_btn_end_call_press.png
+SHA1-Digest: XsquYTEF12Gk4SOQ5KLT5jaVK0E=
+
+Name: assets/spen_sdk_resource_default/snote_popup_tab_divider.png
+SHA1-Digest: Bx3tE3r34EUrPHqsNACRUHpbl70=
+
+Name: assets/facedata/emo/angry3.yuv
+SHA1-Digest: ycGbQOil7OW8rACrgdw+Ba1PXiU=
+
+Name: res/layout-land/scamera_video_call_btn.xml
+SHA1-Digest: 8nz4EmmRP5r6waDYB1kE+rOooiI=
+
+Name: res/drawable/call_video_tool_bar_selector.xml
+SHA1-Digest: 50w9R1CCAby+yYnUIZ0ZIJe7VqY=
+
+Name: res/drawable/screenshare_penwriting_toolbar_eraser_selector.xml
+SHA1-Digest: Q5IbG6bxR0465iUBwbgp8bN1lMc=
+
+Name: res/drawable-xxhdpi/tw_action_bar_ani_emotion.png
+SHA1-Digest: E6Dx1zicgHGdstOCZQ3lMHcI8+o=
+
+Name: assets/spen_sdk_resource_default/snote_popup_btn_01_hover.png
+SHA1-Digest: +xHH+vCGyiUDAayGHbTOZP6muGw=
+
+Name: res/drawable-xxhdpi/btn_reject_send_p.png
+SHA1-Digest: GSPc0L8j7mdbpyYeZVUnPaldwTA=
+
+Name: res/drawable/screenshare_penwriting_toolbar_press_bg_right_selec
+ tor.xml
+SHA1-Digest: uHDij8ZgGnWcN9hAwTaIF4UdET8=
+
+Name: assets/spen_sdk_resource_default/snote_btn_focused_holo_dark.9.p
+ ng
+SHA1-Digest: /cRk8blqgIKE2f6QB/hhE+/eZRU=
+
+Name: res/drawable-xxhdpi/quick_panel_btn_on.9.png
+SHA1-Digest: lLoBNQpoV8vViMaGzloXeQ4++T8=
+
+Name: res/drawable-xxhdpi/scamera_standby2_1.png
+SHA1-Digest: W4eVQDb4hk5shuxiZS4d3u+YvNQ=
+
+Name: res/anim/screenshare_zoom_in.xml
+SHA1-Digest: Xi6ItFT5aVifcgtE/XRWnMSt0xY=
+
+Name: res/drawable-xxhdpi/call_dial_btn_07_h.png
+SHA1-Digest: 8xU4YdiZzRF/53iGSIoS4H+ie0k=
+
+Name: res/drawable-xxhdpi/input_line_focus.9.png
+SHA1-Digest: JEquTAg/Mc4f7SR0S/wGHsD6amA=
+
+Name: assets/spen_sdk_resource_default/snote_type_preview_bg_00.png
+SHA1-Digest: 36ALpyMeVtNZATaOIk4rDGfCCmg=
+
+Name: res/drawable-xxhdpi/co_winset_btn_bg_press.9.png
+SHA1-Digest: w6yRjPpCOTDLKvkhmAL0vV70yvA=
+
+Name: res/drawable/video_call_share_view_zoom_out_selector.xml
+SHA1-Digest: 349quQ/DIlOtdgEdw9vOUjy1oBE=
+
+Name: assets/spen_sdk_resource_default/snote_delete.png
+SHA1-Digest: ez9DeyZX9H9Bd9NMT4MxAsfXStc=
+
+Name: res/drawable-xxhdpi/hold_btn_bg_normal.9.png
+SHA1-Digest: KVEPb77+RjivL5pPT3JgCy7hWqU=
+
+Name: res/layout/screenshare_docs_view_v3.xml
+SHA1-Digest: HV3PXzhuwgeNmgBiAnwz1wYKPZ4=
+
+Name: res/drawable-xxhdpi/share_screen_btn_bg.9.png
+SHA1-Digest: oB6vAlLbuj4XOM5tQvW9HqRm6Lg=
+
+Name: res/layout/deleted_account.xml
+SHA1-Digest: 4IbZRp+sMwrGH17cClACBRo2zIo=
+
+Name: res/layout/scamera_video_call_btn.xml
+SHA1-Digest: QZK65E3TkOT6tdf6ccarjHANf1c=
+
+Name: resource/drawable-xhdpi/snote_type_05.png
+SHA1-Digest: ArugU5ZCqLYc4GgEsIID/2DeJrE=
+
+Name: res/drawable-xxhdpi/scamera_stat_sys_battery_25.png
+SHA1-Digest: EH/lCv7ch3sG8H1mySJ8I3dMVac=
+
+Name: res/drawable-xxhdpi/scamera_stat_sys_battery_charge_85.png
+SHA1-Digest: hAli2z+AVRfaN9hJgvR+7vk66WU=
+
+Name: res/drawable-xxhdpi/call_during_btn_speaker_off_dim.png
+SHA1-Digest: /IXH7/T5byNjPZqy9+5TOp7Q1RM=
+
+Name: resource/drawable-xhdpi/snote_popup_btn_04.png
+SHA1-Digest: zIgAYAoB96sOTDB+8oxz/ZLJj2o=
+
+Name: res/drawable/call_video_option_bluetooth_off.xml
+SHA1-Digest: NtjD8OfgcgxA3AlSZiW9kSbMvJ4=
+
+Name: res/drawable-xxhdpi/call_videocall_icon_dim_h.png
+SHA1-Digest: wkOvM6APwPGoQ5f3Y+OZ78FfZvE=
+
+Name: res/drawable-xxhdpi/scamera_sound_off_select.png
+SHA1-Digest: t604y6osVd0Te6HtaI98wFB8ZuI=
+
+Name: res/drawable-xxhdpi/animal_02.png
+SHA1-Digest: MsmCTcmULilbmpXqokRQ/3RFsvM=
+
+Name: res/drawable-xxhdpi/pulldown_icw_disable.9.png
+SHA1-Digest: RJK+BSYWCA1h3G3GXf5cz/Ne1l4=
+
+Name: res/drawable-xxhdpi/ic_chaton_call.png
+SHA1-Digest: bPpMCTytcnhPkKbHbCN1KPkT+sY=
+
+Name: assets/spen_sdk_resource_default/snote_type_03.png
+SHA1-Digest: zzfHCR6FQtPsagUCAfUCH8iu5BU=
+
+Name: res/layout/video_call_other_layout.xml
+SHA1-Digest: xLeIq0DRPyab5Y40mdWRYEbfHCs=
+
+Name: res/drawable-xxhdpi/vtcall_bg_light.png
+SHA1-Digest: Sswr/iP9FMOmHMcjcyV9IKt45Wc=
+
+Name: res/drawable/call_dial_number_6_btn_h.xml
+SHA1-Digest: +wtIfiXEK+FtpaH/1zMPZf8Iv+c=
+
+Name: res/drawable-xxhdpi/share_view_popup_icon_play.png
+SHA1-Digest: lUNQTKqCoj0sHAJdLo+sosKPLBU=
+
+Name: res/layout-land/video_call_theme_party.xml
+SHA1-Digest: aQIekuWn7bxJbs5XbgGQTUf7nTk=
+
+Name: res/drawable-xxhdpi/share_btn_up_dim.png
+SHA1-Digest: sgHux6hg2oT1odzhQdTnMO+q6To=
+
+Name: res/layout-land/video_call_top_layout.xml
+SHA1-Digest: vihRs4/MjXPgB5bpV6y71U/2KwI=
+
+Name: res/drawable-xxhdpi/scamera_resolution_setting4_3_select.png
+SHA1-Digest: 4CrPVW5K7BwphIhLB4znNE/9wNE=
+
+Name: res/drawable-xxhdpi/scamera_stat_sys_battery_70.png
+SHA1-Digest: 0l7oW2VuiWypmxdxxtqromMS1qU=
+
+Name: res/drawable-xxhdpi/more_option_icon_switch_video_call_press.png
+SHA1-Digest: uk1Jq/ujLV6ZVT3UuifpctbY1r8=
+
+Name: res/drawable-xxhdpi/call_dial_btn_h_press.png
+SHA1-Digest: d5coPwgeCTbiuNXhWLwghV/tCqc=
+
+Name: res/layout-land/video_call_driving_btn.xml
+SHA1-Digest: Mfrx1lme+nM6rS+bmEf3qXGgvO4=
+
+Name: res/drawable-xxhdpi/translator_toast_popup_bg.9.png
+SHA1-Digest: KEElTFww7KOi7XaUGuLPypennh8=
+
+Name: res/drawable-xxhdpi/invite_buddy_bg.9.png
+SHA1-Digest: WrJob71rFIfK0spmO5tqy86uPAk=
+
+Name: res/drawable-xxhdpi/vt_tts_icon_press.png
+SHA1-Digest: 3HptuNoDs3p3t+Dh3x70iZ6i7H0=
+
+Name: res/drawable/call_btn_end_call_selector.xml
+SHA1-Digest: IwrBlJTXjOMB+UCUqNeAlorpw+k=
+
+Name: lib/armeabi/libSamsungMediaEngineRecorder_JBP_44.so
+SHA1-Digest: saSmZQ7uoZMUFxLeacxJtiQ4lSE=
+
+Name: res/drawable-xxhdpi/quick_panel_button_press.9.png
+SHA1-Digest: W39LSebkL+syDRIUwUDGQcmcWU4=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_normal.png
+SHA1-Digest: Kd75uG0EDRbssJIFvOU4IsvkVe8=
+
+Name: assets/animation/MaskImage_THEME_SHOT/categories/party/party_2.y
+ uv420sp
+SHA1-Digest: JgMXD/WhIQ970RSSdfwV7T/a1jI=
+
+Name: assets/spen_sdk_resource_default/pensetting_icon_brush.png
+SHA1-Digest: 75+NCC6zWHdQFw4o/+US/Zatt5o=
+
+Name: resource/drawable-xhdpi/popup_exit.png
+SHA1-Digest: vISUDJnOk+1dmujlLAX/eJOdshI=
+
+Name: res/anim/dialing_image_change_effect.xml
+SHA1-Digest: zN3nczuZ3HKlea21GuGmp+9PRG0=
+
+Name: resource/drawable-xhdpi/pensetting_icon_neon_unselect.png
+SHA1-Digest: pUM6D2cAk6YEPVF1kEReWShLta0=
+
+Name: res/drawable-xxhdpi/btn_radio_on_focus.png
+SHA1-Digest: 4Ji58XiiEHZ5Dg+N4Z3Ho2jUAVI=
+
+Name: res/drawable/call_quick_panel_btn_off_selector.xml
+SHA1-Digest: ynM0053Qh7XRNPlyBo9DxEaIK7w=
+
+Name: assets/spen_sdk_resource_default/snote_text_right_press.png
+SHA1-Digest: yuPSTYUIqVv6Njlb0hklg+mAleI=
+
+Name: resource/drawable-xhdpi/snote_slider_bg.9.png
+SHA1-Digest: 2d44ZlFmp7uJYgkht0IbrzR35DE=
+
+Name: res/drawable-xxhdpi/chat_translator_top_btn_speak.png
+SHA1-Digest: GvHde1xt0/MsorPEPBqQX66Dl+U=
+
+Name: res/drawable-xxhdpi/vt_caller_id.png
+SHA1-Digest: snZ5qVwZnHo2b+eeq/PYrHtaJGU=
+
+Name: res/raw/music_on_hold.mp3
+SHA1-Digest: CPSDP8oZq/P2mq8jbmPBALUsvGU=
+
+Name: res/layout/accept_voice_call_cover.xml
+SHA1-Digest: 1OD8IDEtz1Fn9meOWUoK4kuD4E8=
+
+Name: assets/spen_sdk_resource_default/snote_text_icon_bold_press.png
+SHA1-Digest: b9Tryq+++A9jKwGjkDOSNsqYomI=
+
+Name: res/drawable/tw_action_item_background_holo_light_selector.xml
+SHA1-Digest: 7KmZzA84EjOCI0pjrHJDYz16yY4=
+
+Name: res/drawable-xxhdpi/co_winset_btn_bg_disable.9.png
+SHA1-Digest: g6p1Cbqg5J1GXSpZ9hgOHmvzx2k=
+
+Name: assets/spen_sdk_resource_default/snote_option_in_bg.9.png
+SHA1-Digest: p114TYB9uHUV+WcCvmA1dTUkLqw=
+
+Name: res/drawable-xxhdpi/share_view_toast_popup_bg_center_focus.9.png
+SHA1-Digest: UOXILcpyrFc95dz1JadeZcgi1xc=
+
+Name: res/drawable-xxhdpi/popup_bottom_btn_normal.9.png
+SHA1-Digest: pSIbnuvA2E2BT2qcVYTMNeTUARk=
+
+Name: res/drawable-xxhdpi/emotional_1st_party.png
+SHA1-Digest: UB3FyHjYMg9G8+nYP5vNcprriK4=
+
+Name: resource/drawable-xhdpi/down_popup_delete.png
+SHA1-Digest: 0jxnqznMG31BxJlV6NtuSjRY5x4=
+
+Name: res/drawable-xxhdpi/call_dial_btn_04_h.png
+SHA1-Digest: ypIa6WY2M4graHc0sRuoSaAShuw=
+
+Name: res/drawable-xxhdpi/share_view_toast_popup_bg_right_normal.9.png
+SHA1-Digest: KZvqDiiG+we0LaJfYjfK/ZzsgS0=
+
+Name: res/drawable-xxhdpi/video_capture_011.png
+SHA1-Digest: yUCK5k0PFlIpUQyKQizB1UpUUgc=
+
+Name: res/layout/video_call_option_menu.xml
+SHA1-Digest: Q4TBmYqLPlSM1vQ2mSfJfZ/1frA=
+
+Name: res/anim/spin_effect.xml
+SHA1-Digest: taif0+l8MMmCtWQIAZBhGPyTGBM=
+
+Name: res/drawable-xxhdpi/shareview_btn_smallscreen_focus.png
+SHA1-Digest: In3bhukitwBSB3L4t/CLNQt+tGQ=
+
+Name: res/layout/reject_call_with_msg_edit_black.xml
+SHA1-Digest: EP2Y2pmi+oe4Ql9J8VM2RMuuafg=
+
+Name: resource/drawable-xhdpi/snote_spinner_ab_focused_holo.9.png
+SHA1-Digest: Lbh7bNB4nxQSZjDFpwmSYQyGLaE=
+
+Name: resource/drawable-xhdpi/snote_tab_line.9.png
+SHA1-Digest: IfzAPlvmDj+pFnx0gQWgfja6xR4=
+
+Name: res/drawable/btn_reject_send_selector.xml
+SHA1-Digest: cFwVI5Fw8w00ifOm/x0d7dxewSY=
+
+Name: res/drawable-xxhdpi/clear_accept_circle_big_01_j.png
+SHA1-Digest: zw8KG+iaXGC9Dq7jixItmab24y4=
+
+Name: res/drawable-xxhdpi/chat_translator_dot.png
+SHA1-Digest: VYUmhX9nwjCklZ6CxR9NtAYd7FA=
+
+Name: resource/drawable-xhdpi/snote_text_center.png
+SHA1-Digest: F4S9rws/kzMf9TjEtj5m39RTmz8=
+
+Name: res/drawable-xxhdpi/voip_invite_buddies_icon_light.png
+SHA1-Digest: 1T9eh4vLjwcidxC7rvTUsCJJMx4=
+
+Name: res/drawable-xxhdpi/scamera_sound_on.png
+SHA1-Digest: xCK+qpBOpd40b7kvevj8fg5EToA=
+
+Name: res/drawable-xxhdpi/scamera_arrowkey02_select.png
+SHA1-Digest: nfpSF08JKFdZ9I+/n/4PX1Scl+g=
+
+Name: res/drawable-xxhdpi/scamera_standby_1.png
+SHA1-Digest: 95AS8b3nya4JV268hxCN2lhUVgA=
+
+Name: res/drawable-xxhdpi/chat_forward_btn_normal_right.9.png
+SHA1-Digest: uumK/hn9evcaTbFSx0a2yKJLrYc=
+
+Name: res/drawable-xxhdpi/voip_mute_icon.png
+SHA1-Digest: VvRyLn2NvN7N1wn/Ff6gBO3OOE8=
+
+Name: res/drawable/button_dialog_option_selector.xml
+SHA1-Digest: fWV9yY67QtlFe+5jxza3ibXcCu8=
+
+Name: res/drawable-xxhdpi/translator_bubble_show_icon_press.png
+SHA1-Digest: rV/XhJZb04OlHWec1D71cnijX9Q=
+
+Name: res/drawable-xxhdpi/share_view_tool_icon_back_focus.png
+SHA1-Digest: LmHXNJFU8yjKDAtdlqAuJJXnrpQ=
+
+Name: assets/samm_embeded_soundeffect/image_insert.ogg
+SHA1-Digest: RUqfDRvUS4xTgmR3oWEU/RK8iWY=
+
+Name: res/layout/screenshare_docs_view_layout.xml
+SHA1-Digest: BOknA81cQUziSmitHGkALF3mySo=
+
+Name: res/menu/scamera_voice_call_menu.xml
+SHA1-Digest: WE7MR9IWSnF2oCWDkFDskyz03T8=
+
+Name: resource/drawable-xhdpi/snote_popup_btn_03_hover.png
+SHA1-Digest: T8FXN/KpgRzkjFfzrjGbRRRfoR0=
+
+Name: res/drawable-xxhdpi/voip_headset_icon.png
+SHA1-Digest: 7fwRgxg5yHo2LJN6pVUhFy5v+Bs=
+
+Name: res/drawable-xxhdpi/ams_popup_btn_default_normal.9.png
+SHA1-Digest: 3MCTPIcPbOA563jxZ2NwLgbHfCQ=
+
+Name: res/drawable-xxhdpi/switch_to_phone.png
+SHA1-Digest: Tt6V+z9kXwvzs7LqKKnHmUTKM8M=
+
+Name: res/drawable-xxhdpi/share_screen_open_header.png
+SHA1-Digest: WPUdovqOhFt2zewbO5mRF8VjwNo=
+
+Name: assets/spen_sdk_resource_default/pensetting_icon_pen.png
+SHA1-Digest: 59wt3o5xk0ZAr8f8POMsyzevGeE=
+
+Name: assets/spen_sdk_resource_default/eraser_bar.9.png
+SHA1-Digest: wl0ZDmtTS65JU+Dsr5iaVH9T0e8=
+
+Name: res/drawable-xxhdpi/vt_call_popup_fun_icon_bg.png
+SHA1-Digest: YeDE7vot/o3KDfs6hviibhZV9t8=
+
+Name: res/drawable-xxhdpi/list_button_send.9.png
+SHA1-Digest: B4P/Km+FfvDelOovxE8WvJ/PMjQ=
+
+Name: res/drawable-xxhdpi/chat_translator_top_btn_speak_off_press.png
+SHA1-Digest: GwiUAl510tN2FI7Gklfu6mnu1Jk=
+
+Name: res/drawable-xxhdpi/scamera_tw_scrubber_control_focused_holo.png
+SHA1-Digest: Lw9TrsgmxC8IYNokjIeDtdV/6Dw=
+
+Name: assets/spen_sdk_resource_default/snote_tablet_popup_btn_04.png
+SHA1-Digest: XoXVamES7afBIb0pZK/O8+zCkSE=
+
+Name: res/drawable-xxhdpi/share_view_tool_icon_draw_pencil_press.png
+SHA1-Digest: FTlq+SmeKXnLc4IzZ0CwjbD4rSE=
+
+Name: res/drawable/call_dial_btn_bg_h.xml
+SHA1-Digest: XjFG2amUXviPNtqFzeBI6asfoRk=
+
+Name: res/drawable/call_dial_number_0_btn_h.xml
+SHA1-Digest: YobddqpoZmOTWZ19twOwa7FLDe0=
+
+Name: assets/spen_sdk_resource_default/snote_popup_btn_04_hover.png
+SHA1-Digest: 4IFsF0iOg2fcFjcepY2HwcFpWMA=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_divider.png
+SHA1-Digest: HzAW1fy+c8j925ycUolgHTy5Xms=
+
+Name: res/drawable-xxhdpi/share_view_tool_area_bg.9.png
+SHA1-Digest: Dt6DSdCvv9QONkOh9f9jkQNdbm8=
+
+Name: res/drawable-xxhdpi/share_ic_jog_dial_answer.png
+SHA1-Digest: IiSQbxqKPeMZmitvjwXtiGDk9cY=
+
+Name: resource/drawable-xhdpi/eraser_handel_480.png
+SHA1-Digest: C3DHgMlqyXa4BZjC+GMYJJfbpBE=
+
+Name: res/drawable-xxhdpi/list_divider_h.9.png
+SHA1-Digest: dhlarYfJOoS4Ic5uRfxFURWKHYs=
+
+Name: res/layout/setting_subpage_mobile_web_link.xml
+SHA1-Digest: Bt3JY0bnPAgZbTlctFpGx2RzZsc=
+
+Name: res/layout/video_call_theme_party.xml
+SHA1-Digest: MQyhaBRRzD1n8sfImeBdxpqHW3c=
+
+Name: res/layout/video_call_quality_dialog_layout.xml
+SHA1-Digest: BnI/oL9UCVAlVF5rGiCQTaKJRJA=
+
+Name: res/drawable-xxhdpi/call_incoming_reject_bg.png
+SHA1-Digest: GZ8avOX2P7PYLmvkcPv+2h68YgY=
+
+Name: res/drawable-xxhdpi/share_incomming_sequence_02.png
+SHA1-Digest: XB3VHB4aCx709D0BWH4sm9BsV+Q=
+
+Name: res/drawable-xxhdpi/vt_call_video_btn_focus_h.png
+SHA1-Digest: 4L3QfuDCI4jj8bHstQ2KQeTA1l4=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_auto_off.png
+SHA1-Digest: hTDnuPkzZKVrzWT8JH+uMsdKdEU=
+
+Name: res/drawable/call_dial_number_7_btn_h.xml
+SHA1-Digest: f5bJzWrTjFjgabBQJNf0pOUZWqE=
+
+Name: res/drawable-xxhdpi/quickpanel_btn_ledon_press.9.png
+SHA1-Digest: SScAxrrMC8/zZTjkTwtSdCDcU4I=
+
+Name: res/drawable-xxhdpi/buddies_profile_btn_normal.9.png
+SHA1-Digest: 04I9Jw/TKVdsH+hgTu6CuE59LZc=
+
+Name: res/layout/screenshare_pen_menu_for_conference.xml
+SHA1-Digest: tyrozmokMVjY9nT080ab3XQxF40=
+
+Name: res/drawable-xxhdpi/quick_panel_icon_chatonv_voicecall.png
+SHA1-Digest: +2gR+p6wYruuk3Q+OxaT4P14mQ0=
+
+Name: res/drawable-xxhdpi/call_dial_btn_00.png
+SHA1-Digest: dJfIQEnAD6P6QGxXC+iOrXr6tmU=
+
+Name: res/drawable/call_video_option_layout.xml
+SHA1-Digest: 5Iom5Bb4a9t+BhFkMLn+ln6wuJo=
+
+Name: res/drawable-xxhdpi/call_incoming_reject_handle01.png
+SHA1-Digest: gOtshWkCmEThpoGbDPbabFjtjeE=
+
+Name: resource/drawable-xhdpi/snote_popup_btn_02_hover.png
+SHA1-Digest: JPr+VP3emfqywIFNvV4vm0sRXmk=
+
+Name: resource/drawable-xhdpi/snote_text_left_press.png
+SHA1-Digest: udHO7ceHKCfBayh/qwy8MbJ9hpI=
+
+Name: res/drawable-xxhdpi/input_filed_normal_disabled.9.png
+SHA1-Digest: HMQXljx9qxv0lpqpOpmadiD6XDg=
+
+Name: res/drawable-xxhdpi/voip_switch_call_icon_dim.png
+SHA1-Digest: rgCkvssVUPeEAt51xKiA6zRe6fw=
+
+Name: res/drawable-xxhdpi/translator_btn_bg_focus.9.png
+SHA1-Digest: hi8WRWhh6Q2OSl+JWk2pxuHUfBA=
+
+Name: assets/spen_sdk_resource_default/pen_opacity_bg.png
+SHA1-Digest: pdVqe+fwSQ8IefGYAxWRJswsQ2k=
+
+Name: res/drawable-xxhdpi/scamera_resolution_setting.png
+SHA1-Digest: Mg50BRmDAqcwxwC+d+OFCojusag=
+
+Name: res/drawable-xxhdpi/call_dial_btn_press.png
+SHA1-Digest: zB7j+r/Tmm+onKeGpdVuT8SI/kE=
+
+Name: res/drawable-xxhdpi/call_reject_with_msg_top_bg.png
+SHA1-Digest: UwkbQet7qS5EBumoTM3Fm9Nm8sE=
+
+Name: res/drawable-xxhdpi/share_view_tool_icon_camera_press.png
+SHA1-Digest: h0SETc79R6Tm4YAYJNFtPUY86H0=
+
+Name: resource/drawable-xhdpi/btn_popup_delete_n_default_02.png
+SHA1-Digest: zr5v9Zg2MbTvnpVKXBCR6gNYGw0=
+
+Name: res/drawable-xxhdpi/action_bar_press.png
+SHA1-Digest: wnJmJTHDmu5mHRRC7QzCc/vq+og=
+
+Name: res/drawable/screenshare_main_share_btn_selector.xml
+SHA1-Digest: MQc8orUShMKaNDAiYkFAUBCq9OU=
+
+Name: res/drawable-xxhdpi/share_view_popup_icon_pause.png
+SHA1-Digest: n5Y8AOfgszuWwLV2o9hI+wlH5yg=
+
+Name: res/drawable-xxhdpi/pulldown_ic_normal.9.png
+SHA1-Digest: DfhyLCwbbIe21WEOwMK3L/8Tpv8=
+
+Name: res/drawable-xxhdpi/more_option_icon_switch_video_call_disabled.
+ png
+SHA1-Digest: A1EgZagZOafqTmiIzYYHf05Fz7I=
+
+Name: resource/drawable-xhdpi/snote_slider_circle_press.png
+SHA1-Digest: xG52BsktEU2bp2pRbqB0mYvjAgM=
+
+Name: res/drawable/translator_show_on_image_selector.xml
+SHA1-Digest: vEOJF5tesmjvkfnxMPv0VaqLzx8=
+
+Name: res/drawable/screenshare_penwriting_toolbar_press_bg_selector.xm
+ l
+SHA1-Digest: Ww5LkQYQ+3L725H1Ul1L5DUT4Pg=
+
+Name: res/drawable/call_dial_number_8_btn_h.xml
+SHA1-Digest: CkzNjg5RlI4Dze9yvglqM/oFQkM=
+
+Name: assets/spen_sdk_resource_default/zen.png
+SHA1-Digest: EPkJ1PW7Y2xZj3hDaq1gtddyGCA=
+
+Name: res/drawable-xxhdpi/general_btn_bg.png
+SHA1-Digest: lsTJTGfPQyVMQ2q4yxn8iDNt7FA=
+
+Name: assets/spen_sdk_resource_default/ploating_popup_icon_delete_n.pn
+ g
+SHA1-Digest: yDKNM+9gXSB/vaMM8t5NbcdDslI=
+
+Name: resource/drawable-xhdpi/snote_mypen.png
+SHA1-Digest: ZOCuo837aKM9M7q6qZwAtmyB6BM=
+
+Name: res/drawable-xxhdpi/vt_tts_icon_light.png
+SHA1-Digest: kSjKR7pDpWfWU5+99aJeLVuZec4=
+
+Name: res/drawable-xxhdpi/popup_bottom_btn_press.9.png
+SHA1-Digest: 8Qb39cAQb+eiBBo1sUGpdA9E4KY=
+
+Name: res/raw/ringtone.ogg
+SHA1-Digest: YRtIU+M8JNaUQFqwQiWm4hTrIMw=
+
+Name: res/drawable/call_video_btn_ani_selector.xml
+SHA1-Digest: +YSjxQoLjHrcFNwSSUn2tnev9S8=
+
+Name: res/drawable-xxhdpi/clear_video_call_img_unknown.png
+SHA1-Digest: PT8R/ypVpQ6Wbm3P76B78c7UFMg=
+
+Name: resource/drawable-xhdpi/ploating_popup_right_n.png
+SHA1-Digest: 6qNVqnM3/ZKRR98wZwVjQrKqaxU=
+
+Name: res/layout-land/voice_call.xml
+SHA1-Digest: UJQDntYDzLHpCWelqtuGMCIEdrM=
+
+Name: res/drawable-xxhdpi/hold_icon_play_normal.png
+SHA1-Digest: D012cvMIPPJgjIZYHBWB9jgOp8M=
+
+Name: assets/spen_sdk_resource_default/pen_size_bg.png
+SHA1-Digest: 7vowkhINIzqsqy4TPXrpLe6ISLI=
+
+Name: res/drawable-xxhdpi/share_view_toast_popup_bg_left_focus.9.png
+SHA1-Digest: 67iXgmci4LHNn6PsZtB/JZdok9o=
+
+Name: resource/drawable-xhdpi/snote_text_right_press.png
+SHA1-Digest: OEQpz8JmA66JDgkEwSpmMJu0Xdg=
+
+Name: res/drawable/screenshare_penwriting_toolbar_back_selector.xml
+SHA1-Digest: nEw73mn6ZetEJEcere11GE1XhLM=
+
+Name: assets/spen_sdk_resource_default/snote_tablet_popup_btn_05.png
+SHA1-Digest: 7F3g4gu/4E/5XwQMzB1cMgt4dtI=
+
+Name: res/drawable-xxhdpi/voip_end_call_icon.png
+SHA1-Digest: AFBodE8q0sMbJ6AOohpmp+MS4Zc=
+
+Name: res/drawable-xxhdpi/tw_action_bar_cartoon_on_disabled.png
+SHA1-Digest: GoefBakDtYHb1Mzrw2WDKBGsMbg=
+
+Name: res/drawable-xxhdpi/call_dial_btn_h.png
+SHA1-Digest: Pl8czSolNI2pyxxOrm0yM5ROGu4=
+
+Name: res/drawable-xxhdpi/list_incoming_reject_handle_01_light.png
+SHA1-Digest: ym8v1ot7MeglLkjn6bZsS7VyQvE=
+
+Name: res/drawable-xxhdpi/share_bar_normal.png
+SHA1-Digest: r8vSS0cbAgjIra3RdwFA2y6XSuU=
+
+Name: res/layout/video_call_driving_btn.xml
+SHA1-Digest: bYAMsUDLlH5RvT3zB0UtOvI3y4M=
+
+Name: res/drawable-xxhdpi/scamera_standby2_3.png
+SHA1-Digest: j78tRjDDqGTa3/N88traH7hYwwQ=
+
+Name: res/drawable-xxhdpi/tw_action_bar_ani_emotion_disabled.png
+SHA1-Digest: UbHu8nWwoSk745xfKpmh/1tysHU=
+
+Name: assets/spen_sdk_resource_default/snote_dropdown_focus.9.png
+SHA1-Digest: +3uBnKWgFFHkpXc/Ph5FCxttRQU=
+
+Name: res/drawable-xxhdpi/call_dial_btn_09.png
+SHA1-Digest: iBsrIJ/DRajP6Mn27bVYNM6ZCuw=
+
+Name: res/drawable-xxhdpi/btn_default_light_press.9.png
+SHA1-Digest: 5PrdR00QFb17HF0zr+D4Zeklvsw=
+
+Name: assets/animation/MaskImage_THEME_SHOT/categories/glasses/glasses
+ _3.yuv420sp
+SHA1-Digest: f5DSNe/uy0IDxx5sGN84xyMiUz0=
+
+Name: res/layout/video_call_avatar_option_menu.xml
+SHA1-Digest: jlWXZ+tPt6nw66+VLYIJ6PYC1EI=
+
+Name: res/drawable-xxhdpi/switch_video.png
+SHA1-Digest: 4apkXXhAFVreEWpMNGfoDPBRlUM=
+
+Name: res/drawable/call_btn_selector.xml
+SHA1-Digest: t2YrDkvtxyIPYsiRkOsw9TYDo+0=
+
+Name: res/drawable-xxhdpi/more_option_icon_switch_video_call.png
+SHA1-Digest: q7EeMjuit6vgHoYlRVbI8K5Wsbs=
+
+Name: res/layout-land/video_call_caller_image.xml
+SHA1-Digest: r/hDRWphTIt/HqGagGfE/xoQTD8=
+
+Name: res/drawable-xxhdpi/call_icon_rec.png
+SHA1-Digest: 1zGfRKv4pGR7yQhodu3EC69XYzY=
+
+Name: res/drawable-xxhdpi/vt_stop_icon_light.png
+SHA1-Digest: GcSz7iKyQA+uVyS9xLtDj4pUG0A=
+
+Name: res/drawable/call_dial_number_9_btn_h.xml
+SHA1-Digest: rwdbEXt1mD0K4Kp9Q/lhBERjP7Q=
+
+Name: assets/spen_sdk_resource_default/ploating_popup_text_p.png
+SHA1-Digest: yfCg7372VEiFe8sZvi4+gRzCoRw=
+
+Name: res/drawable/call_dial_number_sharp_btn.xml
+SHA1-Digest: lOUCTJwuZ+T2JhrmUF4OOUiEOS4=
+
+Name: res/drawable-xxhdpi/glasses_02.png
+SHA1-Digest: ua7YcePNd8bCTnGp7Jd5FdY3/kg=
+
+Name: res/drawable/call_translator_tts_on_selector.xml
+SHA1-Digest: fV1h21uOWDIFBLk44+pyVxIshJA=
+
+Name: assets/spen_sdk_resource_default/camera_crop_holo_hdpi.png
+SHA1-Digest: 0HKlJ6CGZjiCswtwvvF4hE5hJ6w=
+
+Name: res/drawable-xxhdpi/hat_03.png
+SHA1-Digest: Md7Vsp9RD8Upc7D5mBY8qMWkZ/A=
+
+Name: res/drawable-xxhdpi/vtcall_4_btn_focus_switch_on.png
+SHA1-Digest: xgJ6GdkXnKeCruSUC+IC3oIXm14=
+
+Name: res/drawable-xxhdpi/invite_buddy_sequence_mini_01.png
+SHA1-Digest: 0O5D+dYZTJsa4j1CX57z78rjx80=
+
+Name: res/drawable-xxhdpi/translator_btn_bg_normal.9.png
+SHA1-Digest: pfdx8hAebTcOmnFUTQ5JRdrKj84=
+
+Name: res/drawable-xxhdpi/call_btn_end_call.png
+SHA1-Digest: VJ60wxZEonM3edlXx00ftaz9v5k=
+
+Name: res/drawable-xxhdpi/vt_switch_camera_icon_light.png
+SHA1-Digest: lOY7EnTjbaXqgKw/FM3Lsb4P6Vc=
+
+Name: assets/spen_sdk_resource_default/snote_tablet_popup_btn_03.png
+SHA1-Digest: G8euygHmc8uY3iCJH3PheYIDzsQ=
+
+Name: res/layout/voice_call_translator.xml
+SHA1-Digest: +eSb6qUoQz/mm6D7uBnBgqquQOs=
+
+Name: res/drawable-xxhdpi/vt_icon_capture_02.png
+SHA1-Digest: oSfvRFkEJqKcKCKecJlXnyAd8HM=
+
+Name: res/drawable/screenshare_main_popup_end_selector.xml
+SHA1-Digest: svJWVe1GDygq0BmOGSKUizXIMW8=
+
+Name: res/layout/video_call_invite_buddies_layout.xml
+SHA1-Digest: +qnqUU0mIKg8OJM/v70K8eKXoJc=
+
+Name: resource/drawable-xhdpi/snote_text_icon_underline.png
+SHA1-Digest: 8gV+yB8dGNuESuWRH99eQ1pRU2U=
+
+Name: assets/spen_sdk_resource_default/snote_tablet_add.png
+SHA1-Digest: 7tYpwxLtxYLsXL3vi9ljrXSJl9k=
+
+Name: res/drawable-xxhdpi/more_option_icon_bt_headset_off_disabled.png
+SHA1-Digest: ughY2I5ye0P8ib424JmsM0wSu7E=
+
+Name: res/drawable-xxhdpi/share_view_popup_icon_back.png
+SHA1-Digest: DWF+bgw+pqfk3mOTkuiutMQTFzE=
+
+Name: res/drawable-xxhdpi/share_screen.png
+SHA1-Digest: b/fLR6OwyTqg4+EGx1jd/7TNH8c=
+
+Name: res/drawable/call_mute_icon_selector.xml
+SHA1-Digest: yt4GnN1bKJ4Z7iqSbwJdiSZ7S1Q=
+
+Name: res/drawable-mdpi/videocall_themeshot_bg.png
+SHA1-Digest: BpNtCBQTwkWj/UnOuvwa0pcwtnQ=
+
+Name: res/drawable-xxhdpi/more_option_icon_bt_headset_off_press.png
+SHA1-Digest: 9xBCoa73hOL0t1L+4cojNe9FywQ=
+
+Name: res/drawable-xxhdpi/vt_call_popup_fun_icon_bg_dim.png
+SHA1-Digest: anjIx00zCvO6vwM1RNdknzetW7E=
+
+Name: resource/drawable-xhdpi/snote_tablet_delete.png
+SHA1-Digest: 0sWPB8/9x/GNVcDGigA76MVFRuI=
+
+Name: res/drawable/call_dial_number_5_btn_h.xml
+SHA1-Digest: aLpMkXbtJOXqAUBdcVZDbXZmomw=
+
+Name: res/anim/move_in_effect.xml
+SHA1-Digest: JLne7575i/6S0aL2cFlagZH6sUk=
+
+Name: resource/drawable-xhdpi/ploating_popup_icon_r1_n.png
+SHA1-Digest: tHCYRZJXlUN2hnaa4v1+RKLPNMY=
+
+Name: res/drawable-xxhdpi/clear_accept_incomingcall_accept_j.png
+SHA1-Digest: 4GktZpTOF13xLqypBVnT1qNvDvc=
+
+Name: resource/drawable-xhdpi/camera_crop_holo_hdpi.png
+SHA1-Digest: W4Kg/PVLFEi2q9fSpvNBkSrEmyQ=
+
+Name: res/layout/list_item_text_with_checkbox.xml
+SHA1-Digest: pOGdDl/FHly66Z96SXW4AaJgRUw=
+
+Name: res/drawable-xxhdpi/share_bar_press.png
+SHA1-Digest: C+3YGbspuPtKr+OfWN+Qn94KvRw=
+
+Name: res/drawable/screenshare_remotecontrol_back_btn_selector.xml
+SHA1-Digest: hWoTYtZhUk5Y/bUlHFVa3K/vnc4=
+
+Name: res/layout/video_call_theme_animal.xml
+SHA1-Digest: ietuAQUvYFEbvZgOO9NiCdhqTkE=
+
+Name: res/drawable-xxhdpi/call_video_call_icon.png
+SHA1-Digest: ZM6PkUIIsdo6LTQX8pdWs2eyfjA=
+
+Name: assets/samm_embeded_soundeffect/eraser_draw.ogg
+SHA1-Digest: rKSKtaLSct0YYx0BxSiYBrZhUEc=
+
+Name: res/drawable-xxhdpi/s_vt_show_me_icon_dim.png
+SHA1-Digest: 760iFWtI0uIFeL4kJwwjwNQHSA0=
+
+Name: res/drawable/chaton_ani_progress.xml
+SHA1-Digest: ypTJ6/RES/urHHlJS+KN3wGAdrU=
+
+Name: res/drawable-xxhdpi/call_dial_btn_10_press.png
+SHA1-Digest: 0nLp/G3Q61x1vZ06nsVaMxIVK8Q=
+
+Name: resource/drawable-xhdpi/snote_popup_scroll_handle_n.png
+SHA1-Digest: z89TAS536wx7N1ahP8597JNW7Ww=
+
+Name: res/drawable-xxhdpi/call_bg_line.9.png
+SHA1-Digest: wMfhP9XlGDw5pY+j2PnUP6GyL/Y=
+
+Name: res/drawable/screenshare_main_popup_end_remotecontrol_selector.x
+ ml
+SHA1-Digest: oah25pt2aIi0/mkWfXLNnrz4GO4=
+
+Name: res/layout/reject_message_for_cover.xml
+SHA1-Digest: sX9fRIosHML6ap6dllawMuuAvVQ=
+
+Name: res/anim/screenshare_zoom_out.xml
+SHA1-Digest: 3E95aQqdbUiaRGbftz2hXn7qTls=
+
+Name: res/drawable-xxhdpi/s_vt_switch_camera_icon_light.png
+SHA1-Digest: hIGkFQ4NjEm5ug6JyrJOQpd7KW8=
+
+Name: assets/animation/MaskImage_THEME_SHOT/categories/animal/animal_2
+ .yuv420sp
+SHA1-Digest: nLNs/xGSUDIYnR9a8rU+PPxuNJI=
+
+Name: res/drawable-xxhdpi/popup_top.9.png
+SHA1-Digest: 74Ai4fL7VWye3Op8NgtQrXNW6Mc=
+
+Name: res/drawable/screenshare_main_popup_center_background_selector.x
+ ml
+SHA1-Digest: F+xfcD5b64NQZiWRHX76L1xAJc4=
+
+Name: res/layout/voice_call_driving_btn.xml
+SHA1-Digest: NbfoD3fNhm7z6s01igTwVtNo0fU=
+
+Name: res/drawable-xxhdpi/list_divider.9.png
+SHA1-Digest: /474Dzw0a/GcQ5nl76aV7MmHpSw=
+
+Name: assets/animation/MaskInfo_VT_ANIMATION.conf
+SHA1-Digest: Kv4rLAaUWelKyHx76jVz9I32hD8=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_back.png
+SHA1-Digest: ZPahRpCbghzMHhGfu3DzZhEQFpk=
+
+Name: res/drawable-xxhdpi/pulldown_ic_focus.9.png
+SHA1-Digest: FpMzWgqab4WyYgpNzEoYR+42Lfg=
+
+Name: res/drawable-xxhdpi/party_03.png
+SHA1-Digest: D8hs2xMzibAkcMNX02BtV4R1Zr0=
+
+Name: res/drawable-xxhdpi/btn_radio_off.png
+SHA1-Digest: MFvT0ABF5mK/L1mqapUYiI+PBFs=
+
+Name: res/drawable/scamera_arrowkey01_selector.xml
+SHA1-Digest: 7zEBlfnLnDChbBjseCid2A/iVTs=
+
+Name: res/drawable/call_video_btn_option_close_selector.xml
+SHA1-Digest: N5XxLi7KWktbWBl7wKPFb5jkxf8=
+
+Name: res/drawable/reject_call_selector_down.xml
+SHA1-Digest: tD/sJqcFRIPKqx6ICzeXNzl4OmE=
+
+Name: res/drawable-xxhdpi/hold_btn_bg_focus.9.png
+SHA1-Digest: nfhRjD/huiSnbETwn1/iIlYrIi8=
+
+Name: resource/drawable-xhdpi/snote_popup_scroll_handle_p_480.png
+SHA1-Digest: +A4o7nt79+XczjNOjNURt8BO6Uk=
+
+Name: assets/spen_sdk_resource_default/snote_popup_btn_02.png
+SHA1-Digest: 7Bxss+MuHteti/GB27bhFBxw+ck=
+
+Name: assets/spen_sdk_resource_default/snote_popup_scroll_handle_n.png
+SHA1-Digest: Hlyn3AXV5rZOnOPxZGDMEzW6EtU=
+
+Name: assets/spen_sdk_resource_default/snote_delete_press.png
+SHA1-Digest: PP0MuhVPrdInPuxco2h13BYFYw8=
+
+Name: res/layout/scamera_send_file.xml
+SHA1-Digest: jZR/kUDEHt9vhO7kacOE261TopM=
+
+Name: res/drawable/call_dial_number_star_btn.xml
+SHA1-Digest: wm/GxjW0IJ/H41ZfFXqNn0fT4nw=
+
+Name: assets/spen_sdk_resource_default/pensetting_icon_pen_unselect.pn
+ g
+SHA1-Digest: 7CF0ZCxXEHob1QfQJGEJD6qDx5o=
+
+Name: res/drawable-xxhdpi/co_winset_btn_bg_focus.9.png
+SHA1-Digest: JQFj1Bxh4tdhValIeOtRN/MqPis=
+
+Name: res/drawable-xxhdpi/ic_chaton_video.png
+SHA1-Digest: RGpPYIk/67eU4fmBKhSCzWZ3MsU=
+
+Name: res/drawable/translator_bg_selector.xml
+SHA1-Digest: YkAAxgMG9/M+SpVWo1gcwNtUE8o=
+
+Name: lib/armeabi/libPSI.so
+SHA1-Digest: aICdxowpVC9W46JOuntuxSOkThY=
+
+Name: res/drawable/left_page_selector.xml
+SHA1-Digest: 4aA0sEcBbK9an/ALLwV7idHFzSI=
+
+Name: res/drawable-xxhdpi/scamera_stat_sys_battery_10.png
+SHA1-Digest: NL5Xzq0U1GkIXYshNCFO/d4MnwA=
+
+Name: res/drawable-xxhdpi/share_screen_icon.png
+SHA1-Digest: avW8J8xFW+P4sqNBbzSJ4ZUHbS0=
+
+Name: resource/drawable-xhdpi/snote_popup_scroll_handle_n_480.png
+SHA1-Digest: esh2wN1AV79fMO1v3TDO/xGOkds=
+
+Name: res/drawable-xxhdpi/input_filed_pressed.9.png
+SHA1-Digest: V/X54a6e0llXjwH5CV/rjTMbB9Y=
+
+Name: assets/spen_sdk_resource_default/up_popup_delete.9.png
+SHA1-Digest: 2S/QOYXXnM8MWHSL0acrtvdqIho=
+
+Name: res/drawable/call_headset_off_icon_selector.xml
+SHA1-Digest: mViFNqaJzKWbEhr44at3EMD2Bt0=
+
+Name: res/drawable-xxhdpi/share_view_tool_icon_undo_press.png
+SHA1-Digest: lLkrvd4NL3SNGez+DYHm5OvXo6E=
+
+Name: res/drawable-xxhdpi/call_message_icon_dim.png
+SHA1-Digest: l2yEuOuwTA+BgrrE6rCIhVO2Axs=
+
+Name: resource/drawable-xhdpi/snote_tablet_delete_press.png
+SHA1-Digest: 6BEgt6KGraYH38E1exPGQ28s3Ms=
+
+Name: assets/spen_sdk_resource_default/pensetting_icon_brush_unselect.
+ png
+SHA1-Digest: tWQSIbWdJfj4x/9RDG94chVyOiU=
+
+Name: res/drawable-xxhdpi/call_btn_light.png
+SHA1-Digest: QguIrngVQFeMk8dZ/ns+Pr8eTSA=
+
+Name: res/drawable-xxhdpi/vt_call_video_btn_end_call_press.png
+SHA1-Digest: I7rOG07pIY4ssVnAWjFnVeCA7AQ=
+
+Name: res/drawable-xxhdpi/ic_jog_dial_decline.png
+SHA1-Digest: vrmfSvCAvLE9IoWRN/nAy3d+BJk=
+
+Name: res/drawable/action_bar_btn_hide_me_selector.xml
+SHA1-Digest: qMCDMsAxnPZls4b4gFISETiSbBI=
+
+Name: res/drawable/video_call_share_view_zoom_in_selector.xml
+SHA1-Digest: YsTAgmTe7Gcq97pjJtt7FCHDqZI=
+
+Name: assets/spen_sdk_resource_default/snote_type_04.png
+SHA1-Digest: hnb9zUQUzFMT0RaSdUIz8E7j1kc=
+
+Name: assets/spen_sdk_resource_default/down_popup_delete.9.png
+SHA1-Digest: 7La+HHpIH70VtCf0C1P56CEf17c=
+
+Name: resource/drawable-xhdpi/scrollbar_handle_horizontal.9.png
+SHA1-Digest: V+qWfy0Wd46F+mZe1hp8zekpLFw=
+
+Name: res/drawable-xxhdpi/list_bg_line.9.png
+SHA1-Digest: 3cfMwKxmcQory0QXnqB0GkU4Xgo=
+
+Name: res/drawable-xxhdpi/call_dial_btn_09_h_press.png
+SHA1-Digest: GuFk7BjaEd4FIrcokeU8JZMqzh4=
+
+Name: assets/spen_sdk_resource_default/snote_tablet_mypen_select.png
+SHA1-Digest: RTbGrJSD2GxZXOWKlZxAXcW8taQ=
+
+Name: res/drawable-xxhdpi/more_option_icon_bt_headset_off.png
+SHA1-Digest: S5IKZ3etlagiAG87OzZEyviAp4I=
+
+Name: assets/spen_sdk_resource_default/snote_popup_btn_03_hover.png
+SHA1-Digest: aPxI5FIbD6LillWusY+6eNeyYp8=
+
+Name: res/drawable/screenshare_penwriting_toolbar_pen_selector.xml
+SHA1-Digest: 9CPudqoR9xCkLrmP2U4Ptm/ULTA=
+
+Name: res/drawable-xxhdpi/popup_winset_top_bright.9.png
+SHA1-Digest: 3VF2yJurfO8flchvWq2kOigg++I=
+
+Name: res/drawable-xxhdpi/vt_end_call_btn_normal.png
+SHA1-Digest: 0s2GlsBGWn2DVtY2VTuIsRGA7NM=
+
+Name: res/drawable/button_emotion_selector_center.xml
+SHA1-Digest: yTbYLnipz1cK8bny9pEoq0ULWOM=
+
+Name: assets/spen_sdk_resource_default/snote_type_05.png
+SHA1-Digest: ujdcZq02lxkp/A23pFkdcxihG2U=
+
+Name: res/layout/video_call_corverd_layout_big.xml
+SHA1-Digest: OK+NJMlnMT8aU871/pm9jFRJbjM=
+
+Name: res/xml/setting_call_answer.xml
+SHA1-Digest: QjFTN31IP81EgAgn86ybAhAXXFg=
+
+Name: res/drawable/scamera_outgoing_call_unmute.xml
+SHA1-Digest: y5WzAvY8g8VCTnYK8yy4Xwg5efU=
+
+Name: res/drawable-xxhdpi/call_dial_btn_03.png
+SHA1-Digest: YaAxh7sXlnUSy/YG00iFD2rhwq4=
+
+Name: res/drawable-xxhdpi/scamera_button_volume_press.png
+SHA1-Digest: bbh6Rez/f9A42wuu81FOyISzt1Q=
+
+Name: res/drawable-xxhdpi/popup_winset_bottom_medium_02.9.png
+SHA1-Digest: 1aBUH9aw6gKpVroSFLLEyyT7J+I=
+
+Name: res/menu/voice_call_group_menu.xml
+SHA1-Digest: qYIo+w5tq+83AQe2qta4i4bfVKI=
+
+Name: res/drawable-xxhdpi/share_view_toast_popup_bg_right_press.9.png
+SHA1-Digest: Lvsz3/UbbAMRDOR9qEy+vyV8gyA=
+
+Name: res/drawable-xxhdpi/translator_bubble_hide_icon_press.png
+SHA1-Digest: qlZc0Wkx0fgG4JdTLgbr+6RKDmA=
+
+Name: res/layout/screenshare_mspinner.xml
+SHA1-Digest: h5aTSKn4zE7S8r4bYJJCAhYmmRQ=
+
+Name: res/drawable-xxhdpi/voip_mute_icon_on_light.png
+SHA1-Digest: wtzcBwug/G9HjWBRBVnnjqni6dI=
+
+Name: res/drawable-xxhdpi/co_btn_default_disabled.9.png
+SHA1-Digest: whK5x+OadW/1s+1j6b2UNu4da+E=
+
+Name: res/drawable-xxhdpi/co_attach_p_alert_normal.png
+SHA1-Digest: /yoQe7JhyVa3sb/NNLOHZq66Gqc=
+
+Name: res/layout/list_item_text_with_checkbox_black.xml
+SHA1-Digest: 2KBFdIpomCjkuJSAkPbwcoruvUk=
+
+Name: resource/drawable-xhdpi/snote_type_03.png
+SHA1-Digest: XQPBVHhgKUDOUYgymw4i0ccxEzI=
+
+Name: res/layout-land/reject_call_with_msg_sliding_drawer.xml
+SHA1-Digest: wHr88lN94KK/FrLrx4iUT0qg+28=
+
+Name: res/drawable-xxhdpi/call_btn_focus_switch_on_h.png
+SHA1-Digest: 3JanNA5QArPvPW39QBUJ/ihFaCE=
+
+Name: res/drawable-xxhdpi/btn_radio_on_dim.png
+SHA1-Digest: RJ3HkjB56EjfPwvV2onURlwxiIw=
+
+Name: res/drawable-xxhdpi/share_view_popup_icon_end_remote_control.png
+SHA1-Digest: aBhrJsWRSSw620qdfXnd4qUv5zY=
+
+Name: res/drawable-xxhdpi/more_option_icon_bt_headset.png
+SHA1-Digest: frQ6AJ9sn04mnXIjdUSNUoP2UXQ=
+
+Name: res/drawable-xxhdpi/call_statusbar_bg_r.9.png
+SHA1-Digest: 8dnWKcYs9CMdc+IbDX8Y5ZJ3p9U=
+
+Name: assets/spen_sdk_resource_default/snote_add_dim.png
+SHA1-Digest: CufesL/23bWbzpVS0cc5xZ54CdY=
+
+Name: res/drawable-xxhdpi/chat_bg.9.png
+SHA1-Digest: 0yXYDqBtuJTgy2IppmqspX3CF/4=
+
+Name: res/drawable/screenshare_penwriting_toolbar_redo_selector.xml
+SHA1-Digest: XycuiYU7I3yrwhGDUUEW3nlfacM=
+
+Name: res/menu/voice_call_menu.xml
+SHA1-Digest: y22R/gVNsVK20X1ymtYmgrzlSwU=
+
+Name: assets/facedata/emo/surprise3.yuv
+SHA1-Digest: 2nfWHr6Yceq1FyVj5X9hJDBPd4I=
+
+Name: res/drawable-xxhdpi/vt_call_popup_icon_enable_cartoon_veiw_off.p
+ ng
+SHA1-Digest: X1k7nHZ4d9KCfx3AIkvavATX/pg=
+
+Name: res/drawable-xxhdpi/list_incoming_reject_handle_focus_h.png
+SHA1-Digest: qlF1VBHF6yfcpRnv2DjM03UllWI=
+
+Name: res/drawable-xxhdpi/uncheck_normal.png
+SHA1-Digest: 2fjtzvSpXT4GaOySUzXKWMOhz7I=
+
+Name: res/drawable-xxhdpi/share_view_tool_icon_eraser.png
+SHA1-Digest: /7Y61SKjB9EUBUgCr0nspqzBj5w=
+
+Name: res/drawable-xhdpi/fun_popup_bg.9.png
+SHA1-Digest: /Qr//5B2Rp9zm/uldaCGdzLjzR8=
+
+Name: resource/drawable-xhdpi/snote_popup_btn_03.png
+SHA1-Digest: ogb2an54OTq+aolNTfH4euZn/TY=
+
+Name: res/drawable-xxhdpi/end_call_voip_chaton_vtcall_icon.png
+SHA1-Digest: zjLN3r9SX3wDQBNNuyKC46G2cOk=
+
+Name: assets/spen_sdk_resource_default/snote_spinner_ab_normal_holo.9.
+ png
+SHA1-Digest: xiekQBrLyava2G4BL4tWSqhy2QQ=
+
+Name: res/drawable-xxhdpi/share_view_tool_icon_redo_press.png
+SHA1-Digest: N4zWUHJD9r1EEnEC+M/minb2Xto=
+
+Name: resource/drawable-xhdpi/snote_popup_tab_divider.png
+SHA1-Digest: g6tBG2CeNnMw0PdCI3yRkFJms5A=
+
+Name: res/drawable-xxhdpi/translator_bubble_thumbnail_bg.png
+SHA1-Digest: MguhP9QnP69GXXYhaDfSpQ6vXaE=
+
+Name: res/drawable-xxhdpi/call_call_icon.png
+SHA1-Digest: pPUtIPpD/a8h6gisZRCf5aGvoms=
+
+Name: resource/drawable-xhdpi/snote_text_icon_bold_press.png
+SHA1-Digest: jyVG/DmiWDeNFlhq20hO9rZbAXM=
+
+Name: assets/spen_sdk_resource_default/ploating_popup_icon_r2_n.png
+SHA1-Digest: W4upXYAI58Qf0TdRFyACysE2yas=
+
+Name: assets/spen_sdk_resource_default/eraser_handel_press_480.png
+SHA1-Digest: YoYFCsuO3da6WbxIOerBzn8OW3o=
+
+Name: res/drawable/vt_call_btn_selector_h.xml
+SHA1-Digest: qd2jqydYilVJcfn1byDwli44IW8=
+
+Name: res/drawable-xxhdpi/more_option_icon_bt_headset_press.png
+SHA1-Digest: JlQ0EhLgCjqTW3k7eoB6FGzsE/M=
+
+Name: res/drawable-xxhdpi/share_view_popup_icon_remote_control_dim.png
+SHA1-Digest: R02UpuVLgMyEw5FWGQMd3R2oDvI=
+
+Name: res/layout/incomming_call_widget_covered_big.xml
+SHA1-Digest: XME6J5toHGeq214+xIeE8xUwCWI=
+
+Name: resource/drawable-xhdpi/snote_popup_btn_05_hover.png
+SHA1-Digest: AbIsR+4yRKpDs419eFAe9v9CDk8=
+
+Name: res/drawable-xxhdpi/switch_to_voice_call.png
+SHA1-Digest: RdLUw/rF+6G0OlhRdYnJleCLt9w=
+
+Name: res/drawable/vt_call_popup_icon_enable_emoti_view_selector.xml
+SHA1-Digest: iJmn9yGbIquu8KubAe4ajA9yIJA=
+
+Name: res/drawable-xxhdpi/share_screen_icon_btn_press.png
+SHA1-Digest: 7947F50AXkaLNROA9roJlUqWlyA=
+
+Name: res/drawable-xxhdpi/right_page_press.png
+SHA1-Digest: XKqMnytslNpbKiNR+yYrv89B7ag=
+
+Name: lib/armeabi/libpjsip_jni_JBP.so
+SHA1-Digest: +qqB5CrwhHnc0N668mp7V8XMSck=
+
+Name: resource/drawable-xhdpi/textbox1.9.png
+SHA1-Digest: HIv8qM3yeOJqWNqfFNhp27+QT9U=
+
+Name: res/layout-land/video_call_translator.xml
+SHA1-Digest: zTSoQgi8XrnNP/V7iIQEDVrAEK8=
+
+Name: assets/spen_sdk_resource_default/snote_slider_circle.png
+SHA1-Digest: VDWnIkiLWBJIJWvuj/o54+QUtMc=
+
+Name: res/drawable-xxhdpi/vt_hideme_bg_still_01.png
+SHA1-Digest: /IMaf75/K20Kb48z5oYPcSjB2aI=
+
+Name: res/layout-land/video_call_theme_hat.xml
+SHA1-Digest: sFsnGXJumapx3qiOQJafFsU1wio=
+
+Name: res/drawable-xxhdpi/vt_icon_capture_02_h.png
+SHA1-Digest: //UqyYlgE4vgfrG055tyY7UeQTQ=
+
+Name: res/drawable/screenshare_main_popup_right_background_selector.xm
+ l
+SHA1-Digest: E1a9umRArwInWej1lHHzobTULKg=
+
+Name: res/xml/call_alert_setting_black.xml
+SHA1-Digest: zAcS5+UfbSqg7Fd3J2T9eDjm+2I=
+
+Name: res/drawable-xxhdpi/action_bar_bg_01.9.png
+SHA1-Digest: r7DOQUimObulaqljnetjnSY8c9E=
+
+Name: resource/drawable-xhdpi/snote_btn_pressed_holo_dark.9.png
+SHA1-Digest: JnKaAEK1QGR3zRvPc/cp7dPi+ww=
+
+Name: res/drawable-xxhdpi/call_during_btn_speaker_on_press.png
+SHA1-Digest: xyEgKopJFA3I3T8o/pyae0MAYYE=
+
+Name: resource/drawable-xhdpi/pensetting_icon_selected.png
+SHA1-Digest: wXElVsSa1KC6VtHdC2wIvW8liqQ=
+
+Name: res/drawable-xxhdpi/hold_icon_play_dim.png
+SHA1-Digest: FdkiveGx+WTM/XaZzqTR5s6gviw=
+
+Name: res/drawable-xxhdpi/vt_hide_me_icon_light.png
+SHA1-Digest: TfT6HpDUfQWV5cZHu+8za4GEZf4=
+
+Name: assets/spen_sdk_resource_default/snote_add_press.png
+SHA1-Digest: TgfDkFM8yaU0LcD0bLc4+SGNnCY=
+
+Name: res/drawable/reject_call_selector.xml
+SHA1-Digest: iVNu2Y78xBDsmWw0D6d4q7o6L2c=
+
+Name: res/drawable-xxhdpi/call_dial_btn.png
+SHA1-Digest: +SCC0GNITOQlJ6951Z8k3fi2iSo=
+
+Name: assets/spen_sdk_resource_default/ploating_popup_left_p.png
+SHA1-Digest: RNiCoH0x8v6GCAUxZmW4vopTRfQ=
+
+Name: res/drawable-xxhdpi/invite_buddy.png
+SHA1-Digest: ig3XCzqGwZdxQq3WkbPXauJ404A=
+
+Name: assets/vlsdk_acoustic_raw.zip
+SHA1-Digest: c3gq3Km9h0BpmPx4AfG5gc3fBoM=
+
+Name: assets/spen_sdk_resource_default/snote_title_left_tablet.9.png
+SHA1-Digest: eQ/uRH/92skYz7ujt3ZmbVdifRI=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_bg_focus_right.
+ 9.png
+SHA1-Digest: KOKolkRD9uPz7lwfIS3AvWvc5GU=
+
+Name: res/drawable/s_view_cover_mute_selector.xml
+SHA1-Digest: 3ALv8JM9HYGqnNzarh+UXVQ6Rfk=
+
+Name: res/drawable-xxhdpi/ams_popup_btn_default_disable_focus.9.png
+SHA1-Digest: wMzADBMfSJ0wzS/1UAZZR4i78Gc=
+
+Name: res/drawable/dual_camera_off_icon_selector.xml
+SHA1-Digest: 4CZOxPyEyd8zE+FVtrjXURf4XnA=
+
+Name: res/drawable/data_usage_cycle_up_btn_selector.xml
+SHA1-Digest: drG0jtYAkW8k/TkWJ6Sfg5UCgJs=
+
+Name: res/drawable-xxhdpi/btn_radio_off_press.png
+SHA1-Digest: tJvJeKJ2/FzgttwpNn5LdW/4Qek=
+
+Name: res/raw/call_disconnect.ogg
+SHA1-Digest: SgQ5TkEbI6CeZjf6ArLhHQl7sI4=
+
+Name: res/drawable-xxhdpi/share_view_toast_popup_bg.9.png
+SHA1-Digest: PjiYVY6f+FKJw6Lg2BYci1NWBGk=
+
+Name: res/drawable-xxhdpi/clear_reject_circle_arrow_big_03.png
+SHA1-Digest: IFqZ1q11f/4049ekAvx5XufJIDA=
+
+Name: res/drawable-xxhdpi/vt_call_popup_icon_enable_theme_view_dim.png
+SHA1-Digest: tmy56iU9SIXCoRRWg4ruUDE6umA=
+
+Name: resource/drawable-xhdpi/snote_dropdown_press.9.png
+SHA1-Digest: kxTxko5l6uC43Hh3v/y+xkxh7W8=
+
+Name: res/layout/screenshare_pen_writing.xml
+SHA1-Digest: WekI6Z8xH8FvJPjlZRh/3Sh40Go=
+
+Name: res/drawable-xxhdpi/scamera_auto_smart_auto.png
+SHA1-Digest: 9lOHwEYB1gqLrHDlf864guoH4OI=
+
+Name: assets/spen_sdk_resource_default/snote_text_left_press.png
+SHA1-Digest: pQAQvPIeFPVCiPUlndaUlcj5Rnw=
+
+Name: res/drawable-xxhdpi/share_incomming_sequence_03.png
+SHA1-Digest: ZYlvdTU8mE6ln+wSLOf365YL5zA=
+
+Name: res/drawable-xxhdpi/show_members.png
+SHA1-Digest: OmQeh3EgxkFdYib6mMUJZibhWUo=
+
+Name: res/drawable-xxhdpi/sub_title_bg_focus.9.png
+SHA1-Digest: x25H+MUTgpcYgdk0h7cMGhmb558=
+
+Name: res/drawable-xxhdpi/clear_reject_circle_drag.png
+SHA1-Digest: vafE/kxXWRPIZKEh21DE1Uwgix0=
+
+Name: res/anim/spin_effect_rev.xml
+SHA1-Digest: r+y2lHsj5TubuhvIwCM0BuxkuBs=
+
+Name: res/drawable-xxhdpi/vt_hideme_bg_still_02_h.png
+SHA1-Digest: 8Q3M4YJLbDntlypZHNMsEWFSACI=
+
+Name: res/drawable-xxhdpi/vt_end_call_btn_press.png
+SHA1-Digest: 1QyOYV55lU/WMKQa5Yj0pO5uXQ0=
+
+Name: res/drawable-xxhdpi/option_menu_translator_dim.png
+SHA1-Digest: zMwt/P+f4ydf/t5RQBj4kFGIopI=
+
+Name: resource/drawable-xhdpi/eraser_handel_press.png
+SHA1-Digest: /ncTSHSFmis+vlfeCWdFwC8BHZw=
+
+Name: res/drawable-xxhdpi/vt_end_call_btn_normal_h.png
+SHA1-Digest: o39hjk0xWFQqjnJemoCpJfmTUas=
+
+Name: res/drawable/screenshare_remotecontrol_menu_btn_selector.xml
+SHA1-Digest: bf/q41Ocl8WZ5Sr6LeIRlv8Q/ZA=
+
+Name: res/drawable-xxhdpi/voip_speaker_icon_light.png
+SHA1-Digest: uF5J8EUochFx6pnljaVA6X3zs6E=
+
+Name: res/drawable-xxhdpi/share_view_tool_area_right_bg_press.9.png
+SHA1-Digest: LpA5Uc0R4oJ1npLqRY5huXREHPs=
+
+Name: res/drawable/invite_buddy_remove_selector.xml
+SHA1-Digest: 3NQJlznwat3P8sV8L+EG7v5gT3E=
+
+Name: resource/drawable-xhdpi/snote_tablet_popup_btn_04.png
+SHA1-Digest: GJ4yXGNaJyxy33fgI3mLEAKjh/U=
+
+Name: res/drawable-xxhdpi/vt_call_btn_focus_h.png
+SHA1-Digest: sKQqeO05P6wmvh8zweJrJ4mK3ww=
+
+Name: assets/animation/MaskImage_THEME_SHOT/categories/glasses/glasses
+ _2.yuv420sp
+SHA1-Digest: IYEip5QmEVHr9xAjQXThlC6aK9Y=
+
+Name: res/drawable-xxhdpi/scamera_tw_volume_bar_holo.9.png
+SHA1-Digest: Jqk/dSbwKslWXl1mNikqEnXUXW8=
+
+Name: res/drawable-xxhdpi/vt_call_video_btn_light.png
+SHA1-Digest: L9Vcxinxnsapn89ImaXlXvGaGe4=
+
+Name: res/drawable-xxhdpi/chat_forward_btn_press_right.9.png
+SHA1-Digest: OkZrBwveWLU6xWgS3K1PgtbcHbw=
+
+Name: res/layout-land/video_call_invite_buddies.xml
+SHA1-Digest: Vu+gJ5R3kPqGHeaOBjhRtI7JVio=
+
+Name: res/drawable/vtcall_4_btn_focus_switch_h_selector.xml
+SHA1-Digest: zfqdH6fCB95EYLHOs+cGVspDLzI=
+
+Name: resource/drawable-xhdpi/pensetting_icon_brush_unselect.png
+SHA1-Digest: ckPBPOdO2UBi/+4idirbrXHcCrA=
+
+Name: assets/spen_sdk_resource_default/snote_mypen.png
+SHA1-Digest: aD/7DaZuAbrmVQGq/jogDrmbFqo=
+
+Name: resource/drawable-xhdpi/snote_type_04.png
+SHA1-Digest: a+Tc6DNn04wtNBQGeaBcla9eG8U=
+
+Name: res/drawable/call_end_call_icon_selector.xml
+SHA1-Digest: XJS5Kt7iRZi4FQSj9s61CJilFKw=
+
+Name: res/drawable-xxhdpi/clear_reject_circle_small_j.png
+SHA1-Digest: KKw57vvWg9Coo0P6cgv58YrPrpM=
+
+Name: res/drawable-xxhdpi/tw_action_bar_cartoon_off_disabled.png
+SHA1-Digest: yCWEkk9WbFKZVkwyM/YfS0BxGSI=
+
+Name: res/drawable-xxhdpi/vt_icon_record_start_01.png
+SHA1-Digest: 86qjvZT/80ixz1WMj1xGmplra9g=
+
+Name: res/drawable-xxhdpi/call_btn_focus_switch_off.png
+SHA1-Digest: Ea+4SwXX7pZFivV4u07SSEnytoI=
+
+Name: res/xml/setting_data_usage_black.xml
+SHA1-Digest: WM8xPAclSM7lEO5Mm8ix4q4lOfA=
+
+Name: res/layout/video_call_translator_sliding_drawer.xml
+SHA1-Digest: UWLkUq9QT6EdZqWsuBZehET704Q=
+
+Name: res/layout/screenshare_alert_view.xml
+SHA1-Digest: ZHRvCeuaYiak4pDsjbmxH6vC9Zc=
+
+Name: res/drawable-xxhdpi/scamera_button_volume.png
+SHA1-Digest: X8tJoMdsgCjymgVf2fvHEf6sqac=
+
+Name: res/drawable-xxhdpi/chatonv_capture_default_02.png
+SHA1-Digest: EXpUsuNHZJKDOF8QvPJehq5TaGA=
+
+Name: resource/drawable-xhdpi/ploating_popup_left_n.png
+SHA1-Digest: f74vWBdCss0A6wp5AMDl1AZfAVM=
+
+Name: assets/spen_sdk_resource_default/snote_pen_circle_big_02.png
+SHA1-Digest: Y906SgQH8NtvG0uARDmohxV7Y7Y=
+
+Name: res/drawable-xxhdpi/action_bar_bg_02.9.png
+SHA1-Digest: GBWJwuGALLu2CaBIMOWd405/UKU=
+
+Name: res/drawable-xxhdpi/call_dialling_ani_02.png
+SHA1-Digest: hqjd6aP+gEeAC9S2/Gs+gpD+JUw=
+
+Name: res/drawable/screenshare_popup_btn_text_selector.xml
+SHA1-Digest: R5e/mLbmbCF02+3mCs9Z3WNpGIQ=
+
+Name: res/drawable-xxhdpi/call_btn_bg_light.png
+SHA1-Digest: QT3Xnd5He493/vfNoO7Ridr+mbE=
+
+Name: assets/spen_sdk_resource_default/snote_text_center.png
+SHA1-Digest: b/DN6pZ/6HPQ2DnH5Fpr7KHGehs=
+
+Name: res/drawable-xxhdpi/voip_speaker_icon_dim.png
+SHA1-Digest: H16IQg+5mMsVpIWOZKfzqG1kI1Y=
+
+Name: res/drawable-xxhdpi/list_incoming_reject_handle_light_h.png
+SHA1-Digest: HAnNwSWMQJfPQUuPsI9etLxkyb4=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_bg_press_right.
+ 9.png
+SHA1-Digest: x3oscEId06OnbkGhS0B87CgWgaw=
+
+Name: res/drawable-xxhdpi/quick_panel_btn_off.9.png
+SHA1-Digest: aM9XVNHabRCEEYAvvjCv3AyKgJM=
+
+Name: res/layout/voice_call_translator_member.xml
+SHA1-Digest: ch8zahRVMiwVSbPzs+YLJqXy8ms=
+
+Name: res/drawable/call_quick_panel_red_btn_selector.xml
+SHA1-Digest: ApB9ur2WopR4mmjbgmG4DX/8hOE=
+
+Name: res/drawable-xxhdpi/chatonv_capture_default_01.png
+SHA1-Digest: yob+zOltBD5YNHGNQbhtB/yzV2g=
+
+Name: res/layout/video_call_camera_guideline.xml
+SHA1-Digest: eIj4WP0+n95QN4hTqVLobmI3j0c=
+
+Name: resource/drawable-xhdpi/snote_tablet_add_press.png
+SHA1-Digest: /PRbYH2+ySrpkOFTozyc6DGH/HI=
+
+Name: res/drawable/call_white_text_color_selector.xml
+SHA1-Digest: alnlTS4ccWWFfjosRqOm/MdPrNY=
+
+Name: res/drawable/button_dialog_selector.xml
+SHA1-Digest: auSmpBIoXWnuIIYyLkx+Z05qkhI=
+
+Name: res/drawable-xxhdpi/actionbar_color_btn_bg_pressed.9.png
+SHA1-Digest: jJ24KFb3vJQr0eJc2pYtWktddBQ=
+
+Name: resource/drawable-xhdpi/snote_add.png
+SHA1-Digest: nFh4DKS/kxX5jKYhoMAJuA+j1io=
+
+Name: res/drawable-xxhdpi/vt_hide_me_icon_dim.png
+SHA1-Digest: U5j2Y3E2xL1ZyTtvy47nowLCX8A=
+
+Name: res/layout-land/video_call_share_view.xml
+SHA1-Digest: 8kNsE7RIymMN3PzYcUOe7ANGxqo=
+
+Name: res/drawable-xxhdpi/actionbar_ic_cancel.png
+SHA1-Digest: XLHa53SUAtxIewRivlog6594Ubo=
+
+Name: lib/armeabi/librtpreorder.so
+SHA1-Digest: dN2Xbi4BXbGl3FSE+4UmeBTCZ4g=
+
+Name: res/drawable-xxhdpi/more_option_icon_send_file_chaton_disabled.p
+ ng
+SHA1-Digest: d9TUcDfvziXAmNa4GJ6uCRePKm0=
+
+Name: res/drawable/call_settings_enable_color_black.xml
+SHA1-Digest: LS/uhgn17u59/IOWXxw3s9PGkyI=
+
+Name: resource/drawable-xhdpi/snote_popup_btn_01_hover.png
+SHA1-Digest: fKt7qPzK7BzwgS8HNPEqYCOFh6A=
+
+Name: res/drawable/call_settings_enable_color.xml
+SHA1-Digest: kg0QV6tcFxKWYEg+bhz+OEtSHWI=
+
+Name: res/anim/fade_out_effect.xml
+SHA1-Digest: LJw3d92cziaM9NTrIMG+akaaRQI=
+
+Name: res/drawable-xxhdpi/translator_btn_bg_press.9.png
+SHA1-Digest: H5J1kXTbt5K7S+eZ1uQrTRcMVKY=
+
+Name: assets/spen_sdk_resource_default/ploating_popup_picker_up.png
+SHA1-Digest: +eCeKrXjcM1DBSrXo2Pmt5lluHI=
+
+Name: resource/drawable-xhdpi/snote_text_left.png
+SHA1-Digest: xXs3ZiCKORvXKvJL9bgzPHiCYd0=
+
+Name: res/layout/video_call_status_bar.xml
+SHA1-Digest: s5GPv6Jc8VS0l4Vdk5APCNXtrGw=
+
+Name: res/drawable-xxhdpi/scamera_back.png
+SHA1-Digest: Y1UecM9Z8M4mHhPagBrtzpN2+Dc=
+
+Name: res/drawable/screenshare_penwriting_toolbar_text_selector.xml
+SHA1-Digest: wOOecFzJDgBz3lZ656Qx5I/ObV8=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_05.png
+SHA1-Digest: g3iOtP3MwN3T5uOQzojT2ZulUms=
+
+Name: res/drawable-xxhdpi/call_dial_btn_09_h.png
+SHA1-Digest: zEC/h9NfA637gZWsdpL6jfHx9/M=
+
+Name: res/drawable-xxhdpi/more_option_icon_switch_voice_call.png
+SHA1-Digest: KfrlCPRlRCbaD7ewe+ov7o4kwnM=
+
+Name: res/drawable/call_indicator_selector.xml
+SHA1-Digest: GVD7V1VA7HJkYzTPDexOoWjfnaE=
+
+Name: res/drawable-xxhdpi/clear_accept_incomingcall_endcall_j.png
+SHA1-Digest: O39PPvTHrWiIKdaah9hmCE84goI=
+
+Name: res/drawable-xxhdpi/translator_play_icon_normal.png
+SHA1-Digest: QQpVfsk6WbAGXt9wPauRxpfm2qo=
+
+Name: res/drawable-xxhdpi/list_button_add_light.png
+SHA1-Digest: h1YIvUJ2ASjM3PFOeXmzrNOsf+g=
+
+Name: res/layout/call_error_information.xml
+SHA1-Digest: Er53weNkCkcGaO0yyRkFGfDhXdo=
+
+Name: assets/spen_sdk_resource_default/pensetting_icon_neon_unselect.p
+ ng
+SHA1-Digest: IsFC7CDzw1BWwmY/YC57h05rYFY=
+
+Name: resource/drawable-xhdpi/snote_add_focus.png
+SHA1-Digest: eRA7uQvZf3O+pVDTuySlpQ9EXEY=
+
+Name: lib/armeabi/librtp.so
+SHA1-Digest: pHUoA38qcpJ+Eb3pEaj3mHHx2Ws=
+
+Name: res/drawable-xxhdpi/tw_action_bar_buddy_list_disabled.png
+SHA1-Digest: hztcMj6VuHZQXw+193bL2CB//Eg=
+
+Name: res/drawable/call_dial_number_star_btn_h.xml
+SHA1-Digest: TE/UJ9LNlPfT65dGt3NXmEE4pBg=
+
+Name: assets/animation/MaskImage_THEME_SHOT/categories/animal/animal_3
+ .yuv420sp
+SHA1-Digest: ZbGj9Cj22iZsWJPSEhpVYMm4U5c=
+
+Name: res/drawable/screenshare_main_end_btn_selector.xml
+SHA1-Digest: Qi4GhRTUJKd2h1R+nEIYA2hEACo=
+
+Name: assets/spen_sdk_resource_default/snote_text_icon_italic_press.pn
+ g
+SHA1-Digest: pSnrAfsiDlpdA4/zeDZCOnV5Yts=
+
+Name: res/drawable-xxhdpi/share_btn_up.png
+SHA1-Digest: xOvc1NReZWpt2wyal+qaKu2s/vw=
+
+Name: res/drawable-xxhdpi/call_incoming_reject_handle02.png
+SHA1-Digest: rjXzh4A4h6vye+rXddtovklLYyc=
+
+Name: res/drawable-xxhdpi/clear_reject_circle_big_01.png
+SHA1-Digest: 9NNqse84lYPEn2RJ34GVv1ggg5I=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_bg.png
+SHA1-Digest: 2WMprykGbHQfO/MXvEH2XKUc0rM=
+
+Name: res/drawable-xxhdpi/more_option_icon_send_file_chaton_press.png
+SHA1-Digest: D4AKkuX7SA80XC2dB3EFVTn5nFM=
+
+Name: res/drawable-xxhdpi/call_message_icon.png
+SHA1-Digest: 1EkSqxvINCCggeOwXL99GJJmB6A=
+
+Name: assets/spen_sdk_resource_default/snote_tablet_popup_btn_02.png
+SHA1-Digest: CTKAy1DBCGwoHBei1Gi4hAGdQMM=
+
+Name: res/drawable-xxhdpi/scamera_chatonv_thumbnail02.png
+SHA1-Digest: QHK7qNhX6JrE+MZshxea9qcpQAY=
+
+Name: res/drawable/call_message_icon_selector_h.xml
+SHA1-Digest: tPY9RIC1YX1tp9duFwvyGwUKZyE=
+
+Name: res/drawable-xxhdpi/end_call_btn_light_press.png
+SHA1-Digest: /VqwcWWbKcAsbeLpzh55nAMSehg=
+
+Name: res/drawable-xxhdpi/uncheck_dim.png
+SHA1-Digest: q7XnoYybljd4lFaHbidQjEomCgA=
+
+Name: res/drawable-xxhdpi/tw_action_bar_cartoon_on.png
+SHA1-Digest: sg2sbF5EnBPqEdrdQu5gl5kPDdg=
+
+Name: res/drawable-xxhdpi/unlock_right_press_small.png
+SHA1-Digest: 5QFVNJH8DNYVmIz0HenfL9ZpqIY=
+
+Name: res/drawable-xxhdpi/translator_bubble_hide_icon.png
+SHA1-Digest: VvtBy4BlwcUOmrVjmAvIWGpIiTA=
+
+Name: res/drawable-xxhdpi/group_thumbnail_default.png
+SHA1-Digest: SaG/to2VG6AsI30dlHqxE+npPD0=
+
+Name: res/drawable-xxhdpi/btn_reject_send_n.png
+SHA1-Digest: TOvkLOP9Q6OXFlNBsupsaD7MhVQ=
+
+Name: res/drawable-xxhdpi/call_dial_btn_07_press.png
+SHA1-Digest: nKa52gLiZJ77WjsWmT1nZEIzsBc=
+
+Name: res/drawable-xxhdpi/vt_recording_icon_n.png
+SHA1-Digest: GF4+pjABy+mwsNMKXu8CJQCnwDE=
+
+Name: res/drawable-xxhdpi/end_shareview_press.png
+SHA1-Digest: RCqibH6Yb/6Wr39JjwSEmM7ouvg=
+
+Name: res/layout/voice_call_translator_guest_duration_item.xml
+SHA1-Digest: 3+wfKsDKFHH3Gefxbf9sOodVIvg=
+
+Name: assets/spen_sdk_resource_default/snote_popup_btn_02_hover.png
+SHA1-Digest: RLGqWg0UP8k2dgt37SEsPnR4KAc=
+
+Name: res/drawable-xxhdpi/general_btn_bg_press.9.png
+SHA1-Digest: Gty5FNI54rFOFQpxqcG/lz5KDKU=
+
+Name: res/drawable-xxhdpi/party_02.png
+SHA1-Digest: N0XRTp9CWY+OE/YwCakvX4MO17w=
+
+Name: resource/drawable-xhdpi/pen_size_bg.png
+SHA1-Digest: kKnLKTrTFoBirIGgepyI6j54HiI=
+
+Name: res/drawable-xxhdpi/vt_call_video_btn_press_h.png
+SHA1-Digest: o8n6/CI3TWugv9AcB6GDaoHwoxk=
+
+Name: res/layout/voice_call_translator_content.xml
+SHA1-Digest: fezhc5g2L1vdrXxvjzKQfs5GoRc=
+
+Name: res/drawable-xxhdpi/share_view_tool_icon_text_press.png
+SHA1-Digest: 0ijIaFu2gzmjgncyy/EKzOT1BeY=
+
+Name: res/layout-land/voice_call_btn.xml
+SHA1-Digest: T4YQ7htzXiCRAugCoG3AYXVe/PE=
+
+Name: resource/drawable-xhdpi/snote_text_icon_italic.png
+SHA1-Digest: tdraOMbJrg2DyRn79UkPfkH3Urg=
+
+Name: res/drawable-xxhdpi/share_view_popup_icon_end_dim.png
+SHA1-Digest: Fm+5qA/XPzxFjlWJHbMDTbwdzyk=
+
+Name: res/drawable-xxhdpi/clear_accept_incomingcall_speaker_j.png
+SHA1-Digest: VOMkRoB1bxxb6aezK9kd8nMoCAE=
+
+Name: res/drawable-xxhdpi/call_dial_btn_06_h_press.png
+SHA1-Digest: TjhOuYqEhB28Cl//lOYEdFrwzGE=
+
+Name: assets/spen_sdk_resource_default/popup_exit_480.png
+SHA1-Digest: oSB86z7oyywRLx/apfcTFBfsYtE=
+
+Name: assets/spen_sdk_resource_default/snote_tablet_add_dim.png
+SHA1-Digest: oWWSqOz0Cz+idX3SS4uyPCH+zdM=
+
+Name: resource/drawable-xhdpi/snote_popup_scroll_handle_p.png
+SHA1-Digest: HfJeF2516xKn7i45rjA7+lMR8Rk=
+
+Name: assets/samm_embeded_soundeffect/brush_draw.ogg
+SHA1-Digest: 2Bj4klMTSSiBPbAw7tS+mUn3mvA=
+
+Name: assets/spen_sdk_resource_default/snote_pen_circle_big_03.png
+SHA1-Digest: CWY/KB/AtlMuV2rzUYOomEzqxnc=
+
+Name: resource/drawable-xhdpi/ploating_popup_icon_r2_d.png
+SHA1-Digest: cNpdDtKkpYULxJxXXyAUKaHvSl0=
+
+Name: res/layout/user_preference_screen_normal_black.xml
+SHA1-Digest: giRb3z27wHheSdNtmcJAF6AuPIA=
+
+Name: res/layout/reject_call_with_msg_content_item.xml
+SHA1-Digest: zMajWvqcid4eLuWZ/m+URg0khA4=
+
+Name: res/drawable/call_dial_number_sharp_btn_h.xml
+SHA1-Digest: b9CVLLIpFf1HBrqqj+tiC7WUQHQ=
+
+Name: lib/armeabi/libpolarisexternel3SDK.so
+SHA1-Digest: YbMXWnCP2HlTZwjLm3Eb7wOQsXI=
+
+Name: res/drawable-xxhdpi/ic_action_search.png
+SHA1-Digest: l+GB7pj3uqzrE0cH9y560VkwRIY=
+
+Name: res/layout/incomming_call_widget_covered.xml
+SHA1-Digest: tg7BMU8vU0lB2y0pgjIDLdqkUOs=
+
+Name: AndroidManifest.xml
+SHA1-Digest: xmbglhp6aCR6JFG6+IxvGBSDoUY=
+
+Name: assets/spen_sdk_resource_default/snote_ic_area_center_focus.9.pn
+ g
+SHA1-Digest: uiuUFmjyDtmkQB0Ws2IZTP0IF8Y=
+
+Name: res/drawable-xxhdpi/chat_forward_btn_normal_left.9.png
+SHA1-Digest: gGETwqWjCAkQEW44k3pP09X/mao=
+
+Name: res/drawable-xxhdpi/co_btn_bg_press.9.png
+SHA1-Digest: svdgpDBMKhhdw/fve0CI8R2Zky0=
+
+Name: res/drawable-xxhdpi/share_view_toast_popup_bg_left_press.9.png
+SHA1-Digest: mX7PwXzJl6uHy+x2CoopeRb1Gyw=
+
+Name: res/drawable-xxhdpi/clear_reject_circle_arrow_01.png
+SHA1-Digest: bhe+3jLrZvhdAsqBsJfhvahBMEw=
+
+Name: res/drawable-xxhdpi/call_dial_btn_11.png
+SHA1-Digest: JwaD4Gymm/9QFSaphJxXnspS8kc=
+
+Name: res/drawable-xxhdpi/right_page_normal.png
+SHA1-Digest: BrNWnC5gAeb+rZ9iC05AvPcFe+w=
+
+Name: res/layout/screenshare_filepicker.xml
+SHA1-Digest: YhYkjIOvOhbkfdWNtp43ML5yJTQ=
+
+Name: res/drawable-xxhdpi/call_dial_btn_06.png
+SHA1-Digest: 5vYk/tPm3GMlLroJw2U41+izg9s=
+
+Name: res/drawable-xxhdpi/call_dial_btn_03_press.png
+SHA1-Digest: SN6v6DZNjRsprNFPj7fgR4YYkN8=
+
+Name: res/drawable-xxhdpi/clear_reject_circle_arrow_big_02.png
+SHA1-Digest: +uh4hcwcJH3lbuzEXISGdke31VA=
+
+Name: res/drawable-xxhdpi/invite_buddy_sequence_mini_03.png
+SHA1-Digest: v7f878u/iqYgA4A1BzYZnJSulP8=
+
+Name: res/drawable/screenshare_main_btn_selector.xml
+SHA1-Digest: gA7hbk6oxfvKoZKRSIupndN4NDY=
+
+Name: res/drawable-xxhdpi/call_btn_end_call_focus.png
+SHA1-Digest: D3xldAKyxIKWffXnNALablPOEb4=
+
+Name: res/drawable/call_dial_number_1_btn.xml
+SHA1-Digest: 2CJFFyoncnGVcc/8/Xs/bxdumx4=
+
+Name: resource/drawable-xhdpi/pensetting_icon_pen.png
+SHA1-Digest: 5tYWidyoAgqIX89QYesqT7tqxEI=
+
+Name: res/drawable/call_invite_icon_selector.xml
+SHA1-Digest: 3GLZWqc07BoVnVOebJvE7C5EeKc=
+
+Name: res/drawable-xxhdpi/share_view_popup_icon_remote_control.png
+SHA1-Digest: bWzkjkz1IFaz1mGJKnvT/YRe7qc=
+
+Name: res/drawable-xxhdpi/end_call_btn_light_focus.png
+SHA1-Digest: OwO4Sh+Hmee9nJY7JA5BnihhKSE=
+
+Name: res/layout/reject_call_with_msg_edit.xml
+SHA1-Digest: phvoOFtEAGKDkNHyfZGx3LBkxI4=
+
+Name: res/drawable-xxhdpi/checkbox_normal.png
+SHA1-Digest: 9yx+j8oTbQ/HKKqwhjv0HNGFd8k=
+
+Name: res/drawable-xxhdpi/hold_icon_bluetooth_normal.png
+SHA1-Digest: uAAHaaZS3GuZ/XNd4yq3RvcKGDg=
+
+Name: resource/drawable-xhdpi/snote_tablet_popup_btn_05.png
+SHA1-Digest: sqaR/Sj0sXsZlNmuakvgMiu6+K4=
+
+Name: assets/samm_embeded_soundeffect/pen_click.ogg
+SHA1-Digest: 5JPyw4Xd+1kb4qNu9ibckEjKy7k=
+
+Name: res/drawable/screenshare_penwriting_toolbar_show_selector.xml
+SHA1-Digest: EoVcR6VE/irKraQ356OWiAufP7E=
+
+Name: res/menu/scamera_voice_call_group_menu.xml
+SHA1-Digest: KREYv9In6inTmoZh/90gJkY11dc=
+
+Name: res/drawable-xxhdpi/action_bar_divider_02.png
+SHA1-Digest: EYhK0Wtm7DEyut7YvyrZuq5vHB8=
+
+Name: resource/drawable-xhdpi/icon_popup_delete.png
+SHA1-Digest: oJw9QV3HfMQdCxVsubHS91V55tw=
+
+Name: res/drawable-xxhdpi/clear_accept_circle_small.png
+SHA1-Digest: PlB5i+YN0Z+kEcR2C1Dp/r/GySY=
+
+Name: res/drawable-xxhdpi/co_winset_btn_bg_normal.9.png
+SHA1-Digest: E3Y7Pfm6jWAPtibvvZ9UVm8Zfxw=
+
+Name: res/layout-land/scamera_voice_call_caller_image.xml
+SHA1-Digest: 5Mi7jv9KOersKvR5wKpJdlT1NhQ=
+
+Name: assets/spen_sdk_resource_default/snote_text_icon_underline_press
+ .png
+SHA1-Digest: 3oHJemgFZhcz3FE/mQYMu4hQpr8=
+
+Name: res/drawable-xxhdpi/co_btn_default_focus.9.png
+SHA1-Digest: 6iY/sMbIU5GPpHJGtoCxFJYdai8=
+
+Name: res/layout/data_usage_cycle_dialog.xml
+SHA1-Digest: f3ti7QBmMjdHX64GeGM13oFaspk=
+
+Name: res/drawable-xxhdpi/clear_accept_circle_drag_j.png
+SHA1-Digest: Dl0GjTztXSSA4E4Y9yZuGc9kv7U=
+
+Name: res/drawable-xxhdpi/share_view_tool_show_icon.png
+SHA1-Digest: WhVjmqc/d6kQHYD3InWaqs2+rEk=
+
+Name: res/drawable-xxhdpi/share_view_toast_popup_bg_right_focus.9.png
+SHA1-Digest: R34eW3ahB+dITZrt52g79TQirLg=
+
+Name: res/drawable-xxhdpi/call_img_conference.png
+SHA1-Digest: 8Pb0v+t5/FnWPoaIdd1V+D9ZSL4=
+
+Name: res/drawable-xxhdpi/indicator_voice_talk.png
+SHA1-Digest: 3ar7qvXw1TdQ09jxdvK6UqICLYE=
+
+Name: res/drawable-xxhdpi/call_dial_btn_00_h_press.png
+SHA1-Digest: pRHIkIzYoZZgRXK11+TmHG7UVWA=
+
+Name: res/drawable-xxhdpi/scamera_chatonv_thumbnail_poto.png
+SHA1-Digest: cJ7rni2UBMsLPKQFVLYFw4hPq7Y=
+
+Name: res/drawable-xxhdpi/scamera_back_select.png
+SHA1-Digest: +v9BLZ2TfFFJOEP0zh2iMt90/8M=
+
+Name: assets/animation/MaskImage_THEME_SHOT/categories/hat/hat_2.yuv42
+ 0sp
+SHA1-Digest: DKbkpc6x2wrOvNMPkrBuX4Z4siM=
+
+Name: assets/spen_sdk_resource_default/eraser_handel_480.png
+SHA1-Digest: yGSaC/AsLa+HzJnZ/CPFjzAIbP0=
+
+Name: res/drawable-xxhdpi/translator_recieve_bubble_bg.9.png
+SHA1-Digest: P0Z+13NebVqiQQVynjtvZBWJuJM=
+
+Name: res/drawable-xxhdpi/quickpanel_btn_end.9.png
+SHA1-Digest: 3tB6f16UO9Q0/chHuCQwsRfT0lo=
+
+Name: res/drawable/translator_done_selector.xml
+SHA1-Digest: GNVvNlkWRx1dXSWqb449ldcGhAE=
+
+Name: res/drawable/video_call_share_view_close_selector.xml
+SHA1-Digest: kjJWorM1/CxkYJyC7lBPwPNbrpA=
+
+Name: assets/spen_sdk_resource_default/popup_exit_press_480.png
+SHA1-Digest: CRQBSrJNUdcO4scsoLsHWT2pau8=
+
+Name: res/layout/stresstest.xml
+SHA1-Digest: th5ul1elxmN+dgXX8cyh48dBVhY=
+
+Name: res/drawable-xxhdpi/buddies_profile_btn_focus.9.png
+SHA1-Digest: D421IIzlwIYVliyMy4BjAeA+KFw=
+
+Name: res/drawable-xxhdpi/share_view_toast_popup_bg_left_normal.9.png
+SHA1-Digest: xzCRnQ94QFebG/ismTF477Wba7A=
+
+Name: res/drawable-xxhdpi/share_view_tool_area_left_bg_press.9.png
+SHA1-Digest: Lb4XXP5moQ8Dj3YY+40Dyove7zQ=
+
+Name: res/layout/screenshare_main_screen_share.xml
+SHA1-Digest: OSHsCRPos27AuVoYxyDYZcgbtQQ=
+
+Name: res/drawable/call_btn_text_color_selector.xml
+SHA1-Digest: FASIjbo3IhHZL1jco8cCYdFQZqs=
+
+Name: res/drawable-xxhdpi/call_dialling_ani_03.png
+SHA1-Digest: Xxjt+R4JdWAG+z/WaQ+Sn1yN7hQ=
+
+Name: res/drawable-xxhdpi/chatonv_video_icon_closemenu.png
+SHA1-Digest: r6/ofPxNeF5IS40bqUB+vz/J8ls=
+
+Name: res/drawable-xxhdpi/call_dial_btn_09_press.png
+SHA1-Digest: yBofhOkVhLFfGRokx95iw7asQQ4=
+
+Name: res/drawable-xxhdpi/action_bar_bg_03.9.png
+SHA1-Digest: QpwZkR0ZMs4ckXTXQxCsIUHSoK0=
+
+Name: res/drawable-xxhdpi/call_chatonv_voice_default_img.png
+SHA1-Digest: 2xEcV8T2Sq+UoJaRuOF3tVE9hk8=
+
+Name: res/drawable-xxhdpi/popup_winset_bottom_medium_01.9.png
+SHA1-Digest: rLjOGSuo2+f7cM7X+1ca+edZbw8=
+
+Name: res/drawable-xxhdpi/share_screen_open_land.png
+SHA1-Digest: 8J9tenzc6RiAUlDfR/UYIvBi5xA=
+
+Name: res/layout-land/video_call_theme_glasses.xml
+SHA1-Digest: 2uty2Bjk3vy1x1t6y3jhtKnS4S0=
+
+Name: res/drawable-xxhdpi/left_page_normal.png
+SHA1-Digest: aZ/a4sCI8W7C4JlNovMJcEPk1xA=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_04.png
+SHA1-Digest: QijfQK7N8eQrZPlYQt04PgZkCXg=
+
+Name: res/drawable-xxhdpi/hold_icon_pause_normal.png
+SHA1-Digest: EIPHBjLazt/uVeaB7Y+3j5x81Xw=
+
+Name: res/layout/user_preference_screen_normal_no_next_icon_black.xml
+SHA1-Digest: gkrMnS7nm+kNZRuitzxKV+vZO2s=
+
+Name: res/layout-land/scamera_send_file.xml
+SHA1-Digest: 4SWJ5RMNzcNrVcgMg3UtXbQ5rjY=
+
+Name: res/drawable-xxhdpi/pushpopup_time_arrow_down_focus.png
+SHA1-Digest: WJquAfLeCv+Lsx0f4gFTFwjG6o4=
+
+Name: res/drawable-xxhdpi/call_bg_light.png
+SHA1-Digest: hMxAU0CFz0CbmlXgywqmHgWWU+k=
+
+Name: res/drawable-xxhdpi/actionbar_ic_chaton.png
+SHA1-Digest: wu/NiWRottonOM1X0qB0lklm57Q=
+
+Name: res/drawable-xxhdpi/switch_to_headset.png
+SHA1-Digest: TmS2zf3/4qP8GV1sws4VIjlEddo=
+
+Name: res/drawable-xxhdpi/end_call_btn_light_h.png
+SHA1-Digest: PgfziyXGVDY6r9orBMuFiHmqehE=
+
+Name: res/drawable-xxhdpi/scamera_stat_sys_battery_charge_25.png
+SHA1-Digest: nO+zAoZD/72w+JP/OAEtrmELUHE=
+
+Name: res/drawable/tw_action_bar_show_member_selector.xml
+SHA1-Digest: B1cYbAvbofvjFcV2gVc4Rrj+LsA=
+
+Name: res/drawable-xxhdpi/pushpopup_time_arrow_up.png
+SHA1-Digest: 0Z/nFaZzbG6lqcN0GKaF4gL8WxM=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_bg_focus_left.9
+ .png
+SHA1-Digest: W10VIj+/sGuERLqMqoZWwovD7v4=
+
+Name: res/drawable-xxhdpi/tw_action_bar_icon_check_holo_dark.png
+SHA1-Digest: 1fA7Zo6lgGtGZmmlseKVz57m5CU=
+
+Name: resource/drawable-xhdpi/ploating_popup_text_p.png
+SHA1-Digest: beePBSCjD+jkHjKKXPJybm8G5Jk=
+
+Name: res/layout/setting_data_usage_spinner_dropdown_item.xml
+SHA1-Digest: lOEVrvJQvkf5KbDVK6/VihGVYUc=
+
+Name: res/drawable-xxhdpi/call_dial_btn_06_press.png
+SHA1-Digest: 4Z2xbGan/F7rESKKTDguN9YQfEk=
+
+Name: res/drawable-xxhdpi/call_dial_btn_10_h.png
+SHA1-Digest: dnBJ0ubD0ozrzCyg9+q+f58GVCM=
+
+Name: res/drawable/call_quick_panel_normal_btn_selector.xml
+SHA1-Digest: RK+K04ykjksQSLhE3grwo+XQlcE=
+
+Name: res/drawable-xxhdpi/call_call_icon_dim_h.png
+SHA1-Digest: J9A09AIoPi0MIIiseWMQZY33zkM=
+
+Name: res/drawable-xxhdpi/scamera_tw_scrubber_control_holo.png
+SHA1-Digest: 81G6UmpgaVjutUDQ6TZiE2OjZz4=
+
+Name: res/layout/screenshare_pen_writing_canvas.xml
+SHA1-Digest: XWZR8j811cZ+C+5boV2+g1caJS0=
+
+Name: resource/drawable-xhdpi/snote_popup_btn_04_hover.png
+SHA1-Digest: qOEyYwvtW901y5FK0aPUi3r1i9Y=
+
+Name: res/drawable-xxhdpi/translator_languages_icon.png
+SHA1-Digest: gSWQBwABwU5gFfv8mTKqwvDEZw8=
+
+Name: res/drawable-xxhdpi/btn_radio_off_dim.png
+SHA1-Digest: VsFEvhX/CMYPjH3I9WL3EExpNL0=
+
+Name: res/drawable-xxhdpi/input_line_select.9.png
+SHA1-Digest: lNFsUch9zU+p8kJYCedlbBFC8TQ=
+
+Name: res/drawable/option_menu_bg_selector.xml
+SHA1-Digest: GA+DXDxzBVGsAerl9Qiz7wIr1GQ=
+
+Name: res/layout/scamera_voice_call.xml
+SHA1-Digest: 9Ra+/phXyVg7LjCRaSuoM43/+PU=
+
+Name: res/drawable/call_play_icon_selector.xml
+SHA1-Digest: RyDSmTbeoVfMduTsQpz03i6HxVY=
+
+Name: res/layout/data_usage_black.xml
+SHA1-Digest: +9xTKqIiJiSpOYUpvIBEm+7MzdE=
+
+Name: res/drawable-xxhdpi/chat_translator_icon_small.png
+SHA1-Digest: W0BnvywYTVjuDtGVX6ijzsUMeaI=
+
+Name: res/drawable-xxhdpi/buddies_missed_call.png
+SHA1-Digest: 8RnyQvwNDRZmVc2KBx/TnlU22l8=
+
+Name: res/drawable/scamera_volume_selector.xml
+SHA1-Digest: qhe5dQuRR5M1H1JG8l40GLaE92I=
+
+Name: res/drawable-xxhdpi/list_button_send_press.9.png
+SHA1-Digest: 42YSFZffNftA6ZQvE4h64vM6I1Q=
+
+Name: res/drawable-xxhdpi/hold_icon_pause_dim.png
+SHA1-Digest: CNL4TS4T/mObX/lJmW0Y9519JnY=
+
+Name: res/drawable-xxhdpi/pushpopup_time_arrow_up_press.png
+SHA1-Digest: 5IJ2jlfA9rnXuID4HS+GxlFzpTM=
+
+Name: res/drawable-xxhdpi/tw_action_item_background_pressed_holo_light
+ .9.png
+SHA1-Digest: 0yDmayOvpAFu6/fcBVEuiVZX1Cc=
+
+Name: res/drawable/call_video_btn_ani_last_selector.xml
+SHA1-Digest: i84pmeyx3ZanpZPo3eC9QelJLaM=
+
+Name: res/drawable-xxhdpi/call_dial_btn_03_h_press.png
+SHA1-Digest: GyXqixhHzrE2++sgMV93iYISrSU=
+
+Name: resource/drawable-xhdpi/pensetting_icon_pencil_unselect.png
+SHA1-Digest: OqU3nfluqucboaP0pZqEpPOILYs=
+
+Name: res/drawable/call_translator_change_language_selector.xml
+SHA1-Digest: h9w4tL9B7biBQMde6m19n6OzaTU=
+
+Name: lib/armeabi/libSamsungAudioEngine_JBP_4_3.so
+SHA1-Digest: 40aCp7U4MIBcRWHWGa+EzYK26pw=
+
+Name: res/drawable-xxhdpi/glasses_03.png
+SHA1-Digest: 3ny+FAm3BS9Wg06T9d5b/JaU7D0=
+
+Name: res/drawable-xxhdpi/vt_end_call_btn_press_h.png
+SHA1-Digest: NRucXIuLbvIJ2/NLPca7MC37Lys=
+
+Name: res/drawable-xxhdpi/tw_action_bar_cartoon_off.png
+SHA1-Digest: xUn295TO/0rDNGHbG1SiI1sqZY0=
+
+Name: resource/drawable-xhdpi/snote_popup_scroll_handle_f.png
+SHA1-Digest: x+Wc94czMC/4phgtkbyoB4xqXkg=
+
+Name: res/drawable-xxhdpi/end_shareview_focus.png
+SHA1-Digest: bYGzKQ+MCrwczWvaDqNmhnnYl6Y=
+
+Name: res/drawable/call_show_me_selector.xml
+SHA1-Digest: VNjm3uiY30ydBwcaPXORs28kfO8=
+
+Name: res/drawable-xxhdpi/share_view_popup_icon_back_dim.png
+SHA1-Digest: jtLzP42OaTb/Oh+Xnxi1QgzSt8g=
+
+Name: res/drawable-xxhdpi/call_call_icon_h.png
+SHA1-Digest: yizEljI+MwlWkF3+J0Lz4/bOqRE=
+
+Name: res/drawable-xxhdpi/co_btn_default_pressed.9.png
+SHA1-Digest: a51HwRuoH31gKWY3PYJk8Ypgt+E=
+
+Name: res/drawable-xxhdpi/tw_action_bar_dual_camera_off_dim.png
+SHA1-Digest: c6mV8DN+C05WE6n/Zw58Tku3PoE=
+
+Name: res/drawable-xxhdpi/scamera_stat_sys_battery_charge_70.png
+SHA1-Digest: EzXKeL/kRfgeBJ+2wl/lVtJqgdo=
+
+Name: res/drawable-xxhdpi/vt_call_popup_icon_enable_emoti_view_dim.png
+SHA1-Digest: ILFgmR4Uj7xG5ANo/Ar3Rwpd67s=
+
+Name: resource/drawable-xhdpi/scrollbar_handle_vertical.9.png
+SHA1-Digest: fX09sJduYMheEZ+uhIz63K19jPI=
+
+Name: res/drawable/translator_change_language_selector.xml
+SHA1-Digest: KL34ov+xUbfn4BoU49bRcz5QZ5M=
+
+Name: res/drawable-xxhdpi/invite_buddy_host.png
+SHA1-Digest: Wu+NuiyM/vIarivZt1dfIVHNjcQ=
+
+Name: res/layout/action_bar_two_text_btn.xml
+SHA1-Digest: j/0XxUDi51GyqvMCODisA4CXJT0=
+
+Name: res/drawable/call_dial_number_3_btn.xml
+SHA1-Digest: vjtgDOc5DUK3GGRi5ZtHLEaNllE=
+
+Name: res/drawable/action_bar_title_text_color_selector.xml
+SHA1-Digest: tyzsoIHgT+sqOz15PNeVDHuO+GI=
+
+Name: res/layout/screenshare_main_popup_menu.xml
+SHA1-Digest: 5Ugu251yLprRU73pouwuZKlB1Gw=
+
+Name: res/drawable-xxhdpi/share_camera.png
+SHA1-Digest: JfskJS+6gTwkhjDuyw/692zvzhg=
+
+Name: res/drawable/scamera_volume_progress.xml
+SHA1-Digest: Ln+qEqb2rDldd+u0hBILib3bpI8=
+
+Name: res/drawable-xxhdpi/call_during_btn_speaker_off.png
+SHA1-Digest: LtrUIfWUpjzE+wgdzCvMJCCor6Q=
+
+Name: assets/samm_embeded_soundeffect/crayon_draw.ogg
+SHA1-Digest: H4O94zCUdFij22BF7zK+KkZEhVQ=
+
+Name: res/drawable-xxhdpi/scamera_stat_sys_battery_0.png
+SHA1-Digest: /rrw1P2si78pDoUBCpQl6a+HVQk=
+
+Name: resource/drawable-xhdpi/snote_title_right_tablet.9.png
+SHA1-Digest: /NNPY5FAXrk6pgPjxj90lnupAmY=
+
+Name: res/drawable-xxhdpi/clear_accept_incomingcall_endcall.png
+SHA1-Digest: NCYT4E/MU3LJOaeqe40RNEb6O1A=
+
+Name: res/drawable-xxhdpi/call_dial_btn_05_press.png
+SHA1-Digest: KjytR7EDG2cEIKaCdrn+uxnvBdU=
+
+Name: res/drawable/tw_action_bar_buddy_list_selector.xml
+SHA1-Digest: ZknJ7PqfzvBBONG84olsHeXcBbM=
+
+Name: res/drawable-xxhdpi/call_incommingcall_bg_h.png
+SHA1-Digest: eDMTe6zBWVI5oLK7JWDrQ21GH30=
+
+Name: lib/armeabi/libdmcFaceEngineWithGaze.so
+SHA1-Digest: Gkl1WK8rL+FznL4uFJmVA+JxCN8=
+
+Name: assets/animation/MaskImage_THEME_SHOT/categories/hat/hat_3.yuv42
+ 0sp
+SHA1-Digest: kLLkVYaw85DcBYZhw9tkU4eSECo=
+
+Name: res/drawable-xxhdpi/vt_call_btn_focus.png
+SHA1-Digest: IOEUgtIsynzq35getpOqgJy+W2I=
+
+Name: res/drawable/input_filed_selector.xml
+SHA1-Digest: tD7pkG+H3ij4HeADyPaFTmxpJ7g=
+
+Name: res/drawable-xxhdpi/share_incomming_sequence_04.png
+SHA1-Digest: Vxkr9zxxfqLVF5m5kWuSvMJb7DY=
+
+Name: res/drawable-xxhdpi/vt_switch_camera_icon_press.png
+SHA1-Digest: aK2viDArqB66grv3mD5EryWWbiA=
+
+Name: resource/drawable-xhdpi/ploating_popup_center_p.png
+SHA1-Digest: f7W4n0nlG4aC7tsXA2YWOcaciFk=
+
+Name: resource/drawable-xhdpi/snote_tablet_mypen.png
+SHA1-Digest: oNw4apNo30MwxrZlB6VxCFptWas=
+
+Name: res/layout/action_bar_back_with_progress_bar.xml
+SHA1-Digest: TnLw2HF/TellzWqLnDHGMmDsdy8=
+
+Name: res/layout/pen_writing_view_layout3.xml
+SHA1-Digest: DwlaU8aLAp+Qvfq042SlWLUGZmc=
+
+Name: resource/drawable-xhdpi/snote_title_right.9.png
+SHA1-Digest: mfL2hdBHz8Pxs7M5TrBdHonx5lo=
+
+Name: assets/spen_sdk_resource_default/expand_icon_01.png
+SHA1-Digest: JBBXkhWJRsC6SnwUxtDAk5oGBHU=
+
+Name: res/drawable-xxhdpi/pulldown_ic_select.9.png
+SHA1-Digest: 5vV50OZjYyT+BoSEtfIp19T6mH8=
+
+Name: res/drawable-xxhdpi/scamera_stat_sys_battery_20.png
+SHA1-Digest: kXYwn2dqvFy3amVOaATCMWty1ZU=
+
+Name: resource/drawable-xhdpi/ploating_popup_icon_delete_d.png
+SHA1-Digest: 8fzeXsJfFFSiQvoflvHK8mPMFLE=
+
+Name: assets/spen_sdk_resource_default/snote_dropdown.9.png
+SHA1-Digest: RTEYB6BUEDkHWUhy3O05VWtBXFQ=
+
+Name: res/drawable-xxhdpi/driving_mode_reject_icon.png
+SHA1-Digest: MmL+7xdGGS4WPJPtebnPDA5rS34=
+
+Name: res/drawable-xxhdpi/translator_btn_divider_line.9.png
+SHA1-Digest: t8XHK7OlF688rGngaajRMDdSpMk=
+
+Name: res/drawable-xxhdpi/progress_popup_bg.9.png
+SHA1-Digest: usfLxqbacBKwXMZM5c7C4qnu3g8=
+
+Name: res/drawable/scamera_animation_sending_file.xml
+SHA1-Digest: 0Q2R5a3pMAe8P8v4lBcop+RlPIc=
+
+Name: res/drawable-xxhdpi/chat_translator_icon.png
+SHA1-Digest: NqLhMybJjn1++FVdrJ7bnFChjCk=
+
+Name: res/drawable-xxhdpi/emotional_1st_hat.png
+SHA1-Digest: dznz96p+iRKeEYxBdnD8RF7qBnU=
+
+Name: res/layout/call_invite_buddy_wait_bar.xml
+SHA1-Digest: mnP538OLo2NDeE/LIjhuF1Qp7vc=
+
+Name: res/layout/screenshare_mspinnertext.xml
+SHA1-Digest: NV1/5pvNzDPSBV+9afjgJXecGfY=
+
+Name: res/drawable-xxhdpi/chat_translator_top_btn_speak_off.png
+SHA1-Digest: V94mL5Jqd+/h7FP9E1pPgXuK7hY=
+
+Name: res/drawable-xxhdpi/translator_speech_icon_press.png
+SHA1-Digest: WDB1F1fUQUUDXYwynXfUzlmIuHc=
+
+Name: resource/drawable-xhdpi/snote_pen_circle_bg.png
+SHA1-Digest: WKDCM0pLCcIO5J7f6HH+8B6OGfg=
+
+Name: res/drawable-xxhdpi/share_loading_icon.png
+SHA1-Digest: w2R1ItFg5GtREVRwRjy/eJ+z5Ks=
+
+Name: res/layout-land/scamera_video_call.xml
+SHA1-Digest: 53m8yhuG6oqki1sgLEFCpjggscw=
+
+Name: res/drawable-xxhdpi/share_camera_dim.png
+SHA1-Digest: ozdM0cb3mNxTn5JmjgiIYL08cFg=
+
+Name: assets/samm_embeded_soundeffect/text_type_char1.ogg
+SHA1-Digest: qps5PtdUrPLdkgCQI4QNhr/TE8Q=
+
+Name: res/drawable-xxhdpi/v_title_smail_icon.png
+SHA1-Digest: mIkJz4OzQDJ3H/nPQWAhexhII6o=
+
+Name: res/drawable-xxhdpi/scamera_stat_sys_battery_100.png
+SHA1-Digest: agVapsAhIfou6U6DwfUPiDpsfR4=
+
+Name: res/drawable/call_dial_number_2_btn_h.xml
+SHA1-Digest: XW5qOMsxZ/hTTECCqM7ZCHutICw=
+
+Name: res/drawable-xxhdpi/call_img_conference_h.png
+SHA1-Digest: 4laDMhEdbTWqqqPnio1ACSiyVBw=
+
+Name: res/layout/video_call_theme_shot.xml
+SHA1-Digest: uvvcnpaqn1JY/X1VNRywfMP5k7w=
+
+Name: res/drawable-xxhdpi/scamera_arrowkey02.png
+SHA1-Digest: 6zw6NNS5HUZMLHx/HPATOx/uwOQ=
+
+Name: res/drawable-xxhdpi/vt_icon_record_start_02.png
+SHA1-Digest: znmE6xG/7h2KeByrgYAKrKqiz+Y=
+
+Name: res/menu/setting_rejectmsg_option.xml
+SHA1-Digest: TVQCO73nZEo48mFK4DtkdHFsWDc=
+
+Name: res/drawable-xxhdpi/glasses_01.png
+SHA1-Digest: EB9N8nISnFi/i9mqCNtfQcju4MU=
+
+Name: res/drawable-xxhdpi/scamera_camera_home_press.png
+SHA1-Digest: oL4N2nJVahhnua4PYGUPItVgYZc=
+
+Name: res/drawable-xxhdpi/party_01.png
+SHA1-Digest: lFQFX6Kep5q5FDEu+5MazSLeCQw=
+
+Name: assets/spen_sdk_resource_default/snote_btn_pressed_holo_dark.9.p
+ ng
+SHA1-Digest: 29zBdn4G1p7KGAoZwLtO3A5AHcQ=
+
+Name: res/drawable-xxhdpi/switch_to_headset_dim.png
+SHA1-Digest: +yjp92Dsrziw6lPYeT2aMgY4OB8=
+
+Name: res/drawable/btn_radio.xml
+SHA1-Digest: qtjqkWcTB/K/L/RfnUcY2Zxu9ow=
+
+Name: res/drawable-xxhdpi/call_dial_btn_04.png
+SHA1-Digest: FOO/HD+LHzDY13ULq4WEF9RI5tU=
+
+Name: res/drawable-xxhdpi/clear_during_speaker.png
+SHA1-Digest: fMA3rNqbR16WGzX2m2Mt245QOaQ=
+
+Name: res/drawable-xxhdpi/mustache_03.png
+SHA1-Digest: CuuG79b+6ygboBzXydF+mRksATo=
+
+Name: res/drawable-xxhdpi/share_view_tool_icon_redo_dim.png
+SHA1-Digest: vxpwxI73sJLNFBhRuiRpVgwyT8k=
+
+Name: assets/spen_sdk_resource_default/icon_popup_delete.png
+SHA1-Digest: F6N6Y1dAU1BkgVTgLlBltM3v9wg=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_bg_press_center
+ .9.png
+SHA1-Digest: QgPlA9jgfbi0Rtuh8GRtsJTTJ4Q=
+
+Name: res/layout-land/voice_call_end_btn.xml
+SHA1-Digest: wFj6CM5jnnfxWC7db95zARIt5RE=
+
+Name: res/layout-land/video_call_record.xml
+SHA1-Digest: iSdSV73JDfaoexT0ryQGbHxHKu8=
+
+Name: assets/spen_sdk_resource_default/pensetting_icon_pencil.png
+SHA1-Digest: u3A5kMGsB+J3+56R2gpSsZdAbs8=
+
+Name: res/menu/voice_call_menu_with_sharescreen.xml
+SHA1-Digest: pA0maLxz4MDgz4QOX/3yiV0F3kQ=
+
+Name: res/drawable-xxhdpi/vt_hideme_bg_still_02.png
+SHA1-Digest: h3I6CTEoAmk0sTwNONHpEwOkHlc=
+
+Name: res/drawable-xxhdpi/co_attach_file_word.png
+SHA1-Digest: 6XZRipH9tCBaLMYhzNBxRpVLyXI=
+
+Name: res/drawable-xxhdpi/scamera_camera_guick_settings_line.png
+SHA1-Digest: U5itw1VZvR8HAiGOAUia6hFk30U=
+
+Name: resource/drawable-xhdpi/snote_slider_circle.png
+SHA1-Digest: EpZvcIdpBg7NU1M08d2i4ueEkLo=
+
+Name: res/layout/voice_call_member.xml
+SHA1-Digest: 3fKx2MC55h93ld/bYFmjhi0HtNQ=
+
+Name: res/drawable-xxhdpi/clear_accept_circle_arrow_big_01.png
+SHA1-Digest: c+opwqqnLRNsZmFMnxLBJ9Kl+h4=
+
+Name: res/drawable/call_hold_icon_selector.xml
+SHA1-Digest: XxWi1DykwfWAEcHIDvoR/M7XEN8=
+
+Name: assets/spen_sdk_resource_default/ploating_popup_icon_r1_d.png
+SHA1-Digest: cXkmMULGTkrFk3xsRzgQp6i/hVA=
+
+Name: res/drawable/scamera_arrowkey02_selector.xml
+SHA1-Digest: lGqlK/8Q6xkJ+m7mWgKi2Y8IE5A=
+
+Name: res/drawable/input_line_selector.xml
+SHA1-Digest: sm2eAPdu1a4+Z4Upl6vXt7e8Sb4=
+
+Name: res/drawable-xxhdpi/actionbar_ic_delete.png
+SHA1-Digest: SpT/T9jCbaeSB/0IIITHPBTB1oo=
+
+Name: resource/drawable-xhdpi/snote_btn_normal_holo_dark.9.png
+SHA1-Digest: 5j9CiVgkWdDan8FoxwdTSyBhIrE=
+
+Name: res/drawable-xxhdpi/scamera_stat_sys_battery_charge_0.png
+SHA1-Digest: m5keGr/NbKBle+VXYi+IP8UowpA=
+
+Name: res/layout/video_call.xml
+SHA1-Digest: bPXcElBaUNa6mDmTdIuBDIpe6xE=
+
+Name: res/drawable-xxhdpi/scamera_tw_volume_secondary_bg_holo.9.png
+SHA1-Digest: ARMydZBIKsyAnq3/5ax+znNp14Q=
+
+Name: res/drawable-xxhdpi/co_attach_file_pdf.png
+SHA1-Digest: 1ylwzVyKg0DOaqUOHwtlcg2k/Ao=
+
+Name: res/drawable-xxhdpi/end_call_voip_chat_icon.png
+SHA1-Digest: 5qqqT2W39ygLTg0l8mjUfqXAbYI=
+
+Name: res/drawable-xxhdpi/call_btn_light_press.png
+SHA1-Digest: uco4RHWQn0d7n0pgW21bN/+VeWs=
+
+Name: res/drawable/sub_title_bg_selector.xml
+SHA1-Digest: NQvY3HLc7DggvPrDHpu1vGTyhDU=
+
+Name: res/drawable-xxhdpi/share_view_tool_area_center_bg_focus.9.png
+SHA1-Digest: Wz+jLPU2Y7XamNL03lh5kegMK+k=
+
+Name: res/drawable-xxhdpi/clear_accept_circle_big_02_j.png
+SHA1-Digest: YH36cTuGJJoPgxaqr38KNlV3qt8=
+
+Name: res/drawable-xxhdpi/scamera_stat_sys_battery_charge_10.png
+SHA1-Digest: JKf95vgvstRfLNUtp45tX3ZDKBk=
+
+Name: res/layout/voice_call_quick_panel.xml
+SHA1-Digest: zGz+6yywMcRNOPdH7Sqz+lIGF/4=
+
+Name: assets/spen_sdk_resource_default/ploating_popup_text_n.png
+SHA1-Digest: M1iLaQ3BVBDhfYbTSKbt6gVjIlk=
+
+Name: res/layout/reject_call_with_msg_sliding_drawer.xml
+SHA1-Digest: DuuOicvGU/sUFKGMch3f2Al2v+4=
+
+Name: res/drawable-xxhdpi/call_dial_btn_02_h_press.png
+SHA1-Digest: BYKhucovU8CknsZ9LP5jH9IdGDc=
+
+Name: res/drawable/vt_call_btn_end_call_selector.xml
+SHA1-Digest: ncoAVY+N/IVzfBDJ3lBMz+/IS/c=
+
+Name: res/drawable-xxhdpi/vt_icon_record_start_02_h.png
+SHA1-Digest: Zu4bNCYiPq0N5Y6wnOdHk6NFc4E=
+
+Name: res/drawable-xxhdpi/clear_reject_circle_big_02_j.png
+SHA1-Digest: VqcfyjEz8jBaV6cg1KAP+Xqu2uY=
+
+Name: res/drawable/translator_language_image_selector.xml
+SHA1-Digest: kD37shxMw/lvDoDvbaRTKI8PKW4=
+
+Name: res/drawable-xxhdpi/clear_reject_circle_arrow_03.png
+SHA1-Digest: wSh4rGYsYDiqG+vemFjm9WTa7U4=
+
+Name: res/layout/video_call_share_view.xml
+SHA1-Digest: 55YHQrKAbmNPp+BGRv6FkaeFLhI=
+
+Name: res/drawable/translator_tts_off_selector.xml
+SHA1-Digest: cdzjefmdZ4SSIHjtkwXAs0ychMM=
+
+Name: res/drawable-xxhdpi/action_bar_divider_01.png
+SHA1-Digest: Yd6PHvk0ZBk1kwEUte0M5qz6cDc=
+
+Name: res/drawable-xxhdpi/hold_icon_bluetooth_dim.png
+SHA1-Digest: snqzpcR2bIshulxllp7PV/Jzo8w=
+
+Name: resource/drawable-xhdpi/bt_text_move.png
+SHA1-Digest: uEV4skHEponEEPucRNa0EX3zrAQ=
+
+Name: res/drawable-xxhdpi/scamera_showme_select.png
+SHA1-Digest: VnVNETSAotg4GmcQYmtYyYi9mqQ=
+
+Name: res/drawable-xxhdpi/popup_bottom_btn_focus.9.png
+SHA1-Digest: WSow2z1oRyfPtd5Vy1E206suYCw=
+
+Name: res/drawable-xxhdpi/list_incoming_reject_handle_01_focus_h.png
+SHA1-Digest: pTVuUdh3o97ogcRegGeqR5bnmOQ=
+
+Name: res/drawable-xxhdpi/video_capture_010.png
+SHA1-Digest: aM0SO+BaL0VzcFNULx7O6ELnroY=
+
+Name: resource/drawable-xhdpi/snote_dropdown_focus.9.png
+SHA1-Digest: 4i8lnPZhrD4lVB6hGjFPw9eL5TI=
+
+Name: res/drawable-xxhdpi/call_dial_btn_04_h_press.png
+SHA1-Digest: yBeWrcX6Ie4YOHGsNxVgVRmoXWM=
+
+Name: res/drawable/call_dial_number_7_btn.xml
+SHA1-Digest: q63/2rNTrSm3F2NV5zbKTHPRITQ=
+
+Name: res/drawable-xxhdpi/call_message_icon_press.png
+SHA1-Digest: 1D5EjesIyEhNkOsHlJ0chCmHX6E=
+
+Name: assets/spen_sdk_resource_default/snote_popup_btn_01.png
+SHA1-Digest: lfzK986n7LgPYeTjZ+YnA6AXVXU=
+
+Name: resource/drawable-xhdpi/snote_add_press.png
+SHA1-Digest: J9+3/uejuMb07dsMzwREWjt/8V0=
+
+Name: res/xml/nationalcodelist.xml
+SHA1-Digest: pZBJ4GfOy9xJ0R/KslfLZRNZnDs=
+
+Name: res/drawable-xxhdpi/share_view_toast_popup_btn_bg.9.png
+SHA1-Digest: dXslZ4OCIv1ybM1e4aSlOhlbiIY=
+
+Name: res/drawable-xxhdpi/call_img_unknown_h.png
+SHA1-Digest: VwUFTp0cjZA12ArT1grtDCBzA+M=
+
+Name: res/drawable/reject_call_selector_h.xml
+SHA1-Digest: 4wKuoq/HOEN+i22KRG0I7gBhuvg=
+
+Name: res/drawable-xxhdpi/vt_icon_record_start_01_h.png
+SHA1-Digest: VFH0mISigcng318BN8qqfiPk7f0=
+
+Name: res/drawable-xxhdpi/call_during_btn_mute_on.png
+SHA1-Digest: Mn3qYEO/R9j7CHgQl+NCgvIgzLA=
+
+Name: res/layout/video_call_member.xml
+SHA1-Digest: y6EdHKkE1b9Vf110+M+2/0cO3YY=
+
+Name: res/layout/pen_writing_view3.xml
+SHA1-Digest: jMEBb8Y1xQLr7VLENV9XXvKCsho=
+
+Name: res/drawable-xxhdpi/call_dial_btn_00_press.png
+SHA1-Digest: lcwg9seetmcD2kU/im5k2ArTDco=
+
+Name: res/drawable-xxhdpi/clear_ic_chaton_video.png
+SHA1-Digest: YecTN1iZiinmIOrq5qsEzXaHc6c=
+
+Name: resource/drawable-xhdpi/snote_type_preview_bg_00.png
+SHA1-Digest: OkeJkwurjqP9KXYWzSRvUUw0F2s=
+
+Name: res/layout/voice_call_caller_image.xml
+SHA1-Digest: MaW5O0xj6rZtqE1ti+c1U1mrl3o=
+
+Name: res/drawable-xxhdpi/call_dial_btn_h_focus.png
+SHA1-Digest: TeDWWXrRktYxIuh+YI8E4m1zxnk=
+
+Name: res/drawable-hdpi/voip_mute_icon_press.png
+SHA1-Digest: z0zWFCxrPEjVh3jc/vWiem2Gf/Q=
+
+Name: res/xml/link_with_chaton_call_setting_black.xml
+SHA1-Digest: cTtWLP6LZZ324mbWZOwFUatXzy4=
+
+Name: res/layout-land/video_call_theme_shot.xml
+SHA1-Digest: 1Y6Q6snfP36hTGp+cQ6MV9JyGKA=
+
+Name: res/drawable-xxhdpi/clear_accept_circle_arrow_big_02.png
+SHA1-Digest: QMLZsTXAI2hKFqX9qSjW2f1y288=
+
+Name: assets/animation/MaskImage_VT_ANIMATION/expression/surprise/surp
+ rise.yuv420sp
+SHA1-Digest: EfNh1ioW8fwIyk2k/WeOjBveoYE=
+
+Name: res/drawable-xxhdpi/ams_popup_btn_default_normal_disable.9.png
+SHA1-Digest: N5DoLvkCno3aWU4qjHOsQ+KyiPs=
+
+Name: assets/facedata/model_M_10.bin
+SHA1-Digest: uJFTb4FXTlEQs9jDCAx5pKi1hTY=
+
+Name: res/drawable-xxhdpi/clear_accept_circle_big_01.png
+SHA1-Digest: 1/0/cFqz+m3qQffUmAwPOKEc1s4=
+
+Name: res/layout-land/video_call_theme_mustache.xml
+SHA1-Digest: xLPRiQfCzQgDxxTVOfEiBws3dSM=
+
+Name: resource/drawable-xhdpi/snote_text_icon_italic_press.png
+SHA1-Digest: mYb/i8NOw7R37doQPmL4wennuFM=
+
+Name: resource/drawable-xhdpi/snote_title_button_cancle.png
+SHA1-Digest: +6MSlEQgG3dqdVtSl9Y+TWC3f/0=
+
+Name: res/drawable-xxhdpi/clear_accept_incomingcall_reject_j.png
+SHA1-Digest: ZuHUSSLY7WJ9PaiXDrSAChQI9S0=
+
+Name: res/drawable-xxhdpi/driving_mode_answer_icon_h.png
+SHA1-Digest: oGJC3subXYulFuJoWJCYRV1nnO8=
+
+Name: res/layout/video_call_start_ui.xml
+SHA1-Digest: /6TLwrM0NkebiWqtn2SFrsOyCbs=
+
+Name: res/drawable-xxhdpi/chat_translator_top_btn_language_press.png
+SHA1-Digest: Z+klj1KPLG1ZczqmycnFohaUp1c=
+
+Name: res/drawable-xxhdpi/actionbar_btn_bg_pressed.9.png
+SHA1-Digest: 76rKwMw7POV+qWqqL6p7bIfwcFU=
+
+Name: res/drawable-xxhdpi/call_dial_btn_02_press.png
+SHA1-Digest: fiHgWIGxyzlbR7RBXPuWlmaF0a4=
+
+Name: res/drawable-xxhdpi/quick_panel_btn_mini_call.9.png
+SHA1-Digest: kQ9NUosEmvJeP5QF7vZqOM5LBZY=
+
+Name: assets/spen_sdk_resource_default/snote_type_01.png
+SHA1-Digest: rpDaiw1v6YkejGSofrehemq3UsM=
+
+Name: res/drawable-xxhdpi/voip_mute_icon_dim.png
+SHA1-Digest: Z8Fx0ZLTwyI79GftDV1Dwn/Un30=
+
+Name: res/layout/live_screen_share_incoming.xml
+SHA1-Digest: QPyPyIMKjWP8u+6YyysoqDVe5cQ=
+
+Name: res/drawable-xxhdpi/call_dial_btn_08_h_press.png
+SHA1-Digest: xoxl5kS2O9Dj3SvZi55uQicTnDQ=
+
+Name: res/drawable-xxhdpi/call_during_btn_mute_on_press.png
+SHA1-Digest: uORenCBWIbA8sc+PN2MIxZ5LGRQ=
+
+Name: lib/armeabi/libSamsungAudioEngine_SDK.so
+SHA1-Digest: ibh8BNy3K1QME1U4GhNM2kY0ilc=
+
+Name: res/drawable-xxhdpi/vt_call_popup_fun_icon_bg_press.png
+SHA1-Digest: FcXfNUBlG1N02e1O/QPE6/7arZU=
+
+Name: res/drawable-xxhdpi/chat_translator_handler.png
+SHA1-Digest: ySqYkACfx4aTaTQXHnY8zV3vjew=
+
+Name: assets/animation/MaskImage_VT_ANIMATION/expression/happy/happy.y
+ uv420sp
+SHA1-Digest: 1OcZXGM5/Q4TQ5UAfhjnM2dTltE=
+
+Name: res/drawable-xxhdpi/chatonv_video_icon_openmenu.png
+SHA1-Digest: w8ZfE0z72hvIJNIh2rq7KkroRes=
+
+Name: assets/spen_sdk_resource_default/snote_text_left.png
+SHA1-Digest: 9gekdv9M9jLODWu8Vdo/SdEE44c=
+
+Name: res/drawable-xxhdpi/shareview_btn_fullscreen_press.png
+SHA1-Digest: gXvzQhFYaoOw3QAN9Z4fKNs4nvM=
+
+Name: res/drawable-xxhdpi/scamera_chatonv_popup_button.9.png
+SHA1-Digest: k0qWCGkm2tvVCzspcPKGT1gkEE0=
+
+Name: res/layout/voice_call_translator_content_guest_item.xml
+SHA1-Digest: LXomiNBivUiDdA6BrBc5rlYo/Gg=
+
+Name: res/layout/video_call_theme_glasses.xml
+SHA1-Digest: 3gE8/EGtnSszpFfsC9BM7PZcVh0=
+
+Name: res/drawable-xxhdpi/share_view_popup_icon_home.png
+SHA1-Digest: uwx36GRosyeBxPlsIkMl19P27wc=
+
+Name: res/drawable-xxhdpi/scamera_chatonv_thumbnail_bg.png
+SHA1-Digest: L8dEyTu6WngepRC+Q/TRuJU55q8=
+
+Name: res/drawable-xxhdpi/check_focus.png
+SHA1-Digest: Qk2rLicHHnKr+hLyFrhTOJ0krAw=
+
+Name: res/drawable/action_bar_btn_selector.xml
+SHA1-Digest: nTyS6RaSkIot8O/wq9sbfe22HBE=
+
+Name: res/layout/voice_call_translator_host_duration_item.xml
+SHA1-Digest: NfdWsyABw0qFAosT0rHVIlxwqsA=
+
+Name: res/drawable/translator_hold_off_image_selector.xml
+SHA1-Digest: kzSpV2afuLdRAlAw5Am1gIxhERw=
+
+Name: res/drawable/button_show_members_selector.xml
+SHA1-Digest: BjsylQ27KC5Zt/GsuWMmuelprNk=
+
+Name: res/drawable-xxhdpi/s_vt_switch_camera_icon_press.png
+SHA1-Digest: iCQVGCJkORSKkX9L18f3nkFyFoI=
+
+Name: res/drawable-xxhdpi/call_message_icon_h.png
+SHA1-Digest: 6du2O2B6YGdKTk3vJfJqRRKSCH8=
+
+Name: res/drawable-xxhdpi/clear_accept_incomingcall_accept.png
+SHA1-Digest: 14RISIiOFNvS6TAL+OR201BNfi0=
+
+Name: res/drawable-xxhdpi/vt_call_btn_press_h.png
+SHA1-Digest: ojVG+6QiebMVQkl4joccsbj1AK0=
+
+Name: res/layout/translator_spinner_item.xml
+SHA1-Digest: KkJ6q0WQQPGcL5vF6rr5mLklP90=
+
+Name: res/drawable-xxhdpi/chaton_dropdown.9.png
+SHA1-Digest: L4d4xZJRRgv+FEpbtwBC7ZTYYiI=
+
+Name: res/drawable-xxhdpi/voip_vt_call_icon.png
+SHA1-Digest: EedApEF/C5c+NeJZhP0ic/9SL9g=
+
+Name: res/drawable-xxhdpi/action_bar_icon_press.png
+SHA1-Digest: mUVI7oddP4Nk4Cd2UgAXjXaLxPE=
+
+Name: res/layout/ended_call_clear_cover_big.xml
+SHA1-Digest: 288mB4HQHWcOA5ZyakQgGKVk89U=
+
+Name: resource/drawable-xhdpi/pensetting_icon_pen_unselect.png
+SHA1-Digest: XrW2Bf4XjhshKJ9IvAQhBwXLGYs=
+
+Name: res/layout/retry_call_background.xml
+SHA1-Digest: 6gTwlsN4Mz8HCkVlYSK+WBac220=
+
+Name: resource/drawable-xhdpi/snote_popup_btn_05.png
+SHA1-Digest: lIb1JxnxzkWztbNkPISX5PfpiI8=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_02.png
+SHA1-Digest: vzwu7in3pGWZr2bC8pb1ojuM4xE=
+
+Name: res/drawable/action_bar_text_color_selector.xml
+SHA1-Digest: Tq9snsxNpz7fzDVMj/ZXrjgQ30U=
+
+Name: res/raw/ring.mp3
+SHA1-Digest: rVeXobuFUXliK10LhBEnpAXi7xI=
+
+Name: res/anim/invite_waiting_buddy_effect.xml
+SHA1-Digest: sheCbG+X10mQmnE6EwpuwThze1Y=
+
+Name: res/drawable/vt_call_popup_icon_enable_theme_view_selector.xml
+SHA1-Digest: NZkER4dPiNq9r6H/5eB7SlkzLmQ=
+
+Name: res/drawable-xxhdpi/clear_accept_circle_arrow_02.png
+SHA1-Digest: uIBeh8f62mAlhnMH5LTeZCBaCyM=
+
+Name: res/drawable-xxhdpi/vt_call_video_btn_normal_h.png
+SHA1-Digest: lrUNtsXgMmtl55lfRfcCr1GSy8c=
+
+Name: res/layout/ended_call_clear_cover.xml
+SHA1-Digest: 2v/eVRbYJOo2ukKgvl8/BZUlkDc=
+
+Name: resource/drawable-xhdpi/snote_pen_circle_big_02.png
+SHA1-Digest: Er4GOzuCMKv2z/J814USQkRcFQ8=
+
+Name: res/layout/user_preference_screen_checkbox_two_line.xml
+SHA1-Digest: QPlKMZNiuudDs9tkSaHQK2i49AA=
+
+Name: res/drawable-xxhdpi/scamera_tw_scrubber_control_pressed_holo.png
+SHA1-Digest: 5sWAPEMg+nlup2qAmdIKugbinSc=
+
+Name: assets/animation/MaskImage_THEME_SHOT/categories/muscth/muscth_1
+ .yuv420sp
+SHA1-Digest: g84EaDKu+qsO4v9Biw7+6icSAoA=
+
+Name: res/drawable-xxhdpi/call_message_icon_press_h.png
+SHA1-Digest: 7ItDLrHmJSK1SvGKC4iK04nEjUU=
+
+Name: res/drawable-xxhdpi/share_view_tool_icon_undo_dim.png
+SHA1-Digest: 7key1xISdCiXi9KWSRFvkM/7qHM=
+
+Name: res/anim/red_arrow_big_effect.xml
+SHA1-Digest: 4a27YMKXOGBGJyFcNHseXd30sws=
+
+Name: resource/drawable-xhdpi/snote_tablet_add_dim.png
+SHA1-Digest: ANWDsgjXAoGuiu8Ze9KFYd3Orb4=
+
+Name: assets/samm_embeded_soundeffect/shiny_draw.ogg
+SHA1-Digest: n/gE9RsWpayV1FZxgJ3LqWdEMxg=
+
+Name: res/drawable/list_sub_action_bar_txt_selector.xml
+SHA1-Digest: uqbcykbsY1bMQ1M4e4NXToxoHIk=
+
+Name: res/drawable-xxhdpi/ani_01.png
+SHA1-Digest: WvkpxxHFnUbm99jd9ieoRoUnCec=
+
+Name: res/drawable-xxhdpi/clear_accept_circle_drag.png
+SHA1-Digest: lJR3py5612nzSX9tOUb4OwC48TQ=
+
+Name: res/drawable-xxhdpi/translator_hold_icon_press.png
+SHA1-Digest: clKruZAdphogHjMh9FQ0NPoVx3A=
+
+Name: res/drawable-xxhdpi/voip_mute_icon_on.png
+SHA1-Digest: f6eqjNpNn9GRPuLanvCg3w9Vy+k=
+
+Name: res/layout-land/voice_call_caller_image.xml
+SHA1-Digest: ePx7WyPudDXE9+0Gcb65NPUZvr0=
+
+Name: res/drawable-xxhdpi/translator_bubble_tts_on_icon_press.png
+SHA1-Digest: w0qAqy05E0tdLJzrbemI5LCN/o0=
+
+Name: resource/drawable-xhdpi/snote_type_01.png
+SHA1-Digest: xjTvzM5YmPlZmH9cCExI22x0d+U=
+
+Name: res/drawable-xxhdpi/vt_end_call_btn_focus_h.png
+SHA1-Digest: t+ckjdek+K5+eS/NL77EEhCagU4=
+
+Name: res/drawable-xxhdpi/call_dial_btn_04_press.png
+SHA1-Digest: sAtXez3H5fV1KJOkXfDvNEilbTU=
+
+Name: res/layout-land/voice_call_menu.xml
+SHA1-Digest: uniTuIQqRPW2oC+HGOLfKwUN8Ec=
+
+Name: res/drawable-xxhdpi/tw_action_bar_dual_camera_on_dim.png
+SHA1-Digest: QmBHjujNH6nnDdaSHqjaZ8KqVOA=
+
+Name: res/drawable-xxhdpi/action_bar_focus.png
+SHA1-Digest: Vm0Ff0DYvNvUVx4nuK3ZxAUshls=
+
+Name: res/layout-land/voice_call_member.xml
+SHA1-Digest: ehOrJP31xPobNtL9r8Sc0dDoGfY=
+
+Name: res/drawable-xxhdpi/hat_02.png
+SHA1-Digest: wDVqD7P+CmRUD54IXyQNrQggT/E=
+
+Name: res/drawable-xxhdpi/ic_reject_with_message_icon.png
+SHA1-Digest: LBQ2C33C2F7sFnadfEs1kTiAAvI=
+
+Name: res/drawable/call_mute_on_icon_selector.xml
+SHA1-Digest: hcDdPMfsuFf0HIXvUXprrMHnzfE=
+
+Name: res/drawable/right_page_selector.xml
+SHA1-Digest: jJd+pMAHljdk7+wrA2mIceI+Zyo=
+
+Name: res/drawable-xxhdpi/option_menu_translator.png
+SHA1-Digest: sadLWJfvfhF7+W96MpXa8lVNCNc=
+
+Name: res/drawable-xxhdpi/share_view_tool_show_icon_press.png
+SHA1-Digest: ho/w5QmePCjyUtFPxsai/rPzGzU=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_auto_on.png
+SHA1-Digest: 5Tphe+zcdBFeqAZr7+ppPn7tvzM=
+
+Name: res/drawable-xxhdpi/call_img_unknown_list_dim.png
+SHA1-Digest: LjVED3gfiCy8K0kgDTd0o2Uby1Q=
+
+Name: res/drawable/call_headset_icon_selector.xml
+SHA1-Digest: RnMesRZMWHl5hTkaT+AWjZvVEaI=
+
+Name: res/drawable/end_call_btn_light_selector_h.xml
+SHA1-Digest: wNQxkJoQbBrn8OgrS40LZbxGLFE=
+
+Name: lib/armeabi/libsisosrtp.so
+SHA1-Digest: FQfxR1umW73a3wXvRdaWsyogvJQ=
+
+Name: res/drawable-xxhdpi/ic_jog_dial_answer.png
+SHA1-Digest: ALsiDo5SZWaE2RP45Zr5y2/WLew=
+
+Name: assets/spen_sdk_resource_default/popup_exit.png
+SHA1-Digest: Ty4FAIy77PQ3pUPOezM+WrBY75M=
+
+Name: res/drawable-xxhdpi/clear_accept_circle_arrow_big_03.png
+SHA1-Digest: dFhVW3EFoBYRrYq2ef2Axl+/e2Q=
+
+Name: res/drawable-xxhdpi/share_screen_end_btn_focus.png
+SHA1-Digest: EmP3tmUWNDPSLENs97DeVVjvi8A=
+
+Name: res/drawable-xxhdpi/scamera_showme.png
+SHA1-Digest: cNlwpth7Gi7X8g854k6UAPop6iA=
+
+Name: res/drawable-xxhdpi/clear_reject_circle_small.png
+SHA1-Digest: EQ4q3sfNL1T7Jt7SivatV6KXv84=
+
+Name: res/drawable-xxhdpi/action_bar_icon_hide_me.png
+SHA1-Digest: 5tUwrW5ApSk1VtF23iVinr59PxM=
+
+Name: resource/drawable-xhdpi/up_popup_delete.png
+SHA1-Digest: B2b1kN0VskmjLskYeMteMGSIUQ4=
+
+Name: assets/animation/MaskImage_THEME_SHOT/categories/glasses/glasses
+ _1.yuv420sp
+SHA1-Digest: q3FGGJ22cP8sewHHUgqE8wbpbtI=
+
+Name: assets/spen_sdk_resource_default/snote_btn_normal_holo_dark.9.pn
+ g
+SHA1-Digest: 8MJxhdmOmIYswbKjQw+AMps5Ci0=
+
+Name: res/drawable-xxhdpi/stat_sys_vp_phone_chat.png
+SHA1-Digest: YiN5AGOonuKP1XtMuP8/4oyCEgI=
+
+Name: assets/samm_embeded_soundeffect/text_type_short.ogg
+SHA1-Digest: 8Ng0MIQVokKaZojJgfEUkxr2SBE=
+
+Name: res/drawable/button_emotion_selector_right.xml
+SHA1-Digest: C7jskyKc27S/QjH9fz9dvS9fxSM=
+
+Name: res/drawable-xxhdpi/more_option_icon_send_file_chaton.png
+SHA1-Digest: kOysJqQ5WTUWuFDSYUQp1K7nZxY=
+
+Name: res/drawable-xxhdpi/left_page_focus.png
+SHA1-Digest: rQd1QXG2XWIff0ggJS81TxdIEHE=
+
+Name: res/raw/call_connect.ogg
+SHA1-Digest: Qs5R0L7vrf5PhfkssyuU9Jm8zMs=
+
+Name: res/drawable-xxhdpi/driving_mode_cancel_icon.png
+SHA1-Digest: HQQ2hca24+DIzzDspURLv56YjtU=
+
+Name: res/drawable-xxhdpi/voip_headset_icon_dim.png
+SHA1-Digest: +q3G4zT/+k8XunofbMVQ1WaGJGE=
+
+Name: res/layout-land/scamera_voice_call.xml
+SHA1-Digest: QMmRr2IwLvInsu7dSAeVJmdO0fo=
+
+Name: res/layout/chatonv_custom_translator_dialog.xml
+SHA1-Digest: HT0n+QJDlhIrxulDEM3J+KR9r+Y=
+
+Name: assets/spen_sdk_resource_default/snote_pen_circle_big_01.png
+SHA1-Digest: GdXF/ftGH9whCJnxrBe6aLJUFPM=
+
+Name: res/drawable/call_mute_icon_voice_selector.xml
+SHA1-Digest: lxAnPcLtWn+Cqe+anO0el+g/WvU=
+
+Name: res/drawable-xxhdpi/share_view_popup_icon_play_dim.png
+SHA1-Digest: c/1hy7o/A1cy7Qjh4jI1UVEMqtM=
+
+Name: assets/spen_sdk_resource_default/snote_popup_scroll_handle_n_480
+ .png
+SHA1-Digest: Ndu12qeDDbVJ98Vx5FunGci1mLY=
+
+Name: resource/drawable-xhdpi/snote_tablet_popup_btn_01.png
+SHA1-Digest: zB/u945LLHQCBbiYEUbkCVukD3o=
+
+Name: res/drawable/call_video_option_bluetooth.xml
+SHA1-Digest: wIOoE7/qfoBZGQpGR08gB+n3KJs=
+
+Name: res/drawable-xxhdpi/checkbox_press.png
+SHA1-Digest: RHtYIF4scg8EHTnAVoYOwfpvsYE=
+
+Name: lib/armeabi/libsamsung_videoengine_JBP_44.so
+SHA1-Digest: F+VRGGrjH/nZkCEkYzz+0OP5yk0=
+
+Name: res/drawable-xxhdpi/share_view_popup_icon_end_remote_control_dim
+ .png
+SHA1-Digest: IApi6X/NljHIjqjs4rz+jX3BtDY=
+
+Name: res/drawable-xxhdpi/bubble_receive_normal.9.png
+SHA1-Digest: fFIStO5qI2R8x7C6lvVUEFOs/RQ=
+
+Name: res/layout/voice_call_menu.xml
+SHA1-Digest: Ik7a8PK+YHtDJ/mW95lF+D6U5gI=
+
+Name: res/drawable-xxhdpi/scamera_arrowkey01.png
+SHA1-Digest: Jm+8JmVOK8sR7tgrCGlMHnoe54o=
+
+Name: res/drawable-xxhdpi/input_filed_normal.9.png
+SHA1-Digest: Od/eRZGOWDFCGYr50keWcXbLkBU=
+
+Name: res/drawable-xxhdpi/call_img_unknown.png
+SHA1-Digest: P7Kk9QRLuyKc49ujJs4VMuOOXpY=
+
+Name: res/drawable/screenshare_main_popup_pause_selector.xml
+SHA1-Digest: Pz9NE/rde6Aj0BaQVy5ONfXmhh4=
+
+Name: res/drawable/call_switch_call_icon_selector.xml
+SHA1-Digest: vcfw2PS0r2oqXs0shIIIlYpn7kA=
+
+Name: lib/armeabi/libEX_Engine5ex3.so
+SHA1-Digest: SwDsxhmA83PbmXYQKwwIstRYBCg=
+
+Name: res/drawable-xxhdpi/quickpanel_btn_ledoff_normal.9.png
+SHA1-Digest: Czw131wnu5FbSN8lpUVjtjwD9tQ=
+
+Name: res/drawable-xxhdpi/emotional_1st_mustache.png
+SHA1-Digest: c2Uxq6zy7uzsB4uX3eL7+xgDEaA=
+
+Name: res/drawable/call_quick_panel_btn_on_selector.xml
+SHA1-Digest: F/iCyXbsl7/DbDiYy6gL5ghgNAc=
+
+Name: res/drawable/call_video_call_icon_selector_h.xml
+SHA1-Digest: DsYaWW1rOxlPuUuewK7lBYMPjEU=
+
+Name: res/drawable/scamera_volume.xml
+SHA1-Digest: Wvg8nEtVziC6hxbW8EYPS2JYSCc=
+
+Name: res/drawable-xxhdpi/list_button_add_light_dim.png
+SHA1-Digest: IiXUyNGl32hnYw0I4QqX4bQbRU0=
+
+Name: res/drawable-xxhdpi/clear_accept_incomingcall_reject.png
+SHA1-Digest: XsKMeXqPS5BVrcOlNXlacxWSf5k=
+
+Name: resource/drawable-xhdpi/snote_popup_in_bg02.9.png
+SHA1-Digest: uuG9JMSoi+6nogdeO5TpDW8F3mc=
+
+Name: res/drawable-xxhdpi/share_view_tool_area_bg_focus.9.png
+SHA1-Digest: sMkg3urypHgt0Xbq3ojndjFmf+8=
+
+Name: res/drawable-xxhdpi/call_image.png
+SHA1-Digest: UYsvR4kYAInzgmsPWrHx4qml0og=
+
+Name: resource/drawable-xhdpi/down_popup_delete.9.png
+SHA1-Digest: ndnqlgwL6XH3SedzcP2k3I0GeAQ=
+
+Name: res/drawable-xxhdpi/share_bar_press_land.png
+SHA1-Digest: US/YUCCm8fs+Qn0r3qSYrkqwAe4=
+
+Name: resource/drawable-xhdpi/snote_pen_circle_big_03.png
+SHA1-Digest: PRaKrYEZYXkihHxuSwwPegdQDNU=
+
+Name: assets/spen_sdk_resource_default/snote_spinner_ab_focused_holo.9
+ .png
+SHA1-Digest: 6wFVNisVPBK1bJyevaW7rKeMnzI=
+
+Name: res/drawable/translator_btn_selector.xml
+SHA1-Digest: nFUIRntvnlYL24s5eVuwfbKtfqM=
+
+Name: res/drawable-xxhdpi/sub_title_bg.9.png
+SHA1-Digest: NrhXtlvmgKaJ76b/wy+/Isnjun8=
+
+Name: assets/spen_sdk_resource_default/snote_popup_scroll_handle_f.png
+SHA1-Digest: JPSIumXDTOxo0xMuk42dxA1Q1c8=
+
+Name: resource/drawable-xhdpi/snote_text_icon_bold.png
+SHA1-Digest: W86bUsy4bzWcyt7hbTAPFyw0XWM=
+
+Name: assets/spen_sdk_resource_default/pensetting_icon_pencil_unselect
+ .png
+SHA1-Digest: X9wEKrFXRqaay8tPvBrxGQEjB9Y=
+
+Name: res/drawable-xxhdpi/action_bar_translator_dark.png
+SHA1-Digest: u8V1M+LEKB7MzeI7Hee/KS4b/lA=
+
+Name: res/drawable-xxhdpi/check_press.png
+SHA1-Digest: +XcOyiCqtxG7q8oIiQuWyUX5QZo=
+
+Name: res/drawable-xxhdpi/share_screen_icon_btn_focus.png
+SHA1-Digest: EoLVb3lEl+isM3CmpebGfHKkBs4=
+
+Name: res/drawable-xxhdpi/call_img_unknown_list.png
+SHA1-Digest: Crefc3aSLhtdxNST4UHetUeaulM=
+
+Name: assets/spen_sdk_resource_default/pensetting_icon_chinabrush.png
+SHA1-Digest: hkx5YjMfALgDKLZ6ZS3t0hLGWlU=
+
+Name: res/drawable-xxhdpi/share_view_tool_icon_draw_pencil.png
+SHA1-Digest: NqxB2sv7sax+CIEU7myJ4KOgfDU=
+
+Name: res/drawable-xxhdpi/popup_bottom_btn_dim.9.png
+SHA1-Digest: pWk6pEQ4Fjb57w5qViPvL7AUAkg=
+
+Name: res/drawable-xxhdpi/btn_reject_send_f.png
+SHA1-Digest: D3MJylgDOcxjGbbpQTHDYGrWBC0=
+
+Name: res/drawable-xxhdpi/list_incoming_reject_handle_01_press.png
+SHA1-Digest: copx4EDAdsKQuJKzh9HbHEYil+Q=
+
+Name: res/drawable-xxhdpi/scamera_tw_scrubber_control_disabled_holo.pn
+ g
+SHA1-Digest: jWfsqFRXaOHUbgQvGczxpyb7WIw=
+
+Name: res/drawable-xxhdpi/share_view_tool_icon_move.png
+SHA1-Digest: ww4OT/7HplxULtHBi/wXtl+de50=
+
+Name: resource/drawable-xhdpi/snote_title_bottom.9.png
+SHA1-Digest: jy1AFFFBGScp0BXQ4jw40oa+wOc=
+
+Name: res/drawable-xxhdpi/voip_switch_call_icon_light.png
+SHA1-Digest: SVaFqAvC8aGueqmkYuxAPxs8aoI=
+
+Name: resource/drawable-xhdpi/snote_ic_area_center_focus.9.png
+SHA1-Digest: O8L5khH5/yCVhmszCq0BToYfKFg=
+
+Name: res/layout/docsview.xml
+SHA1-Digest: aNPCFD7X5h4XxisqPr8cS0uDq8g=
+
+Name: resource/drawable-xhdpi/snote_text_center_press.png
+SHA1-Digest: tCLBg475/8FitlMZSpVx5jq5CSo=
+
+Name: res/drawable-xxhdpi/scamera_chatonv_thumbnail02_bg.png
+SHA1-Digest: ZM22UkXCEwJVxnQ3zB8MDOIPiQE=
+
+Name: assets/spen_sdk_resource_default/snote_popup_scroll_handle_p_480
+ .png
+SHA1-Digest: vv6Z95mzg9xCYoduJyn2qs0sqYc=
+
+Name: res/drawable-xxhdpi/voip_end_call_icon_press.png
+SHA1-Digest: r3Dx8wpMcXC4+JI++FFfE2erRLI=
+
+Name: res/layout/translator_spinner_dropdown_item.xml
+SHA1-Digest: rf7uYgJ/0Cukv9gxOP9Sn/a4F/g=
+
+Name: res/drawable-xxhdpi/scamera_standby_2.png
+SHA1-Digest: Ui8yjoqtz4QuYrcQU8MQDIJiZz4=
+
+Name: assets/spen_sdk_resource_default/ploating_popup_icon_r2_d.png
+SHA1-Digest: NE7vrchR4dOEKNK+cn7DEe4wx18=
+
+Name: res/drawable-xxhdpi/call_dial_btn_11_h.png
+SHA1-Digest: qwemvhCLoMaea2KByiI9MwPYKbI=
+
+Name: assets/spen_sdk_resource_default/ploating_popup_icon_r1_n.png
+SHA1-Digest: FlHnbfFVv9XwBnvwtyK3qme0RfM=
+
+Name: res/drawable-xxhdpi/clear_reject_circle_big_02.png
+SHA1-Digest: 7b/dMRgxmzeKufUQk0BEtohRCA8=
+
+Name: res/drawable-xxhdpi/btn_default_light_focus.9.png
+SHA1-Digest: pLNaaITC04zZaPQV3wzaWm8TTkQ=
+
+Name: resource/drawable-xhdpi/zen.png
+SHA1-Digest: Rw7LvsdOgq7O9peqJtlf7xbhmaw=
+
+Name: res/drawable-xxhdpi/share_bar_dim.png
+SHA1-Digest: SHTZYETEOSw21qGtR8LgaLlEWk0=
+
+Name: res/drawable-xxhdpi/voip_mute_icon_light.png
+SHA1-Digest: sCFGDCZWARgBDYzIAOUTwItd1/w=
+
+Name: res/drawable-xxhdpi/call_btn_bg_light_h.9.png
+SHA1-Digest: bpNRePGb+ADC6TQ/LVGk1XsY0G0=
+
+Name: res/layout-land/voice_call_translator.xml
+SHA1-Digest: ly50KlwJF+hFeO9bkjmlk8eSuLo=
+
+Name: res/drawable-xxhdpi/animal_01.png
+SHA1-Digest: UBqhbOyhgb4PTcmHNAS7uAf64ms=
+
+Name: res/drawable-xxhdpi/call_dial_btn_02.png
+SHA1-Digest: vlsZX66XgiN8lIrZzcUTTaUtpAo=
+
+Name: res/drawable-xxhdpi/show_me.png
+SHA1-Digest: 1KICHiCBE1SSJ6xCQZzX2riiiUE=
+
+Name: res/drawable-xxhdpi/popup_winset_center_bright.9.png
+SHA1-Digest: AwOaH+7jlzn2heaBrYpS6XuHRsg=
+
+Name: res/layout/reject_call_with_msg_content.xml
+SHA1-Digest: gIndhllMZWeM0maaE60y1coZ4SA=
+
+Name: res/layout/chatonv_custom_dialog.xml
+SHA1-Digest: 7CqFJNaFB5iDEOqRgR6R8A+11NI=
+
+Name: res/drawable/co_btn_default_selector.xml
+SHA1-Digest: lhkVr7wJtJWiCFilE0h1ZKkt6IM=
+
+Name: res/drawable-xxhdpi/scamera_sound_on_select.png
+SHA1-Digest: ugnRuxn9cyRfhVrk71WxQO8hpUE=
+
+Name: res/drawable/call_video_option_switch_voice.xml
+SHA1-Digest: fDRJdEawKwWjSHmw2BajotMAwRc=
+
+Name: res/drawable/translator_tts_off_image_selector.xml
+SHA1-Digest: ERzHyV+Fjqx9H4jUEvjSelgprRE=
+
+Name: res/layout/context_simple_list_item.xml
+SHA1-Digest: +rOvdpL3pNS3iiq9Ya3L5/I0h1U=
+
+Name: res/xml/setting_data_usage.xml
+SHA1-Digest: v7RAU34ygOjw11QS2K09Rf2zmjk=
+
+Name: res/drawable/tw_list_btn_item_selector.xml
+SHA1-Digest: BSO0r3D2jvRFJyja92IQ2+xrRkE=
+
+Name: res/drawable-xxhdpi/vtcall_4_btn_focus_switch_off_h.png
+SHA1-Digest: Aj4Fkk1LGzikrj7ca53FJjnNZQk=
+
+Name: assets/spen_sdk_resource_default/pensetting_icon_neon.png
+SHA1-Digest: gd5EFqOimZw98kaUtHezZ2w/x6E=
+
+Name: res/drawable-xxhdpi/vt_call_video_btn_light_focus.png
+SHA1-Digest: Xnc7AaBCJ+Ljrnq6sgKk2NWeB3E=
+
+Name: res/layout/live_share_video_call.xml
+SHA1-Digest: 92BecaVnXjxh9pcXRL/64743t1E=
+
+Name: res/drawable/call_bt_icon_selector.xml
+SHA1-Digest: CHIEif9KKDx9pmXswBAALnzt7+A=
+
+Name: res/drawable/call_dial_number_1_btn_h.xml
+SHA1-Digest: 4AlOE/Ul4m/vFNFMQ0r2tVCAPa0=
+
+Name: res/drawable/tw_action_bar_icon_check_selector.xml
+SHA1-Digest: Vl7/wDt6m7/jLj5OYiVZbJQ+JcM=
+
+Name: res/xml/call_alert_setting.xml
+SHA1-Digest: oDC8m5RljwpQ+0YfpTG44tObMbw=
+
+Name: res/layout/screenshare_pen_settingview_container.xml
+SHA1-Digest: uTubo2dX1odnNLa/f+LAs16wLcc=
+
+Name: res/drawable-xxhdpi/popup_center.9.png
+SHA1-Digest: zjAAxIqXqg6AhfgkwNyQSySOlmc=
+
+Name: res/drawable-xxhdpi/cv_icon_recorder.png
+SHA1-Digest: qwFnjQu+8RCWOm8N6z77UYkaRcg=
+
+Name: res/drawable-xxhdpi/call_dial_btn_03_h.png
+SHA1-Digest: qewphwMKcyYgPI8KFQUgKUNMzK4=
+
+Name: res/layout/scamera_video_call_end_ui.xml
+SHA1-Digest: 97MCOh0p+SJl1LrKwXTeMzt3804=
+
+Name: res/layout/video_call_theme_hat.xml
+SHA1-Digest: EQ89/GruzA11D4GOwF7Nastkknk=
+
+Name: resource/drawable-xhdpi/snote_title_left.9.png
+SHA1-Digest: a+ZDekWYiGIFvOJX9LE7dnbRkc4=
+
+Name: res/drawable/chat_forward_btn_right.xml
+SHA1-Digest: koIt9pTc6O2yEkqEZMLPuD+el4I=
+
+Name: res/drawable-xxhdpi/invite_buddy_remove.png
+SHA1-Digest: gPzH8x/xJm8btyvpV1ptdS1ALSg=
+
+Name: res/drawable-xxhdpi/call_during_btn_speaker_on.png
+SHA1-Digest: fql7h1/qBI5cl2bEeIKEXHt7ChI=
+
+Name: res/drawable-xxhdpi/voip_headset_icon_on.png
+SHA1-Digest: 9HHVFgnTVrM903ixWDYOhJK0TdM=
+
+Name: resource/drawable-xhdpi/snote_delete.png
+SHA1-Digest: fAkP9+/wropzFjdUPZLvpwHdxp8=
+
+Name: resource/drawable-xhdpi/snote_popup_btn_02.png
+SHA1-Digest: X7CMk8GicmLjxkAkg7cJucVwIz8=
+
+Name: res/drawable/screenshare_main_popup_restart_selector.xml
+SHA1-Digest: c1MQhHjG1bF0oiK6Msxa9kV5qmo=
+
+Name: res/drawable-xxhdpi/vt_call_translator_slide_5_btn_press.png
+SHA1-Digest: 9btO1ugccLZud1kiHwCb5IrAO2U=
+
+Name: res/drawable-xxhdpi/action_bar_icon_show_me.png
+SHA1-Digest: BSiWJj0ZWZyhB4a8SSYytEbJIlk=
+
+Name: res/drawable-xxhdpi/list_incoming_reject_handle_press_h.png
+SHA1-Digest: +SaBiWIXidkxKeFFun14FPCCMeU=
+
+Name: res/drawable-xxhdpi/scamera_standby_3.png
+SHA1-Digest: mZTRH5Kg9NdTlxB6uXg9e4NQ79I=
+
+Name: res/drawable/buddies_profile_btn_selector.xml
+SHA1-Digest: ANYSLv8zmTb/Kku8vhf6Iy/0/Ug=
+
+Name: res/drawable/screenshare_remotecontrol_home_btn_selector.xml
+SHA1-Digest: JhqoTLPLWZY5lcDiDK6OmpxB2tU=
+
+Name: assets/animation/MaskImage_VT_ANIMATION/expression/sad/sad.yuv42
+ 0sp
+SHA1-Digest: KRH7ovtjZaKAz9jjSnbH/qqV+P0=
+
+Name: res/drawable-xxhdpi/vt_icon_capture_01_h.png
+SHA1-Digest: ewJJHksfyYJ1iNeHX3qb+UM0OAs=
+
+Name: res/drawable-xxhdpi/quick_panel_btn_min_call_01.9.png
+SHA1-Digest: bc2ss/0g8HkxnMUgyv0hKAPmD10=
+
+Name: res/layout/setting_data_usage_spinner_item.xml
+SHA1-Digest: dA1JuYE7iF2d5+HB1TOH0Rztgio=
+
+Name: res/drawable-xxhdpi/vt_call_popup_fun_icon_bg_focus.png
+SHA1-Digest: w20z47Mo2X8w3/qgo97SV1sflHU=
+
+Name: res/drawable/translator_hold_on_image_selector.xml
+SHA1-Digest: DogdZKZrPE0WDlLyDZTiNwJBBwk=
+
+Name: res/layout-land/live_share_scamera_video_call.xml
+SHA1-Digest: wMRBN8Kgy8kZgTtr+TXwCxD8a0M=
+
+Name: res/drawable-xxhdpi/device_chaton_v_logo.png
+SHA1-Digest: JjZYxZJZtVmvdhDRCgP5IFhtDxU=
+
+Name: res/drawable-xxhdpi/call_chatonv_video_default_img.png
+SHA1-Digest: 6ywJDGAlQ7x1PejxxKu+dKAS4tM=
+
+Name: res/drawable-xxhdpi/share_view_popup_icon_menu_dim.png
+SHA1-Digest: rNAxOmcW1WOIO1h/I1oiyk2zNq4=
+
+Name: res/drawable-xxhdpi/share_view_toast_popup_bg_center_press.9.png
+SHA1-Digest: kEefJOeusH/l2+HCbdy3quqdsgA=
+
+Name: res/layout/chatonv_custom_dialog_check.xml
+SHA1-Digest: SXkg51UXid4/7j/cQIY2k2Jb9p4=
+
+Name: res/drawable-xxhdpi/call_dial_btn_11_press.png
+SHA1-Digest: /8koy23BEdZtuGdtFJ2VsXi/tvk=
+
+Name: res/drawable-xxhdpi/call_dial_btn_08_press.png
+SHA1-Digest: CBi0P1YHiFH7i+O/6fqJW/zqC1E=
+
+Name: res/drawable-xxhdpi/vt_call_translator_slide_5_btn_light.png
+SHA1-Digest: lnHqGmp4Wy5ONWLiquXh8qsJUBg=
+
+Name: res/drawable-xxhdpi/action_bar_icon_fun.png
+SHA1-Digest: ElukdgM/CpSOTbc09JGHQcqYwD8=
+
+Name: res/drawable-xxhdpi/vtcall_4_btn_focus_switch_on_h.png
+SHA1-Digest: sc4In9OcVX+GGJrbCnK3MXO1S4Y=
+
+Name: assets/spen_sdk_resource_default/textbox1.9.png
+SHA1-Digest: IyeEoiO6zG/80/f49YlgWhnXwBk=
+
+Name: res/drawable-xxhdpi/ic_menu_showme.png
+SHA1-Digest: 2TnS603txn5x0n4vsTlE22Fdg2A=
+
+Name: res/drawable/scamera_home.xml
+SHA1-Digest: q0rphI7bFj2I+Ifd2sNx3LYe7z8=
+
+Name: res/drawable-xxhdpi/scamera_stat_sys_battery_charge_100.png
+SHA1-Digest: CPoQ9RQsj0Szxt/ozbEYVIHBCwU=
+
+Name: res/drawable-xxhdpi/share_view_popup_icon_menu.png
+SHA1-Digest: zOcCaQSjWy/SGjf4TI57u6gDgqo=
+
+Name: res/xml/audio_setting.xml
+SHA1-Digest: /r9VEgY+loOy2tB3QKhdHxBmwt4=
+
+Name: res/layout/video_call_emotional.xml
+SHA1-Digest: XpcRkY+cSolu7zojmaaK6qY5im0=
+
+Name: res/drawable-xxhdpi/clear_accept_circle_arrow_03.png
+SHA1-Digest: YxIW4iaN88mD0ftMHm76lHGwbmo=
+
+Name: assets/spen_sdk_resource_default/scrollbar_handle_horizontal.9.p
+ ng
+SHA1-Digest: V+wsqARIP0/snXTMqUXSEVxGsKU=
+
+Name: assets/spen_sdk_resource_default/snote_title_right.9.png
+SHA1-Digest: HhR4fqOy0m6yMio4G7kV6LxPsfo=
+
+Name: res/layout/scamera_video_call.xml
+SHA1-Digest: XCp6uP0Dn6AqY8kCAVAEVQiEDuQ=
+
+Name: res/drawable-xxhdpi/end_call_btn_light_focus_h.png
+SHA1-Digest: dyK6GoRC0sslg+mL2c9CbbJHZwc=
+
+Name: res/drawable-xxhdpi/vtcall_4_btn_focus_switch_off.png
+SHA1-Digest: DPsCD44BsXBba9HYDVQTm0PgTb4=
+
+Name: res/drawable-xxhdpi/share_bar_dim_land02.png
+SHA1-Digest: q+GS3cxgda8gWvl2RkirNSKSSNI=
+
+Name: res/drawable-xxhdpi/call_show_my_video.png
+SHA1-Digest: ISIWVHLhTc6oGlfaSykiKTe9Qi0=
+
+Name: res/drawable/pulldown_ic.xml
+SHA1-Digest: lbTG5ZeNb2WlEwablAv2aqcXu/M=
+
+Name: res/drawable-xxhdpi/vt_show_me_icon_dim.png
+SHA1-Digest: Il77Itg62IGdfJXLwepAqjloT0k=
+
+Name: res/drawable-xxhdpi/call_show_my_video_focus.png
+SHA1-Digest: dfCj6caASnh1ARutllW6opK+MjI=
+
+Name: res/drawable/screenshare_main_popup_penwriting_selector.xml
+SHA1-Digest: n7F6KFr4w662S/fppWy+jBmfUjM=
+
+Name: res/layout/user_preference_screen_checkbox_one_line.xml
+SHA1-Digest: FGYnOP4sMezB26cmkMMPf4u9EL4=
+
+Name: res/drawable-xxhdpi/call_dial_btn_11_h_press.png
+SHA1-Digest: 9sH2WuCMhOcvKBG2yKVO6RKJytg=
+
+Name: res/drawable/screenshare_penwriting_toolbar_hide_selector.xml
+SHA1-Digest: 96uwox0YTlkkdtO/qqMRfLuDDL0=
+
+Name: res/drawable-xxhdpi/logo_no_outline.png
+SHA1-Digest: Xep2QgUuX+beaHfLn7q2URqk/U0=
+
+Name: resource/drawable-xhdpi/ploating_popup_picker_up.png
+SHA1-Digest: f10iNYsQKsZSMkNwO3oLZHBneME=
+
+Name: resource/drawable-xhdpi/expand_icon_02.png
+SHA1-Digest: vyPZoGcWMfbxBV0IqIJMkIav0Mg=
+
+Name: resource/drawable-xhdpi/popup_exit_480.png
+SHA1-Digest: QcPQpH931feYTnhsRb4rSRWGAjE=
+
+Name: res/drawable/screenshare_main_popup_left_background_selector.xml
+SHA1-Digest: 9Ztd60re/SPDHQIIjc4c8qOvFRg=
+
+Name: res/drawable-xxhdpi/video_capture_012.png
+SHA1-Digest: frI3oSNGL9DMPFWL/9Bi9hIGF6Q=
+
+Name: res/layout/reject_call_with_msg_item_for_cover.xml
+SHA1-Digest: YEYAGNv0I/fx9nOFQf34LKhscsw=
+
+Name: assets/spen_sdk_resource_default/expand_icon_02.png
+SHA1-Digest: xJIWkzLq5lcEvLyKVePaGYapmTw=
+
+Name: res/layout/video_call_record.xml
+SHA1-Digest: 4l+mNIIR+PaM7Fbtor7udDBuKUM=
+
+Name: res/layout/voice_call_translator_content_host_item.xml
+SHA1-Digest: h2EGGRsoVJnS+SG6lASYJQSk5NM=
+
+Name: res/drawable-xxhdpi/vt_call_btn_normal_h.png
+SHA1-Digest: uxZhgJcsiPQqEp6bDYLjPPI4tZk=
+
+Name: res/layout/testcall2.xml
+SHA1-Digest: hzvFkNaF5GncnNvaFjINQ/awPHc=
+
+Name: res/drawable-xxhdpi/myvideo_outline.png
+SHA1-Digest: s8irhApKNI8buVOq62cAouNyZZ0=
+
+Name: res/layout/chatonv_custom_translator_change_language_dialog.xml
+SHA1-Digest: xfeENBMk/Shfs8gixd60jXvpzBI=
+
+Name: res/layout/video_call_outgoing.xml
+SHA1-Digest: E6nLHmll9ggyLJ91TFJqGGHsUAA=
+
+Name: res/drawable-xxhdpi/call_dial_btn_10.png
+SHA1-Digest: 1+Dv2PcBOwccyDIVm901CddcMUY=
+
+Name: resource/drawable-xhdpi/snote_text_icon_underline_press.png
+SHA1-Digest: L6Ly6eKsOpJfVFI+rCfCHtrRwTI=
+
+Name: assets/samm_embeded_soundeffect/crayon_click.ogg
+SHA1-Digest: i8RQMw3ueE84+3eHU8ymvpcclJY=
+
+Name: res/drawable/call_dial_number_4_btn.xml
+SHA1-Digest: eO3hILcsM+y/cORfZvfhxTguHRQ=
+
+Name: resource/drawable-xhdpi/pensetting_icon_brush.png
+SHA1-Digest: Ynizw1vhQ6xpVq3/NDZexE00fyQ=
+
+Name: resource/drawable-xhdpi/snote_tablet_add.png
+SHA1-Digest: TKUS43Ak1dLXb826g2Pg7l66KnM=
+
+Name: res/drawable-xxhdpi/call_btn_focus_switch_on.png
+SHA1-Digest: CIpZQgK2F5ePU3TOsybhBsNXDco=
+
+Name: res/layout-land/video_call_option_menu.xml
+SHA1-Digest: PYQRLPC2qTrWcuxr9bwXjBhMozg=
+
+Name: res/drawable-xxhdpi/chat_forward_btn_disable_right.9.png
+SHA1-Digest: YxcidM8fp5bOvbanSg2LtxXkizU=
+
+Name: res/drawable/call_video_popup_btn_selector.xml
+SHA1-Digest: RaB4wUpkITvnGvdABFaGL9IN8+Q=
+
+Name: res/drawable-xxhdpi/btn_radio_on_dim_focus.png
+SHA1-Digest: l3C6gWprf5yaN/OM6yybrqAURrg=
+
+Name: res/drawable-xxhdpi/translator_languages_icon_normal.png
+SHA1-Digest: DltQ/dAcQn80w3ay9SllGVwZoUI=
+
+Name: res/drawable/button_default_selector.xml
+SHA1-Digest: 47Q3hU6uzs8z82ZUUZJUCuw0E9I=
+
+Name: res/drawable-xxhdpi/call_dial_btn_08.png
+SHA1-Digest: wU3jJPH751Zsefr/TPyYiQrNSYc=
+
+Name: res/drawable-xxhdpi/share_incomming_screen.png
+SHA1-Digest: dIWQziZK9VXL1OIUSP58jOc7/WE=
+
+Name: res/drawable/call_video_btn_record_selector.xml
+SHA1-Digest: tkhegiu2JYoEYpuE31vk1KaV3Dc=
+
+Name: resource/drawable-xhdpi/pensetting_icon_pencil.png
+SHA1-Digest: LrmCy/8KIPKjiknPthlJXezYM18=
+
+Name: res/drawable/screenshare_penwriting_toolbar_press_bg_center_sele
+ ctor.xml
+SHA1-Digest: tDRotSR+qLFCd0VrY8riQmK6PQM=
+
+Name: res/drawable-xxhdpi/chat_forward_btn_disable_left.9.png
+SHA1-Digest: fPJFHHu86ENLYfUzqW6SGQsbUik=
+
+Name: res/layout/empty.xml
+SHA1-Digest: ka/xbYDn3593h/8eetlzSqFWacI=
+
+Name: res/drawable-xxhdpi/general_btn_icon_delete.png
+SHA1-Digest: kxUZYLu8tBS8+Vbq5YkBQZJMdTs=
+
+Name: resource/drawable-xhdpi/ploating_popup_icon_r1_d.png
+SHA1-Digest: 6jjMgs/b7x3Aw161FVcf3OS8IIo=
+
+Name: res/drawable-xxhdpi/share_view_tool_area_right_bg_focus.9.png
+SHA1-Digest: +2mpLERkqjB4XakQs7hUAzsGefo=
+
+Name: assets/spen_sdk_resource_default/icon_popup_delete_n.png
+SHA1-Digest: 05GRkdc9NDcITWR01DLuzj1iXwc=
+
+Name: res/drawable-xxhdpi/share_view_tool_icon_text.png
+SHA1-Digest: 5yaey/GS1ddGh6PUDDWf+vtM8Mk=
+
+Name: res/drawable-xxhdpi/vt_call_popup_icon_enable_emoti_view.png
+SHA1-Digest: hJQi2M74nxb6naT0ZHxXOsdpgrQ=
+
+Name: resource/drawable-xhdpi/snote_tablet_popup_btn_03.png
+SHA1-Digest: h+8n0g8uBjCIjpunGgEv42DNhs8=
+
+Name: res/drawable/call_video_option_send_file.xml
+SHA1-Digest: OW8lE96PnMJBdV01P9ymBvF92tg=
+
+Name: resource/drawable-xhdpi/icon_popup_delete_n.png
+SHA1-Digest: KNkbApkg1OT3Bq7sp8FWqcaQQYM=
+
+Name: assets/animation/MaskImage_THEME_SHOT/categories/muscth/muscth_2
+ .yuv420sp
+SHA1-Digest: ohAiV2h1PsQUJ/vsyH6HGNyu428=
+
+Name: res/drawable-xxhdpi/tw_searchfiled_background_holo_light.9.png
+SHA1-Digest: 4/Z7hFmFgONoVN774UgHCuDkrg4=
+
+Name: res/layout/log_sender.xml
+SHA1-Digest: +KZ0k0+mBUjjL/0vUsmfsAwaggs=
+
+Name: res/layout/screenshare_docs_view.xml
+SHA1-Digest: HfYZOdyaCUCnat2lRjf0/Sn7Tt8=
+
+Name: res/drawable-xxhdpi/share_view_tool_icon_back_press.png
+SHA1-Digest: yQ1R3lEm5dGxV9JXLSzokSmO8zs=
+
+Name: res/drawable/context_menu_text_color_selector.xml
+SHA1-Digest: gl99+Lhmc0JY+usvn2CGJufFfCc=
+
+Name: res/drawable-xxhdpi/quick_panel_app_control_bg.png
+SHA1-Digest: 1kUAeEV//rKiI6CMFRJMjKVcfPE=
+
+Name: res/drawable-xxhdpi/more_option_icon_bt_headset_disabled.png
+SHA1-Digest: tw1Ic7m1SNnuKJIcoCiZqofrNJU=
+
+Name: res/drawable-xxhdpi/co_attach_file_folder.png
+SHA1-Digest: rZ6fr9Gv6xf3sqqz4yEa18ZK93U=
+
+Name: res/layout/video_call_invite_buddies.xml
+SHA1-Digest: BZoMeVdZZ2sgRi6G21affOuevDQ=
+
+Name: resource/drawable-xhdpi/snote_tablet_mypen_select.png
+SHA1-Digest: oIEzFlGHjMyFAXkKd70N2ZGtPCY=
+
+Name: assets/spen_sdk_resource_default/popup_exit_press.png
+SHA1-Digest: XEjcZIBNU8EzRq7kPC8kdjpLGf4=
+
+Name: res/drawable-xxhdpi/vt_end_call_btn_focus.png
+SHA1-Digest: kXG/4hm0h7TZBW2klhfalaG6Nac=
+
+Name: res/drawable-xxhdpi/tw_action_item_background_focused_holo_light
+ .9.png
+SHA1-Digest: 01HMnt2BXzdczRndR/WPhyf5BwY=
+
+Name: res/drawable-xxhdpi/general_btn_bg_focus.9.png
+SHA1-Digest: ATBIqO0fDNLTzFYdy4eSWoeM0Do=
+
+Name: res/layout-land/video_call.xml
+SHA1-Digest: W++S+Tk6an8im/TmIFdu2gxeZDQ=
+
+Name: res/layout/video_call_caller_image.xml
+SHA1-Digest: nHYjjdcN9c0ISSZgfOmcrQX/h98=
+
+Name: res/drawable/screenshare_main_popup_remotecontrol_selector.xml
+SHA1-Digest: 9be7Tpp/UzOfc73PYa+G9evDs08=
+
+Name: assets/spen_sdk_resource_default/ploating_popup_center_n.png
+SHA1-Digest: 9z4z+NruoBcEoF8tF/+ZYQ0iX2U=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_01.png
+SHA1-Digest: Vk8tsWAQEXkpwEsF4xLe9DThfQE=
+
+Name: res/drawable-xxhdpi/chatonv_video_openmenu_bg_press.9.png
+SHA1-Digest: j/fgBEev2aSXbRfKvqqvG06ZIV0=
+
+Name: assets/spen_sdk_resource_default/down_popup_delete.png
+SHA1-Digest: f9TuVIRpr16JZZ7PWR4VZIozuas=
+
+Name: res/layout-land/video_call_emotional.xml
+SHA1-Digest: rSH/ITgx60DK47EYghsZoODtZgo=
+
+Name: res/drawable-xxhdpi/clear_accept_circle_arrow_01.png
+SHA1-Digest: ek2C+me9JBEC0UanUvJ8PdEWTeM=
+
+Name: res/drawable-xxhdpi/chatonv_capture_default_h_01.png
+SHA1-Digest: AT5A0LS3dtR1qzvVjWC1lup0HfA=
+
+Name: res/drawable-xxhdpi/tw_action_bar_dual_camera_off.png
+SHA1-Digest: dW3VCK3jAfv4OD69sCASKyq03sk=
+
+Name: res/layout-land/layout_settings_about.xml
+SHA1-Digest: ChC0wkx19yYeWjF/P3a9fFKj838=
+
+Name: assets/animation/MaskImage_THEME_SHOT/categories/hat/hat_1.yuv42
+ 0sp
+SHA1-Digest: CMkyfAsD1bA4IEAIS3hAXPYNnMg=
+
+Name: res/drawable-xxhdpi/clear_message_list_line.9.png
+SHA1-Digest: gB4hHLh5e9VZustMzrEOgRcZ9io=
+
+Name: assets/spen_sdk_resource_default/snote_tablet_popup_btn_01.png
+SHA1-Digest: 8GQESTCC+yRQYdccHkHanr9Uwxw=
+
+Name: res/layout/voice_call_end_btn.xml
+SHA1-Digest: ivlvSWiOi22+bKv4kQ13BzswJJ4=
+
+Name: assets/spen_sdk_resource_default/snote_pen_circle_bg.png
+SHA1-Digest: NwybIuXcOg9l3MTrJiAvWzmCV+0=
+
+Name: assets/spen_sdk_resource_default/ploating_popup_picker_down.png
+SHA1-Digest: OiOIs3DeQVaCXtaC/++sfueKTXs=
+
+Name: res/layout/dialog_select_page_layout.xml
+SHA1-Digest: JtPv+3xkS2SNjD1DWHYS6jWZ3IY=
+
+Name: res/drawable/vtcall_4_btn_focus_switch_selector.xml
+SHA1-Digest: JsYn0Ks14mPicQNo4x6lukC/V1Q=
+
+Name: resource/drawable-xhdpi/snote_pen_circle_big_01.png
+SHA1-Digest: +nLE9N7oPfifelu0YI6wz8/im7A=
+
+Name: resource/drawable-xhdpi/snote_spinner_ab_normal_holo.9.png
+SHA1-Digest: WnT0HXH/Ez/al3QmomxQJHYETaA=
+
+Name: res/drawable-xxhdpi/call_dial_btn_07_h_press.png
+SHA1-Digest: PH8eYinkVbzIwml+NI5nDtbc5Hw=
+
+Name: res/drawable-xxhdpi/list_incoming_reject_handle_01_focus.png
+SHA1-Digest: CUMQyYlorJfM9Rxs4RdZppkeWIk=
+
+Name: res/drawable-xxhdpi/clear_accept_circle_small_j.png
+SHA1-Digest: RoHQgwu5dKKD277EH59pECQ05bs=
+
+Name: resource/drawable-xhdpi/snote_delete_press.png
+SHA1-Digest: FeOtvZ91Xz9+RqLIoCSluFsjQag=
+
+Name: res/drawable-xxhdpi/share_bar_press_land02.png
+SHA1-Digest: UL74BjmolYJSsoc3G46POAxMvcI=
+
+Name: res/layout/user_preference_screen_normal.xml
+SHA1-Digest: DIOXScpGuhZ2kk4TeQi/jmc7Hj0=
+
+Name: res/drawable-xxhdpi/chat_forward_btn_press_left.9.png
+SHA1-Digest: Fr2GWBUEx67En3+MYL6yR8yH8gU=
+
+Name: res/drawable-xxhdpi/co_btn_default_normal.9.png
+SHA1-Digest: ZB4lGkWz52IdWqKU9RMMGCtf9BQ=
+
+Name: res/drawable-xxhdpi/tw_action_bar_theme_view.png
+SHA1-Digest: RhdJSe19Hsy0bmAb/xqRqi6Y6k0=
+
+Name: res/layout/user_preference_screen_normal_no_next_icon.xml
+SHA1-Digest: 20wOmZiLYLGwnaCgphC59o1N4zc=
+
+Name: res/layout/data_usage.xml
+SHA1-Digest: iEGduCfx2BPR3hJ0a7qS/GpGNgY=
+
+Name: assets/spen_sdk_resource_default/snote_text_icon_underline.png
+SHA1-Digest: JcgY8IBSqlFuqAf560PXlyPNQgE=
+
+Name: assets/spen_sdk_resource_default/snote_popup_btn_03.png
+SHA1-Digest: qDT7kINkfb9ydeUpp5eTx8mXGyU=
+
+Name: res/drawable-xxhdpi/voip_speaker_icon_on_light.png
+SHA1-Digest: OmrxbDdK1pgiAXoFDQ+wry9x+ro=
+
+Name: res/drawable-xxhdpi/share_view_popup_icon_docs_view.png
+SHA1-Digest: FJDMCGwY3eNvDE8lhlw4WHgYuB0=
+
+Name: res/drawable-xxhdpi/list_incoming_reject_handle_press.png
+SHA1-Digest: Tj3szJ/DTA3EisPUREuMZKcR1v4=
+
+Name: res/drawable-xxhdpi/vt_change_language_icon_light.png
+SHA1-Digest: pcJej7NDkJpIOnmMz0nQp/3I1rg=
+
+Name: resource/drawable-xhdpi/smemo_handle_diamond.png
+SHA1-Digest: MGvS83yJ3RBEQB/W03t+Tq00uMA=
+
+Name: res/drawable-xxhdpi/scamera_arrowkey01_select.png
+SHA1-Digest: KOrVvF3dNOBLbT1jnVZMqRMr0s4=
+
+Name: assets/spen_sdk_resource_default/snote_tablet_delete_press.png
+SHA1-Digest: Z6mrnV1z8eRIRjomJpDp0uyf4Jg=
+
+Name: res/layout-land/voice_call_incoming.xml
+SHA1-Digest: C4c5gUXDXe3IYue6tSuZl7XBmqw=
+
+Name: res/drawable-xxhdpi/share_bar_normal_land.png
+SHA1-Digest: w0/rKwMaL2qAR8VLQ/yh+WGORis=
+
+Name: assets/spen_sdk_resource_default/snote_title_right_tablet.9.png
+SHA1-Digest: BpU8Y3ZGAdCGHQr2B+Zfu5erxDM=
+
+Name: res/drawable-xxhdpi/call_btn_focus_switch_off_h.png
+SHA1-Digest: pJI52U5xJLtcfpwckeh2UllXVFs=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_press.png
+SHA1-Digest: Juxagv/gZ8xyFGUBUyPSQy2H13w=
+
+Name: res/drawable/screenshare_main_popup_background_selector.xml
+SHA1-Digest: O06LJcT9REGTMjZGZS0rY21w9l4=
+
+Name: res/layout-land/scamera_video_call_end_ui.xml
+SHA1-Digest: UUt/8OphJok4wGTEe8GX1ReQA7I=
+
+Name: assets/spen_sdk_resource_default/snote_text_right.png
+SHA1-Digest: LmVoBdtiKveG0cAIGoeXAghmk5s=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_bg_press_left.9
+ .png
+SHA1-Digest: odqmYPkKuOkjKVk0KTjbds4Vk80=
+
+Name: assets/animation/MaskImage_THEME_SHOT/categories/muscth/muscth_3
+ .yuv420sp
+SHA1-Digest: PSXXgSy7rqFWzMpCo5SXs3dh6K8=
+
+Name: res/drawable-xxhdpi/btn_radio_off_dim_focus.png
+SHA1-Digest: 9nsCNx8ytDsMoULx655sRX2/CKw=
+
+Name: res/drawable-xxhdpi/call_dial_btn_01_h.png
+SHA1-Digest: bSFSsCGM00ZgQfF+1GNER6+6YmE=
+
+Name: res/layout/user_preference_screen_checkbox_two_line_black.xml
+SHA1-Digest: 7Jwag5EvSc11aMyUNC0/hcc3pf0=
+
+Name: res/layout-land/scamera_video_call_other_layout.xml
+SHA1-Digest: pGPJnoYtWommw4NBiD3fOe+FcPE=
+
+Name: res/drawable-xxhdpi/share_view_tool_area_left_bg_focus.9.png
+SHA1-Digest: q8A1vNe9OC0I1ddI8OMPZSmHs6U=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_bg_show.png
+SHA1-Digest: SIifXeJEY87Na8oduq2VXeFuJyU=
+
+Name: lib/armeabi/libSamsungAudioEngine_JBP.so
+SHA1-Digest: KR1PJni5zuuC8nz2z7mxzHTrGhM=
+
+Name: res/drawable-xxhdpi/general_btn_delete.png
+SHA1-Digest: AUeamJCKL/+4RHpW5hFKjbiZtgc=
+
+Name: resource/drawable-xhdpi/popup_exit_press.png
+SHA1-Digest: 1xbOqs9GxgsNWnhjZRxHAWirLyw=
+
+Name: res/drawable-xxhdpi/chatonv_video_openmenu_bg_focus.9.png
+SHA1-Digest: GyFpdnfYs6oZQlZfCnuANxNwTh8=
+
+Name: res/drawable-xxhdpi/vt_img_unknown_h.png
+SHA1-Digest: 2BCeG1sdasxME+zIFfeepOOzaso=
+
+Name: res/drawable/screenshare_penwriting_toolbar_move_selector.xml
+SHA1-Digest: Z22ajhgRoSy+kWPHczG+jsPwpjU=
+
+Name: res/drawable-xxhdpi/list_ic_add.png
+SHA1-Digest: Mm9qgmDXP60QM9hcCicWbYhDq/Y=
+
+Name: res/drawable-xxhdpi/call_end_btn.9.png
+SHA1-Digest: XhLbAncZez8IAiAZrJ6bUkgzWz8=
+
+Name: res/drawable-xxhdpi/scamera_stat_sys_battery_85.png
+SHA1-Digest: vgH1o15VkoM+ax8lM6qm/+zMy08=
+
+Name: resource/drawable-xhdpi/pen_opacity_bg.png
+SHA1-Digest: TnrghTyCsdD5JgONRSQwoA97dd8=
+
+Name: res/drawable-xxhdpi/shareview_btn_smallscreen.png
+SHA1-Digest: /Y8bcVDuVfEwAmxFsVl8G7FcM5E=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_last_normal.png
+SHA1-Digest: so4Q3WfZTEI5UcdX6mvdjihYnpc=
+
+Name: res/drawable-xxhdpi/emotional_1st_animal.png
+SHA1-Digest: xsxCvRjXt0ym8wbQDXIrCknFT6o=
+
+Name: resource/drawable-xhdpi/ploating_popup_picker_down.png
+SHA1-Digest: jKYN67M6kB5XHJpTpomelAEAJfo=
+
+Name: res/drawable-xxhdpi/quick_panel_button_focus.9.png
+SHA1-Digest: 3c6s1UOX4XrhKiWYLazKp508xjc=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_03.png
+SHA1-Digest: EO8tdd+O/amCcn0MY4ubU5meXtk=
+
+Name: res/drawable/action_bar_btn_option_selector.xml
+SHA1-Digest: jlUzS9U7EC/HJWhSQrAoT40r1wQ=
+
+Name: resource/drawable-xhdpi/snote_type_02.png
+SHA1-Digest: X7ESiuPUk1zRagAwFI3suq4ULmQ=
+
+Name: res/layout/video_call_theme_mustache.xml
+SHA1-Digest: gsGBEQO/bOSA07hKICB0uc36H4Y=
+
+Name: res/layout/reject_call_with_msg_content_for_cover.xml
+SHA1-Digest: BVmnCU7L2kDJg5diwu8WcYRhdjo=
+
+Name: res/drawable-xxhdpi/chatonv_video_openmenu_bg.9.png
+SHA1-Digest: JYsAfX8aHwUHw6TsiTZ8VX4BCYg=
+
+Name: res/layout/video_call_translator.xml
+SHA1-Digest: f24N9afxfuwUioHxAzL6yISEMNQ=
+
+Name: resource/drawable-xhdpi/ploating_popup_left_p.png
+SHA1-Digest: bry+r31YM00NUgkPdVOEbbqGKJ0=
+
+Name: res/drawable-xxhdpi/share_ic_jog_dial_decline.png
+SHA1-Digest: LBETrLrDvm3opAG8W6HKMc491XU=
+
+Name: res/drawable/call_headset_on_icon_selector.xml
+SHA1-Digest: wr6ydvSakNCF4n5M6538VgNawbg=
+
+Name: res/anim/red_arrow_effect.xml
+SHA1-Digest: nIs+WZgLIL8jbRDd0PvPkTR8xlc=
+
+Name: res/drawable-xxhdpi/call_during_btn_mute_off_dim.png
+SHA1-Digest: E+RukI3cwcKg0soxCX2zblt85+o=
+
+Name: res/drawable-xxhdpi/call_during_btn_speaker_off_press.png
+SHA1-Digest: 2c5KeX6J4iS3bdTw6hU4n5uIikQ=
+
+Name: res/drawable-xxhdpi/action_bar_icon_share.png
+SHA1-Digest: jvXcuBArDgTiwkmrNnGDcVyDFko=
+
+Name: res/drawable-xxhdpi/scamera_standby2_2.png
+SHA1-Digest: S0Cat8ZyZSjorxFYqkufnAvzbsg=
+
+Name: res/drawable/list_bg_selector_black.xml
+SHA1-Digest: FcQz+2bWJA/doeNtXRC8XZsR/hs=
+
+Name: res/drawable-xxhdpi/chatonv_video_icon_openmenu_focus.png
+SHA1-Digest: gEEKo/YR14jupgcUnG1fsttIDYw=
+
+Name: lib/armeabi/libsamsung_videoengine_JBP_43.so
+SHA1-Digest: f0Gwsjw7OrMtbJuyiC/Qlu/I9EM=
+
+Name: res/drawable-xxhdpi/co_btn_bg_normal.9.png
+SHA1-Digest: YwABEL4osXU80E0uguzSqGRZ3tY=
+
+Name: res/drawable-xxhdpi/translator_bubble_tts_on_icon_focus.png
+SHA1-Digest: uc5JHPv0ELRgABxWPmdc8rIwzYw=
+
+Name: res/drawable-xxhdpi/end_call_voip_call_icon.png
+SHA1-Digest: 8b+uws2b97cgaMDICn9UVxjs0LE=
+
+Name: res/drawable-xxhdpi/vt_stop_icon_press.png
+SHA1-Digest: NpBdEJzc5E/pbtjsHI9/q00SB14=
+
+Name: res/drawable/button_text_color_selector.xml
+SHA1-Digest: n1YP7j1G0kEYQpIKgUHgeceGnew=
+
+Name: lib/armeabi/librtppayload.so
+SHA1-Digest: PCxj+Un9TL35P+H8OtXbLJKUk0E=
+
+Name: res/drawable-xxhdpi/more_option_icon_layout_disabled.png
+SHA1-Digest: O2qyOjS61hyOvGvaRSaI5Y7HIvQ=
+
+Name: res/drawable-xxhdpi/tw_action_bar_icon_check_disabled_holo_dark.
+ png
+SHA1-Digest: KtyTVc8BDGeoPZML9GVR+dLB0Xo=
+
+Name: assets/spen_sdk_resource_default/eraser_handel.png
+SHA1-Digest: +shX/RDQVrnAUcMKvKMfwSAkjNw=
+
+Name: lib/armeabi/libstylize.so
+SHA1-Digest: 3ISTeG67izWAMYLWgxyUfxaBxT0=
+
+Name: resource/drawable-xhdpi/pensetting_icon_chinabrush.png
+SHA1-Digest: aOqHy8Z5TEIBTwHoMBsDTZEpq+w=
+
+Name: resource/drawable-xhdpi/snote_title_right_press.9.png
+SHA1-Digest: DpRYRJ6aiLWbRk2CZUkRc0EztNs=
+
+Name: resource/drawable-xhdpi/snote_btn_focused_holo_dark.9.png
+SHA1-Digest: zQfN6oe9uy7pg/pYaNrsPh8gA7o=
+
+Name: res/drawable-xxhdpi/chat_on_v.png
+SHA1-Digest: fHjK0M5tHstFsGzxzle7oOVdz4Q=
+
+Name: res/drawable/call_dial_number_3_btn_h.xml
+SHA1-Digest: GOEQ614u5Y+mkiZiTEwJqoreRMA=
+
+Name: res/drawable/call_dial_number_2_btn.xml
+SHA1-Digest: /k47atcEsOYqmaVAbXck+AaE3t0=
+
+Name: res/drawable-xxhdpi/mustache_02.png
+SHA1-Digest: P56R6z9I2DzNT7Hb9N7LuL73cd4=
+
+Name: assets/spen_sdk_resource_default/snote_pen_circle_transparency.p
+ ng
+SHA1-Digest: 8eEKtpQnjgb++BKxDa9vtz1yBFM=
+
+Name: res/drawable-xxhdpi/voip_headset_icon_on_light.png
+SHA1-Digest: XeSZJLUfwByZhXNfIU+vtbplBug=
+
+Name: res/drawable-xxhdpi/share_incomming_sequence_01.png
+SHA1-Digest: bThR3TrEo2HWBrYS1cbndx2/UKE=
+
+Name: assets/spen_sdk_resource_default/snote_tab_line.9.png
+SHA1-Digest: hYyzHssmowR/g+pd4E+Hyjxfdk4=
+
+Name: res/drawable-xxhdpi/share_view_tool_hide_icon_press.png
+SHA1-Digest: rVlb2uQuemJgZnM/y/TQrmfZOxQ=
+
+Name: res/drawable-xxhdpi/shareview_btn_fullscreen_focus.png
+SHA1-Digest: RGwJouUPDwiEAalSBSR+PyPtPd0=
+
+Name: res/drawable-xxhdpi/share_screen_end_btn_press.png
+SHA1-Digest: nSsnEvoKYp7AveHaeFYE0DvadUA=
+
+Name: assets/spen_sdk_resource_default/ploating_popup_right_n.png
+SHA1-Digest: KbkcqoOY1V4Vx/REPiQxelkY398=
+
+Name: res/drawable/screenshare_main_pause_btn_selector.xml
+SHA1-Digest: IhytG+Laqbe4PIxixU8LQz3YndI=
+
+Name: res/drawable-xxhdpi/list_incoming_reject_handle_focus.png
+SHA1-Digest: cicTDdBQQSBf0MQA3MZ31NUlJ4A=
+
+Name: res/drawable/call_hide_me_selector.xml
+SHA1-Digest: jVwvRi22JjAdHsVlDbxt0RuPs/U=
+
+Name: res/drawable-xxhdpi/share_view_tool_icon_camera.png
+SHA1-Digest: A1YM5JVDt/c/cd8EFzZzdT35RS4=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_bg_5.png
+SHA1-Digest: QfEVME5MHiRACZ9RPBPCqIW4M60=
+
+Name: res/layout/user_preference_screen_checkbox_one_line_black.xml
+SHA1-Digest: Xf3RDsXzZrIn3p3U0SLG5Z16NM0=
+
+Name: res/layout-land/voice_call_driving_btn.xml
+SHA1-Digest: eNjl0NbDJe3mO4QoHqFyA41Ra7o=
+
+Name: res/drawable-xxhdpi/driving_mode_reject_icon_h.png
+SHA1-Digest: nBrqGBlVcEU6Noe7cuACalWQfTE=
+
+Name: res/drawable-xxhdpi/share_pause_icon.png
+SHA1-Digest: 2ySK6dvMM9UmSa7XYKG5fAPkFe4=
+
+Name: res/drawable-xxhdpi/vt_call_popup_icon_enable_cartoon_veiw.png
+SHA1-Digest: wAQm8suKPDKGBRnUg82KDdUuwvk=
+
+Name: res/anim/move_out_effect.xml
+SHA1-Digest: nuGiAGIyZkr5yeQkpfvniR7zxX0=
+
+Name: res/drawable-xxhdpi/list_round_more_arrow.png
+SHA1-Digest: TE1UCaCm2G5UXVlbBUkaGjHKd9c=
+
+Name: res/drawable-xxhdpi/call_titlebar_bg.png
+SHA1-Digest: /s0qE7a/iNmz+xMBMHbkV9FvGQg=
+
+Name: res/drawable-xxhdpi/share_screen_icon_btn.png
+SHA1-Digest: ZwIuItAuew2FAXxlEWnxcAp7lDk=
+
+Name: res/drawable-xxhdpi/share_view_tool_icon_move_press.png
+SHA1-Digest: Kps2ucEld8WtHXMRywG+25prm6Y=
+
+Name: res/layout-land/video_call_theme_animal.xml
+SHA1-Digest: 5Iv5pAJx78+r0H5whFGeuwEASEA=
+
+Name: res/drawable-xxhdpi/call_dial_btn_08_h.png
+SHA1-Digest: obdPl8Z/qllt3LSFcaf2w6ClUsY=
+
+Name: res/drawable-xxhdpi/share_view_toast_popup_btn_bg_press.9.png
+SHA1-Digest: 34F/meZ3VxuOnJMPshD/UG/C7Hc=
+
+Name: res/drawable-xxhdpi/scamera_sound_off.png
+SHA1-Digest: S9fWYayLi671HpYYjMirDS6V7AU=
+
+Name: res/drawable-xxhdpi/list_incoming_reject_handle_01_press_h.png
+SHA1-Digest: SjzUsFG6VLxRmsuP2vAfA8BP8lo=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_bg_focus_center
+ .9.png
+SHA1-Digest: +fJ1x1ypROitJCTyzLP9UdsRr6g=
+
+Name: assets/spen_sdk_resource_default/snote_text_icon_bold.png
+SHA1-Digest: rksxcq4Vfipd5JUE4fxCEvQeAq8=
+
+Name: lib/armeabi/libSamsungMediaEngineRecorder_JBP.so
+SHA1-Digest: xU4awqoVo/4kHTV7zsdH74hSHzs=
+
+Name: res/drawable-xxhdpi/more_option_icon_layout.png
+SHA1-Digest: u7q69oijlr/1IZ7+JQ11h/LGuvw=
+
+Name: res/drawable-xxhdpi/jog_tab_left_bg_press_small.png
+SHA1-Digest: DKeTEziEIzS7UZ1kFgLCQoqv4nA=
+
+Name: res/drawable-xxhdpi/ic_reject_message.png
+SHA1-Digest: 0J96lMz5ORcad+aJYRCVZ4DQFN4=
+
+Name: res/drawable-xxhdpi/share_view_tool_area_bg_press.9.png
+SHA1-Digest: H4GoORqKCCK0tysyMJqDx5PKGAg=
+
+Name: assets/spen_sdk_resource_default/ploating_popup_right_p.png
+SHA1-Digest: sFCdia5Gy5yaiXieMD3tMwnxuII=
+
+Name: res/drawable/chat_forward_btn_left.xml
+SHA1-Digest: 6pV1Pc0PJ2sEcoOIIrlYqDuAQ5k=
+
+Name: res/drawable-xxhdpi/general_header_line.png
+SHA1-Digest: JAeAIq/QDiwKKLZQ0msjJAAyzcQ=
+
+Name: assets/spen_sdk_resource_default/snote_popup_scroll_handle_p.png
+SHA1-Digest: lN0H1dAVGTKeb6UTH5yL10hhf8c=
+
+Name: assets/spen_sdk_resource_default/snote_popup_btn_05_hover.png
+SHA1-Digest: fBsyGccphWiBDTWD/5AuIjhZntY=
+
+Name: res/drawable-xxhdpi/chat_translator_top_btn_language.png
+SHA1-Digest: hHtzCIE4hHTQeJ+HtAGFcG8SllM=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_press_focus.png
+SHA1-Digest: p1dhbQCqWWLyC8sQDHpzzBhnKNk=
+
+Name: res/drawable/call_dial_number_6_btn.xml
+SHA1-Digest: Z/hcD7krCQJuAac0wKcIhn438mQ=
+
+Name: resource/drawable-xhdpi/eraser_handel.png
+SHA1-Digest: GDdArQT65Cd9JexFiP12v5JOZXk=
+
+Name: res/drawable-xxhdpi/pushpopup_time_arrow_down.png
+SHA1-Digest: HBBgmw5CsVOm8WwdZycK9eZrOt0=
+
+Name: res/drawable/call_dial_number_5_btn.xml
+SHA1-Digest: mp5bGmSE6wWcMPDlkXtSvyvxSmA=
+
+Name: res/layout/video_call_top_layout.xml
+SHA1-Digest: qHf3z8WBPxctEqRRok/3BklwRow=
+
+Name: res/drawable-xxhdpi/btn_radio_on.png
+SHA1-Digest: msPeXWLRNf6KJTvEqGMO0CKVJio=
+
+Name: res/drawable-xxhdpi/vt_call_video_btn_light_press.png
+SHA1-Digest: +gjf23H0MXikFHQeeLuBjt84gTE=
+
+Name: res/drawable-xxhdpi/share_view_popup_icon_pen_writing_dim.png
+SHA1-Digest: Lf0LT2aWDxKsUCjs70Dn1ztkxbE=
+
+Name: res/drawable-xxhdpi/list_divider_black_h.9.png
+SHA1-Digest: t0eeP7BeEfUd7G9vf7KW6jBINW0=
+
+Name: res/drawable-xxhdpi/show_members_dim.png
+SHA1-Digest: 1M15arljq3N9h4b0sS3w1TbiXEw=
+
+Name: resource/drawable-xhdpi/pensetting_icon_chinabrush_unselect.png
+SHA1-Digest: Yd9HI+0BOsHCDtbiGGGPAV+Fj3A=
+
+Name: res/drawable-xxhdpi/dropdown.9.png
+SHA1-Digest: bjgQPTdoqQ9Ywe2jSZtBjlxQWGU=
+
+Name: res/drawable-xxhdpi/call_call_icon_press_h.png
+SHA1-Digest: +pXk1EenPHrXawUpB2Ftcmtxr8Y=
+
+Name: res/drawable-xxhdpi/call_dial_btn_00_h.png
+SHA1-Digest: iolRUSwUBAFKhyVLfviS5EdTQEc=
+
+Name: res/drawable-xxhdpi/vt_change_language_icon_press.png
+SHA1-Digest: 1zeYiukyVu6GGt+dAkXtnVP8ZdI=
+
+Name: res/drawable-xxhdpi/list_incoming_reject_handle_light.png
+SHA1-Digest: ip2EyDc1n6cnG12WkYQAJgHt6/k=
+
+Name: res/drawable/co_checkbox_selector.xml
+SHA1-Digest: unM1vy2RqFqZwAoRY0Y8I4NMYHg=
+
+Name: res/layout/incoming_live_screen_share_sliding_widget.xml
+SHA1-Digest: VtExV6jmjVFJtLuR8XSPmQbopAo=
+
+Name: res/drawable-xxhdpi/scamera_camera_home.png
+SHA1-Digest: KHyKDyWKUKwWetl01VSlY62sIAk=
+
+Name: res/drawable-xxhdpi/left_page_press.png
+SHA1-Digest: KgPKz29DNI1jDdxTGBY9jKWD7/A=
+
+Name: assets/spen_sdk_resource_default/up_popup_delete.png
+SHA1-Digest: QUSWuHkz7t4jdC0DXUjVErEY/dw=
+
+Name: res/drawable/vt_call_btn_end_call_selector_h.xml
+SHA1-Digest: wHib9oQz431qdp/AMErdX1FoxVs=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_cancel.png
+SHA1-Digest: rwSAy9wCLckqWPuEnNA+2837lEU=
+
+Name: res/drawable-xxhdpi/pushpopup_time_arrow_down_press.png
+SHA1-Digest: Lv0+Dd1cZjzr4V7UouhqvNAdJE0=
+
+Name: resource/drawable-xhdpi/snote_popup_btn_01.png
+SHA1-Digest: US0aGezc7qMy2GA/22LaX/XTSDk=
+
+Name: res/drawable-xxhdpi/share_view_popup_icon_docs_view_dim.png
+SHA1-Digest: uOyWyJY5LxmAV6EV7Bm1yw/PEiU=
+
+Name: res/drawable-xxhdpi/more_option_icon_switch_voice_call_disabled.
+ png
+SHA1-Digest: MXXB8YgOtSg9y7o6GFmIVooxm3E=
+
+Name: res/drawable-xxhdpi/call_pattern_mainarea.png
+SHA1-Digest: jZkrzGM086dmAW5XBOpY7tzPY0k=
+
+Name: res/drawable-xxhdpi/clear_ic_chaton_voice.png
+SHA1-Digest: hqGfWAw+q90m+SOrv2pVopQ/C6M=
+
+Name: res/drawable-xxhdpi/share_view_tool_icon_back.png
+SHA1-Digest: vjFo6N6AjnkF/tGZJrYPXtSG4DI=
+
+Name: res/drawable-xxhdpi/btn_radio_off_focus.png
+SHA1-Digest: Mkdo3RbbuuVdRyIBRDS4pndwR2Q=
+
+Name: res/layout/screenshare_quick_view.xml
+SHA1-Digest: 8dI0RAPzTzwik0hnz+UvVwlP6wo=
+
+Name: res/drawable/dual_camera_icon_selector.xml
+SHA1-Digest: G4GOTFH5DiFrVUJyt0LeV1nrUjc=
+
+Name: res/drawable/screenshare_penwriting_toolbar_undo_selector.xml
+SHA1-Digest: 397dedfc/y00IT+Pq/9aA8LShwY=
+
+Name: res/drawable-xxhdpi/uncheck_press.png
+SHA1-Digest: zBpGJclX6z+R9rmSkbqlH58NiRo=
+
+Name: res/anim/hide_menu.xml
+SHA1-Digest: /Dz3kPL7s1Al/Vb/j4E0pHpCtFA=
+
+Name: res/drawable-xxhdpi/quickpanel_btn_ledon_normal.9.png
+SHA1-Digest: +jfnzcv6z9LLioz3aJLlFmSCoaE=
+
+Name: assets/spen_sdk_resource_default/snote_popup_in_bg02.9.png
+SHA1-Digest: Prr/hq9dMw0zojHXl5eqDtVN4/A=
+
+Name: res/layout/scamera_video_call_other_layout.xml
+SHA1-Digest: yUYYsrWVbl7I8SnUOTdbmKh5Cw8=
+
+Name: res/drawable-xxhdpi/share_view_popup_icon_end.png
+SHA1-Digest: FYskGluWyxmpqhdyDQ5Q7i9BEN0=
+
+Name: res/drawable-xxhdpi/check_dim.png
+SHA1-Digest: GgrnYONhci/wo7y9QYrnLCvP9hQ=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_last_focus.png
+SHA1-Digest: kJH5+JoofNvvYBQZrnz7BgwSWJk=
+
+Name: res/drawable/call_message_icon_selector_e.xml
+SHA1-Digest: deBzQ1sogBLbfG7XntZ2As/LF0M=
+
+Name: res/drawable-xxhdpi/actionbar_ic_arrow.png
+SHA1-Digest: xhnBBdJoSrJ16DGWFlMSQK1Kl3E=
+
+Name: res/drawable-xxhdpi/call_video_call_icon_dim.png
+SHA1-Digest: 9FLQKa3sLswWs+BFJN2twjbdrnI=
+
+Name: resource/drawable-xhdpi/snote_dropdown.9.png
+SHA1-Digest: hTAwpkNS1mm7wi8SUe15G9sdBpA=
+
+Name: res/drawable-xxhdpi/call_dial_btn_07.png
+SHA1-Digest: yvSvzoo2SQlfleSeOV6FJI4puXE=
+
+Name: res/drawable-xxhdpi/end_shareview.png
+SHA1-Digest: MEiF69UjJ8fsrQXjQcfOXw+1pYQ=
+
+Name: assets/spen_sdk_resource_default/snote_type_02.png
+SHA1-Digest: rbSGXVz1vjgC4M92XyrMdbLQzkU=
+
+Name: res/drawable-xxhdpi/call_dial_btn_06_h.png
+SHA1-Digest: xSwisOP/Pj+XRMnQ67Fs/9AWVrI=
+
+Name: res/drawable-xxhdpi/share_view_tool_hide_icon.png
+SHA1-Digest: RgHUgY8pB/knNzmtcMq0DalVGIg=
+
+Name: res/layout-land/incoming_sliding_widget.xml
+SHA1-Digest: 8fR/+r7L2Fc2xBhHrAE2+eZO3nE=
+
+Name: assets/samm_embeded_soundeffect/color_filling.ogg
+SHA1-Digest: g8sZjLjFagNdw4yLhQou+nw/cLA=
+
+Name: res/drawable/call_dial_btn_bg.xml
+SHA1-Digest: QKk0gxQtgZA2PSVEngcOYJ2EtuE=
+
+Name: res/drawable-xxhdpi/share_view_toast_popup_divider.png
+SHA1-Digest: 8+Y0VWEX7wa6M+iYCHEM/dizbVg=
+
+Name: res/drawable-xxhdpi/stausbar_noti_icon.png
+SHA1-Digest: +8G/G2G96T1uIx+txWdha1vZjiU=
+
+Name: res/drawable-xxhdpi/driving_mode_cancel_icon_h.png
+SHA1-Digest: ppK+7EItwwIeTN/8icFeo43gwF8=
+
+Name: res/drawable-xxhdpi/buddies_profile_btn_press.9.png
+SHA1-Digest: deCn7J+U4YvftmsYPeKtbiQHhaw=
+
+Name: res/layout/dial_in_call_screen.xml
+SHA1-Digest: kofYDBwsjF33rFrg7VwbfMVQKPQ=
+
+Name: res/drawable-xxhdpi/call_show_my_video_press.png
+SHA1-Digest: 4uyMi5VenjuxDkm+jm9oRh+dMUM=
+
+Name: classes.dex
+SHA1-Digest: vH2/esmb9B9yLsyxjFOgUQX/LGw=
+
+Name: res/drawable-xxhdpi/call_during_btn_mute_off_press.png
+SHA1-Digest: 6H3a79u1Psg70ZX3ZDzWD8EWNfc=
+
+Name: res/drawable-xxhdpi/share_view_toast_popup_bg_center_normal.9.pn
+ g
+SHA1-Digest: F5BhHoyRAzMaeSXVJKM6OSqn3jU=
+
+Name: res/layout-land/live_share_video_call.xml
+SHA1-Digest: qXp1/WkLemqftoYBIrzfQ7PpOHY=
+
+Name: res/drawable-xxhdpi/shareview_btn_fullscreen.png
+SHA1-Digest: khI0VXMtDQMrE2MJoRQN6a7sVYk=
+
+Name: res/layout/reject_call_with_msg.xml
+SHA1-Digest: d1y9pBityBabr552afXLhRJAtSQ=
+
+Name: res/drawable-xxhdpi/hide_me.png
+SHA1-Digest: Kfd3HeBYhJO3MkmYIFQ6g+UsA74=
+
+Name: assets/spen_sdk_resource_default/snote_spinner_ab_pressed_holo.9
+ .png
+SHA1-Digest: EXuTh5LL6yyHm3KkG6sHp2CokQo=
+
+Name: lib/armeabi/libpolarisexternel3.so
+SHA1-Digest: rbYsMJUOvUSZ6UTijh9UO27kjdI=
+
+Name: res/drawable-xxhdpi/share_view_tool_hide_icon_focus.png
+SHA1-Digest: 9uOdKxZCG0EFmhyHnM1oe/6uV6Y=
+
+Name: res/drawable-xxhdpi/uncheck_focus.png
+SHA1-Digest: 7bN/yl+fExGT47mIMjQMoMdNBbQ=
+
+Name: res/drawable/data_usage_cycle_down_btn_selector.xml
+SHA1-Digest: nNm6+02O43BWuUtr7eICLmQNTyg=
+
+Name: res/layout/incoming_sliding_widget.xml
+SHA1-Digest: E8ufNKlp3H9fAP3/uxoM/GZNIz0=
+
+Name: assets/spen_sdk_resource_default/ploating_popup_center_p.png
+SHA1-Digest: KFKM7ExfsUNXVO8alMmvEI/s9H4=
+
+Name: res/drawable/call_camera_spin_selector.xml
+SHA1-Digest: T2imNBzykIZa1aIN9AWGY0NxyXU=
+
+Name: resource/drawable-xhdpi/snote_tablet_popup_btn_02.png
+SHA1-Digest: 5THrVpd+C6rFwGQgecda6k7UiiY=
+
+Name: assets/spen_sdk_resource_default/snote_text_center_press.png
+SHA1-Digest: iX9rgTolVjWH2BbazbzNY6Rxrqg=
+
+Name: res/drawable-xxhdpi/pushpopup_time_arrow_up_focus.png
+SHA1-Digest: XIj+VhmUlpdqM4sT4Lvo3VqSE08=
+
+Name: assets/spen_sdk_resource_default/snote_title_right_press.9.png
+SHA1-Digest: bFhr2lzShUSyj3T6jR8j37xMVqE=
+
+Name: assets/spen_sdk_resource_default/pensetting_icon_chinabrush_unse
+ lect.png
+SHA1-Digest: GRIuXOjqzy7Kj5bBcX4L3soK3K4=
+
+Name: res/layout/screenshare_pen_menu.xml
+SHA1-Digest: bsDzG6XsW3l9UywJla4RFyfJVFY=
+
+Name: assets/spen_sdk_resource_default/smemo_handle_diamond.png
+SHA1-Digest: lf4ajL4lKPNztTeqjrtFtGeTlgo=
+
+Name: res/layout-land/dial_in_call_screen.xml
+SHA1-Digest: kI1suSrXOBRoVDvt6cZbyJrriH4=
+
+Name: assets/vlsdk_lib.zip
+SHA1-Digest: 58aS8LlfC3KyKP8D8uB6hyAayrQ=
+
+Name: res/drawable-xxhdpi/voip_invite_buddies_icon_on_light.png
+SHA1-Digest: 0UPdkdy3qf86csinXMd7M9lrv08=
+
+Name: res/drawable/scamera_animation_loading.xml
+SHA1-Digest: B8nB3UR+yuJ4ENl+Q55w7ICu/98=
+
+Name: res/drawable-xxhdpi/luncher_03.png
+SHA1-Digest: 7RXsLIHwZTHylsi7mGI2MOYrcco=
+
+Name: assets/spen_sdk_resource_default/ploating_popup_left_n.png
+SHA1-Digest: acgP8wWAP32lBKW3yiERka9/3ik=
+
+Name: res/drawable/screenshare_penwriting_toolbar_camera_selector.xml
+SHA1-Digest: HdwmTjcowlCDdvxlxMS/kkRGyNs=
+
+Name: res/drawable-xxhdpi/share_view_popup_icon_home_dim.png
+SHA1-Digest: sP+DLFEbc9VN/M/O+Hs2HMzY580=
+
+Name: res/drawable-xxhdpi/call_dial_btn_01_press.png
+SHA1-Digest: CzQSR8FZZuqChN7MGdTFaQoojJA=
+
+Name: res/drawable-xxhdpi/quick_panel_btn_off_disable.9.png
+SHA1-Digest: suG3dJO0b9DkoSVDlW4UivYlrnw=
+
+Name: res/drawable-xxhdpi/input_line_normal.9.png
+SHA1-Digest: RDTk5jOms30dr6Y+Tx1fNUt/Lqg=
+
+Name: res/drawable-xxhdpi/voip_headset_icon_press.png
+SHA1-Digest: sDxlPRfY1XRcvJq+1ykUVr6Lmtk=
+
+Name: res/layout/chatoncontextmenuview.xml
+SHA1-Digest: A301IJr+9CxAlwYl9U1biASBZTE=
+
+Name: res/layout/screenshare_main_screen_share_overlay.xml
+SHA1-Digest: KokGaofLWwSn0hQ6r07eTSV7d4w=
+
+Name: res/drawable-xxhdpi/mustache_01.png
+SHA1-Digest: 0M3PrVM23zbwJOsk2m727qK3B0M=
+
+Name: resource/drawable-xhdpi/btn_popup_delete_n_default.png
+SHA1-Digest: U5KJ4Ih1ot7GueJO/DoJRAcXFW8=
+
+Name: resource/drawable-xhdpi/up_popup_delete.9.png
+SHA1-Digest: Oiar+DcTATee5kQ+2Ig7jbxGP/E=
+
+Name: res/layout/accept_voice_call_cover_big.xml
+SHA1-Digest: utbafjOeAbpcn8ic+T5izAfBeLc=
+
+Name: res/drawable-xxhdpi/chatonv_capture_default_h_02.png
+SHA1-Digest: UBVVlGbMou+lq+2hUXeokPCTVxc=
+
+Name: res/drawable-xxhdpi/vt_show_me_icon_light.png
+SHA1-Digest: Fnts4nBqr7AZKZqXjtykPbZFxvE=
+
+Name: res/drawable-xxhdpi/list_button_send_focus.9.png
+SHA1-Digest: wR/CaF1S2i0NoI45ygaJ1ZmyP1k=
+
+Name: res/drawable-xxhdpi/call_message_icon_dim_h.png
+SHA1-Digest: gkRJiwA+BaJol/fKVY78cZDvwLE=
+
+Name: res/drawable-xxhdpi/share_view_tool_area_divider.png
+SHA1-Digest: eHZIxk2FCW9Hy6FpSj78cL31n0g=
+
+Name: lib/armeabi/libSamsungMediaEngineRecorder_JBP_43.so
+SHA1-Digest: sj8qN2aTxOdTDIJQQnLpnyL7Drk=
+
+Name: res/drawable-xxhdpi/scamera_stat_sys_battery_charge_20.png
+SHA1-Digest: t59DYHR08ecNF3Io/13Ln1v7H98=
+
+Name: assets/samm_embeded_soundeffect/chinese_brush_draw.ogg
+SHA1-Digest: hU7PEQOjReUvFWPzgp3ywNySq1U=
+
+Name: assets/spen_sdk_resource_default/snote_tablet_delete.png
+SHA1-Digest: 87nUfrEy8+N9hcQhfZnEnzMIm6I=
+
+Name: res/drawable-xxhdpi/clear_reject_circle_arrow_big_01.png
+SHA1-Digest: n399fqTbsowX7Vt/9VydJENZENI=
+
+Name: res/drawable-xxhdpi/call_dial_btn_10_h_press.png
+SHA1-Digest: X/txaG4XXpHgvXRTQ5YwLwmqKyo=
+
+Name: res/layout/voice_call.xml
+SHA1-Digest: e/Q/1+morD8bv5ZLxiQWns1VkNA=
+
+Name: res/drawable-xxhdpi/scamera_resolution_setting_select.png
+SHA1-Digest: g6uWy5uC81GhPfNyFqEvR+eeVzg=
+
+Name: res/drawable/call_dial_number_8_btn.xml
+SHA1-Digest: AdRoQVEESdk6jpWMqwLpei2li+U=
+
+Name: assets/spen_sdk_resource_default/snote_mypen_select.png
+SHA1-Digest: f+D/xGfTPbctWs+CqLUahdb47DY=
+
+Name: res/drawable-xxhdpi/more_option_icon_switch_voice_call_press.png
+SHA1-Digest: mTKg2E7sqjMnvkqgcBTocMh9WFk=
+
+Name: res/drawable-xxhdpi/btn_default_light_normal.9.png
+SHA1-Digest: 6ZFcoc6RWr9fQ23dOkcEeyijcUg=
+
+Name: res/drawable/vt_call_btn_selector.xml
+SHA1-Digest: 2+c6+yJuhMwWbK2oxut+VOIFzYY=
+
+Name: res/layout-land/video_call_btn_with_dualcamera.xml
+SHA1-Digest: 5XL3MA9/lOEAGo5xskClHZndYGs=
+
+Name: assets/facedata/emo/smile3.yuv
+SHA1-Digest: 27fdr1s72t3O8fvbQ+AIqlKHmYI=
+
+Name: res/drawable/screenshare_main_popup_shareview_selector.xml
+SHA1-Digest: //8KXM6k+aM4+1hRTTLpXEXoHwM=
+
+Name: res/drawable-xxhdpi/animal_03.png
+SHA1-Digest: LtOOzPpsYFzI529chB6Qp1cKHUY=
+
+Name: res/layout/only_progress.xml
+SHA1-Digest: PW10ObgNcYBxhLBgPhpt/Q3IUv8=
+
+Name: res/drawable-xxhdpi/bubble_send_normal.9.png
+SHA1-Digest: BD4cAS/w5P5JdZKoRJAHj1nmfKE=
+
+Name: lib/armeabi/libpjsip_jni_KK.so
+SHA1-Digest: ZInFkcMygQtPRWmBMuA4DYliTPU=
+
+Name: lib/armeabi/libsamsung_videoengine_JBP.so
+SHA1-Digest: Rya/m86etDmvqlAiC4JP+Aol3Yk=
+
+Name: res/drawable-xxhdpi/call_incoming_reject_handle_light.png
+SHA1-Digest: aZfSPleyZcXme7LaOV89SNzVu1I=
+
+Name: res/drawable/s_view_cover_speaker_selector.xml
+SHA1-Digest: 452VMjG8dCtRHuE/Fhniz9SO3H4=
+
+Name: res/drawable-xxhdpi/arrow_g.png
+SHA1-Digest: 2/4+Um943+qm8t98z7eEGUcQ3g8=
+
+Name: res/drawable/scamera_outgoing_call_resolution4_3.xml
+SHA1-Digest: farV9KCSB6d2+lZYswykVzBH3A4=
+
+Name: res/layout/accept_call_open_cover.xml
+SHA1-Digest: 1i5Tku63i08psxD4ApcJ9NdzmhA=
+
+Name: res/drawable-xxhdpi/action_bar_share_screen.png
+SHA1-Digest: jQ7S2yn1yprDIanK2/lM9Tv6GJc=
+
+Name: resource/drawable-xhdpi/snote_mypen_select.png
+SHA1-Digest: dmFz030j8I/rH6a9ZqeyoOK0IOM=
+
+Name: res/layout/reject_call_with_msg_content_item_black.xml
+SHA1-Digest: u49tEvmowOqxn6Ew49rkP+g5Fd0=
+
+Name: res/drawable-xxhdpi/end_call_btn_light.png
+SHA1-Digest: cpDUzOuUMQfIuWMaEk42v0TN0N0=
+
+Name: res/drawable-xxhdpi/invite_buddy_sequence_mini_02.png
+SHA1-Digest: kxR9sPijN7Gu+3saBkoRtHw+vDs=
+
+Name: assets/spen_sdk_resource_default/snote_title_bottom.9.png
+SHA1-Digest: 3pgNjtn+SoN37RzGn0gTExNBEPY=
+
+Name: res/drawable/end_call_btn_light_selector.xml
+SHA1-Digest: 6hlzT/WQ5mSaXwupU7kmBDhM7/8=
+
+Name: res/drawable/list_bg_selector.xml
+SHA1-Digest: ahSHbjnJGnr6e4D5TNQ45RACGf4=
+
+Name: assets/spen_sdk_resource_default/snote_popup_btn_05.png
+SHA1-Digest: amt1C1Iv4h04343Lvof/WnQ9zR8=
+
+Name: assets/animation/MaskImage_VT_ANIMATION/expression/shame/shame.y
+ uv420sp
+SHA1-Digest: lH26yPCa/4hRKsA5p2ROv7Mqmz0=
+
+Name: res/drawable-xxhdpi/profile_basic_thumbnail.png
+SHA1-Digest: KukuGcFHGUMjuL4GtQ+JW1x7nwc=
+
+Name: assets/facedata/emo_svm_model_ALL.df
+SHA1-Digest: eF+NpkJTxti3R1cy50Fpc65Dlyc=
+
+Name: res/layout/reject_call_with_msg_delete.xml
+SHA1-Digest: rk5sYjie8DfU+tHqjlQ20Om+BBI=
+
+Name: assets/spen_sdk_resource_default/snote_slider_bg.9.png
+SHA1-Digest: OcUBV85EPE9VnCHZQFsYa7Jc4zc=
+
+Name: res/layout/video_call_member_item.xml
+SHA1-Digest: oIKax4MvOGYAefJauHxwVM49xJ0=
+
+Name: res/drawable-xxhdpi/myprofile_thumbnail_default.png
+SHA1-Digest: pUoomnHU6MYFSE2VfA8HAAaw6H0=
+
+Name: res/drawable-xxhdpi/call_dial_btn_02_h.png
+SHA1-Digest: 9Cwuah/AP8ryr1m42y1wfrAkrZQ=
+
+Name: resource/drawable-xhdpi/eraser_handel_press_480.png
+SHA1-Digest: +epdAXmQAnx3o1Mj6DDBsIn91kA=
+
+Name: resource/drawable-xhdpi/popup_exit_press_480.png
+SHA1-Digest: N0Telq5VMq4eK1YP0LbBdW1s5To=
+
+Name: res/drawable-xxhdpi/add_buddy_btn_icon.png
+SHA1-Digest: O+57xVIStJrSfjiyUctKXYDDmR4=
+
+Name: res/drawable-xxhdpi/share_view_popup_icon_pause_dim.png
+SHA1-Digest: d7ZjSrfcGc7easVJrW0KP4FCBV0=
+
+Name: resource/drawable-xhdpi/snote_option_in_bg.9.png
+SHA1-Digest: x8XSUwJm/M9SeGVz6N7jqlcdRKg=
+
+Name: assets/animation/MaskImage_VT_ANIMATION/expression/angry/angry.y
+ uv420sp
+SHA1-Digest: thjHX8VBQul8Oo7BLelgjyYXcPE=
+
+Name: assets/spen_sdk_resource_default/snote_tablet_add_press.png
+SHA1-Digest: kh+RXlIdHGNf9+6Ra4VhMCmS1xo=
+
+Name: res/drawable/translator_tts_selector.xml
+SHA1-Digest: HFA5kSaqTET/rtrqv4bBPm6wsaI=
+
+Name: res/anim/scale_anim.xml
+SHA1-Digest: dp82veirhH04sddKlvqvOe4KzRE=
+
+Name: res/drawable/translator_tts_on_image_selector.xml
+SHA1-Digest: 6oZFmXAs0acQwjYz6gaG+tw16II=
+
+Name: res/drawable/scamera_outgoing_call_resolution.xml
+SHA1-Digest: gaWOQCe0jgILdnKeu51AdbIzFq0=
+
+Name: resource/drawable-xhdpi/ploating_popup_icon_r2_n.png
+SHA1-Digest: mR8JCLktxZfZY+44Obfh9sc8krI=
+
+Name: res/drawable-xxhdpi/sub_title_bg_press.9.png
+SHA1-Digest: biwTy1OJHHY94eAtE0j7UNkkkZw=
+
+Name: res/drawable/call_video_option_bg.xml
+SHA1-Digest: W/WaYB8EHXLAAISPBL98o8pY8HA=
+
+Name: assets/spen_sdk_resource_default/snote_type_selected.png
+SHA1-Digest: xFIVLYnMP0PZMTrdZV1d8DqelFA=
+
+Name: res/drawable/translator_show_off_image_selector.xml
+SHA1-Digest: CaCJ0+LXi3WM5zXgO1qxHOTBhlg=
+
+Name: res/drawable-xxhdpi/translator_bubble_show_icon.png
+SHA1-Digest: ANOYhfs7ekWIkOVonJAeLgyGZDs=
+
+Name: res/drawable-xxhdpi/translator_arrow_more.png
+SHA1-Digest: lnF1nNGL8AZ1Ga0p8IVBGONsNSI=
+
+Name: res/drawable-xxhdpi/driving_mode_answer_icon.png
+SHA1-Digest: tI8UuJET9Q5r8bMc6zZyoRwE+Uk=
+
+Name: resource/drawable-xhdpi/ploating_popup_icon_delete_n.png
+SHA1-Digest: 50eCuBeuiik5fgcBr8WH68pCSz0=
+
+Name: res/drawable-xxhdpi/share_incomming_bg.png
+SHA1-Digest: MneGE/M20WOGYfi0SLJKClTV7J8=
+
+Name: res/drawable-xxhdpi/emotional_1st_glasses.png
+SHA1-Digest: krcfoKMEvkqgHqmq9k87GRNoQMQ=
+
+Name: res/drawable-xxhdpi/speaker_off.png
+SHA1-Digest: WuUzXaYrPynCW6DecDvWOC5yOP8=
+
+Name: res/drawable-xxhdpi/share_view_tool_icon_eraser_press.png
+SHA1-Digest: /TRoF2GzuaehM+ahoDYKc0jVZVg=
+
+Name: assets/samm_embeded_icon/temp_icon.png
+SHA1-Digest: QMa7yEaHJCaAA4wGtUpMlfJDdQ0=
+
+Name: res/drawable-xxhdpi/call_call_icon_dim.png
+SHA1-Digest: tyIGwjqNdLRPuSD3rZsdcheKHYA=
+
+Name: res/drawable/scamera_outgoing_call_mute.xml
+SHA1-Digest: LtJ6gZFHaI0hDerJDie7znw4AV0=
+
+Name: res/layout/voice_call_btn.xml
+SHA1-Digest: UW/+K+zxuX0QmZy24jYUKSA/Xjo=
+
+Name: res/drawable-xxhdpi/invite_buddy_remove_disable.png
+SHA1-Digest: lbkX07dv/Nx7zzzHZyx7KWgYjws=
+
+Name: res/drawable-xxhdpi/contacts_default_image_small.png
+SHA1-Digest: sru+NR4lyBa2QykDiFbyx2H5Vbo=
+
+Name: lib/armeabi/libpjsip_jni_JBP_4_3.so
+SHA1-Digest: +TTMSN53p8/mZER34JSwCNQyIaw=
+
+Name: res/drawable-xxhdpi/vt_call_video_btn_end_call.png
+SHA1-Digest: AOAg6APPPnumjKueYGuZO1ftJis=
+
+Name: res/drawable-xxhdpi/tw_action_bar_dual_camera_on.png
+SHA1-Digest: meA3mhYzBLdrzk7xjZ1OiPeY7hQ=
+
+Name: res/drawable-xxhdpi/voip_switch_call_icon_on_light.png
+SHA1-Digest: H28pnK6GX+UuLFV/iJpBLpiZrws=
+
+Name: res/drawable-xxhdpi/vt_call_video_btn_end_call_focus.png
+SHA1-Digest: Rey6YUZDF+cyXN9dF/rSs4p3UN0=
+
+Name: res/drawable-xxhdpi/chatonv_list_bg_focus.9.png
+SHA1-Digest: x9kZ47+PqZiI+5wc2Afbc2i+4RI=
+
+Name: res/drawable-xxhdpi/clear_reject_circle_big_01_j.png
+SHA1-Digest: HjGErUmy5OvYRURR34iDlY9udog=
+
+Name: res/drawable-xxhdpi/call_dialling_ani_01.png
+SHA1-Digest: qOKYm9eIhHis0qn72HCe5b3ihwY=
+
+Name: res/drawable-xxhdpi/scamera_resolution_setting4_3.png
+SHA1-Digest: ASOn0rlblgfhIb4T+ybjyHGzKVE=
+
+Name: res/drawable-xxhdpi/input_filed_selected.9.png
+SHA1-Digest: rM2mL0LNlj8jjd4e93qkojR4f44=
+
+Name: res/drawable-xxhdpi/list_bg_press.9.png
+SHA1-Digest: vwt60Ll9snQh85JuzUYi1buxY3Q=
+
+Name: res/drawable-xxhdpi/clear_reject_circle_arrow_02.png
+SHA1-Digest: Mfg76rRfjHXmDPw81tgl+SefdCg=
+
+Name: res/layout/chatonv_custom_dialog_fun.xml
+SHA1-Digest: cejM8an9BwP/5R1+3lFcJgrfaeg=
+
+Name: res/layout/layout_settings_about.xml
+SHA1-Digest: /fO77q5lhjxNFOH0Om+Fllkns5U=
+
+Name: res/layout/video_call_translator_btn.xml
+SHA1-Digest: T/EWK0Ur+Am78YyefL0A7+PD4oU=
+
+Name: res/drawable-xxhdpi/share_bar_normal_land02.png
+SHA1-Digest: xe61YibyIjQiByVfz0eQN/1Y1Jg=
+
+Name: resource/drawable-xhdpi/expand_icon_01.png
+SHA1-Digest: YTwYSQjsVqJKWFyasYLdJWL6gUs=
+
+Name: res/drawable-xxhdpi/popup_bottom.9.png
+SHA1-Digest: +cShfiJXOd7VzysJyrBJjl5Hf80=
+
+Name: assets/spen_sdk_resource_default/pensetting_icon_selected.png
+SHA1-Digest: UhvS7fbbomNo6lQtTM+HQarubjo=
+
+Name: res/drawable-xxhdpi/s_vt_show_me_icon_light.png
+SHA1-Digest: bez0btisWG4qZgyXomI5ah/DiQQ=
+
+Name: assets/animation/MaskImage_THEME_SHOT/categories/animal/animal_1
+ .yuv420sp
+SHA1-Digest: IGg9XAks1A4UqYkHgHmHWvu/Sm8=
+
+Name: res/layout/screenshare_secure_mode.xml
+SHA1-Digest: X3Hr5USBHbWJJhRuXLFyDBaflU8=
+
+Name: res/anim/green_arrow_effect.xml
+SHA1-Digest: JQDWWXQ9SS+QcOHkPuN045FnKTM=
+
+Name: assets/spen_sdk_resource_default/snote_dropdown_press.9.png
+SHA1-Digest: 5751RDGOQTGvZsIV5WWm89ma8qM=
+
+Name: res/layout/live_share_screen_call.xml
+SHA1-Digest: E1l+Fi49PM/q+c2f63TQOfb9dOo=
+
+Name: resource/drawable-xhdpi/snote_tablet_add_focus.png
+SHA1-Digest: mipYPFTaWNGTnS9O4xhutuo139c=
+
+Name: res/drawable-xxhdpi/vt_icon_capture_01.png
+SHA1-Digest: VSJLrWbdUIHhuJXJOu90tIcPNRo=
+
+Name: res/drawable-xxhdpi/scamera_tw_volume_popup_bg_holo_dark.9.png
+SHA1-Digest: 868tkK/Spk3IEnC4b/UqZXLQaDk=
+
+Name: res/drawable-xxhdpi/co_attach_file_text.png
+SHA1-Digest: aC6DpBo+AX1mmOugHmf+gFfXDX0=
+
+Name: res/layout/user_preference_category_layout.xml
+SHA1-Digest: UMOTQMrJf/4Luab5ug870HfcGDo=
+
+Name: res/drawable-xxhdpi/co_attach_file_excel.png
+SHA1-Digest: EP2VZN+kNRhKABY6cNAx0ZlpuBM=
+
+Name: assets/spen_sdk_resource_default/scrollbar_handle_vertical.9.png
+SHA1-Digest: aMdjI2/QM/pBl0STjvzSNWXVZR8=
+
+Name: res/drawable-xxhdpi/secure_mode_icon.png
+SHA1-Digest: +Te8Lv+RqpX1I0IwjIKJg642g1s=
+
+Name: res/drawable-xxhdpi/translator_bubble_tts_on_icon_normal.png
+SHA1-Digest: QTpZNe0Fe+AIRWeOtjnoQOIBmFg=
+
+Name: res/xml/setting_call_answer_black.xml
+SHA1-Digest: NOsXjokCZ/w4v0gr8QEZhB3h/Cg=
+
+Name: res/drawable/call_option_switch_video.xml
+SHA1-Digest: 6OkVDXL+5YnG9ub/vAObhB4fPxg=
+
+Name: res/drawable/inviting_ani_progress.xml
+SHA1-Digest: /TqC3z3keO1wM7bmB49OPapCHSg=
+
+Name: resource/drawable-xhdpi/snote_text_right.png
+SHA1-Digest: KjpBUf86f0SyL3l2BhiYrzX/44g=
+
+Name: resource/drawable-xhdpi/ploating_popup_text_n.png
+SHA1-Digest: LfHg2ynJUchdUjG/JY3N6zuEvFI=
+
+Name: assets/spen_sdk_resource_default/snote_popup_btn_04.png
+SHA1-Digest: wiyam2Rx/wv4W/zoo9MXOMJC9i4=
+
+Name: res/anim/green_arrow_big_effect.xml
+SHA1-Digest: HwtLUxhI1OjJ8CGZeIhOSrAB4uQ=
+
+Name: res/drawable-xxhdpi/arrow_r.png
+SHA1-Digest: 7CDjUKBNkX6oXJ9hN+IKZhavp5s=
+
+Name: res/drawable-xxhdpi/videocall_emotionalanimation_focus.9.png
+SHA1-Digest: Rsesh+GtwCrKDlpVhPaWr/efuTk=
+
+Name: resource/drawable-xhdpi/ploating_popup_center_n.png
+SHA1-Digest: 6PEXRSMsbvWQdcxM8U2RluyvuMs=
+
+Name: res/drawable/button_hold_selector.xml
+SHA1-Digest: vxjAKL1Lx8DKLRBc4zOy7+0stt4=
+
+Name: resource/drawable-xhdpi/snote_title_left_tablet.9.png
+SHA1-Digest: yIFlN+xg+oXcdXRsCnTURWwWDDU=
+
+Name: resource/drawable-xhdpi/snote_type_selected.png
+SHA1-Digest: 9+D5SuOgDjpyZkaaUNXpQuaGcqE=
+
+Name: assets/animation/MaskImage_THEME_SHOT/categories/party/party_1.y
+ uv420sp
+SHA1-Digest: n64Rl7bTxvSq0QsUsqu15mYPUCU=
+
+Name: res/drawable-xxhdpi/chatonv_video_icon_closemenu_focus.png
+SHA1-Digest: eM/SyjA/Bn+tGNjEl3ko2YE3cvU=
+
+Name: res/drawable-xxhdpi/chatonv_loading.png
+SHA1-Digest: NuLBKeDmYKTC2eVX1oOehLgOxbI=
+
+Name: res/anim/fade_in_effect.xml
+SHA1-Digest: rmVkyRcgrEo+CHZ47wBAfaH8lJ0=
+
+Name: res/drawable-xxhdpi/end_call_btn_light_press_h.png
+SHA1-Digest: lOcm7k14x1H558idbwqWDcVqX5M=
+
+Name: res/xml/engineeringconfig.xml
+SHA1-Digest: VksGJXqSpa+28MS8IK5P+d//OlE=
+
+Name: res/xml/link_with_chaton_call_setting.xml
+SHA1-Digest: fL/lZA8ZM+NOve9l6Fa3NP9Q8uI=
+
+Name: resource/drawable-xhdpi/snote_pen_circle_transparency.png
+SHA1-Digest: Qykjza8BCHE054jwXKbt7CoKHsc=
+
+Name: res/drawable/call_video_btn_option_open_selector.xml
+SHA1-Digest: MP2B0a1FvEl57+buW5PcF8i79tQ=
+
+Name: resource/drawable-xhdpi/snote_spinner_ab_pressed_holo.9.png
+SHA1-Digest: HiuURE7lR4edYlOxa482M2d9VMo=
+
+Name: res/drawable-xxhdpi/general_btn_left_arrow.png
+SHA1-Digest: AoDeI+JMINpSZ8sPbpWxoN3coVk=
+
+Name: assets/spen_sdk_resource_default/btn_popup_delete_n_default_02.p
+ ng
+SHA1-Digest: 8b1DjmMfH9TCQEqQCn9OMG2abFs=
+
+Name: resource/drawable-xhdpi/pensetting_icon_neon.png
+SHA1-Digest: 9kzfapsWXqKnLJvYoNRzOmSIwaU=
+
+Name: resource/drawable-xhdpi/eraser_bar.9.png
+SHA1-Digest: /xpa8HULPc9oDrizyOTuZ5otWIE=
+
+Name: res/layout/screenshare_docs_view_layout3.xml
+SHA1-Digest: m61+SVJqyNGFKWVn1NoQ7RAHuEQ=
+
+Name: res/drawable/scamera_outgoing_call_back.xml
+SHA1-Digest: kaEFufhz0GeCd7Iw36rGCnK+GP4=
+
+Name: res/drawable-xxhdpi/share_view_tool_area_center_bg_press.9.png
+SHA1-Digest: fX5eFeOWdgI45ZOfXXtuTc7RjHA=
+
+Name: res/drawable-xxhdpi/vt_call_popup_icon_enable_cartoon_veiw_on.pn
+ g
+SHA1-Digest: 2uJI8KK/azTJ8n3Zi2suQTxUNvE=
+
+Name: res/layout/live_share_scamera_video_call.xml
+SHA1-Digest: BUF6vyEbHguGaHvYjka44qyCygU=
+
+Name: res/drawable-xxhdpi/btn_radio_on_press.png
+SHA1-Digest: zJ3cHm+M+SBoohlTjUsULoL36bw=
+
+Name: res/drawable/reject_call_selector_down_h.xml
+SHA1-Digest: LU08VUix45Rs6fYgPaMdGt4mvBw=
+
+Name: res/drawable-xxhdpi/call_dial_btn_05_h_press.png
+SHA1-Digest: DwCfdBPJzFqhqCr/TrxBUTdj7eo=
+
+Name: res/drawable-xxhdpi/logo_outline.png
+SHA1-Digest: t1BlSaVNNEMOwMWxJshVxmRPLLE=
+
+Name: res/drawable/call_video_call_icon_selector.xml
+SHA1-Digest: SIDCoMsXnXQEUazGqgetVSATGDg=
+
+Name: res/drawable/call_dial_number_0_btn.xml
+SHA1-Digest: wXawNzlEbUIveWN0jRbIrYG8HqM=
+
+Name: res/drawable-xxhdpi/list_incoming_reject_handle_01_light_h.png
+SHA1-Digest: xXSpd1vhAkv03DLmKWxsiidaMK4=
+
+Name: res/drawable-xxhdpi/translator_speech_icon.png
+SHA1-Digest: oFDgJXG7ekBIQBHyVrOGgHBalps=
+
+Name: res/drawable-xxhdpi/co_attach_file_ppt.png
+SHA1-Digest: KyXzkJM7dHNk9IB96zY6v8OLLRI=
+
+Name: res/drawable-xxhdpi/share_view_tool_icon_undo.png
+SHA1-Digest: zChlevq7G2ow3y+KwuCUioZoAio=
+
+Name: res/drawable-xxhdpi/call_dial_btn_focus.png
+SHA1-Digest: vK75f77UYwYBMAFtb9vJa4teUUk=
+
+Name: res/drawable-xxhdpi/call_dial_btn_05.png
+SHA1-Digest: MKH0BazT6HnzMDHvGULrElpW084=
+
+Name: assets/spen_sdk_resource_default/snote_title_left.9.png
+SHA1-Digest: k5twT7yHj1ygLSba273iPYqkxDc=
+
+Name: resource/drawable-xhdpi/snote_add_dim.png
+SHA1-Digest: j4WbqsBxOzagrUHf4xBwdCXnOAc=
+
+Name: res/drawable-xxhdpi/share_view_tool_icon_redo.png
+SHA1-Digest: Lor5WgFYCZJOKCtWFBZfDV3q7Mw=
+
+Name: res/drawable-xxhdpi/right_page_focus.png
+SHA1-Digest: pFhdtgfZuSWqPCYSNj+6Gr6ZqJQ=
+
+Name: resources.arsc
+SHA1-Digest: N5kn2c3aZw8+XJgTypSjzhfrX6I=
+
+Name: res/drawable-xxhdpi/v_title_chat_icon.png
+SHA1-Digest: tJT4NWRur039NsadqUToEf7PT68=
+
+Name: res/drawable/button_checkbox_selector.xml
+SHA1-Digest: sxp6ZgorCsKdkQrRnHkYv1CT9Qo=
+
+Name: res/layout/scamera_voice_call_caller_image.xml
+SHA1-Digest: W1+o1syWigRuXCY6ClcYHdP+O6w=
+
+Name: res/drawable-xxhdpi/translator_send_bubble_bg.9.png
+SHA1-Digest: s9RLJmozWqdDdet/Ut+HuvFSYuU=
+
+Name: res/drawable-xxhdpi/vt_call_btn_press.png
+SHA1-Digest: RPXV3UA7+HENiP3M/QvFeGeXFgg=
+
+Name: res/drawable/call_call_icon_selector_h.xml
+SHA1-Digest: Tuyh3bP8kKm5MpIernZfPU817+g=
+
+Name: assets/spen_sdk_resource_default/bt_text_move.png
+SHA1-Digest: ziLsCLWvc6LdmtmAn/ekvRcWTCU=
+
+Name: res/anim/show_menu.xml
+SHA1-Digest: U/xd+O9AlgoZvxSkzK6840yqr7s=
+
+Name: res/drawable-xxhdpi/vt_call_icon.png
+SHA1-Digest: saxd8YNYvMfPWiqwgGUxY+9tQUk=
+
+Name: res/drawable-xxhdpi/translator_hold_icon.png
+SHA1-Digest: GQgolNpvjvurgnSPc2u8ipQofJ4=
+
+Name: res/drawable-xxhdpi/ams_popup_btn_default_pressed.9.png
+SHA1-Digest: G4KlMxc07RxySR4D9yBUkrHEVUo=
+
+Name: res/drawable-xxhdpi/call_dial_btn_01_h_press.png
+SHA1-Digest: UDJdpO+0/V4BxGgNdyU2kJg9u8A=
+
+Name: res/drawable/call_dial_number_4_btn_h.xml
+SHA1-Digest: 7Pp1JaCzHSmZIndqxIjBcdeezQQ=
+
+Name: res/drawable/scamera_showme.xml
+SHA1-Digest: +is9xp39LAAqohm8FF0wf9mRfOY=
+
+Name: res/drawable-xxhdpi/call_dial_btn_01.png
+SHA1-Digest: 1NCQcTAVt274MFP75x9ZvR7LYVA=
+
+Name: res/drawable-xxhdpi/translator_languages_icon_press.png
+SHA1-Digest: J1pMrL7+DOCB7rgZC2XSHam0bC4=
+
+Name: res/layout/video_call_invite_buddies_item.xml
+SHA1-Digest: Di5lsACYeu6sbqp0XTEjG64PEOo=
+
+Name: res/drawable-xxhdpi/call_videocall_icon_press_h.png
+SHA1-Digest: nL5JCkLg29ow9OQRYrulmiMoWbM=
+
+Name: lib/armeabi/libFaceEmotionlib.so
+SHA1-Digest: CzRnKPkhPjk5CylcIx48vfgUJ9E=
+
+Name: res/drawable-xxhdpi/call_btn_light_focus.png
+SHA1-Digest: CMqsVPY/ViC09XkSzv9frwLxhXE=
+
+Name: assets/spen_sdk_resource_default/btn_popup_delete_n_default.png
+SHA1-Digest: Ly0bEjPZBTPUn+c1+m9GihizdYw=
+
+Name: res/layout/user_preference_action_bar_title_normal.xml
+SHA1-Digest: wfqgomEBKsPaofgtGJKN5mTqoUw=
+
+Name: assets/spen_sdk_resource_default/snote_title_button_cancle.png
+SHA1-Digest: nnW2rwVlhDtlysOGaDykkEW/xoI=
+
+Name: res/drawable/reject_call_create_msg_add_button_selector.xml
+SHA1-Digest: T9WSOeIENgxKWZQITY0freH92g0=
+
+Name: assets/animation/MaskImage_THEME_SHOT/categories/party/party_3.y
+ uv420sp
+SHA1-Digest: EwtBoBxrvLoATR9TIWffXviSBVk=
+
+Name: assets/spen_sdk_resource_default/snote_slider_circle_press.png
+SHA1-Digest: TCNDewmhOIzKvsDtIAcginA4Yd4=
+
+Name: res/drawable-xxhdpi/tw_action_bar_theme_view_disabled.png
+SHA1-Digest: GzpS1bqMEM4WeBu0xJmQtfDFHm0=
+
+Name: res/drawable/button_emotion_selector_left.xml
+SHA1-Digest: p2qXbJzhLzRLMejKx+8msnBJ8g4=
+
+Name: res/drawable-xxhdpi/share_bar_dim_land.png
+SHA1-Digest: ElTinD+XdDFnQsB10i1/LsTMkWY=
+
+Name: res/layout/voice_call_incoming.xml
+SHA1-Digest: G8yiasim7Zr4QM1GYmFL0CKf5Ag=
+
+Name: res/drawable-xxhdpi/call_videocall_icon_h.png
+SHA1-Digest: wl6ytZT/7D1e++fO98+W7Ddpf5Q=
+
+Name: res/drawable-xxhdpi/hold_btn_bg_press.9.png
+SHA1-Digest: kWhvq4ABcwVvMvMhhZjYg0+cpfY=
+
+Name: assets/spen_sdk_resource_default/eraser_handel_press.png
+SHA1-Digest: TDPowObFp6PWTSxUADSaddobAwQ=
+
+Name: assets/spen_sdk_resource_default/ploating_popup_icon_delete_d.pn
+ g
+SHA1-Digest: fpOeDoWHgU/noObd7EopMvBoK1c=
+
+Name: assets/samm_embeded_soundeffect/text_type_long.ogg
+SHA1-Digest: qqbwECVq0L061P5mu6oSL5qEH7Q=
+
+Name: res/layout/screenshare_filepicker_item.xml
+SHA1-Digest: i6A7PAMk9+EsN90oCX7/e3HQvys=
+
+Name: res/drawable/call_call_icon_selector.xml
+SHA1-Digest: Ho7qCYHSWelNUuhgaIP/LTGrSK4=
+
+Name: res/drawable-xxhdpi/quickpanel_btn_normal.9.png
+SHA1-Digest: cpRA/A7PyVspmW5cmOWU3yFg9n8=
+
+Name: res/layout/video_call_btn_with_dualcamera.xml
+SHA1-Digest: faUTvdQQPXaw0zhZf1+7yJTh4zs=
+
+Name: res/drawable-xxhdpi/voip_call_icon.png
+SHA1-Digest: RecgVN+AKumGiqHRMUn2HtC1gsg=
+
+Name: res/layout-land/video_call_other_layout.xml
+SHA1-Digest: M8JQbY3gNeeQPrxh/KHHnxkX0H8=
+
+Name: res/drawable-xxhdpi/speaker_on.png
+SHA1-Digest: d7oU29gf1ZjoZjoLCfK/m1uLmrE=
+
+Name: res/drawable-xxhdpi/share_view_tool_show_icon_focus.png
+SHA1-Digest: bdUoDugooIrBD/fO8iBoHJ3A3Lo=
+
+Name: res/drawable-xxhdpi/vt_call_btn_normal.png
+SHA1-Digest: jL2yrk8KARyClJkPpGydJgRel6E=
+
+Name: res/drawable-xxhdpi/call_during_btn_mute_off.png
+SHA1-Digest: YhrnfcLC2QmRQsRpuES6xM89/4g=
+
+Name: res/drawable-xxhdpi/chat_translator_top_btn_speak_press.png
+SHA1-Digest: TNG6UAJGdzVJYIJLAbjsCOccdcE=
+
+Name: resource/drawable-xhdpi/ploating_popup_right_p.png
+SHA1-Digest: YdUdzMGi/cEoaoseEFLQrBzWCqE=
+
+Name: res/drawable-xxhdpi/stat_sys_phone_call_bluetooth.png
+SHA1-Digest: gMoEum3WsymMBlQcJfQashvIXiY=
+
+Name: assets/facedata/emo_svm_model_ALL.sv
+SHA1-Digest: wFpfBVJuiZQHuRffpiH2YoR8Pig=
+
+Name: res/drawable-xxhdpi/scamera_tw_volume_scrubber_bg_holo.9.png
+SHA1-Digest: 8vivLPcNlisudseOA0cPyLEEmSA=
+
+Name: res/drawable/screenshare_penwriting_toolbar_press_bg_left_select
+ or.xml
+SHA1-Digest: V/Fx+QAorvVTHWTqlmS5ulSJfVE=
+
+Name: res/drawable-xxhdpi/more_option_icon_layout_press.png
+SHA1-Digest: i3Wubm3jiihQEeg3IMDnCyiBElY=
+
+Name: res/layout-land/video_call_camera_guideline.xml
+SHA1-Digest: kXQ3B9+z3ezWJtQbbFlb53QHnnI=
+
+Name: res/drawable-xxhdpi/check_normal.png
+SHA1-Digest: 9c6jIyldOrZ7NxIQPCrtR5HCasg=
+
+Name: assets/spen_sdk_resource_default/snote_tablet_mypen.png
+SHA1-Digest: IjVyw3XtIP8qCh/JrK1hhg8uR5E=
+
+Name: res/drawable-xxhdpi/vt_call_popup_icon_enable_theme_view.png
+SHA1-Digest: PIkYpTFw6z3NRpzfsAxtx2RaokA=
+
+Name: res/drawable-xxhdpi/voip_invite_buddies_icon_dim.png
+SHA1-Digest: JAOCrL/jxYLQK4CcFegY53LeVdE=
+
+Name: res/drawable/call_dial_number_9_btn.xml
+SHA1-Digest: o9qvlkmFbKu29oGyXgox+AJsnwM=
+
+Name: res/drawable-xxhdpi/chat_icon_sending.png
+SHA1-Digest: RShvjbmzN1VBqhXvZl3l+7CUovA=
+
+Name: res/drawable/list_button_send_selector.xml
+SHA1-Digest: 8Nk/KOvArGRB9eM0jnWjBL4rj0E=
+
+Name: res/drawable-xxhdpi/translator_play_icon_press.png
+SHA1-Digest: sJ3VH7YJfGjbAtXiqNNcDddZK3o=
+
+Name: assets/samm_embeded_soundeffect/pen_draw.ogg
+SHA1-Digest: 87sb2uHm+j7rF1z6jyq65IV5H9Q=
+
+Name: res/drawable-xxhdpi/share_view_popup_icon_pen_writing.png
+SHA1-Digest: 68sh7EGRx8YXLIyYPN2JoKWOLfI=
+
+Name: res/drawable-xxhdpi/input_filed_select_disabled.9.png
+SHA1-Digest: rvCevaupb3jBIYcn3zysa4qoUuA=
+
+Name: res/drawable-xxhdpi/tw_action_bar_buddy_list.png
+SHA1-Digest: jRWBoPJfqMvzG1pZiLPkMc4l8Vc=
+
+Name: res/drawable-xxhdpi/quickpanel_btn_press.9.png
+SHA1-Digest: X4JPeXo7ZN95/rnBCbxEFGHvDoo=
+
+Name: res/layout/screenshare_videoview.xml
+SHA1-Digest: VjxEMDWuk2uOVX4bZFFzqgUSFVo=
+
+Name: res/drawable-xxhdpi/share_screen_end_btn.png
+SHA1-Digest: Bn9vXBm+5Quq+BH08M+pnnapHCM=
+
+Name: res/drawable-xxhdpi/voip_headset_icon_light.png
+SHA1-Digest: dbH9ijqvEo15MpHEqJMU75P59/A=
+

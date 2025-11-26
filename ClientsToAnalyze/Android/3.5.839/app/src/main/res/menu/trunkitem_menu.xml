@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/trunkitem_save"
+        android:orderInCategory="1"
+        android:title="@string/save"
+        android:showAsAction="never"/>
+    <item
+        android:id="@+id/trunkitem_share"
+        android:orderInCategory="1"
+        android:title="@string/share"
+        android:showAsAction="never"/>
+    <item
+        android:id="@+id/trunkitem_delete"
+        android:orderInCategory="1"
+        android:title="@string/menu_chat_delete"
+        android:showAsAction="never"/>
+    <item
+        android:id="@+id/trunkitem_refresh"
+        android:orderInCategory="1"
+        android:title="@string/trunk_menu_refresh"
+        android:showAsAction="never"/>
+</menu>

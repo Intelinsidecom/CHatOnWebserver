@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>Լռելյայն պատկեր</item>
+        <item>Պատկերներ</item>
+        <item>Նկարել</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Պատկերներ</item>
+        <item>Նկարել</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Խմբգրել</item>
+        <item>Ջնջել</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>Նկար</item>
+        <item>Կենդ. տսնյթ</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Միացնել տեսանյութը</item>
+        <item>Թաքցնել տեսանյութը</item>
+    </array>
+</resources>

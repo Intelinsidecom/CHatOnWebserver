@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    <include
+        android:id="@+id/layout_search_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_common_search_icon"/>
+    <ExpandableListView
+        android:id="@+id/vcal_events_list"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:groupIndicator="@null"
+        android:layout_weight="1"/>
+    <include
+        android:id="@+id/vcal_events_noresult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/layout_common_no_contents"/>
+</LinearLayout>

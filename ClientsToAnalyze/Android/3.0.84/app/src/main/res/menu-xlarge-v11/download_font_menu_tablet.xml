@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title=""
+        android:showAsAction="always"
+        android:actionViewClass="android.widget.TextView"/>
+    <item
+        android:title="@string/header_more"
+        android:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/font_filter"
+                android:title="Filter"
+                android:showAsAction="never"/>
+            <item
+                android:id="@+id/font_downloadAll"
+                android:title="@string/setting_download_all_title"
+                android:showAsAction="never"/>
+        </menu>
+    </item>
+</menu>

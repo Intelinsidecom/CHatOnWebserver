@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_group_buttons">
+        <item
+            android:id="@+id/menu_item_create_new"
+            android:title="@string/ams_optmenu_create_new"/>
+        <item
+            android:id="@+id/menu_item_my_works"
+            android:title="@string/ams_title_my_works"/>
+        <item
+            android:id="@+id/menu_item_samples"
+            android:title="@string/ams_title_samples"/>
+    </group>
+    <group android:id="@+id/menu_group_buttons_text">
+        <item
+            android:icon="@drawable/ams_ics_selector_title_ic_check"
+            android:id="@+id/menu_btn_done_text"
+            android:title="@string/ams_btn_done"
+            android:showAsAction="withText|ifRoom"/>
+        <item
+            android:icon="@drawable/ams_ics_selector_title_ic_cancel"
+            android:id="@+id/menu_btn_cancel_text"
+            android:title="@string/ams_btn_cancel"
+            android:showAsAction="withText|ifRoom"/>
+    </group>
+</menu>

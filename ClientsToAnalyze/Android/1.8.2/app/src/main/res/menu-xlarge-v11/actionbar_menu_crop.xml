@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/popup_tab_icon_cancel"
+        android:id="@+id/menu_cancel"
+        android:title="@string/cancel"
+        android:showAsAction="withText|ifRoom"/>
+    <item
+        android:icon="@drawable/popup_tab_icon_rotate"
+        android:id="@+id/menu_rotate"
+        android:title="@string/imagemodify_crop_rotate_image"
+        android:showAsAction="withText|ifRoom"/>
+    <item
+        android:icon="@drawable/popup_tab_icon_sendwithmessage"
+        android:id="@+id/menu_send_message"
+        android:visible="false"
+        android:title="@string/ams_send_with_text"
+        android:showAsAction="withText|always"/>
+    <item
+        android:icon="@drawable/popup_tab_icon_check"
+        android:id="@+id/menu_send"
+        android:visible="false"
+        android:title="@string/layout_imageview_send"
+        android:showAsAction="withText|always"/>
+    <item
+        android:icon="@drawable/popup_tab_icon_check"
+        android:id="@+id/menu_apply"
+        android:title="@string/image_view_apply"
+        android:showAsAction="withText|ifRoom"/>
+</menu>

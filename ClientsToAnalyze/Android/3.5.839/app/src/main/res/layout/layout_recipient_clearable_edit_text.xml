@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.chaton.widget.StateLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/clearable_edit_text"
+    android:addStatesFromChildren="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sec.chaton.smsplugin.p112ui.RecipientsEditor
+        android:id="@+id/clearable_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        style="@style/EditTextStyle.Clearable"/>
+    <ImageButton
+        android:id="@+id/clearable_button1"
+        android:focusable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/clear_query_button"
+        style="@style/ImageButtonStyle.Clearable"/>
+</com.sec.chaton.widget.StateLinearLayout>

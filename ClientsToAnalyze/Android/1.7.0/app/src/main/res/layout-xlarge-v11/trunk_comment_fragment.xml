@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:layout_width="match_parent"
+    android:layout_height="65dp">
+    <EditText
+        android:id="@+id/trunkCommentEdit"
+        android:paddingLeft="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="12dp"
+        android:hint="@string/trunk_item_write_a_comment"
+        android:maxLength="140"
+        android:layout_weight="1"
+        android:inputType="textMultiLine"/>
+    <Button
+        android:textColor="@color/trunk_send_button"
+        android:id="@+id/trunkCommentSendBtn"
+        android:layout_width="93dp"
+        android:layout_height="40dp"
+        android:text="@string/layout_chat_fragment_send"
+        android:layout_weight="0"/>
+</LinearLayout>

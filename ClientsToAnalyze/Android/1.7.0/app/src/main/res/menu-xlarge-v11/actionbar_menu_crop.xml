@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/chaton_title_ic_rotate"
+        android:id="@+id/menu_rotate"
+        android:title="@string/ams_crop_rotate_image"
+        android:showAsAction="withText|ifRoom"/>
+    <item
+        android:icon="@drawable/chaton_title_ic_done"
+        android:id="@+id/menu_send"
+        android:title="@string/ams_btn_apply"
+        android:showAsAction="withText|ifRoom"/>
+    <item
+        android:icon="@drawable/chaton_title_ic_x"
+        android:id="@+id/menu_cancel"
+        android:title="@string/cancel"
+        android:showAsAction="withText|ifRoom"/>
+</menu>

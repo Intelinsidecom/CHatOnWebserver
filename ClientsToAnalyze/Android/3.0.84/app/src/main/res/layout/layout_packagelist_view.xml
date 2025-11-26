@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:scrollbarStyle="outsideOverlay"
+        android:id="@+id/anicon_package_list"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:drawSelectorOnTop="false"
+        android:layout_weight="1"
+        android:fastScrollEnabled="false"
+        style="@style/ListViewStyle.Common1"/>
+</LinearLayout>

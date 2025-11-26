@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:title="@string/manage_buddies_suggest_buddies"
+        android:key="pref_item_buddy_sugestions"
+        android:summary="@string/settings_suggestions_buddy_description"
+        android:defaultValue="true"
+        android:contentDescription="@string/settings_suggestions_buddy_description"/>
+    <CheckBoxPreference
+        android:title="@string/manage_buddies_suggest_me"
+        android:key="pref_item_exclude_me"
+        android:summary="@string/manage_buddies_suggest_me_description"
+        android:defaultValue="false"
+        android:contentDescription="@string/manage_buddies_suggest_me_description"/>
+</PreferenceScreen>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/write_poston_menu_cancel"
+        android:orderInCategory="1"
+        android:title="@string/cancel"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/write_poston_menu_post"
+        android:orderInCategory="1"
+        android:title="@string/done"
+        android:showAsAction="always"/>
+</menu>

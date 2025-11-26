@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+    <ImageView
+        android:background="@drawable/mainmenu_icon_chat_on"
+        android:layout_width="44dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"/>
+    <TextView
+        android:textSize="22dp"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:id="@+id/black_noti_title"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="21dp"/>
+</LinearLayout>

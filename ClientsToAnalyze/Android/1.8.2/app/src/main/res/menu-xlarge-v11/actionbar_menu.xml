@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/account_top_menu_addchat"
+        android:id="@+id/menu_start_chat"
+        android:title="@string/menu_button_start_chat"
+        android:showAsAction="always"/>
+    <item
+        android:icon="@drawable/account_top_menu_broadcast"
+        android:id="@+id/menu_broadcast"
+        android:title="@string/menu_inbox_broadcast"
+        android:showAsAction="always"/>
+</menu>

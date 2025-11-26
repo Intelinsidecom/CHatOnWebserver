@@ -1,0 +1,67 @@
+﻿<Page
+    x:Name="pageRoot"
+    x:Class="ChatON_WoA.Views.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:infra="using:ChatOn.Infrastructure"
+    NavigationCacheMode="Required"
+    mc:Ignorable="d" Background="White">
+
+    <Page.Resources>
+    </Page.Resources>
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.8*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Background="#FFF4F4F4">
+            <Grid Margin="0" Height="140">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:ConnectionId='10' x:Name="backButton" IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"                           />
+                <TextBlock x:Name="pageTitle" Text="{Binding ConverterParameter=IDS_CHATON_HEADER_SETTINGS, Converter={StaticResource ResourceStringConverter}}" Grid.Column="1" Style="{StaticResource PageHeaderTextStyle}" Foreground="Black"/>
+        	</Grid>
+            <!--<TextBlock x:Name="AboutSetting" Opacity="{Binding SelectedIndex, ConverterParameter=0, Converter={StaticResource SelectedIndexToOpacity}}" Tag="0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding ConverterParameter=IDS_CHATON_BODY_ABOUT, Converter={StaticResource ResourceStringConverter}}" FontFamily="Segoe UI" FontSize="26.667" Margin="120,0,0,20" VerticalAlignment="Top" Tapped="TextBlock_Tapped_1" FontWeight="Light" Foreground="Black"/>-->
+            <ListView ItemContainerStyle="{StaticResource SelectMenuStyle}" x:Name="SelectMenu" VerticalContentAlignment="Center">
+                <ListViewItem x:ConnectionId='1'                             Tag="1" Background="{Binding SelectedIndex, ConverterParameter=1, Converter={StaticResource SelectedIndexToBackground}}" VerticalAlignment="Stretch" VerticalContentAlignment="Center"> 
+                    <TextBlock x:Name="BuddySetting" Foreground="{Binding SelectedIndex, ConverterParameter=1, Converter={StaticResource SelectedIndexToForeground}}" Opacity="{Binding SelectedIndex, ConverterParameter=1, Converter={StaticResource SelectedIndexToOpacity}}" Tag="1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding ConverterParameter=IDS_CHATON_MBODY_MANAGE_BUDDIES, Converter={StaticResource ResourceStringConverter}}" FontFamily="Segoe UI" FontSize="26.667" Margin="120,10,0,10" VerticalAlignment="Center" FontWeight="Light"/>
+                </ListViewItem>
+                <ListViewItem x:ConnectionId='2'                                Tag="2" Background="{Binding SelectedIndex, ConverterParameter=2, Converter={StaticResource SelectedIndexToBackground}}">
+                    <TextBlock x:Name="ChatSetting" Foreground="{Binding SelectedIndex, ConverterParameter=2, Converter={StaticResource SelectedIndexToForeground}}"  Opacity="{Binding SelectedIndex, ConverterParameter=2, Converter={StaticResource SelectedIndexToOpacity}}" Tag="2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding ConverterParameter=IDS_CHATON_BODY_CHATROOM_AND_DISPLAY_SETTINGS_ABB, Converter={StaticResource ResourceStringConverter}}" FontFamily="Segoe UI" FontSize="26.667" Margin="120,10,0,10" VerticalAlignment="Top" FontWeight="Light"/>
+                </ListViewItem>
+                <ListViewItem x:ConnectionId='3'                             Tag="3" Background="{Binding SelectedIndex, ConverterParameter=3, Converter={StaticResource SelectedIndexToBackground}}">
+                    <TextBlock x:Name="PrivacySetting" Foreground="{Binding SelectedIndex, ConverterParameter=3, Converter={StaticResource SelectedIndexToForeground}}" Opacity="{Binding SelectedIndex, ConverterParameter=3, Converter={StaticResource SelectedIndexToOpacity}}" Tag="3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding ConverterParameter=IDS_CHATON_BODY_PRIVACY, Converter={StaticResource ResourceStringConverter}}" FontFamily="Segoe UI" FontSize="26.667" Margin="120,10,0,10" VerticalAlignment="Top" FontWeight="Light"/>
+                </ListViewItem>
+                <ListViewItem x:ConnectionId='4'                                       Tag="4" Background="{Binding SelectedIndex, ConverterParameter=4, Converter={StaticResource SelectedIndexToBackground}}">
+                    <TextBlock x:Name="NotificationSetting" Foreground="{Binding SelectedIndex, ConverterParameter=4, Converter={StaticResource SelectedIndexToForeground}}" Opacity="{Binding SelectedIndex, ConverterParameter=4, Converter={StaticResource SelectedIndexToOpacity}}" Tag="4" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding ConverterParameter=IDS_CHATON_HEADER_NOTIFICATION, Converter={StaticResource ResourceStringConverter}}" FontFamily="Segoe UI" FontSize="26.667" Margin="120,10,0,10" VerticalAlignment="Top"  FontWeight="Light"/>
+                </ListViewItem>
+                <ListViewItem x:ConnectionId='5'                                  Tag="5" Background="{Binding SelectedIndex, ConverterParameter=5, Converter={StaticResource SelectedIndexToBackground}}">
+                    <TextBlock x:Name="GeneralSetting" Foreground="{Binding SelectedIndex, ConverterParameter=5, Converter={StaticResource SelectedIndexToForeground}}" Opacity="{Binding SelectedIndex, ConverterParameter=5, Converter={StaticResource SelectedIndexToOpacity}}" Tag="5" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding ConverterParameter=IDS_CHATON_BODY_GENERAL, Converter={StaticResource ResourceStringConverter}}" FontFamily="Segoe UI" FontSize="26.667" Margin="120,10,0,10" VerticalAlignment="Top"  FontWeight="Light"/>
+                </ListViewItem>
+                <ListViewItem x:ConnectionId='6'                                   Tag="6" Background="{Binding SelectedIndex, ConverterParameter=6, Converter={StaticResource SelectedIndexToBackground}}">
+                    <TextBlock x:ConnectionId='9' x:Name="DownloadSetting" Foreground="{Binding SelectedIndex, ConverterParameter=6, Converter={StaticResource SelectedIndexToForeground}}" Opacity="{Binding SelectedIndex, ConverterParameter=6, Converter={StaticResource SelectedIndexToOpacity}}" Tag="6" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding ConverterParameter=IDS_CHATON_BODY_DOWNLOADS, Converter={StaticResource ResourceStringConverter}}" FontFamily="Segoe UI" FontSize="26.667" Margin="120,10,0,10" VerticalAlignment="Top"                                   FontWeight="Light"/>
+                </ListViewItem>
+
+                <ListViewItem x:ConnectionId='7'                                      Tag="7" Background="{Binding SelectedIndex, ConverterParameter=7, Converter={StaticResource SelectedIndexToBackground}}">
+                    <TextBlock x:Name="ManageAccount" Foreground="{Binding SelectedIndex, ConverterParameter=7, Converter={StaticResource SelectedIndexToForeground}}" Opacity="{Binding SelectedIndex, ConverterParameter=7, Converter={StaticResource SelectedIndexToOpacity}}" Tag="7" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding ConverterParameter=IDS_CHATON_BODY_MANAGE_ACCOUNTS_ABB, Converter={StaticResource ResourceStringConverter}}" FontFamily="Segoe UI" FontSize="26.667" Margin="120,10,0,10" VerticalAlignment="Top" FontWeight="Light"/>
+                </ListViewItem>
+                <ListViewItem x:ConnectionId='8'                                  Tag="8" Background="{Binding SelectedIndex, ConverterParameter=8, Converter={StaticResource SelectedIndexToBackground}}">
+                    <TextBlock x:Name="ConnectedDevice" Foreground="{Binding SelectedIndex, ConverterParameter=8, Converter={StaticResource SelectedIndexToForeground}}" Opacity="{Binding SelectedIndex, ConverterParameter=8, Converter={StaticResource SelectedIndexToOpacity}}" Tag="8" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding ConverterParameter=IDS_CHATON_BODY_CONNECTED_DEVICES, Converter={StaticResource ResourceStringConverter}}" FontFamily="Segoe UI" FontSize="26.667" Margin="120,10,0,10" VerticalAlignment="Top"  FontWeight="Light"/>
+                </ListViewItem>
+            </ListView>
+            
+            <!--<TextBlock x:Name="SamsungAccount" Opacity="{Binding SelectedIndex, ConverterParameter=8, Converter={StaticResource SelectedIndexToOpacity}}" Tag="8" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding ConverterParameter=IDS_CHATON_BODY_SAMSUNG_ACCOUNT, Converter={StaticResource ResourceStringConverter}}" FontFamily="Segoe UI" FontSize="26.667" Margin="120,0,0,20" VerticalAlignment="Top" Tapped="SamsungAccountSetting_Tapped" FontWeight="Light" Foreground="Black"/>-->
+            
+        </StackPanel>
+        <Frame x:Name="Current" Grid.Column="1" IsTabStop="False" Margin="80,0,0,0"/>
+        <Frame x:Name="PopupFrame" Grid.ColumnSpan="2" IsTabStop="False" Visibility="Collapsed"/>
+    </Grid>
+</Page>
+

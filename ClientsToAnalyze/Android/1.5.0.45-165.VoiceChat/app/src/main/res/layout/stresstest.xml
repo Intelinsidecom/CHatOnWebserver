@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P2P Destination"/>
+        <EditText
+            android:id="@+id/edit_p2pdest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conference Destination"/>
+        <EditText
+            android:id="@+id/edit_confdest1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edit_confdest2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edit_confdest3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call Duration"/>
+            <EditText
+                android:id="@+id/edit_callduration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="20000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WAIT Duration"/>
+            <EditText
+                android:id="@+id/edit_waitduration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10000"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_placecallmode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PlaceCall Mode"/>
+        <Button
+            android:id="@+id/btn_receivecallmode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ReceiveCall Mode"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_confplacecallmode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conf PlaceCall Mode"/>
+        <Button
+            android:id="@+id/btn_finishtest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finish Test"/>
+    </LinearLayout>
+</LinearLayout>

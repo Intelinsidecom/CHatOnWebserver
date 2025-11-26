@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="video_capture_record_to_video_call">
+        <item>@string/video_capture_img</item>
+        <item>@string/video_record_video</item>
+    </array>
+    <array name="hideme_dialog_array">
+        <item>Default image</item>
+        <item>Images</item>
+        <item>Take picture</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Images</item>
+        <item>Take picture</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Edit</item>
+        <item>Delete</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>Picture</item>
+        <item>Live video</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Switch video</item>
+        <item>Hide video</item>
+    </array>
+    <array name="conf_voice_codec_list">
+        <item>G711_PCMU</item>
+        <item>G711_PCMA</item>
+        <item>G729</item>
+        <item>G7231</item>
+        <item>AMR_NB</item>
+        <item>AMR_WB</item>
+        <item>AAC</item>
+        <item>PCM_WB</item>
+        <item>iLBC</item>
+        <item>SILK</item>
+    </array>
+    <array name="conf_voice_codec_list_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </array>
+    <array name="conf_cam_list">
+        <item>Rear camera</item>
+        <item>Front camera</item>
+    </array>
+    <array name="conf_cam_list_value">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="conf_front_framesize_list">
+        <item>288x480</item>
+        <item>368x480</item>
+    </array>
+    <array name="conf_front_framesize_list_value">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="conf_back_framesize_list">
+        <item>176x144</item>
+        <item>320x240</item>
+        <item>352x288</item>
+        <item>640x480 unstable 30fps</item>
+        <item>800x480 unstable 30fps</item>
+        <item>720x480 not working</item>
+        <item>1280x720 not working</item>
+    </array>
+    <array name="conf_back_framesize_list_value">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </array>
+    <array name="conf_framerate_list">
+        <item>5</item>
+        <item>10</item>
+        <item>15 more than 512kbps</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30 more than 1024kbps</item>
+    </array>
+    <array name="conf_framerate_list_value">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </array>
+    <array name="conf_vad_toggle_list">
+        <item>OFF</item>
+        <item>ON</item>
+    </array>
+    <array name="conf_vad_toggle_list_value">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="conf_fec_toggle_list">
+        <item>끔</item>
+        <item>켬</item>
+    </array>
+    <array name="conf_fec_toggle_list_value">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="conf_aec_mode_list">
+        <item>Disable</item>
+        <item>Default</item>
+        <item>Good</item>
+    </array>
+    <array name="conf_aec_mode_list_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="conf_noise_supression_list">
+        <item>none</item>
+        <item>little</item>
+        <item>small</item>
+        <item>quite</item>
+        <item>full</item>
+    </array>
+    <array name="conf_noise_supression_list_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+    <array name="eng_server_level_list">
+        <item>Operating Serv.</item>
+        <item>Staging Serv. : Internal</item>
+        <item>Staging Serv. : External</item>
+        <item>etc Serv.</item>
+    </array>
+    <array name="eng_server_level_list_value">
+        <item />
+        <item>stg_in</item>
+        <item>stg_ex</item>
+        <item>etc</item>
+    </array>
+    <array name="audio_codec_list">
+        <item>PCMU</item>
+        <item>PCMA</item>
+        <item>G.729</item>
+        <item>G.722</item>
+        <item>AMR-NB</item>
+        <item>AMR-WB</item>
+        <item>SILK</item>
+    </array>
+    <array name="audio_codec_list_value">
+        <item>PCMU</item>
+        <item>PCMA</item>
+        <item>G729</item>
+        <item>G722</item>
+        <item>AMR-NB</item>
+        <item>AMR-WB</item>
+        <item>SILK</item>
+    </array>
+    <array name="audio_freq_list">
+        <item>8Khz</item>
+        <item>16Khz</item>
+        <item>24Khz</item>
+    </array>
+    <array name="audio_freq_list_value">
+        <item>8000</item>
+        <item>16000</item>
+        <item>24000</item>
+    </array>
+    <array name="video_codec_list">
+        <item>H.263</item>
+        <item>H.264</item>
+        <item>MPEG4 V</item>
+    </array>
+    <array name="video_codec_list_value">
+        <item>H263</item>
+        <item>H264</item>
+        <item>MP4V</item>
+    </array>
+    <array name="camera_list">
+        <item>Front</item>
+        <item>Back</item>
+    </array>
+    <array name="camera_list_value">
+        <item>cam_front</item>
+        <item>cam_back</item>
+    </array>
+    <array name="fps_list">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+    </array>
+    <array name="fps_list_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+    </array>
+    <array name="bitrate_list">
+        <item>16000</item>
+        <item>32000</item>
+        <item>48000</item>
+        <item>64000</item>
+        <item>80000</item>
+        <item>96000</item>
+        <item>112000</item>
+        <item>128000</item>
+        <item>192000</item>
+        <item>256000</item>
+        <item>384000</item>
+        <item>512000</item>
+        <item>640000</item>
+        <item>700000</item>
+        <item>768000</item>
+        <item>896000</item>
+        <item>1024000</item>
+    </array>
+    <array name="bitrate_list_value">
+        <item>16000</item>
+        <item>32000</item>
+        <item>48000</item>
+        <item>64000</item>
+        <item>80000</item>
+        <item>96000</item>
+        <item>112000</item>
+        <item>128000</item>
+        <item>192000</item>
+        <item>256000</item>
+        <item>384000</item>
+        <item>512000</item>
+        <item>640000</item>
+        <item>700000</item>
+        <item>768000</item>
+        <item>896000</item>
+        <item>1024000</item>
+    </array>
+    <array name="gop_list">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>75</item>
+        <item>90</item>
+        <item>105</item>
+        <item>120</item>
+        <item>135</item>
+        <item>150</item>
+        <item>1500</item>
+        <item>15000</item>
+    </array>
+    <array name="gop_list_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>75</item>
+        <item>90</item>
+        <item>105</item>
+        <item>120</item>
+        <item>135</item>
+        <item>150</item>
+        <item>1500</item>
+        <item>15000</item>
+    </array>
+    <array name="resolution_list">
+        <item>QCIF</item>
+        <item>QVGA</item>
+        <item>CIF</item>
+        <item>VGA</item>
+    </array>
+    <array name="resolution_list_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="quality_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </array>
+    <array name="quality_list_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </array>
+    <array name="orient_list">
+        <item>0</item>
+        <item>90</item>
+        <item>180</item>
+        <item>270</item>
+    </array>
+    <array name="orient_list_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="rotation_list">
+        <item>0</item>
+        <item>90</item>
+        <item>180</item>
+        <item>270</item>
+    </array>
+    <array name="rotation_list_value">
+        <item>0</item>
+        <item>90</item>
+        <item>180</item>
+        <item>270</item>
+    </array>
+    <array name="debuglevel_list">
+        <item>None</item>
+        <item>Verbose</item>
+        <item>Error</item>
+        <item>Debug</item>
+    </array>
+    <array name="debuglevel_list_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="pktmode_list">
+        <item>Auto</item>
+        <item>Single NAL</item>
+    </array>
+    <array name="pktmode_list_value">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="rotatedir_list">
+        <item>CCW</item>
+        <item>CW</item>
+    </array>
+    <array name="rotatedir_list_value">
+        <item>-1</item>
+        <item>1</item>
+    </array>
+    <array name="flipoption_list">
+        <item>NONE</item>
+        <item>Vertical Flip</item>
+        <item>Horizontal Flip</item>
+    </array>
+    <array name="flipoption_list_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="resolution_qos_list">
+        <item>QQVGA</item>
+        <item>QVGA</item>
+        <item>VGA</item>
+        <item>720p</item>
+        <item>Full HD</item>
+    </array>
+    <array name="resolution_qos_list_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+    <array name="vfu_list">
+        <item>PLI</item>
+        <item>FIR</item>
+    </array>
+    <array name="vfu_list_value">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="wb_list">
+        <item>auto</item>
+        <item>incandescent</item>
+        <item>fluorescent</item>
+        <item>daylight</item>
+        <item>cloudy-daylight</item>
+    </array>
+    <array name="wb_list_value">
+        <item>auto</item>
+        <item>incandescent</item>
+        <item>fluorescent</item>
+        <item>daylight</item>
+        <item>cloudy-daylight</item>
+    </array>
+    <array name="pref_4_1_array_entry">
+        <item>Off</item>
+        <item>Boost low tone</item>
+        <item>Boost mid tone</item>
+        <item>Boost high tone</item>
+        <item>Personalized for left</item>
+        <item>Personalized for right</item>
+    </array>
+    <array name="pref_4_1_array_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </array>
+</resources>

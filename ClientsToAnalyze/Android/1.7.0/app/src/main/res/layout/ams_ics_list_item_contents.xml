@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:padding="@dimen/ams_ics2_content_item_container_padding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/layout_ams_image"
+        android:background="@drawable/ams_ics_selector_basic_tool_frame"
+        android:layout_width="@dimen/ams_ics2_content_item_container_width"
+        android:layout_height="@dimen/ams_ics2_content_item_container_height"
+        android:layout_centerInParent="true">
+        <RelativeLayout
+            android:layout_width="@dimen/ams_ics2_content_item_content_width"
+            android:layout_height="@dimen/ams_ics2_content_item_content_height"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:id="@+id/image_ams_image"
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:layout_centerInParent="true"/>
+            <CheckBox
+                android:id="@+id/check_box_delete"
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/ams_ics2_content_item_content_check_margin"
+                android:button="@drawable/ams_ics_selector_checkbox"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

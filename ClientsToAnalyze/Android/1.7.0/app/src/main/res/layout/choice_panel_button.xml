@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="20dp"
+    android:textColor="@color/buddy_list_selected_buddy_xml"
+    android:ellipsize="marquee"
+    android:id="@+id/choice_panel_btn"
+    android:background="@drawable/btn_choice_panel_xml"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:maxWidth="140dp"
+    android:singleLine="true"
+    android:drawableRight="@drawable/delete_icon"
+    android:drawablePadding="10dp"/>

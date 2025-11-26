@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:background="@drawable/popup_chaton_logo"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"/>
+    <TextView
+        android:textSize="24dp"
+        android:textColor="@color/brown_color_001"
+        android:gravity="center_vertical"
+        android:id="@+id/black_noti_title"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginLeft="10dp"/>
+</LinearLayout>

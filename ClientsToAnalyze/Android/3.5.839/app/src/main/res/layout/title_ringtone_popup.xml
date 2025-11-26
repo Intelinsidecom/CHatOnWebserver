@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_title"
+    android:paddingLeft="12dp"
+    android:paddingTop="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageButton
+        android:gravity="center_vertical"
+        android:id="@+id/layout_download"
+        android:layout_width="@dimen/buddy_popup_header_height"
+        android:layout_height="@dimen/buddy_popup_header_height"
+        android:src="@drawable/actionbar_ic_shop"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/more_chaton_shop_name"
+        style="@style/PopupWinsetTopButton"/>
+    <TextView
+        android:textAppearance="@style/TextAppearance.Pop01"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buddy_popup_header_height"
+        android:text="@string/settings_alert_tone"
+        android:layout_toLeftOf="@+id/layout_download"/>
+    <ImageView
+        android:id="@+id/ringtone_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/common_new"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

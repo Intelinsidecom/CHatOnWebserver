@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/profile_popup_bg_full_1"
+    android:layout_width="@dimen/insert_menu_grid_size"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buddy_popup_header_height">
+        <TextView
+            android:textAppearance="@style/TextAppearance.Pop01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="@string/menu_chat_insert"/>
+    </LinearLayout>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        layout="@layout/layout_common_divider3"/>
+    <GridView
+        android:gravity="center_horizontal"
+        android:id="@+id/gridViewMenu"
+        android:paddingLeft="@dimen/insert_menu_padding_left"
+        android:paddingTop="@dimen/insert_menu_padding_top"
+        android:paddingRight="@dimen/insert_menu_padding_left"
+        android:paddingBottom="@dimen/insert_menu_padding_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="#0000"
+        android:verticalSpacing="@dimen/insert_menu_grid_vertical_spacing"
+        android:columnWidth="@dimen/insert_menu_item_width"
+        android:numColumns="3"/>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.chaton.widget.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    local:checkable_widget="@android:id/checkbox">
+    <TableLayout
+        android:id="@+id/listItem_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="8dp"
+        android:stretchColumns="1"
+        android:shrinkColumns="1"
+        android:layout_toLeftOf="@android:id/checkbox"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_alignWithParentIfMissing="true">
+        <TableRow android:gravity="center_vertical">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:id="@+id/fontItem_layout"
+                android:background="@drawable/bubble_receive_01_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true">
+                <TextView
+                    android:textAppearance="@style/TextAppearance.Chat01"
+                    android:id="@+id/listbubble_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/use_device_font_size"/>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+    <CheckBox
+        android:id="@android:id/checkbox"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"/>
+</com.sec.chaton.widget.CheckableRelativeLayout>

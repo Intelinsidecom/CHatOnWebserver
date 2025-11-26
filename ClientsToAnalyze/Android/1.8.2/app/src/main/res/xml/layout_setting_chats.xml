@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:layout="@layout/preference_header"
+        android:title="@string/chat_display_settings"/>
+    <Preference
+        android:layout="@layout/preference_with_arrow"
+        android:title="@string/setting_background_style"
+        android:key="pref_item_change_background"/>
+    <Preference
+        android:layout="@layout/preference_with_arrow"
+        android:title="@string/setting_bubble_style"
+        android:key="pref_item_change_bubble"/>
+    <Preference
+        android:layout="@layout/preference_with_arrow"
+        android:title="@string/settings_chat_view_font_size"
+        android:key="pref_item_font_size"/>
+    <CheckBoxPreference
+        android:layout="@layout/preference"
+        android:title="@string/setting_enter_key_title"
+        android:key="pref_item_enter_key"
+        android:summary="@string/setting_enter_key_summary_new"
+        android:widgetLayout="@layout/preference_widget_checkbox"
+        android:defaultValue="false"/>
+</PreferenceScreen>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:background="@drawable/buddy_item_xml"
+    android:paddingRight="?android:attr/scrollbarSize"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight">
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/setting_explain_text"
+        android:ellipsize="end"
+        android:id="@android:id/title"
+        android:fadingEdge="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:maxLines="2"
+        android:lines="2"/>
+</LinearLayout>

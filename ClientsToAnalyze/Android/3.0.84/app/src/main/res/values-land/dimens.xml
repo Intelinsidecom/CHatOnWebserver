@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="actionbar_size">40dp</dimen>
+    <dimen name="ft_ext99_size">17dp</dimen>
+    <dimen name="ft_ext98_size">12dp</dimen>
+    <dimen name="ams_ics_titlebar_height">50dp</dimen>
+</resources>

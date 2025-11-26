@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Samsung.Windows.PDI</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcore45</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Text.RegularExpressions" />
+    <Reference Include="System.Text.Encoding" />
+    <Reference Include="System.IO" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Reflection.Extensions" />
+    <Reference Include="System.Reflection" />
+    <Reference Include="System.Globalization" />
+  </ItemGroup>
+</Project>

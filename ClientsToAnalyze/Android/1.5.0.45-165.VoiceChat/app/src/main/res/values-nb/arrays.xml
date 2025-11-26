@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>Standardbilde</item>
+        <item>Bilder</item>
+        <item>Ta bilde</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Bilder</item>
+        <item>Ta bilde</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Rediger</item>
+        <item>Slett</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>Bilde</item>
+        <item>Direktevideo</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Bytt video</item>
+        <item>Skjul video</item>
+    </array>
+</resources>

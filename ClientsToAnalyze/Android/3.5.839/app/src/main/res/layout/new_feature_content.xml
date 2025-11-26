@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp">
+    <FrameLayout
+        android:id="@+id/new_feature_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/content_pager"
+            android:scrollbars="none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/ll_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="19dp"/>
+    <include
+        android:id="@+id/new_feature_done_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_common_button_1"/>
+</LinearLayout>

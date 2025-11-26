@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item
+        android:duration="500"
+        android:drawable="@drawable/invite_buddy_sequence_mini_01"/>
+    <item
+        android:duration="500"
+        android:drawable="@drawable/invite_buddy_sequence_mini_02"/>
+    <item
+        android:duration="500"
+        android:drawable="@drawable/invite_buddy_sequence_mini_03"/>
+</animation-list>

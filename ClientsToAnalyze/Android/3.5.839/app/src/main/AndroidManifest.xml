@@ -1,0 +1,1788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="305839000"
+    android:versionName="3.5.839"
+    package="com.sec.chaton">
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17"/>
+    <compatible-screens>
+        <screen
+            android:screenSize="small"
+            android:screenDensity="ldpi"/>
+        <screen
+            android:screenSize="small"
+            android:screenDensity="mdpi"/>
+        <screen
+            android:screenSize="small"
+            android:screenDensity="hdpi"/>
+        <screen
+            android:screenSize="small"
+            android:screenDensity="xhdpi"/>
+        <screen
+            android:screenSize="small"
+            android:screenDensity="xxhdpi"/>
+        <screen
+            android:screenSize="small"
+            android:screenDensity="xxxhdpi"/>
+        <screen
+            android:screenSize="normal"
+            android:screenDensity="ldpi"/>
+        <screen
+            android:screenSize="normal"
+            android:screenDensity="mdpi"/>
+        <screen
+            android:screenSize="normal"
+            android:screenDensity="hdpi"/>
+        <screen
+            android:screenSize="normal"
+            android:screenDensity="xhdpi"/>
+        <screen
+            android:screenSize="normal"
+            android:screenDensity="xxhdpi"/>
+        <screen
+            android:screenSize="normal"
+            android:screenDensity="xxxhdpi"/>
+        <screen
+            android:screenSize="large"
+            android:screenDensity="ldpi"/>
+        <screen
+            android:screenSize="large"
+            android:screenDensity="mdpi"/>
+        <screen
+            android:screenSize="large"
+            android:screenDensity="hdpi"/>
+        <screen
+            android:screenSize="large"
+            android:screenDensity="xhdpi"/>
+        <screen
+            android:screenSize="large"
+            android:screenDensity="xxhdpi"/>
+        <screen
+            android:screenSize="large"
+            android:screenDensity="xxxhdpi"/>
+    </compatible-screens>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_MMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INSTALL_DRM"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <permission
+        android:name="com.sec.chaton.smsplugin.provider.READ_PERMISSION"
+        android:protectionLevel="signature"/>
+    <permission
+        android:name="com.sec.chaton.smsplugin.provider.WRITE_PERMISSION"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.sec.chaton.smsplugin.provider.READ_PERMISSION"/>
+    <uses-permission android:name="com.sec.chaton.smsplugin.provider.WRITE_PERMISSION"/>
+    <uses-feature android:name="android.hardware.location"/>
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="true"/>
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_SYNC_STATS"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.sec.android.app.gallery3d.READ"/>
+    <permission
+        android:name="com.sec.chaton.provider.READ_PERMISSION"
+        android:protectionLevel="signature"/>
+    <permission
+        android:name="com.sec.chaton.provider.WRITE_PERMISSION"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.sec.chaton.provider.READ_PERMISSION"/>
+    <uses-permission android:name="com.sec.chaton.provider.WRITE_PERMISSION"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <permission
+        android:name="com.coolots.chatonv.permission.provider.LIVE_SHARE"
+        android:protectionLevel="normal"/>
+    <uses-permission android:name="com.coolots.chatonv.permission.provider.LIVE_SHARE"/>
+    <permission
+        android:name="com.coolots.permission.COOLOTS"
+        android:protectionLevel="normal"/>
+    <uses-permission android:name="com.coolots.permission.COOLOTS"/>
+    <permission
+        android:name="com.coolots.chatonv.permission.provider.LIVE_SHARE_CANADA"
+        android:protectionLevel="normal"/>
+    <uses-permission android:name="com.coolots.chatonv.permission.provider.LIVE_SHARE_CANADA"/>
+    <permission
+        android:name="com.coolots.permission.COOLOTS_CANADA"
+        android:protectionLevel="normal"/>
+    <uses-permission android:name="com.coolots.permission.COOLOTS_CANADA"/>
+    <uses-permission android:name="com.sec.spp.permission.PUSH_SERVICE_PROVIDER"/>
+    <uses-permission android:name="sstream.app.StoryProvider.WRITE.PERMISSION"/>
+    <permission
+        android:label="@string/app_name"
+        android:name="com.sec.chaton"
+        android:protectionLevel="signature"
+        android:description="@string/app_name"/>
+    <uses-permission android:name="com.sec.chaton"/>
+    <permission
+        android:label="@string/app_name"
+        android:name="com.sec.chaton.error"
+        android:protectionLevel="signature"
+        android:description="@string/app_name"/>
+    <uses-permission android:name="com.sec.chaton.error"/>
+    <uses-permission android:name="com.sec.spp.permission.TOKEN_13b9cdc89f21278b87e0488ad5efb298532ad60905603d81a5145b0a03ce869cca937166ae9a01578767a15e8a36b9cc849a1de35bdc3facc1512f316ef9d09467c514442069ec167c16a8c8e67a4c641fc8d4b6394660a151f95a04e5c397de36c8df48dfbe0d12c45e76e6ca5a21f595994dd136023407173f9b983e2fa208"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <permission
+        android:name="com.sec.chaton.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.sec.chaton.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.SEND"/>
+    <uses-feature android:name="android.hardware.location"/>
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="true"/>
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false"/>
+    <application
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name"
+        android:icon="@drawable/icon"
+        android:name="com.sec.chaton.global.GlobalApplication"
+        android:debuggable="false"
+        android:allowBackup="false"
+        android:largeHeap="true">
+        <meta-data
+            android:name="com.samsung.android.sdk.multiwindow.enable"
+            android:value="true"/>
+        <meta-data
+            android:name="com.samsung.android.sdk.multiwindow.multiinstance.enable"
+            android:value="true"/>
+        <meta-data
+            android:name="com.samsung.android.sdk.multiwindow.penwindow.enable"
+            android:value="true"/>
+        <meta-data
+            android:name="com.samsung.android.multiuser.install_only_owner"
+            android:value="true"/>
+        <meta-data
+            android:name="com.sec.android.sdk.cover.MODE"
+            android:value="1"/>
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="false"/>
+        <activity
+            android:theme="@style/AppTheme.NoTitleBar"
+            android:name="com.sec.chaton.HomeActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SPELL"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.app.spellscroll"
+                android:resource="@xml/spellscroll"/>
+        </activity>
+        <activity
+            android:theme="@style/AppTheme.NoTitleBar"
+            android:name="com.sec.chaton.SplashActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.sec.chaton.IntentControllerActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.sec.chaton.BootstrapActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard">
+            <intent-filter>
+                <action android:name="com.sec.chaton.action.NOTI_MESSAGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.chaton.action.NOTI_WEB"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:mimeType="*/*"
+                    android:scheme="chaton"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="chaton"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="text/x-vcard"/>
+                <data android:mimeType="text/x-vCalendar"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="audio/3gpp"/>
+                <data android:mimeType="audio/mp4"/>
+                <data android:mimeType="audio/amr"/>
+                <data android:mimeType="application/pdf"/>
+                <data android:mimeType="application/x-hwp"/>
+                <data android:mimeType="application/jungumword"/>
+                <data android:mimeType="application/vnd.ms-powerpoint"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+                <data android:mimeType="application/msword"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+                <data android:mimeType="application/vnd.ms-excel"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+                <data android:mimeType="application/snb"/>
+                <data android:mimeType="application/spd"/>
+                <data android:mimeType="application/scc"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.chaton.item/vnd.com.chaton.profile"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="chaton"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="chaton"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.chaton.action.ADD_ACCOUNT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.chaton.action.CREATE_ACCOUNT_CHATONV"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.chaton.action.VIEW_BUDDY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sec.chaton.AdminMenu"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/NewFeatureTheme.Dialog"
+            android:name="com.sec.chaton.event.NewFeature"
+            android:configChanges="screenSize|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/NewFeatureTheme"
+            android:name="com.sec.chaton.event.UsingChatONDialogActivity"
+            android:configChanges="screenSize|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/AppTheme.Home"
+            android:name="com.sec.chaton.TabActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.ShortcutActivity"
+            android:configChanges="screenSize|orientation|keyboard"/>
+        <activity
+            android:theme="@style/AppTheme.Dialog"
+            android:name="com.sec.chaton.UpgradeDialog"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:theme="@style/AppTheme.Dialog"
+            android:name="com.sec.chaton.ChatONVUpgradeDialog"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:theme="@style/AppTheme.Dialog"
+            android:name="com.sec.chaton.NewSPPUpgradeDialog"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:theme="@style/AppTheme.Dialog"
+            android:name="com.sec.chaton.SPPUpgradeDialog"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:theme="@style/AppTheme.Dialog"
+            android:name="com.sec.chaton.DataPacketDialog"
+            android:excludeFromRecents="true"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:theme="@style/AppTheme.Dialog"
+            android:name="com.sec.chaton.buddy.dialog.BuddyDialog"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:theme="@style/AppTheme.Dialog"
+            android:name="com.sec.chaton.buddy.dialog.MeDialog"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:theme="@style/AppTheme.Dialog"
+            android:name="com.sec.chaton.buddy.dialog.SpecialBuddyDialog"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize"/>
+        <activity
+            android:theme="@style/AppTheme.Dialog"
+            android:name="com.sec.chaton.buddy.dialog.GroupDialog"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize"/>
+        <activity
+            android:theme="@style/AppTheme.Dialog"
+            android:name="com.sec.chaton.buddy.dialog.PhoneNumberSelectorDialog"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:theme="@style/AppTheme.Dialog"
+            android:name="com.sec.chaton.buddy.dialog.ChatONVInstallDialog"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:theme="@style/AppTheme.Dialog"
+            android:name="com.sec.chaton.buddy.dialog.ChatONVRedirectDialog"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:theme="@style/AppTheme.Dialog"
+            android:name="com.sec.chaton.buddy.dialog.SpamConfirmDialog"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:name="com.sec.chaton.buddy.BuddyProfileImageView"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/AppTheme.Dialog"
+            android:name="com.sec.chaton.chat.OfflineMsgDialog"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:label="@string/recent_story_title"
+            android:name="com.sec.chaton.updates.UpdatesActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/menu_buddy_delete"
+            android:name="com.sec.chaton.updates.UpdatesSelectionActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.buddy.BuddyActivity2"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="chaton"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sec.chaton.buddy.GroupProfileImageViewActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.buddy.BuddyGroupProfileActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.buddy.BuddyProfileEditNameActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.buddy.BuddyProfileActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.buddy.BuddyInfoActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.buddy.SpecialBuddyActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.buddy.SpecialBuddyActivity2"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/mypage_profile_image"
+            android:name="com.sec.chaton.buddy.ViewProfileImage"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/buddy_add_contact"
+            android:name="com.sec.chaton.buddy.AddBuddyActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard">
+            <intent-filter>
+                <action android:name="com.sec.chaton.action.ADD_BUDDY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/settings_invite_friend"
+            android:name="com.sec.chaton.buddy.TellFriendsActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:hardwareAccelerated="true"/>
+        <activity
+            android:label="@string/recommendation"
+            android:name="com.sec.chaton.buddy.BuddyRecommendActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:hardwareAccelerated="true"/>
+        <activity
+            android:label="@string/recommendation"
+            android:name="com.sec.chaton.buddy.SpecialBuddyRecommendListActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.buddy.BuddyGroupMemberEditActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.buddy.BuddyLiveGroupActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.buddy.BuddyEditNickNameActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize|stateAlwaysVisible"/>
+        <activity
+            android:theme="@style/AppTheme.Dialog"
+            android:name="com.sec.chaton.buddy.dialog.MultipleExpandableDialog"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:name="com.sec.chaton.msgbox.MsgboxActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.msgbox.MsgboxSelectionActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/more_call_log"
+            android:name="com.sec.chaton.calllog.view.CallLogActivity"
+            android:configChanges="screenSize|orientation"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity
+            android:label="CallLogDetail"
+            android:name="com.sec.chaton.calllog.view.CallLogDetailActivity"
+            android:configChanges="screenSize|orientation|locale"/>
+        <activity
+            android:label="@string/call_btn_member_list"
+            android:name="com.sec.chaton.calllog.view.ShowConferenceMemberList"
+            android:configChanges="screenSize|orientation|locale"/>
+        <activity
+            android:label="@string/ams_btn_delete"
+            android:name="com.sec.chaton.calllog.view.DeleteCallLogActivity"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:name="com.sec.chaton.chat.ChatActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="stateHidden"
+            android:hardwareAccelerated="true"/>
+        <activity
+            android:label="@string/chat_view_menu_info2"
+            android:name="com.sec.chaton.chat.ChatInfoActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/chat_view_menu_invite"
+            android:name="com.sec.chaton.chat.ChatInfoMoreActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/chatview_menu_forward"
+            android:name="com.sec.chaton.forward.ChatForwardActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.chat.translate.TranslatorActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.mobileweb.GeneralWebActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.multimedia.emoticon.anicon.AniconSortListActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/trunk_title"
+            android:name="com.sec.chaton.trunk.TrunkActivity"
+            android:configChanges="screenSize|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/registration_update_disclaimer_detial_view"
+            android:name="com.sec.chaton.trunk.TrunkDetailActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.sec.chaton.trunk.TrunkPageActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.sec.chaton.multimedia.vcard.VCardReadContactActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.multimedia.vcard.ReadVCardActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/multimedia_geotag_header"
+            android:name="com.sec.chaton.multimedia.geotag.GeotagActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.multimedia.audio.RecordAudio"
+            android:configChanges="screenSize|orientation|keyboard|locale"/>
+        <activity
+            android:label="@string/media_voice"
+            android:name="com.sec.chaton.multimedia.audio.VoiceListActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:label="@string/layout_vcalendar_calendar_list"
+            android:name="com.sec.chaton.multimedia.vcalendar.VCalendarListActivity2"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/layout_vcalendar_calendar_list"
+            android:name="com.sec.chaton.multimedia.vcalendar.VCalendarDetailActivity2"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:label="@string/menu_multimedia_files"
+            android:name="com.sec.chaton.multimedia.doc.FileExplorerActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.multimedia.text.DetailTextView"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/image_select_effect"
+            android:name="com.sec.chaton.multimedia.image.ImageEffectActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.sec.chaton.multimedia.image.ImagePagerActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.sec.chaton.multimedia.image.PostONImagePagerActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:label="@string/mypage_opt_album"
+            android:name="com.sec.chaton.multimedia.multisend.GalleryActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/mypage_opt_album"
+            android:name="com.sec.chaton.multimedia.multisend.CategoryActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/setting_alerts_preview"
+            android:name="com.sec.chaton.multimedia.multisend.PreviewPageActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/setting_category_notice"
+            android:name="com.sec.chaton.EOSPopupActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:theme="@style/AppTheme.NoTitleBar"
+            android:name="com.sec.chaton.registration.AuthenticatorActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/AppTheme.NoTitleBar"
+            android:name="com.sec.chaton.registration.RegisterSMSActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/provisioning_registration"
+            android:name="com.sec.chaton.registration.ActivityRegist"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize|stateAlwaysVisible"/>
+        <activity
+            android:label="@string/provisioning_registration"
+            android:name="com.sec.chaton.registration.ActivityRegistPushName"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.sec.chaton.registration.ActivityProvisioning"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/regist_select_country_or_region_code"
+            android:name="com.sec.chaton.registration.CountryActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity
+            android:name="com.sec.chaton.registration.CountryWrite"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/provisioning_registration"
+            android:name="com.sec.chaton.registration.ActivityNonSelfSMS"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:label="@string/setting_about_btn1_text"
+            android:name="com.sec.chaton.registration.ActivityDisclaimerKR"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/register_with_sns"
+            android:name="com.sec.chaton.registration.ActivityConnectAccounts"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.userprofile.UserProfileActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:label="@string/mypage_info"
+            android:name="com.sec.chaton.userprofile.MyInfoActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/mypage_cover_sample"
+            android:name="com.sec.chaton.userprofile.SetCoverstoryActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/mypage_cover_sample"
+            android:name="com.sec.chaton.userprofile.CoverstorySampleActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/mypage_poston_write"
+            android:name="com.sec.chaton.poston.PostONWriteActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.Translucent.NoTitleBar"
+            android:name="com.sec.chaton.userprofile.CoverstoryUserGuideActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/setting_account"
+            android:name="com.sec.chaton.settings.ActivityAccount"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/setting_settings_title"
+            android:name="com.sec.chaton.settings.ActivitySettings"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/settings_version"
+            android:name="com.sec.chaton.settings.ActivityAboutService"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/deregister_device"
+            android:name="com.sec.chaton.settings.ActivityDeregister"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.settings.ActivityTellFriends"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.settings.ActivityWebView"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:hardwareAccelerated="true"/>
+        <activity
+            android:name="com.sec.chaton.settings.PostONHideActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/settings_chat_view_font_size"
+            android:name="com.sec.chaton.settings.ActivityChatView"/>
+        <activity
+            android:label="@string/settings_chat_view_font_style"
+            android:name="com.sec.chaton.settings.ActivityFontChange"/>
+        <activity
+            android:label="@string/ams_background_color"
+            android:name="com.sec.chaton.settings.ActivityColoursChange"/>
+        <activity
+            android:label="@string/setting_settings_title"
+            android:name="com.sec.chaton.settings2.SettingActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/manage_contacts"
+            android:name="com.sec.chaton.settings.ActivityManageBuddy"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/room_setting"
+            android:name="com.sec.chaton.settings.ActivityChat"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/setting_category_privacy"
+            android:name="com.sec.chaton.settings.ActivityPrivacy"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/setting_notifications"
+            android:name="com.sec.chaton.settings.ActivityNoti2"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/backup"
+            android:name="com.sec.chaton.localbackup.ActivityLocalBackup"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/view_backedup"
+            android:name="com.sec.chaton.localbackup.ActivityBackupList"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/backup"
+            android:name="com.sec.chaton.localbackup.ActivitySecretKey"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/buddy_contact_sync"
+            android:name="com.sec.chaton.settings.ActivityContactSync"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/live"
+            android:name="com.sec.chaton.specialbuddy.ChatONLiveMainActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/live"
+            android:name="com.sec.chaton.specialbuddy.ChatONLiveEventActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.settings.moreapps.EventActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/more_chaton_shop_name"
+            android:name="com.sec.chaton.shop.ChatONShopActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/AppTheme.Dialog"
+            android:label="@string/more_chaton_shop_name"
+            android:name="com.sec.chaton.shop.inappbilling.BillingDialogActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/AppTheme.NoTitleBar"
+            android:label="plus"
+            android:name="com.sec.chaton.settings.moreapps.WebViewActivity"
+            android:configChanges="screenSize|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/settings_help"
+            android:name="com.sec.chaton.settings.ActivityGeneral"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.settings.SettingContainerActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/downloads_menu_title"
+            android:name="com.sec.chaton.settings.ActivityDownloads"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.settings.game.GameMobileWebActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/settings_password_lock"
+            android:name="com.sec.chaton.settings.ActivityPasswordLockView"
+            android:excludeFromRecents="true"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.settings.ActivityPasswordLockSet"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/label_for_passlock_hint"
+            android:name="com.sec.chaton.settings.ActivityPasswordLockHint"
+            android:excludeFromRecents="true"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity
+            android:label="@string/settings_blocked_contacts"
+            android:name="com.sec.chaton.block.BlockActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/setting_block_unblock"
+            android:name="com.sec.chaton.block.BlockListActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/settings_hided_contacts"
+            android:name="com.sec.chaton.hide.HideActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/hide_list_button_show"
+            android:name="com.sec.chaton.hide.HideListActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/setting_buddy_ignore_list"
+            android:name="com.sec.chaton.ignore.IgnoreActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/recommendation"
+            android:name="com.sec.chaton.settings.SuggestionsActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/preference_buddies_btn_unblock"
+            android:name="com.sec.chaton.poston.PostONHideListActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/registration_update_disclaimer_detial_view"
+            android:name="com.sec.chaton.poston.PostONDetailActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.sec.chaton.poll.ActivityPollList"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.poll.ActivityCreatePoll"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.poll.ActivityPollDuration"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.poll.ActivitySelectVoter"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.poll.ActivityPollVoter"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.poll.ActivityDetailImage"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/AppTheme.WithoutArrow"
+            android:name="com.sec.chaton.api.AuthorizeActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/AppTheme.Translucent.NoTitleBar"
+            android:name="com.sec.chaton.sharedialog.ShareActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <provider
+            android:name="com.sec.chaton.provider.ChatONProvider"
+            android:writePermission="com.sec.chaton.provider.WRITE_PERMISSION"
+            android:exported="true"
+            android:authorities="com.sec.chaton.provider"/>
+        <provider
+            android:name="com.sec.chaton.provider.ChatONProvider2"
+            android:readPermission="com.sec.chaton.provider.READ_PERMISSION"
+            android:writePermission="com.sec.chaton.provider.WRITE_PERMISSION"
+            android:exported="true"
+            android:authorities="com.sec.chaton.provider2"/>
+        <provider
+            android:name="com.sec.chaton.provider.ChatONCallProvider"
+            android:readPermission="com.sec.chaton.provider.READ_PERMISSION"
+            android:writePermission="com.sec.chaton.provider.WRITE_PERMISSION"
+            android:authorities="com.sec.chaton.provider.call"/>
+        <provider
+            android:name="com.sec.chaton.trunk.database.TrunkContentProvider"
+            android:readPermission="com.sec.chaton.provider.READ_PERMISSION"
+            android:writePermission="com.sec.chaton.provider.WRITE_PERMISSION"
+            android:authorities="com.develop.sec.chaton.provider"/>
+        <provider
+            android:name="com.sec.chaton.provider.ChatON2ndAppProvider"
+            android:readPermission="com.sec.chaton.provider.READ_PERMISSION"
+            android:writePermission="com.sec.chaton.provider.WRITE_PERMISSION"
+            android:exported="true"
+            android:authorities="com.sec.chaton.provider.chaton2ndApp"/>
+        <provider
+            android:name="com.sec.chaton.provider.ChatON3rdAppProvider"
+            android:exported="true"
+            android:authorities="com.sec.chaton.provider.chaton3rdApp"/>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.sec.chaton.provider.file"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+        <service
+            android:name="com.sec.chaton.receiver.CallLogReceiveService"
+            android:enabled="true"/>
+        <service android:name="com.sec.chaton.qmlog.QMLogSendingService"/>
+        <service
+            android:name="com.sec.chaton.chat.notification.FeedNotificationService"
+            android:exported="false"/>
+        <receiver
+            android:name="com.sec.chaton.receiver.CallLogReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.coolots.chaton.CALLLOG_DATA"/>
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="com.sec.chaton.localbackup.database.BackupContentProvider"
+            android:readPermission="com.sec.chaton.provider.READ_PERMISSION"
+            android:writePermission="com.sec.chaton.provider.WRITE_PERMISSION"
+            android:authorities="com.sec.chaton.localbackup"/>
+        <service
+            android:name="com.sec.chaton.account.ChatONSyncServiceAdapter"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter"/>
+            <meta-data
+                android:name="android.provider.CONTACTS_STRUCTURE"
+                android:resource="@xml/contacts"/>
+        </service>
+        <service
+            android:name="com.sec.chaton.account.ChatONAccountService"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="android.accounts.AccountAuthenticator"
+                    android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator"/>
+        </service>
+        <service
+            android:name="com.sec.chaton.service.FileUtilService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.sec.chaton.service.DELETE_DIR_ACTION"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.sec.chaton.registration.BackGroudDeleteAccount"
+            android:exported="false"/>
+        <service
+            android:name="com.sec.chaton.hugefiletransfer.HugeFileUploadService"
+            android:exported="false"/>
+        <service
+            android:name="com.sec.chaton.hugefiletransfer.HugeFileSendingMessageService"
+            android:exported="false"/>
+        <service
+            android:name="com.sec.chaton.hugefiletransfer.HugeFileDbArrangeService"
+            android:exported="false"/>
+        <receiver android:name="com.sec.chaton.hugefiletransfer.HugeFileUploadBroadcastReceiver"/>
+        <receiver
+            android:name="com.sec.chaton.receiver.PushReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.sec.chaton.push.NOTIFICATION_ACTION"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="db9fac80131928e1"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.spp.WifiPortChangeNotiAction"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.sec.chaton.receiver.NetStateReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.sec.chaton.receiver.PublicPushClientChangedReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.sec.chaton.receiver.PlatformBroadCastReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.sec.chaton.util.ACTION_VIDEO_RECORDING_START"/>
+                <action android:name="com.sec.chaton.util.ACTION_VIDEO_RECORDING_STOP"/>
+                <action android:name="com.sec.android.app.camera.ACTION_START_COVER_CAMERA"/>
+                <action android:name="com.sec.android.app.camera.ACTION_STOP_COVER_CAMERA"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.sec.chaton.receiver.PushRegistrationReceiver"
+            android:enabled="true"/>
+        <service
+            android:name="com.sec.chaton.service.PushRegistrationService"
+            android:enabled="true"/>
+        <receiver
+            android:name="com.sec.chaton.receiver.StorageStateReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.sec.chaton.receiver.MessageNotificationReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.sec.chaton.msgsend.MsgSendEventReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+        <receiver
+            android:name="com.sec.common.util.log.collector.LogCollectorReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.sec.chaton.REGISTER_FILTER"/>
+                <action android:name="com.sec.chaton.DEREGISTER_FILTER"/>
+                <action android:name="com.sec.chaton"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sec.chaton.localbackup.noti.AutoBackupReceiver"/>
+        <service
+            android:name="com.sec.chaton.localbackup.noti.AutoBackupService"
+            android:exported="false"/>
+        <service
+            android:name="com.sec.common.util.log.collector.LogCollectorSender"
+            android:enabled="true"/>
+        <activity android:name="com.sec.chaton.settings.ActivityBgBubbleChange"/>
+        <activity
+            android:label="@string/mypage_profile_image"
+            android:name="com.sec.chaton.userprofile.ProfileImageHistoryActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/settings_birthday_category"
+            android:name="com.sec.chaton.userprofile.BirthdayActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/buddy_profile_edit_name"
+            android:name="com.sec.chaton.userprofile.EditNameActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/mypage_edit_profile_edit_status_message"
+            android:name="com.sec.chaton.userprofile.EditStatusActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/user_facebook_account"
+            android:name="com.sec.chaton.facebook.FacebookMenuActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/facebook_invitation_card"
+            android:name="com.sec.chaton.facebook.FacebookInvitationCardSelectActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/facebook_invitation_card"
+            android:name="com.sec.chaton.facebook.FacebookInvitationCardWriteActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.AMSFileListActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.AMSPlayerActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.AMSImageEditorActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.BaseAMSActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.AMSBgSelectionActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.AMSStampSelectionActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.amschaton.AMSEmoticonSelectionActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:label="@string/ams_app_name"
+            android:name="com.sec.vip.cropimage.CropImage"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:label="@string/media_photo"
+            android:name="com.sec.vip.cropimage.ImageModify"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:hardwareAccelerated="false"/>
+        <activity
+            android:theme="@style/ScreenNotificationTheme"
+            android:name="com.sec.chaton.chat.notification.ScreenNotification2"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/ScreenNotificationTheme"
+            android:name="com.sec.chaton.chat.notification.ScreenWebNotification"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:name="com.sec.chaton.util.EnhancedNotification"
+            android:launchMode="singleTop"/>
+        <activity android:name="com.sec.chaton.settings.ActivitySyncNow"/>
+        <activity
+            android:theme="@style/AppTheme.Dialog"
+            android:name="com.sec.chaton.ExitAppDialogActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.sec.chaton.SelectCountry"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:label="@string/anicon_download_list_title_modified_anicons"
+            android:name="com.sec.chaton.multimedia.emoticon.CategoryActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/anicon_download_list_title_modified_anicons"
+            android:name="com.sec.chaton.settings.downloads.ActivityAniconPackageDetail"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/setting_download_category_bg_and_styles_title"
+            android:name="com.sec.chaton.settings.ActivitySkinDownloads"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/settings_ams_template"
+            android:name="com.sec.chaton.settings.downloads.ActivityAmsItemDownloads"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/ams_background"
+            android:name="com.sec.chaton.settings.downloads.ActivityAmsItemBackgroundDetail"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <provider
+            android:name="com.sec.chaton.api.access_token.AccessTokenProvider"
+            android:exported="true"
+            android:authorities="com.sec.chaton.access_token.provider"/>
+        <activity
+            android:label="@string/buddy_contact_sync"
+            android:name="com.sec.chaton.registration.ActivitySelectLanguage"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/select_language"
+            android:name="com.sec.chaton.registration.SelectLanguage"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/AppTheme.Dialog"
+            android:name="com.sec.chaton.registration.ActivityDisclaimerUpdate"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <service
+            android:name="com.sec.chaton.chat.background.ChatBackgroundService"
+            android:enabled="true"/>
+        <receiver
+            android:name="com.sec.chaton.chat.background.ChatRequestReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.sec.chaton.chat.background.MESSAGE_SEND"/>
+                <action android:name="com.sec.chaton.chat.background.REQ_FULL_MESSAGE"/>
+                <action android:name="com.sec.chaton.chat.background.REMOVE_MISSED_CALL_NOTI"/>
+                <action android:name="com.sec.chaton.chat.background.OPEN_MISSED_CALL_LOG"/>
+                <data android:scheme="chaton"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.sec.chaton.api.BackgroundRequestService"
+            android:enabled="true"/>
+        <receiver
+            android:name="com.sec.chaton.api.BackgroundRequestReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.sec.chaton.api.background.ADD_BUDDY"/>
+                <data android:scheme="chaton"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:label="@string/tellfriends_via_twitter"
+            android:name="com.sec.chaton.sns.p115ui.twitter.TwitterSubMenuActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/twitter_post_message"
+            android:name="com.sec.chaton.sns.p115ui.twitter.TwitterMessageActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/twitter_post_message"
+            android:name="com.sec.chaton.sns.p115ui.weibo.WeiboMessageActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/tellfriends_via_weibo"
+            android:name="com.sec.chaton.sns.p115ui.weibo.WeiboSubMenuActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.settings.tellfriends.weibo.WeiboTextInputLayout"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/tellfriends_via_renren"
+            android:name="com.sec.chaton.sns.p115ui.renren.RenrenSubMenuActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/twitter_post_message"
+            android:name="com.sec.chaton.sns.p115ui.renren.RenrenMessageActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/tellfriends_via_facebook"
+            android:name="com.sec.chaton.sns.p115ui.facebook.FacebookSubMenuActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/twitter_post_message"
+            android:name="com.sec.chaton.sns.p115ui.facebook.FacebookMessageActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity
+            android:label="@string/user_facebook_account"
+            android:name="com.sec.chaton.sns.p115ui.facebook.FacebookFriendsPickerActivity"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:label="@string/user_facebook_account"
+            android:name="com.sec.chaton.sns.p115ui.twitter.TwitterFriendsPickerActivity"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:label="@string/user_facebook_account"
+            android:name="com.sec.chaton.sns.p115ui.weibo.WeiboFriendsPickerActivity"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:label="@string/user_facebook_account"
+            android:name="com.sec.chaton.sns.p115ui.renren.RenrenFriendsPickerActivity"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:name="com.sec.chaton.poll.PollResultActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/setting_downloads_preference_title_font"
+            android:name="com.sec.chaton.settings.downloads.ActivityFontDownloads"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/setting_downloads_preference_title_font"
+            android:name="com.sec.chaton.settings.downloads.ActivityFontDetail"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/settings_alert_tone"
+            android:name="com.sec.chaton.settings.downloads.ActivitySoundDownloads"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/setting_download_category_bg_and_styles_title"
+            android:name="com.sec.chaton.settings.downloads.ActivitySkinDetail"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/setting_downloads_preference_title_sound"
+            android:name="com.sec.chaton.settings.downloads.ActivitySoundDetail"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.registration.ActivitySignInWithAccount"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.samsungaccount.MainActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.samsungaccount.ActivitySamsungAccountLogIn"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.sec.chaton.samsungaccount.AutoRegiSamsungAccountActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <receiver
+            android:name="com.sec.chaton.receiver.PushUpdateVersionReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.sec.spp.push.VersionCheck"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.sec.chaton.samsungaccount.SSOAccountBackgroundReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.msc.action.samsungaccount.response.BackGroundSignin"/>
+                <data android:scheme="com.sec.chaton"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.msc.action.samsungaccount.response.BackGroundSignin"/>
+                <data android:scheme="com.sec.chatonforcanada"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.msc.action.ACCESSTOKEN_V02_RESPONSE"/>
+                <action android:name="com.msc.action.VALIDATION_CHECK_RESPONSE"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.sec.chaton.samsungaccount.SSOAccountSyncReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SAMSUNGACCOUNT_SIGNIN_COMPLETED"/>
+                <action android:name="android.intent.action.SAMSUNGACCOUNT_SIGNOUT_COMPLETED"/>
+                <action android:name="android.intent.action.REGISTRATION_COMPLETED"/>
+                <action android:name="android.intent.action.REGISTRATION_CANCELED"/>
+                <action android:name="com.osp.app.signin.action.EMAIL_VALIDATION_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:label="@string/account_connected_device"
+            android:name="com.sec.chaton.settings.ActivityMultiDeviceView"
+            android:excludeFromRecents="true"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/settings_account"
+            android:name="com.sec.chaton.settings.ActivityManageAccounts"
+            android:excludeFromRecents="true"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/NewFeatureTheme"
+            android:name="com.sec.chaton.event.EventDialog"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:label="@string/setting_about_btn1_text"
+            android:name="com.sec.chaton.registration.ActivityDisclaimerGlobal"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/AppTheme.Dialog"
+            android:name="com.sec.chaton.registration.ActivitySyncSignInPopup"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AppTheme.Dialog"
+            android:name="com.sec.chaton.samsungaccount.DirectCallSAActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <receiver
+            android:name="com.sec.chaton.plugin.PlugInMonitor"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED"/>
+                <action android:name="android.intent.action.PACKAGE_CHANGED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.sec.chaton.msgsend.ChatONMessageService"/>
+        <service
+            android:name="com.sec.chaton.service.BackGroundRegiService"
+            android:exported="false"/>
+        <receiver
+            android:name="com.sec.chaton.calllog.manager.noti.ChatONCallNotificationBR"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.sec.chaton.MISSEDCALL_CREATE_NOTIFICATION"/>
+                <action android:name="com.sec.chaton.MISSEDCALL_DELETE_NOTIFICATION"/>
+                <action android:name="com.sec.chaton.REJECT_MSG_CREATE_NOTIFICATION"/>
+                <action android:name="com.sec.chaton.REJECT_MSG_DELETE_NOTIFICATION"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:label=""
+            android:name="com.sec.chaton.localbackup.chatlist.ChatListActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:label=""
+            android:name="com.sec.chaton.localbackup.chatview.ChatViewActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.sec.chaton.search.SearchActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.INSIGHT_SEARCH"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+        </activity>
+        <provider
+            android:name="com.sec.chaton.provider.SuggestionsProvider"
+            android:exported="true"
+            android:authorities="com.sec.chaton.provider.SuggestionsProvider">
+            <path-permission
+                android:readPermission="android.permission.GLOBAL_SEARCH"
+                android:pathPrefix="/search_suggest_query"/>
+            <path-permission
+                android:readPermission="android.permission.GLOBAL_SEARCH"
+                android:pathPrefix="/search_suggest_regex_query"/>
+        </provider>
+        <service
+            android:name="com.sec.chaton.service.ChatONVService"
+            android:exported="false"/>
+        <meta-data
+            android:name="sstream.app.SSTREAM_IS_SUPPORTED"
+            android:value="true"/>
+        <meta-data
+            android:name="sstream.app.SSTREAM_ID"
+            android:value="samsung.personal"/>
+        <meta-data
+            android:name="sstream.app.SSTREAM_SOURCE_ICON"
+            android:resource="@drawable/mux_ic_chaton"/>
+        <meta-data
+            android:name="sstream.app.SSTREAM_ICON_SELECTED"
+            android:resource="@drawable/mux_settings_personal_04"/>
+        <meta-data
+            android:name="sstream.app.SSTREAM_ICON_UNSELECTED"
+            android:resource="@drawable/mux_settings_personal_04_dim"/>
+        <activity
+            android:theme="@style/AppTheme.NoTitleBar"
+            android:name="com.sec.chaton.sstream.SStreamActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="sstream"/>
+                <data android:host="storyitem"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.sec.chaton.util.logcollector.LogCollectService"/>
+        <receiver android:name="com.sec.chaton.util.logcollector.scheduler.UploadScheduler"/>
+        <receiver android:name="com.sec.chaton.util.logcollector.scheduler.GatheringScheduler"/>
+        <activity
+            android:name="com.sec.chaton.smsplugin.p112ui.PluginComposeMessageActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android-dir/mms-sms"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.SENDTO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="sms"/>
+                <data android:scheme="smsto"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.SENDTO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="mms"/>
+                <data android:scheme="mmsto"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.chaton.smsplugin.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sec.chaton.smsplugin.p112ui.MessagingInfoActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/media_voice"
+            android:name="com.sec.chaton.smsplugin.multimedia.audio.MmsVoiceListActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:label="@string/multimedia_geotag_header"
+            android:name="com.sec.chaton.smsplugin.multimedia.geotag.MmsGeotagActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/layout_vcalendar_calendar_list"
+            android:name="com.sec.chaton.smsplugin.multimedia.vcalendar.MmsVCalendarListActivity2"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:label="@string/layout_vcalendar_calendar_list"
+            android:name="com.sec.chaton.smsplugin.multimedia.vcalendar.MmsVCalendarDetailActivity2"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity-alias
+            android:name="com.sec.chaton.smsplugin.ui.ForwardMessageActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:targetActivity="com.sec.chaton.smsplugin.ui.PluginComposeMessageActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:theme="@style/AppTheme.Dialog"
+            android:name="com.sec.chaton.smsplugin.p112ui.DeliveryReportActivity"/>
+        <activity android:name="com.sec.chaton.smsplugin.p112ui.SlideshowEditActivity"/>
+        <activity
+            android:name="com.sec.chaton.smsplugin.p112ui.SlideshowActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:noHistory="true"/>
+        <activity
+            android:label="@string/setting_smsmms"
+            android:name="com.sec.chaton.smsplugin.p112ui.SMSPreferenceActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <receiver
+            android:name="com.sec.chaton.smsplugin.transaction.PushReceiver"
+            android:permission="android.permission.BROADCAST_WAP_PUSH">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.WAP_PUSH_RECEIVED"/>
+                <data android:mimeType="application/vnd.wap.mms-message"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.provider.Telephony.WAP_PUSH_DELIVER"/>
+                <data android:mimeType="application/vnd.wap.mms-message"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sec.chaton.smsplugin.transaction.MmsRecvCompleteReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.TRANSACTION_COMPLETED_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.sec.chaton.smsplugin.transaction.PrivilegedSmsReceiver"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_DELIVER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sec.chaton.smsplugin.transaction.SmsReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.chaton.smsplugin.transaction.MESSAGE_SENT"/>
+                <data android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MESSAGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sec.chaton.smsplugin.transaction.MmsSystemEventReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.CONTENT_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.sec.chaton.smsplugin.p112ui.NoConfirmationSendService"
+            android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="sms"/>
+                <data android:scheme="smsto"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.sec.chaton.smsplugin.transaction.TransactionService"
+            android:exported="true"/>
+        <service
+            android:name="com.sec.chaton.smsplugin.transaction.SmsRetrieveService"
+            android:exported="true"/>
+        <service
+            android:name="com.sec.chaton.smsplugin.transaction.SmsReceiverService"
+            android:exported="true"/>
+        <provider
+            android:name="com.sec.chaton.smsplugin.TempFileProvider"
+            android:exported="true"
+            android:multiprocess="true"
+            android:authorities="smsplugin_temp_file"/>
+        <activity android:name="com.sec.chaton.smsplugin.ui.MessagingPreferenceActivity"/>
+        <activity
+            android:label="@string/setting_spammessages"
+            android:name="com.sec.chaton.smsplugin.p112ui.SpamSettingActivity"/>
+        <activity
+            android:name="com.sec.chaton.smsplugin.spam.SetupSpamNumberList"
+            android:configChanges="screenSize|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sec.chaton.smsplugin.spam.SetupSpamKeywordList"
+            android:configChanges="screenSize|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sec.chaton.smsplugin.spam.SetupSpamNumberWriteForm"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize|stateVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sec.chaton.smsplugin.spam.SetupSpamKeywordWriteForm"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize|stateVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sec.chaton.smsplugin.spam.ManageSpamMessages"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sec.chaton.smsplugin.p112ui.ClassZeroActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:noHistory="true"/>
+        <activity
+            android:name="com.sec.chaton.smsplugin.p112ui.ThreadSelectionActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.p137vk.sdk.VKOpenAuthActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <service
+            android:name="com.sec.chaton.smsplugin.transaction.BackgroundSenderService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.sec.chatron.smsplugin.transaction.BG_SEND_SMS"/>
+            </intent-filter>
+        </service>
+        <provider
+            android:name="com.sec.chaton.smsplugin.provider.MyTelephonyProvider"
+            android:authorities="chaton-telephony"/>
+        <provider
+            android:name="com.sec.chaton.smsplugin.spam.database.SpamSmsProvider"
+            android:readPermission="android.permission.READ_SMS"
+            android:writePermission="android.permission.WRITE_SMS"
+            android:multiprocess="true"
+            android:authorities="chaton-spamsms"/>
+        <provider
+            android:name="com.sec.chaton.smsplugin.spam.database.SpamMmsProvider"
+            android:readPermission="android.permission.READ_SMS"
+            android:writePermission="android.permission.WRITE_SMS"
+            android:multiprocess="true"
+            android:authorities="chaton-spammms">
+            <grant-uri-permission android:pathPrefix="/part/"/>
+            <grant-uri-permission android:pathPrefix="/drm/"/>
+        </provider>
+        <provider
+            android:name="com.sec.chaton.smsplugin.spam.database.SpamMmsSmsProvider"
+            android:readPermission="android.permission.READ_SMS"
+            android:writePermission="android.permission.WRITE_SMS"
+            android:multiprocess="true"
+            android:authorities="chaton-mms-sms"/>
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.sec.chaton"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.sec.chaton.GCMIntentService"/>
+        <service
+            android:name="com.sec.chaton.push.PushClientService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.sec.chaton.push.PUSH_CLIENT_SERVICE_ACTION"/>
+            </intent-filter>
+        </service>
+        <receiver
+            android:name="com.sec.chaton.push.receiver.SystemStateMoniter"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.sec.chaton.push.receiver.PublicPushClientMoniter"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.sec.chaton.push.heartbeat.HeartBeat"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.sec.chaton.push.HEARTBEAT_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.sec.chaton.push.receiver.AutoRestartReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.GTALK_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <permission
+        android:name="com.sec.chaton.push.BROADCAST_PUSH_MESSAGE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.sec.chaton.push.BROADCAST_PUSH_MESSAGE"/>
+</manifest>

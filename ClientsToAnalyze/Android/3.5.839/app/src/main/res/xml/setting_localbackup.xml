@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/setup_change_password"
+        android:key="pref_setting_backup"
+        android:summary="@string/setup_password_description"
+        android:contentDescription="@string/auto_backup"/>
+    <CheckBoxPreference
+        android:title="@string/auto_backup"
+        android:key="pref_auto_backup"
+        android:contentDescription="@string/auto_backup"/>
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/backup_now"
+        android:key="pref_backup_now"
+        android:contentDescription="@string/backup_now"/>
+    <Preference
+        android:layout="@layout/preference_item_common"
+        android:title="@string/view_backedup"
+        android:key="pref_view_backedup"
+        android:summary="@string/view_backup_description"
+        android:contentDescription="@string/view_backedup"/>
+</PreferenceScreen>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:dither="true">
+    <item
+        android:state_focused="true"
+        android:drawable="@drawable/chaton_btn_foc"/>
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/chaton_btn_foc"/>
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/chaton_btn_field_send_pre"/>
+    <item
+        android:state_enabled="true"
+        android:drawable="@drawable/chaton_btn_field_send_nor"/>
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/chaton_btn_nor"/>
+</selector>

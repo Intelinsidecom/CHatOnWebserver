@@ -1,0 +1,12 @@
+package com.sec.chaton.trunk.entry.inner;
+
+import com.sec.chaton.p035io.entry.Entry;
+
+/* loaded from: classes.dex */
+public class Trunk extends Entry {
+    public Long lastcmtdttm;
+    public Long lastupdttm;
+    public String sessionid;
+    public Integer totitemcnt;
+    public Integer unreaditemcnt;
+}

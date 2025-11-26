@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>Изображение по подразбиране</item>
+        <item>Изображения</item>
+        <item>Направи снимка</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Изображения</item>
+        <item>Направи снимка</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Редакт.</item>
+        <item>Изтрий</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>Изображение</item>
+        <item>Вид. на живо</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Превключване на видео</item>
+        <item>Скриване на видео</item>
+    </array>
+</resources>

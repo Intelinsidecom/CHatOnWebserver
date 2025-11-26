@@ -1,0 +1,44 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+	namespace "com.sec.chaton"
+    compileSdkVersion 14
+
+    defaultConfig {
+        applicationId 'com.sec.chaton'
+        minSdkVersion 8
+        //noinspection ExpiringTargetSdkVersion,ExpiredTargetSdkVersion
+        targetSdkVersion 14
+        versionCode 487
+        versionName "1.7.0"
+        useLibrary 'org.apache.http.legacy'
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildFeatures {
+        buildConfig = false
+    }
+}
+
+dependencies {
+    // TODO: dependencies
+}

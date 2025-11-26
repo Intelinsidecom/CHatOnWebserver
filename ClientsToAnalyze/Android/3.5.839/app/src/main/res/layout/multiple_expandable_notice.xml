@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:windowBackground="@color/transparent"
+    android:scrollbars="none"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textAppearance="@style/TextAppearance.Pop05"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/multipleexpandable_alert_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/buddy_popup_header_name_margin_left"
+        android:layout_marginTop="@dimen/buddy_popup_header_name_margin_top"
+        android:layout_marginRight="@dimen/buddy_popup_header_name_margin_left"
+        android:layout_marginBottom="@dimen/buddy_popup_header_name_margin_bottom"
+        android:minHeight="70dp"
+        android:text="@string/multiple_selection_dialog_notice"/>
+</LinearLayout>

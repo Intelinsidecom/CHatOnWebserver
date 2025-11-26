@@ -1,0 +1,17 @@
+﻿<UserControl x:ConnectionId='1'
+    x:Class="ChatON_WoA.Views.SamsungAccountSignupDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" BorderBrush="Black" BorderThickness="1"
+                                              >
+    <Grid Name="SamsungAccountSignInGrid" Width="2000" Height="424" HorizontalAlignment="Center"  VerticalAlignment="Center" Background="#FF212121">
+        <WebView x:ConnectionId='2' Width="680" HorizontalAlignment="Center" 
+                                                                       
+                 Name="SamsungAccountWebBrowser" Visibility="Collapsed" />
+    </Grid>
+   
+</UserControl>
+

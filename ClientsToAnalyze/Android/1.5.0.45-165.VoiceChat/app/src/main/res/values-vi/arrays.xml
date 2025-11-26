@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>Ảnh mặc định</item>
+        <item>Hình ảnh</item>
+        <item>Chụp ảnh</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Hình ảnh</item>
+        <item>Chụp ảnh</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Sửa</item>
+        <item>Xóa</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>Hình ảnh</item>
+        <item>Video trực tiếp</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Chuyển video</item>
+        <item>Ẩn video</item>
+    </array>
+</resources>

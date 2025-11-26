@@ -1,0 +1,182 @@
+package org.jboss.netty.handler.codec.http;
+
+import java.util.Date;
+import java.util.Iterator;
+import java.util.Set;
+import java.util.TreeSet;
+
+/* loaded from: classes.dex */
+public class CookieEncoder {
+    private final Set cookies = new TreeSet();
+    private final boolean server;
+
+    public CookieEncoder(boolean z) {
+        this.server = z;
+    }
+
+    private static void add(StringBuilder sb, String str, int i) {
+        sb.append(str);
+        sb.append('=');
+        sb.append(i);
+        sb.append(';');
+    }
+
+    private static void add(StringBuilder sb, String str, String str2) {
+        if (str2 == null) {
+            addQuoted(sb, str, "");
+            return;
+        }
+        for (int i = 0; i < str2.length(); i++) {
+            switch (str2.charAt(i)) {
+                case '\t':
+                case ' ':
+                case '\"':
+                case '(':
+                case ')':
+                case ',':
+                case '/':
+                case ':':
+                case ';':
+                case '<':
+                case '=':
+                case '>':
+                case '?':
+                case '@':
+                case '[':
+                case '\\':
+                case ']':
+                case '{':
+                case '}':
+                    addQuoted(sb, str, str2);
+                    return;
+                default:
+            }
+        }
+        addUnquoted(sb, str, str2);
+    }
+
+    private static void addQuoted(StringBuilder sb, String str, String str2) {
+        String str3 = str2 == null ? "" : str2;
+        sb.append(str);
+        sb.append('=');
+        sb.append('\"');
+        sb.append(str3.replace("\\", "\\\\").replace("\"", "\\\""));
+        sb.append('\"');
+        sb.append(';');
+    }
+
+    private static void addUnquoted(StringBuilder sb, String str, String str2) {
+        sb.append(str);
+        sb.append('=');
+        sb.append(str2);
+        sb.append(';');
+    }
+
+    private String encodeClientSide() {
+        StringBuilder sb = new StringBuilder();
+        for (Cookie cookie : this.cookies) {
+            if (cookie.getVersion() >= 1) {
+                add(sb, "$Version", 1);
+            }
+            add(sb, cookie.getName(), cookie.getValue());
+            if (cookie.getPath() != null) {
+                add(sb, "$Path", cookie.getPath());
+            }
+            if (cookie.getDomain() != null) {
+                add(sb, "$Domain", cookie.getDomain());
+            }
+            if (cookie.getVersion() >= 1 && !cookie.getPorts().isEmpty()) {
+                sb.append('$');
+                sb.append("Port");
+                sb.append('=');
+                sb.append('\"');
+                Iterator it = cookie.getPorts().iterator();
+                while (it.hasNext()) {
+                    sb.append(((Integer) it.next()).intValue());
+                    sb.append(',');
+                }
+                sb.setCharAt(sb.length() - 1, '\"');
+                sb.append(';');
+            }
+        }
+        sb.setLength(sb.length() - 1);
+        return sb.toString();
+    }
+
+    private String encodeServerSide() {
+        StringBuilder sb = new StringBuilder();
+        for (Cookie cookie : this.cookies) {
+            add(sb, cookie.getName(), cookie.getValue());
+            if (cookie.getMaxAge() >= 0) {
+                if (cookie.getVersion() == 0) {
+                    addUnquoted(sb, "Expires", new CookieDateFormat().format(new Date(System.currentTimeMillis() + (cookie.getMaxAge() * 1000))));
+                } else {
+                    add(sb, "Max-Age", cookie.getMaxAge());
+                }
+            }
+            if (cookie.getPath() != null) {
+                if (cookie.getVersion() > 0) {
+                    add(sb, "Path", cookie.getPath());
+                } else {
+                    addUnquoted(sb, "Path", cookie.getPath());
+                }
+            }
+            if (cookie.getDomain() != null) {
+                if (cookie.getVersion() > 0) {
+                    add(sb, "Domain", cookie.getDomain());
+                } else {
+                    addUnquoted(sb, "Domain", cookie.getDomain());
+                }
+            }
+            if (cookie.isSecure()) {
+                sb.append("Secure");
+                sb.append(';');
+            }
+            if (cookie.isHttpOnly()) {
+                sb.append("HTTPOnly");
+                sb.append(';');
+            }
+            if (cookie.getVersion() >= 1) {
+                if (cookie.getComment() != null) {
+                    add(sb, "Comment", cookie.getComment());
+                }
+                add(sb, "Version", 1);
+                if (cookie.getCommentUrl() != null) {
+                    addQuoted(sb, "CommentURL", cookie.getCommentUrl());
+                }
+                if (!cookie.getPorts().isEmpty()) {
+                    sb.append("Port");
+                    sb.append('=');
+                    sb.append('\"');
+                    Iterator it = cookie.getPorts().iterator();
+                    while (it.hasNext()) {
+                        sb.append(((Integer) it.next()).intValue());
+                        sb.append(',');
+                    }
+                    sb.setCharAt(sb.length() - 1, '\"');
+                    sb.append(';');
+                }
+                if (cookie.isDiscard()) {
+                    sb.append("Discard");
+                    sb.append(';');
+                }
+            }
+        }
+        sb.setLength(sb.length() - 1);
+        return sb.toString();
+    }
+
+    public void addCookie(String str, String str2) {
+        this.cookies.add(new DefaultCookie(str, str2));
+    }
+
+    public void addCookie(Cookie cookie) {
+        this.cookies.add(cookie);
+    }
+
+    public String encode() {
+        String strEncodeServerSide = this.server ? encodeServerSide() : encodeClientSide();
+        this.cookies.clear();
+        return strEncodeServerSide;
+    }
+}

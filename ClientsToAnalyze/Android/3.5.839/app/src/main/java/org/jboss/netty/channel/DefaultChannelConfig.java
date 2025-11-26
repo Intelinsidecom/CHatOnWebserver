@@ -1,0 +1,59 @@
+package org.jboss.netty.channel;
+
+import java.util.Map;
+import org.jboss.netty.buffer.ChannelBufferFactory;
+import org.jboss.netty.buffer.HeapChannelBufferFactory;
+import org.jboss.netty.util.internal.ConversionUtil;
+
+/* loaded from: classes.dex */
+public class DefaultChannelConfig implements ChannelConfig {
+    private volatile ChannelBufferFactory bufferFactory = HeapChannelBufferFactory.getInstance();
+    private volatile int connectTimeoutMillis = 10000;
+
+    @Override // org.jboss.netty.channel.ChannelConfig
+    public void setOptions(Map<String, Object> map) {
+        for (Map.Entry<String, Object> entry : map.entrySet()) {
+            setOption(entry.getKey(), entry.getValue());
+        }
+    }
+
+    public boolean setOption(String str, Object obj) {
+        if (str.equals("pipelineFactory")) {
+            setPipelineFactory((ChannelPipelineFactory) obj);
+        } else if (str.equals("connectTimeoutMillis")) {
+            setConnectTimeoutMillis(ConversionUtil.toInt(obj));
+        } else if (str.equals("bufferFactory")) {
+            setBufferFactory((ChannelBufferFactory) obj);
+        } else {
+            return false;
+        }
+        return true;
+    }
+
+    @Override // org.jboss.netty.channel.ChannelConfig
+    public int getConnectTimeoutMillis() {
+        return this.connectTimeoutMillis;
+    }
+
+    @Override // org.jboss.netty.channel.ChannelConfig
+    public ChannelBufferFactory getBufferFactory() {
+        return this.bufferFactory;
+    }
+
+    public void setBufferFactory(ChannelBufferFactory channelBufferFactory) {
+        if (channelBufferFactory == null) {
+            throw new NullPointerException("bufferFactory");
+        }
+        this.bufferFactory = channelBufferFactory;
+    }
+
+    public void setConnectTimeoutMillis(int i) {
+        if (i < 0) {
+            throw new IllegalArgumentException("connectTimeoutMillis: " + i);
+        }
+        this.connectTimeoutMillis = i;
+    }
+
+    public void setPipelineFactory(ChannelPipelineFactory channelPipelineFactory) {
+    }
+}

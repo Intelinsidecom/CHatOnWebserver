@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/input_ic_search"
+        android:id="@+id/search"
+        android:title="@string/menu_search"
+        android:showAsAction="collapseActionView|always"
+        android:actionViewClass="android.widget.SearchView"/>
+    <item
+        android:icon="@drawable/actionbar_ic_reply"
+        android:id="@+id/action_compose_new"
+        android:title="@string/new_message"
+        android:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_menu_spam_message_manager"
+        android:id="@+id/action_manage_spam"
+        android:title="@string/msg_conversation_list_menu_spam"/>
+    <item
+        android:icon="@drawable/actionbar_ic_delete"
+        android:id="@+id/action_delete_all"
+        android:title="@string/menu_delete_all"/>
+    <item
+        android:id="@+id/action_debug_dump"
+        android:title="@string/menu_debug_dump"/>
+</menu>

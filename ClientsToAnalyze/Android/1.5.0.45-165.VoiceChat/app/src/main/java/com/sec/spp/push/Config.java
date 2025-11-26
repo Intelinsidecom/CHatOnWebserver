@@ -1,0 +1,53 @@
+package com.sec.spp.push;
+
+/* loaded from: classes.dex */
+public class Config {
+    public static final long BASE_OF_RETRY_INTERVAL = 600000;
+    public static final String CONNECTION_PROTOCOL_TLS = "tls";
+    public static final long CONNECTION_TIMEOUT = 30000;
+    public static final String DEFAULT_DEREGISTRATION_ID = "com.sec.spp.DeRegistrationFail";
+    public static final String DEFAULT_REGISTRATION_ID = "com.sec.spp.RegistrationFail";
+    public static final String DEVICE_TYPE = "00000000";
+    public static final long DISCONNECT_TIMEOUT = 5000;
+    public static final String EXTRA_APPID = "appId";
+    public static final String EXTRA_ERROR = "Error";
+    public static final String EXTRA_ERROR_CODE = "ErrorCode";
+    public static final String EXTRA_ERROR_MESSAGE = "ErrorMessage";
+    public static final String EXTRA_PUSH_STATUS = "com.sec.spp.Status";
+    public static final String EXTRA_REGID = "RegistrationID";
+    public static final String EXTRA_REQTYPE = "reqType";
+    public static final String EXTRA_USERDATA = "userdata";
+    public static final int HEARTBEAT_INTERVAL_MIN = 8;
+    public static final String KEYVALUE_PACKAGENAME = "packageName=";
+    public static final String KEYVALUE_SPLIT = ";";
+    public static final String NOTIFICATION_INTENT_ACK = "ack";
+    public static final String NOTIFICATION_INTENT_APPID = "appId";
+    public static final String NOTIFICATION_INTENT_APP_DATA = "appData";
+    public static final String NOTIFICATION_INTENT_CONNECTION_TERM = "connectionTerm";
+    public static final String NOTIFICATION_INTENT_MSG = "msg";
+    public static final String NOTIFICATION_INTENT_NOTIID = "notificationId";
+    public static final String NOTIFICATION_INTENT_SENDER = "sender";
+    public static final String NOTIFICATION_INTENT_SESSION_INFO = "sessionInfo";
+    public static final String NOTIFICATION_INTENT_TIMESTAMP = "timeStamp";
+    public static final String PREFERENCE_NAME = "com.sec.spp.push.config";
+    public static final String PROVISIONING_SERVER_ADDRESS = "gld.push.samsungosp.com";
+    public static final int PROVISIONING_SERVER_PORT = 5223;
+    public static final int PUSH_DEREGISTRATION_FAIL = 3;
+    public static final int PUSH_DEREGISTRATION_SUCCESS = 2;
+    public static final String PUSH_REGISTRATION_CHANGED_ACTION = "com.sec.spp.RegistrationChangedAction";
+    public static final int PUSH_REGISTRATION_FAIL = 1;
+    public static final int PUSH_REGISTRATION_SUCCESS = 0;
+    public static final int PUSH_REQ_TYPE_DEFAULT = 0;
+    public static final int PUSH_REQ_TYPE_DEREGISTRATION = 2;
+    public static final int PUSH_REQ_TYPE_MAX = 3;
+    public static final int PUSH_REQ_TYPE_REGISTRATION = 1;
+    public static final String PUSH_SERVICE_REQUEST = "com.sec.spp.action.SPP_REQUEST";
+    public static final String PUSH_SERVICE_STOP_ACTION = "PushServiceStopAction";
+    public static final int RANDOM_RANGE_RETRY_INTERVAL = 121;
+    public static final long REPLY_TIMEOUT = 180000;
+    public static final int RETRY_COUNT = 20;
+    public static final String SPP_ACCESS_PERMISSION = "com.sec.spp.push.permission.ACCESS_SPP_SERVER";
+    public static final boolean USE_SSL_PROVISIONING = true;
+    public static final boolean USE_SSL_PUSH = true;
+    public static final String VERSION = "1";
+}

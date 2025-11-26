@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@+id/header_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="left"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@+id/layout_right"
+            android:layout_alignParentLeft="true">
+            <TextView
+                android:textSize="22dp"
+                android:textColor="@color/sms_using_chaton_dialog_header"
+                android:gravity="left"
+                android:id="@+id/pager_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Header adfasdf asdf asdf "/>
+            <TextView
+                android:textSize="15dp"
+                android:textColor="#0f0f0f"
+                android:gravity="left"
+                android:id="@+id/pager_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="adasdf adfasdfasd asdf asdf asdf asdf asdf as"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/layout_right"
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pager_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sms_introduce_img_02"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/reject_call_with_msg_item_for_cover"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp">
+        <TextView
+            android:id="@+id/reject_call_with_msg_item_text_for_cover"
+            android:layout_height="wrap_content"
+            style="@style/RejectWithMsgItemTextForCover"/>
+        <Button
+            android:id="@+id/reject_call_with_msg_item_button_for_cover"
+            style="@style/RejectWithMsgItemBtnForCover"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/reject_call_with_msg_item_view_for_cover"
+        android:background="@color/cahton_covered_reject_msg_handle_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

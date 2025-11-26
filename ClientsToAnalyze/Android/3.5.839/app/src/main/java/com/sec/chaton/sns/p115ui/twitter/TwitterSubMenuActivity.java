@@ -1,0 +1,23 @@
+package com.sec.chaton.sns.p115ui.twitter;
+
+import android.support.v4.app.Fragment;
+import android.view.MenuItem;
+import com.sec.chaton.base.BaseSinglePaneActivity;
+
+/* loaded from: classes.dex */
+public class TwitterSubMenuActivity extends BaseSinglePaneActivity {
+    @Override // com.sec.chaton.base.BaseSinglePaneActivity
+    /* renamed from: f */
+    protected Fragment mo2967f() {
+        return new TwitterSubMenuFragment();
+    }
+
+    @Override // com.sec.chaton.base.BaseActivity, com.sec.common.actionbar.ActionBarFragmentActivity, com.sec.common.actionbar.InterfaceC4964s
+    public boolean onSupportOptionsItemSelected(MenuItem menuItem) {
+        if (menuItem.getItemId() != 16908332) {
+            return super.onOptionsItemSelected(menuItem);
+        }
+        finish();
+        return true;
+    }
+}

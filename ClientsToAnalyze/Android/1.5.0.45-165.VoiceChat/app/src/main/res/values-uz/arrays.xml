@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>Birlamchi tasvir</item>
+        <item>Tasvirlar</item>
+        <item>Rasmga olish</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Tasvirlar</item>
+        <item>Rasmga olish</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Tahrir</item>
+        <item>O\'chirish</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>Rasm</item>
+        <item>Jonli video</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Videoni almashtirish</item>
+        <item>Videoni yashirish</item>
+    </array>
+</resources>

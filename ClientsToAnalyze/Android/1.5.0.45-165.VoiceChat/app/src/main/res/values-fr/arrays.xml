@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>Image par défaut</item>
+        <item>Images</item>
+        <item>Photographier</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Images</item>
+        <item>Photographier</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Modif.</item>
+        <item>Supprimer</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>Photo</item>
+        <item>Vidéo direct</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Basculer la vidéo</item>
+        <item>Masquer la vidéo</item>
+    </array>
+</resources>

@@ -1,0 +1,78 @@
+﻿<Page x:ConnectionId='1'
+    x:Name="pageRoot"
+    x:Class="ChatON_WoA.Views.InputPhoneNumberPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:customControl="using:ChatOn.Controls"
+                                    
+    mc:Ignorable="d">
+    <Page.BottomAppBar>
+        <AppBar x:Name="appBar" Background="#FFFA8719">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="50*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel x:Name="RightCommands" Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Right"  Margin="0,14,0,13">
+                    <customControl:ImageButton x:ConnectionId='2' x:Name="NextButton" NormalImage="/Images/Icons/appbtn_next.png" PressedImage="/Images/Icons/appbtn_next_press.png" 
+                                               Foreground="White" Text="Next" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,35,0"                            />
+                    
+                    <customControl:ImageButton x:ConnectionId='3' x:Name="VoceButton" NormalImage="/Images/Icons/appbtn_voice.png" PressedImage="/Images/Icons/appbtn_voice_press.png" 
+                                               Foreground="White" Text="Voice" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,35,0"                           
+                                               Visibility="Collapsed"/>
+                    <customControl:ImageButton x:ConnectionId='4' x:Name="SMSButton" NormalImage="/Images/Icons/appbtn_sms.png" PressedImage="/Images/Icons/appbtn_sms_press.png" 
+                                               Foreground="White" Text="SMS" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,55,0"                          
+                                               Visibility="Collapsed"/>
+                </StackPanel>
+            </Grid>
+        </AppBar>
+    </Page.BottomAppBar>
+    <Grid x:Name="LayoutRoot" Background="#FFF4F4F4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Back button and page title -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:ConnectionId='7' x:Name="backButton" IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"                           />
+            <TextBlock x:Name="pageTitle" Grid.Column="1" Text="Registration" Style="{StaticResource PageHeaderTextStyle}" Foreground="Black"/>
+            <Button x:ConnectionId='8' Content="Next" x:Name="NextBtn"                             HorizontalAlignment="Right" VerticalAlignment="Bottom" MinWidth="100" Grid.Column="1" Margin="0,0,100,35" IsEnabled="False"/>
+        </Grid>
+        <StackPanel x:Name="ACSPanel" HorizontalAlignment="Right" VerticalAlignment="Bottom" Orientation="Horizontal" Margin="0,0,100,35" Visibility="Collapsed">
+        	<!--<Button Content="SMS" x:Name="SMSButton" Click="SMSButton_Click_1" HorizontalAlignment="Left" VerticalAlignment="Top" MinWidth="100"/>
+        	<Button Content="Voice" x:Name="VoceButton" Click="VoceButton_Click_1" HorizontalAlignment="Left" VerticalAlignment="Top" MinWidth="100"/>-->
+        </StackPanel>
+        <Grid Grid.Row="1">
+        	<Grid.RowDefinitions>
+        		<RowDefinition Height="Auto"/>
+        		<RowDefinition Height="Auto"/>
+        		<RowDefinition Height="Auto"/>
+        		<RowDefinition Height="Auto"/>
+        		<RowDefinition/>
+        	</Grid.RowDefinitions>
+            <TextBlock x:Name="SelectCountryCodeText" HorizontalAlignment="Left" Margin="120,0,0,0" TextWrapping="Wrap" Text="Select country code" VerticalAlignment="Top" Width="328" FontFamily="Segoe UI Light" FontSize="14.667" Foreground="Black"/>
+            <TextBox x:ConnectionId='5' x:Name="CountryCodeText"                                       IsReadOnly="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="266" Margin="120,5,0,0" Grid.Row="1"/>
+            <TextBlock x:Name="SubText2" HorizontalAlignment="Left" Margin="120,29,0,0" TextWrapping="Wrap" Text="Register your phone number" VerticalAlignment="Top" Width="262" FontFamily="Segoe UI Light" FontSize="14.667" Grid.Row="2" Foreground="Black"/>
+        	<TextBox x:ConnectionId='6' x:Name="InputPhoneNumber"                                              HorizontalAlignment="Left" Margin="120,5,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="266" Grid.Row="3" MaxLength="16" AcceptsReturn="False">
+        		<TextBox.InputScope>
+        			<InputScope>
+        				<InputScope.Names>
+        					<InputScopeName NameValue="TelephoneNumber"/>
+        				</InputScope.Names>
+        			</InputScope>
+        		</TextBox.InputScope>
+        	</TextBox>
+            <TextBlock x:Name="InitText" HorizontalAlignment="Left" Margin="120,23,0,0" TextWrapping="Wrap" Text="you will receive a 4 digits verification code via SMS" VerticalAlignment="Top" Width="458" FontFamily="Segoe UI Light" FontSize="14.667" Grid.Row="4" Foreground="Black"/>
+            <TextBlock x:Name="SubText3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Please include area code." VerticalAlignment="Center" FontFamily="Segoe UI Light" FontSize="14.667" Grid.Row="3" Foreground="Red" Margin="400,0,0,0" Visibility="Collapsed"/>
+        </Grid>
+    </Grid>
+</Page>
+

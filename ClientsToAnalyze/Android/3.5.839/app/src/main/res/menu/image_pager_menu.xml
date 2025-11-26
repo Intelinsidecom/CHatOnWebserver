@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/actionbar_ic_share"
+        android:id="@+id/menu_share"
+        android:orderInCategory="1"
+        android:title="@string/share"
+        android:showAsAction="always"/>
+    <item
+        android:icon="@drawable/actionbar_ic_save"
+        android:id="@+id/menu_save"
+        android:orderInCategory="1"
+        android:title="@string/save"
+        android:showAsAction="always"/>
+</menu>

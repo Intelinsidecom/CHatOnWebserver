@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/ics_main_background_color_2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment
+        android:name="com.sec.chaton.HomeTabletFragment"
+        android:id="@+id/fragment_home_tablet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

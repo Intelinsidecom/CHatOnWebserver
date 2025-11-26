@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:minHeight="46dp">
+    <CheckBox
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:id="@+id/includeAttach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:checked="false"
+        android:text="@string/include_attachments"/>
+</LinearLayout>

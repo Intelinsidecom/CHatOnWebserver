@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>Standardbild</item>
+        <item>Eigene Bilder</item>
+        <item>Foto aufnehmen</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Eigene Bilder</item>
+        <item>Foto aufnehmen</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Bearbeiten</item>
+        <item>Löschen</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>Bild</item>
+        <item>Live-Video</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Video wechseln</item>
+        <item>Video ausblenden</item>
+    </array>
+</resources>

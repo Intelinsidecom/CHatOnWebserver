@@ -1,0 +1,340 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="ChatON_WoA.Views.BuddyListPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:infra="using:ChatOn.Infrastructure"
+    xmlns:customControl="using:ChatOn.Controls"
+    xmlns:controls="using:ChatON_WoA.Controls" 
+    xmlns:common="using:ChatON_WoA.Common"
+    xmlns:converter="using:ChatOn.Infrastructure"
+    NavigationCacheMode="Required"
+                        
+    mc:Ignorable="d">
+    <Page.Resources>
+        <converter:BracketConverter x:Key="BracketConverter"/>
+        <converter:GroupMembersToCountConverter x:Key="GroupMembersToCountConverter"/>
+        <common:MyTemplateSelector x:Key="MyTemplateSelector"/>
+        <BitmapImage x:Key="DefaultBuddyImageSource" UriSource="/Images/buddies_profile_image.png"/>
+        <BitmapImage x:Key="DefaultGroupImageSource" UriSource="/Images/chat_info_group.png"/>
+
+        <DataTemplate x:Key="IndexNormalTemplate">
+            <Grid Height="60" Width="60" Background="{StaticResource OrangeFillCollor}" Margin="4,4,0,4" >
+                <TextBlock TextWrapping="Wrap" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="3,0,0,3" Text="{Binding HeaderName}" Foreground="#FCFFFFFF" FontFamily="Segoe UI" FontSize="36"/>
+                <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,3,3,0" Text="{Binding Count}" Foreground="#FCFFFFFF" FontFamily="Segoe UI" FontSize="14"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="IndexFavoriteTemplate">
+            <Grid Height="60" Width="60" Background="{StaticResource OrangeFillCollor}" Margin="4,4,0,4" >
+                <Image Source="/Images/icon_star.png" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="50" Width="50" Margin="3,0,0,3"/>
+                <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,3,3,0" Text="{Binding Count}" Foreground="#FCFFFFFF" FontFamily="Segoe UI" FontSize="14"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="IndexAllTemplate">
+            <StackPanel Height="60" Margin="4,4,0,4" IsTapEnabled="False" Orientation="Horizontal">
+                <TextBlock Text="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BODY_ALL'}" VerticalAlignment="Bottom" FontSize="36"/>
+                <TextBlock Text="( " VerticalAlignment="Bottom" FontSize="36"/>
+                <TextBlock Text="{Binding Path=Count}" FontSize="36" VerticalAlignment="Bottom"/>
+                <TextBlock Text=")" VerticalAlignment="Bottom" FontSize="36"/>
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="IndexBirthdayTemplate">
+            <Grid Height="60" Width="60" Background="{StaticResource OrangeFillCollor}" Margin="4,4,0,4" >
+                <Image Source="/Images/icon_birthday.png" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="50" Width="50" Margin="3,0,0,3"/>
+                <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,3,3,0" Text="{Binding Count}" Foreground="#FCFFFFFF" FontFamily="Segoe UI" FontSize="14"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="IndexNewTemplate">
+            <Grid Height="60" Width="60" Background="{StaticResource OrangeFillCollor}" Margin="4,4,0,4" IsTapEnabled="False">
+                <Image Source="/Images/icon_new.png" Grid.Row="1" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="50" Width="50" Margin="3,0,0,3"/>
+                <TextBlock TextWrapping="Wrap" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,3,3,0" Text="{Binding Count}" Foreground="#FCFFFFFF" FontFamily="Segoe UI" FontSize="14"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="IndexGroupTemplate">
+            <Grid Height="60" Width="60" Background="{StaticResource OrangeFillCollor}" Margin="4,4,0,4" >
+                <Image Source="/Images/icon_talk.png" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="50" Width="50" Margin="3,0,0,3" />
+                <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,3,3,0" Text="{Binding Count}" Foreground="#FCFFFFFF" FontFamily="Segoe UI" FontSize="14"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="IndexMeTemplate">
+            <Grid Height="60" Width="60" Background="{StaticResource OrangeFillCollor}" Margin="4,4,0,4">
+
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="IndexItemTemplate">
+            <Grid HorizontalAlignment="Left" Height="68" Width="344" Margin="45,0,0,0" VerticalAlignment="Top">
+                <ContentControl HorizontalAlignment="Left" VerticalAlignment="Top" 
+                                ContentTemplate="{Binding HeaderType, Converter={StaticResource IndexToTemplate}, ConverterParameter='IndexMeTemplate,IndexNewTemplate,IndexBirthdayTemplate,IndexFavoriteTemplate,IndexGroupTemplate,IndexNormalTemplate,IndexAllTemplate,IndexAllTemplate,PivotPage'}" 
+                                Content="{Binding}"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="BuddyItemTemplate">
+            <Grid Width="344" Height="68" Margin="45,0,0,0" Background="{Binding Buddy.Background}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image x:ConnectionId='6' Margin="4,4,0,4"                              Width="60" Height="60" Source="{Binding Path=Buddy.ThumbProfileImage}" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Image x:ConnectionId='7' Grid.Column="0" Source="{Binding Path=Buddy.ThumbProfileImage}" Margin="4,4,0,4" Width="60" Height="60" Stretch="Fill"                             />
+                <Grid x:ConnectionId='8' Grid.Column="1" Margin="11,8,0,0" Background="Transparent"                        >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{Binding Buddy.Name}" Foreground="{Binding NameForeground}"
+                		    TextWrapping="NoWrap" FontSize="25.333" FontFamily="Segoe UI Light" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" FontWeight="Light" TextTrimming="WordEllipsis" MaxHeight="30"/>
+                    <TextBlock Text="{Binding Buddy.Status,Converter={StaticResource BuddyStatusConverter}}"
+                		    TextWrapping="NoWrap" FontSize="20" FontFamily="Segoe UI Light" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Grid.Row="1" Foreground="{Binding Buddy.StatusForeground}" TextTrimming="WordEllipsis"/>
+                </Grid>
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="MeItemTemplate">
+            <Grid Width="344" Height="68" Margin="45,0,0,0" Background="{Binding Buddy.Background}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="{StaticResource DefaultBuddyImageSource}"
+                       Margin="4,4,0,4"
+                       Width="60"
+                       Height="60"
+                       Stretch="Fill" />
+                <Grid Height="60"
+                      Width="60"
+                      Margin="4,4,0,4"
+                      HorizontalAlignment="Left">
+                    <Image Source="{Binding Buddy.ProfileImage}"
+                       Stretch="UniformToFill" 
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center" />
+                </Grid>
+                <Grid x:ConnectionId='5' Grid.Column="1" Margin="11,8,0,0" Background="Transparent"                     >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock 
+                            Text="{Binding Buddy.Name}" Foreground="Black"
+                            Grid.Column="0"
+                            TextTrimming="WordEllipsis" TextWrapping="NoWrap" 
+                            FontSize="25.333" FontFamily="Segoe UI Light" 
+                            FontWeight="Light"/>
+                        <TextBlock 
+                            Text="{Binding Converter={StaticResource ResourceStringLowerCaseConverter},ConverterParameter='IDS_CHATON_BODY_ME'}"  
+                            Grid.Column="1" 
+                            Foreground="Black"
+                		    TextTrimming="WordEllipsis" TextWrapping="NoWrap" FontSize="20" FontFamily="Segoe UI Light" HorizontalAlignment="Right" Margin="5,0,10,0" FontWeight="Light"/>
+                    </Grid>
+                    <TextBlock Text="{Binding Buddy.Status,Converter={StaticResource BuddyStatusConverter}}"
+                		TextWrapping="NoWrap" Foreground="#FFFA8719" TextTrimming="WordEllipsis" FontSize="20" FontFamily="Segoe UI Light" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Grid.Row="1"/>
+                </Grid>
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="GroupItemTemplate">
+            <Grid Width="344" Height="68" Margin="45,0,0,0" Background="{Binding Background}" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Image x:ConnectionId='3' x:Name="GroupProfileImage" Margin="4,4,0,4"                              Width="60" Height="60" Source="{Binding Group.ProfileImage}" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Grid x:ConnectionId='4' Grid.Column="1" Margin="11,8,0,0" Background="Transparent"                                                             >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Foreground="{Binding NameForeground}" Text="{Binding Group.Name,Converter={StaticResource GroupNameConverter}}" TextWrapping="NoWrap" FontSize="25.333" FontFamily="Segoe UI Light" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" FontWeight="Light" TextTrimming="WordEllipsis"/>
+                    <TextBlock Grid.Column="1" Foreground="{Binding NameForeground}" Text="{Binding Group.Members, Converter={StaticResource GroupMembersToCountConverter}}" TextWrapping="NoWrap" FontSize="25.333" FontFamily="Segoe UI Light" HorizontalAlignment="Right" Margin="5,0" VerticalAlignment="Top" FontWeight="Light"/>
+                    <TextBlock Grid.ColumnSpan="2" Foreground="{Binding Group.StatusForeground}" TextWrapping="NoWrap" FontSize="20" FontFamily="Segoe UI Light" Text="{Binding Group.Members,Converter={StaticResource PhoneNumbersToNames}}" Grid.Row="1" VerticalAlignment="Top" TextTrimming="WordEllipsis"/>
+                </Grid>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="BuddyListItemTemplate">
+            <Grid Margin="0,0,0,6" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <ContentControl VerticalAlignment="Top" HorizontalAlignment="Left"
+                                ContentTemplate="{Binding Type, Converter={StaticResource IndexToTemplate}, ConverterParameter='IndexItemTemplate,BuddyItemTemplate,GroupItemTemplate,MeItemTemplate,ProfileItemTemplate,GroupProfileItemTemplate,IndexAllTemplate,PivotPage'}" 
+                                Content="{Binding}"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="AllItemTemplate">
+            <Grid HorizontalAlignment="Left" Background="Red" VerticalAlignment="Top" Margin="0,0,45,0">
+                <TextBlock Text="All"/>
+            </Grid>
+        </DataTemplate>
+        <!--
+        <DataTemplate x:Key="ProfileItemTemplate">
+            <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,45,0">
+                <customControl:BuddyProfileDialog BuddyInfo="{Binding Buddy}"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="GroupProfileItemTemplate">
+            <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,45,0">
+                <customControl:GroupProfileDialog GroupInfo="{Binding Group}"/>
+            </Grid>
+        </DataTemplate>
+        -->
+        <DataTemplate x:Key="ZoomedOutIndexItemTemplate">
+            <Grid x:ConnectionId='2' Height="80" Width="200" Margin="0, 0, 6, 6" Background="Gray"                       >
+                <Grid Background="{StaticResource OrangeFillCollor}" Visibility="{Binding Index, Converter={StaticResource BiggerThanParamToVisibility}, ConverterParameter='-1'}"/>
+                <StackPanel Orientation="Horizontal" Margin="20, 0, 0, 0">
+                    <TextBlock FontSize="28" FontFamily="Segoe WP SemiLight" VerticalAlignment="Center" Text="{Binding Title}" TextWrapping="Wrap" Foreground="{StaticResource WhiteForegroundColor}"/>
+                    <TextBlock Margin="5 0" FontSize="28" FontFamily="Segoe WP SemiLight" VerticalAlignment="Center" Text="{Binding TotalMember, Converter={StaticResource TotalMemberConverter}}" Foreground="{StaticResource WhiteForegroundColor}"/>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Page.BottomAppBar>
+        <AppBar x:ConnectionId='9' x:Name="appBar" Background="{StaticResource OrangeFillCollor}"                                               IsOpen="True" IsSticky="True">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel x:Name="LeftCommands" Orientation="Horizontal" Grid.Column="0" HorizontalAlignment="Left" Margin="0,14,0,13">
+                    <customControl:ImageButton x:ConnectionId='16' 
+                        x:Name="ChatButton" 
+                        Margin="35,0,0,0" Foreground="White" 
+                        HorizontalAlignment="Left" VerticalAlignment="Top" 
+                        NormalImage="/Images/Icons/appbtn_startchat.png" PressedImage="/Images/Icons/appbtn_startchat_press.png" 
+                        Text="Start Chat" 
+                                               />
+                    <customControl:ImageButton x:ConnectionId='17' 
+                        x:Name="BroadcastButton" 
+                        Margin="55,0,0,0" Foreground="White"
+                        HorizontalAlignment="Left" VerticalAlignment="Top"
+                        NormalImage="Images/Icons/appbtn_broadcast.png" PressedImage="Images/Icons/appbtn_broadcast_press.png" 
+                    	Text="Broadcast"   
+                                               />
+                    <customControl:ImageButton x:ConnectionId='18' 
+                        x:Name="BlockButton" 
+                        Margin="75,0,0,0" Foreground="White"
+                        HorizontalAlignment="Left" VerticalAlignment="Top"
+                        NormalImage="Images/Icons/appbtn_block_w.png" PressedImage="Images/Icons/appbtn_block_w_press.png" 
+                        Visibility="Collapsed"
+                        Text="Block"   
+                                            />
+                    <customControl:ImageButton x:ConnectionId='19' 
+                        x:Name="DeleteGroupButton" 
+                        Margin="35,0,0,0" Foreground="White"
+                        HorizontalAlignment="Left" VerticalAlignment="Top"
+                        NormalImage="Images/Icons/appbtn_deletegroup.png" PressedImage="Images/Icons/appbtn_deletegroup_press.png" 
+                        Visibility="Collapsed"
+                    	Text="Delete group" 
+                                                  />
+                </StackPanel>
+                <StackPanel x:Name="RightCommands" Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Right"  Margin="0,14,0,13">
+                    <customControl:ImageButton x:ConnectionId='10' 
+                        x:Name="SuggestionsButton" 
+                        Margin="0,0,55,0" Foreground="White"
+                        HorizontalAlignment="Left" VerticalAlignment="Top"
+                        NormalImage="/Images/Icons/appbtn_suggestions.png" PressedImage="/Images/Icons/appbtn_suggestions_press.png" 
+                        Text="Suggestions" 
+                                                 />
+                    <customControl:ImageButton x:ConnectionId='11' 
+                        x:Name="AddGroupButton" 
+                        Margin="0,0,55,0" Foreground="White"
+                        HorizontalAlignment="Left" VerticalAlignment="Top"
+                        NormalImage="Images/Icons/appbtn_addgroup.png" PressedImage="Images/Icons/appbtn_addgroup_press.png" 
+                    	Text="Add group"                        
+                                              />
+                    <customControl:ImageButton x:ConnectionId='12' 
+                        x:Name="AddBuddyButton" 
+                        Margin="0,0,35,0" Foreground="White"
+                        HorizontalAlignment="Left" VerticalAlignment="Top" 
+                        NormalImage="Images/Icons/appbtn_addbuddy.png" PressedImage="Images/Icons/appbtn_addbuddy_press.png" 
+                    	Text="Add buddy"  
+                                              />
+                    <customControl:ImageButton x:ConnectionId='13' 
+                        x:Name="RenameButton" 
+                        Margin="0,0,75,0" Foreground="White"
+                        HorizontalAlignment="Left" VerticalAlignment="Top" 
+                        NormalImage="Images/Icons/appbtn_edit.png" PressedImage="Images/Icons/appbtn_edit_press.png" 
+                        Visibility="Collapsed"
+                    	Text="Rename" 
+                                                   />
+                    <customControl:ImageButton x:ConnectionId='14' 
+                        x:Name="RemoveBuddyGroupButton" 
+                        Margin="0,0,55,0" Foreground="White"
+                        HorizontalAlignment="Left" VerticalAlignment="Top" 
+                        NormalImage="Images/Icons/appbtn_minus_w.png" PressedImage="Images/Icons/appbtn_minus_w_press.png" 
+                    	Visibility="Collapsed"
+                        Text="Remove buddy" 
+                                                      />
+                    <customControl:ImageButton x:ConnectionId='15' 
+                        x:Name="AddBuddyGroupButton" 
+                        Margin="0,0,35,0" Foreground="{StaticResource L_FocusVisualWhiteStrokeThemeBrush}"
+                        HorizontalAlignment="Left" VerticalAlignment="Top"
+                        NormalImage="Images/Icons/appbtn_add.png" PressedImage="Images/Icons/appbtn_add_press.png" 
+                        Visibility="Collapsed"
+                    	Text="Add buddy" 
+                                                      />
+                </StackPanel>
+            </Grid>
+        </AppBar>
+    </Page.BottomAppBar>
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource BackgroundLayoutRoot}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <SemanticZoom Grid.Column="1" x:Name="semanticZoom">
+            <SemanticZoom.ZoomedInView>
+                <GridView x:ConnectionId='20' 
+                    x:Name="gridView" 
+                    SelectionMode="Multiple" 
+                    Margin="-45,0,0,0"
+                    ItemsSource="{Binding ShowingItems}" 
+                    ItemTemplateSelector="{StaticResource MyTemplateSelector}"
+                    ItemContainerStyle="{StaticResource GridViewBuddyListStyle}" 
+                                                          
+                    ScrollViewer.IsHorizontalScrollChainingEnabled="False" >
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapGrid/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                </GridView>
+            </SemanticZoom.ZoomedInView>
+
+            <SemanticZoom.ZoomedOutView>
+                <GridView 
+                    x:Name="ZoomedOutGridView" 
+                    VerticalAlignment="Center"
+                    ScrollViewer.IsHorizontalScrollChainingEnabled="False"  
+                    ItemsSource="{Binding HeaderItems}" 
+                    ItemTemplate="{StaticResource ZoomedOutIndexItemTemplate}" ItemContainerStyle="{StaticResource GridViewEmptyListStyle}" >
+                    <ItemsPanelTemplate>
+                        <WrapGrid/>
+                    </ItemsPanelTemplate>
+                </GridView>
+            </SemanticZoom.ZoomedOutView>
+        </SemanticZoom>
+        <Grid Grid.Column="1" Width="Auto" Background="Transparent"  HorizontalAlignment="Center" x:Name="BuddyProfileContainer" Visibility="Collapsed" VerticalAlignment="Top">
+
+        </Grid>
+    </Grid>
+</Page>
+

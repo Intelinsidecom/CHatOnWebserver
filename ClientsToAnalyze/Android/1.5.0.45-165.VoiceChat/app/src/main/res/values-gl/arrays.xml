@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>Imaxe predeterminada</item>
+        <item>Imaxes</item>
+        <item>Facer unha foto</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Imaxes</item>
+        <item>Facer unha foto</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Editar</item>
+        <item>Eliminar</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Cambiar vídeo</item>
+        <item>Agochar vídeo</item>
+    </array>
+    <array name="pref_3_2_1_array_entry">
+        <item>Vibración coa resposta</item>
+        <item>Vibración finalizar cham.</item>
+    </array>
+    <array name="pref_3_2_2_array_entry">
+        <item>Ton de conexión de chamada</item>
+        <item>Control de minutos</item>
+        <item>Ton finalización chamada</item>
+    </array>
+</resources>

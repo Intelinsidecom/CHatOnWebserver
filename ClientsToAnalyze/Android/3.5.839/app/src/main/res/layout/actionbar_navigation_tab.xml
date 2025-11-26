@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sec.chaton.widget.NavigationTabWidget
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="?attr/actionbarNavigationTabWidgetStyle"/>
+    <TextView
+        android:layout_gravity="top|right"
+        android:id="@+id/tab_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        style="@style/TextViewStyle.Highlight"/>
+</FrameLayout>

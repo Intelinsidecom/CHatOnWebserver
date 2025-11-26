@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="546dp"
+    android:layout_height="246dp">
+    <LinearLayout
+        android:id="@+id/buddy_group_addgroup_area"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp">
+        <com.sec.widget.EditTextWithClearButton
+            android:textSize="18dp"
+            android:textColor="@color/color_text_black"
+            android:id="@+id/buddy_group_groupname_field"
+            android:background="@drawable/btn_search_dialog_xml"
+            android:paddingLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:hint="@string/buddy_enter_group_name"
+            android:singleLine="true"
+            android:maxLength="30"
+            android:layout_weight="1"
+            android:inputType="textCapSentences"
+            android:imeOptions="actionDone"
+            android:textCursorDrawable="@null"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/list_bg_press"/>
+    <item
+        android:drawable="@color/tw_light_color001"
+        android:state_hovered="true"/>
+    <item
+        android:state_focused="true"
+        android:drawable="@drawable/chatonv_list_bg_focus"/>
+    <item
+        android:state_enabled="false"
+        android:drawable="@color/tw_light_color001"/>
+    <item
+        android:state_enabled="true"
+        android:drawable="@color/tw_light_color001"/>
+</selector>

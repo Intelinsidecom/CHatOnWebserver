@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/list_bg_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:textSize="18dp"
+        android:textColor="@color/ics_main_font_color_2"
+        android:gravity="center"
+        android:id="@+id/invite_button"
+        android:background="@drawable/btn_disclaimer_bg_xml"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="79dp"
+        android:layout_marginBottom="22dp"
+        android:text="@string/chat_view_menu_invite"
+        android:shadowColor="@color/white"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"/>
+</LinearLayout>

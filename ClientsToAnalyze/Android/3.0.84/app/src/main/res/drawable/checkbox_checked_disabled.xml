@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/checkbox_disabled"/>
+    <item>
+        <bitmap
+            android:src="@drawable/check_on_disabled_holo_light"
+            android:dither="true"/>
+    </item>
+</layer-list>

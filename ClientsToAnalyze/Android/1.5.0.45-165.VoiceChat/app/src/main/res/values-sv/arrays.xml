@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>Standardbild</item>
+        <item>Bilder</item>
+        <item>Ta foto</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Bilder</item>
+        <item>Ta foto</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Redig.</item>
+        <item>Radera</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>Bild</item>
+        <item>Livevideo</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Byt video</item>
+        <item>Dölj video</item>
+    </array>
+</resources>

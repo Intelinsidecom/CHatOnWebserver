@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="102dp">
+    <GridView
+        android:id="@+id/video_invite_buddies_list"
+        android:background="@drawable/invite_buddy_bg"
+        android:paddingLeft="18dp"
+        android:paddingTop="8dp"
+        android:paddingRight="19dp"
+        android:paddingBottom="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="17dp"
+        android:verticalSpacing="0dp"
+        android:stretchMode="columnWidth"
+        android:columnWidth="68dp"
+        android:numColumns="auto_fit"/>
+</RelativeLayout>

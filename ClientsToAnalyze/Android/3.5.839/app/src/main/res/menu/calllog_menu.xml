@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/more_option_listby_white"
+        android:id="@+id/menu_calllog_view_by"
+        android:title="@string/calllog_menu_view_by"/>
+    <item
+        android:icon="@drawable/actionbar_ic_delete"
+        android:id="@+id/menu_calllog_delete"
+        android:title="@string/menu_buddy_delete"/>
+    <item
+        android:icon="@drawable/actionbar_icon_data_usage"
+        android:id="@+id/menu_calllog_data_usage"
+        android:title="@string/preference_data_network_usage"/>
+    <item
+        android:icon="@drawable/actionbar_ic_help"
+        android:id="@+id/menu_calllog_help"
+        android:title="@string/preference_general_help_title"/>
+</menu>

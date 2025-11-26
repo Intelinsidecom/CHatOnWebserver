@@ -1,0 +1,32 @@
+﻿<UserControl x:ConnectionId='1'
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA.Views"
+    xmlns:infra="using:ChatOn.Infrastructure"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:customControl="using:ChatOn.Controls"
+    x:Class="ChatOn.Controls.PreviewAniconDialog"
+                                       
+    mc:Ignorable="d" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+    <UserControl.Resources>
+    </UserControl.Resources>
+
+    <Border x:Name="LayoutRoot" Background="White" HorizontalAlignment="Left" VerticalAlignment="Top" BorderThickness="2" BorderBrush="#FF212121">
+        <Grid Background="White" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            
+            <customControl:AniconPlayer x:Name="AniconControl" Width="240" Height="240" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20"/>
+            
+            <StackPanel Grid.Row="1" VerticalAlignment="Top" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
+                <Button x:ConnectionId='2' Style="{StaticResource WinsetButton}" Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BUTTON_SEND'}"                        HorizontalAlignment="Left" VerticalAlignment="Top" Width="109"/>
+                <Button x:ConnectionId='3' Content="{Binding Converter={StaticResource ResourceStringConverter}, ConverterParameter='IDS_CHATON_BUTTON_CANCEL'}"                        HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,0,0,0" Width="109"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>
+

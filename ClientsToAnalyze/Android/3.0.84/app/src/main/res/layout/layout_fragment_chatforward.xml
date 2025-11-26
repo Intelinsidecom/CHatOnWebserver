@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sec.common.widget.HoneycombLinearLayout
+        android:id="@+id/tabAddBuddyContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TabButtonBarStyle">
+        <com.sec.chaton.widget.StateButton
+            android:id="@+id/tabForwardToBuddy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_buddies"
+            android:layout_weight="1"
+            style="@style/TabButtonStyle.Left"/>
+        <com.sec.chaton.widget.StateButton
+            android:id="@+id/tabForwardToChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_chat"
+            android:layout_weight="1"
+            style="@style/TabButtonStyle.Right"/>
+    </com.sec.common.widget.HoneycombLinearLayout>
+    <include layout="@layout/layout_common_divider2"/>
+    <LinearLayout
+        android:id="@+id/layoutForwardContents"
+        android:background="@null"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/listview_divider"/>
+</LinearLayout>

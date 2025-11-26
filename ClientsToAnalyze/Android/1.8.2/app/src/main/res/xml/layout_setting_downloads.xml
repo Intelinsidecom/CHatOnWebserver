@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="pref_screen">
+    <PreferenceCategory
+        android:layout="@layout/preference_header"
+        android:title="@string/settings_title_downloads"/>
+    <PreferenceCategory
+        android:title="@string/settings_title_more_apps"
+        android:key="settings_title_more_apps">
+        <com.sec.chaton.settings.AboutNewNotice
+            android:layout="@layout/preference"
+            android:title="@string/setting_downloads_chaton_v"
+            android:key="pref_item_downloads_chaton_v"
+            android:widgetLayout="@layout/preference_widget_arrow"
+            android:contentDescription="@string/setting_downloads_chaton_v"/>
+    </PreferenceCategory>
+    <com.sec.chaton.settings.AboutNewNotice
+        android:layout="@layout/preference"
+        android:title="@string/settings_title_ani_con"
+        android:key="pref_item_downloads_ticcon"
+        android:widgetLayout="@layout/preference_widget_arrow"
+        android:contentDescription="@string/settings_title_ani_con"/>
+    <com.sec.chaton.settings.AboutNewNotice
+        android:layout="@layout/preference"
+        android:title="@string/skin_bubble_download_list_title"
+        android:key="pref_item_downloads_theme"
+        android:widgetLayout="@layout/preference_widget_arrow"
+        android:contentDescription="@string/skin_bubble_download_list_title"/>
+</PreferenceScreen>

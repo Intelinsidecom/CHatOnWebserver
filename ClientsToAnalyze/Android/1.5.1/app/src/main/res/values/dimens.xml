@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_icon_size">48dp</dimen>
+    <dimen name="app_icon_base_size">36dp</dimen>
+    <dimen name="public_margin">4dp</dimen>
+    <dimen name="public_padding">9dp</dimen>
+    <dimen name="icon_width">50dp</dimen>
+    <dimen name="btn_event">80dp</dimen>
+    <dimen name="btn_event_info">40dp</dimen>
+    <dimen name="btn_event_info_margin">5dp</dimen>
+    <dimen name="btn_title_margin">10dp</dimen>
+    <dimen name="btn_favorite_lock">38dp</dimen>
+    <dimen name="btn_message_lock">50dp</dimen>
+    <dimen name="imageview_chatprogress_size">20dp</dimen>
+    <dimen name="list_item_height">64.7dp</dimen>
+    <dimen name="default_bp_height">115dp</dimen>
+    <dimen name="default_eg_height">65dp</dimen>
+    <dimen name="default_dg_height">120dp</dimen>
+    <dimen name="user_profile_size">92dp</dimen>
+    <dimen name="list_item_height_pim">64.3dp</dimen>
+    <dimen name="dafalt_bp_height_pim">159dp</dimen>
+    <dimen name="dialog_textviwe_size">22dp</dimen>
+    <dimen name="item_phone_height">48dp</dimen>
+    <dimen name="softkey_del_group_height">55.3dp</dimen>
+    <dimen name="buddy_group_alphabetical_margin">23.3dp</dimen>
+    <dimen name="buddy_group_custom_margin">6.7dp</dimen>
+    <dimen name="password_keyboard_key_height">56dp</dimen>
+    <dimen name="password_keyboard_spacebar_vertical_correction">4dp</dimen>
+    <dimen name="ams_stamp_button_padding">10dp</dimen>
+    <dimen name="ams_color_picker_height">234dp</dimen>
+    <dimen name="ams_viewer_gallery_thumbnail">64dp</dimen>
+    <dimen name="fastscroll_overlay_size">85dp</dimen>
+    <dimen name="fastscroll_thumb_width">64dp</dimen>
+    <dimen name="fastscroll_thumb_height">52dp</dimen>
+</resources>

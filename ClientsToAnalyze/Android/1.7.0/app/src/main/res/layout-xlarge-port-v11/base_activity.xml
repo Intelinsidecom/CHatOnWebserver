@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="356dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0">
+        <FrameLayout
+            android:id="@+id/fragment_controller"
+            android:layout_width="356dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/base_divider"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/chaton_contents_list_line_left"
+            android:scaleType="fitXY"
+            android:layout_weight="0"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+</LinearLayout>

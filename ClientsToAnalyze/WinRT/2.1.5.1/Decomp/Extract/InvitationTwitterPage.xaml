@@ -1,0 +1,61 @@
+﻿<Page
+    x:Class="ChatON_WoA.Views.InvitationTwitterPage"
+    IsTabStop="false"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatON_WoA"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:customControl="using:ChatOn.Controls"
+    mc:Ignorable="d">
+
+    <Page.BottomAppBar>
+        <AppBar x:Name="appBar" IsOpen="True" IsSticky="True"  Background="#FFFA8719">
+            <Grid Background="#FFFA8719">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="50*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel x:Name="LeftCommands" Orientation="Horizontal" Grid.Column="0" HorizontalAlignment="Left" Margin="0,14,0,13">
+                </StackPanel>
+                <StackPanel x:Name="RightCommands" Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Right"  Margin="0,14,0,13">
+                    <customControl:ImageButton x:ConnectionId='1' x:Name="PostButton" NormalImage="/Images/Icons/appbtn_post.png" PressedImage="/Images/Icons/appbtn_post_press.png"                   
+                                               Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,55,0"/>
+                    <customControl:ImageButton x:ConnectionId='2' x:Name="CancelButton" NormalImage="Images/Icons/appbtn_deletegroup.png" PressedImage="Images/Icons/appbtn_deletegroup_press.png" 
+                    	Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,35,0"                     />
+                </StackPanel>
+            </Grid>
+        </AppBar>        
+    </Page.BottomAppBar>    
+    
+    <Grid Name="LayoutRoot" Background="#FFF4F4F4">
+        <Grid.RowDefinitions>
+        	<RowDefinition Height="140"/>
+        	<RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:ConnectionId='4' x:Name="backButton" IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"                         />
+            <TextBlock x:Name="pageTitle" Grid.Column="1" Text="{Binding ConverterParameter=IDS_CHATON_HEADER_NEW_MESSAGE, Converter={StaticResource ResourceStringConverter}}" Style="{StaticResource PageHeaderTextStyle}" Foreground="Black"/>
+        </Grid>
+        <Grid Grid.Row="1" Margin="119,0,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Left">
+                <Image Source="{Binding MyTwitter.ProfileImgSrc}" Height="60" Width="60" Stretch="UniformToFill" x:Name="imgProfile"/>
+                <TextBlock Text="@"/>
+                <TextBlock Text="{Binding MyTwitter.ScreenName}" x:Name="txtScreenName"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Width="420" HorizontalAlignment="Left">
+            <TextBox x:ConnectionId='3' Grid.Row="1" x:Name="txtMessage" Width="420" Height="200" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" AcceptsReturn="True"                         ></TextBox>
+                <TextBlock x:Name="txtRemaining" Text="140" HorizontalAlignment="Right" Margin="-10,0,0,0" FontSize="20"/>
+            </StackPanel>
+        </Grid> 
+    </Grid>
+</Page>
+

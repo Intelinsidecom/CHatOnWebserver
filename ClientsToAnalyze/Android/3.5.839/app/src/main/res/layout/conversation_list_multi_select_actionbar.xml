@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textAppearance="@style/TextAppearance.Bar01"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_weight="1"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ccffffff"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/selected_conv_count"
+        android:paddingRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:singleLine="true"/>
+</LinearLayout>

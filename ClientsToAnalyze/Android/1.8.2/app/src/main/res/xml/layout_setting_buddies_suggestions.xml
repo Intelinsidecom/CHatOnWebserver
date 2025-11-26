@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:layout="@layout/preference_header"
+        android:title="@string/recommendation"/>
+    <CheckBoxPreference
+        android:layout="@layout/preference"
+        android:title="@string/settings_suggestions_buddy_title"
+        android:key="pref_item_buddy_sugestions"
+        android:summary="@string/settings_suggestions_buddy_description"
+        android:widgetLayout="@layout/preference_widget_checkbox"
+        android:defaultValue="true"
+        android:contentDescription="@string/settings_suggestions_buddy_description"/>
+    <CheckBoxPreference
+        android:layout="@layout/preference"
+        android:title="@string/recommendation"
+        android:key="pref_item_special_buddy_sugestions"
+        android:summary="@string/settings_suggestions_special_buddy_description"
+        android:widgetLayout="@layout/preference_widget_checkbox"
+        android:defaultValue="true"
+        android:contentDescription="@string/settings_suggestions_special_buddy_description"/>
+    <CheckBoxPreference
+        android:layout="@layout/preference"
+        android:title="@string/setting_suggestion_exclude_me"
+        android:key="pref_item_exclude_me"
+        android:summary="@string/settings_suggestions_excludeme_description"
+        android:widgetLayout="@layout/preference_widget_checkbox"
+        android:defaultValue="false"
+        android:contentDescription="@string/settings_suggestions_excludeme_description"/>
+</PreferenceScreen>

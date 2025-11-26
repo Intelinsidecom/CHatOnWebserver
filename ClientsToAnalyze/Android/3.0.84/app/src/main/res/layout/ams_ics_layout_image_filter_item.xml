@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/ams_ics_effect_filter_layout_width"
+    android:layout_height="@dimen/ams_ics_effect_filter_layout_height">
+    <ImageView
+        android:id="@+id/image_filter_effect"
+        android:padding="2dp"
+        android:layout_width="@dimen/ams_ics_effect_filter_item_width"
+        android:layout_height="@dimen/ams_ics_effect_filter_item_height"
+        android:scaleType="fitCenter"/>
+    <TextView
+        android:textSize="12dp"
+        android:textColor="@color/ams_ics_image_effect_name_text"
+        android:gravity="center"
+        android:id="@+id/text_filter_name"
+        android:layout_width="@dimen/ams_ics_effect_filter_item_width"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-10dp"
+        android:lineSpacingMultiplier="0.9"/>
+</LinearLayout>

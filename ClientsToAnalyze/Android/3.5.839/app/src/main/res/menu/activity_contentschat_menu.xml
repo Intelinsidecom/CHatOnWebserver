@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/actionbar_ic_chat"
+        android:id="@+id/contents_menu_livechat"
+        android:orderInCategory="1"
+        android:title="@string/menu_button_start_chat"
+        android:showAsAction="always"/>
+</menu>

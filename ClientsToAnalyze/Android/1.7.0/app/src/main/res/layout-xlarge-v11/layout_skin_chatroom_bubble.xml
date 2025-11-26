@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:id="@+id/skin_preview"
+    android:background="@drawable/skin_01"
+    android:layout_width="match_parent"
+    android:layout_height="321dp">
+    <ImageView
+        android:id="@+id/skinBubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chaton_bubble_01"/>
+</LinearLayout>

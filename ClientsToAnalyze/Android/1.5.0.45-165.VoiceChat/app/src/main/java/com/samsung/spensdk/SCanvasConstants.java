@@ -1,0 +1,118 @@
+package com.samsung.spensdk;
+
+/* loaded from: classes.dex */
+public class SCanvasConstants {
+    public static final String CUSTOM_RESOURCE_ASSETS_PATH = "R.string.sdk_resource_path";
+    public static final String LAYOUT_ERASER_DELETEALL_POPUP_ICON = "R.drawable.delete_all_icon";
+    public static final String LAYOUT_PEN_SPINNER = "R.layout.mspinner";
+    public static final String LAYOUT_TEXT_SPINNER = "R.layout.mspinnertext";
+    public static final String LAYOUT_TEXT_SPINNER_TABLET = "R.layout.mspinnertext_tablet";
+
+    @Deprecated
+    public static final String LOCALE_ERASER_SETTING_CLEARALL = "R.string.clear_all";
+
+    @Deprecated
+    public static final String LOCALE_ERASER_SETTING_CLEARALL_MESSAGE = "R.string.confirm_clear_all";
+    public static final String LOCALE_ERASER_SETTING_DELETEALL = "R.string.delete_all";
+    public static final String LOCALE_ERASER_SETTING_DELETEALL_MESSAGE = "R.string.delete_all_msg";
+    public static final String LOCALE_ERASER_SETTING_TITLE = "R.string.eraser_settings";
+    public static final String LOCALE_FILLING_SETTING_TITLE = "R.string.filling_settings";
+    public static final String LOCALE_PEN_SETTING_PRESET_DELETE_MESSAGE = "R.string.pen_settings_preset_delete_msg";
+    public static final String LOCALE_PEN_SETTING_PRESET_DELETE_TITLE = "R.string.pen_settings_preset_delete_title";
+    public static final String LOCALE_PEN_SETTING_PRESET_EMPTY_MESSAGE = "R.string.pen_settings_preset_empty";
+    public static final String LOCALE_PEN_SETTING_PRESET_EXIST_MESSAGE = "R.string.preset_exists";
+    public static final String LOCALE_PEN_SETTING_PRESET_MAXIMUM_MESSAGE = "R.string.preset_maximum_msg";
+    public static final String LOCALE_PEN_SETTING_TITLE = "R.string.pen_settings";
+    public static final String LOCALE_SETTINGVIEW_CLOSE_DESCRIPTION = "R.string.settingview_close_btn_desc";
+    public static final String LOCALE_SETTINGVIEW_PRESET_ADD_DESCRIPTION = "R.string.preset_add_desc";
+    public static final String LOCALE_SETTINGVIEW_PRESET_DELETE_DESCRIPTION = "R.string.preset_delete_desc";
+
+    @Deprecated
+    public static final String LOCALE_TEXTBOXT_HINT = "R.string.textbox_hint";
+    public static final String LOCALE_TEXTBOX_HINT = "R.string.textbox_hint";
+    public static final String LOCALE_TEXTBOX_HINT_SIZE = "R.string.textbox_hint_size";
+    public static final String LOCALE_TEXT_SETTING_TAB_FONT = "R.string.tab_font";
+    public static final String LOCALE_TEXT_SETTING_TAB_PARAGRAPH = "R.string.tab_paragraph";
+    public static final String LOCALE_TEXT_SETTING_TAB_PARAGRAPH_ALIGN = "R.string.tab_paragraph_align";
+    public static final String LOCALE_TEXT_SETTING_TITLE = "R.string.text_settings";
+    public static final String LOCALE_USER_FONT_NAME1 = "fontname1";
+    public static final String LOCALE_USER_FONT_NAME2 = "fontname2";
+    public static final String LOCALE_USER_FONT_NAME3 = "fontname3";
+    public static final String LOCALE_USER_FONT_NAME4 = "fontname4";
+    public static final String LOCALE_USER_FONT_NAME5 = "fontname5";
+    public static final int SCANVAS_MODE_INPUT_DEFAULT = 10;
+    public static final int SCANVAS_MODE_INPUT_ERASER = 11;
+    public static final int SCANVAS_MODE_INPUT_FILLING = 14;
+    public static final int SCANVAS_MODE_INPUT_IMAGE = 13;
+    public static final int SCANVAS_MODE_INPUT_PEN = 10;
+    public static final int SCANVAS_MODE_INPUT_TEXT = 12;
+    public static final int SCANVAS_MODE_NONE = 0;
+    public static final int SCANVAS_MODE_SELECT = 1;
+    public static final int SCANVAS_MODE_VIEW = 2;
+    public static final int SCANVAS_PRIVATE_LAYER = 1;
+    public static final int SCANVAS_PUBLIC_LAYER = 0;
+    public static final int SCANVAS_SETTINGVIEW_ERASER = 2;
+    public static final int SCANVAS_SETTINGVIEW_FILLING = 4;
+    public static final int SCANVAS_SETTINGVIEW_PEN = 1;
+    public static final int SCANVAS_SETTINGVIEW_SIZE_EXT = 2;
+    public static final int SCANVAS_SETTINGVIEW_SIZE_MINI = 1;
+    public static final int SCANVAS_SETTINGVIEW_SIZE_NORMAL = 0;
+    public static final int SCANVAS_SETTINGVIEW_SIZE_UNKNOWN = -1;
+    public static final int SCANVAS_SETTINGVIEW_TEXT = 3;
+    public static final int SCANVAS_SETTINGVIEW_UNKNOWN = 0;
+    public static final int SIGNATURE_MAX_REGISTRATION_NUM = 3;
+    public static final int SIGNATURE_VERIFICATION_LEVEL_HIGH = 2;
+    public static final int SIGNATURE_VERIFICATION_LEVEL_LOW = 0;
+    public static final int SIGNATURE_VERIFICATION_LEVEL_MEDIUM = 1;
+    public static final int SOUND_EFFECT_TYPE_BRUSH_CLICK = 40;
+    public static final int SOUND_EFFECT_TYPE_BRUSH_DRAW = 41;
+    public static final int SOUND_EFFECT_TYPE_BRUSH_UP = 42;
+    public static final int SOUND_EFFECT_TYPE_CHINESE_BRUSH_CLICK = 50;
+    public static final int SOUND_EFFECT_TYPE_CHINESE_BRUSH_DRAW = 51;
+    public static final int SOUND_EFFECT_TYPE_CHINESE_BRUSH_UP = 52;
+    public static final int SOUND_EFFECT_TYPE_CRAYON_CLICK = 20;
+    public static final int SOUND_EFFECT_TYPE_CRAYON_DRAW = 21;
+    public static final int SOUND_EFFECT_TYPE_CRAYON_UP = 22;
+    public static final int SOUND_EFFECT_TYPE_ERASER_DRAW = 100;
+    public static final int SOUND_EFFECT_TYPE_FILLING_INSERT = 400;
+    public static final int SOUND_EFFECT_TYPE_IMAGE_INSERT = 200;
+    public static final int SOUND_EFFECT_TYPE_MARKER_CLICK = 30;
+    public static final int SOUND_EFFECT_TYPE_MARKER_DRAW = 31;
+    public static final int SOUND_EFFECT_TYPE_MARKER_UP = 32;
+    public static final int SOUND_EFFECT_TYPE_PEN_CLICK = 10;
+    public static final int SOUND_EFFECT_TYPE_PEN_DRAW = 11;
+    public static final int SOUND_EFFECT_TYPE_PEN_UP = 12;
+    public static final int SOUND_EFFECT_TYPE_TEXT_INSERT = 300;
+    public static final String TALKBACK_SETTING_ALIGN_CENTER = "R.string.align_center_desc";
+    public static final String TALKBACK_SETTING_ALIGN_LEFT = "R.string.align_left_desc";
+    public static final String TALKBACK_SETTING_ALIGN_RIGHT = "R.string.align_right_desc";
+    public static final String TALKBACK_SETTING_CUSTOM_COLOR = "R.string.custom_color_desc";
+    public static final String TALKBACK_SETTING_DEFINED_COLOR = "R.string.defined_color_desc";
+    public static final String TALKBACK_SETTING_PENTYPE_BRUSH = "R.string.pentype_brush_desc";
+    public static final String TALKBACK_SETTING_PENTYPE_CHINESE_BRUSH = "R.string.pentype_chinabrush_desc";
+    public static final String TALKBACK_SETTING_PENTYPE_CRAYON = "R.string.pentype_pencil_desc";
+    public static final String TALKBACK_SETTING_PENTYPE_MARKER = "R.string.pentype_magicpen_desc";
+    public static final String TALKBACK_SETTING_PENTYPE_SOLID = "R.string.pentype_pen_desc";
+    public static final String TALKBACK_SETTING_PEN_PREVIEW = "R.string.pen_preview_desc";
+    public static final String TALKBACK_SETTING_PRESET_PREVIEW = "R.string.preset_preview_desc";
+    public static final String TALKBACK_SETTING_SETTINGVIEW_CONTRACT = "R.string.settingview_contract_desc";
+    public static final String TALKBACK_SETTING_SETTINGVIEW_EXPAND = "R.string.settingview_expand_desc";
+    public static final String TALKBACK_SETTING_SETTINGVIEW_SCROLLBAR = "R.string.settingview_scrollbar_desc";
+    public static final String TALKBACK_SETTING_SETTINGVIEW_SEEKBAR_OPACITY = "R.string.seekbar_opacity_desc";
+    public static final String TALKBACK_SETTING_SETTINGVIEW_SEEKBAR_SIZE = "R.string.seekbar_size_desc";
+    public static final String TALKBACK_SETTING_TEXTBOX_DELETE = "R.string.textbox_delete_desc";
+    public static final String TALKBACK_SETTING_TEXT_FONT = "R.string.text_font_desc";
+    public static final String TALKBACK_SETTING_TEXT_PREVIEW = "R.string.text_preview_desc";
+    public static final String TALKBACK_SETTING_TEXT_SIZE = "R.string.text_size_desc";
+    public static final String TALKBACK_SETTING_TYPE_BOLD_OFF = "R.string.type_bold_off_desc";
+    public static final String TALKBACK_SETTING_TYPE_BOLD_ON = "R.string.type_bold_on_desc";
+    public static final String TALKBACK_SETTING_TYPE_ITALIC_OFF = "R.string.type_italic_off_desc";
+    public static final String TALKBACK_SETTING_TYPE_ITALIC_ON = "R.string.type_italic_on_desc";
+    public static final String TALKBACK_SETTING_TYPE_UNDERLINE_OFF = "R.string.type_underline_off_desc";
+    public static final String TALKBACK_SETTING_TYPE_UNDERLINE_ON = "R.string.type_underline_on_desc";
+    public static final String USER_FONT_PATH1 = "fontpath1";
+    public static final String USER_FONT_PATH2 = "fontpath2";
+    public static final String USER_FONT_PATH3 = "fontpath3";
+    public static final String USER_FONT_PATH4 = "fontpath4";
+    public static final String USER_FONT_PATH5 = "fontpath5";
+}

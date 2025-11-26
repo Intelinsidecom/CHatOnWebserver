@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="anicon_character_marginTop">27dp</dimen>
+    <dimen name="coverstory_sample_image_width">480px</dimen>
+    <dimen name="coverstory_sample_image_height">800px</dimen>
+</resources>

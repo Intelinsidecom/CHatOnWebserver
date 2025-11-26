@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/stamp_shape_layout"
+        android:background="@drawable/layer_menu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/btn_tool_stamp"
+            android:background="@drawable/ams_popup_basic_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ams_stamp_selector"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tab_line"/>
+        <ImageView
+            android:id="@+id/btn_tool_shape"
+            android:background="@drawable/ams_popup_basic_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ams_figure_selector"/>
+    </LinearLayout>
+</LinearLayout>

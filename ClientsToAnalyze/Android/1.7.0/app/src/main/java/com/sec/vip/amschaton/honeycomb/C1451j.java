@@ -1,0 +1,89 @@
+package com.sec.vip.amschaton.honeycomb;
+
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import com.sec.chaton.R;
+import java.io.IOException;
+
+/* compiled from: AMSBgFrameSelectionActivity.java */
+/* renamed from: com.sec.vip.amschaton.honeycomb.j */
+/* loaded from: classes.dex */
+public class C1451j extends BaseAdapter {
+
+    /* renamed from: a */
+    final /* synthetic */ AMSBgFrameSelectionActivity f5090a;
+
+    /* renamed from: b */
+    private Context f5091b;
+
+    public C1451j(AMSBgFrameSelectionActivity aMSBgFrameSelectionActivity, Context context) {
+        this.f5090a = aMSBgFrameSelectionActivity;
+        this.f5091b = context;
+    }
+
+    @Override // android.widget.Adapter
+    public View getView(int i, View view, ViewGroup viewGroup) {
+        if (view == null) {
+            view = this.f5090a.getLayoutInflater().inflate(R.layout.ams_ics_list_item_frame, viewGroup, false);
+        }
+        ImageView imageView = (ImageView) view.findViewById(R.id.image_frame);
+        try {
+            if (i < 2) {
+                imageView.setImageBitmap(null);
+            } else if (i == 14) {
+                imageView.setImageResource(R.drawable.ams_tool_frame_color_bg);
+            } else {
+                int i2 = i - 2;
+                Bitmap bitmapDecodeStream = this.f5090a.f4930e[i2];
+                if (bitmapDecodeStream == null) {
+                    String str = this.f5090a.f4929d[i2];
+                    BitmapFactory.Options options = new BitmapFactory.Options();
+                    options.inSampleSize = 4;
+                    bitmapDecodeStream = BitmapFactory.decodeStream(this.f5091b.getAssets().open("bg_org_hp/" + str), null, options);
+                }
+                imageView.setImageBitmap(bitmapDecodeStream);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        LinearLayout linearLayout = (LinearLayout) view.findViewById(R.id.layout_add);
+        if (i == 0) {
+            linearLayout.setVisibility(0);
+        } else {
+            linearLayout.setVisibility(4);
+        }
+        LinearLayout linearLayout2 = (LinearLayout) view.findViewById(R.id.layout_none);
+        if (i == 1) {
+            linearLayout2.setVisibility(0);
+        } else {
+            linearLayout2.setVisibility(4);
+        }
+        return view;
+    }
+
+    /* renamed from: a */
+    public void m5273a() {
+        notifyDataSetChanged();
+    }
+
+    @Override // android.widget.Adapter
+    public int getCount() {
+        return 15;
+    }
+
+    @Override // android.widget.Adapter
+    public Object getItem(int i) {
+        return null;
+    }
+
+    @Override // android.widget.Adapter
+    public long getItemId(int i) {
+        return 0L;
+    }
+}

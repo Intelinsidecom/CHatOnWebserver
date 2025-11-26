@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MainCustomTheme" parent="@android:style/Theme.Holo">
+        <item name="android:buttonStyle">@style/MainCustomDialogDefaultButton</item>
+        <item name="android:alertDialogStyle">@style/MainAlertDialogTheme</item>
+        <item name="android:editTextStyle">@style/AMSCustomEditTextTheme</item>
+        <item name="android:tabWidgetStyle">@style/AMSCustomTabWidgetTheme</item>
+        <item name="android:windowActionBarOverlay">false</item>
+    </style>
+    <style name="MainCustomTheme.NoTitle" parent="@style/MainCustomTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

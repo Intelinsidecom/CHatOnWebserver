@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hideme_dialog_array">
+        <item>Sjálfgild mynd</item>
+        <item>Myndir</item>
+        <item>Taka mynd</item>
+    </array>
+    <array name="hideme_dialog_array_default">
+        <item>Myndir</item>
+        <item>Taka mynd</item>
+    </array>
+    <array name="reject_msg_popup_edit_delete">
+        <item>Breyta</item>
+        <item>Eyða</item>
+    </array>
+    <array name="video_call_share_screen_select_menu_item">
+        <item>Mynd</item>
+        <item>Í beinni</item>
+    </array>
+    <array name="video_call_preview_single_tab_dialog_item">
+        <item>Skipta um myndskeið</item>
+        <item>Fela myndskeið</item>
+    </array>
+</resources>

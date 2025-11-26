@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:icon="@drawable/actionbar_ic_favorite_01"
+            android:id="@+id/buddypage_menu_favoriate"
+            android:visibility="gone"
+            android:orderInCategory="1"
+            android:title="@string/buddy_list_contextual_menu_addfavorites"
+            android:showAsAction="always"/>
+        <item
+            android:icon="@drawable/actionbar_ic_favorite_02"
+            android:id="@+id/buddypage_menu_favoriate_off"
+            android:orderInCategory="1"
+            android:title="@string/buddy_list_contextual_menu_removefavorites"
+            android:showAsAction="always"/>
+    </group>
+</menu>

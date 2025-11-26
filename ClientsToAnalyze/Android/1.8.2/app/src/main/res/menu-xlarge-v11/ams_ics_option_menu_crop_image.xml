@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_group_buttons">
+        <item
+            android:icon="@drawable/ams_ics_selector_title_ic_check"
+            android:id="@+id/menu_btn_apply"
+            android:title="@string/ams_btn_apply"
+            android:showAsAction="withText|ifRoom"/>
+        <item
+            android:icon="@drawable/ams_ics_selector_title_ic_rotate"
+            android:id="@+id/menu_btn_rotate"
+            android:title="@string/imagemodify_crop_rotate_image"
+            android:showAsAction="withText|ifRoom"/>
+        <item
+            android:icon="@drawable/ams_ics_selector_title_ic_effect"
+            android:id="@+id/menu_btn_effect"
+            android:title="@string/ams_crop_effect_image"
+            android:showAsAction="withText|ifRoom"/>
+        <item
+            android:icon="@drawable/ams_ics_selector_title_ic_cancel"
+            android:id="@+id/menu_btn_cancel"
+            android:title="@string/ams_btn_cancel"
+            android:showAsAction="withText|ifRoom"/>
+    </group>
+</menu>

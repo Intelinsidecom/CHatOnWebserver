@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/list_by"
+        android:id="@+id/trunk_menu_listby"
+        android:title="@string/buddy_list_optionmenu_sortby"/>
+    <item
+        android:icon="@drawable/refresh"
+        android:id="@+id/trunk_menu_refresh"
+        android:title="@string/trunk_menu_refresh"/>
+</menu>

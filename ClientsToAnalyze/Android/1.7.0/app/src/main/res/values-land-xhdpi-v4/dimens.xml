@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="change_skin_background_height">120dp</dimen>
+    <dimen name="change_skin_bubble_height">60dp</dimen>
+    <dimen name="change_skin_item_width">100dp</dimen>
+    <dimen name="change_skin_item_height">50dp</dimen>
+    <dimen name="change_skin_item_padding">12dp</dimen>
+    <dimen name="ams_ics2_tool_pen_popup_width">353dp</dimen>
+    <dimen name="ams_ics2_tool_pen_popup_height">261dp</dimen>
+    <dimen name="ams_ics2_tool_text_popup_width">353dp</dimen>
+    <dimen name="ams_ics2_tool_text_popup_height">208dp</dimen>
+    <dimen name="ams_ics2_tool_pen_popup_title_height">38dp</dimen>
+    <dimen name="ams_ics2_tool_pen_popup_body_height">223dp</dimen>
+    <dimen name="ams_ics2_tool_pen_popup_pen_style">69dp</dimen>
+    <dimen name="ams_ics2_tool_pen_popup_pen_size">48dp</dimen>
+    <dimen name="ams_ics2_tool_pen_popup_pen_color">101dp</dimen>
+    <dimen name="ams_ics2_tool_text_popup_title_height">38dp</dimen>
+    <dimen name="ams_ics2_tool_text_popup_body_height">170dp</dimen>
+    <dimen name="ams_ics2_tool_text_popup_text_size">69dp</dimen>
+    <dimen name="ams_ics2_tool_text_popup_text_color">101dp</dimen>
+</resources>

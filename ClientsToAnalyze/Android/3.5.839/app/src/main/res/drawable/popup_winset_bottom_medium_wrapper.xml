@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <nine-patch android:src="@drawable/popup_winset_bottom_medium_01"/>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding
+                android:top="-1dp"
+                android:bottom="2dp"/>
+            <solid color="@drawable/transparent"/>
+        </shape>
+    </item>
+</layer-list>

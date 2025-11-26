@@ -1,0 +1,333 @@
+package org.jboss.netty.handler.codec.http;
+
+import com.sec.pns.msg.frontend.MsgFrontend;
+import com.sec.pns.msg.frontend.MsgFrontendCommon;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.Set;
+import java.util.TreeSet;
+
+/* loaded from: classes.dex */
+public class DefaultCookie implements Cookie {
+    private static final Set RESERVED_NAMES = new TreeSet(CaseIgnoringComparator.INSTANCE);
+    private String comment;
+    private String commentUrl;
+    private boolean discard;
+    private String domain;
+    private boolean httpOnly;
+    private final String name;
+    private String path;
+    private boolean secure;
+    private String value;
+    private int version;
+    private Set ports = Collections.emptySet();
+    private Set unmodifiablePorts = this.ports;
+    private int maxAge = -1;
+
+    static {
+        RESERVED_NAMES.add("Domain");
+        RESERVED_NAMES.add("Path");
+        RESERVED_NAMES.add("Comment");
+        RESERVED_NAMES.add("CommentURL");
+        RESERVED_NAMES.add("Discard");
+        RESERVED_NAMES.add("Port");
+        RESERVED_NAMES.add("Max-Age");
+        RESERVED_NAMES.add("Expires");
+        RESERVED_NAMES.add("Version");
+        RESERVED_NAMES.add("Secure");
+        RESERVED_NAMES.add("HTTPOnly");
+    }
+
+    public DefaultCookie(String str, String str2) {
+        if (str == null) {
+            throw new NullPointerException("name");
+        }
+        String strTrim = str.trim();
+        if (strTrim.length() == 0) {
+            throw new IllegalArgumentException("empty name");
+        }
+        for (int i = 0; i < strTrim.length(); i++) {
+            char cCharAt = strTrim.charAt(i);
+            if (cCharAt > 127) {
+                throw new IllegalArgumentException("name contains non-ascii character: " + strTrim);
+            }
+            switch (cCharAt) {
+                case '\t':
+                case MsgFrontendCommon.__NotiAcks__ /* 10 */:
+                case 11:
+                case '\f':
+                case MsgFrontend.NotiElement.SESSION_INFO_FIELD_NUMBER /* 13 */:
+                case ' ':
+                case ',':
+                case ';':
+                case '=':
+                    throw new IllegalArgumentException("name contains one of the following prohibited characters: =,; \\t\\r\\n\\v\\f: " + strTrim);
+                default:
+            }
+        }
+        if (RESERVED_NAMES.contains(strTrim)) {
+            throw new IllegalArgumentException("reserved name: " + strTrim);
+        }
+        this.name = strTrim;
+        setValue(str2);
+    }
+
+    private static String validateValue(String str, String str2) {
+        if (str2 == null) {
+            return null;
+        }
+        String strTrim = str2.trim();
+        if (strTrim.length() == 0) {
+            return null;
+        }
+        for (int i = 0; i < strTrim.length(); i++) {
+            switch (strTrim.charAt(i)) {
+                case MsgFrontendCommon.__NotiAcks__ /* 10 */:
+                case 11:
+                case '\f':
+                case MsgFrontend.NotiElement.SESSION_INFO_FIELD_NUMBER /* 13 */:
+                case ';':
+                    throw new IllegalArgumentException(str + " contains one of the following prohibited characters: ;\\r\\n\\f\\v (" + strTrim + ')');
+                default:
+            }
+        }
+        return strTrim;
+    }
+
+    @Override // java.lang.Comparable
+    public int compareTo(Cookie cookie) {
+        int iCompareToIgnoreCase = getName().compareToIgnoreCase(cookie.getName());
+        if (iCompareToIgnoreCase != 0) {
+            return iCompareToIgnoreCase;
+        }
+        if (getPath() == null && cookie.getPath() != null) {
+            return -1;
+        }
+        if (cookie.getPath() == null) {
+            return 1;
+        }
+        int iCompareTo = getPath().compareTo(cookie.getPath());
+        if (iCompareTo != 0) {
+            return iCompareTo;
+        }
+        if (getDomain() == null && cookie.getDomain() != null) {
+            return -1;
+        }
+        if (cookie.getDomain() == null) {
+            return 1;
+        }
+        return getDomain().compareToIgnoreCase(cookie.getDomain());
+    }
+
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Cookie)) {
+            return false;
+        }
+        Cookie cookie = (Cookie) obj;
+        if (!getName().equalsIgnoreCase(cookie.getName())) {
+            return false;
+        }
+        if ((getPath() != null || cookie.getPath() == null) && cookie.getPath() != null && getPath().equals(cookie.getPath())) {
+            return (getDomain() != null || cookie.getDomain() == null) && cookie.getDomain() != null && getDomain().equalsIgnoreCase(cookie.getDomain());
+        }
+        return false;
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public String getComment() {
+        return this.comment;
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public String getCommentUrl() {
+        return this.commentUrl;
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public String getDomain() {
+        return this.domain;
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public int getMaxAge() {
+        return this.maxAge;
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public String getName() {
+        return this.name;
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public String getPath() {
+        return this.path;
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public Set getPorts() {
+        if (this.unmodifiablePorts == null) {
+            this.unmodifiablePorts = Collections.unmodifiableSet(this.ports);
+        }
+        return this.unmodifiablePorts;
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public String getValue() {
+        return this.value;
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public int getVersion() {
+        return this.version;
+    }
+
+    public int hashCode() {
+        return getName().hashCode();
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public boolean isDiscard() {
+        return this.discard;
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public boolean isHttpOnly() {
+        return this.httpOnly;
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public boolean isSecure() {
+        return this.secure;
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public void setComment(String str) {
+        this.comment = validateValue("comment", str);
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public void setCommentUrl(String str) {
+        this.commentUrl = validateValue("commentUrl", str);
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public void setDiscard(boolean z) {
+        this.discard = z;
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public void setDomain(String str) {
+        this.domain = validateValue("domain", str);
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public void setHttpOnly(boolean z) {
+        this.httpOnly = z;
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public void setMaxAge(int i) {
+        if (i < -1) {
+            throw new IllegalArgumentException("maxAge must be either -1, 0, or a positive integer: " + i);
+        }
+        this.maxAge = i;
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public void setPath(String str) {
+        this.path = validateValue("path", str);
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public void setPorts(Iterable iterable) {
+        TreeSet treeSet = new TreeSet();
+        Iterator it = iterable.iterator();
+        while (it.hasNext()) {
+            int iIntValue = ((Integer) it.next()).intValue();
+            if (iIntValue <= 0 || iIntValue > 65535) {
+                throw new IllegalArgumentException("port out of range: " + iIntValue);
+            }
+            treeSet.add(Integer.valueOf(iIntValue));
+        }
+        if (!treeSet.isEmpty()) {
+            this.ports = treeSet;
+            this.unmodifiablePorts = null;
+        } else {
+            Set setEmptySet = Collections.emptySet();
+            this.ports = setEmptySet;
+            this.unmodifiablePorts = setEmptySet;
+        }
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public void setPorts(int... iArr) {
+        if (iArr == null) {
+            throw new NullPointerException("ports");
+        }
+        int[] iArr2 = (int[]) iArr.clone();
+        if (iArr2.length == 0) {
+            Set setEmptySet = Collections.emptySet();
+            this.ports = setEmptySet;
+            this.unmodifiablePorts = setEmptySet;
+            return;
+        }
+        TreeSet treeSet = new TreeSet();
+        for (int i : iArr2) {
+            if (i <= 0 || i > 65535) {
+                throw new IllegalArgumentException("port out of range: " + i);
+            }
+            treeSet.add(Integer.valueOf(i));
+        }
+        this.ports = treeSet;
+        this.unmodifiablePorts = null;
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public void setSecure(boolean z) {
+        this.secure = z;
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public void setValue(String str) {
+        if (str == null) {
+            throw new NullPointerException("value");
+        }
+        this.value = str;
+    }
+
+    @Override // org.jboss.netty.handler.codec.http.Cookie
+    public void setVersion(int i) {
+        this.version = i;
+    }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(getName());
+        sb.append('=');
+        sb.append(getValue());
+        if (getDomain() != null) {
+            sb.append(", domain=");
+            sb.append(getDomain());
+        }
+        if (getPath() != null) {
+            sb.append(", path=");
+            sb.append(getPath());
+        }
+        if (getComment() != null) {
+            sb.append(", comment=");
+            sb.append(getComment());
+        }
+        if (getMaxAge() >= 0) {
+            sb.append(", maxAge=");
+            sb.append(getMaxAge());
+            sb.append('s');
+        }
+        if (isSecure()) {
+            sb.append(", secure");
+        }
+        if (isHttpOnly()) {
+            sb.append(", HTTPOnly");
+        }
+        return sb.toString();
+    }
+}

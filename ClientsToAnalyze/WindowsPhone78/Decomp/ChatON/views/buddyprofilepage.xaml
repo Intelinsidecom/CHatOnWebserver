@@ -1,0 +1,152 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ChatOn_Models="clr-namespace:ChatOn.Models" 
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:ChatOn_Controls="clr-namespace:ChatOn.Controls" x:Name="phoneApplicationPage" 
+    x:Class="ChatOn.BuddyProfilePage"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True"
+    toolkit:TiltEffect.IsTiltEnabled="True">
+    <phone:PhoneApplicationPage.Resources>
+        <DataTemplate x:Key="BuddiesSayItemTemplate">
+            <Grid Tag="tilt" Margin="0,10,0,0" Hold="BuddiesSayItem_Hold">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="75"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <Image Tap="Image_Tap" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Fill" Width="75" Height="75" Source="{Binding ProfileImage}"/>
+                <TextBlock Grid.Column="1" Text="{Binding Name}" VerticalAlignment="Top" Margin="17,-7,0,0" FontSize="32" d:LayoutOverrides="VerticalAlignment" TextTrimming="WordEllipsis"/>
+                <TextBlock Grid.Column="1" Text="{Binding Message}" VerticalAlignment="Top" Margin="17,40,0,0" FontSize="20" Foreground="{StaticResource PhoneAccentBrush}" TextWrapping="Wrap"/>
+                <TextBlock Grid.Column="2" Height="22" TextWrapping="Wrap" Text="{Binding Date, Converter={StaticResource DateToTimePolicyValue}}" VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Right"/>
+            </Grid>
+        </DataTemplate>
+        <Storyboard x:Name="BlockStroy">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.GlobalOffsetZ)" Storyboard.TargetName="LayoutRoot">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-999.349"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-999.349">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="LayoutRoot">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.5">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.GlobalOffsetY)" Storyboard.TargetName="LayoutRoot">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1100">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--Sample code showing usage of ApplicationBar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton x:Name="PinToStartBtn" IconUri="/icons/appbtn_pin_to_start.png" Text="Pin To Start" Click="PinToStartBtn_Click"/>
+            <shell:ApplicationBarIconButton x:Name="BlockBtn" IconUri="/icons/appbtn_block.png" Text="Block" Click="Block_Click"/>
+            <!--<shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>-->
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.Projection>
+            <PlaneProjection/>
+        </Grid.Projection>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Margin="24,0,24,10" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment">
+            	<Grid.RowDefinitions>
+            		<RowDefinition Height="Auto"/>
+            		<RowDefinition Height="Auto"/>
+            		<RowDefinition Height="Auto"/>
+            	</Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" 
+                       Text="{Binding MyResContainer.IDS_CHATON_BODY_CHATON, Source={StaticResource LocalizedStrings},Converter={StaticResource UpperCaseConverter}}"
+                       FontSize="23" FontFamily="Segoe WP Semibold" Margin="0,20,0,0" d:LayoutOverrides="GridBox"/>
+                <Image Tag="tilt" Tap="ProfileImage_Tap" HorizontalAlignment="Left" Width="62" Height="62" Source="{Binding Buddy.ProfileImage}" Grid.Row="1" VerticalAlignment="Top" Grid.RowSpan="2" Margin="0,20,0,0"/>
+                <TextBlock FontSize="26" Text="{Binding Buddy.Name}" Margin="82,15,0,0" FontFamily="Segoe WP SemiLight" VerticalAlignment="Top" d:LayoutOverrides="GridBox" TextTrimming="WordEllipsis" Grid.Row="1"/>
+                <Image Tag="tilt" Tap="SetFavorite_Tap" Grid.Column="1" Source="{Binding Buddy.IsFavorite, Converter={StaticResource IsFavoriteToIconUri}}" Stretch="Fill" VerticalAlignment="Top" Height="51" Grid.Row="1" Margin="0,20,0,0" Grid.RowSpan="2"/>
+                <ChatOn_Controls:DynamicHeightBubble Margin="75,0,0,0" TextMargin="0,-12,0,-15" MaxTextWidth="{Binding Tag, ElementName=DummyGrid}"
+                                                    Visibility="{Binding Buddy.Status, Converter={StaticResource StringNullOrEmptyToHide}}"
+                                                    Text="{Binding Buddy.Status}" VerticalAlignment="Top" Grid.Row="2"
+                                                    Foreground="Black" FontSize="20"/>
+                <Grid x:Name="DummyGrid" Margin="125,0,0,0" SizeChanged="DummyGrid_SizeChanged" Grid.Row="2"/>
+            </Grid>
+            <ScrollViewer Margin="24,0" Grid.Row="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid Margin="-12,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Button Click="Chat_Click" Content="{Binding MyResContainer.IDS_CHATON_SK_CHAT, Source={StaticResource LocalizedStrings}}" Margin="0"/>
+                        <Button IsEnabled="{Binding Buddy.IsShowPhoneNumber}" Click="Call_Click" Content="{Binding MyResContainer.IDS_CHATON_SK2_CALL, Source={StaticResource LocalizedStrings}}" Margin="0" Grid.Column="1"/>
+                        <Button IsEnabled="{Binding Buddy.IsShowPhoneNumber}" Click="Message_Click" Content="{Binding MyResContainer.IDS_CHATON_SK_SMS, Source={StaticResource LocalizedStrings}}" Margin="0" Grid.Column="2"/>
+                    </Grid>
+                    <StackPanel Margin="0,20,0,0" Grid.Row="1" Visibility="{Binding Buddy.IsShowPhoneNumber, Converter={StaticResource BoolToVisibility}}">
+                        <TextBlock TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BODY_PHONE_NUMBER, Source={StaticResource LocalizedStrings}}" FontSize="43" VerticalAlignment="Bottom" FontFamily="Segoe WP SemiLight" Margin="0"/>
+                        <TextBlock TextWrapping="Wrap" Text="{Binding Buddy.OrgNumber}" VerticalAlignment="Bottom" Foreground="{StaticResource PhoneAccentBrush}" Margin="0"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="2" Margin="0,20,0,0" Visibility="{Binding Buddy.Birthday, Converter={StaticResource StringNullOrEmptyToHide}}">
+                        <TextBlock TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BODY_BIRTHDAY, Source={StaticResource LocalizedStrings}}" FontSize="43" VerticalAlignment="Bottom" FontFamily="Segoe WP SemiLight" Margin="0"/>
+                        <TextBlock TextWrapping="Wrap" Text="{Binding Buddy.Birthday}" Foreground="{StaticResource PhoneAccentBrush}" Margin="0"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="3" Margin="0,20,0,0" Visibility="{Binding Buddy.IsHideInteraction, Converter={StaticResource BoolToVisibility}, ConverterParameter='!'}">
+                        <TextBlock TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BODY_INTERACTION, Source={StaticResource LocalizedStrings}}" FontSize="43" VerticalAlignment="Bottom" FontFamily="Segoe WP SemiLight" Margin="0"/>
+                        <TextBlock TextWrapping="Wrap" Text="{Binding Buddy, Converter={StaticResource RankStatusConverter}}" Foreground="{StaticResource PhoneDisabledBrush}" Margin="0"/>
+                        <ChatOn_Controls:RatioChart LeftImage="/ChatOn;component/Images/buddyprofile_progress_buddy.png" RightImage="/ChatOn;component/Images/buddyprofile_progress_me.png" 
+                    		HorizontalAlignment="Stretch" Height="32" VerticalAlignment="Stretch"
+                    		LeftText="{Binding Buddy.ReceivedCount, Converter={StaticResource ReceivedCountStringConverter}}" 
+                            RightText="{Binding Buddy.SentCount, Converter={StaticResource SentCountStringConverter}}" 
+                            LeftValue="{Binding Buddy.ReceivedCount}" RightValue="{Binding Buddy.SentCount}" StandardValue="{Binding Buddy.InteractionPoint}"
+                    		LeftFontColor="Black" RightFontColor="Black" Margin="0,23,0,0"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="4" VerticalAlignment="Top" Margin="0,20,0,20">
+                        <TextBlock TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_HEADER_BUDDIES_SAY, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" FontFamily="Segoe WP SemiLight" FontSize="32" d:LayoutOverrides="GridBox"/>
+                        <TextBlock x:Name="BlindNotiTextBlock" Visibility="{Binding Buddy.IsBlind, Converter={StaticResource BoolToVisibility}}" TextWrapping="Wrap" Foreground="{StaticResource PhoneAccentBrush}" d:LayoutOverrides="GridBox" VerticalAlignment="Top"/>
+                        <Button Visibility="{Binding Buddy.IsBlind, ConverterParameter=!, Converter={StaticResource BoolToVisibility}}" Content="{Binding MyResContainer.IDS_CHATON_BODY_WRITE_A_MESSAGE, Source={StaticResource LocalizedStrings}}" Click="WriteMessageButton_Click" VerticalAlignment="Top" d:LayoutOverrides="GridBox" Margin="-12,0"/>
+                        <ItemsControl ItemTemplate="{StaticResource BuddiesSayItemTemplate}" ItemsSource="{Binding MemoList}" HorizontalContentAlignment="Stretch"/>
+                    </StackPanel>
+                </Grid>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,94 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Microsoft.Phone.Controls.Toolkit</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>sl4</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="transitions\storyboards\sliderightfadein.xaml" />
+    <None Remove="transitions\storyboards\turnstileforwardout.xaml" />
+    <None Remove="transitions\storyboards\swivelforwardout.xaml" />
+    <None Remove="transitions\storyboards\slideleftfadeout.xaml" />
+    <None Remove="transitions\storyboards\slideleftfadein.xaml" />
+    <None Remove="transitions\storyboards\rotatein90clockwise.xaml" />
+    <None Remove="transitions\storyboards\rotateout90counterclockwise.xaml" />
+    <None Remove="transitions\storyboards\turnstileforwardin.xaml" />
+    <None Remove="datetimepickers\datepickerpage.xaml" />
+    <None Remove="transitions\storyboards\roll.xaml" />
+    <None Remove="transitions\storyboards\rotatein90counterclockwise.xaml" />
+    <None Remove="transitions\storyboards\swivelbackwardout.xaml" />
+    <None Remove="transitions\storyboards\slidedownfadein.xaml" />
+    <None Remove="listpicker\listpickerpage.xaml" />
+    <None Remove="transitions\storyboards\rotateout180clockwise.xaml" />
+    <None Remove="transitions\storyboards\slidedownfadeout.xaml" />
+    <None Remove="transitions\storyboards\turnstilebackwardout.xaml" />
+    <None Remove="themes\generic.xaml" />
+    <None Remove="transitions\storyboards\turnstilebackwardin.xaml" />
+    <None Remove="transitions\storyboards\slideupfadeout.xaml" />
+    <None Remove="transitions\storyboards\swivelfullscreenin.xaml" />
+    <None Remove="transitions\storyboards\rotateout90clockwise.xaml" />
+    <None Remove="datetimepickers\timepickerpage.xaml" />
+    <None Remove="transitions\storyboards\slideupfadein.xaml" />
+    <None Remove="transitions\storyboards\rotatein180clockwise.xaml" />
+    <None Remove="transitions\storyboards\swivelbackwardin.xaml" />
+    <None Remove="transitions\storyboards\sliderightfadeout.xaml" />
+    <None Remove="transitions\storyboards\rotatein180counterclockwise.xaml" />
+    <None Remove="transitions\storyboards\rotateout180counterclockwise.xaml" />
+    <None Remove="transitions\storyboards\swivelfullscreenout.xaml" />
+    <None Remove="transitions\storyboards\swivelforwardin.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\sliderightfadein.xaml" LogicalName="transitions/storyboards/sliderightfadein.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\turnstileforwardout.xaml" LogicalName="transitions/storyboards/turnstileforwardout.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\swivelforwardout.xaml" LogicalName="transitions/storyboards/swivelforwardout.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\slideleftfadeout.xaml" LogicalName="transitions/storyboards/slideleftfadeout.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\slideleftfadein.xaml" LogicalName="transitions/storyboards/slideleftfadein.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\rotatein90clockwise.xaml" LogicalName="transitions/storyboards/rotatein90clockwise.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\rotateout90counterclockwise.xaml" LogicalName="transitions/storyboards/rotateout90counterclockwise.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\turnstileforwardin.xaml" LogicalName="transitions/storyboards/turnstileforwardin.xaml" />
+    <EmbeddedResource Include="datetimepickers\datepickerpage.xaml" LogicalName="datetimepickers/datepickerpage.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\roll.xaml" LogicalName="transitions/storyboards/roll.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\rotatein90counterclockwise.xaml" LogicalName="transitions/storyboards/rotatein90counterclockwise.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\swivelbackwardout.xaml" LogicalName="transitions/storyboards/swivelbackwardout.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\slidedownfadein.xaml" LogicalName="transitions/storyboards/slidedownfadein.xaml" />
+    <EmbeddedResource Include="listpicker\listpickerpage.xaml" LogicalName="listpicker/listpickerpage.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\rotateout180clockwise.xaml" LogicalName="transitions/storyboards/rotateout180clockwise.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\slidedownfadeout.xaml" LogicalName="transitions/storyboards/slidedownfadeout.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\turnstilebackwardout.xaml" LogicalName="transitions/storyboards/turnstilebackwardout.xaml" />
+    <EmbeddedResource Include="themes\generic.xaml" LogicalName="themes/generic.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\turnstilebackwardin.xaml" LogicalName="transitions/storyboards/turnstilebackwardin.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\slideupfadeout.xaml" LogicalName="transitions/storyboards/slideupfadeout.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\swivelfullscreenin.xaml" LogicalName="transitions/storyboards/swivelfullscreenin.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\rotateout90clockwise.xaml" LogicalName="transitions/storyboards/rotateout90clockwise.xaml" />
+    <EmbeddedResource Include="datetimepickers\timepickerpage.xaml" LogicalName="datetimepickers/timepickerpage.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\slideupfadein.xaml" LogicalName="transitions/storyboards/slideupfadein.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\rotatein180clockwise.xaml" LogicalName="transitions/storyboards/rotatein180clockwise.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\swivelbackwardin.xaml" LogicalName="transitions/storyboards/swivelbackwardin.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\sliderightfadeout.xaml" LogicalName="transitions/storyboards/sliderightfadeout.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\rotatein180counterclockwise.xaml" LogicalName="transitions/storyboards/rotatein180counterclockwise.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\rotateout180counterclockwise.xaml" LogicalName="transitions/storyboards/rotateout180counterclockwise.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\swivelfullscreenout.xaml" LogicalName="transitions/storyboards/swivelfullscreenout.xaml" />
+    <EmbeddedResource Include="transitions\storyboards\swivelforwardin.xaml" LogicalName="transitions/storyboards/swivelforwardin.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Silverlight\5.1.20513.0\System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls">
+      <HintPath>..\..\ChatON v1.52.0.0.xap\Microsoft.Phone.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Silverlight\5.1.20513.0\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Silverlight\5.1.20513.0\Microsoft.Xna.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch" />
+  </ItemGroup>
+</Project>

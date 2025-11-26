@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="ChatOn.Controls.SelectionControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480">
+    
+    <Grid x:Name="LayoutRoot">
+       <Canvas x:Name="cvs" Background="Transparent" MouseLeftButtonDown="cvs_MouseLeftButtonDown" MouseMove="cvs_MouseMove" MouseLeftButtonUp="cvs_MouseLeftButtonUp" IsHitTestVisible="True">
+            <Border x:Name="borderBackground" BorderBrush="#B4000000" />
+            <Grid x:Name="gridSelection" >
+                <Rectangle x:Name="rectSelection" StrokeThickness="4" >
+                	<Rectangle.Stroke>
+                		<SolidColorBrush Color="#FFFF7200"/>
+                	</Rectangle.Stroke>
+                </Rectangle>                               
+                <Canvas x:Name="cvsSelection" >
+                    <Rectangle x:Name="rectLTThumb" Fill="{StaticResource PhoneAccentBrush}" />
+                    <Rectangle x:Name="rectRTThumb" Fill="{StaticResource PhoneAccentBrush}" />
+                    <Rectangle x:Name="rectLBThumb" Fill="{StaticResource PhoneAccentBrush}" />
+                    <Rectangle x:Name="rectRBThumb" Fill="{StaticResource PhoneAccentBrush}" />
+                </Canvas>                
+            </Grid>
+        </Canvas>        
+    </Grid>
+</UserControl>

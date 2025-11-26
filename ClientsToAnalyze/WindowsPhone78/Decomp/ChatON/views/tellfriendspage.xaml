@@ -1,0 +1,56 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="ChatOn.Views.TellFriendsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True"
+    toolkit:TiltEffect.IsTiltEnabled="True">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0">
+            <TextBlock x:Name="ApplicationTitle" Text="{Binding MyResContainer.IDS_CHATON_BODY_TELL_FRIENDS, Source={StaticResource LocalizedStrings},Converter={StaticResource UpperCaseConverter}}" Style="{StaticResource PhoneTextNormalStyle}" Margin="24,24,0,0" FontFamily="Segoe WP Semibold" FontSize="23"/>
+        </StackPanel>
+        <StackPanel x:Name="ContentPanel" Margin="24,54,24,0" Grid.Row="1" >
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BODY_SEND_A_DOWNLOAD_LINK_TO_YOUR_FRIENDS_SO_THEY_CAN_INSTALL_CHATON, Source={StaticResource LocalizedStrings}}" FontFamily="Segoe WP"/>
+            <Grid Tag="tilt" Tap="ViaFacebook_Tap" Margin="0,35,0,0">
+        		<Grid.RowDefinitions>
+        			<RowDefinition/>
+        			<RowDefinition Height="Auto"/>
+        		</Grid.RowDefinitions>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BUTTON_FACEBOOK, Source={StaticResource LocalizedStrings}}" d:LayoutOverrides="Height" VerticalAlignment="Top" FontSize="43" FontFamily="Segoe WP SemiLight" />        		
+        	</Grid>
+            <Grid Tag="tilt" Tap="ViaEMail_Tap" Margin="0,35,0,0">
+        		<Grid.RowDefinitions>
+        			<RowDefinition/>
+        			<RowDefinition Height="Auto"/>
+        		</Grid.RowDefinitions>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_OPT_EMAIL, Source={StaticResource LocalizedStrings}}" d:LayoutOverrides="Height" VerticalAlignment="Top" FontSize="43" FontFamily="Segoe WP SemiLight"/>
+        	</Grid>
+            <Grid Tag="tilt" Tap="ViaSMS_Tap" Margin="0,35,0,0">
+        		<Grid.RowDefinitions>
+        			<RowDefinition/>
+        			<RowDefinition Height="Auto"/>
+        		</Grid.RowDefinitions>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_SK_SMS, Source={StaticResource LocalizedStrings}}" d:LayoutOverrides="Height" VerticalAlignment="Top" FontSize="43" FontFamily="Segoe WP SemiLight"/>
+        	</Grid>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+    </Grid>
+
+</phone:PhoneApplicationPage>

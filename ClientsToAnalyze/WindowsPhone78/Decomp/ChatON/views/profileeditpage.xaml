@@ -1,0 +1,124 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="ChatOn.Views.ProfileEditPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Customcontrols="clr-namespace:ChatOn.Controls"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True"
+    toolkit:TiltEffect.IsTiltEnabled="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0">
+            <TextBlock x:Name="ApplicationTitle" Text="{Binding MyResContainer.IDS_CHATON_BODY_PROFILE, Source={StaticResource LocalizedStrings},Converter={StaticResource UpperCaseConverter}}" Style="{StaticResource PhoneTextNormalStyle}" Margin="24,24,0,0" FontSize="23" FontFamily="Segoe WP Semibold"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="24,54,0,0">
+        	<Grid.RowDefinitions>
+        		<RowDefinition Height="Auto"/>
+        		<RowDefinition Height="120"/>
+        		<RowDefinition Height="100"/>
+        		<RowDefinition Height="100"/>
+        		<RowDefinition Height="100"/>
+        		<RowDefinition/>
+        	</Grid.RowDefinitions>
+        	<Grid>
+        		<Grid.RowDefinitions>
+        			<RowDefinition Height="Auto"/>
+        			<RowDefinition Height="Auto"/>
+        		</Grid.RowDefinitions>
+        		<Grid.ColumnDefinitions>
+        			<ColumnDefinition Width="110"/>
+        			<ColumnDefinition Width="20"/>
+        			<ColumnDefinition/>
+        		</Grid.ColumnDefinitions>
+        		<Image Source="{Binding ProfileImage}"
+                       Tap="Image_Tap" Tag="tilt" Stretch="Fill" HorizontalAlignment="Left" Width="110" Height="110" Grid.RowSpan="2" VerticalAlignment="Top"/>
+                <TextBlock TextWrapping="Wrap" Text="{Binding MyProfile.Name}" Tap="NameBlock_Tap" Tag="tilt"
+        			FontSize="43" FontFamily="Segoe WP SemiLight" HorizontalAlignment="Left" Grid.Column="2" VerticalAlignment="Top"/>
+                <Customcontrols:DynamicHeightBubble Type="Me" Text="{Binding MyProfile.Status}" DefaultText="{Binding MyResContainer.IDS_CHATON_BODY_STATUS_MESSAGE, Source={StaticResource LocalizedStrings}}"
+                                                   VerticalAlignment="Top" Grid.Column="2" TextMargin="0,-10,0,-12"
+                                                   Foreground="Black" FontSize="23" MaxTextWidth="275"
+                                                   Tap="StaticHeightBubble_Tap" MinWidth="275" Grid.Row="1" Margin="0,10,0,0"/>
+        	</Grid>
+            <Grid Grid.Row="1" VerticalAlignment="Bottom" Background="{StaticResource TransparentBrush}" Tap="SettingPrivacy_Tap">
+        		<Grid.RowDefinitions>
+        			<RowDefinition/>
+        			<RowDefinition Height="30"/>
+        		</Grid.RowDefinitions>
+                <TextBlock Tag="tilt" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BODY_PHONE, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Bottom" FontSize="43" FontFamily="Segoe WP SemiLight" d:LayoutOverrides="VerticalAlignment"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding MyProfile.PhoneNumber, Converter={StaticResource InternationalPhonumberConverter}}" d:LayoutOverrides="VerticalAlignment" VerticalAlignment="Bottom" Grid.Row="1">
+        			<TextBlock.Foreground>
+        				<SolidColorBrush Color="{StaticResource PhoneAccentColor}"/>
+        			</TextBlock.Foreground>
+        		</TextBlock>
+        	</Grid>
+        	<Grid Grid.Row="2" VerticalAlignment="Bottom" Background="{StaticResource TransparentBrush}"
+                  Tap="BirthdayGrid_Tap">
+        		<Grid.RowDefinitions>
+        			<RowDefinition/>
+        			<RowDefinition Height="30"/>
+        		</Grid.RowDefinitions>
+                <TextBlock Tag="tilt" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BODY_BIRTHDAY, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Bottom" FontSize="43" FontFamily="Segoe WP SemiLight" d:LayoutOverrides="VerticalAlignment"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding MyProfile.DisplayBirthday}" VerticalAlignment="Bottom" Grid.Row="1">
+        			<TextBlock.Foreground>
+        				<SolidColorBrush Color="{StaticResource PhoneAccentColor}"/>
+        			</TextBlock.Foreground>
+        		</TextBlock>
+        	</Grid>
+            <Grid Grid.Row="3" VerticalAlignment="Bottom" Background="{StaticResource TransparentBrush}" Tap="FacebookGrid_Tap" Visibility="{Binding IsFacebookSupported, Converter={StaticResource BoolToVisibility}}">
+        		<Grid.RowDefinitions>
+        			<RowDefinition/>
+        			<RowDefinition Height="30"/>
+        		</Grid.RowDefinitions>
+                <TextBlock Tag="tilt" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BUTTON_FACEBOOK, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Bottom" FontSize="43" FontFamily="Segoe WP SemiLight" d:LayoutOverrides="VerticalAlignment"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding FacebookAccount}" d:LayoutOverrides="VerticalAlignment" VerticalAlignment="Bottom" Grid.Row="1">
+        			<TextBlock.Foreground>
+        				<SolidColorBrush Color="{StaticResource PhoneAccentColor}"/>
+        			</TextBlock.Foreground>
+        		</TextBlock>
+        	</Grid>
+        	<Grid Grid.Row="4" VerticalAlignment="Bottom" Background="{StaticResource TransparentBrush}" Visibility="Collapsed">
+        		<Grid.RowDefinitions>
+        			<RowDefinition/>
+        			<RowDefinition Height="30"/>
+        		</Grid.RowDefinitions>
+                <TextBlock Tag="tilt" HorizontalAlignment="Left" TextWrapping="Wrap" Text="samsung account" VerticalAlignment="Bottom" FontSize="43" FontFamily="Segoe WP SemiLight" d:LayoutOverrides="VerticalAlignment"/>
+        		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="" d:LayoutOverrides="VerticalAlignment" VerticalAlignment="Bottom" Grid.Row="1">
+        			<TextBlock.Foreground>
+        				<SolidColorBrush Color="{StaticResource PhoneAccentColor}"/>
+        			</TextBlock.Foreground>
+        		</TextBlock>
+        	</Grid>
+        </Grid>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>

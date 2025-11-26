@@ -1,0 +1,9 @@
+namespace MemoryDiagnostic;
+
+public enum TYPE_MEMORYCHECK
+{
+	TYPE_INTERVAL_DC,
+	TYPE_INTERVAL_XML,
+	TYPE_PAGELOAD_DC,
+	TYPE_PAGELOAD_XML
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Deployment xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" AppPlatformVersion="7.1" xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment">
+  <App Author="SAMSUNG ELECTRONICS Co., Ltd." Description="Sample description" Genre="apps.normal" ProductID="{65859ff5-5ecf-4083-a1c4-8caafbb77c8b}" Publisher="SAMSUNG ELECTRONICS Co., Ltd." RuntimeType="Silverlight" Title="ChatON" Version="1.0.0.0" BitsPerPixel="32" xmlns="">
+    <IconPath IsRelative="true" IsResource="false">chaton_icon_device_62x62.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_LOCATION" />
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_MICROPHONE" />
+      <Capability Name="ID_CAP_MEDIALIB" />
+      <Capability Name="ID_CAP_PUSH_NOTIFICATION" />
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+      <Capability Name="ID_CAP_PHONEDIALER" />
+      <Capability Name="ID_CAP_IDENTITY_DEVICE" />
+      <Capability Name="ID_CAP_CONTACTS" />
+      <Capability Name="ID_CAP_APPOINTMENTS" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="Views/MainPage.xaml" />
+      <ExtendedTask Name="BackgroundTask">
+        <BackgroundServiceAgent Specifier="ScheduledTaskAgent" Name="ChatOnBackgroundAgent" Source="ChatOnBackgroundAgent" Type="ChatOnBackgroundAgent.ScheduledAgent" />
+      </ExtendedTask>
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="ChatOnToken" TaskName="_default">
+        <TemplateType5>
+          <BackgroundImageURI IsRelative="true" IsResource="false">chaton_icon_tile_173x173.png</BackgroundImageURI>
+          <Count>0</Count>
+          <Title>ChatON</Title>
+        </TemplateType5>
+      </PrimaryToken>
+    </Tokens>
+    <Extensions>
+      <Extension ExtensionName="Photos_Extra_Share" ConsumerID="{5B04B775-356B-4AA0-AAF8-6491FFEA5632}" TaskID="_default" />
+    </Extensions>
+  </App>
+</Deployment>

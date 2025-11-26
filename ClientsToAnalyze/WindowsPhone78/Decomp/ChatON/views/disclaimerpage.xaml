@@ -1,0 +1,50 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="ChatOn.Views.DisclaimerPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+	
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="CHATON" Style="{StaticResource PhoneTextNormalStyle}" FontSize="23" FontFamily="Segoe WP Semibold"/>
+            <TextBlock x:Name="PageTitle" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_HEADER_DISCLAIMER, Source={StaticResource LocalizedStrings},Converter={StaticResource UpperCaseConverter}}" Margin="9,-7,0,0" FontSize="46"/>
+        </StackPanel>
+        <StackPanel x:Name="ContentPanel" Margin="24,0" Grid.Row="1" >
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BUTTON_TERMS_AND_PRIVACY, Source={StaticResource LocalizedStrings}}" FontSize="24">
+        		<TextBlock.Foreground>
+        			<SolidColorBrush Color="{StaticResource PhoneSubtleColor}"/>
+        		</TextBlock.Foreground>
+        	</TextBlock>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BODY_YOUR_USE_OF_CHATON_SERVICES_IS_GOVERNED_BY_THE_CHATON_TERMS_OF_SERVICE_AND_PRIVACY_POLICY, Source={StaticResource LocalizedStrings}}" Margin="0,20,0,0"/>
+            <HyperlinkButton x:Name="TermsLink" Content="{Binding MyResContainer.IDS_CHATON_SK1_TERMS_AND_CONDITIONS, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Margin="0,20,0,0" FontSize="28"/>
+            <HyperlinkButton x:Name="PrivacyLink" Content="{Binding MyResContainer.IDS_CHATON_SK1_PRIVACY_POLICY, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Margin="0,20,0,0" FontSize="28"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+    </Grid>
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar>
+            <shell:ApplicationBarIconButton IconUri="/Toolkit.Content/ApplicationBar.Check.png" Text="Done" Click="Done_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/Toolkit.Content/ApplicationBar.Cancel.png" Text="Cancel" Click="Cancel_Click"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

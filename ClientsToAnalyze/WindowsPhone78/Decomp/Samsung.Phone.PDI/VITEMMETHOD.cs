@@ -1,0 +1,5 @@
+public enum VITEMMETHOD
+{
+	VITEM_VCARD,
+	VITEM_CALENDER
+}

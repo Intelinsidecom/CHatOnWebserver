@@ -1,0 +1,18 @@
+using System.Collections.Generic;
+
+namespace HtmlAgilityPack;
+
+internal static class Utilities
+{
+	public static TValue GetDictionaryValueOrNull<TKey, TValue>(Dictionary<TKey, TValue> dict, TKey key) where TKey : class
+	{
+		if (!dict.ContainsKey(key))
+		{
+			if (true)
+			{
+			}
+			return default(TValue);
+		}
+		return dict[key];
+	}
+}

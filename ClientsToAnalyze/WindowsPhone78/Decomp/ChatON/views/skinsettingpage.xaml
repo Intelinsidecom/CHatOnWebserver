@@ -1,0 +1,113 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="ChatOn.Views.SkinSettingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Customcontrols="clr-namespace:ChatOn.Controls"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True"
+    toolkit:TiltEffect.IsTiltEnabled="True">
+	<phone:PhoneApplicationPage.Resources>
+		<DataTemplate x:Key="BGItemTemplate">
+			<Grid Width="124" Height="124" Margin="0,0,14,10" Tap="BG_Tap">
+				<Image Stretch="UniformToFill" Source="{Binding Image}"/>
+                <Border BorderThickness="3">
+                    <Border.BorderBrush>
+                        <SolidColorBrush Color="{StaticResource PhoneForegroundColor}"/>
+                    </Border.BorderBrush>
+                </Border>
+				<Border BorderThickness="3" Visibility="{Binding IsSelected,Converter={StaticResource BoolToVisibility}}">
+					<Border.BorderBrush>
+						<SolidColorBrush Color="{StaticResource PhoneAccentColor}"/>
+					</Border.BorderBrush>
+				</Border>
+            </Grid>
+		</DataTemplate>
+
+        <DataTemplate x:Key="BubbleItemTemplate">
+            <Grid Width="124" Height="124" Margin="0,0,14,10" Tap="Bubble_Tap">
+                <Image Stretch="None" Source="{Binding Image}"/>
+                <Border BorderThickness="3" Visibility="{Binding IsSelected,Converter={StaticResource BoolToVisibility}}">
+                    <Border.BorderBrush>
+                        <SolidColorBrush Color="{StaticResource PhoneAccentColor}"/>
+                    </Border.BorderBrush>
+                </Border>
+            </Grid>
+        </DataTemplate>
+
+        <ItemsPanelTemplate x:Key="ItemsPanelTemplate">
+            <StackPanel Orientation="Horizontal"/>
+        </ItemsPanelTemplate>
+    </phone:PhoneApplicationPage.Resources>
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel x:Name="TitlePanel" Grid.Row="0">
+            <TextBlock x:Name="ApplicationTitle" Text="{Binding MyResContainer.IDS_CHATON_BODY_CHANGE_SKIN, Source={StaticResource LocalizedStrings},Converter={StaticResource UpperCaseConverter}}" Style="{StaticResource PhoneTextNormalStyle}" Margin="24,24,0,0" FontSize="23" FontFamily="Segoe WP Semibold"/>
+        </StackPanel>
+        <Grid x:Name="ContentPanel" Margin="0,54,0,0" Grid.Row="1" >
+        	<Grid Height="Auto" VerticalAlignment="Top">
+        		<Grid.Background>
+        			<ImageBrush Stretch="None" ImageSource="{Binding BackgroundImage}"/>
+        		</Grid.Background>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid VerticalAlignment="Top" Width="470" Margin="0,0,0,8">
+                    <Grid.ColumnDefinitions>
+                    	<ColumnDefinition/>
+                    	<ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Customcontrols:ChatBubble x:Name="MyBubbleControl" Grid.Column="1" Grid.ColumnSpan="2" Type="1" HorizontalAlignment="Right"
+                		Text="{Binding MyResContainer.IDS_CHATON_BODY_HELLO_E, Source={StaticResource LocalizedStrings}}" SubText="{Binding PreviewBubbleDate1, ConverterParameter=t, Converter={StaticResource MillisecondsToDate}}"/>
+                </Grid>
+                <Grid Grid.Row="1" VerticalAlignment="Top" Width="470" Margin="0,0,0,8">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="62"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Tag="tilt">
+                        <Image Visibility="{StaticResource PhoneDarkThemeVisibility}" Source="/ChatOn;component/Images/buddies_default.png" Width="58" Height="58" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="1,0,0,3"/>
+                        <Image Visibility="{StaticResource PhoneLightThemeVisibility}" Source="/Images/LightTheme/buddies_default image.png" Width="58" Height="58" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="1,0,0,3"/>
+                        <Image Source="/ChatOn;component/Images/chat_frame.png" Stretch="Fill" Width="62" Height="62" HorizontalAlignment="Left" VerticalAlignment="Bottom" Visibility="Collapsed"/>
+                    </Grid>
+                    <TextBlock Text="Victoria Justice" Margin="0" TextWrapping="Wrap" Grid.Row="1" FontSize="16" Foreground="#FF141414" Grid.ColumnSpan="2"/>
+                    <Customcontrols:ChatBubble x:Name="BuddyBubbleControl" Grid.Column="1" Type="0" Text="{Binding MyResContainer.IDS_CHATON_BODY_HI, Source={StaticResource LocalizedStrings}}" SubText="{Binding PreviewBubbleDate1, ConverterParameter=t, Converter={StaticResource MillisecondsToDate}}"
+                                               HorizontalContentAlignment="Left" VerticalContentAlignment="Top" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                </Grid>
+            </Grid>
+            <StackPanel VerticalAlignment="Bottom">
+            	<ListBox Height="134" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Disabled" ItemsPanel="{StaticResource ItemsPanelTemplate}" ItemsSource="{Binding BGItems}" ItemTemplate="{StaticResource BGItemTemplate}" Margin="10,0,0,0"/>
+            	<ListBox Height="134" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Disabled" ItemsPanel="{StaticResource ItemsPanelTemplate}" ItemsSource="{Binding BubbleItems}" ItemTemplate="{StaticResource BubbleItemTemplate}" Margin="10,10,0,10"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+
+    <!--Sample code showing usage of ApplicationBar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/icons/appbtn_save.png" Text="Save" Click="Save_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/Toolkit.Content/ApplicationBar.Cancel.png" Text="Cancel" Click="Cancel_Click"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+
+</phone:PhoneApplicationPage>

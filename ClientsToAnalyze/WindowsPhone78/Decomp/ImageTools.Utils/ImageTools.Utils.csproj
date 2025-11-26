@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>ImageTools.Utils</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>sl4</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="ImageTools">
+      <HintPath>..\..\ChatON v1.52.0.0.xap\ImageTools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Silverlight\5.1.20513.0\System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Silverlight\5.1.20513.0\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PhoneCodeContractsAssemblies">
+      <HintPath>..\..\ChatON v1.52.0.0.xap\PhoneCodeContractsAssemblies.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageTools.IO.Png">
+      <HintPath>..\..\ChatON v1.52.0.0.xap\ImageTools.IO.Png.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

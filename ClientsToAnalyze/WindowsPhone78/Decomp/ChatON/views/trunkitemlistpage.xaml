@@ -1,0 +1,82 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="ChatOn.Views.TrunkItemListPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True"
+    toolkit:TiltEffect.IsTiltEnabled="True">
+    
+	<phone:PhoneApplicationPage.Resources>
+		<DataTemplate x:Key="TrunkItemTemplate">
+            <Grid Width="135" Height="135" Tap="TrunkItem_Tap" Hold="Hold_TrunkItem">
+                <Image Visibility="{StaticResource PhoneDarkThemeVisibility}" Margin="0" VerticalAlignment="Top" Source="/ChatOn;component/Images/buddies_default.png"/>
+                <Image Visibility="{StaticResource PhoneLightThemeVisibility}" Margin="0" VerticalAlignment="Top" Source="/Images/LightTheme/buddies_default image.png"/>
+                <Image Margin="0" Source="{Binding TrunkThumbImg}" Stretch="UniformToFill" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                <Image Margin="0" VerticalAlignment="Top" Source="/ChatOn;component/Images/icon_video.png" Visibility="{Binding Video_Visible}"/>
+                <Image Height="37" Margin="0,0,5,5" Source="/ChatOn;component/Images/trunk_bubble.9.png" Width="35" HorizontalAlignment="Right" VerticalAlignment="Bottom" Visibility="{Binding Bubble_Visible}"/>
+                <TextBlock Margin="90,80,0,0" TextWrapping="Wrap" Text="{Binding Totcmtcnt}" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" />
+                <Rectangle Margin="0" StrokeThickness="5" Stroke="#FFFFC603" Visibility="{Binding Unread_Visible}"/>
+
+            </Grid>
+        </DataTemplate>
+	</phone:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,0">
+            <TextBlock x:Name="ApplicationTitle" Text="{Binding MyResContainer.IDS_CHATON_BODY_CHATON, Source={StaticResource LocalizedStrings},Converter={StaticResource UpperCaseConverter}}" Style="{StaticResource PhoneTextNormalStyle}" FontSize="23" FontFamily="Segoe WP Semibold"/>
+            <TextBlock x:Name="PageTitle" Text="{Binding MyResContainer.IDS_CHATON_HEADER_TRUNK_ABB, Source={StaticResource LocalizedStrings}}" Margin="12,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}">
+            	<TextBlock.Foreground>
+            		<SolidColorBrush Color="{StaticResource PhoneSubtleColor}"/>
+            	</TextBlock.Foreground>
+            </TextBlock>
+        </StackPanel>
+
+        
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="24,54,11,0">
+            <Image Height="164" HorizontalAlignment="Left" Margin="120,89,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="191" Source="/ChatOn;component/Images/icon_trunk.png" Visibility="{Binding NoItem_Visible}" />
+            <Image Height="164" HorizontalAlignment="Left" Margin="120,89,0,0" Name="image2" Stretch="Fill" VerticalAlignment="Top" Width="191" Source="/ChatOn;component/Images/LightTheme/icon_trunk.png" Visibility="{Binding NoItem_Visible2}" />
+            <TextBlock Height="119" HorizontalAlignment="Center" Margin="0,292,0,0" Name="textBlock1" Text="{Binding MyResContainer.IDS_CHATON_BODY_SHARE_YOUR_PHOTOS_AND_VIDEOS_WITH_CHAT_PARTICIPANTS, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" TextWrapping="Wrap" Visibility="{Binding NoItem_Text_Visible}" TextAlignment="Center" Width="330" FontSize="23" Foreground="#FF7C7C7C" />
+            <ListBox Margin="0" ItemTemplate="{StaticResource TrunkItemTemplate}" ItemsSource="{Binding TrunkItems}" MouseLeftButtonUp="EventBtnUp" Name="TrunkListBox" MouseLeftButtonDown="EventBtnDown" SelectionChanged="TrunkListBox_SelectionChanged">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <toolkit:WrapPanel ItemHeight="148" ItemWidth="148"/> 
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+
+            </ListBox>
+            
+        </Grid>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/icons/appbtn_list_by.png" Text="ListBy" x:Name="menu_trunk_sort" Click="Menu_turnk_sorttype_Click" />
+            <shell:ApplicationBarIconButton IconUri="/icons/appbtn_refresh.png" Text="Refresh" x:Name="menu_trunk_refresh" Click="Menu_trunk_refresh_Click" />
+<!--           
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+--> 
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

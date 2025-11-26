@@ -1,0 +1,73 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="ChatOn.Views.InputVerificationCodePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel x:Name="TitlePanel" Grid.Row="0">
+            <TextBlock x:Name="ApplicationTitle" Text="{Binding MyResContainer.IDS_CHATON_HEADER_REGISTRATION, Source={StaticResource LocalizedStrings},Converter={StaticResource UpperCaseConverter}}" Style="{StaticResource PhoneTextNormalStyle}" Margin="24,24,0,0" FontSize="23" FontFamily="Segoe WP Semibold"/>
+        </StackPanel>
+        <StackPanel x:Name="ContentPanel" Margin="0,54,0,0" Grid.Row="1" >
+            <TextBlock x:Name="InitText" TextWrapping="Wrap" Margin="24,0,24,0" Text="{Binding MyResContainer.IDS_CHATON_BODY_YOU_WILL_RECEIVE_A_PD_DIGIT_VERIFICATION_CODE_VIA_SMS_OR_VOICE_CALL_SELECT_PREFERRED_METHOD, Source={StaticResource LocalizedStrings}}">
+            	<TextBlock.Foreground>
+            		<SolidColorBrush Color="{StaticResource PhoneSubtleColor}"/>
+            	</TextBlock.Foreground>
+            </TextBlock>
+            <TextBlock Visibility="Collapsed" x:Name="RemarkText" TextWrapping="Wrap" Margin="24,0,24,0">
+            	<TextBlock.Foreground>
+            		<SolidColorBrush Color="{StaticResource PhoneSubtleColor}"/>
+            	</TextBlock.Foreground>
+            </TextBlock>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="SMSButton" Click="SMS_Click" Content="{Binding MyResContainer.IDS_CHATON_SK_SMS, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" Margin="12,0,0,0"/>
+                <Button x:Name="ACSButton" Click="ACS_Click" Content="{Binding MyResContainer.IDS_CHATON_ITAB_VOICE_CALL, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" Margin="0,0,12,0" Grid.Column="1" IsEnabled ="False"/>
+            </Grid>
+            <TextBlock Visibility="Collapsed" x:Name="BugReportText" TextWrapping="Wrap" Margin="24,20,24,0" Text="If you would like to submit a bug report, please select a button below.">
+            	<TextBlock.Foreground>
+            		<SolidColorBrush Color="{StaticResource PhoneSubtleColor}"/>
+            	</TextBlock.Foreground>
+            </TextBlock>
+            <Button Visibility="Collapsed" x:Name="BugReportButton" Content="Submit a report" Margin="12,0"/>
+            <TextBlock TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BODY_PHONE_NUMBER, Source={StaticResource LocalizedStrings}}" Margin="24,0,0,0">
+            	<TextBlock.Foreground>
+            		<SolidColorBrush Color="{StaticResource PhoneSubtleColor}"/>
+            	</TextBlock.Foreground>
+            </TextBlock>
+            <TextBox x:Name="SendTo" InputScope="Default" Margin="12,0" TextWrapping="Wrap" IsReadOnly="True"/>
+            <TextBlock TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BODY_ENTER_VERIFICATION_CODE, Source={StaticResource LocalizedStrings}}" Margin="24,0,0,0">
+            	<TextBlock.Foreground>
+            		<SolidColorBrush Color="{StaticResource PhoneSubtleColor}"/>
+            	</TextBlock.Foreground>
+            </TextBlock>
+            <TextBox x:Name="InputNum" InputScope="Number" Margin="12,0" TextWrapping="Wrap" MaxLength="10"/>
+        </StackPanel>
+    </Grid>
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="False">
+            <shell:ApplicationBarIconButton IconUri="/Toolkit.Content/ApplicationBar.Check.png" Text="Done" Click="DoneButton_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/Toolkit.Content/ApplicationBar.Cancel.png" Text="Cancel" Click="CancelButton_Click"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

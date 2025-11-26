@@ -1,0 +1,309 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:Customcontrols="clr-namespace:ChatOn.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:ChatOn_Models="clr-namespace:ChatOn.Models" 
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    x:Class="ChatOn.PivotPage" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="696"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True"
+    toolkit:TiltEffect.IsTiltEnabled="True">
+    <phone:PhoneApplicationPage.Resources>
+        <DataTemplate x:Key="IndexNormalTemplate">
+            <Grid Height="62" Width="62">
+                <TextBlock TextWrapping="Wrap" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0,0,12" Text="{Binding HeaderName}" Foreground="#FCFFFFFF"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="IndexFavoriteTemplate">
+            <Grid Height="62" Width="62">
+                <Image HorizontalAlignment="Left" Source="/ChatOn;component/Images/icon_favorites.png" Stretch="Fill" Width="62" VerticalAlignment="Top"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="IndexBirthdayTemplate">
+            <Grid Height="62" Width="62">
+                <Image HorizontalAlignment="Left" Source="/ChatOn;component/Images/icon_birth.png" Stretch="Fill" Width="62" VerticalAlignment="Top"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="IndexNewTemplate">
+            <Grid Height="62" Width="62">
+                <Image HorizontalAlignment="Left" Source="/ChatOn;component/Images/icon_new.png" Stretch="Fill" Width="62" VerticalAlignment="Top"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="IndexGroupTemplate">
+            <Grid Height="62" Width="62">
+                <Image HorizontalAlignment="Left" Source="/ChatOn;component/Images/icon_group.png" Stretch="Fill" Width="62" VerticalAlignment="Top"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="IndexItemTemplate">
+            <Grid Tap="Grid_Tap" HorizontalAlignment="Left" Height="62" Width="62" VerticalAlignment="Top" Margin="0,6" Background="{StaticResource PhoneAccentBrush}">
+                <ContentControl HorizontalAlignment="Left" VerticalAlignment="Top" 
+                                ContentTemplate="{Binding HeaderType, Converter={StaticResource IndexToTemplate}, ConverterParameter='IndexNewTemplate,IndexBirthdayTemplate,IndexFavoriteTemplate,IndexGroupTemplate,IndexNormalTemplate,PivotPage'}" 
+                                Content="{Binding}"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="IndexItemByInteractionTemplate">
+            <Grid Tap="Grid_Tap" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,20,0,6">
+                <TextBlock TextWrapping="Wrap" Text="{Binding HeaderName}" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="32">
+            		<TextBlock.Foreground>
+            			<SolidColorBrush Color="{StaticResource PhoneAccentColor}"/>
+            		</TextBlock.Foreground>
+                </TextBlock>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="BuddyItemTemplate">
+            <Grid Margin="0,0,0,6">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="62"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Image Tap="BuddyProfileImage_Tap" Source="{Binding Buddy.ProfileImage}" Width="62" Height="62" Stretch="UniformToFill" VerticalAlignment="Top" Margin="0,6,0,0"/>
+                <Grid Tap="BuddyItem_Tap" Grid.Column="1" Margin="12,0,0,0" Width="367" Background="Transparent">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{Binding Buddy.Name}"
+    						TextWrapping="NoWrap" FontSize="26" FontFamily="Segoe WP SemiLight" HorizontalAlignment="Left" Margin="0" Foreground="{StaticResource PhoneForegroundBrush}" VerticalAlignment="Bottom"/>
+                    <Customcontrols:DynamicHeightBubble Visibility="{Binding Buddy.Status, Converter={StaticResource StringNullOrEmptyToHide}}"
+                                                        Text="{Binding Buddy.Status}" Grid.Row="1" TextMargin="0,-10,0,-18" MaxTextWidth="340"
+                                                        Foreground="Black" FontSize="20" Margin="0,0,0,-3"/>
+                </Grid>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="GroupItemTemplate">
+            <Grid Margin="0,0,0,6" Tap="GroupItem_Tap">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="62"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Image Visibility="{StaticResource PhoneDarkThemeVisibility}" Height="62" Source="/Images/icon_group_chat.png" Stretch="Fill" Width="62" Margin="0,6,0,0"/>
+                <Image Visibility="{StaticResource PhoneLightThemeVisibility}" Height="62" Source="/Images/LightTheme/icon_group_chat.png" Stretch="Fill" Width="62" Margin="0,6,0,0"/>
+                <Grid Grid.Column="1" Margin="12,0,0,0" Width="367" Background="Transparent">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{Binding Group.Name}"
+    						TextWrapping="Wrap" FontSize="26" FontFamily="Segoe WP SemiLight" HorizontalAlignment="Left" Margin="0" Foreground="{StaticResource PhoneForegroundBrush}" VerticalAlignment="Bottom"/>
+                    <TextBlock Foreground="{StaticResource PhoneForegroundBrush}" FontSize="20" Text="{Binding Group.Members,Converter={StaticResource PhoneNumbersToNames}}" Grid.Row="1"/>
+                </Grid>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="BuddyListItemTemplate">
+            <Grid Width="442" Hold="BuddyItem_Hold">
+                <ContentControl HorizontalAlignment="Left" VerticalAlignment="Top" 
+                                ContentTemplate="{Binding Type, Converter={StaticResource IndexToTemplate}, ConverterParameter='IndexItemTemplate,BuddyItemTemplate,GroupItemTemplate,PivotPage'}" 
+                                Content="{Binding}"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="BuddyListItemByInteractionTemplate">
+            <Grid Width="442" Hold="BuddyItem_Hold">
+                <ContentControl HorizontalAlignment="Left" VerticalAlignment="Top" 
+                                ContentTemplate="{Binding Type, Converter={StaticResource IndexToTemplate}, ConverterParameter='IndexItemByInteractionTemplate,BuddyItemTemplate,GroupItemTemplate,PivotPage'}" 
+                                Content="{Binding}"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="ChatItemTemplate">
+            <Grid Width="442" Margin="0,6" Hold="ChatItem_Hold">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="62"/>
+                    <ColumnDefinition Width="18"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid Tap="ChatListIcon_Tap">
+                    <Image Visibility="{Binding SingleChatBuddy, Converter={StaticResource ObjectNullToShow}}" Source="{Binding ChatType, Converter={StaticResource ChatTypeToImageUri}}" Width="62" Height="62" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Fill"/>
+                    <Image Source="{Binding SingleChatBuddy.ProfileImage}" Width="62" Height="62" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Fill"/>
+                </Grid>
+                <Grid Grid.Column="2" Width="360" Tap="ChatItem_Tap" Height="62" Background="Transparent">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Customcontrols:ChatTextBlock IsParsingLinkEnabled="False" EmoticonMargin="0,0,0,-4" EmoticonSize="28" Text="{Binding SubTitle}" Grid.Row = "1" MaxLength="100" VerticalAlignment="Bottom" d:LayoutOverrides="GridBox" HorizontalAlignment="Left" Foreground="{StaticResource PhoneForegroundBrush}" MaxWidth="280" Height="28"/>
+                    <StackPanel HorizontalAlignment="Right" Margin="0,0,0,-6" Grid.Row="1" Orientation="Horizontal" Height="35">
+                        <Grid Margin="0" Visibility="{Binding UnreadTrunkMessageCount, ConverterParameter=0, Converter={StaticResource BiggerThanParamToVisibility}}">
+                            <Image Source="/ChatOn;component/Images/bubble_blue.png" Stretch="None" VerticalAlignment="Bottom" Height="35"/>
+                            <TextBlock Text="{Binding UnreadTrunkMessageCount}"
+            					TextWrapping="Wrap" FontSize="18" FontFamily="Segoe WP" d:LayoutOverrides="GridBox" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,1,0,0" Foreground="#E5FFFFFF"/>
+                        </Grid>
+                        <Grid Margin="8,0,0,0" Visibility="{Binding UnreadMessageCount, ConverterParameter=0, Converter={StaticResource BiggerThanParamToVisibility}}">
+                            <Image Source="/ChatOn;component/Images/bubble_orange.png" Stretch="None" VerticalAlignment="Bottom" Height="35"/>
+                            <TextBlock Text="{Binding UnreadMessageCount}"
+            					TextWrapping="Wrap" FontSize="18" FontFamily="Segoe WP" d:LayoutOverrides="GridBox" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,1,0,0" Foreground="#E5FFFFFF"/>
+                        </Grid>
+                    </StackPanel>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding Title}" TextWrapping="NoWrap" VerticalAlignment="Bottom" FontSize="23" Foreground="{StaticResource PhoneForegroundBrush}"/>
+                        <TextBlock VerticalAlignment="Bottom" FontSize="23" Foreground="{StaticResource PhoneForegroundBrush}" d:LayoutOverrides="GridBox" Grid.Column="1" 
+                                   Text="{Binding MemberCountText}" Visibility="{Binding MemberCountText, Converter={StaticResource StringNullOrEmptyToHide}}"/>
+                        <TextBlock Text="{Binding Date, Converter={StaticResource DateToTimePolicyValue}}" Margin="10, 0, 0, 0"
+                    		TextWrapping="Wrap" HorizontalAlignment="Right" FontSize="20" VerticalAlignment="Top" FontFamily="Segoe WP SemiLight" Foreground="{StaticResource PhoneSubtleBrush}" Grid.Column="2"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="BuddiesSayItemTemplate">
+            <Grid Tag="tilt" Margin="0,10,0,0" Hold="BuddiesSayItem_Hold">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="75"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <Image Tap="Image_Tap" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Fill" Width="75" Height="75" Source="{Binding ProfileImage}"/>
+                <TextBlock Grid.Column="1" Text="{Binding Name}" VerticalAlignment="Top" Margin="17,-7,0,0" FontSize="32" d:LayoutOverrides="VerticalAlignment" TextTrimming="WordEllipsis"/>
+                <TextBlock Grid.Column="1" Text="{Binding Message}" VerticalAlignment="Top" Margin="17,40,0,0" FontSize="20" Foreground="{StaticResource PhoneAccentBrush}" TextWrapping="Wrap"/>
+                <TextBlock Grid.Column="2" Height="22" TextWrapping="Wrap" Text="{Binding Date, Converter={StaticResource DateToTimePolicyValue}}" VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Right"/>
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="InteractionSummaryItemTemplate">
+            <ListBoxItem>
+                <Grid Width="75" Height="103" Margin="0,0,14,0" Tap="InteractionItem_Tap">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="75"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="1" Text="{Binding Name}" FontSize="18" TextAlignment="Center" TextTrimming="WordEllipsis"/>
+                    <Image Source="{Binding ProfileImage}"/>
+                </Grid>
+            </ListBoxItem>
+        </DataTemplate>
+        <ItemsPanelTemplate x:Key="ItemsPanelTemplate">
+            <StackPanel Orientation="Horizontal"/>
+        </ItemsPanelTemplate>
+        <Storyboard x:Name="ProfileImageStory">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ProfileImageGrid">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </phone:PhoneApplicationPage.Resources>
+
+    <phone:PhoneApplicationPage.FontFamily>
+        <StaticResource ResourceKey="PhoneFontFamilyNormal"/>
+    </phone:PhoneApplicationPage.FontFamily>
+    <phone:PhoneApplicationPage.FontSize>
+        <StaticResource ResourceKey="PhoneFontSizeNormal"/>
+    </phone:PhoneApplicationPage.FontSize>
+    <phone:PhoneApplicationPage.Foreground>
+        <StaticResource ResourceKey="PhoneForegroundBrush"/>
+    </phone:PhoneApplicationPage.Foreground>
+    <!--Sample code showing usage of ApplicationBar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsMenuEnabled="True">
+            <shell:ApplicationBar.MenuItems>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Pivot Control-->
+        <controls:Pivot Title="{Binding MyResContainer.IDS_CHATON_BODY_CHATON, Source={StaticResource LocalizedStrings},Converter={StaticResource UpperCaseConverter}}"
+                        SelectedIndex="{Binding SelectedPivotIndex, Mode=TwoWay}">
+            <!--Pivot item one-->
+            <controls:PivotItem Header="{Binding MyResContainer.IDS_CHATON_TAB_BUDDY, Converter={StaticResource LowerCaseConverter}, Source={StaticResource LocalizedStrings}}">
+                <Grid x:Name="BuddyGrid">
+                    <StackPanel x:Name="TellFriendsPanel" Margin="12,0,0,0" Visibility="Collapsed">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Image Visibility="{StaticResource PhoneDarkThemeVisibility}" HorizontalAlignment="Left" Margin="0" Source="/ChatOn;component/Images/buddies_default.png" Stretch="None" VerticalAlignment="Center"/>
+                            <Image Visibility="{StaticResource PhoneLightThemeVisibility}" HorizontalAlignment="Left" Margin="0" Source="/Images/LightTheme/buddies_default image.png" Stretch="None" VerticalAlignment="Center"/>
+                            <TextBlock TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BODY_WHO_WILL_BE_YOUR_FIRST_BUDDY_Q, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Center" FontSize="32" Margin="10,0,0,0" FontFamily="Segoe WP SemiLight" Grid.Column="1"/>
+                        </Grid>
+                        <Grid Margin="0,20,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Button Click="SMSButton_Click" Content="SMS" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Center"/>
+                            <TextBlock TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BODY_TELL_FRIENDS, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Center" FontSize="32" Margin="0" FontFamily="Segoe WP SemiLight" Grid.Column="1"/>
+                        </Grid>
+                    </StackPanel>
+                    <ListBox Margin="14,0,0,0" ItemsSource="{Binding ShowingItems}" ItemTemplate="{Binding BuddyListType, Converter={StaticResource IndexToTemplate}, ConverterParameter='BuddyListItemTemplate,BuddyListItemByInteractionTemplate,PivotPage'}"/>
+                </Grid>
+            </controls:PivotItem>
+
+            <!--Pivot item two-->
+            <controls:PivotItem Header="{Binding MyResContainer.IDS_CHATON_TAB_CHAT, Converter={StaticResource LowerCaseConverter}, Source={StaticResource LocalizedStrings}}">
+                <Grid>
+                    <ListBox Margin="14,0,0,0" ItemsSource="{Binding ChatItems.View}" ItemTemplate="{StaticResource ChatItemTemplate}"/>
+                </Grid>
+            </controls:PivotItem>
+
+            <!--Pivot item three-->
+            <controls:PivotItem Header="{Binding MyResContainer.IDS_CHATON_TAB_MY_PAGE, Converter={StaticResource LowerCaseConverter}, Source={StaticResource LocalizedStrings}}">
+                <Grid>
+                    <ScrollViewer>
+                        <Grid Margin="14,0,0,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="97"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="62"/>
+                                <RowDefinition Height="115"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="48"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Grid x:Name="ProfileImageGrid" Tap="MyProfileImage_Tap" Tag="tilt">
+                                    <Image Visibility="{StaticResource PhoneDarkThemeVisibility}" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="None" Source="/ChatOn;component/Images/my page_default image.png"/>
+                                    <Image Visibility="{StaticResource PhoneLightThemeVisibility}" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="None" Source="/ChatOn;component/Images/LightTheme/my page_default image.png"/>
+                                    <Image Stretch="Fill" HorizontalAlignment="Left" Width="97" Height="97" VerticalAlignment="Top" Source="{Binding ProfileImage}"/>
+                                </Grid>
+                                <Grid Tag="tilt" Grid.Column="1" Tap="ProfileEditGrid_Tap" Margin="18,0,0,0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Text="{Binding MyProfile.Name}" VerticalAlignment="Top" FontSize="32" FontFamily="Segoe WP SemiLight" TextTrimming="WordEllipsis"/>
+                                    <TextBlock Text="{Binding MyProfile.PhoneNumber, Converter={StaticResource InternationalPhonumberConverter}}" VerticalAlignment="Top" FontSize="18" FontFamily="Segoe WP" Foreground="{StaticResource PhoneAccentBrush}" TextTrimming="WordEllipsis" Grid.Row="1"/>
+                                    <TextBlock Text="{Binding MyProfile.DisplayBirthday}" VerticalAlignment="Bottom" FontSize="18" FontFamily="Segoe WP" Foreground="{StaticResource PhoneAccentBrush}" TextTrimming="WordEllipsis" Grid.Row="2"/>
+                                </Grid>
+                            </Grid>
+                            <Customcontrols:DynamicHeightBubble Type="Me" Text="{Binding MyProfile.Status}" DefaultText="{Binding MyResContainer.IDS_CHATON_BODY_STATUS_MESSAGE, Source={StaticResource LocalizedStrings}}" TextMargin="0,-10,0,-12"
+                                                               VerticalAlignment="Bottom" Grid.Row="1" MaxTextWidth="400"
+                                                               Foreground="Black" FontSize="23" MinWidth="400"
+                                                               Tap="StaticHeightBubble_Tap" Tag="tilt" Margin="0,12,0,0"/>
+                            <TextBlock Grid.Row="2" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BODY_INTERACTION, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Bottom" FontSize="30" FontFamily="Segoe WP SemiLight" Margin="0,0,0,14"/>
+                            <ItemsControl Grid.Row="3" Margin="0,0,0,12" ItemTemplate="{StaticResource InteractionSummaryItemTemplate}" ItemsSource="{Binding BuddyRankItems}" ItemsPanel="{StaticResource ItemsPanelTemplate}"/>
+                            <Button Content="{Binding MyResContainer.IDS_CHATON_HEADER_INTERACTION_RANK, Source={StaticResource LocalizedStrings}}" Grid.Row="4" Margin="-12,0" Click="InteractionRank_Click"/>
+                            <TextBlock Grid.Row="5" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_HEADER_BUDDIES_SAY, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Bottom" FontSize="30" FontFamily="Segoe WP SemiLight"/>
+                            <ItemsControl Grid.Row="6" ItemTemplate="{StaticResource BuddiesSayItemTemplate}" ItemsSource="{Binding MemoList}" HorizontalContentAlignment="Stretch"/>
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+            </controls:PivotItem>
+        </controls:Pivot>
+    </Grid>
+
+</phone:PhoneApplicationPage>

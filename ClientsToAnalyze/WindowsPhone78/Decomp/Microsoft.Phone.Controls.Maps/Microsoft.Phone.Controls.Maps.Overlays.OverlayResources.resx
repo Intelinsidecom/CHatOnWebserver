@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="Meters" xml:space="preserve"><value>{0} Meters</value></data>
+  <data name="InvalidCredentialsErrorMessage" xml:space="preserve"><value>Invalid Credentials. Sign up for a developer account at: http://www.microsoft.com/maps/developers</value></data>
+  <data name="LoadingConfigurationErrorMessage" xml:space="preserve"><value>Unable to contact Server. Please try again later.</value></data>
+  <data name="Miles" xml:space="preserve"><value>{0} Miles</value></data>
+  <data name="Yards" xml:space="preserve"><value>{0} Yards</value></data>
+  <data name="LoadingUriSchemeErrorMessage" xml:space="preserve"><value>Map loaded in unsupported Uri Scheme. Please reload page in "http" scheme.</value></data>
+  <data name="Kilometers" xml:space="preserve"><value>{0} Kilometers</value></data>
+  <data name="Feet" xml:space="preserve"><value>{0} Feet</value></data>
+  </root>

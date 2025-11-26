@@ -1,0 +1,62 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="ChatON" EntryPointType="ChatOn.App" RuntimeVersion="4.7.50308.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="ChatON" Source="ChatON.dll" />
+    <AssemblyPart x:Name="AsyncCtpLibrary_Phone" Source="AsyncCtpLibrary_Phone.dll" />
+    <AssemblyPart x:Name="ChatOnBackgroundAgent" Source="ChatOnBackgroundAgent.dll" />
+    <AssemblyPart x:Name="FunShot.Effects" Source="FunShot.Effects.dll" />
+    <AssemblyPart x:Name="Google.ProtocolBuffers" Source="Google.ProtocolBuffers.dll" />
+    <AssemblyPart x:Name="HtmlAgilityPack" Source="HtmlAgilityPack.dll" />
+    <AssemblyPart x:Name="ImageTools" Source="ImageTools.dll" />
+    <AssemblyPart x:Name="ImageTools.IO.Png" Source="ImageTools.IO.Png.dll" />
+    <AssemblyPart x:Name="ImageTools.Utils" Source="ImageTools.Utils.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls.Maps" Source="Microsoft.Phone.Controls.Maps.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls.Toolkit" Source="Microsoft.Phone.Controls.Toolkit.dll" />
+    <AssemblyPart x:Name="PhoneCodeContractsAssemblies" Source="PhoneCodeContractsAssemblies.dll" />
+    <AssemblyPart x:Name="Samsung.Phone.PDI" Source="Samsung.Phone.PDI.dll" />
+    <AssemblyPart x:Name="SEC.Media" Source="SEC.Media.dll" />
+    <AssemblyPart x:Name="ICSharpCode.SharpZLib.Phone" Source="ICSharpCode.SharpZLib.Phone.dll" />
+    <AssemblyPart Source="cs/ChatON.resources.dll" />
+    <AssemblyPart Source="da/ChatON.resources.dll" />
+    <AssemblyPart Source="de/ChatON.resources.dll" />
+    <AssemblyPart Source="el/ChatON.resources.dll" />
+    <AssemblyPart Source="es/ChatON.resources.dll" />
+    <AssemblyPart Source="fi/ChatON.resources.dll" />
+    <AssemblyPart Source="fr/ChatON.resources.dll" />
+    <AssemblyPart Source="hu/ChatON.resources.dll" />
+    <AssemblyPart Source="id/ChatON.resources.dll" />
+    <AssemblyPart Source="it/ChatON.resources.dll" />
+    <AssemblyPart Source="ja/ChatON.resources.dll" />
+    <AssemblyPart Source="ko/ChatON.resources.dll" />
+    <AssemblyPart Source="ms/ChatON.resources.dll" />
+    <AssemblyPart Source="nb-NO/ChatON.resources.dll" />
+    <AssemblyPart Source="nl/ChatON.resources.dll" />
+    <AssemblyPart Source="pl/ChatON.resources.dll" />
+    <AssemblyPart Source="pt-BR/ChatON.resources.dll" />
+    <AssemblyPart Source="pt-PT/ChatON.resources.dll" />
+    <AssemblyPart Source="ru/ChatON.resources.dll" />
+    <AssemblyPart Source="sv/ChatON.resources.dll" />
+    <AssemblyPart Source="zh-CN/ChatON.resources.dll" />
+    <AssemblyPart Source="zh-TW/ChatON.resources.dll" />
+    <AssemblyPart Source="cs/Microsoft.Phone.Controls.Toolkit.resources.dll" />
+    <AssemblyPart Source="da/Microsoft.Phone.Controls.Toolkit.resources.dll" />
+    <AssemblyPart Source="de/Microsoft.Phone.Controls.Toolkit.resources.dll" />
+    <AssemblyPart Source="el/Microsoft.Phone.Controls.Toolkit.resources.dll" />
+    <AssemblyPart Source="es/Microsoft.Phone.Controls.Toolkit.resources.dll" />
+    <AssemblyPart Source="fi/Microsoft.Phone.Controls.Toolkit.resources.dll" />
+    <AssemblyPart Source="fr/Microsoft.Phone.Controls.Toolkit.resources.dll" />
+    <AssemblyPart Source="hu/Microsoft.Phone.Controls.Toolkit.resources.dll" />
+    <AssemblyPart Source="it/Microsoft.Phone.Controls.Toolkit.resources.dll" />
+    <AssemblyPart Source="ja/Microsoft.Phone.Controls.Toolkit.resources.dll" />
+    <AssemblyPart Source="ko/Microsoft.Phone.Controls.Toolkit.resources.dll" />
+    <AssemblyPart Source="nb-NO/Microsoft.Phone.Controls.Toolkit.resources.dll" />
+    <AssemblyPart Source="nl/Microsoft.Phone.Controls.Toolkit.resources.dll" />
+    <AssemblyPart Source="pl/Microsoft.Phone.Controls.Toolkit.resources.dll" />
+    <AssemblyPart Source="pt-BR/Microsoft.Phone.Controls.Toolkit.resources.dll" />
+    <AssemblyPart Source="pt-PT/Microsoft.Phone.Controls.Toolkit.resources.dll" />
+    <AssemblyPart Source="ru/Microsoft.Phone.Controls.Toolkit.resources.dll" />
+    <AssemblyPart Source="sv/Microsoft.Phone.Controls.Toolkit.resources.dll" />
+    <AssemblyPart Source="zh-CN/Microsoft.Phone.Controls.Toolkit.resources.dll" />
+    <AssemblyPart Source="zh-TW/Microsoft.Phone.Controls.Toolkit.resources.dll" />
+  </Deployment.Parts>
+</Deployment>

@@ -1,0 +1,62 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="ChatOn.Views.AddBirthdayPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0">
+            <TextBlock x:Name="ApplicationTitle" Text="{Binding MyResContainer.IDS_CHATON_HEADER_BIRTHDAY, Source={StaticResource LocalizedStrings},Converter={StaticResource UpperCaseConverter}}" Style="{StaticResource PhoneTextNormalStyle}" Margin="24,24,0,0" FontSize="23" FontFamily="Segoe WP Semibold"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,54,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="140"/>
+                <RowDefinition Height="200*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <toolkit:ListPicker SelectedIndex="{Binding SelectedType, Mode=TwoWay}"
+                x:Name="TypePicker" Header="{Binding MyResContainer.IDS_CHATON_BODY_SELECT_OPTION, Source={StaticResource LocalizedStrings}}" Margin="24,0" Grid.ColumnSpan="2" Grid.RowSpan="1" Grid.Row="1"/>
+            <Rectangle Grid.ColumnSpan="2" Height="53" Margin="24,34,24,0" Stroke="Black" VerticalAlignment="Top" StrokeThickness="0">
+            	<Rectangle.Fill>
+            		<SolidColorBrush Color="{StaticResource PhoneTextBoxColor}"/>
+            	</Rectangle.Fill>
+            </Rectangle>
+            <TextBlock x:Name="DateBlock" Grid.ColumnSpan="2" Margin="36,42,34,0" TextWrapping="Wrap" 
+                       Text="{Binding Birthday, Converter={StaticResource DateTimeStringConverter}, ConverterParameter='D'}" FontSize="25.333" Foreground="Black" VerticalAlignment="Top" FontFamily="Segoe WP"/>
+            <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" Text="{Binding MyResContainer.IDS_CHATON_HEADER_DATE, Source={StaticResource LocalizedStrings}}" Margin="24,0,0,0" Foreground="{StaticResource PhoneBorderBrush}"/>
+            <toolkit:DatePicker x:Name="DatePickerControl" ValueChanged="DatePicker_ValueChanged" Grid.ColumnSpan="2" Margin="24,36,24,75" Opacity="0"/>
+        </Grid>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/icons/appbtn_save.png" Text="save" Click="SaveButton_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/icons/appbtn_cancel.png" Text="cancel" Click="CancelButton_Click"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

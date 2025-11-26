@@ -1,0 +1,87 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="ChatOn.Views.SettingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False"
+    toolkit:TiltEffect.IsTiltEnabled="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Pivot Control-->
+        <controls:Pivot Title="{Binding MyResContainer.IDS_CHATON_HEADER_SETTINGS, Source={StaticResource LocalizedStrings},Converter={StaticResource UpperCaseConverter}}">
+            <!--Pivot item one-->
+            <controls:PivotItem Header="{Binding MyResContainer.IDS_CHATON_MBODY_GENERAL, Source={StaticResource LocalizedStrings}}" Margin="24,28,24,0">
+                <ScrollViewer>
+            		<Grid VerticalAlignment="Top">
+            			<Grid.RowDefinitions>
+            				<RowDefinition Height="10"/>
+            				<RowDefinition Height="95"/>
+            				<RowDefinition Height="Auto"/>
+            				<RowDefinition Height="50"/>
+            				<RowDefinition Height="95"/>
+            				<RowDefinition Height="95"/>
+            				<RowDefinition Height="95"/>
+            				<RowDefinition Height="95"/>
+                            <RowDefinition Height="Auto"/>
+            				<RowDefinition Height="Auto"/>
+            				<RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+            			</Grid.RowDefinitions>
+                        <TextBlock Tap="SkinSetting_Tap" Tag="tilt" HorizontalAlignment="Left" Grid.Row="1" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_MBODY_CHANGE_SKIN, Source={StaticResource LocalizedStrings}}" FontSize="43" VerticalAlignment="Top" FontFamily="Segoe WP SemiLight"/>
+                        <TextBlock Tap="FontSetting_Tap" Tag="tilt" HorizontalAlignment="Left" Grid.Row="2" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_MBODY_FONT_SIZE, Source={StaticResource LocalizedStrings}}" FontSize="43" VerticalAlignment="Top" FontFamily="Segoe WP SemiLight"/>
+            			<TextBlock Tag="tilt" x:Name="CurrentFontSize" HorizontalAlignment="Left" Grid.Row="3" TextWrapping="Wrap" Text="100%" FontSize="20" VerticalAlignment="Top" FontFamily="Segoe WP SemiLight" Foreground="#99FFFFFF"/>
+                        <CheckBox Tag="tilt" x:Name="ShowBirthdayCheck" Click="ShowBirthdayCheck_Click" Content="{Binding MyResContainer.IDS_CHATON_MBODY_SHOW_BIRTHDAY, Source={StaticResource LocalizedStrings}}" Grid.Row="4" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                        <TextBlock Tap="About_Tap" Tag="tilt" HorizontalAlignment="Left" Grid.Row="5" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BODY_ABOUT_CHATON, Source={StaticResource LocalizedStrings}}" FontSize="43" VerticalAlignment="Top" FontFamily="Segoe WP SemiLight"/>
+                        <TextBlock Tap="Help_Tap" Tag="tilt" HorizontalAlignment="Left" Grid.Row="6" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BODY_HELP, Source={StaticResource LocalizedStrings}}" FontSize="43" VerticalAlignment="Top" FontFamily="Segoe WP SemiLight"/>
+                        <TextBlock Tap="TellFriends_Tap" Tag="tilt" HorizontalAlignment="Left" Grid.Row="7" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BODY_TELL_FRIENDS, Source={StaticResource LocalizedStrings}}" FontSize="43" VerticalAlignment="Top" FontFamily="Segoe WP SemiLight"/>
+                        <StackPanel Tag="tilt" VerticalAlignment="Top" Grid.Row="8" Tap="SyncNow_Tap">
+                            <TextBlock TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BODY_SYNC_CONTACTS, Source={StaticResource LocalizedStrings}}" FontSize="43" VerticalAlignment="Top" FontFamily="Segoe WP SemiLight"/>
+                            <TextBlock TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BODY_TAP_TO_SYNC, Source={StaticResource LocalizedStrings}}" FontSize="20" FontFamily="Segoe WP SemiLight">
+                            	<TextBlock.Foreground>
+                            		<SolidColorBrush Color="{StaticResource PhoneSubtleColor}"/>
+                            	</TextBlock.Foreground>
+                            </TextBlock>
+            			</StackPanel>
+                        <CheckBox Tag="tilt" x:Name="PushNoticationCheck" Click="PushNoticationCheck_Click" Content="{Binding MyResContainer.IDS_CHATON_BODY_PUSH_NOTIFICATION, Source={StaticResource LocalizedStrings}}" Grid.Row="9" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,20,0,0"/>
+                        <CheckBox Tag="tilt" x:Name="AllowLocationCheck" Click="AllowLocationCheck_Click" Content="{Binding MyResContainer.WP7_CHATON_SETTING_USEMYLOCATION, Source={StaticResource LocalizedStrings}}" Grid.Row="10" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,20,0,0"/>
+                        <HyperlinkButton x:Name="linkPrivatePolicy" Grid.Row="11" Content="{Binding MyResContainer.WP7_CHATON_PRIVACYSTATEMENT, Source={StaticResource LocalizedStrings}}" FontSize="23" HorizontalAlignment="Left" Margin="0,10,0,0" Foreground="{StaticResource PhoneForegroundBrush}" NavigateUri="http://go.microsoft.com/fwlink/?LinkId=187032" TargetName="_blank"/>
+            		</Grid>
+            	</ScrollViewer>
+            </controls:PivotItem>
+
+            <!--Pivot item two-->
+            <controls:PivotItem Header="{Binding MyResContainer.IDS_CHATON_MBODY_PRIVACY, Source={StaticResource LocalizedStrings}}" Margin="24,28,24,0">
+                <Grid>
+                	<ScrollViewer>
+                		<Grid VerticalAlignment="Top" Width="456">
+                			<Grid.RowDefinitions>
+                				<RowDefinition Height="10"/>
+                				<RowDefinition Height="Auto"/>
+                				<RowDefinition Height="Auto"/>
+                				<RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                				<RowDefinition/>
+                			</Grid.RowDefinitions>
+                            <TextBlock Tag="tilt" Tap="BlockList_Tap" HorizontalAlignment="Left" Grid.Row="1" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_HEADER_BLOCK_LIST, Source={StaticResource LocalizedStrings}}" FontSize="43" VerticalAlignment="Top" FontFamily="Segoe WP SemiLight" Margin="0,0,0,40"/>
+                            <TextBlock Tag="tilt" Tap="DeleteAccount_Tap" HorizontalAlignment="Left" Grid.Row="2" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BODY_DELETE_ACCOUNT, Source={StaticResource LocalizedStrings}}" FontSize="43" VerticalAlignment="Top" FontFamily="Segoe WP SemiLight" Margin="0,0,0,40"/>
+                            <TextBlock Tag="tilt" Tap="HideInteraction_Tap" HorizontalAlignment="Left" Grid.Row="3" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BODY_HIDDEN_INTERACTIONS, Source={StaticResource LocalizedStrings}}" FontSize="43" VerticalAlignment="Top" FontFamily="Segoe WP SemiLight" Margin="0,0,0,40"/>
+                            <TextBlock Tag="tilt" Tap="BuddiesSay_Tap" HorizontalAlignment="Left" Grid.Row="4" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_HEADER_BUDDIES_SAY, Source={StaticResource LocalizedStrings}}" FontSize="43" VerticalAlignment="Top" FontFamily="Segoe WP SemiLight" Margin="0,0,0,40"/>
+                		</Grid>
+                	</ScrollViewer>
+                </Grid>
+            </controls:PivotItem>
+        </controls:Pivot>
+    </Grid>
+    
+</phone:PhoneApplicationPage>

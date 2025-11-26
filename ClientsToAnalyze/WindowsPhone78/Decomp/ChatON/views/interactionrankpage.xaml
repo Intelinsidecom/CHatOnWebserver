@@ -1,0 +1,106 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ChatOn_Models="clr-namespace:ChatOn.Models" 
+    xmlns:ChatOn_Controls="clr-namespace:ChatOn.Controls" 
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    x:Class="ChatOn.Views.InteractionRankPage"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True"
+    toolkit:TiltEffect.IsTiltEnabled="True">
+	<phone:PhoneApplicationPage.Resources>
+		<DataTemplate x:Key="InteractionRankItemTemplate">
+			<Grid Width="432" Margin="0,0,0,14">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="88"/>
+					<ColumnDefinition/>
+					<ColumnDefinition Width="70"/>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+                <Image Source="{Binding ProfileImage}" Stretch="Fill" Width="88" Height="88" HorizontalAlignment="Left"/>
+                <Image Visibility="{Binding DisplayRank, ConverterParameter=1, Converter={StaticResource IntEqualToVisibility}}"
+                    HorizontalAlignment="Right" Height="88" Source="/ChatOn;component/Images/rank_gold.png" Stretch="Fill" VerticalAlignment="Top" Width="70" Grid.Column="2"/>
+                <Image Visibility="{Binding DisplayRank, ConverterParameter=2, Converter={StaticResource IntEqualToVisibility}}"
+                    HorizontalAlignment="Right" Height="88" Source="/ChatOn;component/Images/renk_silver.png" Stretch="Fill" VerticalAlignment="Top" Width="70" Grid.Column="2"/>
+                <Image Visibility="{Binding DisplayRank, ConverterParameter=3, Converter={StaticResource IntEqualToVisibility}}"
+                    HorizontalAlignment="Right" Height="88" Source="/ChatOn;component/Images/renk_copper.png" Stretch="Fill" VerticalAlignment="Top" Width="70" Grid.Column="2"/>
+				<TextBlock TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Bottom" Grid.Row="1" FontSize="26" Grid.ColumnSpan="3"/>
+                <Grid Grid.Column="1" Background="Transparent" Tap="Grid_Tap">
+				    <ChatOn_Controls:RatioChart Tag="tilt" LeftImage="/ChatOn;component/Images/rank_progress_orange.png" RightImage="/ChatOn;component/Images/rank_progress_yellow.png" 
+                                                HorizontalAlignment="Stretch" Height="22" VerticalAlignment="Bottom" Margin="7,0" 
+                                                LeftText="{Binding ReceivedCount}" RightText="{Binding SentCount}" 
+                                                LeftValue="{Binding ReceivedCount}" RightValue="{Binding SentCount}" StandardValue="{Binding BestInteractionPoint}"
+                                                LeftFontColor="White" RightFontColor="Black"/>
+                </Grid>
+            </Grid>
+		</DataTemplate>
+	</phone:PhoneApplicationPage.Resources>
+ 
+ 	<phone:PhoneApplicationPage.FontFamily>
+		<StaticResource ResourceKey="PhoneFontFamilyNormal"/>
+	</phone:PhoneApplicationPage.FontFamily>
+	<phone:PhoneApplicationPage.FontSize>
+		<StaticResource ResourceKey="PhoneFontSizeNormal"/>
+	</phone:PhoneApplicationPage.FontSize>
+	<phone:PhoneApplicationPage.Foreground>
+		<StaticResource ResourceKey="PhoneForegroundBrush"/>
+	</phone:PhoneApplicationPage.Foreground>
+
+    <!--Sample code showing usage of ApplicationBar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton x:Name="Share" IconUri="/icons/appbtn_share.png" Text="Share" Click="Share_Click"/>
+            <shell:ApplicationBarIconButton x:Name="Refresh" IconUri="/icons/appbtn_refresh.png" Text="Refresh" Click="Refresh_Click"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        	<RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0">
+            <TextBlock x:Name="ApplicationTitle" Text="{Binding MyResContainer.IDS_CHATON_HEADER_INTERACTION_RANK, Source={StaticResource LocalizedStrings},Converter={StaticResource UpperCaseConverter}}" Style="{StaticResource PhoneTextNormalStyle}" Margin="24,24,0,0" FontSize="23" FontFamily="Segoe WP Semibold"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,54,0,0">
+        	<Grid.RowDefinitions>
+        		<RowDefinition Height="70"/>
+        		<RowDefinition/>
+        	</Grid.RowDefinitions>
+        	<Grid>
+        		<Grid.ColumnDefinitions>
+        			<ColumnDefinition Width="250*"/>
+        			<ColumnDefinition Width="Auto"/>
+        			<ColumnDefinition Width="Auto"/>
+        		</Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Left" Margin="24,0,0,14" TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_HEADER_IN_THE_LAST_WEEK, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Bottom" FontSize="21.333" FontFamily="Segoe WP" Foreground="{StaticResource PhoneBorderBrush}"/>
+        		<StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,14,0">
+        			<Image Height="18" Source="/ChatOn;component/Images/rank_progress_orange.9.png" Stretch="Fill" VerticalAlignment="Bottom" Width="18" Margin="0,0,0,18"/>
+                    <TextBlock TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_TAB_BUDDY, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="21.333" Margin="10,0,0,14" FontFamily="Segoe WP" Foreground="{StaticResource PhoneBorderBrush}"/>
+        		</StackPanel>
+        		<StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,24,0">
+        			<Image Height="18" Source="/ChatOn;component/Images/rank_progress_yellow.9.png" Stretch="Fill" Width="18" HorizontalAlignment="Right" d:LayoutOverrides="Width" VerticalAlignment="Bottom" Margin="0,0,0,18"/>
+                    <TextBlock TextWrapping="Wrap" Text="{Binding MyResContainer.IDS_CHATON_BODY_ME, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="21.333" Margin="10,0,0,14" FontFamily="Segoe WP" Foreground="{StaticResource PhoneBorderBrush}"/>
+        		</StackPanel>
+        	</Grid>
+            <ScrollViewer Name="InteractionScroll" Margin="0" Grid.Row="1">
+            	<ItemsControl x:Name="InteractionList" ItemsSource="{Binding RankedBuddies}" ItemTemplate="{StaticResource InteractionRankItemTemplate}" Width="432"/>
+            </ScrollViewer>
+            <TextBlock Visibility="{Binding RankedBuddies.Count, Converter={StaticResource SmallerThanParamToVisibility}, ConverterParameter='1'}" Grid.Row="1" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Top" Text="{Binding MyResContainer.IDS_CHATON_BODY_THE_INTERACTION_RANK_DESCRIPTION_MSG, Source={StaticResource LocalizedStrings}}" TextAlignment="Center" Margin="0,150,0,0"/>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>
